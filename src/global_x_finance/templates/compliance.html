@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}X政策與合規預檢{% endblock %}
+{% block content %}
+<section class="hero compact-hero">
+  <p class="eyebrow">OFFICIAL X POLICY EVIDENCE</p>
+  <h2>X廣告政策與金融預檢</h2>
+  <p>只根據已保存的X官方政策快照進行內部預檢；不等同法律意見，也不保證X一定批准。</p>
+</section>
+
+<section class="metrics">
+  <article class="metric"><span>政策快照</span><strong>{{ snapshot_count }}</strong></article>
+  <article class="metric"><span>結構化規則</span><strong>{{ rule_count }}</strong></article>
+  <article class="metric"><span>最後核驗</span><strong class="metric-date">{{ last_verified_at[:10] if last_verified_at != 'UNKNOWN' else 'UNKNOWN' }}</strong></article>
+</section>
+
+<section class="notice warning-notice">
+  <strong>目前預檢狀態</strong>
+  <p>下列模板沒有廣告主、產品、牌照或X預授權資料，因此只能顯示 <code>UNKNOWN</code>，不能顯示 <code>PASS_PRECHECK</code>。</p>
+</section>
+
+<section>
+  <div class="section-heading">
+    <div><p class="eyebrow">TW / US CHECKLISTS</p><h2>台灣／美國預檢清單</h2></div>
+  </div>
+  <div class="compliance-grid">
+    {% for checklist in checklists %}
+    <article class="compliance-card">
+      <div class="card-heading-row">
+        <div>
+          <span class="status {{ checklist.precheck.result | status_class }}">{{ checklist.precheck.result }}</span>
+          <h3>{{ checklist.checklist_name }}</h3>
+        </div>
+        <span class="market-chip">{{ checklist.country }} · {{ checklist.product_category }}</span>
+      </div>
+      <p><strong>政策日期：</strong>{{ checklist.policy_snapshot_date }}</p>
+      <p><strong>當前原因：</strong>{{ checklist.precheck.reasons | join('；') }}</p>
+      <p><strong>缺失資料：</strong>{{ checklist.missing_fields | join('、') if checklist.missing_fields else '無' }}</p>
+      <details>
+        <summary>查看全部檢查欄位</summary>
+        <dl class="detail-grid checklist-fields">
+          {% for key, value in checklist.fields.items() %}
+          <dt>{{ key }}</dt><dd>{{ value }}</dd>
+          {% endfor %}
+        </dl>
+      </details>
+    </article>
+    {% else %}
+    <p>尚未建立檢查清單；預檢結果必須為 UNKNOWN。</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <div><p class="eyebrow">STRUCTURED RULES</p><h2>可回查規則</h2></div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Rule ID</th><th>國家／類別</th><th>要求</th><th>違反結果</th><th>Evidence</th></tr></thead>
+      <tbody>
+        {% for rule in rules %}
+        <tr>
+          <td><code>{{ rule.rule_id }}</code><br><small>{{ rule.rule_type }}</small></td>
+          <td>{{ rule.country }}<br>{{ rule.product_category }}</td>
+          <td>{{ rule.requirement }}</td>
+          <td><span class="status {{ rule.result_if_violated | status_class }}">{{ rule.result_if_violated }}</span></td>
+          <td><a href="{{ rule.evidence_url }}" target="_blank" rel="noreferrer">X官方頁面 ↗</a><br><small>Snapshot {{ rule.snapshot_id[:8] }}</small></td>
+        </tr>
+        {% else %}
+        <tr><td colspan="5">尚無規則。</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <div><p class="eyebrow">APPEND-ONLY SNAPSHOTS</p><h2>政策版本與變化</h2></div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>政策</th><th>版本</th><th>核驗狀態</th><th>頁面更新日</th><th>內容雜湊</th><th>Evidence URL</th></tr></thead>
+      <tbody>
+        {% for snapshot in snapshots %}
+        <tr>
+          <td>{{ snapshot.policy_name }}<br><small>{{ snapshot.jurisdiction }} · {{ snapshot.product_category }}</small></td>
+          <td>{{ snapshot.snapshot_version }}<br><small>{% if snapshot.supersedes_snapshot_id %}取代 {{ snapshot.previous_version or 'UNKNOWN' }}{% else %}首次快照{% endif %}</small></td>
+          <td><span class="status {{ snapshot.verification_status | status_class }}">{{ snapshot.verification_status }}</span><br><small>{{ snapshot.fetched_at }}</small></td>
+          <td>{{ snapshot.page_updated_at }}</td>
+          <td><code>{{ snapshot.content_hash[:12] }}…</code></td>
+          <td><a href="{{ snapshot.source_url }}" target="_blank" rel="noreferrer">X官方原文 ↗</a></td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6">政策快照為0；所有預檢只能為 UNKNOWN。</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}採集記錄｜台灣官方資料 Demo{% endblock %}
+{% block content %}
+  <section class="page-title"><p class="eyebrow">COLLECTION AUDIT</p><h2>每一次同步都有記錄</h2><p>失敗會保留真實錯誤與失敗時間，不會補入假資料。</p></section>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>開始時間</th><th>來源</th><th>資料集</th><th>狀態</th><th>抓取</th><th>新增</th><th>重複</th><th>錯誤</th></tr></thead>
+      <tbody>{% for run in runs %}
+        <tr><td>{{ run['started_at'] }}</td><td>{{ run['registry_source_id'] }}</td><td>{{ run['dataset_name'] or '-' }}</td><td><span class="status {{ run['status']|status_class }}">{{ run['status'] }}</span></td><td>{{ run['item_count'] }}</td><td>{{ run['new_item_count'] }}</td><td>{{ run['duplicate_item_count'] }}</td><td class="error-cell">{{ run['error_code'] or '' }} {{ run['error_message'] or '' }}</td></tr>
+      {% else %}<tr><td colspan="8">尚無採集記錄</td></tr>{% endfor %}</tbody>
+    </table>
+  </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+schema_version: "0.1.0"
+pack_id: "market.us.v0.1"
+status: "DRAFT_MISSING_VERIFIED_SOURCES"
+country: "United States"
+country_code: "US"
+primary_language: "en-US"
+secondary_language: null
+timezone: "America/New_York"
+currency: "USD"
+main_stock_market:
+  - id: "NYSE"
+    name: "New York Stock Exchange"
+  - id: "NASDAQ"
+    name: "Nasdaq Stock Market"
+source_registry_file: null
+official_sources: []
+financial_media: []
+industry_media: []
+forums: []
+social_platforms:
+  - "X"
+  - "YouTube"
+x_sources: []
+youtube_sources: []
+local_kols: []
+trending_keywords:
+  status: "NEEDS_VALIDATION"
+  values: []
+stock_keywords:
+  status: "NEEDS_VALIDATION"
+  values: []
+local_user_interests:
+  status: "NEEDS_VALIDATION"
+  hypotheses: []
+content_preferences:
+  status: "NEEDS_VALIDATION"
+  hypotheses: []
+commercial_topics:
+  status: "PRODUCT_UNKNOWN"
+  values: []
+prohibited_or_sensitive_topics: []
+x_ads_policy:
+  financial_services: "https://business.x.com/en/help/ads-policies/ads-content-policies/financial-services"
+  deceptive_content: "https://business.x.com/en/help/ads-policies/ads-content-policies/deceptive-and-fraudulent-content"
+  checked_at: "2026-08-13"
+local_financial_marketing_rules:
+  status: "UNKNOWN_NEEDS_LEGAL_VERIFICATION"
+source_reliability_levels:
+  A: "official regulator, exchange, company primary disclosure"
+  B: "mainstream financial or specialist industry media"
+  C: "third-party data tool or aggregator"
+  D: "KOL, forum, social or community opinion"
+publisher_group_rule: "same publisher_group does not increase independent source count"
+hot_topic_window_minutes: 120
+drafts_per_day_target: 40
+publication_mode: "DRAFT_ONLY"
+human_reviewer: "Ben"

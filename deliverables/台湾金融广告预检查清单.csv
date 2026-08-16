@@ -1,0 +1,3 @@
+advertiser_legal_name,advertiser_country,target_country,product_name,product_category,landing_page,fees_disclosed,risk_disclosure,financial_license_status,license_authority,license_number,X_pre_authorization_status,X_ads_account_eligible,X_account_verified,bio_url_valid,landing_page_accessible,landing_page_matches_ad,prohibited_claims_detected,policy_snapshot_date,precheck_result
+UNKNOWN,UNKNOWN,TW,UNKNOWN,FINANCIAL_SERVICES,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,2026-08-14,UNKNOWN
+UNKNOWN,UNKNOWN,TW,UNKNOWN,CRYPTO,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,2026-08-14,UNKNOWN

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}最近內容流｜台灣財經內容雷達{% endblock %}
+{% block content %}
+  <section class="page-title">
+    <p class="eyebrow">RECENT CONTENT FEED</p>
+    <h2>最近 {{ hours }} 小時內容流</h2>
+    <p>這是已列來源的發現流，不是「全網熱點」。原文與 Raw Evidence 分開保存，AI 輸出不能覆蓋 Evidence。</p>
+  </section>
+  <form class="filters" method="get"><label>時間範圍
+    <select name="hours"><option value="2" {% if hours == 2 %}selected{% endif %}>2 小時</option><option value="6" {% if hours == 6 %}selected{% endif %}>6 小時</option><option value="24" {% if hours == 24 %}selected{% endif %}>24 小時</option><option value="72" {% if hours == 72 %}selected{% endif %}>72 小時</option></select>
+  </label><button class="secondary" type="submit">套用</button></form>
+  {% if items %}<div class="table-wrap"><table>
+    <thead><tr><th>來源</th><th>內容</th><th>發布 / 發現</th><th>延遲</th><th>性質</th><th>去重</th><th>Evidence</th></tr></thead>
+    <tbody>{% for item in items %}<tr>
+      <td><strong>{{ item['source_type'] }}</strong><br>{{ item['source_account'] }}<br><span class="hash">{{ item['publisher_group'] }}</span></td>
+      <td class="content-cell">{{ item['title_or_text'] }}</td>
+      <td>{{ item['published_at'] or 'UNKNOWN' }}<br>{{ item['discovered_at'] }}</td>
+      <td>{{ '%.1f'|format(item['detection_latency_minutes']) if item['detection_latency_minutes'] is not none else 'UNKNOWN' }} 分鐘</td>
+      <td><span class="status status-warn">{{ item['fact_or_opinion'] }}</span>{% if item['is_initial_backfill'] %}<br>INITIAL_BACKFILL{% endif %}</td>
+      <td>{{ item['duplicate_status'] }}</td>
+      <td><a href="{{ url_for('evidence_detail', item_id=item['evidence_id']) }}">Raw</a> · <a href="{{ item['evidence_url'] }}" target="_blank" rel="noreferrer">原帖</a></td>
+    </tr>{% endfor %}</tbody>
+  </table></div>{% else %}<p class="empty">此時間範圍尚無已發現內容。這不會以假資料補齊。</p>{% endif %}
+{% endblock %}

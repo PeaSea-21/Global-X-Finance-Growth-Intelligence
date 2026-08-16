@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}來源列表｜台灣官方資料 Demo{% endblock %}
+{% block content %}
+  <section class="page-title"><p class="eyebrow">SOURCE GOVERNANCE</p><h2>台灣來源列表</h2><p>ACTIVE 代表入口存在；只有 API_VERIFIED 來源可以由本 Demo 自動同步。</p></section>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Publisher</th><th>Group</th><th>可靠度</th><th>Registry</th><th>Collection</th><th>核驗日期</th><th>官方入口</th></tr></thead>
+      <tbody>{% for source in sources %}
+        <tr>
+          <td><strong>{{ source['source_id'] }}</strong></td><td>{{ source['publisher'] }}</td><td>{{ source['publisher_group'] }}</td><td>{{ source['reliability_level'] }}</td>
+          <td><span class="status {{ source['registry_status']|status_class }}">{{ source['registry_status'] }}</span></td>
+          <td><span class="status {{ source['collection_status']|status_class }}">{{ source['collection_status'] }}</span></td>
+          <td>{{ source['verified_at'] }}</td><td><a href="{{ source['source_url'] }}" target="_blank" rel="noreferrer">開啟</a></td>
+        </tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+{% endblock %}
+

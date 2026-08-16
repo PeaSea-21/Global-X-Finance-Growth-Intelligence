@@ -1,0 +1,63 @@
+{
+  "registry_version": "X_ADS_POLICY_REGISTRY_V0.1",
+  "allowed_hosts": [
+    "business.x.com",
+    "business.twitter.com"
+  ],
+  "pages": [
+    {
+      "policy_key": "X_ADS_POLICIES",
+      "policy_name": "X Advertising Policies",
+      "jurisdiction": "GLOBAL",
+      "product_category": "ALL",
+      "source_url": "https://business.x.com/en/help/ads-policies",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "X广告政策适用于X的商业化与付费广告产品。广告主须遵守适用法律和X政策，受限制类别还须满足强制警示、定向与预授权要求；平台审核不构成法律意见或批准保证。"
+    },
+    {
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "policy_name": "Financial Products and Services",
+      "jurisdiction": "GLOBAL,TW,US",
+      "product_category": "FINANCIAL_SERVICES,CRYPTO",
+      "source_url": "https://business.x.com/en/help/ads-policies/ads-content-policies/financial-services",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "金融与加密产品属于受限制广告类别，限制随产品与投放国家变化，并要求事前取得X认证。台湾金融与加密广告主须持有金融牌照；美国加密广告主须提供SEC、CFTC或FinCEN注册证明。"
+    },
+    {
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "policy_name": "Deceptive and Fraudulent Content",
+      "jurisdiction": "GLOBAL",
+      "product_category": "ALL",
+      "source_url": "https://business.x.com/en/help/ads-policies/ads-content-policies/deceptive-and-fraudulent-content",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "X全球禁止欺骗和欺诈广告，包括夸张点击诱导、误导主张、遗漏价格或付款条件、快速致富和不现实结果，以及伪装页面、限制落地页访问、规避审核、无效功能或CTA。"
+    },
+    {
+      "policy_key": "X_ADS_ACCOUNT_ELIGIBILITY",
+      "policy_name": "Account Eligibility for X Ads",
+      "jurisdiction": "GLOBAL",
+      "product_category": "ALL",
+      "source_url": "https://business.x.com/en/help/ads-policies/campaign-considerations/about-eligibility-for-x-ads",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "广告账号须遵守X广告政策，帖子公开且账号未停用或暂停，并通过企业/政府Verified Organizations或个人X Premium验证。头像和页首图片不得为GIF，Bio URL须可用、非门控并准确代表品牌与推广内容。"
+    },
+    {
+      "policy_key": "X_ADS_POLICY_UPDATE_LOG",
+      "policy_name": "X Ads Policy Update Log",
+      "jurisdiction": "GLOBAL",
+      "product_category": "ALL",
+      "source_url": "https://business.x.com/en/help/ads-policies/ads-policy-update-log",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "更新日志记录会影响可投放范围的政策变化，但不替代具体政策页面；英文版在翻译冲突时为准。当前页面包含金融政策变更记录，包括台湾金融与加密类别开放但受限制。"
+    },
+    {
+      "policy_key": "X_UNACCEPTABLE_CONTENT",
+      "policy_name": "Unacceptable Content",
+      "jurisdiction": "GLOBAL",
+      "product_category": "ALL",
+      "source_url": "https://business.x.com/en/help/ads-policies/ads-content-policies/unacceptable-content",
+      "page_updated_at": "UNKNOWN",
+      "normalized_summary": "X全球禁止广告包含不可接受内容，包括贬损、歧视、煽动、危险或冒犯内容；不得利用敏感事件或争议议题牟利，也不得暗示未经授权的品牌、平台或审核特权关系。"
+    }
+  ]
+}

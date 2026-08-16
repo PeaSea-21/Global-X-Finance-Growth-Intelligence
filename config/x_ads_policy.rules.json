@@ -1,0 +1,239 @@
+{
+  "rules_version": "X_ADS_STRUCTURED_RULES_V0.1",
+  "rules": [
+    {
+      "rule_id": "XADS-GLOBAL-001",
+      "policy_key": "X_ADS_POLICIES",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "REQUIRED",
+      "requirement": "广告主须遵守适用法律与X广告政策，并制作诚实、安全且尊重用户的广告；本框架不是法律意见。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-GLOBAL-002",
+      "policy_key": "X_ADS_POLICIES",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得推广非法、有害或欺骗性内容。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-FIN-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "GLOBAL",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "RESTRICTED",
+      "requirement": "金融实体、产品和服务仅可在产品类别和目标国家允许的范围内投放，并满足当地限制。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-FIN-002",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "GLOBAL",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "PROHIBITED",
+      "requirement": "二元期权、保释金债券、低价股和金融点差交易等高财损风险产品不得投放。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-TW-FIN-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "TW",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "REQUIRED",
+      "requirement": "面向台湾推广金融产品或服务时，广告主须持有金融牌照；具体牌照适用性仍须人工法遵确认。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-US-FIN-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "US",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "RESTRICTED",
+      "requirement": "面向美国的金融聚合器广告可在限制条件下投放；页面未列出所有美国金融法律或牌照条件，须另行人工法遵确认。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-CRYPTO-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "GLOBAL",
+      "product_category": "CRYPTO",
+      "rule_type": "PROHIBITED",
+      "requirement": "ICO、IEO、IDExO以及加密挖矿和相关软硬件服务不得投放。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-TW-CRYPTO-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "TW",
+      "product_category": "CRYPTO",
+      "rule_type": "REQUIRED",
+      "requirement": "面向台湾推广受限制的加密或DeFi产品时，广告主须持有金融牌照。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-US-CRYPTO-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "US",
+      "product_category": "CRYPTO",
+      "rule_type": "REQUIRED",
+      "requirement": "面向美国推广受限制的加密或DeFi产品时，广告主须提供SEC、CFTC或FinCEN注册证明。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-AUTH-001",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "GLOBAL",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "REQUIRED",
+      "requirement": "金融产品和服务广告须在投放前取得X预授权/认证。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-AUTH-002",
+      "policy_key": "X_FINANCIAL_SERVICES",
+      "country": "GLOBAL",
+      "product_category": "CRYPTO",
+      "rule_type": "REQUIRED",
+      "requirement": "X认证按广告内容类别区分；NFT等类别的认证不自动延伸至加密产品，须分别申请相应类别认证。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-ACCOUNT-001",
+      "policy_key": "X_ADS_ACCOUNT_ELIGIBILITY",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "ACCOUNT_ELIGIBILITY",
+      "requirement": "广告账号及其Bio、用户名、Handle、头像、页首图片和Bio URL均须符合X广告政策。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-ACCOUNT-002",
+      "policy_key": "X_ADS_ACCOUNT_ELIGIBILITY",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "ACCOUNT_ELIGIBILITY",
+      "requirement": "广告账号帖子须公开，账号不得处于停用或暂停状态。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-ACCOUNT-003",
+      "policy_key": "X_ADS_ACCOUNT_ELIGIBILITY",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "ACCOUNT_ELIGIBILITY",
+      "requirement": "企业或政府账号须通过Verified Organizations验证，个人账号须通过X Premium验证。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-ACCOUNT-004",
+      "policy_key": "X_ADS_ACCOUNT_ELIGIBILITY",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "ACCOUNT_ELIGIBILITY",
+      "requirement": "头像和页首图片不得为GIF；Bio URL须为可用、在线、非门控页面，并准确代表品牌及推广产品或服务。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-LANDING-001",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得通过伪装页面、限制落地页访问或提交后修改URL内容来规避审核。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-DISCLOSURE-001",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "DISCLOSURE",
+      "requirement": "不得遗漏定价、付款条件或客户将承担费用等重要信息。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-DISCLOSURE-002",
+      "policy_key": "X_ADS_POLICIES",
+      "country": "GLOBAL",
+      "product_category": "FINANCIAL_SERVICES",
+      "rule_type": "DISCLOSURE",
+      "requirement": "受限制金融广告须核验并展示适用的强制警示与风险披露；X政策不替代台湾或美国法律要求。",
+      "result_if_violated": "REVIEW_REQUIRED"
+    },
+    {
+      "rule_id": "XADS-CLAIM-001",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得保证盈利、稳赚或承诺缺乏依据的结果。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-CLAIM-002",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得宣传快速致富、固定时间内获得不现实经济结果或其他诈骗式机会。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-CLAIM-003",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得使用夸张、耸动、不准确的语言或CTA进行点击诱导。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-CLAIM-004",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得宣传实际不存在的优惠、交易或虚假稀缺性。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-FUNCTION-001",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得伪造不存在的X功能、使用过度跳转或在广告素材中放置无效功能与CTA。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-LANDING-002",
+      "policy_key": "X_DECEPTIVE_FRAUDULENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "广告陈述、品牌身份和落地页内容须一致，不得使用误导或不实商业做法。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-SENSITIVE-001",
+      "policy_key": "X_UNACCEPTABLE_CONTENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得利用自然或工业灾害、暴力袭击等具有重大社会或政治影响的敏感事件与争议议题牟利。",
+      "result_if_violated": "BLOCKED"
+    },
+    {
+      "rule_id": "XADS-BRAND-001",
+      "policy_key": "X_UNACCEPTABLE_CONTENT",
+      "country": "GLOBAL",
+      "product_category": "ALL",
+      "rule_type": "PROHIBITED",
+      "requirement": "不得暗示未经授权的品牌关系、平台访问权限、特殊审核特权或内部工具能力。",
+      "result_if_violated": "BLOCKED"
+    }
+  ]
+}

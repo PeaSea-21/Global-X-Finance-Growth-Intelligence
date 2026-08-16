@@ -1,0 +1,8 @@
+X Financial Services Policy
+https://business.x.com/en/help/ads-policies/ads-content-policies/financial-services
+
+X Deceptive and Fraudulent Content Policy
+https://business.x.com/en/help/ads-policies/ads-content-policies/deceptive-and-fraudulent-content
+
+Checked at: 2026-08-13
+Rule: fetch and snapshot current policy before any promoted-content compliance check.

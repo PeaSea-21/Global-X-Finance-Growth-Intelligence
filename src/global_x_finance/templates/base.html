@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}台灣財經內容雷達 Demo{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">GLOBAL X FINANCE INTELLIGENCE</p>
+      <h1>台灣財經內容雷達 Demo</h1>
+    </div>
+    <span class="market-chip">目前市場：台灣 TW</span>
+  </header>
+  <nav class="nav">
+    <a href="{{ url_for('dashboard') }}">首頁</a>
+    <a href="{{ url_for('sources') }}">來源列表</a>
+    <a href="{{ url_for('radar_health') }}">來源健康</a>
+    <a href="{{ url_for('radar_feed') }}">最近兩小時</a>
+    <a href="{{ url_for('runs') }}">採集記錄</a>
+    <a href="{{ url_for('evidence') }}">Evidence</a>
+    <a href="{{ url_for('signals') }}">官方信號卡</a>
+    <a href="{{ url_for('compliance') }}">政策與合規</a>
+  </nav>
+  <main>{% block content %}{% endblock %}</main>
+  <footer>本頁面只展示官方原始資料，不構成投資建議。雷達只覆蓋已列出的來源，不代表全網；X、YouTube 與 KOL 內容預設為 OPINION，系統不會自動發帖。</footer>
+</body>
+</html>

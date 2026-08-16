@@ -1,0 +1,83 @@
+{
+  "config_version": "0.2.0",
+  "collector_version": "twse-openapi-0.2.0",
+  "source_id": "TW-A02",
+  "official_documentation_url": "https://openapi.twse.com.tw/",
+  "swagger_document_url": "https://openapi.twse.com.tw/v1/swagger.json",
+  "swagger_version": "2.0",
+  "api_title": "臺灣證券交易所 OpenAPI",
+  "api_version": "1.0",
+  "discovered_at": "2026-08-14T07:46:29.8447376Z",
+  "discovery_method": "Read swagger-initializer.js from the official entry, then read its declared swagger.json URL.",
+  "datasets": [
+    {
+      "dataset_id": "twse_market_close_statistics",
+      "dataset_name": "每日收盤行情-大盤統計資訊",
+      "endpoint": "https://openapi.twse.com.tw/v1/exchangeReport/MI_INDEX",
+      "method": "GET",
+      "published_at_field": "日期",
+      "published_at_format": "ROC_YYYMMDD",
+      "title_fields": ["指數", "收盤指數", "漲跌點數"],
+      "fields": [
+        {"name": "日期", "type": "string", "description": "日期"},
+        {"name": "指數", "type": "string", "description": "指數"},
+        {"name": "收盤指數", "type": "string", "description": "收盤指數"},
+        {"name": "漲跌", "type": "string", "description": "漲跌(+/-)"},
+        {"name": "漲跌點數", "type": "string", "description": "漲跌點數"},
+        {"name": "漲跌百分比", "type": "string", "description": "漲跌百分比(%)"},
+        {"name": "特殊處理註記", "type": "string", "description": "特殊處理註記"}
+      ],
+      "observed_at": "2026-08-14T07:48:48.0185585Z",
+      "observed_http_status": 200,
+      "observed_response_shape": "array",
+      "observed_record_count": 267
+    },
+    {
+      "dataset_id": "twse_foreign_mainland_holding_ratio",
+      "dataset_name": "集中市場外資及陸資投資類股持股比率表",
+      "endpoint": "https://openapi.twse.com.tw/v1/fund/MI_QFIIS_cat",
+      "method": "GET",
+      "published_at_field": null,
+      "published_at_format": null,
+      "title_fields": ["IndustryCat", "Percentage"],
+      "fields": [
+        {"name": "IndustryCat", "type": "string", "description": "產業別"},
+        {"name": "Numbers", "type": "string", "description": "家數"},
+        {"name": "ShareNumber", "type": "string", "description": "總發行股數"},
+        {"name": "ForeignMainlandAreaShare", "type": "string", "description": "僑外資及陸資持有總股數"},
+        {"name": "Percentage", "type": "string", "description": "僑外資及陸資持股比率"}
+      ],
+      "observed_at": "2026-08-14T07:48:49.4726058Z",
+      "observed_http_status": 200,
+      "observed_response_shape": "array",
+      "observed_record_count": 36,
+      "audit_note": "The current official Swagger did not list a three-institution net-buy dataset; this official foreign/mainland holding dataset is used instead."
+    },
+    {
+      "dataset_id": "twse_listed_stock_daily_trading",
+      "dataset_name": "上市個股日成交資訊",
+      "endpoint": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+      "method": "GET",
+      "published_at_field": "Date",
+      "published_at_format": "ROC_YYYMMDD",
+      "title_fields": ["Code", "Name", "ClosingPrice"],
+      "fields": [
+        {"name": "Date", "type": "string", "description": "日期"},
+        {"name": "Code", "type": "string", "description": "證券代號"},
+        {"name": "Name", "type": "string", "description": "證券名稱"},
+        {"name": "TradeVolume", "type": "string", "description": "成交股數"},
+        {"name": "TradeValue", "type": "string", "description": "成交金額"},
+        {"name": "OpeningPrice", "type": "string", "description": "開盤價"},
+        {"name": "HighestPrice", "type": "string", "description": "最高價"},
+        {"name": "LowestPrice", "type": "string", "description": "最低價"},
+        {"name": "ClosingPrice", "type": "string", "description": "收盤價"},
+        {"name": "Change", "type": "string", "description": "漲跌價差"},
+        {"name": "Transaction", "type": "string", "description": "成交筆數"}
+      ],
+      "observed_at": "2026-08-14T07:49:10.7507432Z",
+      "observed_http_status": 200,
+      "observed_response_shape": "array",
+      "observed_record_count": 1378
+    }
+  ]
+}

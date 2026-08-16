@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}來源健康｜台灣財經內容雷達{% endblock %}
+{% block content %}
+  <section class="page-title">
+    <p class="eyebrow">REALTIME SOURCE HEALTH</p>
+    <h2>台灣來源健康</h2>
+    <p>ACTIVE 僅代表此雷達已核驗並配置監控；單次連通成功不等於持續 SLA，也不代表覆蓋整個 X 或 YouTube。</p>
+  </section>
+  <section class="metrics">
+    <article><span>來源總數</span><strong>{{ counts['total'] or 0 }}</strong></article>
+    <article><span>VERIFIED_ACTIVE</span><strong>{{ counts['active'] or 0 }}</strong></article>
+    <article><span>NEEDS_VERIFICATION</span><strong>{{ counts['needs'] or 0 }}</strong></article>
+    <article><span>BLOCKED</span><strong>{{ counts['blocked'] or 0 }}</strong></article>
+    <article><span>獨立 Publisher Group</span><strong>{{ counts['independent_groups'] or 0 }}</strong></article>
+    <article><span>最近成功時間</span><strong class="metric-date">{{ counts['last_success_at'] or 'NEVER' }}</strong></article>
+  </section>
+  <div class="section-head"><h2>最近定時週期</h2><a href="{{ url_for('radar_feed') }}">查看最近兩小時內容 →</a></div>
+  {% if cycles %}<div class="table-wrap"><table>
+    <thead><tr><th>Cycle</th><th>開始</th><th>來源</th><th>成功</th><th>新增</th><th>精確重複</th></tr></thead>
+    <tbody>{% for cycle in cycles %}<tr>
+      <td class="hash">{{ cycle['cycle_id'] }}</td><td>{{ cycle['started_at'] }}</td>
+      <td>{{ cycle['source_count'] }}</td><td>{{ cycle['success_count'] }}</td>
+      <td>{{ cycle['new_count'] or 0 }}</td><td>{{ cycle['duplicate_count'] or 0 }}</td>
+    </tr>{% endfor %}</tbody>
+  </table></div>{% else %}<p class="empty">尚無定時週期記錄。</p>{% endif %}
+  <div class="section-head"><h2>逐一來源狀態</h2></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>ID / Platform</th><th>Publisher / Group</th><th>來源狀態</th><th>監控狀態</th><th>頻率</th><th>最近成功</th><th>最近失敗與連續次數</th><th>新鮮度 / 延遲</th></tr></thead>
+    <tbody>{% for source in sources %}<tr>
+      <td><strong>{{ source['registry_source_id'] }}</strong><br>{{ source['platform'] }}</td>
+      <td>{{ source['publisher'] }}<br><span class="hash">{{ source['publisher_group'] }}</span></td>
+      <td><span class="status {{ source['source_status']|status_class }}">{{ source['source_status'] }}</span></td>
+      <td>{{ source['monitoring_status'] }}{% if source['latest_run_status'] %}<br>last: {{ source['latest_run_status'] }}{% endif %}</td>
+      <td>{% if source['expected_interval_minutes'] %}{{ source['expected_interval_minutes'] }} 分鐘{% else %}NOT_SCHEDULED{% endif %}</td>
+      <td>{{ source['last_success_at'] or 'NEVER' }}</td>
+      <td class="error-cell">{{ source['last_failure_reason'] or 'NONE' }}<br>連續 {{ source['consecutive_failures'] }} 次</td>
+      <td>最新內容：{{ source['latest_content_published_at'] or 'UNKNOWN' }}<br>平均發現延遲：{{ '%.1f'|format(source['average_latency']) if source['average_latency'] is not none else 'UNKNOWN' }} 分鐘</td>
+    </tr>{% endfor %}</tbody>
+  </table></div>
+{% endblock %}

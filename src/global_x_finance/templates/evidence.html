@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Evidence｜台灣官方資料 Demo{% endblock %}
+{% block content %}
+  <section class="page-title"><p class="eyebrow">RAW EVIDENCE</p><h2>最近官方原始記錄</h2><p>每筆資料保留官方 URL、發布日期、抓取時間與 SHA-256 內容哈希。</p></section>
+  <div class="evidence-list">
+    {% for item in evidence_rows %}
+      <article class="evidence-card">
+        <div><span class="dataset">{{ item['dataset_name'] or '未標示資料集' }}</span><h3>{{ item['summary'] }}</h3><p>{{ item['publisher'] }} · {{ item['registry_source_id'] }}</p></div>
+        <dl><div><dt>published_at</dt><dd>{{ item['published_at'] or 'UNKNOWN' }}</dd></div><div><dt>fetched_at</dt><dd>{{ item['fetched_at'] }}</dd></div><div><dt>content_hash</dt><dd class="hash">{{ item['content_hash'] }}</dd></div></dl>
+        <a class="detail-link" href="{{ url_for('evidence_detail', item_id=item['id']) }}">查看 Evidence 詳情 →</a>
+      </article>
+    {% else %}<div class="empty">尚無 Evidence。請先在首頁同步台灣官方資料。</div>{% endfor %}
+  </div>
+{% endblock %}

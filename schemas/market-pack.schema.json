@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:global-x-finance:schema:market-pack:0.1.0",
+  "title": "Global X Finance Market Pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "pack_id", "status", "country", "country_code",
+    "primary_language", "secondary_language", "timezone", "currency",
+    "main_stock_market", "source_registry_file", "official_sources",
+    "financial_media", "industry_media", "forums", "social_platforms",
+    "x_sources", "youtube_sources", "local_kols", "trending_keywords",
+    "stock_keywords", "local_user_interests", "content_preferences",
+    "commercial_topics", "prohibited_or_sensitive_topics", "x_ads_policy",
+    "local_financial_marketing_rules", "source_reliability_levels",
+    "publisher_group_rule", "hot_topic_window_minutes",
+    "drafts_per_day_target", "publication_mode", "human_reviewer"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "pack_id": {"type": "string", "pattern": "^market\\.[a-z]{2}\\.v[0-9]+\\.[0-9]+$"},
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT_VERIFIED_FOUNDATION", "DRAFT_MISSING_VERIFIED_SOURCES", "NEEDS_VERIFICATION", "UNKNOWN"]
+    },
+    "country": {"type": "string", "minLength": 1},
+    "country_code": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "primary_language": {"type": "string", "minLength": 2},
+    "secondary_language": {"type": ["string", "null"]},
+    "timezone": {"type": "string", "minLength": 1},
+    "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+    "main_stock_market": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "name"],
+        "properties": {"id": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}}
+      }
+    },
+    "source_registry_file": {"type": ["string", "null"], "minLength": 1},
+    "official_sources": {"$ref": "#/$defs/stringArray"},
+    "financial_media": {"$ref": "#/$defs/stringArray"},
+    "industry_media": {"$ref": "#/$defs/stringArray"},
+    "forums": {"$ref": "#/$defs/stringArray"},
+    "social_platforms": {"$ref": "#/$defs/stringArray"},
+    "x_sources": {"$ref": "#/$defs/stringArray"},
+    "youtube_sources": {"$ref": "#/$defs/stringArray"},
+    "local_kols": {"$ref": "#/$defs/stringArray"},
+    "trending_keywords": {"$ref": "#/$defs/statusValues"},
+    "stock_keywords": {"$ref": "#/$defs/statusValues"},
+    "local_user_interests": {"$ref": "#/$defs/statusHypotheses"},
+    "content_preferences": {"$ref": "#/$defs/statusHypotheses"},
+    "commercial_topics": {"$ref": "#/$defs/statusValues"},
+    "prohibited_or_sensitive_topics": {"$ref": "#/$defs/stringArray"},
+    "x_ads_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["financial_services", "deceptive_content", "checked_at"],
+      "properties": {
+        "financial_services": {"$ref": "#/$defs/httpsUrl"},
+        "deceptive_content": {"$ref": "#/$defs/httpsUrl"},
+        "checked_at": {"type": "string", "format": "date"}
+      }
+    },
+    "local_financial_marketing_rules": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status"],
+      "properties": {"status": {"type": "string", "enum": ["UNKNOWN_NEEDS_LEGAL_VERIFICATION", "NEEDS_VERIFICATION", "UNKNOWN", "VERIFIED"]}}
+    },
+    "source_reliability_levels": {
+      "type": "object", "additionalProperties": false,
+      "required": ["A", "B", "C", "D"],
+      "properties": {
+        "A": {"type": "string", "minLength": 1}, "B": {"type": "string", "minLength": 1},
+        "C": {"type": "string", "minLength": 1}, "D": {"type": "string", "minLength": 1}
+      }
+    },
+    "publisher_group_rule": {"type": "string", "minLength": 1},
+    "hot_topic_window_minutes": {"type": "integer", "minimum": 1},
+    "drafts_per_day_target": {"type": "integer", "minimum": 0},
+    "production_model": {"type": "string", "minLength": 1},
+    "publication_mode": {"const": "DRAFT_ONLY"},
+    "human_reviewer": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "stringArray": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "httpsUrl": {"type": "string", "pattern": "^https://"},
+    "statusValues": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "values"],
+      "properties": {"status": {"type": "string", "minLength": 1}, "values": {"$ref": "#/$defs/stringArray"}}
+    },
+    "statusHypotheses": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "hypotheses"],
+      "properties": {"status": {"type": "string", "minLength": 1}, "hypotheses": {"$ref": "#/$defs/stringArray"}}
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "DRAFT_MISSING_VERIFIED_SOURCES"}}, "required": ["status"]},
+      "then": {
+        "properties": {
+          "source_registry_file": {"type": "null"},
+          "official_sources": {"maxItems": 0},
+          "financial_media": {"maxItems": 0},
+          "industry_media": {"maxItems": 0},
+          "x_sources": {"maxItems": 0},
+          "youtube_sources": {"maxItems": 0},
+          "local_kols": {"maxItems": 0}
+        }
+      }
+    }
+  ]
+}
