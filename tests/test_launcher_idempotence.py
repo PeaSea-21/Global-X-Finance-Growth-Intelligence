@@ -28,3 +28,7 @@ def test_windows_launcher_files_have_required_steps(root):
     assert "global_x_finance.cli radar registry-import" in powershell
     assert "global_x_finance.cli normalize twse" in powershell
     assert "global_x_finance.webapp" in powershell
+    assert "Test-CurrentRadar" in powershell
+    assert "ben-stock-radar.topic-queue.v1" in powershell
+    assert "8765, 8766, 8767" in powershell
+    assert "--port $launchPort --open-browser" in powershell

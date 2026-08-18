@@ -1,8 +1,8 @@
 source_id,source_url,publisher,publisher_group,market,market_code,source_type,signal_role,reliability_level,verified_at,evidence_url,registry_status,collection_status,collection_method,notes
 TW-A01,https://www.twse.com.tw/,臺灣證券交易所,twse,Taiwan,TW,OFFICIAL_EXCHANGE,FACT,A,2026-08-13,https://www.twse.com.tw/,ACTIVE,MANUAL_OR_DOWNLOAD,HTML_DOWNLOAD,"市场行情、指数、法人及公告；数字需记录查询时间"
 TW-A02,https://openapi.twse.com.tw/,臺灣證券交易所 OpenAPI,twse,Taiwan,TW,OFFICIAL_API,FACT,A,2026-08-13,https://openapi.twse.com.tw/,ACTIVE,API_VERIFIED,OPENAPI,"已确认 OpenAPI 入口；不得假设包含实时逐笔"
-TW-A03,https://mops.twse.com.tw/mops/web/index,公開資訊觀測站,twse,Taiwan,TW,COMPANY_DISCLOSURE,FACT,A,2026-08-13,https://mops.twse.com.tw/mops/web/index,ACTIVE,NEEDS_TECHNICAL_VALIDATION,HTML_DOWNLOAD,"重大讯息、财报、法说会、月营收；个股新闻首要回查源"
-TW-A04,https://www.tpex.org.tw/,證券櫃檯買賣中心,tpex,Taiwan,TW,OFFICIAL_EXCHANGE,FACT,A,2026-08-13,https://www.tpex.org.tw/,ACTIVE,NEEDS_TECHNICAL_VALIDATION,HTML_DOWNLOAD,"覆盖上柜与兴柜；不得与 TWSE 市场字段混淆"
+TW-A03,https://openapi.twse.com.tw/v1/opendata/t187ap04_L,公開資訊觀測站,twse,Taiwan,TW,COMPANY_DISCLOSURE,FACT,A,2026-08-17,https://openapi.twse.com.tw/,ACTIVE,API_VERIFIED,OPENAPI,"上市重大讯息走 TWSE OpenAPI；上柜重大讯息走 TPEx OpenAPI；技术已验证，内部使用、公开展示与再分发许可保持 UNKNOWN"
+TW-A04,https://www.tpex.org.tw/openapi/,證券櫃檯買賣中心,tpex,Taiwan,TW,OFFICIAL_API,FACT,A,2026-08-17,https://www.tpex.org.tw/openapi/,ACTIVE,API_VERIFIED,OPENAPI,"上柜历史行情走官方 OpenAPI；不得与 TWSE 市场字段混淆；内部使用、公开展示与再分发许可保持 UNKNOWN"
 TW-A06,https://www.taifex.com.tw/,臺灣期貨交易所,taifex,Taiwan,TW,OFFICIAL_EXCHANGE,FACT,A,2026-08-13,https://www.taifex.com.tw/enl/eIndex,ACTIVE,NEEDS_TECHNICAL_VALIDATION,HTML_DOWNLOAD,"期货、选择权、夜盘与结算资料"
 TW-A07,https://www.taifex.com.tw/cht/3/futContractsDate,臺灣期貨交易所三大法人統計,taifex,Taiwan,TW,OFFICIAL_DATA,FACT,A,2026-08-13,https://www.taifex.com.tw/enl/eng3/totalTableDate,ACTIVE,NEEDS_TECHNICAL_VALIDATION,HTML_DOWNLOAD,"需保存日期、契约和单位"
 TW-A09,"https://www.fsc.gov.tw/ch/home.jsp?id=96&parentpath=0,2",金融監督管理委員會,fsc,Taiwan,TW,REGULATOR,FACT,A,2026-08-13,"https://www.fsc.gov.tw/ch/home.jsp?id=96&parentpath=0,2",ACTIVE,MANUAL_OR_HTML,HTML,"金融政策、处分与澄清；保留原文"

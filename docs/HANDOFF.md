@@ -1,15 +1,12 @@
 # Handoff
 
-- 更新时间：2026-08-16 10:42:19 +08:00
-- Direction: build a human-operated **财经账号实时内容供给工作台** for roughly 10–15 content staff; no automatic posting or investment advice.
-- Implemented flow: TWSE official OpenAPI Evidence -> exact normalization -> rule cards, plus five X timelines and one TWSE YouTube Atom feed -> immutable radar Evidence -> health/recent-content UI.
-- Operating truth at audit time: the Windows radar task was installed and ready; its latest observed run returned exit code 0. The database held 1,786 raw items, 105 radar items, and 24 radar runs.
-- Cost truth: the current runtime has no AI/model bill and no official X API bill. TWSE, FxTwitter, and YouTube Atom are called without credentials; local SQLite/Flask storage is used.
-- Risk: FxTwitter is a third-party public adapter, while current X guidance requires the official API and official X reads are pay-per-use. Treat the current X path as a bounded prototype, not a durable free production entitlement.
-- Registry truth: 23 Taiwan entries comprise 6 active, 5 manual-only, 10 needing verification, and 2 blocked. Candidate media/regulator entries are not automatic data feeds.
-- Standalone brief: `deliverables/项目整体逻辑与数据源成本说明.md` contains the full nontechnical system logic, source, cost, and risk explanation.
-- US Market Pack remains empty and blocked pending a verified source registry.
-- Missing business inputs: real research/copy workflow paths, approved account voice, adoption decisions, and 1H/6H/24H performance data.
-- Git baseline is established on `main` and published to `origin` at `PeaSea-21/Global-X-Finance-Growth-Intelligence`; runtime databases, logs, local environments, credentials, caches, and generated ZIP archives remain ignored.
-- Recommended next task: decide the production X read-source strategy, then run a seven-day reliability/latency observation before expanding sources or building content-generation workflow.
-
+- 更新时间：2026-08-18 08:35:00 +08:00
+- BEN RADAR Step 4 Stock Workbench V0.1 is complete; V0.1 anomaly rules and thresholds were not changed.
+- Dynamic route: `http://127.0.0.1:8765/stock-radar` when the local Flask process is running.
+- Public read-only EOD snapshot: `https://ben-finance-radar.nels-sedhq.chatgpt.site` (Sites version 4).
+- Both surfaces use the 2026-08-17 Anomaly Engine Replay and show 20 clickable stocks with actual volume, prior-20 median, RVOL, liquidity, Chinese rule labels, explanations, and streak context.
+- Stock detail uses real unified EOD OHLCV; 1M/3M candles, volume bars, and prior-20/prior-40 high lines are implemented. The bounded store currently supplies about 50 sessions, so 3M shows all available history rather than inventing missing days.
+- Early momentum and persistence are display-only and do not alter ranking. Missing MOPS Evidence is shown as unconfirmed rather than inferred.
+- Desktop 1280px and mobile 390px passed with no horizontal overflow or page console errors. Full repository check passed 94 tests plus credential scan; public Sites tests passed 2/2.
+- Public snapshot refresh remains manual. Dynamic cold render recomputes six Replay dates and can take roughly 15–20 seconds before the in-process cache is warm.
+- Recommended next task only if explicitly requested: human finance/content review of the 20 stocks and chart workflow; do not change rules from page impressions alone.

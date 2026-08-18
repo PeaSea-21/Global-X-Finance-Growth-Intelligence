@@ -3,6 +3,8 @@ EXPECTED_TABLES = {
     "normalized_items", "entities", "item_entities", "topics", "topic_items",
     "trend_snapshots", "claims", "evidence_links", "content_drafts",
     "verification_runs", "policy_snapshots", "compliance_checks", "review_decisions",
+    "official_source_permissions", "official_securities", "official_market_data_daily",
+    "official_disclosures",
 }
 
 
@@ -28,4 +30,3 @@ def test_unknown_and_needs_verification_can_be_saved(database):
     assert database.execute(
         "SELECT collection_status FROM sources WHERE source_id = 'TW-A01'"
     ).fetchone()[0] == "NEEDS_VERIFICATION"
-

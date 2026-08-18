@@ -34,3 +34,15 @@ Thumbs.db
 
 # Generated delivery archive (the reviewed source files remain in the repository)
 deliverables/*.zip
+deliverables/p03c_segments/
+deliverables/*.png
+
+# Local generated dependency and scratch work
+work/
+
+# Local site build output (source remains tracked)
+sites/**/node_modules/
+sites/**/.next/
+sites/**/.vinext/
+sites/**/.wrangler/
+sites/**/dist/

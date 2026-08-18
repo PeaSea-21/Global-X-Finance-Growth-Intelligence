@@ -36,8 +36,17 @@ REQUIRED_REGISTRY_FIELDS = {
     "category",
     "monitoring_method",
     "source_status",
+    "identity_verified",
+    "endpoint_verified",
+    "monitoring_method_verified",
+    "terms_status",
+    "commercial_use_status",
     "monitoring_status",
 }
+VERIFICATION_STATES = {"VERIFIED", "NOT_VERIFIED", "UNKNOWN"}
+TERMS_STATES = {"ALLOWED", "MANUAL_ONLY", "BLOCKED", "UNKNOWN"}
+COMMERCIAL_USE_STATES = {"ALLOWED", "MANUAL_ONLY", "BLOCKED", "UNKNOWN"}
+MONITORING_STATES = {"ACTIVE", "MANUAL_ONLY", "NEEDS_VERIFICATION", "BLOCKED"}
 
 
 def utc_now() -> datetime:
@@ -112,14 +121,25 @@ def load_realtime_registry(path: str | Path) -> list[dict[str, str]]:
         seen.add(source_id)
         if row["source_status"] not in SOURCE_STATUSES:
             raise ValidationError(f"Row {line_number}: unsupported source_status")
+        for field in (
+            "identity_verified", "endpoint_verified", "monitoring_method_verified"
+        ):
+            if row[field] not in VERIFICATION_STATES:
+                raise ValidationError(f"Row {line_number}: unsupported {field}")
+        if row["terms_status"] not in TERMS_STATES:
+            raise ValidationError(f"Row {line_number}: unsupported terms_status")
+        if row["commercial_use_status"] not in COMMERCIAL_USE_STATES:
+            raise ValidationError(f"Row {line_number}: unsupported commercial_use_status")
+        if row["monitoring_status"] not in MONITORING_STATES:
+            raise ValidationError(f"Row {line_number}: unsupported monitoring_status")
         if row["market"] != "TW":
             raise ValidationError(f"Row {line_number}: P02 registry market must be TW")
-        if row["source_status"] == "VERIFIED_ACTIVE":
+        if row["monitoring_status"] == "ACTIVE":
             required = ["verified_at", "verification_evidence_url", "expected_interval_minutes"]
             missing = [field for field in required if not row.get(field)]
             if missing:
                 raise ValidationError(
-                    f"Row {line_number}: VERIFIED_ACTIVE missing {', '.join(missing)}"
+                    f"Row {line_number}: ACTIVE missing {', '.join(missing)}"
                 )
             if not _valid_http_url(row["verification_evidence_url"]):
                 raise ValidationError(f"Row {line_number}: invalid verification_evidence_url")
@@ -130,6 +150,21 @@ def load_realtime_registry(path: str | Path) -> list[dict[str, str]]:
                 raise ValidationError(
                     f"Row {line_number}: expected_interval_minutes must be positive"
                 ) from error
+            unverified = [
+                field for field in (
+                    "identity_verified", "endpoint_verified", "monitoring_method_verified"
+                ) if row[field] != "VERIFIED"
+            ]
+            if unverified:
+                raise ValidationError(
+                    f"Row {line_number}: ACTIVE requires VERIFIED {', '.join(unverified)}"
+                )
+            if row["terms_status"] in {"MANUAL_ONLY", "BLOCKED"} or row[
+                "commercial_use_status"
+            ] in {"MANUAL_ONLY", "BLOCKED"}:
+                raise ValidationError(
+                    f"Row {line_number}: ACTIVE cannot have manual-only or blocked rights status"
+                )
         for url_field in ("profile_url", "channel_url", "verification_evidence_url"):
             if row.get(url_field) and not _valid_http_url(row[url_field]):
                 raise ValidationError(f"Row {line_number}: invalid {url_field}")
@@ -137,7 +172,7 @@ def load_realtime_registry(path: str | Path) -> list[dict[str, str]]:
 
 
 def _ensure_core_source(connection: sqlite3.Connection, row: dict[str, str]) -> str | None:
-    if row["source_status"] != "VERIFIED_ACTIVE":
+    if row["monitoring_status"] != "ACTIVE":
         existing = connection.execute(
             "SELECT id FROM sources WHERE source_id = ?", (row["registry_source_id"],)
         ).fetchone()
@@ -225,8 +260,10 @@ def import_realtime_registry(
                     account_handle, profile_url, channel_name, channel_id, channel_url,
                     publisher, publisher_group, market, language, category, verified_at,
                     verification_evidence_url, monitoring_method, source_status,
-                    monitoring_status, expected_interval_minutes, metadata_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    monitoring_status, expected_interval_minutes, metadata_json,
+                    identity_verified, endpoint_verified, monitoring_method_verified,
+                    terms_status, commercial_use_status, runtime_status
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(registry_source_id) DO UPDATE SET
                     core_source_id = excluded.core_source_id,
                     platform = excluded.platform,
@@ -245,13 +282,19 @@ def import_realtime_registry(
                     verification_evidence_url = excluded.verification_evidence_url,
                     monitoring_method = excluded.monitoring_method,
                     source_status = excluded.source_status,
-                    monitoring_status = CASE
-                        WHEN realtime_sources.last_success_at IS NOT NULL
-                        THEN realtime_sources.monitoring_status
-                        ELSE excluded.monitoring_status
-                    END,
+                    monitoring_status = excluded.monitoring_status,
                     expected_interval_minutes = excluded.expected_interval_minutes,
                     metadata_json = excluded.metadata_json,
+                    identity_verified = excluded.identity_verified,
+                    endpoint_verified = excluded.endpoint_verified,
+                    monitoring_method_verified = excluded.monitoring_method_verified,
+                    terms_status = excluded.terms_status,
+                    commercial_use_status = excluded.commercial_use_status,
+                    runtime_status = CASE
+                        WHEN realtime_sources.last_success_at IS NOT NULL
+                        THEN realtime_sources.runtime_status
+                        ELSE excluded.runtime_status
+                    END,
                     updated_at = CURRENT_TIMESTAMP
                 """,
                 (
@@ -277,9 +320,15 @@ def import_realtime_registry(
                     row["monitoring_status"],
                     interval,
                     json.dumps(metadata, ensure_ascii=False, sort_keys=True),
+                    row["identity_verified"],
+                    row["endpoint_verified"],
+                    row["monitoring_method_verified"],
+                    row["terms_status"],
+                    row["commercial_use_status"],
+                    row.get("runtime_status") or "NOT_STARTED",
                 ),
             )
-            if row["source_status"] == "VERIFIED_ACTIVE":
+            if row["monitoring_status"] == "ACTIVE":
                 connection.execute(
                     """
                     INSERT OR IGNORE INTO radar_scheduler_state (
@@ -418,7 +467,7 @@ class RealtimeRadar:
             return self.connection.execute(
                 """
                 SELECT * FROM realtime_sources
-                WHERE source_status = 'VERIFIED_ACTIVE' AND platform IN ('X','YOUTUBE')
+                WHERE monitoring_status = 'ACTIVE' AND platform IN ('X','YOUTUBE')
                 ORDER BY platform, registry_source_id
                 """
             ).fetchall()
@@ -426,7 +475,7 @@ class RealtimeRadar:
             """
             SELECT rs.* FROM realtime_sources rs
             JOIN radar_scheduler_state state ON state.realtime_source_id = rs.id
-            WHERE rs.source_status = 'VERIFIED_ACTIVE'
+            WHERE rs.monitoring_status = 'ACTIVE'
               AND rs.platform IN ('X','YOUTUBE')
               AND state.next_due_at <= ?
             ORDER BY rs.platform, rs.registry_source_id
@@ -441,7 +490,10 @@ class RealtimeRadar:
             finished = self.clock()
             return RadarCycleResult(cycle_id, iso(started), iso(finished), ())
         try:
-            results = [self._collect_source(row, cycle_id) for row in self._due_sources(force)]
+            results = [
+                self._collect_source(row, cycle_id, schedule_anchor=started)
+                for row in self._due_sources(force)
+            ]
             finished = self.clock()
             return RadarCycleResult(cycle_id, iso(started), iso(finished), tuple(results))
         finally:
@@ -477,7 +529,13 @@ class RealtimeRadar:
                 (owner_id,),
             )
 
-    def _collect_source(self, row: sqlite3.Row, cycle_id: str) -> SourceCycleResult:
+    def _collect_source(
+        self,
+        row: sqlite3.Row,
+        cycle_id: str,
+        *,
+        schedule_anchor: datetime,
+    ) -> SourceCycleResult:
         started = self.clock()
         started_mono = time.monotonic()
         run_id = str(uuid.uuid4())
@@ -572,7 +630,7 @@ class RealtimeRadar:
                 self.connection.execute(
                     """
                     UPDATE realtime_sources SET
-                        monitoring_status = 'CONTINUOUS_CYCLE_SUCCESS',
+                        runtime_status = 'CONTINUOUS_CYCLE_SUCCESS',
                         last_success_at = ?, last_failure_reason = NULL,
                         consecutive_failures = 0,
                         latest_content_published_at = COALESCE(?, latest_content_published_at),
@@ -581,7 +639,7 @@ class RealtimeRadar:
                     """,
                     (iso(finished), latest_published, row["id"]),
                 )
-                self._advance_schedule(row, cycle_id, started)
+                self._advance_schedule(row, cycle_id, schedule_anchor)
                 self.connection.execute(
                     """
                     INSERT INTO radar_runs (
@@ -621,14 +679,14 @@ class RealtimeRadar:
                 )
                 self.connection.execute(
                     """
-                    UPDATE realtime_sources SET monitoring_status = 'CONTINUOUS_CYCLE_FAILED',
+                    UPDATE realtime_sources SET runtime_status = 'CONTINUOUS_CYCLE_FAILED',
                         last_failure_at = ?, last_failure_reason = ?,
                         consecutive_failures = consecutive_failures + 1,
                         updated_at = CURRENT_TIMESTAMP WHERE id = ?
                     """,
                     (iso(finished), message, row["id"]),
                 )
-                self._advance_schedule(row, cycle_id, started)
+                self._advance_schedule(row, cycle_id, schedule_anchor)
                 self.connection.execute(
                     """
                     INSERT INTO radar_runs (
@@ -646,10 +704,13 @@ class RealtimeRadar:
                 row["registry_source_id"], "FAILED", 0, 0, 0, latency, message
             )
 
-    def _advance_schedule(self, row: sqlite3.Row, cycle_id: str, started: datetime) -> None:
-        # Align to whole minutes so a fixed Windows trigger does not drift behind
-        # next_due_at merely because the previous HTTP calls took a few seconds.
-        next_due = started.replace(second=0, microsecond=0) + timedelta(
+    def _advance_schedule(
+        self, row: sqlite3.Row, cycle_id: str, schedule_anchor: datetime
+    ) -> None:
+        # Anchor every source in one dispatcher cycle to the same whole minute.
+        # Otherwise sequential HTTP calls that cross a minute boundary split one
+        # source group across later Windows triggers.
+        next_due = schedule_anchor.replace(second=0, microsecond=0) + timedelta(
             minutes=int(row["expected_interval_minutes"])
         )
         self.connection.execute(
@@ -669,9 +730,9 @@ def radar_summary(connection: sqlite3.Connection) -> dict[str, Any]:
     totals = connection.execute(
         """
         SELECT COUNT(*) AS total,
-               SUM(CASE WHEN source_status = 'VERIFIED_ACTIVE' THEN 1 ELSE 0 END) AS active,
-               SUM(CASE WHEN source_status = 'NEEDS_VERIFICATION' THEN 1 ELSE 0 END) AS needs,
-               COUNT(DISTINCT CASE WHEN source_status = 'VERIFIED_ACTIVE' THEN publisher_group END)
+               SUM(CASE WHEN monitoring_status = 'ACTIVE' THEN 1 ELSE 0 END) AS active,
+               SUM(CASE WHEN monitoring_status = 'NEEDS_VERIFICATION' THEN 1 ELSE 0 END) AS needs,
+               COUNT(DISTINCT CASE WHEN monitoring_status = 'ACTIVE' THEN publisher_group END)
                    AS independent_active_groups
         FROM realtime_sources
         """

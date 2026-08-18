@@ -22,7 +22,7 @@ def test_verified_registry_audit_counts():
     report = validate_registry(INPUTS / "verified_source_registry.csv")
     assert len(report.rows) == 17
     assert report.active_count == 17
-    assert report.api_verified_count == 1
+    assert report.api_verified_count == 3
     assert "TW-B03" in report.blocked_source_ids
 
 
@@ -50,5 +50,4 @@ def test_active_does_not_imply_collection_permission(database):
     api_rows = database.execute(
         "SELECT source_id FROM sources WHERE collection_status = 'API_VERIFIED'"
     ).fetchall()
-    assert [row["source_id"] for row in api_rows] == ["TW-A02"]
-
+    assert [row["source_id"] for row in api_rows] == ["TW-A02", "TW-A03", "TW-A04"]

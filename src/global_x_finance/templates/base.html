@@ -1,30 +1,26 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="{% if language is defined and language == 'zh-cn' %}zh-Hans{% else %}zh-Hant{% endif %}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}台灣財經內容雷達 Demo{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   <header class="site-header">
     <div>
       <p class="eyebrow">GLOBAL X FINANCE INTELLIGENCE</p>
-      <h1>台灣財經內容雷達 Demo</h1>
+      <h1>{{ 'BEN 財經熱點雷達'|zh(language if language is defined else 'zh-tw') }}</h1>
     </div>
-    <span class="market-chip">目前市場：台灣 TW</span>
+    <span class="market-chip">{{ '目前市場：台灣 TW'|zh(language if language is defined else 'zh-tw') }}</span>
   </header>
   <nav class="nav">
-    <a href="{{ url_for('dashboard') }}">首頁</a>
-    <a href="{{ url_for('sources') }}">來源列表</a>
-    <a href="{{ url_for('radar_health') }}">來源健康</a>
-    <a href="{{ url_for('radar_feed') }}">最近兩小時</a>
-    <a href="{{ url_for('runs') }}">採集記錄</a>
-    <a href="{{ url_for('evidence') }}">Evidence</a>
-    <a href="{{ url_for('signals') }}">官方信號卡</a>
-    <a href="{{ url_for('compliance') }}">政策與合規</a>
+    <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}">{{ '機會雷達'|zh(language if language is defined else 'zh-tw') }}</a>
+    <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}#evidence-feed">{{ '聚合快訊'|zh(language if language is defined else 'zh-tw') }}</a>
+    <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}#anomalies">{{ '價量異動'|zh(language if language is defined else 'zh-tw') }}</a>
+    <a href="{{ url_for('radar_health') }}">{{ '資料源狀態'|zh(language if language is defined else 'zh-tw') }}</a>
   </nav>
   <main>{% block content %}{% endblock %}</main>
-  <footer>本頁面只展示官方原始資料，不構成投資建議。雷達只覆蓋已列出的來源，不代表全網；X、YouTube 與 KOL 內容預設為 OPINION，系統不會自動發帖。</footer>
+  <footer>{{ '本頁面只展示官方原始資料，不構成投資建議。內容雷達另含已抓取的新聞、X 原文與規則候選，只覆蓋已列出的來源，不代表全網；X、YouTube 與 KOL 內容預設為 OPINION，系統不會自動發帖。'|zh(language if language is defined else 'zh-tw') }}</footer>
 </body>
 </html>

@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block title %}{{ 'BEN 財經熱點雷達｜股票內容機會'|zh(language) }}{% endblock %}
+{% block body_class %}ai-radar-body ben-radar-body{% endblock %}
+{% block content %}
+<div class="ben-radar-page" data-workbench-version="ben-stock-workbench.v0.1">
+  <section class="workbench-hero">
+    <div>
+      <p class="radar-kicker">BEN RADAR · ANOMALY ENGINE {{ stock_workbench.rule_version }}</p>
+      <h2>⚡ {{ '市場異動'|zh(language) }}</h2>
+      <p>{{ '用自身20日基準辨識異常放量、區間突破與量價共振；以下不是交易建議。'|zh(language) }}</p>
+    </div>
+    <div class="workbench-status">
+      <strong>{{ stock_workbench.data_status }}</strong>
+      <span>{{ '數據對應交易日'|zh(language) }}：{{ stock_workbench.replay_date }}</span>
+      <small>TWSE {{ stock_workbench.participating.TWSE }} · TPEx {{ stock_workbench.participating.TPEX }}</small>
+      <nav class="ben-language-switch"><a class="{% if language == 'zh-tw' %}active{% endif %}" href="{{ url_for('ai_market_radar', window=window, category=category_filter|lower, source=source_filter, sort=sort, lang='zh-tw') }}">繁體中文</a><a class="{% if language == 'zh-cn' %}active{% endif %}" href="{{ url_for('ai_market_radar', window=window, category=category_filter|lower, source=source_filter, sort=sort, lang='zh-cn') }}">简体中文</a></nav>
+    </div>
+  </section>
+
+  <section class="market-anomaly-grid" id="market-anomalies" aria-label="{{ '市場異動Top20'|zh(language) }}">
+    {% for stock in stock_workbench.top20 %}
+    <button class="market-anomaly-card" type="button" data-stock-id="{{ stock.security_id }}">
+      <span class="stock-rank">{{ '%02d'|format(stock.rank) }}</span>
+      <span class="stock-identity"><b>{{ stock.name }}</b><small>{{ stock.ticker }} · {{ stock.market }}</small></span>
+      <span class="volume-primary"><small>{{ '實際成交量'|zh(language) }}</small><b>{{ '{:,}'.format(stock.current_volume) }}</b><em>{{ '股'|zh(language) }}</em></span>
+      <span class="rvol-primary"><small>RVOL</small><b>{{ '%.2f'|format(stock.volume_ratio) }}×</b><em>{{ '20日中位量'|zh(language) }} {{ '{:,}'.format(stock.median_volume_20d|int) }}</em></span>
+      <span class="stock-move {% if stock.change_pct > 0 %}positive{% elif stock.change_pct < 0 %}negative{% endif %}"><b>{{ '%+.2f'|format(stock.change_pct) }}%</b><small>{{ '收盤'|zh(language) }} {{ '%.2f'|format(stock.close) }}</small></span>
+      <span class="liquidity liquidity-{{ stock.liquidity_level|lower }}">{{ stock.liquidity_level }}</span>
+      <span class="rule-chips">{% for rule in stock.display_rules %}<i>{{ rule|zh(language) }}</i>{% endfor %}</span>
+      <span class="stock-why">{{ stock.why_selected|zh(language) }}</span>
+      {% if stock.consecutive_days >= 2 %}<span class="streak-badge">{{ '連續異動'|zh(language) }} {{ stock.consecutive_days }} {{ '日'|zh(language) }}</span>{% endif %}
+      <span class="card-arrow">›</span>
+    </button>
+    {% else %}<div class="radar-empty"><strong>{{ '最新異動引擎結果不可用'|zh(language) }}</strong><span>{{ '不使用舊股票信號層替代。'|zh(language) }}</span></div>{% endfor %}
+  </section>
+
+  <section class="anomaly-groups">
+    <article><header><div><p class="radar-kicker">EARLY MOMENTUM</p><h3>{{ '潛在先行動能'|zh(language) }}</h3></div><span>{{ stock_workbench.early_momentum|length }}</span></header><p>{{ '漲幅不大，但放量與突破規則已同時出現。此分組不改變排名。'|zh(language) }}</p><div>{% for stock in stock_workbench.early_momentum %}<button type="button" data-stock-id="{{ stock.security_id }}"><b>{{ stock.name }}</b><span>{{ '%+.2f'|format(stock.change_pct) }}% · RVOL {{ '%.2f'|format(stock.volume_ratio) }}×</span></button>{% else %}<small>{{ '本日Top20沒有符合條件的先行動能。'|zh(language) }}</small>{% endfor %}</div></article>
+    <article><header><div><p class="radar-kicker">PERSISTENT</p><h3>{{ '持續異動'|zh(language) }}</h3></div><span>{{ stock_workbench.persistent|length }}</span></header><p>{{ '最近6個完整交易日中，連續至少2日進入Top20。'|zh(language) }}</p><div>{% for stock in stock_workbench.persistent[:8] %}<span class="persistent-row"><b>{{ stock.name }}</b><em>{{ stock.ticker }} · {{ stock.market }}</em><strong>{{ '連續'|zh(language) }} {{ stock.longest_consecutive }} {{ '日'|zh(language) }}</strong></span>{% else %}<small>{{ '最近6個交易日無連續入榜股票。'|zh(language) }}</small>{% endfor %}</div></article>
+  </section>
+
+  <section class="opportunity-intro" id="opportunities"><div><p class="radar-kicker">CONTENT OPPORTUNITY RADAR</p><h2>{{ '機會雷達'|zh(language) }}</h2><p>{{ '市場異動之外，保留既有新聞與 X Evidence 選題流。'|zh(language) }}</p></div><a href="#evidence-feed">{{ '聚合快訊'|zh(language) }} ↓</a></section>
+
+  <section class="daily-summary" aria-label="{{ '今日摘要'|zh(language) }}">
+    <article><span>{{ '最高機會'|zh(language) }}</span><strong>{{ top_event.display_title_zh|zh(language) if top_event else '暫無符合事件'|zh(language) }}</strong><small>{% if top_event %}{{ top_event.score }}/100{% endif %}</small></article>
+    <article><span>{{ '升溫最快'|zh(language) }}</span><strong>{{ fastest_event.display_title_zh|zh(language) if fastest_event else '尚無可比較快照'|zh(language) }}</strong><small>{% if fastest_event %}{{ '%+.0f'|format(fastest_event.acceleration_pct) }}%{% endif %}</small></article>
+    <article><span>{{ '獨立來源最多'|zh(language) }}</span><strong>{{ broadest_event.display_title_zh|zh(language) if broadest_event else '暫無符合事件'|zh(language) }}</strong><small>{% if broadest_event %}{{ broadest_event.independent_count }} {{ '組'|zh(language) }}{% endif %}</small></article>
+  </section>
+
+  <section class="ben-toolbar">
+    <nav class="category-tabs" aria-label="{{ '分類'|zh(language) }}">
+      {% for key, label in [('ALL','全部'),('TW','台股'),('US','美股'),('AI','AI科技'),('MACRO','宏觀'),('OTHER','其他')] %}
+      <a class="{% if category_filter == key %}active{% endif %}" href="{{ url_for('ai_market_radar', window=window, category=key|lower, source=source_filter, sort=sort, lang=language) }}#opportunities">{{ label|zh(language) }} <b>{{ category_counts[key] }}</b></a>
+      {% endfor %}
+    </nav>
+    <div class="radar-filter-row">
+      <nav class="window-tabs" aria-label="{{ '時間範圍'|zh(language) }}">{% for hours in ['24','12','6'] %}<a class="{% if window == hours %}active{% endif %}" href="{{ url_for('ai_market_radar', window=hours, category=category_filter|lower, source=source_filter, sort=sort, lang=language) }}#opportunities">{{ hours }}H</a>{% endfor %}</nav>
+      <nav class="source-tabs" aria-label="{{ '來源類型'|zh(language) }}">{% for key, label in [('all','全部來源'),('news','新聞'),('x','X')] %}<a class="{% if source_filter == key %}active{% endif %}" href="{{ url_for('ai_market_radar', window=window, category=category_filter|lower, source=key, sort=sort, lang=language) }}#opportunities">{{ label|zh(language) }}</a>{% endfor %}</nav>
+      <form class="sort-form" method="get" action="{{ url_for('ai_market_radar') }}">
+        <input type="hidden" name="window" value="{{ window }}"><input type="hidden" name="category" value="{{ category_filter|lower }}"><input type="hidden" name="source" value="{{ source_filter }}"><input type="hidden" name="lang" value="{{ language }}">
+        <label for="sort">{{ '排序'|zh(language) }}</label><select id="sort" name="sort" onchange="this.form.submit()"><option value="heat" {% if sort == 'heat' %}selected{% endif %}>{{ '綜合熱度'|zh(language) }}</option><option value="growth" {% if sort == 'growth' %}selected{% endif %}>{{ '增長最快'|zh(language) }}</option><option value="discussion" {% if sort == 'discussion' %}selected{% endif %}>{{ '討論最多'|zh(language) }}</option><option value="latest" {% if sort == 'latest' %}selected{% endif %}>{{ '最新出現'|zh(language) }}</option><option value="impact" {% if sort == 'impact' %}selected{% endif %}>{{ '市場影響最大'|zh(language) }}</option></select>
+      </form>
+    </div>
+  </section>
+
+  <section class="opportunity-list">
+    {% for event in events %}
+    <article class="opportunity-card" data-event-id="{{ event.event_id }}" data-title="{{ event.display_title_zh|e }}" data-score="{{ event.score }}" data-tickers="{{ event.entities|join(',') }}" data-evidence-score="{{ event.evidence_score }}">
+      <header class="opportunity-head">
+        <div class="opportunity-rank">{{ '%02d'|format(loop.index) }}</div>
+        <div class="opportunity-heading">
+          <div class="event-badges">
+            {% if event.category == 'TW' %}<span class="event-badge tw">{{ '台股'|zh(language) }}</span>{% elif event.category == 'US' %}<span class="event-badge us">{{ '美股'|zh(language) }}</span>{% elif event.category == 'AI' %}<span class="event-badge ai">AI{{ '科技'|zh(language) }}</span>{% elif event.category == 'MACRO' %}<span class="event-badge macro">{{ '宏觀'|zh(language) }}</span>{% else %}<span class="event-badge other">{{ '其他'|zh(language) }}</span>{% endif %}
+            <span class="event-badge trend {{ event.trend|lower }}">{% if event.trend == 'NEW' %}● {{ '新出現'|zh(language) }}{% elif event.trend == 'HEATING' %}↑ {{ '快速升溫'|zh(language) }}{% elif event.trend == 'COOLING' %}↓ {{ '降溫'|zh(language) }}{% else %}→ {{ '持續'|zh(language) }}{% endif %}</span>
+            {% if event.type == 'NEWS_X' %}<span class="event-badge cross">{{ '新聞＋X'|zh(language) }}</span>{% endif %}
+          </div>
+          <h3>{{ event.display_title_zh|zh(language) }}</h3><p class="summary-method">{{ event.title_method|zh(language) }} · {{ event.latest_update_at|taipei_time(language) }}</p>
+        </div>
+        <div class="opportunity-score"><span>{{ '熱度'|zh(language) }}</span><strong>{{ event.heat_score }}</strong><small>/100</small>{% if event.acceleration_pct is not none %}<em>{{ '%+.0f'|format(event.acceleration_pct) }}%</em>{% endif %}</div>
+      </header>
+
+      <div class="opportunity-body">
+        <div class="opportunity-main">
+          <p class="event-summary">{{ event.summary_zh|zh(language) }}</p>
+          <div class="signal-strip"><span><b>{{ event.independent_count }}</b>{{ '獨立發布方'|zh(language) }}</span><span><b>{{ event.news_count }}</b>{{ '新聞來源'|zh(language) }}</span><span><b>{{ event.x_count }}</b>X {{ '帳號'|zh(language) }}</span><span><b>{{ event.evidence_score }}/25</b>{{ '證據品質'|zh(language) }}</span><span><b>{{ '%.0f'|format(event.velocity_per_hour) if event.velocity_per_hour is not none else '—' }}</b>{{ '傳播/小時'|zh(language) }}</span></div>
+          {% if event.related_stocks %}<div class="stock-tags"><strong>{{ '相關股票'|zh(language) }}</strong>{% for stock in event.related_stocks %}<span title="{{ stock.relationship_label|zh(language) }}">{{ stock.ticker }} · {{ stock.relationship_label|zh(language) }}</span>{% endfor %}</div>{% endif %}
+          <div class="why-impact"><strong>{{ '市場解讀'|zh(language) }}</strong><p>{{ event.why_it_matters|zh(language) }}</p></div>
+          {% if event.market_response %}<div class="market-response"><strong>{{ '市場響應'|zh(language) }}</strong>{% for stock in event.market_response %}<span>{{ stock.stock_code }} {{ '%+.2f'|format(stock.change_pct) }}% · RVOL {{ '%.1f'|format(stock.rvol) }}×</span>{% endfor %}</div>{% endif %}
+        </div>
+
+        <aside class="content-opportunity">
+          {% set stars = ((event.content_score / 20)|round(0, 'ceil')|int) %}
+          <div class="content-score"><span>{{ '內容機會'|zh(language) }}</span><strong>{{ '★' * stars }}{{ '☆' * (5 - stars) }}</strong><em>{{ event.content_score }}/100</em></div>
+          <div class="format-tags">{% for format in event.content_formats %}<span>{{ format|zh(language) }}</span>{% endfor %}</div>
+          <p><b>{{ '推薦角度'|zh(language) }}</b>{{ event.recommended_angle|zh(language) }}</p>
+          <div class="queue-actions"><button type="button" class="queue-button" data-action="queued">＋ {{ '加入選題池'|zh(language) }}</button><button type="button" class="ignore-button" data-action="ignored">{{ '忽略'|zh(language) }}</button></div>
+          <label class="note-field"><span>{{ '備註'|zh(language) }}</span><input type="text" maxlength="240" placeholder="{{ '例如：等公司公告後再寫'|zh(language) }}"></label>
+        </aside>
+      </div>
+
+      <details class="evidence-drawer" {% if loop.first %}id="evidence-feed"{% endif %}>
+        <summary><span>{{ '證據來源'|zh(language) }} {{ event['items']|length }}</span><small>{{ '展開全部 Evidence 與核實清單'|zh(language) }} ›</small></summary>
+        <div class="evidence-grid"><div><h4>{{ '事實來源與原文'|zh(language) }}</h4>{% for item in event['items'] %}<a href="{{ item.url }}" target="_blank" rel="noreferrer"><b>{{ item.kind }} · {{ item.publisher }}</b><time>{{ item.published_at|taipei_time(language) }}</time><span>{{ item.text }}</span></a>{% endfor %}</div><div class="verification-list"><h4>{{ '下一步核實'|zh(language) }}</h4><ol>{% for question in event.questions %}<li>{{ question|zh(language) }}</li>{% endfor %}</ol><p>{{ 'X 帳號內容預設視為觀點；新聞與同一 publisher_group 的轉載不重複計為獨立確認。'|zh(language) }}</p></div></div>
+      </details>
+    </article>
+    {% else %}<div class="radar-empty"><strong>{{ ('最近' ~ window ~ '小時沒有符合目前篩選的股票內容機會。')|zh(language) }}</strong><span>{{ '系統不使用舊資料補數，也不製造替代行情。'|zh(language) }}</span></div>{% endfor %}
+  </section>
+
+  {% if not show_all and events_total > events|length %}<div class="show-more"><a href="{{ url_for('ai_market_radar', window=window, category=category_filter|lower, source=source_filter, sort=sort, lang=language, show='all') }}#opportunities">{{ '查看更多機會'|zh(language) }} ({{ events_total - events|length }})</a></div>{% endif %}
+
+  <section class="queue-dock" aria-live="polite"><div><strong>{{ '本地選題池'|zh(language) }} <span id="queue-count">0</span></strong><small>{{ '只保存在此瀏覽器，可匯出交接'|zh(language) }}</small></div><button type="button" id="export-json">JSON</button><button type="button" id="export-csv">CSV</button><button type="button" id="restore-items">{{ '恢復已忽略'|zh(language) }}</button></section>
+
+</div>
+
+<div class="stock-drawer-backdrop" id="stock-drawer" hidden>
+  <aside class="stock-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <button class="drawer-close" type="button" aria-label="{{ '關閉'|zh(language) }}">×</button>
+    <header><div><p class="radar-kicker">STOCK DETAIL · <span id="drawer-market"></span></p><h2 id="drawer-title"></h2><p id="drawer-security"></p></div><div class="drawer-status"><strong>EOD</strong><span id="drawer-date"></span></div></header>
+    <section class="drawer-metrics" id="drawer-metrics"></section>
+    <section class="drawer-chart"><header><div><h3>{{ '真實日K與成交量'|zh(language) }}</h3><p>{{ '水平虛線為 Replay 日之前的20D / 40D高點'|zh(language) }}</p></div><nav><button type="button" data-range="22" class="active">1M</button><button type="button" data-range="66">3M</button></nav></header><canvas id="stock-chart" width="960" height="420"></canvas><div class="chart-legend"><span><i class="up"></i>{{ '上漲'|zh(language) }}</span><span><i class="down"></i>{{ '下跌'|zh(language) }}</span><span><i class="line20"></i>prior 20D high</span><span><i class="line40"></i>prior 40D high</span></div></section>
+    <section class="drawer-explanation"><div><h3>{{ '異動解釋'|zh(language) }}</h3><div id="drawer-rules" class="rule-chips"></div><p id="drawer-why"></p><details><summary>raw_metrics</summary><pre id="drawer-raw"></pre></details></div><div><h3>{{ '信息催化劑'|zh(language) }}</h3><div id="drawer-catalyst"></div></div></section>
+  </aside>
+</div>
+
+<script>
+(() => {
+  const details = {{ stock_workbench.details|tojson }};
+  const drawer = document.getElementById('stock-drawer');
+  const canvas = document.getElementById('stock-chart');
+  let active = null;
+  const number = value => Number(value || 0).toLocaleString('zh-TW');
+  const metric = (label, value, primary=false) => `<div class="${primary ? 'primary' : ''}"><span>${label}</span><strong>${value}</strong></div>`;
+  function draw(history, range, metrics) {
+    const rows = history.slice(-range); const ctx = canvas.getContext('2d');
+    const ratio = window.devicePixelRatio || 1; const width = canvas.clientWidth; const height = 420;
+    canvas.width = width * ratio; canvas.height = height * ratio; ctx.setTransform(ratio,0,0,ratio,0,0);
+    ctx.clearRect(0,0,width,height); if (!rows.length) return;
+    const pad={l:54,r:18,t:22,b:25}, priceH=270, volumeTop=310, volumeH=82;
+    const highs=rows.map(r=>r.high), lows=rows.map(r=>r.low); const markers=[metrics.prior_20d_high,metrics.prior_40d_high].filter(Boolean);
+    const max=Math.max(...highs,...markers), min=Math.min(...lows,...markers); const span=max-min||1; const maxVol=Math.max(...rows.map(r=>r.volume),1);
+    const y=value=>pad.t+(max-value)/span*priceH; const step=(width-pad.l-pad.r)/rows.length; const body=Math.max(2,Math.min(9,step*.62));
+    ctx.font='11px system-ui'; ctx.fillStyle='#77879a'; ctx.strokeStyle='#e5ebf1'; ctx.lineWidth=1;
+    for(let i=0;i<5;i++){const yy=pad.t+priceH*i/4;ctx.beginPath();ctx.moveTo(pad.l,yy);ctx.lineTo(width-pad.r,yy);ctx.stroke();const p=max-span*i/4;ctx.fillText(p.toFixed(2),4,yy+4)}
+    [[metrics.prior_20d_high,'#7c3aed','20D'],[metrics.prior_40d_high,'#f59e0b','40D']].forEach(([value,color,label])=>{if(!value)return;const yy=y(value);ctx.save();ctx.setLineDash([6,5]);ctx.strokeStyle=color;ctx.beginPath();ctx.moveTo(pad.l,yy);ctx.lineTo(width-pad.r,yy);ctx.stroke();ctx.restore();ctx.fillStyle=color;ctx.fillText(`${label} ${Number(value).toFixed(2)}`,pad.l+5,yy-5)});
+    rows.forEach((row,index)=>{const x=pad.l+step*(index+.5);const up=row.close>=row.open;const color=up?'#e23b3b':'#14956f';ctx.strokeStyle=color;ctx.fillStyle=color;ctx.beginPath();ctx.moveTo(x,y(row.high));ctx.lineTo(x,y(row.low));ctx.stroke();const top=y(Math.max(row.open,row.close));const h=Math.max(1,Math.abs(y(row.open)-y(row.close)));ctx.fillRect(x-body/2,top,body,h);const vh=row.volume/maxVol*volumeH;ctx.globalAlpha=.72;ctx.fillRect(x-body/2,volumeTop+volumeH-vh,body,vh);ctx.globalAlpha=1});
+    ctx.fillStyle='#77879a';const labels=[0,Math.floor((rows.length-1)/2),rows.length-1];labels.forEach(i=>ctx.fillText(rows[i].date.slice(5),pad.l+step*(i+.5)-14,height-5));
+  }
+  function openStock(id){active=details[id];if(!active)return;drawer.hidden=false;document.body.classList.add('drawer-open');
+    document.getElementById('drawer-title').textContent=active.name;document.getElementById('drawer-security').textContent=`${active.ticker} · ${active.security_id}`;document.getElementById('drawer-market').textContent=active.market;document.getElementById('drawer-date').textContent=`數據對應交易日 ${active.replay_date}`;
+    document.getElementById('drawer-metrics').innerHTML=metric('實際成交量',`${number(active.current_volume)} 股`,true)+metric('RVOL',`${active.volume_ratio.toFixed(2)}×`,true)+metric('20日中位量',`${number(active.median_volume_20d)} 股`)+metric('收盤價',active.close.toFixed(2))+metric('漲跌幅',`${active.change_pct>=0?'+':''}${active.change_pct.toFixed(2)}%`)+metric('流動性',active.liquidity_level);
+    document.getElementById('drawer-rules').innerHTML=active.display_rules.map(rule=>`<i>${rule}</i>`).join('');document.getElementById('drawer-why').textContent=active.why_selected;document.getElementById('drawer-raw').textContent=JSON.stringify(active.raw_metrics,null,2);
+    const catalyst=document.getElementById('drawer-catalyst'); catalyst.innerHTML=active.disclosures.length?active.disclosures.map(item=>`<a href="${item.official_url}" target="_blank" rel="noreferrer"><b>${item.subject}</b><span>${item.announced_at||item.event_date||'日期未知'} · MOPS ↗</span></a>`).join(''):'<p>信息催化劑：尚未確認</p>';
+    document.querySelectorAll('[data-range]').forEach(button=>button.classList.toggle('active',button.dataset.range==='22'));requestAnimationFrame(()=>draw(active.history,22,active.raw_metrics));
+  }
+  document.querySelectorAll('[data-stock-id]').forEach(button=>button.addEventListener('click',()=>openStock(button.dataset.stockId)));
+  document.querySelector('.drawer-close').addEventListener('click',()=>{drawer.hidden=true;document.body.classList.remove('drawer-open')});drawer.addEventListener('click',event=>{if(event.target===drawer)document.querySelector('.drawer-close').click()});
+  document.querySelectorAll('[data-range]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-range]').forEach(item=>item.classList.toggle('active',item===button));draw(active.history,Number(button.dataset.range),active.raw_metrics)}));
+  window.addEventListener('resize',()=>{if(active&&!drawer.hidden){const selected=document.querySelector('[data-range].active');draw(active.history,Number(selected?.dataset.range||22),active.raw_metrics)}});
+})();
+</script>
+
+<script>
+(() => {
+  const storageKey = 'ben-stock-radar.topic-queue.v1';
+  const testMode = {{ 'true' if test_mode else 'false' }};
+  const testKey = 'ben-stock-radar.ben-test.v1';
+  const testState = (() => { try { return JSON.parse(localStorage.getItem(testKey) || '{}'); } catch (_) { return {}; } })();
+  const track = (name, eventId) => { if (!testMode || testState[name]) return; const startedAt = testState.test_start?.at || new Date().toISOString(); const startedMs = Date.parse(startedAt); testState[name] = { at: new Date().toISOString(), elapsedMs: Math.max(0, Date.now() - startedMs), event_id: eventId || null }; localStorage.setItem(testKey, JSON.stringify(testState)); };
+  if (testMode && !testState.test_start) { testState.test_start = { at: new Date().toISOString(), elapsedMs: 0, event_id: null }; localStorage.setItem(testKey, JSON.stringify(testState)); }
+  const parse = () => { try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch (_) { return {}; } };
+  let state = parse(); const cards = [...document.querySelectorAll('.opportunity-card')];
+  const save = () => { localStorage.setItem(storageKey, JSON.stringify(state)); render(); };
+  const render = () => { cards.forEach(card => { const item = state[card.dataset.eventId] || {}; card.dataset.localStatus = item.status || ''; card.hidden = item.status === 'ignored'; card.querySelectorAll('[data-action]').forEach(button => button.classList.toggle('selected', button.dataset.action === item.status)); const note = card.querySelector('.note-field input'); if (document.activeElement !== note) note.value = item.note || ''; }); document.getElementById('queue-count').textContent = Object.values(state).filter(item => item.status === 'queued').length; };
+  cards.forEach(card => { card.addEventListener('click', () => track('first_event_click', card.dataset.eventId), {once:true}); const drawer = card.querySelector('.evidence-drawer'); drawer.addEventListener('toggle', () => { if (drawer.open) track('evidence_open', card.dataset.eventId); }); card.querySelectorAll('[data-action]').forEach(button => button.addEventListener('click', () => { const id = card.dataset.eventId; const previous = state[id] || {}; state[id] = { ...previous, id, title: card.dataset.title, score: Number(card.dataset.score), evidenceScore: Number(card.dataset.evidenceScore), tickers: card.dataset.tickers, status: previous.status === button.dataset.action ? '' : button.dataset.action, updatedAt: new Date().toISOString() }; if (button.dataset.action === 'queued') track('topic_saved', id); save(); })); card.querySelector('.note-field input').addEventListener('change', event => { const id = card.dataset.eventId; state[id] = { ...(state[id] || {}), id, title: card.dataset.title, score: Number(card.dataset.score), tickers: card.dataset.tickers, note: event.target.value, updatedAt: new Date().toISOString() }; save(); }); });
+  const download = (name, type, content) => { const link = document.createElement('a'); link.href = URL.createObjectURL(new Blob([content], {type})); link.download = name; link.click(); URL.revokeObjectURL(link.href); };
+  document.getElementById('export-json').addEventListener('click', () => download('ben-topic-pool.json', 'application/json', JSON.stringify(Object.values(state), null, 2)));
+  document.getElementById('export-csv').addEventListener('click', () => { const safe = value => { let text = String(value ?? ''); if (/^[=+\-@]/.test(text)) text = "'" + text; return '"' + text.replaceAll('"','""') + '"'; }; const rows = [['id','status','title','score','tickers','note','updatedAt'], ...Object.values(state).map(item => [item.id,item.status,item.title,item.score,item.tickers,item.note,item.updatedAt])]; download('ben-topic-pool.csv', 'text/csv;charset=utf-8', '\ufeff' + rows.map(row => row.map(safe).join(',')).join('\r\n')); });
+  document.getElementById('restore-items').addEventListener('click', () => { Object.values(state).forEach(item => { if (item.status === 'ignored') item.status = ''; }); save(); }); render();
+})();
+</script>
+{% endblock %}

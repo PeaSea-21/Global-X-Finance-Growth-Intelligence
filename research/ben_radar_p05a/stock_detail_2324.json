@@ -1,0 +1,51 @@
+{
+  "security_id": "TWSE:2324",
+  "ticker": "2324",
+  "market": "TW",
+  "company_name": "仁寶",
+  "data_date": "2026-08-14",
+  "price": 43.2,
+  "change_pct": 9.9237,
+  "volume": 402245118,
+  "volume_baseline_20d_median": 46568421.5,
+  "volume_ratio": 8.6377,
+  "turnover": 17309022890,
+  "turnover_baseline_20d_median": 1667214815.5,
+  "turnover_ratio": 10.382,
+  "news_count": 0,
+  "x_count": 0,
+  "publisher_count": 0,
+  "event_count": 0,
+  "related_event_ids": [],
+  "component_scores": {
+    "price": 25,
+    "volume": 25,
+    "catalyst": 0,
+    "breadth": 0
+  },
+  "hot_score": 50,
+  "abnormal_flags": [
+    "PRICE_SPIKE",
+    "VOLUME_SPIKE",
+    "TURNOVER_SPIKE",
+    "MULTI_SIGNAL"
+  ],
+  "reasons": [
+    "收盤日變動 +9.92%",
+    "成交量為前20日中位數 8.64 倍"
+  ],
+  "data_quality": "COMPLETE",
+  "updated_at": "2026-08-17T06:14:58.641702+00:00",
+  "source_url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20260801&stockNo=2324&response=json",
+  "linked_events": [],
+  "method": {
+    "baseline": "latest completed session versus prior 20 trading-session median",
+    "weights": {
+      "price": 25,
+      "volume": 25,
+      "catalyst": 30,
+      "breadth": 20
+    },
+    "future_leakage": false
+  }
+}

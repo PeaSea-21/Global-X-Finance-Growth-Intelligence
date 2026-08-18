@@ -113,7 +113,9 @@ python -m global_x_finance.cli radar registry-import --db data/taiwan-demo.db --
 powershell -ExecutionPolicy Bypass -File scripts/install_realtime_radar_task.ps1
 ```
 
-调度器每 10 分钟运行。已列 X 账号每 10 分钟到期，已核验 YouTube 频道每 30 分钟到期。初次回填不进入平均实时延迟；失败保留上次成功快照。X 使用 xHotTopic 的第三方只读发现适配器，不是官方 X API，也不代表覆盖整个 X 或平台 SLA。
+调度器每 10 分钟运行。已列 X 账号每 10 分钟到期，已核验 YouTube 频道每 30 分钟到期。当前只有一个 TWSE 官方 YouTube 频道，页面标为“初始验证覆盖”，不是“台湾 YouTube 覆盖完成”。初次回填不进入平均实时延迟；失败保留上次成功快照。X 使用 xHotTopic 的第三方只读发现适配器，不是官方 X API，也不代表覆盖整个 X 或平台 SLA。
+
+实时注册表把六项状态分开保存：`identity_verified`、`endpoint_verified`、`monitoring_method_verified`、`terms_status`、`commercial_use_status` 和 `monitoring_status`。其中 `monitoring_status` 只允许 `ACTIVE`、`MANUAL_ONLY`、`NEEDS_VERIFICATION`、`BLOCKED`。公开入口可访问不代表已获商业监控授权；条款或商业使用为 `UNKNOWN` 时，系统不会推断为允许。最近一次运行结果另存在 `runtime_status`，不会覆盖治理状态。
 
 ## Evidence 保存接口
 

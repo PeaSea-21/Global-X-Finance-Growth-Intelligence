@@ -86,7 +86,7 @@ try {
 
     $skipDirectories = @(
         ".git", ".venv", "__pycache__", ".pytest_cache", ".pytest-tmp",
-        "node_modules", "build", "dist", "data", "logs"
+        "node_modules", "build", "dist", "data", "logs", "work"
     )
     $textExtensions = @(
         ".py", ".toml", ".yaml", ".yml", ".json", ".md", ".txt",
@@ -103,7 +103,7 @@ try {
     $assignmentPattern = '(?i)\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|password|passwd|cookie|secret)\b\s*[:=]\s*["'']([^"'']{8,})["'']'
     $placeholderWords = @("example", "placeholder", "changeme", "redacted", "dummy", "synthetic")
 
-    $candidateFiles = Get-ChildItem -LiteralPath $repositoryRoot -Recurse -File -Force | Where-Object {
+    $candidateFiles = Get-ChildItem -LiteralPath $repositoryRoot -Recurse -File -Force -ErrorAction SilentlyContinue | Where-Object {
         $relative = Get-RepositoryRelativePath -FullPath $_.FullName
         $parts = $relative -split '[\\/]'
         $directoryParts = if ($parts.Length -gt 1) { $parts[0..($parts.Length - 2)] } else { @() }

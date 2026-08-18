@@ -1,10 +1,14 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
+import sqlite3
+
+import pytest
 
 from global_x_finance.realtime_radar import (
     RealtimeRadar,
     import_realtime_registry,
+    load_realtime_registry,
     radar_summary,
 )
 
@@ -31,7 +35,13 @@ def source_row(source_id: str = "SYNTHETIC-X-001", **overrides):
         "verification_evidence_url": "https://example.invalid/synthetic-test",
         "monitoring_method": "SYNTHETIC_TEST_ADAPTER",
         "source_status": "VERIFIED_ACTIVE",
-        "monitoring_status": "SYNTHETIC_TEST_READY",
+        "identity_verified": "VERIFIED",
+        "endpoint_verified": "VERIFIED",
+        "monitoring_method_verified": "VERIFIED",
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN",
+        "monitoring_status": "ACTIVE",
+        "runtime_status": "SYNTHETIC_TEST_READY",
         "expected_interval_minutes": "10",
         "candidate_origin": "SYNTHETIC_TEST_DATA",
         "single_connectivity_verified": "true",
@@ -86,6 +96,8 @@ def test_failure_preserves_last_success_and_records_real_error(database):
     assert source["last_success_at"] == last_success
     assert source["consecutive_failures"] == 1
     assert "upstream unavailable" in source["last_failure_reason"]
+    assert source["monitoring_status"] == "ACTIVE"
+    assert source["runtime_status"] == "CONTINUOUS_CYCLE_FAILED"
 
 
 def test_same_publisher_group_counts_once(database):
@@ -133,7 +145,10 @@ def test_youtube_video_fields_and_opinion_default(database):
 def test_unverified_candidate_is_not_collected(database):
     row = source_row(
         source_status="NEEDS_VERIFICATION",
-        monitoring_status="NEEDS_IDENTITY_VERIFICATION",
+        identity_verified="UNKNOWN",
+        endpoint_verified="UNKNOWN",
+        monitoring_method_verified="NOT_VERIFIED",
+        monitoring_status="NEEDS_VERIFICATION",
         verified_at="",
         verification_evidence_url="",
         expected_interval_minutes="",
@@ -141,7 +156,56 @@ def test_unverified_candidate_is_not_collected(database):
     import_realtime_registry(database, [row], now=NOW)
     result = RealtimeRadar(database, x_fetcher=lambda _: [tweet()], clock=lambda: NOW).run_cycle(force=True)
     assert result.sources == ()
-    assert database.execute("SELECT source_status FROM realtime_sources").fetchone()[0] == "NEEDS_VERIFICATION"
+    assert database.execute("SELECT monitoring_status FROM realtime_sources").fetchone()[0] == "NEEDS_VERIFICATION"
+
+
+def test_public_endpoint_does_not_imply_terms_or_commercial_authorization(database):
+    import_realtime_registry(database, [source_row()], now=NOW)
+    source = database.execute("SELECT * FROM realtime_sources").fetchone()
+    assert source["identity_verified"] == "VERIFIED"
+    assert source["endpoint_verified"] == "VERIFIED"
+    assert source["monitoring_method_verified"] == "VERIFIED"
+    assert source["terms_status"] == "UNKNOWN"
+    assert source["commercial_use_status"] == "UNKNOWN"
+    assert source["monitoring_status"] == "ACTIVE"
+
+
+def test_real_registry_keeps_governance_states_independent(root):
+    rows = load_realtime_registry(root / "config" / "taiwan_realtime_sources.csv")
+    active = [row for row in rows if row["monitoring_status"] == "ACTIVE"]
+    youtube = [row for row in active if row["platform"] == "YOUTUBE"]
+
+    assert len(rows) == 23
+    assert len(active) == 6
+    assert len(youtube) == 1
+    assert all(row["identity_verified"] == "VERIFIED" for row in active)
+    assert all(row["endpoint_verified"] == "VERIFIED" for row in active)
+    assert all(row["monitoring_method_verified"] == "VERIFIED" for row in active)
+    assert all(row["terms_status"] == "UNKNOWN" for row in active)
+    assert all(row["commercial_use_status"] == "UNKNOWN" for row in active)
+    assert "初始验证覆盖" in youtube[0]["notes"]
+    assert "不是台湾YouTube覆盖完成" in youtube[0]["notes"]
+
+
+def test_active_rejects_unverified_method_or_blocked_rights(database):
+    with pytest.raises(sqlite3.IntegrityError):
+        import_realtime_registry(
+            database,
+            [source_row(monitoring_method_verified="NOT_VERIFIED")],
+            now=NOW,
+        )
+    with pytest.raises(sqlite3.IntegrityError):
+        import_realtime_registry(
+            database,
+            [source_row(terms_status="BLOCKED")],
+            now=NOW,
+        )
+    with pytest.raises(sqlite3.IntegrityError):
+        import_realtime_registry(
+            database,
+            [source_row(commercial_use_status="MANUAL_ONLY")],
+            now=NOW,
+        )
 
 
 def test_scheduler_state_survives_radar_restart(database):
@@ -156,6 +220,34 @@ def test_scheduler_state_survives_radar_restart(database):
 
     current[0] = NOW + timedelta(minutes=10, seconds=1)
     assert len(restarted.run_cycle().sources) == 1
+
+
+def test_cycle_schedule_anchor_prevents_sequential_source_minute_split(database):
+    first = source_row("SYNTHETIC-X-001")
+    second = source_row(
+        "SYNTHETIC-X-002",
+        account_handle="synthetic_test_account_2",
+        profile_url="https://x.com/synthetic_test_account_2",
+        publisher_group="synthetic_test_group_2",
+    )
+    import_realtime_registry(database, [first, second], now=NOW)
+    ticks = [NOW.replace(second=58) + timedelta(seconds=2 * index) for index in range(20)]
+
+    def advancing_clock():
+        return ticks.pop(0)
+
+    RealtimeRadar(
+        database,
+        x_fetcher=lambda _: [tweet()],
+        clock=advancing_clock,
+    ).run_cycle(force=True)
+
+    next_due = database.execute(
+        "SELECT next_due_at FROM radar_scheduler_state ORDER BY realtime_source_id"
+    ).fetchall()
+    assert {row["next_due_at"] for row in next_due} == {
+        "2026-08-14T12:10:00+00:00"
+    }
 
 
 def test_overlapping_process_is_skipped_by_database_lock(database):
@@ -191,6 +283,10 @@ def test_radar_health_and_recent_feed_pages(database, database_path, root):
     assert "台灣來源健康" in health
     assert "SYNTHETIC-X-001" in health
     assert "CONTINUOUS_CYCLE_SUCCESS" in health
+    assert "identity_verified" in health
+    assert "terms_status" in health
+    assert "commercial_use_status" in health
+    assert "公開可存取不等於商業監控授權" in health
     # The fixed synthetic timestamp is outside the app's current 72-hour window.
     assert client.get("/radar/feed").status_code == 200
     assert "最近 72 小時內容流" in feed

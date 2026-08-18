@@ -1,0 +1,4 @@
+cycle_number,cycle_id,started_at_utc,scheduled_task_result,due_source_count,success_source_count,failed_source_count,new_raw_items,exact_duplicates,average_request_seconds,youtube_due,result
+1,f9f539b9-17fb-4c7e-86e2-f1fa2089fd81,2026-08-16T04:38:28.006480+00:00,0,6,6,0,0,105,1.466,true,SUCCESS
+2,ca1138fe-2fbf-4ab7-b233-d9b8ca9403f7,2026-08-16T04:48:29.565592+00:00,0,5,5,0,0,90,1.322,false,SUCCESS
+3,ed19d123-8d07-4d54-9405-8f59d5740562,2026-08-16T04:58:28.514322+00:00,0,5,5,0,1,89,1.403,false,SUCCESS

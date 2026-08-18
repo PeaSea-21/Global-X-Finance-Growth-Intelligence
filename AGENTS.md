@@ -33,6 +33,7 @@ Before every new task:
 - Keep `docs/PROJECT_CONTEXT.md` limited to durable, stable facts.
 - Use `.agents/skills/project-memory/` only as a repo-local skill; do not install it globally.
 - Run the checks proportionate to the change. The full existing project check is `powershell -ExecutionPolicy Bypass -File scripts/check.ps1`.
+- For BEN Radar snapshots, preserve item-level pipeline trace, market-qualified security IDs, prior-session-only baselines, and source-concentration metadata; never convert missing market data to zero or stale news to current news.
 
 ## 任务结束协议（Task End Protocol）
 

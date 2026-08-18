@@ -22,7 +22,13 @@ if (-not $xhotRoot) {
 
 Push-Location -LiteralPath $repositoryRoot
 $radarExitCode = 1
+$benXExitCode = 1
 try {
+    & $pythonPath -m global_x_finance.cli ben-radar x-sync `
+        --db $databasePath `
+        --accounts "config/x_accounts.csv"
+    $benXExitCode = $LASTEXITCODE
+
     & $pythonPath -m global_x_finance.cli radar cycle `
         --db $databasePath `
         --xhot-root $xhotRoot
@@ -31,4 +37,5 @@ try {
 finally {
     Pop-Location
 }
+if ($benXExitCode -ne 0) { exit $benXExitCode }
 exit $radarExitCode

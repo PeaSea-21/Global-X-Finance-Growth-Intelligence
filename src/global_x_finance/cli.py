@@ -9,6 +9,13 @@ from .db import apply_migrations, connect, register_market_packs
 from .errors import ValidationError
 from .market_pack import load_and_validate_market_pack
 from .normalization import TwseNormalizationService
+from .official_data import (
+    OfficialDataService,
+    load_official_data_config,
+    official_data_status,
+    recent_disclosures,
+    volume_history,
+)
 from .policy import XAdsPolicySnapshotService, load_policy_registry, load_policy_rules
 from .realtime_radar import (
     RealtimeRadar,
@@ -20,6 +27,14 @@ from .realtime_radar import (
 from .security import scan_credentials
 from .source_registry import import_registry, validate_registry
 from .twse_collector import load_twse_config
+from .ben_radar import sync_ben_radar
+from .x_intelligence import (
+    account_counts,
+    collect_x_accounts_once,
+    diagnose_yahoo_finance,
+    import_x_accounts,
+    load_x_accounts,
+)
 
 
 def _pack_validate(args: argparse.Namespace) -> None:
@@ -91,6 +106,43 @@ def _normalize_twse(args: argparse.Namespace) -> None:
     )
 
 
+def _official_data_sync(args: argparse.Namespace) -> None:
+    config = load_official_data_config(args.config)
+    connection = connect(args.db)
+    try:
+        result = OfficialDataService(connection, config).sync_all()
+    finally:
+        connection.close()
+    print(json.dumps(result.as_dict(), ensure_ascii=False, indent=2))
+
+
+def _official_data_status(args: argparse.Namespace) -> None:
+    connection = connect(args.db)
+    try:
+        result = official_data_status(connection)
+    finally:
+        connection.close()
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+def _official_data_history(args: argparse.Namespace) -> None:
+    connection = connect(args.db)
+    try:
+        rows = volume_history(connection, args.security_id, limit=args.limit)
+    finally:
+        connection.close()
+    print(json.dumps(rows, ensure_ascii=False, indent=2))
+
+
+def _official_data_disclosures(args: argparse.Namespace) -> None:
+    connection = connect(args.db)
+    try:
+        rows = recent_disclosures(connection, args.security_id, limit=args.limit)
+    finally:
+        connection.close()
+    print(json.dumps(rows, ensure_ascii=False, indent=2))
+
+
 def _policies_snapshot(args: argparse.Namespace) -> None:
     page_registry = load_policy_registry(args.pages)
     rule_registry = load_policy_rules(
@@ -118,7 +170,7 @@ def _radar_registry_validate(args: argparse.Namespace) -> None:
     rows = load_realtime_registry(args.registry)
     counts: dict[str, int] = {}
     for row in rows:
-        counts[row["source_status"]] = counts.get(row["source_status"], 0) + 1
+        counts[row["monitoring_status"]] = counts.get(row["monitoring_status"], 0) + 1
     print(
         f"VALID rows={len(rows)} "
         + " ".join(f"{key.lower()}={value}" for key, value in sorted(counts.items()))
@@ -168,6 +220,57 @@ def _radar_status(args: argparse.Namespace) -> None:
     print(json.dumps(summary, ensure_ascii=False, sort_keys=True))
 
 
+def _ben_radar_sync(args: argparse.Namespace) -> None:
+    connection = connect(args.db)
+    try:
+        result = sync_ben_radar(connection)
+    finally:
+        connection.close()
+    print(json.dumps({
+        "news_sources": list(result.news_results),
+        "pool_count": result.pool_count,
+        "history_valid_count": result.history_valid_count,
+        "history_failed": list(result.history_failed),
+    }, ensure_ascii=False, indent=2))
+
+
+def _ben_x_import(args: argparse.Namespace) -> None:
+    accounts = load_x_accounts(args.accounts)
+    connection = connect(args.db)
+    try:
+        imported = import_x_accounts(connection, accounts)
+    finally:
+        connection.close()
+    print(json.dumps({"imported": imported, **account_counts(accounts)}, ensure_ascii=False))
+
+
+def _ben_x_sync(args: argparse.Namespace) -> None:
+    accounts = load_x_accounts(args.accounts)
+    connection = connect(args.db)
+    try:
+        results = collect_x_accounts_once(
+            connection,
+            accounts,
+            force=args.force,
+            include_low_confidence=args.include_low_confidence,
+        )
+    finally:
+        connection.close()
+    print(json.dumps({
+        "accounts": account_counts(accounts),
+        "results": [result.__dict__ for result in results],
+    }, ensure_ascii=False, indent=2))
+
+
+def _ben_yahoo_diagnose(args: argparse.Namespace) -> None:
+    connection = connect(args.db)
+    try:
+        results = diagnose_yahoo_finance(connection)
+    finally:
+        connection.close()
+    print(json.dumps(results, ensure_ascii=False, indent=2))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="gxf",
@@ -210,6 +313,26 @@ def build_parser() -> argparse.ArgumentParser:
     )
     normalize_twse.set_defaults(handler=_normalize_twse)
 
+    official = commands.add_parser("official-data", help="TWSE/TPEx/MOPS official data")
+    official_commands = official.add_subparsers(dest="official_command", required=True)
+    official_sync = official_commands.add_parser("sync")
+    official_sync.add_argument("--db", required=True)
+    official_sync.add_argument("--config", default="config/official_data.sources.json")
+    official_sync.set_defaults(handler=_official_data_sync)
+    official_status = official_commands.add_parser("status")
+    official_status.add_argument("--db", required=True)
+    official_status.set_defaults(handler=_official_data_status)
+    official_history = official_commands.add_parser("history")
+    official_history.add_argument("--db", required=True)
+    official_history.add_argument("--security-id", required=True)
+    official_history.add_argument("--limit", type=int, default=30)
+    official_history.set_defaults(handler=_official_data_history)
+    official_disclosures = official_commands.add_parser("disclosures")
+    official_disclosures.add_argument("--db", required=True)
+    official_disclosures.add_argument("--security-id", required=True)
+    official_disclosures.add_argument("--limit", type=int, default=20)
+    official_disclosures.set_defaults(handler=_official_data_disclosures)
+
     policies = commands.add_parser("policies", help="Official X Ads policy commands")
     policy_commands = policies.add_subparsers(dest="policy_command", required=True)
     policy_snapshot = policy_commands.add_parser("snapshot")
@@ -235,6 +358,25 @@ def build_parser() -> argparse.ArgumentParser:
     radar_status = radar_commands.add_parser("status")
     radar_status.add_argument("--db", required=True)
     radar_status.set_defaults(handler=_radar_status)
+
+    ben = commands.add_parser("ben-radar", help="Ben market radar one-time data commands")
+    ben_commands = ben.add_subparsers(dest="ben_command", required=True)
+    ben_sync = ben_commands.add_parser("sync")
+    ben_sync.add_argument("--db", required=True)
+    ben_sync.set_defaults(handler=_ben_radar_sync)
+    ben_x_import = ben_commands.add_parser("x-import")
+    ben_x_import.add_argument("--db", required=True)
+    ben_x_import.add_argument("--accounts", default="config/x_accounts.csv")
+    ben_x_import.set_defaults(handler=_ben_x_import)
+    ben_x_sync = ben_commands.add_parser("x-sync")
+    ben_x_sync.add_argument("--db", required=True)
+    ben_x_sync.add_argument("--accounts", default="config/x_accounts.csv")
+    ben_x_sync.add_argument("--force", action="store_true")
+    ben_x_sync.add_argument("--include-low-confidence", action="store_true")
+    ben_x_sync.set_defaults(handler=_ben_x_sync)
+    ben_yahoo = ben_commands.add_parser("yahoo-diagnose")
+    ben_yahoo.add_argument("--db", required=True)
+    ben_yahoo.set_defaults(handler=_ben_yahoo_diagnose)
 
     security = commands.add_parser("security", help="Repository security checks")
     security_commands = security.add_subparsers(dest="security_command", required=True)

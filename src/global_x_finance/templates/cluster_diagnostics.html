@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}聚類診斷｜BEN Radar{% endblock %}
+{% block body_class %}cluster-diagnostics-body{% endblock %}
+{% block content %}
+<main class="cluster-diagnostics-page">
+  <header class="diagnostic-header">
+    <div><p>BEN RADAR · INTERNAL VALIDATION</p><h2>事件聚類診斷</h2><span>候選召回與嚴格合併的可解釋記錄；此頁不是首頁產品資訊。</span></div>
+    <a href="{{ url_for('ai_market_radar') }}">返回機會雷達</a>
+  </header>
+  <nav class="diagnostic-windows">{% for value in ['6','12','24','72'] %}<a class="{% if hours == value %}active{% endif %}" href="{{ url_for('stock_radar_cluster_diagnostics', hours=value) }}">{{ value }}H</a>{% endfor %}</nav>
+  <section class="diagnostic-stats"><article><b>{{ diagnostics|length }}</b><span>候選對</span></article><article><b>{{ same_count }}</b><span>合併</span></article><article><b>{{ related_count }}</b><span>相關但不同</span></article><article><b>{{ different_count }}</b><span>拒絕</span></article></section>
+  <section class="diagnostic-list">
+    {% for row in diagnostics %}
+    <details class="diagnostic-card">
+      <summary><code>{{ row.event_id }}</code><strong>{{ row.decision.label }}</strong><span>相似度 {{ '%.3f'|format(row.decision.similarity) }} · 時差 {{ row.decision.time_delta_hours if row.decision.time_delta_hours is not none else 'UNKNOWN' }}h</span></summary>
+      <div class="diagnostic-reason"><b>{% if row.decision.merge_reason %}合併原因{% else %}拒絕原因{% endif %}</b>{{ row.decision.merge_reason or row.decision.reject_reason }}</div>
+      <div class="diagnostic-signals"><span>實體 {{ row.decision.common_entities|join(', ') or '—' }}</span><span>主體 {{ row.decision.common_actors|join(', ') or '—' }}</span><span>動作 {{ row.decision.common_actions|join(', ') or '—' }}</span><span>目標 {{ row.decision.common_targets|join(', ') or '—' }}</span><span>數字 {{ row.decision.common_numbers|join(', ') or '—' }}</span></div>
+      <div class="diagnostic-pair">
+        {% for item, fingerprint in [(row.left,row.left_fingerprint),(row.right,row.right_fingerprint)] %}<article><h3>{{ item.kind }} · {{ item.publisher }}</h3><p>{{ item.text }}</p><pre>{{ fingerprint|tojson(indent=2) }}</pre></article>{% endfor %}
+      </div>
+    </details>
+    {% else %}<p>目前窗口沒有進入候選召回的內容對。</p>{% endfor %}
+  </section>
+</main>
+{% endblock %}
