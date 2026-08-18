@@ -2,6 +2,7 @@
 
 ## NOW
 
+- GitHub `origin/main` now contains the complete BEN Radar P02 through Stock Workbench V0.1 dependency chain at commit `af0f478`; runtime databases, caches, screenshots, unrelated YouTube benchmark research, local skills, and credentials were not pushed.
 - BEN RADAR Stock Workbench V0.1 is complete. Dynamic `/stock-radar` and public Sites version 4 read the 2026-08-17 Anomaly Engine output, show 20 clickable stocks, real EOD OHLCV, 1M/3M candles, volume bars, prior-20/prior-40 reference lines, deterministic early-momentum and persistence groups, and no legacy stock HotScore.
 - BEN RADAR Step 3.5 validation remains the fixed-rule basis. V0.1 rules passed five additional all-market Replay dates; each produced 20 unique stocks. Prior-40 coverage stayed above 95% in each market/date, and liquidity context was proven absent from ranking.
 - BEN RADAR Anomaly Engine V0.1 is complete and `READY_FOR_HUMAN_REVIEW`. After the bounded history completion, the 2026-08-17 prior-only Replay evaluates 1,079 TWSE and 868 TPEx securities and produces an audited Top 20 without UI, HotScore, news, X, AI, or content generation.

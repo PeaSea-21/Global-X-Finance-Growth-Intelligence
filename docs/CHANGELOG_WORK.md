@@ -462,3 +462,9 @@
 - Browser acceptance at 1280px and 390px: 20 cards, visible actual volume/RVOL, functional detail chart, no horizontal overflow, no English rule badges on outer cards, and zero page console errors.
 - Public URL returned HTTP 200 with `ben-stock-workbench.v0.1`, 20 rendered stock cards, and the 2026-08-17 data date.
 - No news/X expansion, AI, HotScore, KOL distillation, or content generation was added.
+
+## 2026-08-18 — BEN Radar remote publication
+
+- Committed the complete runnable BEN Radar dependency chain from P02 through Stock Workbench V0.1 as `af0f478` (`feat: deliver BEN Radar stock workbench v0.1`) and pushed it to GitHub `origin/main`.
+- Included code, migrations, governed configuration, tests, BEN Radar acceptance artifacts, reports, and the public-site source. Excluded runtime databases, caches, screenshots, credentials, unrelated YouTube benchmark research, and repository-local experimental skills.
+- Pre-push verification passed: 94 Python tests, 2 public-site tests, credential scan, and Project Memory check. The first push encountered a transient TLS handshake failure; the immediate retry succeeded and advanced remote `main` from `e77e65c` to `af0f478`.

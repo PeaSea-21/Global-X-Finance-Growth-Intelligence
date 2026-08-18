@@ -1,6 +1,7 @@
 # Handoff
 
-- 更新时间：2026-08-18 08:35:00 +08:00
+- 更新时间：2026-08-18 11:55:15 +08:00
+- GitHub `origin/main` contains the complete BEN Radar P02 through Stock Workbench V0.1 chain at commit `af0f478`. Runtime databases, caches, screenshots, unrelated YouTube benchmark research, local skills, and credentials remain local only.
 - BEN RADAR Step 4 Stock Workbench V0.1 is complete; V0.1 anomaly rules and thresholds were not changed.
 - Dynamic route: `http://127.0.0.1:8765/stock-radar` when the local Flask process is running.
 - Public read-only EOD snapshot: `https://ben-finance-radar.nels-sedhq.chatgpt.site` (Sites version 4).
