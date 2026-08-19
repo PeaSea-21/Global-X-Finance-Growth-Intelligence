@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BEN Radar 台股收盤後三頻道選題歷史回放與業務評審頁。">
+  <title>BEN Radar｜三頻道收盤選題試跑</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="回到頁首">
+      <img src="favicon.svg" alt="">
+      <span>BEN Radar</span>
+      <small>公開評審版</small>
+    </a>
+    <nav aria-label="頁面導覽">
+      <a href="#results">三頻道結果</a>
+      <a href="#progress">目前進度</a>
+      <a href="#questions">請 Ben 確認</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="kicker">TAIWAN POST-CLOSE · HISTORICAL REPLAY</p>
+        <h1 id="page-title">台股收盤後三頻道選題</h1>
+        <p class="intro-copy">從全市場收盤資料先找異動，再分到對應頻道，讓編輯不用從一大堆股票和新聞裡重新篩選。</p>
+      </div>
+      <dl class="run-summary" id="run-summary" aria-label="本次回放摘要"></dl>
+    </section>
+
+    <section class="replay-notice" id="replay-notice" role="status">
+      <strong>這是歷史回放，不是今天即時結果。</strong>
+      <span id="replay-copy">正在讀取資料日期...</span>
+    </section>
+
+    <section class="progress" id="progress" aria-labelledby="progress-title">
+      <div class="section-heading">
+        <p class="kicker">CURRENT STATE</p>
+        <h2 id="progress-title">現在做到哪裡</h2>
+      </div>
+      <div class="progress-grid">
+        <section>
+          <span class="progress-label done">已經能做</span>
+          <ul>
+            <li>讀取台股完整收盤資料，掃描全市場異動</li>
+            <li>分到三個試點頻道，每個頻道列出 5 個候選</li>
+            <li>顯示入選原因、個股數據、官方 Evidence</li>
+            <li>回放不同交易日，檢查結果是否穩定</li>
+          </ul>
+        </section>
+        <section>
+          <span class="progress-label missing">還沒做到</span>
+          <ul>
+            <li>真正的法人、融資融券、ETF 資金流</li>
+            <li>穩定找出每檔股票上漲或爆量的原因</li>
+            <li>完整且可正式使用的新聞與產業信源</li>
+            <li>生產 AI 排序、20 頻道、每日自動更新</li>
+          </ul>
+        </section>
+        <section>
+          <span class="progress-label doing">接下來在做</span>
+          <ul>
+            <li>補三大法人、公司事件、月營收與法說會</li>
+            <li>整理可授權使用的新聞與產業資料</li>
+            <li>記錄每個來源每天何時真正穩定</li>
+            <li>用 Ben 的採用與淘汰理由修正排序</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="results" id="results" aria-labelledby="results-title">
+      <div class="section-heading results-heading">
+        <div>
+          <p class="kicker">THREE-CHANNEL PILOT</p>
+          <h2 id="results-title">三頻道歷史試跑結果</h2>
+        </div>
+        <p>目前先看候選有沒有用，不把規則結果說成 AI 判斷。</p>
+      </div>
+      <div class="channel-tabs" id="channel-tabs" role="tablist" aria-label="試點頻道"></div>
+      <div id="channel-panels"></div>
+      <div class="review-export" id="review-export">
+        <div><strong>已標記 <span id="feedback-count">0</span> / 15 條</strong><small>回饋只存在這台瀏覽器；下載後可直接回傳給團隊。</small></div>
+        <button type="button" id="download-feedback">下載回饋 CSV</button>
+        <button type="button" class="secondary" id="clear-feedback">清空回饋</button>
+      </div>
+    </section>
+
+    <section class="questions" id="questions" aria-labelledby="questions-title">
+      <div class="section-heading">
+        <p class="kicker">BUSINESS REVIEW</p>
+        <h2 id="questions-title">這次最想請 Ben 確認</h2>
+      </div>
+      <ol>
+        <li><strong>選出來的東西有沒有用？</strong><span>哪些一看就想講，哪些根本不用出現。</span></li>
+        <li><strong>三個頻道分得對不對？</strong><span>同一個候選應該去哪個頻道，角度要怎麼區分。</span></li>
+        <li><strong>原因要查到什麼程度？</strong><span>只有價量異動能不能先看，還是一定要找到新聞或公司事件。</span></li>
+        <li><strong>每天一定要 5 條嗎？</strong><span>資料不足時，寧可少給，還是保留待查候選。</span></li>
+        <li><strong>團隊真正使用的時間點？</strong><span>台股收盤後幾點看、美股隔天幾點看，誰負責最後決定。</span></li>
+      </ol>
+    </section>
+
+    <section class="sources" aria-labelledby="sources-title">
+      <div class="section-heading">
+        <p class="kicker">SOURCE SNAPSHOT</p>
+        <h2 id="sources-title">這次回放用了什麼</h2>
+      </div>
+      <div class="source-table" id="source-table"></div>
+      <p class="source-note">“本次有資料”只代表這次歷史回放讀到了記錄，不代表新聞授權、資料完整度或正式上線條件已經完成。</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>BEN Radar · 三頻道收盤選題試跑</span>
+    <span>公開只讀歷史回放 · 非投資建議</span>
+  </footer>
+
+  <template id="topic-template">
+    <article class="topic-card">
+      <header class="topic-head">
+        <span class="topic-rank"></span>
+        <div>
+          <p class="topic-meta"></p>
+          <h3></h3>
+        </div>
+        <span class="research-state"></span>
+      </header>
+      <div class="reason-grid">
+        <section><span>為什麼現在看</span><div class="why-now"></div></section>
+        <section><span>為什麼放這個頻道</span><div class="why-channel"></div></section>
+      </div>
+      <div class="stock-list"></div>
+      <div class="fact-grid">
+        <section><span>已確認</span><ul class="facts"></ul></section>
+        <section><span>還不知道</span><ul class="unknowns"></ul></section>
+      </div>
+      <details class="evidence">
+        <summary>查看原始 Evidence</summary>
+        <div class="evidence-links"></div>
+      </details>
+      <div class="topic-feedback" aria-label="候選回饋">
+        <span>Ben 的判斷</span>
+        <button type="button" data-feedback="USEFUL">有用</button>
+        <button type="button" data-feedback="NOT_USEFUL">沒用</button>
+        <button type="button" data-feedback="NEEDS_REASON">要先查原因</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

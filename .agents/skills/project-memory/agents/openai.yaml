@@ -1,4 +1,0 @@
-interface:
-  display_name: "Project Memory"
-  short_description: "Restore and maintain repository project context"
-  default_prompt: "Use $project-memory to restore this repository context and maintain a concise handoff."
