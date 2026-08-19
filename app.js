@@ -14,8 +14,8 @@ const pct = (value) => {
 };
 
 const sourceLabels = {
-  TWSE_EOD: ["上市收盤資料", "本次回放有完整交易日資料"],
-  TPEX_EOD: ["上櫃收盤資料", "本次回放有完整交易日資料"],
+  TWSE_EOD: ["上市收盤資料", "本版有完整交易日資料"],
+  TPEX_EOD: ["上櫃收盤資料", "本版有完整交易日資料"],
   MOPS: ["公司重大訊息", "目前只有有限記錄，還不夠解釋全部異動"],
   NEWS: ["財經新聞", "本次有歷史記錄，正式授權與覆蓋仍待補"],
   X: ["X 公開內容", "只當觀點與熱度，不當成財務事實"],
@@ -148,11 +148,28 @@ function topicCard(item, channelId) {
 
 function render(payload) {
   activePayload = payload;
-  document.querySelector("#replay-copy").textContent = `頁面展示 ${payload.market_session_date} 收盤資料；“資料已齊”只代表該歷史交易日可以回放，不代表內容原因已經查清。`;
+  const isReplay = Boolean(payload.replay_mode);
+  document.querySelector("#run-kicker").textContent = isReplay
+    ? "TAIWAN POST-CLOSE · HISTORICAL REPLAY"
+    : "TAIWAN POST-CLOSE · CURRENT SESSION";
+  document.querySelector("#run-state-title").textContent = isReplay
+    ? "這是歷史回放，不是今天即時結果。"
+    : "這是當日收盤資料，不是盤中即時行情。";
+  document.querySelector("#replay-copy").textContent = isReplay
+    ? `頁面展示 ${payload.market_session_date} 收盤回放；資料截至 ${payload.data_as_of}。`
+    : `頁面展示 ${payload.market_session_date} 收盤結果；資料截至 ${payload.data_as_of}，未確認的上漲原因仍會標示待查。`;
+  document.querySelector("#results-title").textContent = isReplay
+    ? "三頻道歷史試跑結果"
+    : "三頻道今日收盤結果";
+  const totalTopics = payload.briefs.reduce(
+    (sum, brief) => sum + Math.min(brief.target_count, brief.assignments.length),
+    0,
+  );
+  document.querySelector("#feedback-total").textContent = String(totalTopics);
   const summary = [
     ["資料日期", payload.market_session_date],
     ["試點範圍", `${payload.briefs.length} / 20 頻道`],
-    ["每頻道", "5 個候選"],
+    ["本版候選", `${totalTopics} 個`],
     ["排序", "規則排序，不是 AI"],
   ];
   const runSummary = document.querySelector("#run-summary");
@@ -173,9 +190,10 @@ function render(payload) {
     tab.setAttribute("role", "tab");
     tab.setAttribute("aria-selected", index === 0 ? "true" : "false");
     tab.setAttribute("aria-controls", `panel-${brief.channel_id}`);
-    tab.innerHTML = "<strong></strong><span></span><em>5</em>";
+    tab.innerHTML = "<strong></strong><span></span><em></em>";
     tab.querySelector("strong").textContent = brief.channel_name;
     tab.querySelector("span").textContent = brief.channel_type;
+    tab.querySelector("em").textContent = String(Math.min(brief.target_count, brief.assignments.length));
     tabs.append(tab);
 
     const panel = document.createElement("section");
@@ -200,7 +218,7 @@ function render(payload) {
 
   const sourceTable = document.querySelector("#source-table");
   payload.source_readiness.forEach((source) => {
-    const [label, note] = sourceLabels[source.source] || [source.source, "本次回放有記錄"];
+    const [label, note] = sourceLabels[source.source] || [source.source, "本版有記錄"];
     const item = document.createElement("article");
     item.className = "source-item";
     item.innerHTML = "<span></span><strong></strong><p></p>";
