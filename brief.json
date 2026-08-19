@@ -7,8 +7,8 @@
   "market_session_date": "2026-08-19",
   "session_state": "READY",
   "scheduled_for": "2026-08-19T15:05:00+08:00",
-  "generated_at": "2026-08-19T14:19:50.333617+08:00",
-  "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+  "generated_at": "2026-08-19T14:43:42.260009+08:00",
+  "data_as_of": "2026-08-19T14:43:42.260009+08:00",
   "replay_mode": false,
   "source_readiness": [
     {
@@ -31,28 +31,28 @@
       "source": "MOPS",
       "required": false,
       "status": "AVAILABLE",
-      "data_as_of": "2026-08-19T14:19:50.333617+08:00",
-      "record_count": 39
+      "data_as_of": "2026-08-19T14:43:42.260009+08:00",
+      "record_count": 134
     },
     {
       "source": "NEWS",
       "required": false,
       "status": "AVAILABLE",
-      "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+      "data_as_of": "2026-08-19T14:43:42.260009+08:00",
       "record_count": 77
     },
     {
       "source": "X",
       "required": false,
-      "status": "AVAILABLE",
-      "data_as_of": "2026-08-19T14:19:50.333617+08:00",
-      "record_count": 380
+      "status": "DISABLED",
+      "data_as_of": "2026-08-19T14:43:42.260009+08:00",
+      "record_count": 0
     },
     {
       "source": "INDUSTRY_MAPPING",
       "required": false,
       "status": "AVAILABLE",
-      "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+      "data_as_of": "2026-08-19T14:43:42.260009+08:00",
       "record_count": 1824
     }
   ],
@@ -75,8 +75,8 @@
   "rule_version": "ANOMALY_RULES_V0.1",
   "candidate_pool_counts": {
     "market_signals": 232,
-    "disclosures": 39,
-    "media_events": 15,
+    "disclosures": 134,
+    "media_events": 13,
     "cross_entity": 13
   },
   "briefs": [
@@ -101,7 +101,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "四維航收盘+9.72%，RVOL 32.29倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:5608"
@@ -190,7 +190,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "老爺知收盘+2.05%，RVOL 17.37倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:5704"
@@ -279,7 +279,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "耀億收盘+7.98%，RVOL 9.43倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:4430"
@@ -368,7 +368,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "中櫃收盘+5.50%，RVOL 7.44倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2613"
@@ -457,7 +457,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "中航收盘+4.94%，RVOL 7.34倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2612"
@@ -546,7 +546,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "陽明收盘+4.98%，RVOL 6.71倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2609"
@@ -635,7 +635,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "聯上發收盘+3.59%，RVOL 3.18倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2537"
@@ -724,7 +724,7 @@
           "candidate_type": "MARKET_SIGNAL",
           "title": "位速收盘+9.90%，RVOL 15.27倍",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:3508"
@@ -808,8 +808,8 @@
           ]
         }
       ],
-      "brief_version": 1,
-      "brief_id": "brief:ch-05-tw-capital-radar:2026-08-19:v1"
+      "brief_version": 2,
+      "brief_id": "brief:ch-05-tw-capital-radar:2026-08-19:v2"
     },
     {
       "channel_id": "ch-01-tw-stock-microscope",
@@ -820,19 +820,187 @@
       "summary": "把公司公告或可信事件与个股收盘表现放在一起，区分已确认催化剂与待研究异动。",
       "fixed_boundary": "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。",
       "target_count": 5,
-      "qualified_count": 277,
-      "qualification_drops": {},
+      "qualified_count": 362,
+      "qualification_drops": {
+        "DUPLICATE_OR_MISSING_TITLE": 1
+      },
       "displayed_count": 8,
       "status": "READY",
       "shortage_reasons": [],
       "ranking_method": "RULE_BASED_FALLBACK",
       "assignments": [
         {
+          "candidate_id": "disclosure:MOPS:6596c538b14397c85972a5b80fe16be8:2026-08-19",
+          "candidate_type": "DISCLOSURE",
+          "title": "天瀚公告：本公司有價證券於集中交易市場達公布注意交易資訊標準，\r\n故公布有關財務業務等重大訊息，以利投資人區別瞭解",
+          "market_session_date": "2026-08-19",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
+          "freshness_state": "WITHIN_LOOKBACK_WINDOW",
+          "security_ids": [
+            "TWSE:6225"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "公告时间 2026-08-18T15:57:00+08:00",
+            "事实发生日 2026-08-18",
+            "本公司有價證券於集中交易市場達公布注意交易資訊標準，\r\n故公布有關財務業務等重大訊息，以利投資人區別瞭解"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "a8679fe5-83ef-4b14-bb65-44cb144ae896",
+              "evidence_class": "OFFICIAL_DISCLOSURE",
+              "source_id": "TW-A03",
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+              "announced_at": "2026-08-18T15:57:00+08:00",
+              "collected_at": "2026-08-19T06:38:37.352235+00:00",
+              "observed_at": "2026-08-19T06:38:37.352235+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [],
+          "risk_flags": [
+            "NO_CAUSAL_INFERENCE",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:6225",
+              "name": "天瀚",
+              "ticker": "6225",
+              "market": "TWSE",
+              "close": 53.6,
+              "change_pct": 9.836065573770503,
+              "current_volume": 688000,
+              "median_volume_20d": 55398.0,
+              "volume_ratio": 12.419220910502185,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数12.42倍；收盘确认突破此前20日及40日区间高点9.84%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "光電業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "MOPS_CONFIRMED",
+          "why_now": [
+            "官方重大讯息在收盘简报截止前发布：2026-08-18T15:57:00+08:00"
+          ],
+          "sort_metrics": {
+            "official_evidence": 1,
+            "independent_sources": 1,
+            "rule_count": 4,
+            "volume_ratio": 12.419220910502185
+          },
+          "candidate_rank": 1,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "官方公司事件与个股收盘表现可在同一张卡核验",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为DISCLOSURE",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "disclosure:MOPS:2b3dd4f46d9fc9d8066aac322978e8d3:2026-08-19",
+          "candidate_type": "DISCLOSURE",
+          "title": "台航公告：公告修正本公司114年度股東會年報部分內容",
+          "market_session_date": "2026-08-19",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
+          "freshness_state": "WITHIN_LOOKBACK_WINDOW",
+          "security_ids": [
+            "TWSE:2617"
+          ],
+          "industry_keys": [
+            "INDUSTRIALS"
+          ],
+          "facts": [
+            "公告时间 2026-08-18T16:23:16+08:00",
+            "事实发生日 2026-08-18",
+            "公告修正本公司114年度股東會年報部分內容"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "246a82dd-c37f-4566-afd9-f4ee70e3d9ac",
+              "evidence_class": "OFFICIAL_DISCLOSURE",
+              "source_id": "TW-A03",
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+              "announced_at": "2026-08-18T16:23:16+08:00",
+              "collected_at": "2026-08-19T06:38:37.352235+00:00",
+              "observed_at": "2026-08-19T06:38:37.352235+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [],
+          "risk_flags": [
+            "NO_CAUSAL_INFERENCE",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:2617",
+              "name": "台航",
+              "ticker": "2617",
+              "market": "TWSE",
+              "close": 30.9,
+              "change_pct": 3.5175879396984744,
+              "current_volume": 4587000,
+              "median_volume_20d": 706088.0,
+              "volume_ratio": 6.496357394545722,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数6.50倍；收盘确认突破此前20日区间高点2.49%，形成量价共振；当日涨跌+3.52%，偏离自身近期正常波动3.14个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "航運業",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "MOPS_CONFIRMED",
+          "why_now": [
+            "官方重大讯息在收盘简报截止前发布：2026-08-18T16:23:16+08:00"
+          ],
+          "sort_metrics": {
+            "official_evidence": 1,
+            "independent_sources": 1,
+            "rule_count": 4,
+            "volume_ratio": 6.496357394545722
+          },
+          "candidate_rank": 2,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "官方公司事件与个股收盘表现可在同一张卡核验",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为DISCLOSURE",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
           "candidate_id": "disclosure:MOPS:0068c6f515767d23a0e18a1d7cd8539e:2026-08-19",
           "candidate_type": "DISCLOSURE",
           "title": "單井公告：公告本公司最近一年累積處分有價證券達公告標準",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
             "TPEX:3490"
@@ -898,7 +1066,7 @@
             "rule_count": 4,
             "volume_ratio": 6.156730018224421
           },
-          "candidate_rank": 1,
+          "candidate_rank": 3,
           "candidate_tier": "PRIMARY",
           "why_channel": [
             "官方公司事件与个股收盘表现可在同一张卡核验",
@@ -915,7 +1083,7 @@
           "candidate_type": "DISCLOSURE",
           "title": "合騏*公告：公告本公司董事會決議115年度第一次私募普通股定價\r\n及相關事宜",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
             "TPEX:8937"
@@ -981,7 +1149,7 @@
             "rule_count": 4,
             "volume_ratio": 5.9298245614035086
           },
-          "candidate_rank": 2,
+          "candidate_rank": 4,
           "candidate_tier": "PRIMARY",
           "why_channel": [
             "官方公司事件与个股收盘表现可在同一张卡核验",
@@ -998,7 +1166,7 @@
           "candidate_type": "DISCLOSURE",
           "title": "三圓公告：公告本公司關係人遭臺灣臺北地方法院民事裁定事宜",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
             "TPEX:4416"
@@ -1063,7 +1231,7 @@
             "rule_count": 3,
             "volume_ratio": 18.357142857142858
           },
-          "candidate_rank": 3,
+          "candidate_rank": 5,
           "candidate_tier": "PRIMARY",
           "why_channel": [
             "官方公司事件与个股收盘表现可在同一张卡核验",
@@ -1080,7 +1248,7 @@
           "candidate_type": "DISCLOSURE",
           "title": "富喬公告：公告本公司註銷收回已發行之限制員工權利新股\r\n減資變更登記完成",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
             "TPEX:1815"
@@ -1144,166 +1312,6 @@
             "rule_count": 2,
             "volume_ratio": 3.116064565718678
           },
-          "candidate_rank": 4,
-          "candidate_tier": "PRIMARY",
-          "why_channel": [
-            "官方公司事件与个股收盘表现可在同一张卡核验",
-            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
-          ],
-          "ranking_reasons": [
-            "候选类型为DISCLOSURE",
-            "可回链Evidence 1项",
-            "公司事件优先于催化剂未确认的纯行情异常"
-          ]
-        },
-        {
-          "candidate_id": "disclosure:MOPS:582f1dc576f0c62b6450544a8a1da0b9:2026-08-19",
-          "candidate_type": "DISCLOSURE",
-          "title": "廣運公告：公告本公司召開法說會",
-          "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
-          "freshness_state": "WITHIN_LOOKBACK_WINDOW",
-          "security_ids": [
-            "TPEX:6125"
-          ],
-          "industry_keys": [
-            "INDUSTRIALS"
-          ],
-          "facts": [
-            "公告时间 2026-08-18T17:17:04+08:00",
-            "事实发生日 2026-08-19",
-            "公告本公司召開法說會"
-          ],
-          "evidence": [
-            {
-              "evidence_id": "b53b5d86-17bc-4d01-8f49-cf6d7a34c7bb",
-              "evidence_class": "OFFICIAL_DISCLOSURE",
-              "source_id": "TW-A03",
-              "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-              "announced_at": "2026-08-18T17:17:04+08:00",
-              "collected_at": "2026-08-19T06:19:48.578197+00:00",
-              "observed_at": "2026-08-19T06:19:48.578197+00:00",
-              "epistemic_status": "FACT"
-            }
-          ],
-          "opinion_evidence": [],
-          "unknowns": [],
-          "risk_flags": [
-            "NO_CAUSAL_INFERENCE",
-            "NOT_INVESTMENT_ADVICE"
-          ],
-          "stock_details": [
-            {
-              "security_id": "TPEX:6125",
-              "name": "廣運",
-              "ticker": "6125",
-              "market": "TPEX",
-              "close": 51.9,
-              "change_pct": 5.167173252279622,
-              "current_volume": 4579000,
-              "median_volume_20d": 595500.0,
-              "volume_ratio": 7.689336691855583,
-              "matched_rules": [
-                "VOLUME_SPIKE"
-              ],
-              "why_selected": "今日成交量达到此前20日中位数7.69倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
-              "data_quality": "COMPLETE",
-              "official_industry_name": "電機機械",
-              "normalized_sector": "INDUSTRIALS",
-              "industry_mapping_status": "MAPPED_COMMON_STOCK"
-            }
-          ],
-          "editorial_status": "READY_TO_PITCH",
-          "catalyst_status": "MOPS_CONFIRMED",
-          "why_now": [
-            "官方重大讯息在收盘简报截止前发布：2026-08-18T17:17:04+08:00"
-          ],
-          "sort_metrics": {
-            "official_evidence": 1,
-            "independent_sources": 1,
-            "rule_count": 1,
-            "volume_ratio": 7.689336691855583
-          },
-          "candidate_rank": 5,
-          "candidate_tier": "PRIMARY",
-          "why_channel": [
-            "官方公司事件与个股收盘表现可在同一张卡核验",
-            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
-          ],
-          "ranking_reasons": [
-            "候选类型为DISCLOSURE",
-            "可回链Evidence 1项",
-            "公司事件优先于催化剂未确认的纯行情异常"
-          ]
-        },
-        {
-          "candidate_id": "disclosure:MOPS:3abe4a914ad02086dc835be3a4aef346:2026-08-19",
-          "candidate_type": "DISCLOSURE",
-          "title": "IET-KY公告：公告本公司將於115年8月27日(四)14:30召開法人說明會",
-          "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
-          "freshness_state": "WITHIN_LOOKBACK_WINDOW",
-          "security_ids": [
-            "TPEX:4971"
-          ],
-          "industry_keys": [
-            "SEMICONDUCTORS"
-          ],
-          "facts": [
-            "公告时间 2026-08-18T18:19:32+08:00",
-            "事实发生日 2026-08-27",
-            "公告本公司將於115年8月27日(四)14:30召開法人說明會"
-          ],
-          "evidence": [
-            {
-              "evidence_id": "f0f3c4c8-9fa8-42d1-9b41-724b6ed45128",
-              "evidence_class": "OFFICIAL_DISCLOSURE",
-              "source_id": "TW-A03",
-              "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-              "announced_at": "2026-08-18T18:19:32+08:00",
-              "collected_at": "2026-08-19T06:19:48.578197+00:00",
-              "observed_at": "2026-08-19T06:19:48.578197+00:00",
-              "epistemic_status": "FACT"
-            }
-          ],
-          "opinion_evidence": [],
-          "unknowns": [],
-          "risk_flags": [
-            "NO_CAUSAL_INFERENCE",
-            "NOT_INVESTMENT_ADVICE"
-          ],
-          "stock_details": [
-            {
-              "security_id": "TPEX:4971",
-              "name": "IET-KY",
-              "ticker": "4971",
-              "market": "TPEX",
-              "close": 528.0,
-              "change_pct": -5.035971223021585,
-              "current_volume": 4193000,
-              "median_volume_20d": 1074307.0,
-              "volume_ratio": 3.9029811776335817,
-              "matched_rules": [
-                "VOLUME_SPIKE"
-              ],
-              "why_selected": "今日成交量达到此前20日中位数3.90倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
-              "data_quality": "COMPLETE",
-              "official_industry_name": "半導體業",
-              "normalized_sector": "SEMICONDUCTORS",
-              "industry_mapping_status": "MAPPED_COMMON_STOCK"
-            }
-          ],
-          "editorial_status": "READY_TO_PITCH",
-          "catalyst_status": "MOPS_CONFIRMED",
-          "why_now": [
-            "官方重大讯息在收盘简报截止前发布：2026-08-18T18:19:32+08:00"
-          ],
-          "sort_metrics": {
-            "official_evidence": 1,
-            "independent_sources": 1,
-            "rule_count": 1,
-            "volume_ratio": 3.9029811776335817
-          },
           "candidate_rank": 6,
           "candidate_tier": "BACKUP",
           "why_channel": [
@@ -1317,32 +1325,32 @@
           ]
         },
         {
-          "candidate_id": "disclosure:MOPS:78903bb45156c3ec035a33154d166006:2026-08-19",
+          "candidate_id": "disclosure:MOPS:8e280d022a9acfe09394e9e151d14286:2026-08-19",
           "candidate_type": "DISCLOSURE",
-          "title": "IET-KY公告：公告115年第2季財務報告董事會預計\r\n召開日期為115年8月26日",
+          "title": "富林-KY公告：公告本公司董事會決議不分派115年第2季股利",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
-            "TPEX:4971"
+            "TWSE:1341"
           ],
           "industry_keys": [
-            "SEMICONDUCTORS"
+            "MATERIALS"
           ],
           "facts": [
-            "公告时间 2026-08-18T18:01:06+08:00",
+            "公告时间 2026-08-18T17:25:11+08:00",
             "事实发生日 2026-08-18",
-            "公告115年第2季財務報告董事會預計\r\n召開日期為115年8月26日"
+            "公告本公司董事會決議不分派115年第2季股利"
           ],
           "evidence": [
             {
-              "evidence_id": "eb787f7f-7466-42f5-842a-e54fd2331a4b",
+              "evidence_id": "12732631-2f68-4f71-bc80-be2bcd9a9ce1",
               "evidence_class": "OFFICIAL_DISCLOSURE",
               "source_id": "TW-A03",
-              "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-              "announced_at": "2026-08-18T18:01:06+08:00",
-              "collected_at": "2026-08-19T06:19:48.578197+00:00",
-              "observed_at": "2026-08-19T06:19:48.578197+00:00",
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+              "announced_at": "2026-08-18T17:25:11+08:00",
+              "collected_at": "2026-08-19T06:38:37.352235+00:00",
+              "observed_at": "2026-08-19T06:38:37.352235+00:00",
               "epistemic_status": "FACT"
             }
           ],
@@ -1354,35 +1362,36 @@
           ],
           "stock_details": [
             {
-              "security_id": "TPEX:4971",
-              "name": "IET-KY",
-              "ticker": "4971",
-              "market": "TPEX",
-              "close": 528.0,
-              "change_pct": -5.035971223021585,
-              "current_volume": 4193000,
-              "median_volume_20d": 1074307.0,
-              "volume_ratio": 3.9029811776335817,
+              "security_id": "TWSE:1341",
+              "name": "富林-KY",
+              "ticker": "1341",
+              "market": "TWSE",
+              "close": 58.4,
+              "change_pct": -3.4710743801652955,
+              "current_volume": 14000,
+              "median_volume_20d": 5924.0,
+              "volume_ratio": 2.363268062120189,
               "matched_rules": [
-                "VOLUME_SPIKE"
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
               ],
-              "why_selected": "今日成交量达到此前20日中位数3.90倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "why_selected": "今日成交量达到此前20日中位数2.36倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-3.47%，偏离自身近期正常波动3.19个标准差。",
               "data_quality": "COMPLETE",
-              "official_industry_name": "半導體業",
-              "normalized_sector": "SEMICONDUCTORS",
+              "official_industry_name": "塑膠工業",
+              "normalized_sector": "MATERIALS",
               "industry_mapping_status": "MAPPED_COMMON_STOCK"
             }
           ],
           "editorial_status": "READY_TO_PITCH",
           "catalyst_status": "MOPS_CONFIRMED",
           "why_now": [
-            "官方重大讯息在收盘简报截止前发布：2026-08-18T18:01:06+08:00"
+            "官方重大讯息在收盘简报截止前发布：2026-08-18T17:25:11+08:00"
           ],
           "sort_metrics": {
             "official_evidence": 1,
             "independent_sources": 1,
-            "rule_count": 1,
-            "volume_ratio": 3.9029811776335817
+            "rule_count": 2,
+            "volume_ratio": 2.363268062120189
           },
           "candidate_rank": 7,
           "candidate_tier": "BACKUP",
@@ -1397,30 +1406,32 @@
           ]
         },
         {
-          "candidate_id": "disclosure:MOPS:9d1f7b2b4c6f373ac4c08e16d08f6df3:2026-08-19",
+          "candidate_id": "disclosure:MOPS:df96ef0b1e1eeca39002e06ed4809d50:2026-08-19",
           "candidate_type": "DISCLOSURE",
-          "title": "美而快公告：公告本公司有價證券近期多次達公佈注意資訊標準，\r\n故公告相關訊息，以利投資人區別瞭解",
+          "title": "富林-KY公告：公告本公司董事會通過115年第2季合併財務報告",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "WITHIN_LOOKBACK_WINDOW",
           "security_ids": [
-            "TPEX:5321"
+            "TWSE:1341"
           ],
-          "industry_keys": [],
+          "industry_keys": [
+            "MATERIALS"
+          ],
           "facts": [
-            "公告时间 2026-08-18T15:56:33+08:00",
+            "公告时间 2026-08-18T17:18:16+08:00",
             "事实发生日 2026-08-18",
-            "公告本公司有價證券近期多次達公佈注意資訊標準，\r\n故公告相關訊息，以利投資人區別瞭解"
+            "公告本公司董事會通過115年第2季合併財務報告"
           ],
           "evidence": [
             {
-              "evidence_id": "9a8a2a15-cf0c-433f-85f8-0eff23ff6443",
+              "evidence_id": "d1d70acc-dbd1-4343-9cc0-3c1ce21a9fca",
               "evidence_class": "OFFICIAL_DISCLOSURE",
               "source_id": "TW-A03",
-              "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-              "announced_at": "2026-08-18T15:56:33+08:00",
-              "collected_at": "2026-08-19T06:19:48.578197+00:00",
-              "observed_at": "2026-08-19T06:19:48.578197+00:00",
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+              "announced_at": "2026-08-18T17:18:16+08:00",
+              "collected_at": "2026-08-19T06:38:37.352235+00:00",
+              "observed_at": "2026-08-19T06:38:37.352235+00:00",
               "epistemic_status": "FACT"
             }
           ],
@@ -1432,35 +1443,36 @@
           ],
           "stock_details": [
             {
-              "security_id": "TPEX:5321",
-              "name": "美而快",
-              "ticker": "5321",
-              "market": "TPEX",
-              "close": 71.0,
-              "change_pct": -2.6063100137174278,
-              "current_volume": 760000,
-              "median_volume_20d": 240500.0,
-              "volume_ratio": 3.1600831600831603,
+              "security_id": "TWSE:1341",
+              "name": "富林-KY",
+              "ticker": "1341",
+              "market": "TWSE",
+              "close": 58.4,
+              "change_pct": -3.4710743801652955,
+              "current_volume": 14000,
+              "median_volume_20d": 5924.0,
+              "volume_ratio": 2.363268062120189,
               "matched_rules": [
-                "VOLUME_SPIKE"
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
               ],
-              "why_selected": "今日成交量达到此前20日中位数3.16倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "why_selected": "今日成交量达到此前20日中位数2.36倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-3.47%，偏离自身近期正常波动3.19个标准差。",
               "data_quality": "COMPLETE",
-              "official_industry_name": "UNKNOWN",
-              "normalized_sector": "UNKNOWN",
-              "industry_mapping_status": "UNKNOWN"
+              "official_industry_name": "塑膠工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
             }
           ],
           "editorial_status": "READY_TO_PITCH",
           "catalyst_status": "MOPS_CONFIRMED",
           "why_now": [
-            "官方重大讯息在收盘简报截止前发布：2026-08-18T15:56:33+08:00"
+            "官方重大讯息在收盘简报截止前发布：2026-08-18T17:18:16+08:00"
           ],
           "sort_metrics": {
             "official_evidence": 1,
             "independent_sources": 1,
-            "rule_count": 1,
-            "volume_ratio": 3.1600831600831603
+            "rule_count": 2,
+            "volume_ratio": 2.363268062120189
           },
           "candidate_rank": 8,
           "candidate_tier": "BACKUP",
@@ -1475,8 +1487,8 @@
           ]
         }
       ],
-      "brief_version": 1,
-      "brief_id": "brief:ch-01-tw-stock-microscope:2026-08-19:v1"
+      "brief_version": 2,
+      "brief_id": "brief:ch-01-tw-stock-microscope:2026-08-19:v2"
     },
     {
       "channel_id": "ch-03-tw-industry-lens",
@@ -1499,7 +1511,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "其他電子業出现59家公司收盘异常：位速、天瀚、立誠",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:3508",
@@ -1748,7 +1760,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "航運業出现26家公司收盘异常：四維航、中櫃、中航",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:5608",
@@ -2001,7 +2013,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "觀光事業出现23家公司收盘异常：老爺知、美食-KY、潤泰全",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:5704",
@@ -2247,7 +2259,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "半導體業出现20家公司收盘异常：順德、聯鈞、訊芯-KY",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2351",
@@ -2482,7 +2494,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "建材營造出现14家公司收盘异常：聯上發、三圓、興富發",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:2537",
@@ -2721,7 +2733,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "生技醫療業出现14家公司收盘异常：豪展、台聯電、生展",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:4735",
@@ -2953,7 +2965,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "其他出现13家公司收盘异常：耀億、合騏*、勤益控",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TPEX:4430",
@@ -3196,7 +3208,7 @@
           "candidate_type": "CROSS_ENTITY",
           "title": "化學工業出现13家公司收盘异常：中華化、勝昱、東明-KY",
           "market_session_date": "2026-08-19",
-          "data_as_of": "2026-08-19T14:19:50.333617+08:00",
+          "data_as_of": "2026-08-19T14:43:42.260009+08:00",
           "freshness_state": "CURRENT_SESSION_EOD",
           "security_ids": [
             "TWSE:1727",
@@ -3429,10 +3441,10 @@
           ]
         }
       ],
-      "brief_version": 1,
-      "brief_id": "brief:ch-03-tw-industry-lens:2026-08-19:v1"
+      "brief_version": 2,
+      "brief_id": "brief:ch-03-tw-industry-lens:2026-08-19:v2"
     }
   ],
-  "input_fingerprint": "4bb1a4323579e76e7a5e1b28483a586bd6de0c6ec18295cd3deb95049fe54fb6",
-  "run_id": "channel-run:4bb1a4323579e76e7a5e1b28"
+  "input_fingerprint": "721096a54518bfaf15f9f41b163c0d3508b9e925f4924c7b4b887d753827e275",
+  "run_id": "channel-run:721096a54518bfaf15f9f41b"
 }
