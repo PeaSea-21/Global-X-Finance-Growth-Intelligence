@@ -17,6 +17,9 @@
     <div class="topbar-meta">
       <span id="session-date">讀取今日資料</span>
       <span class="status-dot"><i></i>臺灣收盤版</span>
+      <button class="refresh-button" id="refresh-button" type="button" title="重新讀取伺服器上的最新日報" aria-label="刷新今日資料">
+        <span aria-hidden="true">↻</span><b>刷新今日資料</b>
+      </button>
     </div>
   </header>
 
@@ -29,18 +32,20 @@
       </div>
       <div class="run-facts" aria-label="本次資料狀態">
         <div><span>生成時間</span><strong id="generated-time">--</strong></div>
-        <div><span>排序</span><strong>規則候選</strong></div>
-        <div><span>X 24H</span><strong>649 條</strong></div>
+        <div><span>排序</span><strong id="ranking-method">--</strong></div>
+        <div><span>X 24H</span><strong id="x-count">--</strong></div>
       </div>
     </section>
 
+    <div class="refresh-state" id="refresh-state" role="status" aria-live="polite">正在讀取最新日報</div>
+
     <section class="source-strip" aria-label="今日來源">
       <span class="source-label">今日來源</span>
-      <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b>正常</b></a>
-      <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b>正常</b></a>
-      <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b>正常</b></a>
-      <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noreferrer">Yahoo <b>已抓取</b></a>
-      <span>X <b>有線索未入榜</b></span>
+      <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b id="source-twse">讀取中</b></a>
+      <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b id="source-tpex">讀取中</b></a>
+      <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b id="source-mops">讀取中</b></a>
+      <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noreferrer">新聞 <b id="source-news">讀取中</b></a>
+      <span>X <b id="source-x">讀取中</b></span>
       <a href="https://www.youtube.com/channel/UCZxyxJbJTczACJt31ncoONA" target="_blank" rel="noreferrer">YouTube <b>口吻樣本</b></a>
     </section>
 

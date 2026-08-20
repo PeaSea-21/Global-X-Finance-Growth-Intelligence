@@ -3472,5 +3472,264 @@
     }
   ],
   "input_fingerprint": "1e15d29bce9059565900165f78459ea9db0eaba5d7ea5a03a7812ebc1c8c1ca4",
-  "run_id": "channel-run:1e15d29bce9059565900165f"
+  "run_id": "channel-run:1e15d29bce9059565900165f",
+  "studio_artifact": "BEN_CONTENT_STUDIO_DAILY",
+  "studio_artifact_version": "1.0",
+  "weight_topics": [
+    {
+      "candidate_id": "weight:2026-08-20:TWSE:2454",
+      "candidate_rank": 1,
+      "candidate_type": "WEIGHTED_EOD_PREVIEW",
+      "editorial_status": "PREVIEW_FROM_OFFICIAL_EOD",
+      "title": "聯發科收跌3.77%、成交481.32億元：今天的壓力從哪裡來？",
+      "market_session_date": "2026-08-20",
+      "why_now": [
+        "聯發科收在3700元，漲跌-145.00元（-3.77%），成交金額約481.32億元。"
+      ],
+      "why_channel": [
+        "候選來自五檔固定權值觀察池，按當日成交金額排序；用來觀察大型權值股強弱，不等同完整指數貢獻排名。"
+      ],
+      "facts": [
+        "收盤3700元",
+        "漲跌-145.00元（-3.77%）",
+        "成交量12,864,952股",
+        "成交金額48,131,667,840元"
+      ],
+      "unknowns": [
+        "尚未接入正式指數權重，因此不計算對加權指數的精確貢獻點數。",
+        "當日漲跌的具體催化劑仍需由公告或多個獨立新聞來源確認。"
+      ],
+      "evidence": [
+        {
+          "source_id": "8987a85b-fa75-44be-b076-1291cdb2e3c8",
+          "evidence_class": "OFFICIAL_EOD",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json"
+        }
+      ],
+      "opinion_evidence": [],
+      "security_ids": [
+        "TWSE:2454"
+      ],
+      "stock_details": [
+        {
+          "name": "聯發科",
+          "security_id": "TWSE:2454",
+          "close": 3700.0,
+          "change_pct": -3.77,
+          "current_volume": 12864952
+        }
+      ],
+      "ranking_reasons": [
+        "五檔固定權值觀察池內按當日成交金額排序",
+        "排序只使用當日官方 EOD 欄位"
+      ],
+      "risk_flags": [
+        "NOT_INVESTMENT_ADVICE"
+      ]
+    },
+    {
+      "candidate_id": "weight:2026-08-20:TWSE:2330",
+      "candidate_rank": 2,
+      "candidate_type": "WEIGHTED_EOD_PREVIEW",
+      "editorial_status": "PREVIEW_FROM_OFFICIAL_EOD",
+      "title": "台積電收漲1.06%、成交375.30億元：今天在支撐什麼？",
+      "market_session_date": "2026-08-20",
+      "why_now": [
+        "台積電收在2375元，漲跌+25.00元（+1.06%），成交金額約375.30億元。"
+      ],
+      "why_channel": [
+        "候選來自五檔固定權值觀察池，按當日成交金額排序；用來觀察大型權值股強弱，不等同完整指數貢獻排名。"
+      ],
+      "facts": [
+        "收盤2375元",
+        "漲跌+25.00元（+1.06%）",
+        "成交量15,873,737股",
+        "成交金額37,530,483,650元"
+      ],
+      "unknowns": [
+        "尚未接入正式指數權重，因此不計算對加權指數的精確貢獻點數。",
+        "當日漲跌的具體催化劑仍需由公告或多個獨立新聞來源確認。"
+      ],
+      "evidence": [
+        {
+          "source_id": "8987a85b-fa75-44be-b076-1291cdb2e3c8",
+          "evidence_class": "OFFICIAL_EOD",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json"
+        }
+      ],
+      "opinion_evidence": [],
+      "security_ids": [
+        "TWSE:2330"
+      ],
+      "stock_details": [
+        {
+          "name": "台積電",
+          "security_id": "TWSE:2330",
+          "close": 2375.0,
+          "change_pct": 1.06,
+          "current_volume": 15873737
+        }
+      ],
+      "ranking_reasons": [
+        "五檔固定權值觀察池內按當日成交金額排序",
+        "排序只使用當日官方 EOD 欄位"
+      ],
+      "risk_flags": [
+        "NOT_INVESTMENT_ADVICE"
+      ]
+    },
+    {
+      "candidate_id": "weight:2026-08-20:TWSE:2308",
+      "candidate_rank": 3,
+      "candidate_type": "WEIGHTED_EOD_PREVIEW",
+      "editorial_status": "PREVIEW_FROM_OFFICIAL_EOD",
+      "title": "台達電收跌1.13%、成交170.15億元：今天的壓力從哪裡來？",
+      "market_session_date": "2026-08-20",
+      "why_now": [
+        "台達電收在1745元，漲跌-20.00元（-1.13%），成交金額約170.15億元。"
+      ],
+      "why_channel": [
+        "候選來自五檔固定權值觀察池，按當日成交金額排序；用來觀察大型權值股強弱，不等同完整指數貢獻排名。"
+      ],
+      "facts": [
+        "收盤1745元",
+        "漲跌-20.00元（-1.13%）",
+        "成交量9,813,621股",
+        "成交金額17,015,225,635元"
+      ],
+      "unknowns": [
+        "尚未接入正式指數權重，因此不計算對加權指數的精確貢獻點數。",
+        "當日漲跌的具體催化劑仍需由公告或多個獨立新聞來源確認。"
+      ],
+      "evidence": [
+        {
+          "source_id": "8987a85b-fa75-44be-b076-1291cdb2e3c8",
+          "evidence_class": "OFFICIAL_EOD",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json"
+        }
+      ],
+      "opinion_evidence": [],
+      "security_ids": [
+        "TWSE:2308"
+      ],
+      "stock_details": [
+        {
+          "name": "台達電",
+          "security_id": "TWSE:2308",
+          "close": 1745.0,
+          "change_pct": -1.13,
+          "current_volume": 9813621
+        }
+      ],
+      "ranking_reasons": [
+        "五檔固定權值觀察池內按當日成交金額排序",
+        "排序只使用當日官方 EOD 欄位"
+      ],
+      "risk_flags": [
+        "NOT_INVESTMENT_ADVICE"
+      ]
+    },
+    {
+      "candidate_id": "weight:2026-08-20:TWSE:2317",
+      "candidate_rank": 4,
+      "candidate_type": "WEIGHTED_EOD_PREVIEW",
+      "editorial_status": "PREVIEW_FROM_OFFICIAL_EOD",
+      "title": "鴻海收漲0.61%、成交64.92億元：今天在支撐什麼？",
+      "market_session_date": "2026-08-20",
+      "why_now": [
+        "鴻海收在246.5元，漲跌+1.50元（+0.61%），成交金額約64.92億元。"
+      ],
+      "why_channel": [
+        "候選來自五檔固定權值觀察池，按當日成交金額排序；用來觀察大型權值股強弱，不等同完整指數貢獻排名。"
+      ],
+      "facts": [
+        "收盤246.5元",
+        "漲跌+1.50元（+0.61%）",
+        "成交量26,344,428股",
+        "成交金額6,492,076,639元"
+      ],
+      "unknowns": [
+        "尚未接入正式指數權重，因此不計算對加權指數的精確貢獻點數。",
+        "當日漲跌的具體催化劑仍需由公告或多個獨立新聞來源確認。"
+      ],
+      "evidence": [
+        {
+          "source_id": "8987a85b-fa75-44be-b076-1291cdb2e3c8",
+          "evidence_class": "OFFICIAL_EOD",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json"
+        }
+      ],
+      "opinion_evidence": [],
+      "security_ids": [
+        "TWSE:2317"
+      ],
+      "stock_details": [
+        {
+          "name": "鴻海",
+          "security_id": "TWSE:2317",
+          "close": 246.5,
+          "change_pct": 0.61,
+          "current_volume": 26344428
+        }
+      ],
+      "ranking_reasons": [
+        "五檔固定權值觀察池內按當日成交金額排序",
+        "排序只使用當日官方 EOD 欄位"
+      ],
+      "risk_flags": [
+        "NOT_INVESTMENT_ADVICE"
+      ]
+    },
+    {
+      "candidate_id": "weight:2026-08-20:TWSE:2881",
+      "candidate_rank": 5,
+      "candidate_type": "WEIGHTED_EOD_PREVIEW",
+      "editorial_status": "PREVIEW_FROM_OFFICIAL_EOD",
+      "title": "富邦金收跌0.39%、成交23.85億元：今天的壓力從哪裡來？",
+      "market_session_date": "2026-08-20",
+      "why_now": [
+        "富邦金收在128元，漲跌-0.50元（-0.39%），成交金額約23.85億元。"
+      ],
+      "why_channel": [
+        "候選來自五檔固定權值觀察池，按當日成交金額排序；用來觀察大型權值股強弱，不等同完整指數貢獻排名。"
+      ],
+      "facts": [
+        "收盤128元",
+        "漲跌-0.50元（-0.39%）",
+        "成交量18,713,372股",
+        "成交金額2,385,417,390元"
+      ],
+      "unknowns": [
+        "尚未接入正式指數權重，因此不計算對加權指數的精確貢獻點數。",
+        "當日漲跌的具體催化劑仍需由公告或多個獨立新聞來源確認。"
+      ],
+      "evidence": [
+        {
+          "source_id": "8987a85b-fa75-44be-b076-1291cdb2e3c8",
+          "evidence_class": "OFFICIAL_EOD",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json"
+        }
+      ],
+      "opinion_evidence": [],
+      "security_ids": [
+        "TWSE:2881"
+      ],
+      "stock_details": [
+        {
+          "name": "富邦金",
+          "security_id": "TWSE:2881",
+          "close": 128.0,
+          "change_pct": -0.39,
+          "current_volume": 18713372
+        }
+      ],
+      "ranking_reasons": [
+        "五檔固定權值觀察池內按當日成交金額排序",
+        "排序只使用當日官方 EOD 欄位"
+      ],
+      "risk_flags": [
+        "NOT_INVESTMENT_ADVICE"
+      ]
+    }
+  ]
 }

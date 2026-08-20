@@ -1,4 +1,4 @@
-const BRIEF_URL = "../ben-channel-review/brief.json";
+const DATA_URL = "data.json";
 
 const CHANNEL_META = {
   "資金雷達": {
@@ -37,79 +37,6 @@ const CHANNEL_META = {
     status: "試編預覽 · 不宣稱指數貢獻點",
   },
 };
-
-const WEIGHT_TOPICS = [
-  {
-    candidate_rank: 1,
-    candidate_type: "WEIGHTED_EOD_PREVIEW",
-    editorial_status: "PREVIEW_FROM_OFFICIAL_EOD",
-    title: "聯發科收跌145元、成交481億元：權值電子今天的壓力中心在哪？",
-    why_now: ["聯發科收在3,700元，較前一日下跌145元，估算跌幅約3.77%；今日成交金額約481.32億元。"],
-    why_channel: ["聯發科是權值電子核心公司，適合用來觀察大型科技股內部強弱。"],
-    facts: ["收盤3,700元", "漲跌-145元", "成交量12,864,952股", "成交金額48,131,667,840元"],
-    unknowns: ["未接入正式指數權重，因此不計算聯發科拖累指數點數。", "下跌催化劑仍需公告或多方新聞確認。"],
-    evidence: [{ source_id: "TWSE", evidence_class: "OFFICIAL_EOD", url: "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json" }],
-    opinion_evidence: [],
-    security_ids: ["TWSE:2454"],
-    stock_details: [{ name: "聯發科", security_id: "TWSE:2454", close: 3700, change_pct: -3.77, current_volume: 12864952 }],
-  },
-  {
-    candidate_rank: 2,
-    candidate_type: "WEIGHTED_EOD_PREVIEW",
-    editorial_status: "PREVIEW_FROM_OFFICIAL_EOD",
-    title: "台積電收2375元逆勢上漲：權值核心為什麼沒有和聯發科同方向？",
-    why_now: ["台積電收在2,375元、上漲25元，估算漲幅約1.06%；與聯發科形成明顯分歧。"],
-    why_channel: ["用權值核心的分歧理解盤面，比單看加權指數漲跌更接近本頻道定位。"],
-    facts: ["收盤2,375元", "漲跌+25元", "成交量15,873,737股", "成交金額37,530,483,650元"],
-    unknowns: ["尚未接入準確指數貢獻點。", "不能只由收盤價推導外資意圖。"],
-    evidence: [{ source_id: "TWSE", evidence_class: "OFFICIAL_EOD", url: "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json" }],
-    opinion_evidence: [],
-    security_ids: ["TWSE:2330"],
-    stock_details: [{ name: "台積電", security_id: "TWSE:2330", close: 2375, change_pct: 1.06, current_volume: 15873737 }],
-  },
-  {
-    candidate_rank: 3,
-    candidate_type: "WEIGHTED_EOD_PREVIEW",
-    editorial_status: "PREVIEW_FROM_OFFICIAL_EOD",
-    title: "鴻海量增收紅但漲幅有限：AI權值股今天是接棒還是休息？",
-    why_now: ["鴻海收在246.5元、上漲1.5元，估算漲幅約0.61%，成交量約2,634萬股。"],
-    why_channel: ["鴻海是AI硬體權值觀察點，但僅憑價量不能宣稱資金已全面轉向。"],
-    facts: ["收盤246.5元", "漲跌+1.5元", "成交量26,344,428股", "成交金額6,492,076,639元"],
-    unknowns: ["AI訂單與今日股價的直接關係尚未確認。", "法人買賣超未納入本次預覽。"],
-    evidence: [{ source_id: "TWSE", evidence_class: "OFFICIAL_EOD", url: "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json" }],
-    opinion_evidence: [],
-    security_ids: ["TWSE:2317"],
-    stock_details: [{ name: "鴻海", security_id: "TWSE:2317", close: 246.5, change_pct: 0.61, current_volume: 26344428 }],
-  },
-  {
-    candidate_rank: 4,
-    candidate_type: "WEIGHTED_COMPARISON_PREVIEW",
-    editorial_status: "PREVIEW_DERIVED_COMPARISON",
-    title: "台積電漲、聯發科跌：權值雙核心不同調，盤面正在交易哪條主線？",
-    why_now: ["同一交易日台積電估算上漲1.06%，聯發科估算下跌3.77%，方向與幅度明顯不同。"],
-    why_channel: ["權值股內部分歧本身就是盤面結構題，但原因必須再由新聞與公告核驗。"],
-    facts: ["台積電收2,375元、+25元", "聯發科收3,700元、-145元"],
-    unknowns: ["尚未確認造成分歧的共同或個別催化劑。", "未接入指數權重，不能換算對大盤的實際點數影響。"],
-    evidence: [{ source_id: "TWSE", evidence_class: "OFFICIAL_EOD", url: "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json" }],
-    opinion_evidence: [],
-    security_ids: ["TWSE:2330", "TWSE:2454"],
-    stock_details: [],
-  },
-  {
-    candidate_rank: 5,
-    candidate_type: "WEIGHTED_LIQUIDITY_PREVIEW",
-    editorial_status: "PREVIEW_DERIVED_COMPARISON",
-    title: "聯發科成交金額高於台積電：今天權值股的注意力為何集中在跌勢？",
-    why_now: ["聯發科今日成交金額約481.32億元，高於台積電約375.30億元；注意力集中不等於買盤流入。"],
-    why_channel: ["用成交焦點補充價格方向，但不把成交金額誤寫成淨流入。"],
-    facts: ["聯發科成交金額48,131,667,840元", "台積電成交金額37,530,483,650元"],
-    unknowns: ["買賣方向與法人身分未由成交金額本身確認。", "期貨與外資部位尚未接入。"],
-    evidence: [{ source_id: "TWSE", evidence_class: "OFFICIAL_EOD", url: "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260820&type=ALLBUT0999&response=json" }],
-    opinion_evidence: [],
-    security_ids: ["TWSE:2454", "TWSE:2330"],
-    stock_details: [],
-  },
-];
 
 let channels = [];
 let activeChannel = null;
@@ -169,7 +96,7 @@ function buildCloseTalk(briefs) {
   const industry = briefs.find((row) => row.channel_name === "產業透視鏡")?.assignments || [];
   const signals = briefs.find((row) => row.channel_name === "資金雷達")?.assignments || [];
   const events = briefs.find((row) => row.channel_name === "個股顯微鏡")?.assignments || [];
-  const picks = [industry[0], WEIGHT_TOPICS[3], signals[0], industry[2], events[0]].filter(Boolean);
+  const picks = [industry[0], signals[0], events[0], industry[2], signals[1]].filter(Boolean);
   return picks.map((item, index) => ({
     ...item,
     candidate_rank: index + 1,
@@ -195,8 +122,59 @@ function normalizeChannels(payload) {
     official: true,
   }));
   core.push({ name: "收盤夜話", meta: CHANNEL_META["收盤夜話"], topics: buildCloseTalk(briefs), official: false });
-  core.push({ name: "權值旗艦", meta: CHANNEL_META["權值旗艦"], topics: WEIGHT_TOPICS, official: false });
+  core.push({ name: "權值旗艦", meta: CHANNEL_META["權值旗艦"], topics: list(payload.weight_topics).slice(0, 5), official: false });
   return core.sort((a, b) => a.meta.order - b.meta.order);
+}
+
+function sourceRow(payload, source) {
+  return list(payload.source_readiness).find((row) => row.source === source) || {};
+}
+
+function sourceLabel(payload, source) {
+  const row = sourceRow(payload, source);
+  const count = Number.isFinite(Number(row.record_count)) ? ` · ${Number(row.record_count).toLocaleString("zh-TW")}` : "";
+  return `${row.status || "未知"}${count}`;
+}
+
+function taipeiDate() {
+  return new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    timeZone: "Asia/Taipei",
+  }).format(new Date());
+}
+
+function applyPayload(payload) {
+  channels = normalizeChannels(payload);
+  if (channels.length !== 5 || channels.some((channel) => channel.topics.length !== 5)) {
+    throw new Error("五頻道資料尚未完整發布");
+  }
+  const sessionDate = payload.market_session_date;
+  const isCurrent = sessionDate === taipeiDate();
+  $("#session-date").textContent = `${sessionDate} 收盤資料`;
+  $("#generated-time").textContent = new Intl.DateTimeFormat("zh-TW", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Taipei",
+  }).format(new Date(payload.generated_at));
+  $("#ranking-method").textContent = payload.ranking_method === "RULE_BASED_FALLBACK" ? "規則候選" : "待確認";
+  const xRow = sourceRow(payload, "X");
+  $("#x-count").textContent = Number.isFinite(Number(xRow.record_count)) ? `${Number(xRow.record_count).toLocaleString("zh-TW")} 條` : "未提供";
+  $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
+  $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
+  $("#source-mops").textContent = sourceLabel(payload, "MOPS");
+  $("#source-news").textContent = sourceLabel(payload, "NEWS");
+  $("#source-x").textContent = sourceLabel(payload, "X");
+  const refreshState = $("#refresh-state");
+  refreshState.className = `refresh-state${isCurrent ? "" : " is-stale"}`;
+  refreshState.textContent = isCurrent
+    ? `已載入 ${sessionDate} 最新收盤版`
+    : `目前顯示最近成功的 ${sessionDate} 收盤版，今日資料尚未發布`;
+  if ($("#topic-dialog").open) $("#topic-dialog").close();
+  showOverview();
+  renderOverview();
 }
 
 function renderOverview() {
@@ -304,21 +282,33 @@ function showOverview() {
   $("#page-summary").textContent = "五個頻道各自選題，不把同一張漲幅榜換名字重複使用。";
 }
 
-async function boot() {
-  const response = await fetch(BRIEF_URL, { cache: "no-store" });
-  if (!response.ok) throw new Error(`Brief HTTP ${response.status}`);
-  const payload = await response.json();
-  channels = normalizeChannels(payload);
-  $("#session-date").textContent = `${payload.market_session_date} 收盤資料`;
-  $("#generated-time").textContent = new Intl.DateTimeFormat("zh-TW", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Asia/Taipei" }).format(new Date(payload.generated_at));
-  renderOverview();
+async function loadLatest() {
+  const button = $("#refresh-button");
+  button.disabled = true;
+  button.classList.add("is-loading");
+  const previousText = $("#refresh-state").textContent;
+  $("#refresh-state").textContent = "正在重新讀取伺服器上的最新日報";
+  try {
+    const response = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`資料 HTTP ${response.status}`);
+    applyPayload(await response.json());
+  } catch (error) {
+    const refreshState = $("#refresh-state");
+    refreshState.className = "refresh-state is-error";
+    refreshState.textContent = channels.length
+      ? `刷新失敗，繼續保留目前資料：${error.message}`
+      : `今日資料讀取失敗：${error.message}`;
+    if (!channels.length) $("#channel-overview").innerHTML = `<p>${escapeHtml(previousText)}</p>`;
+  } finally {
+    button.disabled = false;
+    button.classList.remove("is-loading");
+  }
 }
 
 $("#back-button").addEventListener("click", showOverview);
 $(".brand").addEventListener("click", (event) => { event.preventDefault(); showOverview(); });
 $("#dialog-close").addEventListener("click", () => $("#topic-dialog").close());
 $("#topic-dialog").addEventListener("click", (event) => { if (event.target === event.currentTarget) event.currentTarget.close(); });
+$("#refresh-button").addEventListener("click", loadLatest);
 
-boot().catch((error) => {
-  $("#channel-overview").innerHTML = `<p>今日 Brief 讀取失敗：${escapeHtml(error.message)}</p>`;
-});
+loadLatest();
