@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>BEN 內容工作台｜五頻道預覽</title>
+  <link rel="icon" href="../ben-channel-review/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="返回頻道總覽">
+      <img src="../ben-channel-review/favicon.svg" alt="">
+      <span><strong>BEN 內容工作台</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
+    </a>
+    <div class="topbar-meta">
+      <span id="session-date">讀取今日資料</span>
+      <span class="status-dot"><i></i>臺灣收盤版</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="workspace-head">
+      <div>
+        <p class="eyebrow">POST-CLOSE CONTENT DESK</p>
+        <h1 id="page-title">今天先做哪個頻道？</h1>
+        <p id="page-summary">五個頻道各自選題，不把同一張漲幅榜換名字重複使用。</p>
+      </div>
+      <div class="run-facts" aria-label="本次資料狀態">
+        <div><span>生成時間</span><strong id="generated-time">--</strong></div>
+        <div><span>排序</span><strong>規則候選</strong></div>
+        <div><span>X 24H</span><strong>649 條</strong></div>
+      </div>
+    </section>
+
+    <section class="source-strip" aria-label="今日來源">
+      <span class="source-label">今日來源</span>
+      <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b>正常</b></a>
+      <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b>正常</b></a>
+      <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b>正常</b></a>
+      <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noreferrer">Yahoo <b>已抓取</b></a>
+      <span>X <b>有線索未入榜</b></span>
+      <a href="https://www.youtube.com/channel/UCZxyxJbJTczACJt31ncoONA" target="_blank" rel="noreferrer">YouTube <b>口吻樣本</b></a>
+    </section>
+
+    <section id="channel-overview" class="channel-overview" aria-live="polite"></section>
+
+    <section id="channel-detail" class="channel-detail" hidden>
+      <button class="back-button" id="back-button" type="button">← 返回五頻道</button>
+      <div class="detail-head">
+        <div>
+          <p class="eyebrow" id="detail-kicker"></p>
+          <h2 id="detail-title"></h2>
+          <p id="detail-summary"></p>
+        </div>
+        <div class="detail-status" id="detail-status"></div>
+      </div>
+      <div id="topic-list" class="topic-list"></div>
+    </section>
+  </main>
+
+  <dialog id="topic-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="關閉">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <template id="channel-template">
+    <button class="channel-card" type="button">
+      <span class="channel-number"></span>
+      <span class="channel-name"></span>
+      <span class="channel-description"></span>
+      <span class="channel-foot"><b></b><i>查看今日選題 →</i></span>
+    </button>
+  </template>
+
+  <template id="topic-template">
+    <article class="topic-row">
+      <span class="topic-rank"></span>
+      <div class="topic-main">
+        <div class="topic-meta"></div>
+        <h3></h3>
+        <p></p>
+      </div>
+      <button class="topic-open" type="button">看理由與文稿</button>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
