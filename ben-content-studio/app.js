@@ -139,8 +139,8 @@ function showChannel(channel) {
   activeChannel = channel;
   $("#channel-overview").hidden = true;
   $("#channel-detail").hidden = false;
-  $("#page-title").textContent = "今日頻道選題";
-  $("#page-summary").textContent = "先看標題，再用理由、Evidence 和頻道草稿完成判斷。";
+  $("#page-title").textContent = "今日收盤夜話文稿";
+  $("#page-summary").textContent = "只看收盤夜話：先選題，再核對理由、Evidence 和完整文稿。";
   $("#detail-kicker").textContent = channel.meta.kicker;
   $("#detail-title").textContent = channel.name;
   $("#detail-summary").textContent = channel.meta.description;
@@ -165,6 +165,7 @@ function showChannel(channel) {
     fragment.querySelector(".topic-meta").textContent = `${topicLabel(topic)} · ${topic.editorial_status || "NEEDS_REVIEW"}`;
     fragment.querySelector("h3").textContent = topic.title;
     fragment.querySelector("p").textContent = whyText(topic);
+    fragment.querySelector(".topic-open").textContent = "看完整文稿";
     fragment.querySelector(".topic-open").addEventListener("click", () => openTopic(channel, topic));
     listRoot.appendChild(fragment);
   });
