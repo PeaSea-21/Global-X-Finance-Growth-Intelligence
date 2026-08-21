@@ -18,20 +18,6 @@ const $ = (selector) => document.querySelector(selector);
 const list = (value) => Array.isArray(value) ? value : [];
 const escapeHtml = (value) => String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
 
-function editorialTitle(channelName, item) {
-  if (channelName === "資金雷達") {
-    const stock = list(item.stock_details)[0];
-    if (stock?.name && stock?.volume_ratio) return `${stock.name}爆出${Number(stock.volume_ratio).toFixed(1)}倍量！今天資金為什麼突然集中？`;
-  }
-  if (channelName === "個股顯微鏡") {
-    return `${item.title.replace("公告：", "：")}，這次真正要看的營運訊號是什麼？`;
-  }
-  if (channelName === "產業透視鏡") {
-    return `${item.title.replace("出现", "同時出現")}：共同主線成立了嗎？`;
-  }
-  return item.title;
-}
-
 function topicLabel(item) {
   if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
   if (item.candidate_type?.includes("DISCLOSURE")) return "官方事件";
@@ -48,21 +34,6 @@ function allEvidence(item) {
 
 function whyText(item) {
   return list(item.why_now)[0] || list(item.facts)[0] || "今日候選已通過時效與 Evidence 檢查。";
-}
-
-function draftFor(channelName, item) {
-  const facts = list(item.facts).slice(0, 4).join("；");
-  const unknown = list(item.unknowns)[0] || "後續仍需追蹤新的官方資料。";
-  const stocks = list(item.stock_details).map((row) => row.name).filter(Boolean).join("、") || list(item.security_ids).join("、");
-  const title = editorialTitle(channelName, item);
-  const openings = {
-    "資金雷達": `各位朋友，今天資金雷達先看一個盤面突然放大的訊號：${title}\n\n先別急著把爆量當成利多。今天可以確認的數據是：${facts}。這代表市場注意力確實集中，但成交放大不等於法人淨流入，更不能直接推導後面一定續漲。\n\n現在真正要查的是兩件事。第一，這次異動有沒有公司公告、產業消息或多個獨立來源支持；第二，明天量能能不能延續，而不是只出現一天。${unknown}\n\n所以今天的結論不是追價，而是把${stocks || "這個標的"}放進觀察名單：先確認催化劑，再判斷這是主線啟動，還是一次性的成交異常。`,
-    "個股顯微鏡": `今天個股顯微鏡把鏡頭對準${stocks || "這家公司"}。表面上看到的是一則公告，但真正重要的是：這件事會不會改變公司的營運節奏？\n\n目前已確認的事實是：${facts}。公告本身可以核驗，但公告與股價、營收或獲利之間的因果不能直接畫等號。\n\n接下來要沿著三條線看：收入是否改變、毛利率與現金流是否跟上，以及公司後續說法能不能被正式財報驗證。${unknown}\n\n這一題值得做，不是因為公告標題很大，而是它提供了一個可以持續追蹤公司體質的時間點。`,
-    "產業透視鏡": `今天產業透視鏡不只看一家公司，而是看一整組股票為什麼同時出現異動。${title}\n\n可以確認的盤面事實是：${facts}。多家公司同時異動，代表這個產業值得往下查，但它只能證明共現，不能自動證明大家共享同一張訂單或同一個催化劑。\n\n下一步要拆成三層：上游需求有沒有變、公司營收與庫存是否同步，以及領漲公司和跟漲公司差在哪裡。${unknown}\n\n真正有用的產業題，不是列出一串股票，而是找出誰有基本面、誰只有題材，還有這條主線能不能延續。`,
-    "收盤夜話": `各位朋友，今天這一盤最值得聊的，不是一張漲跌榜，而是盤面裡出現的明顯分歧。${title}\n\n今天可以先確認：${facts}。有人看到價格就急著下結論，但收盤夜話更想問，這個變化到底是整體主線，還是只有少數股票在表演？\n\n我們把盤面拆開看：先看權值股方向，再看產業有沒有多家公司呼應，最後回到成交量與公告。${unknown}\n\n明天最重要的觀察點，是今天的主角能不能延續量能，以及同族群是否繼續擴散。只要這兩件事沒有同時出現，就先把它當成需要追蹤的盤面線索。`,
-    "權值旗艦": `歡迎回到權值旗艦。今天看大盤，不能只看最後一個指數數字，因為核心權值股走出了不同方向。${title}\n\n先看官方收盤資料：${facts}。這些數字能告訴我們誰強、誰弱、成交焦點在哪裡，但目前沒有正式權重資料，不能把它誇大成精確的指數貢獻點。\n\n接下來的判斷分三層：權值股能不能站回關鍵位置、成交焦點是否延續，以及新聞或公告有沒有補上催化劑。${unknown}\n\n今天的結論是條件判斷，不是買賣建議。權值股若繼續分歧，大盤就容易震盪；只有核心公司重新同向，盤面的方向才會更清楚。`,
-  };
-  return openings[channelName] || `${title}\n\n${facts}\n\n${unknown}`;
 }
 
 function normalizeEditorial(payload) {
