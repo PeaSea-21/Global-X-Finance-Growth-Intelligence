@@ -1,40 +1,12 @@
 const DATA_URL = "data.json";
 
 const CHANNEL_META = {
-  "資金雷達": {
-    order: 1,
-    accent: "#087c72",
-    kicker: "MONEY MOVEMENT",
-    description: "從異常成交與價格變化找線索，再追問資金為什麼集中到這裡。",
-    status: "今日正式 Brief",
-  },
-  "個股顯微鏡": {
-    order: 2,
-    accent: "#2e6094",
-    kicker: "COMPANY DEEP DIVE",
-    description: "把公司公告、營運事件與收盤反應放在一起，先確認事實再談影響。",
-    status: "今日正式 Brief",
-  },
-  "產業透視鏡": {
-    order: 3,
-    accent: "#9a6810",
-    kicker: "SECTOR LOGIC",
-    description: "找同產業多家公司同步異動，拆開共通主線與尚未證實的因果。",
-    status: "今日正式 Brief",
-  },
   "收盤夜話": {
-    order: 4,
+    order: 1,
     accent: "#b83a35",
-    kicker: "MARKET STORY",
-    description: "用一兩個主角講清楚今天盤面的情緒、轉折與明日觀察。",
-    status: "試編預覽 · 資料缺口已標示",
-  },
-  "權值旗艦": {
-    order: 5,
-    accent: "#66538a",
-    kicker: "INDEX LEADERS",
-    description: "只看真正能牽動大盤的權值股，分清領漲、拖累與成交焦點。",
-    status: "試編預覽 · 不宣稱指數貢獻點",
+    kicker: "TAIWAN POST-CLOSE EDITORIAL",
+    description: "下班後 15 分鐘，把今天大盤發生什麼、誰在買賣、明天看什麼講清楚。",
+    status: "收盤夜話單頻道試點",
   },
 };
 
@@ -61,6 +33,7 @@ function editorialTitle(channelName, item) {
 }
 
 function topicLabel(item) {
+  if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
   if (item.candidate_type?.includes("DISCLOSURE")) return "官方事件";
   if (item.candidate_type?.includes("NEWS")) return "新聞事件";
   if (item.candidate_type?.includes("X_EVENT")) return "X 線索";
@@ -92,38 +65,36 @@ function draftFor(channelName, item) {
   return openings[channelName] || `${title}\n\n${facts}\n\n${unknown}`;
 }
 
-function buildCloseTalk(briefs) {
-  const industry = briefs.find((row) => row.channel_name === "產業透視鏡")?.assignments || [];
-  const signals = briefs.find((row) => row.channel_name === "資金雷達")?.assignments || [];
-  const events = briefs.find((row) => row.channel_name === "個股顯微鏡")?.assignments || [];
-  const picks = [industry[0], signals[0], events[0], industry[2], signals[1]].filter(Boolean);
-  return picks.map((item, index) => ({
-    ...item,
-    candidate_rank: index + 1,
-    candidate_type: `CLOSE_TALK_${item.candidate_type}`,
-    editorial_status: "EDITORIAL_PREVIEW",
-    title: [
-      `今天盤面主線不是單一飆股：${item.title}`,
-      item.title,
-      `${item.title}，收盤後真正要查的是什麼？`,
-      `強勢族群開始擴散？${item.title}`,
-      `${item.title.replace("公告：", "：")}，明天盤面要留意什麼？`,
-    ][index],
-    why_channel: ["從今日正式 Brief 中挑出能代表盤面情緒與轉折的主角；本頻道仍缺三大法人、融資券與當沖比完整資料。"],
+function normalizeEditorial(payload) {
+  const editorial = payload.close_talk_editorial || {};
+  const angles = list(editorial.angles);
+  return angles.map((angle, index) => ({
+    ...angle,
+    candidate_rank: angle.rank || index + 1,
+    candidate_type: "CLOSE_TALK_EDITORIAL",
+    editorial_status: angle.editorial_state || editorial.status || "DRAFT_FOR_HUMAN_REVIEW",
+    title: list(angle.title_options)[0] || angle.episode_question || `收盤夜話選題 ${index + 1}`,
+    facts: list(angle.confirmed_facts).map((fact) => typeof fact === "string" ? fact : fact.text).filter(Boolean),
+    why_now: angle.why_today ? [angle.why_today] : [],
+    why_channel: angle.why_this_channel ? [angle.why_this_channel] : [],
+    evidence: list(angle.source_cards).map((card) => ({
+      ...card,
+      source_id: card.source_name || card.source_id,
+      evidence_class: card.epistemic_status || "SOURCE",
+    })),
+    script_text: angle.script?.full_text || "",
   }));
 }
 
 function normalizeChannels(payload) {
-  const briefs = list(payload.briefs);
-  const core = briefs.map((brief) => ({
-    name: brief.channel_name,
-    meta: CHANNEL_META[brief.channel_name],
-    topics: list(brief.assignments).slice(0, 5).map((item) => ({ ...item, title: editorialTitle(brief.channel_name, item) })),
-    official: true,
-  }));
-  core.push({ name: "收盤夜話", meta: CHANNEL_META["收盤夜話"], topics: buildCloseTalk(briefs), official: false });
-  core.push({ name: "權值旗艦", meta: CHANNEL_META["權值旗艦"], topics: list(payload.weight_topics).slice(0, 5), official: false });
-  return core.sort((a, b) => a.meta.order - b.meta.order);
+  const editorial = payload.close_talk_editorial || {};
+  return [{
+    name: "收盤夜話",
+    meta: CHANNEL_META["收盤夜話"],
+    topics: normalizeEditorial(payload),
+    editorial,
+    official: editorial.status === "DRAFT_FOR_HUMAN_REVIEW",
+  }];
 }
 
 function sourceRow(payload, source) {
@@ -147,8 +118,8 @@ function taipeiDate() {
 
 function applyPayload(payload) {
   channels = normalizeChannels(payload);
-  if (channels.length !== 5 || channels.some((channel) => channel.topics.length !== 5)) {
-    throw new Error("五頻道資料尚未完整發布");
+  if (channels.length !== 1) {
+    throw new Error("收盤夜話資料尚未發布");
   }
   const sessionDate = payload.market_session_date;
   const isCurrent = sessionDate === taipeiDate();
@@ -159,9 +130,10 @@ function applyPayload(payload) {
     hour12: false,
     timeZone: "Asia/Taipei",
   }).format(new Date(payload.generated_at));
-  $("#ranking-method").textContent = payload.ranking_method === "RULE_BASED_FALLBACK" ? "規則候選" : "待確認";
+  const editorial = payload.close_talk_editorial || {};
+  $("#ranking-method").textContent = editorial.status === "DRAFT_FOR_HUMAN_REVIEW" ? "編輯稿待審" : "資料待齊";
   const xRow = sourceRow(payload, "X");
-  $("#x-count").textContent = Number.isFinite(Number(xRow.record_count)) ? `${Number(xRow.record_count).toLocaleString("zh-TW")} 條` : "未提供";
+  $("#x-count").textContent = `${list(editorial.angles).length} 個選題`;
   $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
   $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
   $("#source-mops").textContent = sourceLabel(payload, "MOPS");
@@ -173,8 +145,7 @@ function applyPayload(payload) {
     ? `已載入 ${sessionDate} 最新收盤版`
     : `目前顯示最近成功的 ${sessionDate} 收盤版，今日資料尚未發布`;
   if ($("#topic-dialog").open) $("#topic-dialog").close();
-  showOverview();
-  renderOverview();
+  showChannel(channels[0]);
 }
 
 function renderOverview() {
@@ -202,11 +173,19 @@ function showChannel(channel) {
   $("#detail-kicker").textContent = channel.meta.kicker;
   $("#detail-title").textContent = channel.name;
   $("#detail-summary").textContent = channel.meta.description;
-  $("#detail-status").textContent = channel.official
-    ? "今日正式 Brief：通過日期、Evidence 與市場標的檢查。文稿為本頁新增的頻道草稿預覽。"
-    : channel.meta.status;
+  const editorial = channel.editorial || {};
+  $("#detail-status").textContent = channel.topics.length
+    ? "今日收盤夜話編輯稿：標題、理由、Evidence 與文稿集中在這裡。"
+    : `${editorial.reason || "今日收盤夜話完整文稿尚未生成。"}`;
   const listRoot = $("#topic-list");
   listRoot.innerHTML = "";
+  if (!channel.topics.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty-state";
+    empty.innerHTML = `<strong>今天的收盤夜話文稿還沒生成</strong><p>${escapeHtml(editorial.reason || "官方收盤資料尚未全部到齊，系統不會拿其他頻道內容代替。")}</p>`;
+    listRoot.appendChild(empty);
+    return;
+  }
   channel.topics.forEach((topic, index) => {
     const fragment = $("#topic-template").content.cloneNode(true);
     const row = fragment.querySelector(".topic-row");
@@ -234,11 +213,15 @@ function evidenceLinks(item) {
 
 function openTopic(channel, topic) {
   activeTopic = topic;
-  const draft = draftFor(channel.name, topic);
+  const draft = topic.script_text || "今天這個選題的完整文稿尚未生成。";
+  const titleOptions = list(topic.title_options).length
+    ? `<section class="title-options"><h3>可用標題</h3><ul>${list(topic.title_options).map((title) => `<li>${escapeHtml(title)}</li>`).join("")}</ul></section>`
+    : "";
   $("#dialog-content").innerHTML = `
     <div class="dialog-inner">
       <span class="topic-type">${escapeHtml(channel.name)} · ${escapeHtml(topicLabel(topic))}</span>
       <h2>${escapeHtml(topic.title)}</h2>
+      ${titleOptions}
       <div class="reason-grid">
         <section class="reason-block"><h3>為什麼是今天</h3><ul>${list(topic.why_now).map((row) => `<li>${escapeHtml(row)}</li>`).join("") || `<li>${escapeHtml(whyText(topic))}</li>`}</ul></section>
         <section class="reason-block"><h3>為什麼適合這個頻道</h3><ul>${list(topic.why_channel).map((row) => `<li>${escapeHtml(row)}</li>`).join("") || `<li>${escapeHtml(channel.meta.description)}</li>`}</ul></section>
@@ -251,7 +234,7 @@ function openTopic(channel, topic) {
         <button class="copy-button" type="button">複製草稿</button>
       </div>
       <section class="draft-block" hidden>
-        <p class="draft-note">頻道草稿預覽 · 由今日 Evidence 與單篇文字稿結構生成 · 上線前需人工核對</p>
+        <p class="draft-note">${topic.script_text ? "完整文稿 · 上線前需人工核對" : "今日文稿尚未生成"}</p>
         <h3>${escapeHtml(topic.title)}</h3>
         <div class="draft-copy">${escapeHtml(draft)}</div>
       </section>
@@ -275,11 +258,7 @@ function openTopic(channel, topic) {
 }
 
 function showOverview() {
-  activeChannel = null;
-  $("#channel-detail").hidden = true;
-  $("#channel-overview").hidden = false;
-  $("#page-title").textContent = "今天先做哪個頻道？";
-  $("#page-summary").textContent = "五個頻道各自選題，不把同一張漲幅榜換名字重複使用。";
+  if (channels[0]) showChannel(channels[0]);
 }
 
 async function loadLatest() {

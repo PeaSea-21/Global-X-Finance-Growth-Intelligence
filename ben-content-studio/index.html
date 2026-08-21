@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>BEN 內容工作台｜五頻道預覽</title>
+  <title>BEN 收盤夜話｜每日盤後文稿</title>
   <link rel="icon" href="../ben-channel-review/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#" aria-label="返回頻道總覽">
+    <a class="brand" href="#" aria-label="查看收盤夜話">
       <img src="../ben-channel-review/favicon.svg" alt="">
-      <span><strong>BEN 內容工作台</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
+        <span><strong>BEN 收盤夜話</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
     </a>
     <div class="topbar-meta">
       <span id="session-date">讀取今日資料</span>
@@ -27,20 +27,20 @@
     <section class="workspace-head">
       <div>
         <p class="eyebrow">POST-CLOSE CONTENT DESK</p>
-        <h1 id="page-title">今天先做哪個頻道？</h1>
-        <p id="page-summary">五個頻道各自選題，不把同一張漲幅榜換名字重複使用。</p>
+        <h1 id="page-title">今日收盤夜話</h1>
+        <p id="page-summary">只看今天台股收盤後最值得講的題目、理由、來源和文稿。</p>
       </div>
       <div class="run-facts" aria-label="本次資料狀態">
         <div><span>生成時間</span><strong id="generated-time">--</strong></div>
         <div><span>排序</span><strong id="ranking-method">--</strong></div>
-        <div><span>X 24H</span><strong id="x-count">--</strong></div>
+        <div><span>今日選題</span><strong id="x-count">--</strong></div>
       </div>
     </section>
 
     <div class="refresh-state" id="refresh-state" role="status" aria-live="polite">正在讀取最新日報</div>
 
     <section class="source-strip" aria-label="今日來源">
-      <span class="source-label">今日來源</span>
+      <span class="source-label">本頻道來源</span>
       <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b id="source-twse">讀取中</b></a>
       <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b id="source-tpex">讀取中</b></a>
       <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b id="source-mops">讀取中</b></a>
@@ -52,7 +52,7 @@
     <section id="channel-overview" class="channel-overview" aria-live="polite"></section>
 
     <section id="channel-detail" class="channel-detail" hidden>
-      <button class="back-button" id="back-button" type="button">← 返回五頻道</button>
+      <button class="back-button" id="back-button" type="button">← 重新查看收盤夜話</button>
       <div class="detail-head">
         <div>
           <p class="eyebrow" id="detail-kicker"></p>

@@ -3769,5 +3769,11 @@
         "NOT_INVESTMENT_ADVICE"
       ]
     }
-  ]
+  ],
+  "close_talk_editorial": {
+    "status": "UNAVAILABLE",
+    "market_session_date": "2026-08-21",
+    "angles": [],
+    "reason": "今日收盤夜話文稿尚未生成，資料包未通过同日来源闸门。"
+  }
 }
