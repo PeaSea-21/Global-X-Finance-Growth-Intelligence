@@ -3876,7 +3876,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 發行量加權指數與產業類指數",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL:MARKET_BREADTH_AND_TURNOVER:2026-08-21",
@@ -3884,7 +3886,9 @@
             "source_name": "TWSE/TPEx官方EOD整合",
             "title": "2026-08-21 上市櫃漲跌家數與成交資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL:TWSE_INSTITUTIONAL_FLOW:2026-08-21",
@@ -3892,7 +3896,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 三大法人買賣金額統計",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
           },
           {
             "evidence_id": "NEWS:0ec8f20d-6be5-4699-b057-c3511364fbb2",
@@ -3900,7 +3906,9 @@
             "source_name": "ETtoday財經雲",
             "title": "快訊／台股開低走高收漲291點重回45k 台積電漲35元收2410",
             "published_at": "2026-08-21T05:38:00+00:00",
-            "url": "https://finance.ettoday.net/news/3223290"
+            "url": "https://finance.ettoday.net/news/3223290",
+            "human_verification_url": "https://finance.ettoday.net/news/3223290",
+            "raw_api_url": null
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:2330:2026-08-21",
@@ -3908,7 +3916,9 @@
             "source_name": "臺灣證券交易所",
             "title": "台積電（TWSE:2330） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:2454:2026-08-21",
@@ -3916,11 +3926,15 @@
             "source_name": "臺灣證券交易所",
             "title": "聯發科（TWSE:2454） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           }
         ],
         "script": {
           "character_target": "1600-2800",
+          "character_count": 1633,
+          "character_count_basis": "UNICODE_CODEPOINTS_EXCLUDING_WHITESPACE",
           "sections": [
             "cold_open",
             "market_snapshot",
@@ -4023,7 +4037,9 @@
             "source_name": "臺灣證券交易所",
             "title": "南亞科（TWSE:2408） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:2344:2026-08-21",
@@ -4031,7 +4047,9 @@
             "source_name": "臺灣證券交易所",
             "title": "華邦電（TWSE:2344） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "NEWS:3b585a80-fa29-449f-9979-78bcf576a2ec",
@@ -4039,7 +4057,9 @@
             "source_name": "中央社財經",
             "title": "SK海力士擬斥資數十兆韓元 赴日建記憶體晶片廠",
             "published_at": "2026-08-21T03:48:07+00:00",
-            "url": "https://www.cna.com.tw/news/aopl/202608210081.aspx"
+            "url": "https://www.cna.com.tw/news/aopl/202608210081.aspx",
+            "human_verification_url": "https://www.cna.com.tw/news/aopl/202608210081.aspx",
+            "raw_api_url": null
           },
           {
             "evidence_id": "NEWS:1613f5a7-ceb5-4976-926f-2ae8d7b9c46f",
@@ -4047,7 +4067,9 @@
             "source_name": "ETtoday財經雲",
             "title": "美光CEO曝「AI徹底改變記憶體產業」 客戶需求超出供給50%",
             "published_at": "2026-08-21T03:02:00+00:00",
-            "url": "https://finance.ettoday.net/news/3223172"
+            "url": "https://finance.ettoday.net/news/3223172",
+            "human_verification_url": "https://finance.ettoday.net/news/3223172",
+            "raw_api_url": null
           },
           {
             "evidence_id": "NEWS:8d8a68b7-6239-46f7-b8f6-99bdb8037862",
@@ -4055,11 +4077,15 @@
             "source_name": "科技新報財經",
             "title": "美光加碼 100 億美元，在美新設 AI 記憶體研發中心",
             "published_at": "2026-08-21T01:30:45+00:00",
-            "url": "https://finance.technews.tw/2026/08/21/micron-unveils-micron-research-labs/"
+            "url": "https://finance.technews.tw/2026/08/21/micron-unveils-micron-research-labs/",
+            "human_verification_url": "https://finance.technews.tw/2026/08/21/micron-unveils-micron-research-labs/",
+            "raw_api_url": null
           }
         ],
         "script": {
           "character_target": "1600-2800",
+          "character_count": 1559,
+          "character_count_basis": "UNICODE_CODEPOINTS_EXCLUDING_WHITESPACE",
           "sections": [
             "cold_open",
             "two_stock_snapshot",
@@ -4161,7 +4187,9 @@
             "source_name": "臺灣證券交易所",
             "title": "萬海（TWSE:2615） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:2609:2026-08-21",
@@ -4169,7 +4197,9 @@
             "source_name": "臺灣證券交易所",
             "title": "陽明（TWSE:2609） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:2603:2026-08-21",
@@ -4177,7 +4207,9 @@
             "source_name": "臺灣證券交易所",
             "title": "長榮（TWSE:2603） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL:TWSE_INDEX_AND_SECTORS:2026-08-21",
@@ -4185,7 +4217,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 發行量加權指數與產業類指數",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "NEWS:b23c5403-99be-46fb-9f24-17a661159427",
@@ -4193,7 +4227,9 @@
             "source_name": "ETtoday財經雲",
             "title": "航運股5檔漲停！唯一聚焦00960刷新高 00981A新建倉慧洋-KY",
             "published_at": "2026-08-21T04:29:00+00:00",
-            "url": "https://finance.ettoday.net/news/3223245"
+            "url": "https://finance.ettoday.net/news/3223245",
+            "human_verification_url": "https://finance.ettoday.net/news/3223245",
+            "raw_api_url": null
           },
           {
             "evidence_id": "NEWS:77e30d9a-f960-410f-92bf-c38e4f4bde02",
@@ -4201,11 +4237,15 @@
             "source_name": "ETtoday財經雲",
             "title": "航海王續攻！外資狂掃陽明、長榮 萬海飆漲近9%刷15個月新高",
             "published_at": "2026-08-21T02:44:00+00:00",
-            "url": "https://finance.ettoday.net/news/3223138"
+            "url": "https://finance.ettoday.net/news/3223138",
+            "human_verification_url": "https://finance.ettoday.net/news/3223138",
+            "raw_api_url": null
           }
         ],
         "script": {
           "character_target": "1600-2800",
+          "character_count": 1356,
+          "character_count_basis": "UNICODE_CODEPOINTS_EXCLUDING_WHITESPACE",
           "sections": [
             "cold_open",
             "sector_snapshot",
@@ -4300,7 +4340,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 發行量加權指數與產業類指數",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:3037:2026-08-21",
@@ -4308,7 +4350,9 @@
             "source_name": "臺灣證券交易所",
             "title": "欣興（TWSE:3037） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:3189:2026-08-21",
@@ -4316,7 +4360,9 @@
             "source_name": "臺灣證券交易所",
             "title": "景碩（TWSE:3189） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL_EOD:TWSE:8046:2026-08-21",
@@ -4324,7 +4370,9 @@
             "source_name": "臺灣證券交易所",
             "title": "南電（TWSE:8046） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "NEWS:3b015b32-9378-4da0-969f-49bac5ec2c4b",
@@ -4332,7 +4380,9 @@
             "source_name": "中央社財經",
             "title": "台股漲逾300點重返45000點 貨櫃三雄勁揚",
             "published_at": "2026-08-21T03:49:09+00:00",
-            "url": "https://www.cna.com.tw/news/afe/202608210082.aspx"
+            "url": "https://www.cna.com.tw/news/afe/202608210082.aspx",
+            "human_verification_url": "https://www.cna.com.tw/news/afe/202608210082.aspx",
+            "raw_api_url": null
           }
         ]
       },
@@ -4414,7 +4464,9 @@
             "source_name": "臺灣證券交易所",
             "title": "聯發科（TWSE:2454） 2026-08-21 官方收盤資料",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "NEWS:c9619be6-4e81-46a0-b0df-f187167bb35a",
@@ -4422,7 +4474,9 @@
             "source_name": "Yahoo奇摩股市",
             "title": "焦點股》聯發科：搶單傳言衝擊股價 外資力挺市場低估",
             "published_at": "2026-08-21T04:00:32+00:00",
-            "url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%81%AF%E7%99%BC%E7%A7%91-%E6%90%B6%E5%96%AE%E5%82%B3%E8%A8%80%E8%A1%9D%E6%93%8A%E8%82%A1%E5%83%B9-%E5%A4%96%E8%B3%87%E5%8A%9B%E6%8C%BA%E5%B8%82%E5%A0%B4%E4%BD%8E%E4%BC%B0-040032589.html"
+            "url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%81%AF%E7%99%BC%E7%A7%91-%E6%90%B6%E5%96%AE%E5%82%B3%E8%A8%80%E8%A1%9D%E6%93%8A%E8%82%A1%E5%83%B9-%E5%A4%96%E8%B3%87%E5%8A%9B%E6%8C%BA%E5%B8%82%E5%A0%B4%E4%BD%8E%E4%BC%B0-040032589.html",
+            "human_verification_url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%81%AF%E7%99%BC%E7%A7%91-%E6%90%B6%E5%96%AE%E5%82%B3%E8%A8%80%E8%A1%9D%E6%93%8A%E8%82%A1%E5%83%B9-%E5%A4%96%E8%B3%87%E5%8A%9B%E6%8C%BA%E5%B8%82%E5%A0%B4%E4%BD%8E%E4%BC%B0-040032589.html",
+            "raw_api_url": null
           },
           {
             "evidence_id": "OFFICIAL:TWSE_INDEX_AND_SECTORS:2026-08-21",
@@ -4430,7 +4484,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 發行量加權指數與產業類指數",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
           },
           {
             "evidence_id": "OFFICIAL:TWSE_INSTITUTIONAL_FLOW:2026-08-21",
@@ -4438,7 +4494,9 @@
             "source_name": "臺灣證券交易所",
             "title": "2026-08-21 三大法人買賣金額統計",
             "published_at": "2026-08-21",
-            "url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
+            "url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+            "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+            "raw_api_url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
           },
           {
             "evidence_id": "NEWS:434dfd54-6699-45af-be11-33879dc03ca7",
@@ -4446,7 +4504,9 @@
             "source_name": "中央社財經",
             "title": "AI熱潮擴散 凱基投顧上修台股企業未來2年盈餘預估",
             "published_at": "2026-08-21T03:52:13+00:00",
-            "url": "https://www.cna.com.tw/news/afe/202608210084.aspx"
+            "url": "https://www.cna.com.tw/news/afe/202608210084.aspx",
+            "human_verification_url": "https://www.cna.com.tw/news/afe/202608210084.aspx",
+            "raw_api_url": null
           }
         ]
       }

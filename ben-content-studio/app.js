@@ -17,6 +17,7 @@ let activeTopic = null;
 const $ = (selector) => document.querySelector(selector);
 const list = (value) => Array.isArray(value) ? value : [];
 const escapeHtml = (value) => String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
+const characterCount = (value) => [...String(value ?? "").replace(/\s/g, "")].length;
 
 function topicLabel(item) {
   if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
@@ -54,6 +55,7 @@ function normalizeEditorial(payload) {
       evidence_class: card.epistemic_status || "SOURCE",
     })),
     script_text: angle.script?.full_text || "",
+    script_character_count: angle.script?.character_count || characterCount(angle.script?.full_text || ""),
   }));
 }
 
@@ -177,15 +179,22 @@ function evidenceLinks(item) {
   if (!rows.length) return '<span>暫無可點擊 Evidence</span>';
   return rows.map((row, index) => {
     const label = `${row.evidence_class || row.epistemic_status || "Evidence"} · ${row.source_id || `來源 ${index + 1}`}`;
-    return row.url
-      ? `<a href="${escapeHtml(row.url)}" target="_blank" rel="noreferrer">${escapeHtml(label)} ↗</a>`
+    const humanUrl = row.human_verification_url || row.url;
+    const rawUrl = row.raw_api_url && row.raw_api_url !== humanUrl ? row.raw_api_url : "";
+    const primary = humanUrl
+      ? `<a href="${escapeHtml(humanUrl)}" target="_blank" rel="noreferrer">${escapeHtml(label)} · 官網核對 ↗</a>`
       : `<span>${escapeHtml(label)}</span>`;
+    const raw = rawUrl
+      ? `<a href="${escapeHtml(rawUrl)}" target="_blank" rel="noreferrer">原始資料 ↗</a>`
+      : "";
+    return `${primary}${raw}`;
   }).join("");
 }
 
 function openTopic(channel, topic) {
   activeTopic = topic;
   const draft = topic.script_text || "今天這個選題的完整文稿尚未生成。";
+  const draftCount = topic.script_character_count || characterCount(draft);
   const titleOptions = list(topic.title_options).length
     ? `<section class="title-options"><h3>可用標題</h3><ul>${list(topic.title_options).map((title) => `<li>${escapeHtml(title)}</li>`).join("")}</ul></section>`
     : "";
@@ -206,7 +215,7 @@ function openTopic(channel, topic) {
         <button class="copy-button" type="button">複製草稿</button>
       </div>
       <section class="draft-block" hidden>
-        <p class="draft-note">${topic.script_text ? "完整文稿 · 上線前需人工核對" : "今日文稿尚未生成"}</p>
+        <p class="draft-note">${topic.script_text ? `正文字符数：${draftCount.toLocaleString("zh-TW")}（不含空白） · 上線前需人工核對` : "今日文稿尚未生成"}</p>
         <h3>${escapeHtml(topic.title)}</h3>
         <div class="draft-copy">${escapeHtml(draft)}</div>
       </section>
