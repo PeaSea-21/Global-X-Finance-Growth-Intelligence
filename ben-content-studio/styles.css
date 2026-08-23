@@ -103,6 +103,7 @@ h1 { margin: 0; max-width: 720px; font-size: 34px; line-height: 1.18; }
 .back-button { padding: 8px 0; background: transparent; color: var(--teal); }
 .detail-head { display: flex; justify-content: space-between; align-items: end; gap: 30px; padding: 18px 0 22px; border-bottom: 2px solid var(--ink); }
 .detail-head h2 { margin: 0; font-size: 30px; }
+.detail-head p { overflow-wrap: anywhere; }
 .detail-status { max-width: 320px; padding: 9px 12px; color: var(--muted); background: #eef1ef; border-left: 4px solid var(--teal); font-size: 11px; line-height: 1.5; }
 .topic-list { display: grid; }
 .topic-row { min-height: 138px; display: grid; grid-template-columns: 58px minmax(0, 1fr) 132px; align-items: center; gap: 18px; padding: 18px 8px; border-bottom: 1px solid var(--line); }
@@ -133,7 +134,7 @@ dialog::backdrop { background: rgba(19, 33, 38, .6); }
 .reason-block ul { margin: 0; padding-left: 18px; }
 .source-block { margin: 22px 0; }
 .source-links { display: flex; flex-wrap: wrap; gap: 8px; }
-.source-links a { padding: 7px 9px; color: var(--blue); background: var(--blue-soft); border: 1px solid #c6d7e8; border-radius: 4px; font-size: 11px; font-weight: 750; text-decoration: none; }
+.source-links a { max-width: 100%; padding: 7px 9px; overflow-wrap: anywhere; color: var(--blue); background: var(--blue-soft); border: 1px solid #c6d7e8; border-radius: 4px; font-size: 11px; font-weight: 750; text-decoration: none; }
 .source-links span { padding: 7px 9px; color: var(--muted); background: #eef1ef; border: 1px solid var(--line); border-radius: 4px; font-size: 11px; }
 .draft-actions { display: flex; gap: 8px; margin-top: 20px; }
 .copy-button { padding: 8px 12px; background: #fff; color: var(--ink); border: 1px solid var(--line); }
@@ -162,7 +163,7 @@ dialog::backdrop { background: rgba(19, 33, 38, .6); }
   .run-facts div:last-child { border-bottom: 0; }
   .channel-overview { grid-template-columns: 1fr; }
   .channel-card { min-height: 210px; }
-  .detail-head { align-items: start; flex-direction: column; }
+  .detail-head { align-items: stretch; flex-direction: column; }
   .detail-status { max-width: none; width: 100%; }
   .topic-row { grid-template-columns: 38px minmax(0, 1fr); gap: 10px; padding: 18px 0; }
   .topic-rank { font-size: 22px; }

@@ -11,6 +11,16 @@ const CHANNEL_META = {
   "暗池雷達": { accent: "#31536b", kicker: "DERIVATIVES EVIDENCE" },
   "期權守門人": { accent: "#8a5b2d", kicker: "OPTIONS RISK" },
   "財報獵人": { accent: "#4c6268", kicker: "EARNINGS REVIEW" },
+  "宏觀天秤": { accent: "#315f78", kicker: "GLOBAL MACRO" },
+  "全球資金地圖": { accent: "#6b5946", kicker: "GLOBAL CAPITAL FLOW" },
+  "地緣炸藥庫": { accent: "#a13e37", kicker: "GEOPOLITICAL RISK" },
+  "週期航海家": { accent: "#24756b", kicker: "COMMODITY CYCLE" },
+  "鏈上顯微鏡": { accent: "#7252a0", kicker: "ONCHAIN DATA" },
+  "中概風向球": { accent: "#a04c69", kicker: "CHINA ADRS" },
+  "財商拆彈組": { accent: "#43845a", kicker: "FINANCIAL LITERACY" },
+  "半導體駭客": { accent: "#3d5f98", kicker: "SEMICONDUCTOR TECH" },
+  "華爾街溫度計": { accent: "#9b641c", kicker: "MARKET SENTIMENT" },
+  "定投實驗室": { accent: "#537078", kicker: "DCA RESEARCH" },
 };
 
 let channels = [];
@@ -29,6 +39,7 @@ function topicLabel(item) {
   if (item.candidate_type?.includes("X_EVENT")) return "X 線索";
   if (item.candidate_type?.includes("CROSS_ENTITY")) return "產業共振";
   if (item.candidate_type?.includes("WEIGHTED")) return "權值觀察";
+  if (item.candidate_type?.includes("CHANNEL_EDITORIAL")) return "頻道暫定稿";
   return "價量線索";
 }
 
@@ -41,7 +52,7 @@ function whyText(item) {
 }
 
 function normalizeChannels(payload) {
-  const workbench = payload.first_ten_workbench || {};
+  const workbench = payload.channel_workbench || payload.first_ten_workbench || {};
   return list(workbench.channels).map((channel) => ({
     ...channel,
     name: channel.channel_name,
@@ -75,21 +86,22 @@ function taipeiDate() {
 
 function applyPayload(payload) {
   channels = normalizeChannels(payload);
-  if (channels.length !== 10) {
-    throw new Error("前十頻道資料尚未完整發布");
+  if (channels.length !== 20) {
+    throw new Error("20頻道資料尚未完整發布");
   }
-  const workbench = payload.first_ten_workbench;
+  const workbench = payload.channel_workbench || payload.first_ten_workbench;
   const snapshotDate = workbench.source_snapshot_date;
   const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
   $("#session-date").textContent = `${snapshotDate} 選題快照`;
   $("#generated-time").textContent = snapshotDate;
-  $("#ranking-method").textContent = `${workbench.draft_ready_channel_count}/10 已有草稿`;
+  $("#ranking-method").textContent = `${workbench.draft_ready_channel_count}/20 已有草稿`;
   $("#x-count").textContent = `${fullScriptCount} 篇`;
   $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
   $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
   $("#source-mops").textContent = sourceLabel(payload, "MOPS");
   $("#source-news").textContent = "9/9 · 24/48H";
   $("#source-x").textContent = sourceLabel(payload, "X");
+  $("#source-youtube").textContent = `${workbench.transcript_sample_count || 19}篇口吻樣本`;
   const refreshState = $("#refresh-state");
   refreshState.className = "refresh-state";
   refreshState.textContent = `已載入 ${snapshotDate} 選題快照；收盤夜話使用最近交易日 ${workbench.last_market_session_date}`;
@@ -230,7 +242,7 @@ function showOverview() {
   activeChannel = null;
   $("#channel-overview").hidden = false;
   $("#channel-detail").hidden = true;
-  $("#page-title").textContent = "前十頻道：標題與完整文稿";
+  $("#page-title").textContent = "20頻道：標題與完整文稿";
   $("#page-summary").textContent = "已有樣本的頻道先出審閱稿；沒有樣本的頻道保留位置並明確標示缺口。";
   renderOverview();
   window.scrollTo({ top: 0, behavior: "smooth" });
