@@ -34,7 +34,7 @@ const characterCount = (value) => [...String(value ?? "").replace(/\s/g, "")].le
 
 function topicLabel(item) {
   if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
-  if (item.script_generation_method === "STYLE_PACK_EVIDENCE_TEMPLATE_V1") return "跨頻道熱點 · 本頻道完整稿";
+  if (item.script_generation_method === "CHANNEL_PROGRAM_EVIDENCE_V2") return "跨頻道熱點 · 時長達標完整稿";
   if (item.candidate_type?.includes("DISCLOSURE")) return "官方事件";
   if (item.candidate_type?.includes("NEWS")) return "新聞事件";
   if (item.candidate_type?.includes("X_EVENT")) return "X 線索";
@@ -97,6 +97,9 @@ function applyPayload(payload) {
   if (channels.some((channel) => channel.topics.some((topic) => !topic.script_text))) {
     throw new Error("已有樣本頻道仍有未完成文稿");
   }
+  if (channels.some((channel) => channel.topics.some((topic) => topic.script_meets_target !== true))) {
+    throw new Error("已有樣本頻道仍有未達時長門檻的文稿");
+  }
   const snapshotDate = workbench.source_snapshot_date;
   const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
   $("#session-date").textContent = `${snapshotDate} 選題快照`;
@@ -150,7 +153,7 @@ function showChannel(channel) {
   $("#page-summary").textContent = channel.reason;
   $("#detail-kicker").textContent = channel.meta.kicker;
   $("#detail-title").textContent = channel.name;
-  $("#detail-summary").textContent = `${channel.meta.description} 風格狀態：${channel.style_status}。`;
+  $("#detail-summary").textContent = `${channel.meta.description} 目標時長：${channel.target_duration}；每篇至少 ${channel.minimum_script_character_count.toLocaleString("zh-TW")} 字符。風格狀態：${channel.style_status}。`;
   $("#detail-status").textContent = channel.topics.length
     ? `${channel.content_date} · ${channel.topics.filter((topic) => topic.script_text).length} 篇完整文稿 · 上線前人工核對`
     : channel.reason;
@@ -168,7 +171,10 @@ function showChannel(channel) {
     const row = fragment.querySelector(".topic-row");
     row.style.setProperty("--accent", channel.meta.accent);
     fragment.querySelector(".topic-rank").textContent = String(index + 1).padStart(2, "0");
-    const scriptMeta = topic.script_text ? `正文 ${topic.script_character_count.toLocaleString("zh-TW")} 字符` : "選題綱要";
+    const targetState = topic.script_meets_target ? "已達時長門檻" : "未達時長門檻";
+    const scriptMeta = topic.script_text
+      ? `正文 ${topic.script_character_count.toLocaleString("zh-TW")} 字符 · ${topic.script_target_duration} · ${targetState}`
+      : "選題綱要";
     fragment.querySelector(".topic-meta").textContent = `${topicLabel(topic)} · ${scriptMeta} · ${topic.editorial_status || "NEEDS_REVIEW"}`;
     fragment.querySelector("h3").textContent = topic.title;
     fragment.querySelector("p").textContent = whyText(topic);
@@ -220,7 +226,7 @@ function openTopic(channel, topic) {
         <button class="copy-button" type="button">複製文稿</button>
       </div>` : ""}
       <section class="draft-block" ${topic.script_text ? "hidden" : ""}>
-        <p class="draft-note">${topic.script_text ? `正文字符數：${draftCount.toLocaleString("zh-TW")}（不含空白） · 上線前需人工核對` : "目前只有選題綱要"}</p>
+        <p class="draft-note">${topic.script_text ? `正文字符數：${draftCount.toLocaleString("zh-TW")}（不含空白） · 目標 ${escapeHtml(topic.script_target_duration)}／最低 ${Number(topic.script_minimum_character_count).toLocaleString("zh-TW")} · 已達標 · 上線前需人工核對` : "目前只有選題綱要"}</p>
         <h3>${escapeHtml(topic.title)}</h3>
         <div class="draft-copy">${escapeHtml(draft)}</div>
       </section>
