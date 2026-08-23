@@ -34,6 +34,7 @@ const characterCount = (value) => [...String(value ?? "").replace(/\s/g, "")].le
 
 function topicLabel(item) {
   if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
+  if (item.candidate_type?.includes("CHANNEL_TOPIC_OUTLINE")) return "跨頻道熱點 · 本頻道角度";
   if (item.candidate_type?.includes("DISCLOSURE")) return "官方事件";
   if (item.candidate_type?.includes("NEWS")) return "新聞事件";
   if (item.candidate_type?.includes("X_EVENT")) return "X 線索";
@@ -53,7 +54,7 @@ function whyText(item) {
 
 function normalizeChannels(payload) {
   const workbench = payload.channel_workbench || payload.first_ten_workbench || {};
-  return list(workbench.channels).map((channel) => ({
+  return list(workbench.channels).filter((channel) => channel.content_status !== "WAITING_FOR_TRANSCRIPT_SAMPLES").map((channel) => ({
     ...channel,
     name: channel.channel_name,
     meta: {
@@ -85,21 +86,24 @@ function taipeiDate() {
 }
 
 function applyPayload(payload) {
-  channels = normalizeChannels(payload);
-  if (channels.length !== 20) {
-    throw new Error("20頻道資料尚未完整發布");
-  }
   const workbench = payload.channel_workbench || payload.first_ten_workbench;
+  if (!workbench || Number(workbench.channel_count) !== 20) {
+    throw new Error("20頻道審計資料尚未完整發布");
+  }
+  channels = normalizeChannels(payload);
+  if (channels.length !== 11 || channels.some((channel) => channel.topics.length !== 5)) {
+    throw new Error("已有樣本頻道尚未形成五題審稿面");
+  }
   const snapshotDate = workbench.source_snapshot_date;
   const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
   $("#session-date").textContent = `${snapshotDate} 選題快照`;
   $("#generated-time").textContent = snapshotDate;
-  $("#ranking-method").textContent = `${workbench.draft_ready_channel_count}/20 已有草稿`;
+  $("#ranking-method").textContent = `${channels.length} 個已有樣本`;
   $("#x-count").textContent = `${fullScriptCount} 篇`;
   $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
   $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
   $("#source-mops").textContent = sourceLabel(payload, "MOPS");
-  $("#source-news").textContent = "9/9 · 24/48H";
+  $("#source-news").textContent = `${workbench.news_source_success_count || 9}/${workbench.news_source_count || 9} · 官方${workbench.official_source_count || 0}`;
   $("#source-x").textContent = sourceLabel(payload, "X");
   $("#source-youtube").textContent = `${workbench.transcript_sample_count || 19}篇口吻樣本`;
   const refreshState = $("#refresh-state");
@@ -242,8 +246,8 @@ function showOverview() {
   activeChannel = null;
   $("#channel-overview").hidden = false;
   $("#channel-detail").hidden = true;
-  $("#page-title").textContent = "20頻道：標題與完整文稿";
-  $("#page-summary").textContent = "已有樣本的頻道先出審閱稿；沒有樣本的頻道保留位置並明確標示缺口。";
+  $("#page-title").textContent = "已有樣本頻道：5題選題與文稿";
+  $("#page-summary").textContent = "同一熱點可以跨頻道覆蓋，但標題與切入角度必須符合各自定位；無文稿樣本的頻道不在本頁顯示。";
   renderOverview();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }

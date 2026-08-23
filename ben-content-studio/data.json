@@ -5635,7 +5635,7 @@
     "artifact": "BEN_ALL20_CHANNEL_EDITORIAL_WORKBENCH",
     "schema_version": "1.0",
     "status": "DRAFT_FOR_HUMAN_REVIEW",
-    "generated_at": "2026-08-23T16:31:58+08:00",
+    "generated_at": "2026-08-23T17:14:33+08:00",
     "source_snapshot_date": "2026-08-23",
     "last_market_session_date": "2026-08-21",
     "fresh_event_window_hours": 24,
@@ -5643,12 +5643,35 @@
     "channel_count": 20,
     "draft_ready_channel_count": 11,
     "waiting_sample_channel_count": 9,
+    "public_visible_channel_count": 11,
+    "hidden_waiting_channel_count": 9,
     "transcript_sample_count": 19,
+    "news_source_success_count": 14,
+    "news_source_count": 14,
+    "required_source_success_count": 9,
+    "required_source_count": 9,
+    "official_source_count": 4,
+    "coverage_tag_counts": {
+      "CRYPTO": 17,
+      "DERIVATIVES_NEWS": 17,
+      "DIGITAL_ASSETS": 17,
+      "GENERAL_FINANCE": 268
+    },
+    "structured_data_gaps": {
+      "ETF_NET_FLOWS": "UNAVAILABLE",
+      "ONCHAIN_ADDRESS_METRICS": "UNAVAILABLE",
+      "OPTIONS_CHAIN_IV_OI": "UNAVAILABLE",
+      "DARK_POOL_PRINTS": "UNAVAILABLE",
+      "DXY_FX_TICKS": "UNAVAILABLE",
+      "COMMODITY_INVENTORIES": "PARTIAL_NEWS_ONLY"
+    },
     "boundaries": [
       "週日資料是24/48小時選題快照，不是台股同日收盤稿。",
       "所有文稿均為人工審閱草稿，不是投資建議。",
       "有完整文稿樣本的11個頻道仍為PROVISIONAL，不代表風格已定型。",
       "9個無完整文稿樣本的頻道不生成仿寫稿。",
+      "無文稿頻道保留在審計資料中，但不在Ben公網頁面顯示。",
+      "同一熱點可依頻道定位重複覆蓋，但所有公開標題必須全局唯一。",
       "缺ETF流量、鏈上地址、期權鏈或官方文件時，不推論資金與機構方向。"
     ],
     "channels": [
@@ -6236,6 +6259,218 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:04:ai-cost",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "AI伺服器傳漲價：台積電、鴻海、臺達電誰能把成本往下游轉？",
+            "title_options": [
+              "AI伺服器傳漲價：台積電、鴻海、臺達電誰能把成本往下游轉？",
+              "權值旗艦備選：記憶體漲價壓到大型股，護國群山誰先出現毛利壓力？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把同一AI成本事件落到大型權值股的供應鏈位置與指數影響。"
+            ],
+            "facts": [
+              "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+              "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+            ],
+            "unknowns": [
+              "缺正式調價檔案與各公司毛利敏感度，不能計算精確獲利影響。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "ai-cost",
+            "channel_angle": "權值旗艦"
+          },
+          {
+            "candidate_id": "channel-outline:04:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "長債殖利率碰上AI融資潮：45K上方哪些權值股估值最敏感？",
+            "title_options": [
+              "長債殖利率碰上AI融資潮：45K上方哪些權值股估值最敏感？",
+              "權值旗艦備選：博通大額融資、利率再抬頭，臺股權值誰扛得住折現壓力？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從長端利率與企業融資成本檢查權值股估值承壓程度。"
+            ],
+            "facts": [
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+            ],
+            "unknowns": [
+              "缺同時點利率曲線、個股估值與外資期貨部位。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "權值旗艦"
+          },
+          {
+            "candidate_id": "channel-outline:04:tw-rotation",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "電子權值休息、金融接棒？投信轉向後的大盤結構怎麼看",
+            "title_options": [
+              "電子權值休息、金融接棒？投信轉向後的大盤結構怎麼看",
+              "權值旗艦備選：臺股週跌586點，權值輪班還是主線鬆動？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "以權值股分工檢查臺股資金輪動是否足以支撐指數。"
+            ],
+            "facts": [
+              "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+              "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+            ],
+            "unknowns": [
+              "缺完整成分權重與連續多日法人跨股資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+                "published_at": "2026-08-22T07:42:26+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+                "published_at": "2026-08-22T06:38:00+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tw-rotation",
+            "channel_angle": "權值旗艦"
+          },
+          {
+            "candidate_id": "channel-outline:04:china-supply",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "輝達中國變數碰上稀土出口：臺灣大型供應鏈誰先被重估？",
+            "title_options": [
+              "輝達中國變數碰上稀土出口：臺灣大型供應鏈誰先被重估？",
+              "權值旗艦備選：中國市場與稀土訊號同時升溫，權值供應鏈風險怎麼排？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把中國市場與稀土供應訊號對映到臺灣大型科技權值。"
+            ],
+            "facts": [
+              "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。",
+              "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。"
+            ],
+            "unknowns": [
+              "兩則新聞是共同環境線索，尚未形成對特定臺股的直接因果。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "輝達即將公布財報，中國市場動態受市場關注",
+                "published_at": "2026-08-22T02:00:30+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "中國7月稀土磁體對日出口111噸 年減5成",
+                "published_at": "2026-08-22T08:27:15+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-supply",
+            "channel_angle": "權值旗艦"
           }
         ]
       },
@@ -6343,6 +6578,238 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:05:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "700億美元博通融資加100億美元阿里配股：錢正流向AI資本開支？",
+            "title_options": [
+              "700億美元博通融資加100億美元阿里配股：錢正流向AI資本開支？",
+              "資金雷達備選：企業同時搶錢，二級市場流動性會被AI融資抽走嗎？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由3個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "追蹤企業融資如何改變股票、債券與跨市場資金分配。"
+            ],
+            "facts": [
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。",
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+            ],
+            "unknowns": [
+              "缺原始融資條款與同週ETF淨申贖，不能確認資金已完成搬家。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "資金雷達"
+          },
+          {
+            "candidate_id": "channel-outline:05:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "比特幣軋空與科技股融資同時發生：風險偏好回來還是槓桿擠壓？",
+            "title_options": [
+              "比特幣軋空與科技股融資同時發生：風險偏好回來還是槓桿擠壓？",
+              "資金雷達備選：Crypto急漲、AI企業搶錢，跨市場熱錢到底往哪走？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用加密槓桿與科技融資對照短線風險偏好。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+            ],
+            "unknowns": [
+              "缺跨資產同步資金流與現貨成交，不能把軋空當作全面風險偏好。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "資金雷達"
+          },
+          {
+            "candidate_id": "channel-outline:05:tw-rotation",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "臺股週跌、公股ETF承接：資金是在護盤還是重新配置？",
+            "title_options": [
+              "臺股週跌、公股ETF承接：資金是在護盤還是重新配置？",
+              "資金雷達備選：投信由買轉賣後，ETF買盤能不能接住板塊輪動？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "比較週線壓力、投信方向與ETF承接線索。"
+            ],
+            "facts": [
+              "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+              "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+            ],
+            "unknowns": [
+              "缺完整公股買賣明細與板塊成交佔比。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+                "published_at": "2026-08-22T07:42:26+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+                "published_at": "2026-08-22T06:38:00+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tw-rotation",
+            "channel_angle": "資金雷達"
+          },
+          {
+            "candidate_id": "channel-outline:05:china-supply",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "阿里配股、稀土出口、輝達中國：三條資金線正在中國科技交會",
+            "title_options": [
+              "阿里配股、稀土出口、輝達中國：三條資金線正在中國科技交會",
+              "資金雷達備選：中國科技資金風向變了嗎？先看融資、出口與晶片需求"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由3個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把企業融資、供應鏈與中國科技需求放進同一資金地圖。"
+            ],
+            "facts": [
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。",
+              "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+              "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+            ],
+            "unknowns": [
+              "缺CNH、KWEB與港美兩地成交資料，不能確認中概整體流向。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "中國7月稀土磁體對日出口111噸 年減5成",
+                "published_at": "2026-08-22T08:27:15+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "輝達即將公布財報，中國市場動態受市場關注",
+                "published_at": "2026-08-22T02:00:30+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-supply",
+            "channel_angle": "資金雷達"
           }
         ]
       },
@@ -6440,6 +6907,208 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:06:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "美債殖利率再壓估值、博通又要大融資：那指火箭會缺氧嗎？",
+            "title_options": [
+              "美債殖利率再壓估值、博通又要大融資：那指火箭會缺氧嗎？",
+              "那指火箭備選：AI企業搶錢遇上長債高位，成長股折現壓力怎麼算？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從融資成本與長端利率拆解NASDAQ成長股估值。"
+            ],
+            "facts": [
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+            ],
+            "unknowns": [
+              "缺NDX成分廣度、QQQ流量與公司正式融資檔案。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "那指火箭"
+          },
+          {
+            "candidate_id": "channel-outline:06:china-capital",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "阿里傳配股100億美元：中國AI燒錢會不會改寫那指競爭格局？",
+            "title_options": [
+              "阿里傳配股100億美元：中國AI燒錢會不會改寫那指競爭格局？",
+              "那指火箭備選：美中AI同時擴資本開支，科技巨頭下一輪比的是現金流"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "比較美中AI資本開支對科技成長股競爭與估值的影響。"
+            ],
+            "facts": [
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。",
+              "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+            ],
+            "unknowns": [
+              "缺公司正式配股檔案與可比較的AI資本回報資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "輝達即將公布財報，中國市場動態受市場關注",
+                "published_at": "2026-08-22T02:00:30+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-capital",
+            "channel_angle": "那指火箭"
+          },
+          {
+            "candidate_id": "channel-outline:06:ai-cost",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "記憶體成本推升AI伺服器報價：NVIDIA財報前最該盯毛利還是需求？",
+            "title_options": [
+              "記憶體成本推升AI伺服器報價：NVIDIA財報前最該盯毛利還是需求？",
+              "那指火箭備選：伺服器漲價不一定是利多，AI鏈誰能留住毛利？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把AI伺服器價格訊號拆成需求、成本與毛利三層。"
+            ],
+            "facts": [
+              "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+              "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+            ],
+            "unknowns": [
+              "缺公司正式定價與財報毛利率，無法判斷價格上升由誰受益。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "ai-cost",
+            "channel_angle": "那指火箭"
+          },
+          {
+            "candidate_id": "channel-outline:06:tokenization",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "代幣化股票被警告可能重演紙本危機：那指金融科技敘事要降溫？",
+            "title_options": [
+              "代幣化股票被警告可能重演紙本危機：那指金融科技敘事要降溫？",
+              "那指火箭備選：Tokenized stocks爆紅前，先看基礎設施與清算風險"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把代幣化證券的技術敘事拉回市場基礎設施與監管風險。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+            ],
+            "unknowns": [
+              "這是專家觀點報導，缺交易規模、監管檔案與實際故障資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+                "published_at": "2026-08-22T14:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tokenization",
+            "channel_angle": "那指火箭"
           }
         ]
       },
@@ -6548,6 +7217,238 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:07:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？",
+            "title_options": [
+              "殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？",
+              "板塊輪動儀備選：長債重新定價後，成長股與價值股的蹺蹺板怎麼走？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由3個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用長端利率與融資需求比較科技、金融與防禦板塊。"
+            ],
+            "facts": [
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+            ],
+            "unknowns": [
+              "缺標普11大板塊ETF同時點流量與相對強弱。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "板塊輪動儀"
+          },
+          {
+            "candidate_id": "channel-outline:07:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？",
+            "title_options": [
+              "Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？",
+              "板塊輪動儀備選：比特幣急漲能不能帶動風險資產，先看廣度不是價格"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "比較加密高Beta與科技板塊的風險偏好是否同步。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+            ],
+            "unknowns": [
+              "缺同步ETF流量與跨資產成交廣度。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "板塊輪動儀"
+          },
+          {
+            "candidate_id": "channel-outline:07:china-supply",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？",
+            "title_options": [
+              "稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？",
+              "板塊輪動儀備選：中國供應鏈訊號升溫，晶片與原材料會分化嗎？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "比較半導體與原材料板塊對中國供應鏈訊號的敏感度。"
+            ],
+            "facts": [
+              "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+              "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+            ],
+            "unknowns": [
+              "缺原材料與半導體ETF同時點資料，不能確認輪動已發生。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "中國7月稀土磁體對日出口111噸 年減5成",
+                "published_at": "2026-08-22T08:27:15+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "輝達即將公布財報，中國市場動態受市場關注",
+                "published_at": "2026-08-22T02:00:30+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-supply",
+            "channel_angle": "板塊輪動儀"
+          },
+          {
+            "candidate_id": "channel-outline:07:tw-rotation",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？",
+            "title_options": [
+              "臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？",
+              "板塊輪動儀備選：獲利創高不等於齊漲，臺股板塊下一棒看誰"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由3個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把獲利總量與資金輪動分開，觀察板塊相對強弱。"
+            ],
+            "facts": [
+              "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。",
+              "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+              "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+            ],
+            "unknowns": [
+              "缺完整產業獲利分解與連續多日成交佔比。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」",
+                "published_at": "2026-08-23T06:52:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%BC%81%E6%A5%ADq2%E7%8B%82%E8%B3%BA1-8%E5%85%86%E5%89%B5%E6%96%B0%E9%AB%98-ai%E6%95%88%E6%87%89%E5%B7%B2%E6%93%B4%E6%95%A3-%E6%B3%95%E4%BA%BA%E9%BB%9E%E5%90%8D-8%E5%A4%A7%E9%87%91%E7%A4%A6-065200994.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+                "published_at": "2026-08-22T07:42:26+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+                "published_at": "2026-08-22T06:38:00+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tw-rotation",
+            "channel_angle": "板塊輪動儀"
           }
         ]
       },
@@ -6637,6 +7538,208 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:08:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力",
+            "title_options": [
+              "博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力",
+              "暗池雷達備選：長債與AI融資同時升溫，缺暗池資料不能寫機構押注"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把公開融資事件與暗池原始成交證據嚴格分開。"
+            ],
+            "facts": [
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+            ],
+            "unknowns": [
+              "缺暗池成交時間、價格、數量與交易場所原始列印。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "暗池雷達"
+          },
+          {
+            "candidate_id": "channel-outline:08:china-capital",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據",
+            "title_options": [
+              "阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據",
+              "暗池雷達備選：100億美元配股話題很大，機構方向仍需原始成交驗證"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用中概融資事件說明新聞熱度不能替代交易列印。"
+            ],
+            "facts": [
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+            ],
+            "unknowns": [
+              "缺港美兩地暗池列印、期權鏈、OI與買賣方向。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-capital",
+            "channel_angle": "暗池雷達"
+          },
+          {
+            "candidate_id": "channel-outline:08:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？",
+            "title_options": [
+              "比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？",
+              "暗池雷達備選：Crypto軋空很刺激，別把二手清算數字寫成機構押注"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "區分二手清算報導、交易所資料與機構意圖。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+              "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+            ],
+            "unknowns": [
+              "缺交易所逐筆清算、OI、資金費率與現貨流量。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+                "published_at": "2026-08-22T05:05:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "暗池雷達"
+          },
+          {
+            "candidate_id": "channel-outline:08:ai-cost",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白",
+            "title_options": [
+              "NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白",
+              "暗池雷達備選：AI漲價題材能做監控表，不能冒充暗池結論"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把AI事件轉成待核對的暗池/期權觀察清單。"
+            ],
+            "facts": [
+              "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+              "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+            ],
+            "unknowns": [
+              "缺完整期權鏈、IV、OI、Delta與多腿組合識別。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "ai-cost",
+            "channel_angle": "暗池雷達"
           }
         ]
       },
@@ -6725,6 +7828,208 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:09:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "比特幣軋空後追Call？先算IV、時間價值與再次清算風險",
+            "title_options": [
+              "比特幣軋空後追Call？先算IV、時間價值與再次清算風險",
+              "期權守門人備選：Crypto暴漲不等於買方穩賺，三道風控先過門"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把加密軋空事件轉成有限損失、波動率與流動性框架。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+              "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+            ],
+            "unknowns": [
+              "缺即時IV、OI、資金費率與合約成交成本。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+                "published_at": "2026-08-22T05:05:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "期權守門人"
+          },
+          {
+            "candidate_id": "channel-outline:09:rates-financing",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "殖利率升、企業又融資：指數Put是保險還是買貴了？",
+            "title_options": [
+              "殖利率升、企業又融資：指數Put是保險還是買貴了？",
+              "期權守門人備選：長債擾動市場時，先辨認波動率定價再談避險"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從宏觀事件風險說明期權保險成本與時點。"
+            ],
+            "facts": [
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+              "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+            ],
+            "unknowns": [
+              "缺VIX期限結構、Put/Call、IV Rank與完整損益圖。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+                "published_at": "2026-08-22T01:00:23+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rates-financing",
+            "channel_angle": "期權守門人"
+          },
+          {
+            "candidate_id": "channel-outline:09:china-capital",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價",
+            "title_options": [
+              "阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價",
+              "期權守門人備選：中概融資週的風控，不是隨便買Put"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把中概融資事件轉成最大損失與流動性檢查。"
+            ],
+            "facts": [
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+            ],
+            "unknowns": [
+              "缺BABA港美期權鏈、價差、OI與正式配股條款。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-capital",
+            "channel_angle": "期權守門人"
+          },
+          {
+            "candidate_id": "channel-outline:09:ai-cost",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush",
+            "title_options": [
+              "NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush",
+              "期權守門人備選：AI財報週最難的不是猜漲跌，是猜幅度與時間"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用AI事件說明財報前後隱含波動率收縮風險。"
+            ],
+            "facts": [
+              "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+              "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+            ],
+            "unknowns": [
+              "缺事件前後IV曲面、到期結構與真實交易成本。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "ai-cost",
+            "channel_angle": "期權守門人"
           }
         ]
       },
@@ -6851,6 +8156,208 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:12:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "美債回購微調後比特幣急漲：美元流動性真的轉向Crypto了嗎？",
+            "title_options": [
+              "美債回購微調後比特幣急漲：美元流動性真的轉向Crypto了嗎？",
+              "全球資金地圖備選：BTC漲25%的背後，是財政部回購還是空頭擠壓？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把美債操作、加密價格與美元流動性放進跨資產地圖。"
+            ],
+            "facts": [
+              "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。",
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。"
+            ],
+            "unknowns": [
+              "缺Treasury原始回購明細、美元指數與現貨ETF淨流入。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+                "published_at": "2026-08-22T05:05:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "全球資金地圖"
+          },
+          {
+            "candidate_id": "channel-outline:12:china-supply",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "稀土出口下降、阿里又籌錢：全球資金如何重估中國科技？",
+            "title_options": [
+              "稀土出口下降、阿里又籌錢：全球資金如何重估中國科技？",
+              "全球資金地圖備選：供應鏈與股權融資同時變動，中國資產在吸金還是失血？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從供應鏈與企業融資交叉觀察中國資產的全球配置。"
+            ],
+            "facts": [
+              "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+              "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+            ],
+            "unknowns": [
+              "缺CNH、KWEB、港股通與新興市場ETF流量。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "中國7月稀土磁體對日出口111噸 年減5成",
+                "published_at": "2026-08-22T08:27:15+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Investing.com",
+                "evidence_class": "REPORTED",
+                "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+                "published_at": "2026-08-22T22:30:36+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "china-supply",
+            "channel_angle": "全球資金地圖"
+          },
+          {
+            "candidate_id": "channel-outline:12:tw-rotation",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "臺股週跌586點、投信轉賣：外資與本地資金的蹺蹺板往哪傾？",
+            "title_options": [
+              "臺股週跌586點、投信轉賣：外資與本地資金的蹺蹺板往哪傾？",
+              "全球資金地圖備選：臺股回檔後誰在承接，先拆外資、本地法人與ETF"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把臺灣市場放回全球與本地資金來源的分層框架。"
+            ],
+            "facts": [
+              "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+              "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+            ],
+            "unknowns": [
+              "缺跨境資金流、ETF申贖與完整法人跨市場部位。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+                "published_at": "2026-08-22T07:42:26+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+                "published_at": "2026-08-22T06:38:00+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tw-rotation",
+            "channel_angle": "全球資金地圖"
+          },
+          {
+            "candidate_id": "channel-outline:12:tokenization",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "代幣化股票遇上基礎設施警告：傳統資產資金會往鏈上走嗎？",
+            "title_options": [
+              "代幣化股票遇上基礎設施警告：傳統資產資金會往鏈上走嗎？",
+              "全球資金地圖備選：Tokenized stocks擴張前，先看清算與監管瓶頸"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "觀察傳統證券資金進入鏈上市場時的基礎設施限制。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+            ],
+            "unknowns": [
+              "這是專家觀點報導，缺實際資金規模、託管與清算資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+                "published_at": "2026-08-22T14:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tokenization",
+            "channel_angle": "全球資金地圖"
           }
         ]
       },
@@ -6968,6 +8475,188 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:15:exchange-risk",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？",
+            "title_options": [
+              "BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？",
+              "鏈上顯微鏡備選：交易所恢復營運前，先查儲備地址、負債與提款流"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把交易所重啟新聞轉成地址、儲備與提款流的驗證清單。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown」。"
+            ],
+            "unknowns": [
+              "缺交易所公開地址、儲備證明、負債與提款佇列原始資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
+                "published_at": "2026-08-22T15:16:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "exchange-risk",
+            "channel_angle": "鏈上顯微鏡"
+          },
+          {
+            "candidate_id": "channel-outline:15:bridge-risk",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？",
+            "title_options": [
+              "Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？",
+              "鏈上顯微鏡備選：跨鏈橋出事別只看幣價，先追合約、地址與停橋範圍"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把跨鏈橋事件拆成合約、地址與資金暴露範圍。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit」。"
+            ],
+            "unknowns": [
+              "缺漏洞交易雜湊、受影響合約、地址清單與資產金額。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
+                "published_at": "2026-08-22T14:10:17+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "bridge-risk",
+            "channel_angle": "鏈上顯微鏡"
+          },
+          {
+            "candidate_id": "channel-outline:15:tokenization",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？",
+            "title_options": [
+              "代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？",
+              "鏈上顯微鏡備選：Tokenized stocks不是換個代號，清算與所有權才是核心"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從鏈上結算、持有人記錄與資產對映檢查代幣化證券。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+            ],
+            "unknowns": [
+              "缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+                "published_at": "2026-08-22T14:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tokenization",
+            "channel_angle": "鏈上顯微鏡"
+          },
+          {
+            "candidate_id": "channel-outline:15:treasury-crypto",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？",
+            "title_options": [
+              "美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？",
+              "鏈上顯微鏡備選：財政流動性敘事很強，地址累積與交易所流量才是驗證"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把宏觀流動性敘事落到地址累積、交易所淨流入與ETF流量。"
+            ],
+            "facts": [
+              "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。",
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。"
+            ],
+            "unknowns": [
+              "缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+                "published_at": "2026-08-22T05:05:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "treasury-crypto",
+            "channel_angle": "鏈上顯微鏡"
           }
         ]
       },
@@ -7046,7 +8735,7 @@
                 "evidence_class": "REPORTED",
                 "title": "中國7月稀土磁體對日出口111噸 年減5成",
                 "published_at": "2026-08-22T08:27:15+00:00",
-                "freshness_bucket": "FRESH_24H",
+                "freshness_bucket": "CONTEXT_48H",
                 "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
                 "raw_api_url": null
               }
@@ -7058,6 +8747,198 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:16:nvidia-china",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "輝達財報前中國市場再成焦點：中概AI鏈會被重估嗎？",
+            "title_options": [
+              "輝達財報前中國市場再成焦點：中概AI鏈會被重估嗎？",
+              "中概風向球備選：NVIDIA中國變數升溫，中概科技先看需求還是限制？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把輝達中國市場訊號對映到中概AI需求與政策風險。"
+            ],
+            "facts": [
+              "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。",
+              "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+            ],
+            "unknowns": [
+              "缺公司中國業務拆分、正式監管檔案與中概ETF流量。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "輝達即將公布財報，中國市場動態受市場關注",
+                "published_at": "2026-08-22T02:00:30+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "nvidia-china",
+            "channel_angle": "中概風向球"
+          },
+          {
+            "candidate_id": "channel-outline:16:rare-earth",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "中國稀土磁體對日出口年減五成：中概硬科技供應鏈怎麼看？",
+            "title_options": [
+              "中國稀土磁體對日出口年減五成：中概硬科技供應鏈怎麼看？",
+              "中概風向球備選：稀土出口變化不只影響材料，科技估值也要重算？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "從稀土出口觀察中國硬科技與跨境供應鏈風向。"
+            ],
+            "facts": [
+              "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。"
+            ],
+            "unknowns": [
+              "單月出口資料不能直接推論企業訂單或股價方向。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "中國7月稀土磁體對日出口111噸 年減5成",
+                "published_at": "2026-08-22T08:27:15+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "rare-earth",
+            "channel_angle": "中概風向球"
+          },
+          {
+            "candidate_id": "channel-outline:16:vnet-ai",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "VNET擴張AI資料中心：成長很快，融資能力跟得上嗎？",
+            "title_options": [
+              "VNET擴張AI資料中心：成長很快，融資能力跟得上嗎？",
+              "中概風向球備選：世紀互聯AI擴產背後，第二條風險是資本成本"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把中概資料中心成長拆成需求、資本支出與融資能力。"
+            ],
+            "facts": [
+              "Yahoo Finance刊出「VNET Group (VNET) Is Expanding Rapidly. Can It Finance the AI Data-Center Buildout?」。",
+              "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+            ],
+            "unknowns": [
+              "缺SEC/港交所正式檔案、債務到期表與同時點CNH。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo Finance",
+                "evidence_class": "REPORTED",
+                "title": "VNET Group (VNET) Is Expanding Rapidly. Can It Finance the AI Data-Center Buildout?",
+                "published_at": "2026-08-21T23:37:33+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.yahoo.com/technology/ai/articles/vnet-group-vnet-expanding-rapidly-233733126.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "vnet-ai",
+            "channel_angle": "中概風向球"
+          },
+          {
+            "candidate_id": "channel-outline:16:hesai-robotics",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "禾賽從LiDAR走向機器人：第二成長曲線能不能接棒？",
+            "title_options": [
+              "禾賽從LiDAR走向機器人：第二成長曲線能不能接棒？",
+              "中概風向球備選：HSAI押注機器人，市場該看收入還是估值擴張？"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用中概成長股框架檢查機器人業務的收入與估值預期。"
+            ],
+            "facts": [
+              "Yahoo Finance刊出「Hesai (HSAI) Is Moving Beyond LiDAR. Can Robotics Become a Second Profit Pool?」。"
+            ],
+            "unknowns": [
+              "缺公司最新財報原檔、機器人收入拆分與訂單能見度。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo Finance",
+                "evidence_class": "REPORTED",
+                "title": "Hesai (HSAI) Is Moving Beyond LiDAR. Can Robotics Become a Second Profit Pool?",
+                "published_at": "2026-08-21T23:36:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.yahoo.com/technology/articles/hesai-hsai-moving-beyond-lidar-233613779.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "hesai-robotics",
+            "channel_angle": "中概風向球"
           }
         ]
       },
@@ -7148,6 +9029,188 @@
               "DRAFT_FOR_HUMAN_REVIEW",
               "NOT_INVESTMENT_ADVICE"
             ]
+          },
+          {
+            "candidate_id": "channel-outline:17:insurance",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "終身壽險一定浪費錢？先拆退保價值、保障與現金流三個陷阱",
+            "title_options": [
+              "終身壽險一定浪費錢？先拆退保價值、保障與現金流三個陷阱",
+              "財商拆彈組備選：繳1.8萬只拿回6500，保險虧不虧不能只看一句話"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把情緒化保險結論拆回保障需求、費用與退保條款。"
+            ],
+            "facts": [
+              "Yahoo Finance刊出「‘Whole Life Insurance Is Always a Waste of Money. I’ve Never Seen One Example Where It Is Not’: Suze Orman to Caller Who Paid $18,000 and Got $6,500 Back」。"
+            ],
+            "unknowns": [
+              "缺保單條款、投保年期、保障額與個人需求，不能對個案下結論。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo Finance",
+                "evidence_class": "REPORTED",
+                "title": "‘Whole Life Insurance Is Always a Waste of Money. I’ve Never Seen One Example Where It Is Not’: Suze Orman to Caller Who Paid $18,000 and Got $6,500 Back",
+                "published_at": "2026-08-21T22:53:50+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.yahoo.com/markets/options/articles/whole-life-insurance-always-waste-225350951.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "insurance",
+            "channel_angle": "財商拆彈組"
+          },
+          {
+            "candidate_id": "channel-outline:17:retirement-etf",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "退休只靠一張社安支票，再買4檔ETF就能補第二份收入？",
+            "title_options": [
+              "退休只靠一張社安支票，再買4檔ETF就能補第二份收入？",
+              "財商拆彈組備選：高配息ETF不是第二份薪水，先看本金、波動與稅"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "拆解把ETF配息包裝成固定薪水的常見話術。"
+            ],
+            "facts": [
+              "Yahoo Finance刊出「Single at 66 Means One Social Security Check and No Backup. These 4 ETFs Build the Second One」。"
+            ],
+            "unknowns": [
+              "缺產品官方費率、配息來源、總報酬與個人退休缺口。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "Yahoo Finance",
+                "evidence_class": "REPORTED",
+                "title": "Single at 66 Means One Social Security Check and No Backup. These 4 ETFs Build the Second One",
+                "published_at": "2026-08-21T23:00:57+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://finance.yahoo.com/markets/stocks/articles/single-66-means-one-social-230057165.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "retirement-etf",
+            "channel_angle": "財商拆彈組"
+          },
+          {
+            "candidate_id": "channel-outline:17:crypto-squeeze",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "比特幣暴漲25%就追進去？先分清軋空、現貨買盤與槓桿風險",
+            "title_options": [
+              "比特幣暴漲25%就追進去？先分清軋空、現貨買盤與槓桿風險",
+              "財商拆彈組備選：空軍被洗不等於新手該追，Crypto急漲的三個地雷"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由2個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "用白話拆解清算驅動上漲與追高風險。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+              "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+            ],
+            "unknowns": [
+              "缺個人風險承受力與原始清算、現貨流量資料。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+                "published_at": "2026-08-22T12:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+                "published_at": "2026-08-22T05:05:13+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "crypto-squeeze",
+            "channel_angle": "財商拆彈組"
+          },
+          {
+            "candidate_id": "channel-outline:17:tokenization",
+            "candidate_type": "CHANNEL_TOPIC_OUTLINE",
+            "editorial_status": "TOPIC_OUTLINE_FOR_HUMAN_REVIEW",
+            "title": "代幣化股票看似方便，所有權、清算與贖回可能藏哪些雷？",
+            "title_options": [
+              "代幣化股票看似方便，所有權、清算與贖回可能藏哪些雷？",
+              "財商拆彈組備選：股票上鏈不是零風險，先問資產放哪、誰負責兌付"
+            ],
+            "why_now": [
+              "這組事件位於2026-08-23的24/48小時視窗，並由1個可點選來源支援；可與其他頻道共用事件，但必須改寫為本頻道角度。"
+            ],
+            "why_channel": [
+              "把代幣化證券的技術包裝拆成所有權、託管與清算問題。"
+            ],
+            "facts": [
+              "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+            ],
+            "unknowns": [
+              "缺具體產品條款、監管資格、託管與贖迴流程。",
+              "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+            ],
+            "evidence": [
+              {
+                "source_id": "CoinDesk",
+                "evidence_class": "REPORTED",
+                "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+                "published_at": "2026-08-22T14:00:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ],
+            "shared_hotspot_id": "tokenization",
+            "channel_angle": "財商拆彈組"
           }
         ]
       },
