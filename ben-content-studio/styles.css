@@ -72,10 +72,10 @@ h1 { margin: 0; max-width: 720px; font-size: 34px; line-height: 1.18; }
 
 .channel-overview { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
 .channel-card {
-  min-height: 270px;
+  min-height: 265px;
   padding: 22px 18px 18px;
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto auto;
   gap: 14px;
   border: 1px solid var(--line);
   border-top: 5px solid var(--accent, var(--teal));
@@ -87,9 +87,13 @@ h1 { margin: 0; max-width: 720px; font-size: 34px; line-height: 1.18; }
   transition: transform .16s ease, box-shadow .16s ease;
 }
 .channel-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(25, 43, 48, .1); }
+.channel-card.is-waiting { border-top-color: #899396; background: #f8f9f8; }
+.channel-card.is-waiting:hover { box-shadow: 0 8px 20px rgba(25, 43, 48, .07); }
 .channel-number { color: var(--accent, var(--teal)); font-size: 12px; font-weight: 900; }
 .channel-name { font-size: 24px; line-height: 1.15; font-weight: 850; }
 .channel-description { color: var(--muted); font-size: 13px; line-height: 1.65; }
+.channel-state { justify-self: start; padding: 4px 7px; border: 1px solid color-mix(in srgb, var(--accent, var(--teal)) 40%, white); border-radius: 3px; color: var(--accent, var(--teal)); background: color-mix(in srgb, var(--accent, var(--teal)) 8%, white); font-size: 10px; font-weight: 800; }
+.channel-card.is-waiting .channel-state { border-color: var(--line); color: #687579; background: #eef1ef; }
 .channel-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 13px; border-top: 1px solid var(--line); }
 .channel-foot b { color: var(--accent, var(--teal)); font-size: 11px; }
 .channel-foot i { color: var(--ink); font-size: 11px; font-style: normal; font-weight: 800; }

@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>BEN 收盤夜話｜每日盤後文稿</title>
+  <title>BEN 前十頻道｜標題與文稿審稿台</title>
   <link rel="icon" href="../ben-channel-review/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#" aria-label="查看收盤夜話">
+    <a class="brand" href="#" aria-label="查看前十頻道">
       <img src="../ben-channel-review/favicon.svg" alt="">
-        <span><strong>BEN 收盤夜話</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
+        <span><strong>BEN 前十頻道</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
     </a>
     <div class="topbar-meta">
       <span id="session-date">讀取今日資料</span>
-      <span class="status-dot"><i></i>臺灣收盤版</span>
+      <span class="status-dot"><i></i>人工審稿版</span>
       <button class="refresh-button" id="refresh-button" type="button" title="重新讀取伺服器上的最新日報" aria-label="刷新今日資料">
         <span aria-hidden="true">↻</span><b>刷新今日資料</b>
       </button>
@@ -26,33 +26,33 @@
   <main>
     <section class="workspace-head">
       <div>
-        <p class="eyebrow">POST-CLOSE CONTENT DESK</p>
-        <h1 id="page-title">今日收盤夜話</h1>
-        <p id="page-summary">只看今天台股收盤後最值得講的題目、理由、來源和文稿。</p>
+        <p class="eyebrow">FIRST TEN CHANNEL EDITORIAL DESK</p>
+        <h1 id="page-title">前十頻道：標題與完整文稿</h1>
+        <p id="page-summary">已有樣本的頻道先出審閱稿；沒有樣本的頻道保留位置並明確標示缺口。</p>
       </div>
       <div class="run-facts" aria-label="本次資料狀態">
-        <div><span>生成時間</span><strong id="generated-time">--</strong></div>
-        <div><span>排序</span><strong id="ranking-method">--</strong></div>
-        <div><span>今日選題</span><strong id="x-count">--</strong></div>
+        <div><span>資料快照</span><strong id="generated-time">--</strong></div>
+        <div><span>頻道覆蓋</span><strong id="ranking-method">--</strong></div>
+        <div><span>完整文稿</span><strong id="x-count">--</strong></div>
       </div>
     </section>
 
     <div class="refresh-state" id="refresh-state" role="status" aria-live="polite">正在讀取最新日報</div>
 
-    <section class="source-strip" aria-label="今日來源">
-      <span class="source-label">本頻道來源</span>
+    <section class="source-strip" aria-label="本次來源">
+      <span class="source-label">本次來源</span>
       <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b id="source-twse">讀取中</b></a>
       <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b id="source-tpex">讀取中</b></a>
       <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b id="source-mops">讀取中</b></a>
       <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noreferrer">新聞 <b id="source-news">讀取中</b></a>
       <span>X <b id="source-x">讀取中</b></span>
-      <a href="https://www.youtube.com/channel/UCZxyxJbJTczACJt31ncoONA" target="_blank" rel="noreferrer">YouTube <b>口吻樣本</b></a>
+      <span>YouTube <b>12篇口吻樣本</b></span>
     </section>
 
     <section id="channel-overview" class="channel-overview" aria-live="polite"></section>
 
     <section id="channel-detail" class="channel-detail" hidden>
-      <button class="back-button" id="back-button" type="button">← 重新查看收盤夜話</button>
+      <button class="back-button" id="back-button" type="button">← 返回前十頻道</button>
       <div class="detail-head">
         <div>
           <p class="eyebrow" id="detail-kicker"></p>
@@ -75,7 +75,8 @@
       <span class="channel-number"></span>
       <span class="channel-name"></span>
       <span class="channel-description"></span>
-      <span class="channel-foot"><b></b><i>查看今日選題 →</i></span>
+      <span class="channel-state"></span>
+      <span class="channel-foot"><b></b><i>查看標題與文稿 →</i></span>
     </button>
   </template>
 

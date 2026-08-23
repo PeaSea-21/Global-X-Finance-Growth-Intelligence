@@ -1,13 +1,16 @@
 const DATA_URL = "data.json";
 
 const CHANNEL_META = {
-  "收盤夜話": {
-    order: 1,
-    accent: "#b83a35",
-    kicker: "TAIWAN POST-CLOSE EDITORIAL",
-    description: "下班後 15 分鐘，把今天大盤發生什麼、誰在買賣、明天看什麼講清楚。",
-    status: "收盤夜話單頻道試點",
-  },
+  "個股顯微鏡": { accent: "#2e6094", kicker: "TAIWAN SINGLE STOCK" },
+  "收盤夜話": { accent: "#b83a35", kicker: "TAIWAN POST-CLOSE" },
+  "產業透視鏡": { accent: "#087c72", kicker: "TAIWAN INDUSTRY" },
+  "權值旗艦": { accent: "#9a6810", kicker: "TAIWAN WEIGHTED STOCKS" },
+  "資金雷達": { accent: "#53733f", kicker: "TAIWAN CAPITAL FLOW" },
+  "那指火箭": { accent: "#6b4f9e", kicker: "NASDAQ 100" },
+  "板塊輪動儀": { accent: "#9b4f65", kicker: "SECTOR ROTATION" },
+  "暗池雷達": { accent: "#31536b", kicker: "DERIVATIVES EVIDENCE" },
+  "期權守門人": { accent: "#8a5b2d", kicker: "OPTIONS RISK" },
+  "財報獵人": { accent: "#4c6268", kicker: "EARNINGS REVIEW" },
 };
 
 let channels = [];
@@ -37,37 +40,18 @@ function whyText(item) {
   return list(item.why_now)[0] || list(item.facts)[0] || "今日候選已通過時效與 Evidence 檢查。";
 }
 
-function normalizeEditorial(payload) {
-  const editorial = payload.close_talk_editorial || {};
-  const angles = list(editorial.angles);
-  return angles.map((angle, index) => ({
-    ...angle,
-    candidate_rank: angle.rank || index + 1,
-    candidate_type: "CLOSE_TALK_EDITORIAL",
-    editorial_status: angle.editorial_state || editorial.status || "DRAFT_FOR_HUMAN_REVIEW",
-    title: list(angle.title_options)[0] || angle.episode_question || `收盤夜話選題 ${index + 1}`,
-    facts: list(angle.confirmed_facts).map((fact) => typeof fact === "string" ? fact : fact.text).filter(Boolean),
-    why_now: angle.why_today ? [angle.why_today] : [],
-    why_channel: angle.why_this_channel ? [angle.why_this_channel] : [],
-    evidence: list(angle.source_cards).map((card) => ({
-      ...card,
-      source_id: card.source_name || card.source_id,
-      evidence_class: card.epistemic_status || "SOURCE",
-    })),
-    script_text: angle.script?.full_text || "",
-    script_character_count: angle.script?.character_count || characterCount(angle.script?.full_text || ""),
-  }));
-}
-
 function normalizeChannels(payload) {
-  const editorial = payload.close_talk_editorial || {};
-  return [{
-    name: "收盤夜話",
-    meta: CHANNEL_META["收盤夜話"],
-    topics: normalizeEditorial(payload),
-    editorial,
-    official: editorial.status === "DRAFT_FOR_HUMAN_REVIEW",
-  }];
+  const workbench = payload.first_ten_workbench || {};
+  return list(workbench.channels).map((channel) => ({
+    ...channel,
+    name: channel.channel_name,
+    meta: {
+      ...(CHANNEL_META[channel.channel_name] || {}),
+      order: channel.channel_order,
+      description: channel.profile_promise,
+    },
+    topics: list(channel.topics),
+  }));
 }
 
 function sourceRow(payload, source) {
@@ -91,34 +75,26 @@ function taipeiDate() {
 
 function applyPayload(payload) {
   channels = normalizeChannels(payload);
-  if (channels.length !== 1) {
-    throw new Error("收盤夜話資料尚未發布");
+  if (channels.length !== 10) {
+    throw new Error("前十頻道資料尚未完整發布");
   }
-  const sessionDate = payload.market_session_date;
-  const isCurrent = sessionDate === taipeiDate();
-  $("#session-date").textContent = `${sessionDate} 收盤資料`;
-  $("#generated-time").textContent = new Intl.DateTimeFormat("zh-TW", {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-    timeZone: "Asia/Taipei",
-  }).format(new Date(payload.generated_at));
-  const editorial = payload.close_talk_editorial || {};
-  $("#ranking-method").textContent = editorial.status === "DRAFT_FOR_HUMAN_REVIEW" ? "編輯稿待審" : "資料待齊";
-  const xRow = sourceRow(payload, "X");
-  $("#x-count").textContent = `${list(editorial.angles).length} 個選題`;
+  const workbench = payload.first_ten_workbench;
+  const snapshotDate = workbench.source_snapshot_date;
+  const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
+  $("#session-date").textContent = `${snapshotDate} 選題快照`;
+  $("#generated-time").textContent = snapshotDate;
+  $("#ranking-method").textContent = `${workbench.draft_ready_channel_count}/10 已有草稿`;
+  $("#x-count").textContent = `${fullScriptCount} 篇`;
   $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
   $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
   $("#source-mops").textContent = sourceLabel(payload, "MOPS");
-  $("#source-news").textContent = sourceLabel(payload, "NEWS");
+  $("#source-news").textContent = "9/9 · 24/48H";
   $("#source-x").textContent = sourceLabel(payload, "X");
   const refreshState = $("#refresh-state");
-  refreshState.className = `refresh-state${isCurrent ? "" : " is-stale"}`;
-  refreshState.textContent = isCurrent
-    ? `已載入 ${sessionDate} 最新收盤版`
-    : `目前顯示最近成功的 ${sessionDate} 收盤版，今日資料尚未發布`;
+  refreshState.className = "refresh-state";
+  refreshState.textContent = `已載入 ${snapshotDate} 選題快照；收盤夜話使用最近交易日 ${workbench.last_market_session_date}`;
   if ($("#topic-dialog").open) $("#topic-dialog").close();
-  showChannel(channels[0]);
+  showOverview();
 }
 
 function renderOverview() {
@@ -128,10 +104,20 @@ function renderOverview() {
     const fragment = $("#channel-template").content.cloneNode(true);
     const button = fragment.querySelector("button");
     button.style.setProperty("--accent", channel.meta.accent);
-    fragment.querySelector(".channel-number").textContent = `0${channel.meta.order}`;
+    fragment.querySelector(".channel-number").textContent = String(channel.meta.order).padStart(2, "0");
     fragment.querySelector(".channel-name").textContent = channel.name;
     fragment.querySelector(".channel-description").textContent = channel.meta.description;
-    fragment.querySelector(".channel-foot b").textContent = `${channel.topics.length} 個今日選題`;
+    const fullCount = channel.topics.filter((topic) => topic.script_text).length;
+    const waiting = channel.content_status === "WAITING_FOR_TRANSCRIPT_SAMPLES";
+    button.classList.toggle("is-waiting", waiting);
+    fragment.querySelector(".channel-state").textContent = waiting
+      ? "等待文稿樣本"
+      : channel.name === "收盤夜話"
+        ? "最近交易日稿"
+        : "暫定風格稿";
+    fragment.querySelector(".channel-foot b").textContent = waiting
+      ? "0 篇 · 不虛構"
+      : `${channel.topics.length} 個選題 · ${fullCount} 篇全文`;
     button.addEventListener("click", () => showChannel(channel));
     container.appendChild(fragment);
   });
@@ -141,21 +127,20 @@ function showChannel(channel) {
   activeChannel = channel;
   $("#channel-overview").hidden = true;
   $("#channel-detail").hidden = false;
-  $("#page-title").textContent = "今日收盤夜話文稿";
-  $("#page-summary").textContent = "只看收盤夜話：先選題，再核對理由、Evidence 和完整文稿。";
+  $("#page-title").textContent = `${channel.name}：標題與文稿`;
+  $("#page-summary").textContent = channel.reason;
   $("#detail-kicker").textContent = channel.meta.kicker;
   $("#detail-title").textContent = channel.name;
-  $("#detail-summary").textContent = channel.meta.description;
-  const editorial = channel.editorial || {};
+  $("#detail-summary").textContent = `${channel.meta.description} 風格狀態：${channel.style_status}。`;
   $("#detail-status").textContent = channel.topics.length
-    ? "今日收盤夜話編輯稿：標題、理由、Evidence 與文稿集中在這裡。"
-    : `${editorial.reason || "今日收盤夜話完整文稿尚未生成。"}`;
+    ? `${channel.content_date} · ${channel.topics.filter((topic) => topic.script_text).length} 篇完整文稿 · 上線前人工核對`
+    : channel.reason;
   const listRoot = $("#topic-list");
   listRoot.innerHTML = "";
   if (!channel.topics.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.innerHTML = `<strong>今天的收盤夜話文稿還沒生成</strong><p>${escapeHtml(editorial.reason || "官方收盤資料尚未全部到齊，系統不會拿其他頻道內容代替。")}</p>`;
+    empty.innerHTML = `<strong>這個頻道暫不生成文稿</strong><p>${escapeHtml(channel.reason)}</p><p>需要：至少2篇完整文稿，包含標題、日期、正文與Ben認為好或不好的原因。</p>`;
     listRoot.appendChild(empty);
     return;
   }
@@ -164,10 +149,11 @@ function showChannel(channel) {
     const row = fragment.querySelector(".topic-row");
     row.style.setProperty("--accent", channel.meta.accent);
     fragment.querySelector(".topic-rank").textContent = String(index + 1).padStart(2, "0");
-    fragment.querySelector(".topic-meta").textContent = `${topicLabel(topic)} · ${topic.editorial_status || "NEEDS_REVIEW"}`;
+    const scriptMeta = topic.script_text ? `正文 ${topic.script_character_count.toLocaleString("zh-TW")} 字符` : "選題綱要";
+    fragment.querySelector(".topic-meta").textContent = `${topicLabel(topic)} · ${scriptMeta} · ${topic.editorial_status || "NEEDS_REVIEW"}`;
     fragment.querySelector("h3").textContent = topic.title;
     fragment.querySelector("p").textContent = whyText(topic);
-    fragment.querySelector(".topic-open").textContent = "看完整文稿";
+    fragment.querySelector(".topic-open").textContent = topic.script_text ? "看完整文稿" : "看完整選題";
     fragment.querySelector(".topic-open").addEventListener("click", () => openTopic(channel, topic));
     listRoot.appendChild(fragment);
   });
@@ -193,7 +179,7 @@ function evidenceLinks(item) {
 
 function openTopic(channel, topic) {
   activeTopic = topic;
-  const draft = topic.script_text || "今天這個選題的完整文稿尚未生成。";
+  const draft = topic.script_text || "這個選題目前只有標題、理由與來源，尚未生成全文。";
   const draftCount = topic.script_character_count || characterCount(draft);
   const titleOptions = list(topic.title_options).length
     ? `<section class="title-options"><h3>可用標題</h3><ul>${list(topic.title_options).map((title) => `<li>${escapeHtml(title)}</li>`).join("")}</ul></section>`
@@ -210,36 +196,44 @@ function openTopic(channel, topic) {
         <section class="reason-block"><h3>還不能下的結論</h3><ul>${list(topic.unknowns).map((row) => `<li>${escapeHtml(row)}</li>`).join("") || "<li>事件與股價之間的因果仍需確認。</li>"}</ul></section>
       </div>
       <section class="source-block"><h3>點擊核對來源</h3><div class="source-links">${evidenceLinks(topic)}</div></section>
-      <div class="draft-actions">
-        <button class="draft-toggle" type="button">展開頻道草稿</button>
-        <button class="copy-button" type="button">複製草稿</button>
-      </div>
-      <section class="draft-block" hidden>
-        <p class="draft-note">${topic.script_text ? `正文字符数：${draftCount.toLocaleString("zh-TW")}（不含空白） · 上線前需人工核對` : "今日文稿尚未生成"}</p>
+      ${topic.script_text ? `<div class="draft-actions">
+        <button class="draft-toggle" type="button">展開完整文稿</button>
+        <button class="copy-button" type="button">複製文稿</button>
+      </div>` : ""}
+      <section class="draft-block" ${topic.script_text ? "hidden" : ""}>
+        <p class="draft-note">${topic.script_text ? `正文字符數：${draftCount.toLocaleString("zh-TW")}（不含空白） · 上線前需人工核對` : "目前只有選題綱要"}</p>
         <h3>${escapeHtml(topic.title)}</h3>
         <div class="draft-copy">${escapeHtml(draft)}</div>
       </section>
     </div>`;
   const draftBlock = $(".draft-block");
-  $(".draft-toggle").addEventListener("click", (event) => {
-    draftBlock.hidden = !draftBlock.hidden;
-    event.currentTarget.textContent = draftBlock.hidden ? "展開頻道草稿" : "收起頻道草稿";
-  });
-  $(".copy-button").addEventListener("click", async (event) => {
-    const button = event.currentTarget;
-    try {
-      await navigator.clipboard.writeText(draft);
-      button.textContent = "已複製";
-    } catch {
-      button.textContent = "複製失敗";
-    }
-    setTimeout(() => { button.textContent = "複製草稿"; }, 1200);
-  });
+  if (topic.script_text) {
+    $(".draft-toggle").addEventListener("click", (event) => {
+      draftBlock.hidden = !draftBlock.hidden;
+      event.currentTarget.textContent = draftBlock.hidden ? "展開完整文稿" : "收起完整文稿";
+    });
+    $(".copy-button").addEventListener("click", async (event) => {
+      const button = event.currentTarget;
+      try {
+        await navigator.clipboard.writeText(draft);
+        button.textContent = "已複製";
+      } catch {
+        button.textContent = "複製失敗";
+      }
+      setTimeout(() => { button.textContent = "複製文稿"; }, 1200);
+    });
+  }
   $("#topic-dialog").showModal();
 }
 
 function showOverview() {
-  if (channels[0]) showChannel(channels[0]);
+  activeChannel = null;
+  $("#channel-overview").hidden = false;
+  $("#channel-detail").hidden = true;
+  $("#page-title").textContent = "前十頻道：標題與完整文稿";
+  $("#page-summary").textContent = "已有樣本的頻道先出審閱稿；沒有樣本的頻道保留位置並明確標示缺口。";
+  renderOverview();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 async function loadLatest() {

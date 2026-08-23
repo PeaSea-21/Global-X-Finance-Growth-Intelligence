@@ -4515,5 +4515,1120 @@
     "run_id": "close-talk-editorial:2026-08-21:base",
     "studio_artifact": "BEN_CONTENT_STUDIO_DAILY",
     "studio_artifact_version": "1.0"
+  },
+  "first_ten_workbench": {
+    "artifact": "BEN_FIRST10_CHANNEL_EDITORIAL_WORKBENCH",
+    "schema_version": "1.0",
+    "status": "DRAFT_FOR_HUMAN_REVIEW",
+    "generated_at": "2026-08-23T15:57:22+08:00",
+    "source_snapshot_date": "2026-08-23",
+    "last_market_session_date": "2026-08-21",
+    "fresh_event_window_hours": 24,
+    "context_window_hours": 48,
+    "channel_count": 10,
+    "draft_ready_channel_count": 7,
+    "waiting_sample_channel_count": 3,
+    "boundaries": [
+      "週日資料是24/48小時選題快照，不是台股同日收盤稿。",
+      "所有文稿均為人工審閱草稿，不是投資建議。",
+      "未取得暗池打印或完整期權鏈時，不推論機構方向。",
+      "三個無文稿樣本頻道不生成仿寫稿。"
+    ],
+    "channels": [
+      {
+        "channel_order": 1,
+        "channel_id": "ch-01-tw-stock-microscope",
+        "channel_name": "個股顯微鏡",
+        "style_status": "NO_TRANSCRIPT_NEEDS_SAMPLES",
+        "style_confidence": "PROFILE_ONLY",
+        "content_status": "WAITING_FOR_TRANSCRIPT_SAMPLES",
+        "content_date": null,
+        "profile_promise": "用白話拆解單一臺股公司的營收、法說、毛利率、現金流與訂單能見度。",
+        "audience": "臺股中長期投資人、存股族、基本面研究者",
+        "language_style": "UNKNOWN_NO_TRANSCRIPT",
+        "opening_hook": "UNKNOWN_NO_TRANSCRIPT",
+        "narrative_logic": [],
+        "ending_pattern": "UNKNOWN_NO_TRANSCRIPT",
+        "profile_sample_alignment": "UNKNOWN_NO_SAMPLE",
+        "reason": "尚無完整文稿樣本，語言、開場、敘事與結尾保持UNKNOWN；至少需要2篇完整稿。",
+        "topics": []
+      },
+      {
+        "channel_order": 2,
+        "channel_id": "ch-02-tw-close-night-talk",
+        "channel_name": "收盤夜話",
+        "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+        "style_confidence": "MEDIUM_FOR_REPEATED_STRUCTURE_LOW_FOR_ALL_MARKET_REGIMES",
+        "content_status": "READY_LAST_MARKET_SESSION",
+        "content_date": "2026-08-21",
+        "profile_promise": "收盤後15分鐘，用朋友聊盤口吻講清楚大盤結構、資金方向與明日檢查點。",
+        "audience": "海外臺人、白天無法盯盤的上班族、短線交易者",
+        "language_style": "繁體中文；短句、口語、先情緒後資料；可用生活化比喻，但必須回到可核驗盤面。",
+        "opening_hook": "一句說出今天最反常的盤面，再問這是主線、洗盤還是情緒延伸。",
+        "narrative_logic": [
+          "盤面情緒",
+          "指數/成交/廣度",
+          "強弱類股",
+          "1-2組主角",
+          "法人與晚到欄位",
+          "反證",
+          "明日三個檢查點"
+        ],
+        "ending_pattern": "不猜單一路徑；用如果/否則列明日三個可量測驗證點，再問觀眾怎麼理解。",
+        "profile_sample_alignment": "PARTIAL_MATCH_SAMPLES_OVERWEIGHT_MEMORY_STOCKS",
+        "reason": "最近成功交易日的完整盤後文稿；週日不冒充同日收盤稿。",
+        "topics": [
+          {
+            "candidate_id": "close-talk-1",
+            "candidate_type": "CLOSE_TALK_EDITORIAL",
+            "editorial_status": "CONFIRMED_HOT",
+            "title": "【臺股重返45K】早盤跌逾300點後翻紅！台積電撐盤、航運金融接棒，反彈全面嗎？",
+            "title_options": [
+              "【臺股重返45K】早盤跌逾300點後翻紅！台積電撐盤、航運金融接棒，反彈全面嗎？",
+              "臺股收漲290點站回45,000：上市法人買超，但電子零組件為何還在跌？",
+              "【收盤夜話】指數紅、產業卻分裂：今天到底是反轉，還是資金換位？"
+            ],
+            "why_now": [
+              "加權指數收復45,000點，早盤一度跌逾300點；上市櫃上漲家數占優、上市法人偏買，但電子零組件類指數逆勢下跌，形成全市場都在修復與產業明顯分裂的同日矛盾。"
+            ],
+            "why_channel": [
+              "最符合收盤夜話從大盤、廣度、法人到明日觀察的固定路徑，海外觀眾不用盯盤也能理解今天紅盤背後的結構。"
+            ],
+            "facts": [
+              "加權指數收45,224.29點，上漲290.55點，漲幅0.65%。",
+              "上市上漲592家、下跌381家；上櫃上漲414家、下跌367家，另有4家漲跌未確認。",
+              "上市外資淨買約283.05億元、投信淨買約18.78億元，自營商自營部位淨買約29.10億元，上市三大法人合計淨買約331.06億元。",
+              "台積電收2,410元、上漲35元；盤後報導記錄台股成交量約7,192.8億元。"
+            ],
+            "unknowns": [
+              "TPEx三大法人尚未取得同日回傳，不能把上市法人方向直接外推到整個上市櫃市場。",
+              "臺指期貨、選擇權與借券資料尚未接入，不能把早盤下殺或尾盤拉回解釋成特定部位操作。",
+              "成交量新聞為媒體報導值，官方EOD覆蓋成交額是已抓取證券的加總，兩者口徑不同。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 發行量加權指數與產業類指數",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "TWSE/TPEx官方EOD整合",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 上市櫃漲跌家數與成交資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 三大法人買賣金額統計",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "快訊／台股開低走高收漲291點重回45k 台積電漲35元收2410",
+                "published_at": "2026-08-21T05:38:00+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://finance.ettoday.net/news/3223290",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "台積電（TWSE:2330） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "聯發科（TWSE:2454） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "各位朋友，今天這一盤如果只看最後的收盤數字，會覺得市場很簡單：加權指數上漲290.55點，重新站回45,000點。但把早盤、盤中和收盤拆開看，今天其實不是一路順風，而是一場先被外部壓力嚇到、再靠權值股和幾個強勢族群把情緒拉回來的反攻。\n\n先把結果講清楚。加權指數收在45,224.29點，上漲290.55點，漲幅0.65%。盤後報導記錄，指數早盤最低一度到44,583.87點，盤中跌幅超過300點，最後收復45,000點。這個走法的話題性，不在於單純的紅K，而在於市場先把美債殖利率、海外股市偏弱和風險情緒放大，最後又用台積電和航運、金融把指數拉回來。\n\n市場廣度也比指數本身更值得看。今天上市有592家上漲、381家下跌、106家平盤；上櫃有414家上漲、367家下跌、93家平盤，另外4家漲跌資料未確認。換句話說，紅盤不是只有一兩檔權值股獨撐，上漲家數確實比下跌家數多。不過，這個廣度仍然不是全面普漲，因為電子零組件類指數下跌2.65%，電腦及週邊設備下跌1.65%，盤面明顯存在輪動。\n\n台積電是今天最清楚的穩盤主角。它收2,410元，上漲35元，成交金額約375.90億元，而且收在今日高點。聯發科收3,790元，上漲90元，成交金額約212.15億元，這兩檔一起走強，對指數和市場情緒都有幫助。但不要因此把所有大型科技股都歸類成同步轉強，鴻海反而收跌0.41%，電子零組件和電腦週邊也在跌，權值股內部仍然有分歧。\n\n再看產業方向，油電燃氣上漲3.42%，航運上漲3.37%，塑膠上漲3.08%，金融保險上漲2.53%；另一邊，電子零組件、電機機械、電腦週邊和通信網路走弱。我的解讀是，今天的反彈有廣度，但不是所有資金重新押回同一個AI故事，而是從弱勢電子零組件轉向航運、金融、記憶體等更有即時話題的族群。\n\n現貨法人資料也給了多方一點支持。臺灣證券交易所資料顯示，上市外資淨買超約283.05億元，投信淨買約18.78億元，自營商自營部位淨買約29.10億元，合計約331.06億元。這代表至少在上市現貨上，今天法人不是站在同一邊賣出。不過要注意，TPEx三大法人資料今天還沒有同日回傳，所以這裡只能說上市法人偏多，不能把它擴大成整個上市櫃市場都完成轉多。\n\n還有幾個常見的盤後說法，今天不能直接下結論。臺指期貨的基差、未平倉、外資期貨部位，選擇權Put/Call Ratio，以及借券資料都還沒有接入；兩市融資融券也還在等同日官方資料。因此，今天不能把早盤下殺解釋成外資期貨壓盤，也不能說尾盤拉回就是空單回補。這些都是可能的解釋，但目前不是已核實的事實。\n\n所以我會把今天定義成「指數重返45K、廣度改善，但產業輪動仍很明顯」的一天。多方的證據是指數收回45,000點、上市櫃上漲家數占優、台積電收在高點、上市法人合計買超；空方的提醒是電子零組件逆勢下跌、TPEx法人和衍生品部位還沒補齊，今天成交資料的市場範圍也要看清楚，不能只用一個漂亮的收盤點數就宣布盤勢全面翻多。\n\n明天我會看三件事。第一，45,000點能不能站穩，並且不是開盤摸到而是收盤留下來；第二，上漲家數能不能繼續高於下跌家數，如果指數上漲但下跌家數擴大，反彈就可能變窄；第三，台積電、聯發科和今天強勢的航運、金融能不能同時維持相對強度。若只剩一檔權值股撐指數，或電子零組件繼續大幅落後，今天的紅盤就要用輪動反彈來理解，而不是全面行情。\n\n對海外臺人來說，盤後摘要最重要的不是替你猜明天漲跌，而是把盤面分成已經發生的事和下一個交易日要驗證的問題。今天已經發生的是：指數從跌逾300點的位置拉回、收復45K，上市法人偏買，資金也確實轉向航運與金融。還沒有發生、所以不能先講滿的，是期貨部位是否支持反彈、TPEx法人是否同步，以及這個輪動能不能延續。\n\n你覺得今天的45K，是一次有廣度的修復，還是高檔震盪中的反彈？明天收盤，我們就用45,000點、漲跌家數和強勢族群的成交金額回頭驗證。以上是盤後資料整理與情境分析，不是投資建議。",
+            "script_character_count": 1633,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW"
+            ]
+          },
+          {
+            "candidate_id": "close-talk-2",
+            "candidate_type": "CLOSE_TALK_EDITORIAL",
+            "editorial_status": "CONFIRMED_HOT",
+            "title": "【記憶體雙雄再點火】南亞科528、華邦電181：SK海力士赴日設廠，主線續不續？",
+            "title_options": [
+              "【記憶體雙雄再點火】南亞科528、華邦電181：SK海力士赴日設廠，主線續不續？",
+              "南亞科成交335億、華邦電201億！記憶體行情在中段，還是已經過熱？",
+              "【收盤夜話】美光說需求高於供給50%，臺股記憶體雙雄真的接到春天了嗎？"
+            ],
+            "why_now": [
+              "南亞科與華邦電同日上漲、合計成交金額超過536億元；SK海力士赴日擴產、美光需求高於供給等48小時內產業訊息，讓價格、成交與跨市場注意度同時出現。"
+            ],
+            "why_channel": [
+              "頻道既有樣本擅長用雙主角拆解盤面，這一題能保留雙股敘事，同時把原廠新聞、官方收盤數字和不能過度推論的部分分開。"
+            ],
+            "facts": [
+              "南亞科收528元，上漲11元、漲幅2.13%，成交金額約334.94億元。",
+              "華邦電收181元，上漲4.5元、漲幅2.55%，成交金額約201.35億元。",
+              "中央社報導SK海力士可能在日本宮城縣投資數十兆韓元興建記憶體工廠。",
+              "媒體報導美光管理層表示資料中心客戶需求較其能承諾供應量高約50%。"
+            ],
+            "unknowns": [
+              "FactPack沒有獨立可核驗的DRAM現貨或合約報價變化。",
+              "沒有證據證明海外原廠消息與兩檔個股當日漲幅存在單一直接因果。",
+              "兩市融資融券、期貨與借券資料尚未取得，短線擁擠度未知。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "南亞科（TWSE:2408） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "華邦電（TWSE:2344） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "SK海力士擬斥資數十兆韓元 赴日建記憶體晶片廠",
+                "published_at": "2026-08-21T03:48:07+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.cna.com.tw/news/aopl/202608210081.aspx",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "美光CEO曝「AI徹底改變記憶體產業」 客戶需求超出供給50%",
+                "published_at": "2026-08-21T03:02:00+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://finance.ettoday.net/news/3223172",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "美光加碼 100 億美元，在美新設 AI 記憶體研發中心",
+                "published_at": "2026-08-21T01:30:45+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://finance.technews.tw/2026/08/21/micron-unveils-micron-research-labs/",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "大家好，歡迎來到收盤夜話。今天如果你只看大盤，會說臺股重返45K；但如果把成交金額和族群拆開，真正把市場注意力拉回來的，其實是南亞科、華邦電這一組記憶體雙雄。問題是，這到底是記憶體主線重新確認，還是昨天強、今天再跟著情緒延伸的一段行情？\n\n先看兩檔股票的收盤結果。南亞科收528元，上漲11元、漲幅2.13%，成交金額約334.94億元；華邦電收181元，上漲4.5元、漲幅2.55%，成交金額約201.35億元。兩檔合計成交金額超過536億元，單看市場注意力，確實已經不是普通的個股波動。南亞科成交量約6,412.8萬股，華邦電成交量約1.127億股，價和量都進入今天的盤面前段班。\n\n新聞面也有幾個可以核對的催化。中央社和其他媒體報導，SK海力士被韓媒指可能在日本宮城縣投資數十兆韓元興建記憶體工廠；同一天，市場也在討論美光把資料中心需求形容為高於可承諾供應約50%，並在美國投入100億美元設立AI記憶體研發中心。這些消息共同推高了記憶體的注意度，但要把話說準：它們是產業新聞和市場情緒的證據，不是南亞科或華邦電當季獲利已經因此增加的直接證明。\n\n為什麼今天這題值得收盤後再講一次？因為它同時滿足三個條件。第一，兩檔同題材股票同日走強，不是單一股票獨唱；第二，成交金額都很大，市場真的有人在看、有人在換手；第三，海外原廠的投資與供需訊息，讓記憶體不只是臺股內部的短線故事。這比看到一檔股票突然漲停，就直接說主力進場，證據更完整。\n\n但今天也不能只講多方。南亞科盤中最高534元，最低512元，收盤528元；華邦電最高182元、最低174.5元，收181元。它們都有明顯的盤中振幅，代表市場對這個題材的看法並不平靜。官方收盤資料能確認價格、成交量和成交金額，新聞能確認市場在討論什麼，卻不能替我們確認每一筆成交背後是長線建倉、短線追價，還是隔日交易。沒有期貨、借券和融資融券的同日資料，就不要把擁擠度寫成確定答案。\n\n再把記憶體放回今天的整個盤面。加權指數上漲0.65%，航運和金融走強，電子零組件類指數卻下跌2.65%。也就是說，記憶體雙雄雖然表現不錯，但它們並沒有帶動所有電子股同步上漲。欣興收跌4.82%，景碩跌4.70%，南電跌5.02%，台光電跌5.10%，同樣是市場熟悉的AI和載板供應鏈，今天反而成為下跌的一側。這個反差很適合拿來提醒觀眾：題材強，不等於整個產業每一家公司都同樣受惠。\n\n我的看法是，今天的記憶體比較像「事件、價格、成交」暫時對上了焦點，但主線能不能延續，還要等新的供需證據。SK海力士可能赴日擴產，長期看是產能與區域布局訊息；美光說需求高於供給，則是管理層對需求的描述；南亞科和華邦電上漲，是臺股投資人當天的交易結果。這三層訊息不能直接畫成一條因果線，中間還缺價格、訂單、財報或公司公告的更直接連接。\n\n明天我會看三個檢查點。第一，南亞科和華邦電是否至少一檔維持成交金額前段，另一檔也沒有放量長黑；第二，記憶體強勢是否擴散到更多公司，而不是只靠兩檔雙雄撐住；第三，有沒有新的公司公告、原廠報價或第二家獨立來源補上供需證據。如果明天兩檔一起開高走低、成交量快速萎縮，那今天更像情緒延伸；如果量能維持、族群擴散，才比較接近主線正在形成。\n\n所以今天的結論不是「記憶體一定還會漲」，而是：它是今天最有市場注意度、也最值得繼續核對的一組題材。已確認的是兩檔收盤上漲、成交金額很大，外部也有SK海力士和美光相關報導；還沒確認的是臺廠獲利是否同步上修、報價是否真的轉強，以及這段行情是不是已經過熱。把這幾件事分開，才不會把一個有話題的收盤日，講成沒有退路的單邊故事。\n\n你覺得記憶體這一波現在是在主線中段，還是短線情緒高點？明天收盤，我們再用雙雄的相對強弱、成交金額和族群擴散一起驗證。以上是盤後資料整理與情境分析，不是投資建議。",
+            "script_character_count": 1559,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW"
+            ]
+          },
+          {
+            "candidate_id": "close-talk-3",
+            "candidate_type": "CLOSE_TALK_EDITORIAL",
+            "editorial_status": "CONFIRMED_HOT",
+            "title": "【貨櫃三雄接棒】萬海大漲9.69%、陽明6.14%、長榮也紅：航運是換位還是主線？",
+            "title_options": [
+              "【貨櫃三雄接棒】萬海大漲9.69%、陽明6.14%、長榮也紅：航運是換位還是主線？",
+              "電子零組件跌2.65%，航運卻漲3.37%：臺股45K靠誰接住？",
+              "【收盤夜話】萬海、陽明、長榮一起動，第三季旺季行情重新定價了嗎？"
+            ],
+            "why_now": [
+              "萬海、陽明、長榮同步收紅，航運類指數上漲3.37%，三檔合計成交金額超過310億元；盤後新聞同時提到運價高檔與第三季旺季，族群擴散比單一股票更有話題。"
+            ],
+            "why_channel": [
+              "收盤夜話需要把大盤輪動講給沒有盯盤的人，貨櫃三雄提供清楚的同族群比較，也能和電子零組件下跌形成當日盤面對照。"
+            ],
+            "facts": [
+              "萬海收124.5元，上漲11元、漲幅9.69%，成交金額約104.31億元。",
+              "陽明收64元，上漲3.7元、漲幅6.14%，成交金額約124.65億元。",
+              "長榮收251.5元，上漲5.5元、漲幅2.24%，成交金額約81.68億元。",
+              "盤後報導提到SCFI自6月以來維持相對高檔、第三季傳統旺季帶動航運股注意度。"
+            ],
+            "unknowns": [
+              "沒有同日TPEx法人、融資融券、期貨與借券資料可判斷短線部位。",
+              "運價新聞不能單獨證明三家公司下一季獲利已經上修。",
+              "萬海漲幅明顯高於長榮，族群內部是否真正同步仍待下一個交易日確認。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "萬海（TWSE:2615） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "陽明（TWSE:2609） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "長榮（TWSE:2603） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 發行量加權指數與產業類指數",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "航運股5檔漲停！唯一聚焦00960刷新高 00981A新建倉慧洋-KY",
+                "published_at": "2026-08-21T04:29:00+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://finance.ettoday.net/news/3223245",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "航海王續攻！外資狂掃陽明、長榮 萬海飆漲近9%刷15個月新高",
+                "published_at": "2026-08-21T02:44:00+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://finance.ettoday.net/news/3223138",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "今天臺股還有一組很有畫面的主角，就是貨櫃三雄。大盤早盤一度下跌超過300點，最後收漲290.55點；但航運類指數上漲3.37%，萬海、陽明、長榮同步收紅。這個故事的重點不是「航運股今天很強」這一句，而是當電子零組件回檔的時候，航運能不能接住市場的注意力，成為今天反彈裡最有擴散感的族群。\n\n先看官方收盤數字。萬海收124.5元，上漲11元、漲幅9.69%，成交金額約104.31億元；陽明收64元，上漲3.7元、漲幅6.14%，成交金額約124.65億元；長榮收251.5元，上漲5.5元、漲幅2.24%，成交金額約81.68億元。三檔合計成交金額超過310億元，而且不是只有一檔上漲，這就是它比單一價量異動更適合做收盤題目的原因。\n\n新聞面同樣有對應。盤後報導提到，貨櫃三雄走強，市場關注運價在第三季傳統旺季的表現；另一篇報導則指出SCFI自6月以來維持相對高檔，航運股和相關ETF受到資金注意。這些報導能說明市場為什麼把航運拿出來討論，但它們不能直接等同於三家公司下一季獲利一定上修。運價、裝載率、成本和公司實際財報，還要另外核對。\n\n再看今天的產業輪動。航運上漲3.37%，金融保險上漲2.53%，塑膠上漲3.08%，同時電子零組件下跌2.65%，電腦及週邊設備下跌1.65%。這種一邊漲、一邊跌的盤面，顯示今天的反彈不是所有資金重新回到同一個方向，而是有資金在找相對強勢、也有資金在降低電子零組件的曝險。貨櫃三雄之所以有話題，正是因為它們在指數翻紅的過程中，提供了很清楚的另一條線索。\n\n但是，航運三雄也不能只看當日漲幅。萬海接近一成的漲幅，陽明成交量接近兩億股，代表短線交易非常熱；長榮漲幅相對溫和，說明族群內部並不是完全同步。官方資料可以確認誰漲得多、誰成交金額大，新聞可以確認市場在討論運價和旺季，卻沒有證據讓我們直接說是外資全面買進，或是三家公司都已經進入同一個獲利加速階段。TPEx法人、兩市融資融券和期貨部位目前仍是未知，短線籌碼不能先替盤面做結論。\n\n我的解讀是，今天航運是「族群擴散已出現、基本面延續仍待確認」。三檔一起收紅，比一檔突然漲停更有市場廣度；航運指數上漲，也比只看個股更能支持題目的成立。但運價高檔能維持多久、旺季是否已反映在股價、長榮和陽明能不能跟上萬海的強度，這些才是接下來真正要追的問題。\n\n明天我會看三件事。第一，萬海、陽明、長榮是否至少兩檔維持相對大盤強勢，並且沒有全部開高走低；第二，航運類指數是否繼續高於大盤，還是只剩個別股票撐場；第三，運價或公司公告有沒有新的、可獨立核對的資料。如果明天只有萬海繼續衝、另外兩檔量縮轉弱，題材就會從族群行情收斂成單股行情；如果三檔成交金額和相對強度都維持，航運才有機會繼續當作市場輪動的觀察主線。\n\n今天的收盤夜話，把航運放在記憶體和權值股旁邊看，會比只追單一熱門股更完整。臺股收盤重新站回45K是真的，貨櫃三雄同步走強也是真的；但運價對獲利的傳導、法人實際部位和下一個交易日的延續性，現在都還沒有全部確認。先把已發生的事講清楚，再把要驗證的地方留下來，才是盤後摘要真正有用的地方。\n\n你覺得今天的航運上漲，是資金短線換位，還是第三季旺季行情重新被市場定價？明天我們再用三雄的相對強弱和新的運價、公告資料回頭驗證。以上是盤後資料整理與情境分析，不是投資建議。",
+            "script_character_count": 1356,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW"
+            ]
+          },
+          {
+            "candidate_id": "close-talk-4",
+            "candidate_type": "CLOSE_TALK_EDITORIAL",
+            "editorial_status": "MARKET_TENSION",
+            "title": "【AI族群大分歧】記憶體走強，載板四強卻跌4%到5%：資金在換哪裡？",
+            "title_options": [
+              "【AI族群大分歧】記憶體走強，載板四強卻跌4%到5%：資金在換哪裡？",
+              "欣興1085、南電1135都重挫：AI題材沒有消失，為何股票先分家？",
+              "【收盤夜話】同一個AI故事，今天為什麼有人漲、有人跌？"
+            ],
+            "why_now": [
+              "電子零組件類指數下跌2.65%，欣興、景碩、南電、台光電等高成交個股跌幅集中在約4%至5%，與記憶體和航運走強形成強烈反差。"
+            ],
+            "why_channel": [
+              "這是盤後最需要被解釋的矛盾之一：指數上漲不等於所有AI供應鏈都強，頻道可以用白話拆出今日資金輪動而非只報漲幅。"
+            ],
+            "facts": [
+              "電子零組件類指數下跌2.65%。",
+              "欣興收1085元、下跌4.82%，成交金額約238.07億元。",
+              "景碩收811元、下跌4.70%；南電收1135元、下跌5.02%。",
+              "盤後報導記錄載板三雄跌逾4%，同日記憶體和貨櫃族群走強。"
+            ],
+            "unknowns": [
+              "各公司當日跌幅的具體催化劑尚未由公司公告逐一確認。",
+              "不能只靠同產業同日漲跌推論供應鏈因果。",
+              "融資融券、借券和期貨部位尚未接入，短線賣壓來源未知。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 發行量加權指數與產業類指數",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "欣興（TWSE:3037） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "景碩（TWSE:3189） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "南電（TWSE:8046） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "台股漲逾300點重返45000點 貨櫃三雄勁揚",
+                "published_at": "2026-08-21T03:49:09+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.cna.com.tw/news/afe/202608210082.aspx",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW"
+            ]
+          },
+          {
+            "candidate_id": "close-talk-5",
+            "candidate_type": "CLOSE_TALK_EDITORIAL",
+            "editorial_status": "EVENT_RETEST",
+            "title": "【聯發科反彈90元】搶單傳言後重新站回3790：止跌了，還是只是一天紅？",
+            "title_options": [
+              "【聯發科反彈90元】搶單傳言後重新站回3790：止跌了，還是只是一天紅？",
+              "AMD、Marvell爭搶Google ASIC傳言未平，聯發科今天為何翻紅？",
+              "【收盤夜話】聯發科反彈要看什麼，不是只看今天漲幾塊？"
+            ],
+            "why_now": [
+              "聯發科收3790元、上漲2.43%，但48小時內仍有搶單傳言與投信連續賣超的報導；今天反彈與前期消息壓力同時存在，適合做成明日驗證型題目。"
+            ],
+            "why_channel": [
+              "收盤夜話需要把一檔權值股的價格反應和新聞風險放在一起，說清楚什麼是已發生的反彈，什麼還不能叫做趨勢反轉。"
+            ],
+            "facts": [
+              "聯發科收3790元，上漲90元、漲幅2.43%，成交金額約212.15億元。",
+              "媒體報導聯發科受到AMD與Marvell爭搶Google AI ASIC傳言影響，投信連續四天共賣超5654張。",
+              "上市法人今日合計淨買約331.06億元，但TPEx法人同日資料尚未取得。"
+            ],
+            "unknowns": [
+              "Google ASIC供應商傳言沒有公司正式公告核實。",
+              "投信後續是否停止賣超、外資與投信分歧是否收斂尚待新資料。",
+              "期貨選擇權和借券資料未接入，無法判斷衍生品壓力。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "聯發科（TWSE:2454） 2026-08-21 官方收盤資料",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "焦點股》聯發科：搶單傳言衝擊股價 外資力挺市場低估",
+                "published_at": "2026-08-21T04:00:32+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%81%AF%E7%99%BC%E7%A7%91-%E6%90%B6%E5%96%AE%E5%82%B3%E8%A8%80%E8%A1%9D%E6%93%8A%E8%82%A1%E5%83%B9-%E5%A4%96%E8%B3%87%E5%8A%9B%E6%8C%BA%E5%B8%82%E5%A0%B4%E4%BD%8E%E4%BC%B0-040032589.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 發行量加權指數與產業類指數",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "FACT",
+                "title": "2026-08-21 三大法人買賣金額統計",
+                "published_at": "2026-08-21",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20260821&type=day&response=json"
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "AI熱潮擴散 凱基投顧上修台股企業未來2年盈餘預估",
+                "published_at": "2026-08-21T03:52:13+00:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.cna.com.tw/news/afe/202608210084.aspx",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "",
+            "script_character_count": 0,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 3,
+        "channel_id": "ch-03-tw-industry-lens",
+        "channel_name": "產業透視鏡",
+        "style_status": "NO_TRANSCRIPT_NEEDS_SAMPLES",
+        "style_confidence": "PROFILE_ONLY",
+        "content_status": "WAITING_FOR_TRANSCRIPT_SAMPLES",
+        "content_date": null,
+        "profile_promise": "用製造業語言拆產業上下游、庫存、產能利用率、訂單與法人預期差。",
+        "audience": "產業研究者、中階以上臺股投資人、法人跟單者",
+        "language_style": "UNKNOWN_NO_TRANSCRIPT",
+        "opening_hook": "UNKNOWN_NO_TRANSCRIPT",
+        "narrative_logic": [],
+        "ending_pattern": "UNKNOWN_NO_TRANSCRIPT",
+        "profile_sample_alignment": "UNKNOWN_NO_SAMPLE",
+        "reason": "尚無完整文稿樣本，語言、開場、敘事與結尾保持UNKNOWN；至少需要2篇完整稿。",
+        "topics": []
+      },
+      {
+        "channel_order": 4,
+        "channel_id": "ch-04-tw-weighted-flagship",
+        "channel_name": "權值旗艦",
+        "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+        "style_confidence": "MEDIUM_FOR_STRUCTURE_LOW_FOR_CAUSAL_LANGUAGE",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "以加權指數為骨架，用兩檔核心權值股和期現貨籌碼拆大盤方向。",
+        "audience": "臺指期交易者、權值股投資人、指數ETF持有者",
+        "language_style": "繁體中文；高能、戰局式、節奏快；用對打和攻防呈現，但結論必須改成證據支援的條件句。",
+        "opening_hook": "先報大盤巨大振幅，再指出真正決定盤勢的是哪兩檔權值股。",
+        "narrative_logic": [
+          "大盤振幅",
+          "權值股A",
+          "權值股B",
+          "精確指數貢獻或明確不可得",
+          "期現貨籌碼",
+          "技術關卡",
+          "未來兩日情境"
+        ],
+        "ending_pattern": "給兩種指數情境和明確失效條件，不給單向點位承諾。",
+        "profile_sample_alignment": "PARTIAL_MATCH_WITH_UNSUPPORTED_CAUSAL_RISK",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "weighted-flagship:2026-08-21:market-rebound",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+            "title": "【45K攻防】台積電、聯發科撐盤，鴻海卻收黑：權值股真的同一條心？",
+            "title_options": [
+              "【45K攻防】台積電、聯發科撐盤，鴻海卻收黑：權值股真的同一條心？",
+              "臺股收漲290點，五大權值只有四檔紅：下一站看誰補上？",
+              "【權值旗艦】電子核心與金融接棒，這次反彈廣度夠不夠？"
+            ],
+            "why_now": [
+              "最近交易日指數重返45,000點，但五檔權值觀察股並未同步上漲。"
+            ],
+            "why_channel": [
+              "以指數為骨架比較台積電、聯發科、鴻海、臺達電與富邦金的收盤分工。"
+            ],
+            "facts": [
+              "加權指數收45,224.29點，上漲290.55點。",
+              "台積電收在2410元，漲跌+35.00元（+1.47%），成交金額約375.90億元。",
+              "聯發科收在3790元，漲跌+90.00元（+2.43%），成交金額約212.15億元。",
+              "鴻海收在245.5元，漲跌-1.00元（-0.41%），成交金額約59.08億元。",
+              "臺達電收在1750元，漲跌+5.00元（+0.29%），成交金額約71.55億元。",
+              "富邦金收在134元，漲跌+6.00元（+4.69%），成交金額約49.14億元。",
+              "上市三大法人合計淨買約331.06億元。"
+            ],
+            "unknowns": [
+              "未接入正式成分權重，不能計算各股精確指數貢獻。",
+              "未接入同日TAIFEX法人部位，不能推論期現貨動機。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "OFFICIAL_EOD",
+                "title": "2026-08-21 上市收盤行情",
+                "published_at": "2026-08-21T13:30:00+08:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "OFFICIAL_EOD",
+                "title": "2026-08-21 三大法人買賣金額統計",
+                "published_at": "2026-08-21T13:30:00+08:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+                "raw_api_url": "https://openapi.twse.com.tw/v1/fund/BFI82U"
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "鴻海財報創高卻一直跌？外資喊「4字頭」後落跑 杜金龍：你愈看好它愈往下",
+                "published_at": "2026-08-23T00:08:30+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.stock.yahoo.com/news/%E9%B4%BB%E6%B5%B7%E8%B2%A1%E5%A0%B1%E5%89%B5%E9%AB%98%E5%8D%BB-%E7%9B%B4%E8%B7%8C-%E5%A4%96%E8%B3%87%E5%96%8A-4%E5%AD%97%E9%A0%AD-%E5%BE%8C%E8%90%BD%E8%B7%91-000830955.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股高檔震盪 分析師：箱型整理還沒完可以「這樣做」",
+                "published_at": "2026-08-23T06:58:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E9%AB%98%E6%AA%94%E9%9C%87%E7%9B%AA-%E5%88%86%E6%9E%90%E5%B8%AB-%E7%AE%B1%E5%9E%8B%E6%95%B4%E7%90%86%E9%82%84%E6%B2%92%E5%AE%8C%E5%8F%AF%E4%BB%A5-%E9%80%99%E6%A8%A3%E5%81%9A-065841633.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "各位朋友，權值旗艦上線。最近一個交易日的臺股看起來是漂亮反彈：8月21日加權指數收在45,224.29點，上漲290.55點。但真正要問的不是指數紅不紅，而是這根紅K到底由誰撐起來。\n\n先看第一組主引擎。台積電收2,410元，上漲1.47%，成交金額約375.90億元；聯發科收3,790元，上漲2.43%，成交約212.15億元。兩檔同時走強，代表大型電子權值至少在收盤端提供了穩定力量。上市三大法人合計淨買約331.06億元，也讓這次反彈不只是散戶單邊追價。\n\n但第二組訊號沒有完全同步。臺達電只小漲0.29%，鴻海反而下跌0.41%；相對之下，富邦金大漲4.69%。這表示盤面並不是單純的AI權值全面回歸，而是電子核心、金融權值和其他大型股之間重新分工。尤其鴻海財報題材仍在，股價卻沒有跟著指數上行，這個背離比一句「大盤反彈」更值得追蹤。\n\n這裡必須把界線講清楚。目前資料沒有正式成分權重，也沒有同日TAIFEX法人淨部位，因此不能計算每檔股票對指數貢獻幾點，更不能把走勢寫成外資刻意壓盤或拉抬。能確認的只有收盤價、成交額、法人現貨流向，以及權值股之間的相對強弱。\n\n下一個交易日看三件事。第一，台積電和聯發科能否維持強於大盤；第二，鴻海是否補漲，否則AI權值仍是分裂；第三，金融權值的強勢能否延續。若三組同步，反彈的廣度才算擴大；若只剩台積電撐住指數，表面紅盤和內部結構就可能再次分家。這不是猜方向，而是把多空攻防拆成可以驗證的條件。",
+            "script_character_count": 613,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 5,
+        "channel_id": "ch-05-tw-capital-radar",
+        "channel_name": "資金雷達",
+        "style_status": "PROVISIONAL_SINGLE_SAMPLE",
+        "style_confidence": "LOW_SINGLE_SAMPLE",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "追蹤臺股產業指數、成交與法人分佈，判斷資金從哪個板塊流向哪個板塊。",
+        "audience": "短中期交易者、產業ETF投資人、板塊輪動策略使用者",
+        "language_style": "樣本顯示高能短句和極端價量鉤子，但只能暫定，不能外推為穩定頻道聲音。",
+        "opening_hook": "直接點名當天最熱個股和極端價格。",
+        "narrative_logic": [
+          "極端價量",
+          "公司基本面",
+          "產業缺貨/週期",
+          "法人籌碼",
+          "技術過熱",
+          "二選一互動"
+        ],
+        "ending_pattern": "樣本以目標價二選一互動收尾；生產稿改為資金擴散/退潮的可量測條件。",
+        "profile_sample_alignment": "PROFILE_SAMPLE_MISMATCH_SINGLE_STOCK_NOT_SECTOR_ROTATION",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "capital-radar:2026-08-23:rotation-watch",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+            "title": "【資金換位】臺股週跌586點，航運逆漲13%：電子撤、金融航運接？",
+            "title_options": [
+              "【資金換位】臺股週跌586點，航運逆漲13%：電子撤、金融航運接？",
+              "富邦金漲4.69%、貨櫃三雄齊揚：資金真的離開AI了嗎？",
+              "投信由買轉賣後，誰在吸金？下一個交易日看三個續航條件"
+            ],
+            "why_now": [
+              "週末24小時新聞同時出現投信配置變化、航運逆勢走強與臺股箱型整理。"
+            ],
+            "why_channel": [
+              "把單日價量、法人現貨與至少三檔代表股放在一起判斷資金是否擴散。"
+            ],
+            "facts": [
+              "加權指數8月21日上漲290.55點，但媒體統計臺股週線下跌586點。",
+              "媒體統計航運一週逆勢上漲約13%。",
+              "富邦金8月21日上漲4.69%。",
+              "萬海、陽明、長榮8月21日分別上漲9.69%、6.14%、2.24%。"
+            ],
+            "unknowns": [
+              "尚未完成全產業成交佔比與法人跨股分佈，不能確認新主線已經成立。",
+              "TPEx同日法人資料仍不完整。"
+            ],
+            "evidence": [
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "OFFICIAL_EOD",
+                "title": "2026-08-21 上市收盤行情",
+                "published_at": "2026-08-21T13:30:00+08:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/historical/mi-index.html",
+                "raw_api_url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+              },
+              {
+                "source_id": "臺灣證券交易所",
+                "evidence_class": "OFFICIAL_EOD",
+                "title": "2026-08-21 三大法人買賣金額統計",
+                "published_at": "2026-08-21T13:30:00+08:00",
+                "freshness_bucket": "LAST_MARKET_SESSION",
+                "human_verification_url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+                "raw_api_url": "https://openapi.twse.com.tw/v1/fund/BFI82U"
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+                "published_at": "2026-08-22T07:42:26+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+                "published_at": "2026-08-22T06:38:00+00:00",
+                "freshness_bucket": "CONTEXT_48H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股高檔震盪 分析師：箱型整理還沒完可以「這樣做」",
+                "published_at": "2026-08-23T06:58:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E9%AB%98%E6%AA%94%E9%9C%87%E7%9B%AA-%E5%88%86%E6%9E%90%E5%B8%AB-%E7%AE%B1%E5%9E%8B%E6%95%B4%E7%90%86%E9%82%84%E6%B2%92%E5%AE%8C%E5%8F%AF%E4%BB%A5-%E9%80%99%E6%A8%A3%E5%81%9A-065841633.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "今天資金雷達不只看哪一檔漲最多，而是看錢從哪裡撤、又往哪裡集中。最近一個交易日，加權指數雖然反彈290.55點，但週線仍下跌586點。就在大盤高檔整理的同時，媒體整理顯示航運一週逆勢上漲約13%，另有報導指出投信操作由買轉賣，電子與金融的配置方向出現變化。這三個訊號放在一起，才構成真正的資金換位問題。\n\n先看官方收盤資料。富邦金8月21日收134元，上漲4.69%；貨櫃股方面，萬海上漲9.69%、陽明上漲6.14%、長榮上漲2.24%。同一天，台積電與聯發科也收紅，但鴻海下跌0.41%。所以這不是電子全面退潮，而是資金從單一AI權值，擴散到金融與航運，同時保留部分電子核心部位。\n\n再看法人。上市三大法人合計淨買約331.06億元，代表現貨總量並沒有全面撤退；但總買超不能回答錢進了哪些產業。媒體提到投信由買轉賣、砍電子抱金融，這只能當作進一步核對的線索，不能直接推論所有法人都完成換倉。真正的產業資金雷達還需要板塊成交佔比、跨股法人分佈，以及至少連續兩到三個交易日的持續性。\n\n因此，現在可以提出一個暫定結論：資金正在嘗試從擁擠的電子主線，向金融與航運分流，但還不能說新主線已經確立。下一個交易日，如果航運三雄成交額維持、金融權值續強，而且電子高檔股沒有再度全面吸回資金，輪動才有延續證據。反過來，如果航運量能迅速退潮、富邦金回吐，而台積電重新獨撐大盤，那今天看到的更可能只是短線避險與補漲。\n\n資金雷達真正要抓的不是一根大紅K，而是資金能不能從一檔擴散到三檔、從一天延續到多天。這篇先把變化標出來，下一篇再用同一組條件驗證它到底是輪動，還是隻有一天的煙火。",
+            "script_character_count": 675,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 6,
+        "channel_id": "ch-06-us-nasdaq-rocket",
+        "channel_name": "那指火箭",
+        "style_status": "PROVISIONAL_SINGLE_SAMPLE",
+        "style_confidence": "LOW_SINGLE_SAMPLE",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "圍繞NASDAQ 100、科技巨頭與AI賽道，解釋科技成長股的結構變化。",
+        "audience": "美股科技股投資人、成長股策略使用者、NASDAQ ETF持有者",
+        "language_style": "繁體中文夾常見美股縮寫；事件驅動、機制說明強，語氣比盤後頻道更像制度解讀。",
+        "opening_hook": "先說這條訊息會改變亞洲投資者的交易方式，再給生效時間線。",
+        "narrative_logic": [
+          "事件結論",
+          "規則與時間線",
+          "為什麼現在發生",
+          "亞太投資者影響",
+          "QQQ/臺股聯動",
+          "清算與流動性風險"
+        ],
+        "ending_pattern": "問事件對亞洲/臺股偏利多還是偏利空，並保留實施條件。",
+        "profile_sample_alignment": "PARTIAL_MATCH_EVENT_IS_NASDAQ_RELEVANT_BUT_NOT_REPRESENTATIVE_OF_FULL_PROFILE",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "nasdaq-rocket:2026-08-23:nvidia-event-week",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+            "title": "【那指事件週】輝達8月26日財報撞上伺服器漲價：AI火箭還缺哪桶燃料？",
+            "title_options": [
+              "【那指事件週】輝達8月26日財報撞上伺服器漲價：AI火箭還缺哪桶燃料？",
+              "NVIDIA財報倒數，AI伺服器傳漲逾15%：那指是需求強，還是成本壓力？",
+              "美股延長交易、輝達財報接棒：亞洲投資人這週盯三個條件"
+            ],
+            "why_now": [
+              "輝達財報日期、AI伺服器調價報導與延長交易議題集中在同一個24小時視窗。"
+            ],
+            "why_channel": [
+              "從事件時間線、那指結構與亞洲交易影響拆解科技成長股。"
+            ],
+            "facts": [
+              "經濟日報報導輝達將於8月26日公佈上季財報。",
+              "CNBC與科技新報均報導AI伺服器可能因記憶體成本上升而調價。",
+              "中央社報導臺灣券商將自行評估是否跟進美股延長交易。"
+            ],
+            "unknowns": [
+              "資料包沒有同時點NDX、QQQ成分廣度與成交資料。",
+              "調價訊息仍需公司正式說法與財報毛利率交叉確認。"
+            ],
+            "evidence": [
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Nvidia customers reportedly warned about AI-related price hikes",
+                "published_at": "2026-08-22T20:26:44+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "美股延長交易台灣複委託跟進？金管會：券商自行評估",
+                "published_at": "2026-08-23T01:53:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cna.com.tw/news/afe/202608230027.aspx",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "這一週那斯達克真正的主線，不只是指數漲跌，而是兩個事件同時逼近：輝達預計在8月26日公佈上季財報，另一方面，多家媒體報導輝達客戶被告知，AI伺服器可能因記憶體成本上升而調價，漲幅超過15%。一個是需求與獲利的驗證，一個是成本能否轉嫁的測試，兩者會一起影響市場怎麼重估AI成長股。\n\n先拆時間線。財報公佈前，市場會先交易預期；財報公佈後，真正重要的不是營收有沒有高於共識一點，而是資料中心需求、毛利率、供應能力和後續指引能不能同時站得住。若伺服器調價屬實，價格上升可能代表需求仍強，也可能代表成本壓力正在往客戶端轉移。只看「漲價」兩個字，無法判斷對晶片商、伺服器廠和雲端客戶誰最有利。\n\n再看那指結構。輝達是大型科技與AI交易的重要錨點，但目前資料包沒有同時點的NDX、QQQ成分廣度和成交資料，所以不能把單一公司事件直接寫成整個那指一定向上或向下。較合理的做法，是觀察財報後半導體、雲端平臺、伺服器供應鏈能否同步反應。若只有輝達一檔上漲，而其他AI成分股跟不上，那是單點行情；若漲勢向多個子產業擴散，才比較接近那指火箭重新點火。\n\n對亞洲投資人還有一個制度變化。中央社報導，美股延長交易後，臺灣複委託是否跟進將由券商自行評估。這代表未來亞洲時區的反應速度可能提升，但流動性、價差與券商實際開放時段仍需逐項確認，不能把「可評估」寫成「已全面上線」。\n\n接下來看三個條件：財報指引是否支援高成長、伺服器漲價是否伴隨需求延續、以及AI漲勢是否從輝達擴散到那指其他大型成分股。三項同時成立，才是結構性利多；若毛利率或資本支出回報出現疑問，市場可能先重新定價。這集不押單一方向，只把這枚火箭需要的燃料、點火器和熄火條件列清楚。",
+            "script_character_count": 700,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 7,
+        "channel_id": "ch-07-us-sector-rotator",
+        "channel_name": "板塊輪動儀",
+        "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PROFILE_MISMATCH",
+        "style_confidence": "MEDIUM_FOR_SINGLE_STOCK_DEEP_DIVE_LOW_FOR_SECTOR_ROTATION",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "比較標普11大板塊和ETF相對強弱，解釋資金為何輪動。",
+        "audience": "美股ETF投資人、板塊輪動策略使用者、中長期資產配置者",
+        "language_style": "樣本是長篇單股深拆：矛盾鉤子、技術位、財報、產業邏輯和機構分歧；不等於已觀察到板塊輪動語言。",
+        "opening_hook": "點出股價與基本面/財報之間的矛盾。",
+        "narrative_logic": [
+          "單股矛盾",
+          "技術結構",
+          "財報",
+          "產業階段",
+          "華爾街分歧",
+          "估值/資金",
+          "短期情境"
+        ],
+        "ending_pattern": "樣本以單股關鍵位收尾；生產稿應回到板塊領先/落後和輪動失效條件。",
+        "profile_sample_alignment": "PROFILE_SAMPLE_MISMATCH_BOTH_SAMPLES_ARE_SINGLE_STOCK",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "sector-rotator:2026-08-23:ai-profit-test",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "PROVISIONAL_PROFILE_MISMATCH_REVIEW",
+            "title": "【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？",
+            "title_options": [
+              "【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？",
+              "AI牛市進入獲利驗證：記憶體、伺服器、先進封裝誰先交成績？",
+              "從資本支出到現金流，AI硬體三板塊正在重新排隊"
+            ],
+            "why_now": [
+              "最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。"
+            ],
+            "why_channel": [
+              "用三個以上AI子板塊比較成本、毛利與資本支出，而不是隻拆一檔股票。"
+            ],
+            "facts": [
+              "媒體報導記憶體成本可能推升AI伺服器價格。",
+              "最新報導比較鴻海、廣達與緯穎財報三率。",
+              "經濟日報報導封測五雄合計投入逾4,600億元擴產。",
+              "Yahoo奇摩報導臺股企業第二季合計獲利約1.8兆元。"
+            ],
+            "unknowns": [
+              "未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。",
+              "擴產金額不等於未來利用率或獲利。"
+            ],
+            "evidence": [
+              {
+                "source_id": "科技新報財經",
+                "evidence_class": "REPORTED",
+                "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+                "published_at": "2026-08-23T02:29:41+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "分析｜從三大伺服器代工廠財報3率 看懂鴻海、廣達及緯穎不同策略布局",
+                "published_at": "2026-08-23T05:57:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%88%86%E6%9E%90-%E5%BE%9E%E4%B8%89%E5%A4%A7%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%BB%A3%E5%B7%A5%E5%BB%A0%E8%B2%A1%E5%A0%B13%E7%8E%87-%E7%9C%8B%E6%87%82%E9%B4%BB%E6%B5%B7-%E5%BB%A3%E9%81%94%E5%8F%8A%E7%B7%AF%E7%A9%8E%E4%B8%8D%E5%90%8C%E7%AD%96%E7%95%A5%E5%B8%83%E5%B1%80-011000792.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "封測五雄砸逾4,600億擴產 應對 AI 熱潮引爆產能需求",
+                "published_at": "2026-08-22T17:36:23+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708191",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "Yahoo奇摩股市",
+                "evidence_class": "REPORTED",
+                "title": "台股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」",
+                "published_at": "2026-08-23T06:52:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%BC%81%E6%A5%ADq2%E7%8B%82%E8%B3%BA1-8%E5%85%86%E5%89%B5%E6%96%B0%E9%AB%98-ai%E6%95%88%E6%87%89%E5%B7%B2%E6%93%B4%E6%95%A3-%E6%B3%95%E4%BA%BA%E9%BB%9E%E5%90%8D-8%E5%A4%A7%E9%87%91%E7%A4%A6-065200994.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "8月股市展開修復行情！ AI產業鏈從資本支出擴張、轉向獲利驗證",
+                "published_at": "2026-08-22T22:05:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://finance.ettoday.net/news/3224011",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "AI硬體最近出現一個很有意思的矛盾：企業獲利仍在創高，資本支出也沒有停，但市場開始從「有AI就買」轉向追問「誰能把AI變成利潤」。這正是板塊輪動最容易發生的時刻。\n\n第一個板塊是記憶體與伺服器成本。多家媒體報導，記憶體成本上升可能推動輝達AI伺服器調價超過15%。如果訊息後續得到公司或供應鏈正式確認，受影響的不只輝達，還包括記憶體供應商、伺服器代工廠與雲端客戶。成本上升能不能順利轉嫁，會決定毛利留在哪一段。\n\n第二個板塊是伺服器代工。最新報導把鴻海、廣達與緯穎的財報三率放在一起比較，顯示同樣承接AI需求，營運策略與獲利結構仍可能不同。這代表下一階段不能只看出貨量，還要看營業利益率、產品組合和客戶集中度。資金如果開始從純題材轉向獲利驗證，代工廠之間的股價差距可能進一步拉開。\n\n第三個板塊是先進封裝。封測五雄被報導合計投入逾4,600億元擴產，反映AI帶來的產能需求仍在延伸。但擴產是長期供給，股價交易的是未來回報；如果折舊先上來、訂單或利用率沒有同步，資本支出也可能成為壓力。因此，擴產金額本身不是買進理由，而是後續追蹤產能利用率與獲利的起點。\n\n臺股企業第二季獲利被報導合計約1.8兆元並創新高，市場仍有基本面支撐；同時也有觀察指出，AI產業鏈正在從資本支出擴張走向獲利驗證。把這些線索放在一起，眼前的輪動不是AI對非AI，而是AI內部從故事、裝置、產能，轉向毛利與現金流。\n\n這篇暫時不引用標普11大板塊ETF資金流，因為目前資料包沒有完整的XLK、XLF、XLE、XLV同時點資料。所以下一個驗證點很清楚：看記憶體漲價能否轉嫁、伺服器代工毛利能否改善、封裝擴產能否換成利用率。三條線誰先交出獲利，資金就更可能往誰那裡輪動；只靠新聞熱度而沒有財務兌現的板塊，則最容易先退潮。",
+            "script_character_count": 733,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 8,
+        "channel_id": "ch-08-us-dark-pool-radar",
+        "channel_name": "暗池雷達",
+        "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+        "style_confidence": "MEDIUM_FOR_OPTIONS_ANOMALY_LOW_FOR_TRUE_DARK_POOL",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "用暗池大宗和期權異常成交識別機構可能的防守、投機或對沖。",
+        "audience": "期權交易者、短線波段客、主力資金觀察者",
+        "language_style": "懸疑式、高張力、先現貨反常再揭示期權大單；生產稿需顯著降低把大單人格化的斷言。",
+        "opening_hook": "先說現貨看起來平靜或大漲，再揭示衍生品市場的反向異常。",
+        "narrative_logic": [
+          "現貨鉤子",
+          "合約欄位",
+          "成交/OI/IV/Delta",
+          "技術位",
+          "事件催化",
+          "多種可能意圖",
+          "驗證條件"
+        ],
+        "ending_pattern": "列突破/跌破/IV變化/OI變化四個驗證點，不宣佈機構唯一意圖。",
+        "profile_sample_alignment": "PARTIAL_MATCH_OPTIONS_HEAVY_TRUE_DARK_POOL_EVIDENCE_NOT_SHOWN",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "dark-pool-radar:2026-08-23:no-flow-no-claim",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "EVIDENCE_LIMITED_DRAFT",
+            "title": "輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力",
+            "title_options": [
+              "輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力",
+              "NVIDIA財報很熱，但暗池大單在哪？缺這8個欄位不能下結論",
+              "別把期權成交叫暗池：輝達事件週的四項真實驗證表"
+            ],
+            "why_now": [
+              "輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。"
+            ],
+            "why_channel": [
+              "把頻道最容易出現的證據誤區直接拆開，並列出下一步必須補齊的欄位。"
+            ],
+            "facts": [
+              "經濟日報報導輝達將於8月26日公佈上季財報。",
+              "CNBC與科技新報報導AI伺服器調價訊息。"
+            ],
+            "unknowns": [
+              "缺少原始暗池成交列印。",
+              "缺少原始期權鏈，以及合約到期日、履約價、成交量、OI、IV、Delta與買賣方向證據。",
+              "不能把新聞熱度推論成機構單邊意圖。"
+            ],
+            "evidence": [
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Nvidia customers reportedly warned about AI-related price hikes",
+                "published_at": "2026-08-22T20:26:44+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "ETtoday財經雲",
+                "evidence_class": "REPORTED",
+                "title": "8月股市展開修復行情！ AI產業鏈從資本支出擴張、轉向獲利驗證",
+                "published_at": "2026-08-22T22:05:00+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://finance.ettoday.net/news/3224011",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "各位朋友，今天暗池雷達先按下暫停鍵。不是市場沒有題目，而是8月26日輝達財報前，公開新聞已經非常熱：一邊是財報即將公佈，一邊是AI伺服器可能因記憶體成本上升而調價超過15%。現貨事件很清楚，但真正能支援「暗池大單」或「期權主力方向」的原始資料，目前並不在資料包裡。\n\n這個差別非常重要。要判斷一筆期權交易，至少需要標的現價與時間、到期日、履約價、Call或Put、成交量、未平倉量、成交價、買賣方向證據、隱含波動率，以及它是不是多腿組合的一部分。少掉任何幾項，都可能把保護性Put、價差單、平倉或造市商對沖，誤寫成機構單邊看空。\n\n同樣地，期權大單不等於暗池。真正的暗池或大宗交易，需要可核對的成交列印、時間、價格、數量與來源。現在只有財報與產業新聞，沒有這些欄位，所以這集不能說華爾街正在押注崩盤，也不能說主力提前埋伏拉昇。把新聞熱度包裝成「千萬美元對賭」，看起來刺激，實際上是在跳過證據。\n\n那這個頻道今天還能做什麼？可以先建立財報前的四項觀察表。第一，財報前後現貨是否突破並站穩關鍵區間；第二，近月與次月隱含波動率是否同步上升；第三，成交量放大後，未平倉量隔日是否真的增加；第四，異常合約能否排除多腿組合與深度實值對沖。只有四項資料齊全，才進入意圖分析。\n\n公開新聞提供了事件背景：輝達財報日期、AI伺服器調價傳聞，以及AI資本支出回報的市場討論。但這些只能說明「為什麼值得監控」，不能回答「機構已經押哪一邊」。今天這篇完整稿的結論就是資料不足時不亂下判斷。等原始期權鏈、OI變化與真實暗池列印到位，我們再把多種可能意圖逐一排除，而不是先寫結論再找證據。",
+            "script_character_count": 672,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 9,
+        "channel_id": "ch-09-us-options-gatekeeper",
+        "channel_name": "期權守門人",
+        "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+        "style_confidence": "MEDIUM_FOR_RISK_EDUCATION_LOW_FOR_DAILY_OPTIONS_SURFACE",
+        "content_status": "PROVISIONAL_DRAFT_READY",
+        "content_date": "2026-08-23",
+        "profile_promise": "風險優先地講期權對沖、波動率和賣方策略，而不是單邊賭博。",
+        "audience": "持有美股現貨、希望降低迴撤或獲得額外現金流的理性交易者",
+        "language_style": "教學型、機制先行、語氣剋制；用歷史規律或大師案例引出風險不對稱。",
+        "opening_hook": "先挑戰普通人把期權當賭具或機械套規律的誤區。",
+        "narrative_logic": [
+          "歷史/案例",
+          "核心機制",
+          "三層推理",
+          "風險不對稱",
+          "普通人分層行動",
+          "限制條件"
+        ],
+        "ending_pattern": "用風險清單和適用條件收尾，互動問題圍繞防守與紀律。",
+        "profile_sample_alignment": "PROFILE_SAMPLE_PARTIAL_MATCH_RISK_EDUCATION_STRONG_DAILY_SELLING_OPTIONS_WEAK",
+        "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+        "topics": [
+          {
+            "candidate_id": "options-gatekeeper:2026-08-23:event-risk-framework",
+            "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+            "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+            "title": "輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？",
+            "title_options": [
+              "輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？",
+              "買Call賭財報、買Put防崩盤？先過最大虧損與IV兩道門",
+              "美股延長交易不等於更安全：財報週期權的三層風控"
+            ],
+            "why_now": [
+              "輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。"
+            ],
+            "why_channel": [
+              "以最大損失、波動率結構與執行流動性三層拆解，而非預測單邊行情。"
+            ],
+            "facts": [
+              "經濟日報報導輝達將於8月26日公佈上季財報。",
+              "中央社報導臺灣券商將自行評估是否跟進美股延長交易。",
+              "CNBC報導長天期殖利率上升使市場波動。"
+            ],
+            "unknowns": [
+              "未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。",
+              "因此不提供特定履約價或賣方策略。"
+            ],
+            "evidence": [
+              {
+                "source_id": "經濟日報",
+                "evidence_class": "REPORTED",
+                "title": "輝達將於8月26日公布上季財報",
+                "published_at": "2026-08-23T05:04:11+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "中央社財經",
+                "evidence_class": "REPORTED",
+                "title": "美股延長交易台灣複委託跟進？金管會：券商自行評估",
+                "published_at": "2026-08-23T01:53:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cna.com.tw/news/afe/202608230027.aspx",
+                "raw_api_url": null
+              },
+              {
+                "source_id": "CNBC",
+                "evidence_class": "REPORTED",
+                "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+                "published_at": "2026-08-22T15:08:54+00:00",
+                "freshness_bucket": "FRESH_24H",
+                "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+                "raw_api_url": null
+              }
+            ],
+            "opinion_evidence": [],
+            "script_text": "多數人遇到輝達財報週，第一反應是買一張Call賭大漲，或買一張Put防崩盤。但期權守門人今天要先提醒：買方最大虧損雖然有限，並不代表這筆交易自然合理。財報前最容易被忽略的成本，是隱含波動率、時間價值與買賣價差。\n\n公開資訊顯示，輝達預計在8月26日公佈上季財報；同時，市場正在討論AI伺服器可能因記憶體成本上升而調價。這種事件密集的時段，期權價格往往會提前反映對波動的期待。即使你看對股價方向，如果實際波動不及期權定價，或財報後隱含波動率快速回落，買方仍可能虧損。方向、幅度與時間，三個條件缺一不可。\n\n第一層先算最大損失。任何策略都要在下單前寫清楚最壞情境，而不是用「財報一定有行情」取代風控。買方要接受權利金可能大幅損失；賣方則必須知道裸賣Call或Put的尾端風險遠高於收到的權利金。沒有完整損益圖與保證金條件，不應把策略稱為穩定收益。\n\n第二層看波動率結構。不能只看單一IV數字，還要比較近月與次月、財報前後到期日，以及同履約價附近的偏斜。目前資料包沒有即時IV、IV Rank、OI和波動率曲面，因此這篇不提供特定合約，也不把任何履約價包裝成勝率較高。\n\n第三層看執行環境。中央社報導，美股延長交易後，臺灣複委託是否跟進由券商自行評估。延長時段不等於每個時段都有同樣流動性；夜盤價差、報價深度與券商規則都可能不同。對期權而言，流動性不足時的滑價，會直接改變原本漂亮的理論損益。\n\n所以財報週的守門順序是：先確定最大虧損，再確認事件是否已反映在波動率，最後評估流動性與退出方案。資料不齊時，空手也是一種完整決策。這不是要你猜輝達漲跌，而是先確保無論結果如何，單一事件都不會把整個帳戶拖進無法承受的風險。",
+            "script_character_count": 694,
+            "risk_flags": [
+              "DRAFT_FOR_HUMAN_REVIEW",
+              "NOT_INVESTMENT_ADVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "channel_order": 10,
+        "channel_id": "ch-10-us-earnings-hunter",
+        "channel_name": "財報獵人",
+        "style_status": "NO_TRANSCRIPT_NEEDS_SAMPLES",
+        "style_confidence": "PROFILE_ONLY",
+        "content_status": "WAITING_FOR_TRANSCRIPT_SAMPLES",
+        "content_date": null,
+        "profile_promise": "直讀SEC原檔，比較GAAP/Non-GAAP、自由現金流、一次性專案與Guidance。",
+        "audience": "美股基本面投資者、深挖企業財務資料的研究型觀眾",
+        "language_style": "UNKNOWN_NO_TRANSCRIPT",
+        "opening_hook": "UNKNOWN_NO_TRANSCRIPT",
+        "narrative_logic": [],
+        "ending_pattern": "UNKNOWN_NO_TRANSCRIPT",
+        "profile_sample_alignment": "UNKNOWN_NO_SAMPLE",
+        "reason": "尚無完整文稿樣本，語言、開場、敘事與結尾保持UNKNOWN；至少需要2篇完整稿。",
+        "topics": []
+      }
+    ]
   }
 }
