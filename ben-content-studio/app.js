@@ -34,7 +34,7 @@ const characterCount = (value) => [...String(value ?? "").replace(/\s/g, "")].le
 
 function topicLabel(item) {
   if (item.candidate_type?.includes("CLOSE_TALK_EDITORIAL")) return "收盤夜話選題";
-  if (item.candidate_type?.includes("CHANNEL_TOPIC_OUTLINE")) return "跨頻道熱點 · 本頻道角度";
+  if (item.script_generation_method === "STYLE_PACK_EVIDENCE_TEMPLATE_V1") return "跨頻道熱點 · 本頻道完整稿";
   if (item.candidate_type?.includes("DISCLOSURE")) return "官方事件";
   if (item.candidate_type?.includes("NEWS")) return "新聞事件";
   if (item.candidate_type?.includes("X_EVENT")) return "X 線索";
@@ -93,6 +93,9 @@ function applyPayload(payload) {
   channels = normalizeChannels(payload);
   if (channels.length !== 11 || channels.some((channel) => channel.topics.length !== 5)) {
     throw new Error("已有樣本頻道尚未形成五題審稿面");
+  }
+  if (channels.some((channel) => channel.topics.some((topic) => !topic.script_text))) {
+    throw new Error("已有樣本頻道仍有未完成文稿");
   }
   const snapshotDate = workbench.source_snapshot_date;
   const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
@@ -246,8 +249,8 @@ function showOverview() {
   activeChannel = null;
   $("#channel-overview").hidden = false;
   $("#channel-detail").hidden = true;
-  $("#page-title").textContent = "已有樣本頻道：5題選題與文稿";
-  $("#page-summary").textContent = "同一熱點可以跨頻道覆蓋，但標題與切入角度必須符合各自定位；無文稿樣本的頻道不在本頁顯示。";
+  $("#page-title").textContent = "已有樣本頻道：每頻道5題完整文稿";
+  $("#page-summary").textContent = "同一熱點可以跨頻道覆蓋，但標題、切入角度與完整正文均依頻道定位生成；無文稿樣本的頻道不在本頁顯示。";
   renderOverview();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
