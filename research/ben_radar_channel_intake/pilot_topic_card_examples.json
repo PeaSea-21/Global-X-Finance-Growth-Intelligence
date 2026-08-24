@@ -1,0 +1,838 @@
+{
+  "artifact_status": "SCHEMA_ACCEPTANCE_EXAMPLES_ONLY",
+  "warning": "全部15条均为结构样例，不是2026-08-18真实热点，不得对外当作事实或投资建议。",
+  "pilots": [
+    {
+      "channel_id": "ch-05-tw-capital-radar",
+      "channel_name": "資金雷達",
+      "pilot_type": "SIGNAL_HEAVY",
+      "examples": [
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-05-tw-capital-radar",
+          "topic_title": "[结构示例] 某产业多股同步放量，催化剂仍待核验",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "同一官方行业组内多只证券出现量能异常。",
+          "what_changed": "相对各自 prior-20 基线明显变化。",
+          "why_now": "完整 EOD 已提交，变化可回放。",
+          "why_channel": "适合每日轮动扫描，但不能把共现写成净资金流。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "EOD 成交量与收盘价已完成",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "多证券同时命中异常规则",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "共同催化剂未知",
+            "法人净流入未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "量价共现与真实资金流的区别",
+            "行业内领涨/跟随结构"
+          ],
+          "working_titles": [
+            "某产业为何同时放量？先确认共现，再找原因",
+            "不是净流入：这组量价异动真正说明什么"
+          ],
+          "risk_flags": [
+            "CATALYST_UNKNOWN",
+            "NOT_FUND_FLOW"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-05-tw-capital-radar",
+          "topic_title": "[结构示例] 低基期个股量比突出，但绝对流动性偏低",
+          "readiness": "WATCH_ONLY",
+          "what_happened": "某证券命中相对量能异常。",
+          "what_changed": "相对自身历史强，但同市场绝对成交量分位低。",
+          "why_now": "适合在收盘后作为风险案例。",
+          "why_channel": "用于提醒轮动榜的低基期噪声。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "当日与 prior-20 成交量可核验",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "RVOL 高且流动性等级低",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "是否有事件驱动未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "解释高 RVOL 不等于高可交易性",
+            "低流动性异动的筛选边界"
+          ],
+          "working_titles": [
+            "量比很高，为什么仍不该直接追？",
+            "低基期放量：热点还是噪声"
+          ],
+          "risk_flags": [
+            "LOW_LIQUIDITY",
+            "NO_INVESTMENT_ADVICE"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-05-tw-capital-radar",
+          "topic_title": "[结构示例] 强势行业出现领涨扩散",
+          "readiness": "READY_TO_PITCH",
+          "what_happened": "行业组从少数领涨扩展为多证券同步变化。",
+          "what_changed": "命中证券数量与规则广度较前一完整交易日增加。",
+          "why_now": "连续 Replay 可确认扩散，而非单日截图。",
+          "why_channel": "对应产业轮动与领涨扩散，而不是公司深度分析。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "两个完整 EOD 日的规则命中",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "行业内异常广度增加",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "资金来源与催化剂未必已确认"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "从个股领涨到行业扩散",
+            "连续两日与单日噪声的差异"
+          ],
+          "working_titles": [
+            "强势从一只扩到一组：轮动进入哪一步",
+            "行业广度扩大，但原因仍需证据"
+          ],
+          "risk_flags": [
+            "INDUSTRY_MAPPING_PENDING_REVIEW"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-05-tw-capital-radar",
+          "topic_title": "[结构示例] 昨日热门行业今日量能降温",
+          "readiness": "READY_TO_PITCH",
+          "what_happened": "上一日多股异常的行业组在本日明显减少。",
+          "what_changed": "异常数量和相对量能同时回落。",
+          "why_now": "收盘后可判断轮动是否延续。",
+          "why_channel": "符合资金雷达的撤退/降温观察，但不声称资金净流出。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "连续两个 EOD 日可回放",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "异常广度与 RVOL 中位数下降",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "卖方主体未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "热点退潮的可观察信号",
+            "避免把成交降温写成机构撤资"
+          ],
+          "working_titles": [
+            "昨日还热，今日为何快速降温",
+            "轮动退潮：成交异动告诉我们什么"
+          ],
+          "risk_flags": [
+            "NOT_NET_OUTFLOW"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-05-tw-capital-radar",
+          "topic_title": "[结构示例] 量价突破与行业事件同日出现",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "行业内证券命中价量突破，且事件池出现相关行业事件。",
+          "what_changed": "市场 Signal 与 Event 时间接近。",
+          "why_now": "同一业务日具备进一步核验价值。",
+          "why_channel": "可测试 Signal→Event→Topic，但只有 SAME_EVENT 或明确关联才可写因果。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "EOD 价量规则命中",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            },
+            {
+              "claim": "事件发布时间可核验",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "时间与行业相关性成立",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "是否为同一因果事件未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "先验证事件关系再写轮动原因",
+            "同日出现不等于因果"
+          ],
+          "working_titles": [
+            "价量突破撞上产业事件：能否连成同一题",
+            "同步发生，还是同一原因？"
+          ],
+          "risk_flags": [
+            "CAUSALITY_UNVERIFIED"
+          ]
+        }
+      ]
+    },
+    {
+      "channel_id": "ch-01-tw-stock-microscope",
+      "channel_name": "個股顯微鏡",
+      "pilot_type": "EVENT_HEAVY",
+      "examples": [
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-01-tw-stock-microscope",
+          "topic_title": "[结构示例] MOPS 重大讯息后出现量价变化",
+          "readiness": "READY_TO_PITCH",
+          "what_happened": "公司发布可映射的重大讯息。",
+          "what_changed": "公告后首个完整交易日的量价相对历史基线变化。",
+          "why_now": "公告与完整 EOD 已可核验。",
+          "why_channel": "聚焦单一公司的经营事件与市场反应。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "MOPS 公告主题/时间",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            },
+            {
+              "claim": "完整 EOD OHLCV",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "公告后相对量能与价格变化",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "市场变化是否由公告导致未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "公告事实与市场反应分开讲",
+            "投资人还需核对哪些细节"
+          ],
+          "working_titles": [
+            "公告说了什么，市场又怎么反应",
+            "一家公司发生变化：事实、反应与未知"
+          ],
+          "risk_flags": [
+            "CAUSALITY_UNVERIFIED"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-01-tw-stock-microscope",
+          "topic_title": "[结构示例] 月营收同比转折",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "公司发布新一期月营收。",
+          "what_changed": "同比/环比方向与过去趋势出现转折。",
+          "why_now": "数据发布后进入频道候选。",
+          "why_channel": "符合公司营运追踪，但当前仓库尚无月营收连接。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<公司月营收官方数据待接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "同比与环比变化待计算",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "当前能力 NOT_IMPLEMENTED"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "转折是否来自基期",
+            "营收变化与订单能见度的证据边界"
+          ],
+          "working_titles": [
+            "月营收转折，先看基期还是需求",
+            "数字变了，公司体质真的变了吗"
+          ],
+          "risk_flags": [
+            "MISSING_CORPORATE_DATA"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-01-tw-stock-microscope",
+          "topic_title": "[结构示例] 法说 Guidance 与此前口径变化",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "公司在法说更新 Guidance。",
+          "what_changed": "新口径相对前次指引发生变化。",
+          "why_now": "法说原档发布后才进入候选。",
+          "why_channel": "频道强调法说和公司体质，必须直连原始资料。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<法说原档待接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "前后指引差异待结构化",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "法说资料当前 NOT_IMPLEMENTED"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "管理层改口的具体字段",
+            "市场预期与公司指引分离"
+          ],
+          "working_titles": [
+            "管理层改了哪一句，影响有多大",
+            "法说不是新闻摘要：真正变化在哪里"
+          ],
+          "risk_flags": [
+            "MISSING_COMPANY_IR"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-01-tw-stock-microscope",
+          "topic_title": "[结构示例] 毛利率改善但现金流未同步",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "最新财报显示利润率与现金流方向分化。",
+          "what_changed": "毛利率上升但自由现金流未同步。",
+          "why_now": "财报发布形成可解释反差。",
+          "why_channel": "适合体质分析，不能只看单一利润指标。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<官方财报原档待接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "利润率与现金流方向分化",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "完整财报能力 NOT_IMPLEMENTED"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "利润质量",
+            "营运资本变化"
+          ],
+          "working_titles": [
+            "毛利率变好，现金为何没跟上",
+            "财报里的两种答案：利润与现金"
+          ],
+          "risk_flags": [
+            "MISSING_FINANCIAL_STATEMENTS"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-01-tw-stock-microscope",
+          "topic_title": "[结构示例] 异常放量但没有公司事件",
+          "readiness": "WATCH_ONLY",
+          "what_happened": "单一公司出现 EOD 异常。",
+          "what_changed": "量能相对 prior-20 明显，但未找到合格公司事件。",
+          "why_now": "可作为继续观察，而非硬凑基本面故事。",
+          "why_channel": "本频道需要公司营运证据，只有盘面 Signal 不够。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "EOD 量价异常",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "相对历史变化",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "公司催化剂未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "为什么暂不进入主选题",
+            "需补哪些公司证据"
+          ],
+          "working_titles": [
+            "放量了，但公司发生了什么仍不知道",
+            "没有催化剂时，显微镜该停在哪里"
+          ],
+          "risk_flags": [
+            "CATALYST_UNKNOWN",
+            "WATCH_ONLY"
+          ]
+        }
+      ]
+    },
+    {
+      "channel_id": "ch-03-tw-industry-lens",
+      "channel_name": "產業透視鏡",
+      "pilot_type": "CROSS_ENTITY",
+      "examples": [
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-03-tw-industry-lens",
+          "topic_title": "[结构示例] 同一官方行业多股共振，原因未确认",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "行业组内多证券同时命中异常规则。",
+          "what_changed": "异常广度相对前一完整交易日增加。",
+          "why_now": "EOD Replay 可复核共现。",
+          "why_channel": "适合产业视角，但共现只能召回研究，不可直接生成供应链因果。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "多证券 EOD 规则命中",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "官方行业分组下出现共现",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "共同催化剂未知",
+            "上下游关系未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "行业共现与产业因果的边界",
+            "从哪些 Evidence 开始补证"
+          ],
+          "working_titles": [
+            "同一行业一起动了，原因还不能下结论",
+            "共振已确认，产业故事仍待核验"
+          ],
+          "risk_flags": [
+            "INDUSTRY_MAPPING_PENDING_REVIEW",
+            "CAUSALITY_UNKNOWN"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-03-tw-industry-lens",
+          "topic_title": "[结构示例] 上下游营收趋势出现分化",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "同一供应链上下游公司发布月度数据。",
+          "what_changed": "上游与下游增长方向分化。",
+          "why_now": "同一发布窗口具备产业解释价值。",
+          "why_channel": "频道需要跨公司比较，而不是两篇单股稿。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<多公司月营收待接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "上下游趋势分化待计算",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "供应链映射与月营收未接入"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "分化来自库存还是终端需求",
+            "避免由相关性推断订单转移"
+          ],
+          "working_titles": [
+            "同一条链，为何上下游给出相反信号",
+            "营收分化背后的库存问题"
+          ],
+          "risk_flags": [
+            "MISSING_SUPPLY_CHAIN_DATA"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-03-tw-industry-lens",
+          "topic_title": "[结构示例] 库存天数连续改善",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "行业内多家公司库存指标连续变化。",
+          "what_changed": "库存天数相对历史下降且覆盖多家公司。",
+          "why_now": "财报窗口后可做产业复盘。",
+          "why_channel": "符合产业周期深度内容，而不是即时资金扫描。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<公司财报库存字段待接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "多公司库存趋势待计算",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "财报与供应链数据未接入"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "去库存是否结束",
+            "不同环节的节奏差"
+          ],
+          "working_titles": [
+            "库存一起下降，产业周期到哪一步",
+            "去库存结束了吗？先看链上不同环节"
+          ],
+          "risk_flags": [
+            "MISSING_FINANCIAL_DATA"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-03-tw-industry-lens",
+          "topic_title": "[结构示例] 产业事件只影响部分环节",
+          "readiness": "NEEDS_RESEARCH",
+          "what_happened": "事件池出现行业事件，相关公司反应分化。",
+          "what_changed": "同一行业中仅特定环节出现量价异常。",
+          "why_now": "事件与 EOD 已位于同一可核验窗口。",
+          "why_channel": "可解释产业链受益/受损分化，但关系需 Evidence。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "事件发布时间",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            },
+            {
+              "claim": "各证券完整 EOD",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "行业内反应分化",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "哪些公司属于直接/间接关系未知"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "事件传导路径",
+            "直接、供应链、板块和可能关系分层"
+          ],
+          "working_titles": [
+            "同一产业，为什么只有一段供应链在动",
+            "事件来了，受影响的并不是所有公司"
+          ],
+          "risk_flags": [
+            "RELATION_TYPE_UNVERIFIED"
+          ]
+        },
+        {
+          "data_label": "SCHEMA_EXAMPLE_NOT_REAL_TOPIC",
+          "channel_id": "ch-03-tw-industry-lens",
+          "topic_title": "[结构示例] 台美半导体事件映射到台股供应链",
+          "readiness": "WATCH_ONLY",
+          "what_happened": "美国公司事件可能关联台湾供应链。",
+          "what_changed": "事件发生在美国时段，台股尚未形成完整下一交易日数据。",
+          "why_now": "亚洲早间只能标记隔夜线索。",
+          "why_channel": "符合产业透视，但首版缺美股 EOD 与已验证供应链映射。",
+          "related_market_qualified_security_ids": [
+            "<TWSE_OR_TPEX:SECURITY_ID_A>",
+            "<TWSE_OR_TPEX:SECURITY_ID_B>"
+          ],
+          "market_session_date": "<YYYY-MM-DD>",
+          "session_state": "EOD_COMPLETE",
+          "data_as_of": "<ISO-8601_TIMESTAMP>",
+          "verified_facts": [
+            {
+              "claim": "<公司事件 Evidence 待授权/接入>",
+              "source_class": "OFFICIAL_MARKET_OR_DISCLOSURE",
+              "epistemic_state": "FACT"
+            }
+          ],
+          "derived_findings": [
+            {
+              "claim": "可能的跨市场关系仅为候选",
+              "source_class": "OFFICIAL_INPUT",
+              "epistemic_state": "DERIVED"
+            }
+          ],
+          "opinions": [],
+          "unknowns": [
+            "美股 EOD 未接入",
+            "供应链关系未确认"
+          ],
+          "source_conflicts": [],
+          "evidence_ids": [
+            "<RAW_EVIDENCE_ID>"
+          ],
+          "independent_publisher_groups": [
+            "<OFFICIAL_PUBLISHER_GROUP>"
+          ],
+          "suggested_angles": [
+            "隔夜事件如何进入台股盘前观察",
+            "何时从 WATCH_ONLY 升级"
+          ],
+          "working_titles": [
+            "隔夜半导体事件，台股供应链先观察什么",
+            "跨市场映射：线索不是结论"
+          ],
+          "risk_flags": [
+            "US_EOD_NOT_IMPLEMENTED",
+            "SUPPLY_CHAIN_UNKNOWN"
+          ]
+        }
+      ]
+    }
+  ]
+}

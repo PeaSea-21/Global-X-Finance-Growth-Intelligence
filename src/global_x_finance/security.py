@@ -14,7 +14,8 @@ TEXT_SUFFIXES = {
     ".ini", ".cfg", ".conf", ".env", ".sql", ".sh", ".ps1",
 }
 KNOWN_SECRET_PATTERNS = (
-    ("OpenAI-style key", re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b")),
+    # URL slugs such as /sk-hynixs-south-korean-shares-... are not API keys.
+    ("OpenAI-style key", re.compile(r"(?<![/A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}\b")),
     ("GitHub token", re.compile(r"\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}\b")),
     ("GitHub fine-grained token", re.compile(r"\bgithub_pat_[A-Za-z0-9_]{20,}\b")),
     ("Slack token", re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{15,}\b")),

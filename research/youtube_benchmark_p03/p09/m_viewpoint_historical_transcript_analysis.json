@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-08-19",
+  "status": "HISTORICAL_SINGLE_TOPIC_TEXT_LAYER_AVAILABLE",
+  "channel_family": "M觀點",
+  "sample_role": "HISTORICAL_SINGLE_TOPIC_EXPLAINERS",
+  "analysis_scope": "creator-neutral narrative research only",
+  "transcript_body_persisted": false,
+  "finance_fact_status": "NOT_A_FACT_SOURCE",
+  "videos": [
+    {
+      "source_id": "m_finance_2018-07-23_ponzi_scheme",
+      "series": "M理財",
+      "title": "讓許多人傾家蕩產的龐氏騙局(Ponzi Scheme)，這個惡名昭彰的吸金陷阱，到底是怎麼運作？",
+      "published_date_supplied": "2018-07-23",
+      "view_count_supplied": 298755,
+      "video_url": "UNKNOWN",
+      "video_id": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "EN_ASR_WITH_TRANSLITERATION_ERRORS",
+        "sha256": "86a00b7bbd7d63015fc325d3bfc7fadcee360dfb67855ee6c80d1601adcce978",
+        "character_count": 13246,
+        "normalized_character_count": 10312,
+        "sentence_count": 29,
+        "question_count": 28,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Explain how a Ponzi scheme works and give novice investors a usable fraud-detection checklist.",
+        "hook_function": "Lead with irreversible personal-loss risk, connect the old mechanism to a then-current crypto wrapper, and promise prevention.",
+        "central_question": "How does the scheme move money, and which visible signals let a novice reject it?",
+        "structure": [
+          "Loss-risk framing",
+          "Definition and origin",
+          "Simple cash-flow mechanism",
+          "Worked participant example",
+          "Scaling and collapse",
+          "Four warning signs",
+          "Common-sense plausibility test",
+          "Protective recap and channel CTA"
+        ],
+        "evidence_order": [
+          "Observed harm and topical wrapper",
+          "Definition",
+          "Numerical mechanism example",
+          "Pattern checklist",
+          "Logic test"
+        ],
+        "viewpoint": "Protective educator speaking to financial beginners, with deliberately strong language around implausible returns.",
+        "rhythm": "Linear lecture with repeated questions, a long worked example, then a compact checklist payoff.",
+        "ending": "Restates the audience-protection goal and asks viewers to subscribe and join the channel's messaging account."
+      }
+    },
+    {
+      "source_id": "m_business_school_2018-01-02_workplace_departure",
+      "series": "M觀點商學院",
+      "title": "上班不要看的成員出去自立門戶，這代表什麼意義？職場上的分手，到底怎麼樣看怎麼做才對？",
+      "published_date_supplied": "2018-01-02",
+      "view_count_supplied": 191871,
+      "video_url": "UNKNOWN",
+      "video_id": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "EN_ASR_WITH_NAME_ERRORS",
+        "sha256": "7b5527206e288412eaf9e921238affa68dd187165414dfca5adb4235f8e72e49",
+        "character_count": 7195,
+        "normalized_character_count": 5658,
+        "sentence_count": 12,
+        "question_count": 11,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Use a current creator-company departure to explain how employees and employers should interpret and handle separation.",
+        "hook_function": "Borrow attention from a current YouTube incident while explicitly acknowledging that its private details are unknown.",
+        "central_question": "What does a workplace departure mean for the people involved and for the industry's opportunity cycle?",
+        "structure": [
+          "Topical incident with knowledge boundary",
+          "View 1: departures are normal",
+          "View 2: outside offers test claimed market value",
+          "View 3: preserve reputation and separate well",
+          "View 4: spin-outs can signal industry opportunity",
+          "Gaming-industry analogy",
+          "Industry-level conclusion"
+        ],
+        "evidence_order": [
+          "Current public event",
+          "General workplace principle",
+          "Labor-market test",
+          "Personal management experience",
+          "Cross-industry analogy"
+        ],
+        "viewpoint": "Balances employee mobility and employer reality, prioritizing market feedback and long-term reputation over private-event speculation.",
+        "rhythm": "Short numbered-opinion essay with one practical rule per section and a broader industry interpretation at the end.",
+        "ending": "Moves from the individual incident to a cautious hypothesis that creator spin-outs indicate an expanding industry."
+      }
+    },
+    {
+      "source_id": "m_finance_2019-09-20_etf_00692",
+      "series": "M理財",
+      "title": "除了0050以外還有什麼好的投資選擇？介紹00692公司治理ETF",
+      "published_date_supplied": "2019-09-20",
+      "view_count_supplied": 125360,
+      "video_url": "UNKNOWN",
+      "video_id": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "EN_ASR_WITH_FINANCIAL_NAME_ERRORS",
+        "sha256": "f9582acb69769e4c7b722f3eb247986462dbfa5c77d9fcfbcc340b8b9f5f0d37",
+        "character_count": 8298,
+        "normalized_character_count": 6657,
+        "sentence_count": 6,
+        "question_count": 5,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Give ETF beginners an alternative to 0050 and explain why 00692 may be competitive.",
+        "hook_function": "Start from a familiar beginner default, introduce a lesser-known challenger, and make a bold comparative promise.",
+        "central_question": "Does 00692's construction, diversification, cost and liquidity make it a credible long-term alternative to 0050?",
+        "structure": [
+          "Beginner problem and challenger claim",
+          "Product definition",
+          "Corporate-governance concept in plain language",
+          "Index screening process",
+          "Diversification and holdings comparison",
+          "Fee comparison",
+          "Liquidity disadvantage",
+          "Long-term use case and conditional conclusion",
+          "Like-share-subscribe CTA"
+        ],
+        "evidence_order": [
+          "Product identity",
+          "Selection methodology",
+          "Holdings breadth and overlap",
+          "Fee comparison",
+          "Liquidity limitation",
+          "Expected long-term fit"
+        ],
+        "viewpoint": "Makes a clear personal preference while preserving a concrete drawback and tying the conclusion to a long holding period.",
+        "rhythm": "Definition-first explainer, then a sequence of direct comparisons, a disadvantage section, and a concise recommendation payoff.",
+        "ending": "Recaps strengths and weakness, predicts improving liquidity, then closes with a standard engagement CTA."
+      }
+    }
+  ],
+  "cross_sample_historical_pattern": {
+    "confidence": "MEDIUM_THREE_SAMPLES",
+    "repeatable_mechanisms": [
+      "Promise one concrete learning outcome at the opening.",
+      "Start from an audience risk, familiar default, or current event rather than from an abstract definition.",
+      "Define the unfamiliar mechanism in plain language before presenting judgment.",
+      "Organize the body as a mechanism, numbered views, or explicit comparison criteria.",
+      "Use worked examples, analogies or product comparisons to make the framework operational.",
+      "Return to the opening audience problem in the conclusion and provide a clear practical takeaway."
+    ],
+    "abstract_pattern": "Audience problem -> plain-language definition -> ordered framework -> examples/comparison -> limitation or boundary -> practical takeaway",
+    "do_not_reuse": [
+      "Creator identity",
+      "Series names",
+      "Signature self-reference",
+      "Verbatim examples",
+      "Exact recommendation language",
+      "Legacy channel CTA wording"
+    ]
+  },
+  "format_boundary": {
+    "current_three_topic_update_validated": false,
+    "reason": "All three supplied texts are historical single-topic explainers from 2018-2019. They cannot validate the current event-and-impact times three format observed only at the chapter-packaging layer.",
+    "next_required_input": "Two recent M觀點 episodes that visibly contain three technology or business news topics."
+  }
+}

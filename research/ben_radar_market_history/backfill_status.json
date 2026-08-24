@@ -1,27 +1,27 @@
 {
   "TPEX_completed": 887,
   "TPEX_total": 889,
-  "TWSE_completed": 1082,
+  "TWSE_completed": 1083,
   "TWSE_total": 1087,
   "audit": {
     "duplicate_security_dates": 0,
     "future_date": 0,
     "invalid_date": 0,
-    "market_data_records": 97603,
+    "market_data_records": 101496,
     "markets": {
       "TPEX": {
         "first_date": "2026-06-05",
         "ge_minimum": 887,
         "insufficient": 2,
-        "last_date": "2026-08-17",
+        "last_date": "2026-08-19",
         "total": 889,
         "with_history": 889
       },
       "TWSE": {
         "first_date": "2026-06-05",
-        "ge_minimum": 1082,
-        "insufficient": 5,
-        "last_date": "2026-08-17",
+        "ge_minimum": 1083,
+        "insufficient": 4,
+        "last_date": "2026-08-19",
         "total": 1087,
         "with_history": 1087
       }
@@ -30,11 +30,13 @@
     "null_ohlcv_eod": 0,
     "unmapped_security": 0
   },
-  "last_completed_date": "2026-06-05",
+  "last_completed_date": "2026-08-18",
   "last_completed_market": "TPEX",
   "markets": {
     "TPEX": {
       "completed_dates": [
+        "2026-08-19",
+        "2026-08-18",
         "2026-08-17",
         "2026-08-14",
         "2026-08-13",
@@ -94,6 +96,8 @@
     },
     "TWSE": {
       "completed_dates": [
+        "2026-08-19",
+        "2026-08-18",
         "2026-08-17",
         "2026-08-14",
         "2026-08-13",
@@ -153,9 +157,9 @@
     }
   },
   "minimum_trade_days": 20,
-  "records_written": 95627,
+  "records_written": 99520,
   "started_at": "2026-08-17T09:16:13.632100+00:00",
   "status": "COMPLETE",
-  "target_trade_days": 50,
-  "updated_at": "2026-08-17T09:42:49.124807+00:00"
+  "target_trade_days": 52,
+  "updated_at": "2026-08-19T06:04:24.666187+00:00"
 }

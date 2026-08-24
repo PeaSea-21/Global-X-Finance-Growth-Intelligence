@@ -158,6 +158,23 @@ def test_official_sources_share_security_market_data_and_disclosure_schema(datab
     assert all(row["raw_item_id"] for row in listed_disclosures + otc_disclosures)
 
 
+def test_disclosure_only_sync_skips_daily_market_and_history_endpoints(database, root):
+    result = OfficialDataService(
+        database,
+        _config(root),
+        transport=_transport,
+        now=datetime.fromisoformat("2026-08-17T12:00:00+08:00"),
+        test_mode=True,
+    ).sync_disclosures()
+
+    assert result.status == "PASS"
+    assert len(result.endpoint_results) == 2
+    assert {row.source_key for row in result.endpoint_results} == {"MOPS"}
+    assert result.twse_market_data_count == 0
+    assert result.tpex_market_data_count == 0
+    assert result.disclosure_count == result.disclosure_mapped_count == 2
+
+
 def test_permissions_preserve_unverified_rights_as_unknown(database, root):
     OfficialDataService(
         database,

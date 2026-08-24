@@ -1,0 +1,8 @@
+fact_id,claim_type,source_type,source_url,as_of,used_in_variants,notes
+F001,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf,2026-06-30,A|B|C,"historical quarter result"
+F002,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf,2026-06-30,A|B|C,"historical quarter result"
+F003,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf,2026-06-30,A|B|C,"technology mix"
+F004,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf,2026-06-30,A|B|C,"platform mix and sequential change"
+F005,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf,2026-06-30,A|B|C,"customer geography"
+F006,FACT,COMPANY_IR,https://investor.tsmc.com/english/quarterly-results/2026/q2,2026-07-16,A|B|C,"company guidance; forward-looking and uncertain"
+F007,FACT,COMPANY_IR,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf,2026-06-30,A|B|C,"company explanation of margin drivers"

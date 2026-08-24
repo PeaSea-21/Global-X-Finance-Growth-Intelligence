@@ -1,0 +1,16 @@
+{
+  "channel_id": "UNKNOWN",
+  "channel_url": "UNKNOWN",
+  "channel_title": "UNKNOWN",
+  "category_role": "UNKNOWN",
+  "identity_verified": "NEEDS_VERIFICATION",
+  "endpoint_verified": "NOT_RUN",
+  "extraction_method_verified": "NOT_RUN",
+  "terms_status": "UNKNOWN",
+  "commercial_use_status": "UNKNOWN",
+  "backend_status": "UNAVAILABLE",
+  "actual_run_status": "NOT_RUN",
+  "identity_evidence_urls": ["UNKNOWN"],
+  "selection_logic": "UNKNOWN",
+  "limitations": []
+}

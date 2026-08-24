@@ -1,0 +1,54 @@
+{
+  "config_version": "p06b-channel-pilots-v0.1",
+  "market": "TW",
+  "timezone": "Asia/Taipei",
+  "regular_close_time": "13:30",
+  "discovery_start_time": "13:05",
+  "primary_build_time": "13:45",
+  "base_draft_target_time": "13:50",
+  "readiness_poll_start_time": "13:35",
+  "readiness_poll_deadline": "13:55",
+  "enhancement_poll_time": "14:45",
+  "minimum_market_coverage": 0.8,
+  "event_lookback_hours": 48,
+  "include_x": true,
+  "backup_target": 3,
+  "profiles": [
+    {
+      "channel_id": "ch-05-tw-capital-radar",
+      "channel_name": "資金雷達",
+      "channel_type": "SIGNAL_HEAVY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "daily_target": 5,
+      "summary": "用台股收盘后的价量与成交异常，快速找出最值得内容团队进一步核验的市场信号。",
+      "fixed_boundary": "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。",
+      "preferred_candidate_types": ["MARKET_SIGNAL"],
+      "required_fields": ["close", "change_pct", "current_volume", "median_volume_20d", "volume_ratio", "matched_rules"]
+    },
+    {
+      "channel_id": "ch-01-tw-stock-microscope",
+      "channel_name": "個股顯微鏡",
+      "channel_type": "EVENT_HEAVY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "daily_target": 5,
+      "summary": "把公司公告或可信事件与个股收盘表现放在一起，区分已确认催化剂与待研究异动。",
+      "fixed_boundary": "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。",
+      "preferred_candidate_types": ["DISCLOSURE", "NEWS_EVENT", "X_EVENT", "MARKET_SIGNAL"],
+      "required_fields": ["security_ids", "evidence", "catalyst_status", "stock_details"]
+    },
+    {
+      "channel_id": "ch-03-tw-industry-lens",
+      "channel_name": "產業透視鏡",
+      "channel_type": "CROSS_ENTITY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "daily_target": 5,
+      "summary": "从官方产业分类中寻找同产业多家公司同时出现的收盘异常，形成跨公司比较题。",
+      "fixed_boundary": "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。",
+      "preferred_candidate_types": ["CROSS_ENTITY"],
+      "required_fields": ["industry_keys", "security_ids", "stock_details", "evidence"]
+    }
+  ]
+}

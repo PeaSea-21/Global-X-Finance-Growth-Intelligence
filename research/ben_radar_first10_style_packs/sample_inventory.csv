@@ -1,0 +1,16 @@
+channel_order,channel_id,channel_name,sample_id,published_date,title,url,text_status,sample_role,profile_alignment
+1,ch-01-tw-stock-microscope,個股顯微鏡,NO_SAMPLE,,,NO_TRANSCRIPT,PROFILE_ONLY,UNKNOWN_NO_SAMPLE
+2,ch-02-tw-close-night-talk,收盤夜話,close-talk-2026-08-18,2026-08-18,【記憶體雙雄瘋了！】南亞科天價553後翻黑、華邦電盤中噴4%被關緊閉！台股46K警報響起？,https://youtu.be/q-y0WjfdrV0,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+2,ch-02-tw-close-night-talk,收盤夜話,close-talk-2026-08-20,2026-08-20,【記憶體雙雄暴沖！】南亞科飆破5字頭、華邦電狠起來連自己都怕？臺股散戶必看！,https://youtu.be/aa05t82Zu7c,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+3,ch-03-tw-industry-lens,產業透視鏡,NO_SAMPLE,,,NO_TRANSCRIPT,PROFILE_ONLY,UNKNOWN_NO_SAMPLE
+4,ch-04-tw-weighted-flagship,權值旗艦,weighted-flagship-2026-08-19,2026-08-19,【多空生死鬥】別被外資洗出場！台積電聯發科止穩訊號看「這條線」，8萬空單結算在即，4萬6攻防戰「這樣佈局」！,https://youtu.be/XCuyyzXyZZE,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+4,ch-04-tw-weighted-flagship,權值旗艦,weighted-flagship-2026-08-21,2026-08-21,多空決戰45000！鴻海「撐盤守護神」PK 台達電「高檔修正」！台股下一站往哪走？,https://youtu.be/smjr7Nt7WoI,FULL_TRANSCRIPT_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+5,ch-05-tw-capital-radar,資金雷達,capital-radar-2026-08-18,2026-08-18,欣興噴出1200元新天價！AI載板缺貨潮瘋搶，外資目標價喊到1500？今天帶你看懂這波ABF超級週期！,https://youtu.be/ZFegLPXgxEw,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PROFILE_SAMPLE_MISMATCH
+6,ch-06-us-nasdaq-rocket,那指火箭,nasdaq-rocket-2026-08-20,2026-08-20,那斯達克要開24小時了？亞太投資人終於能跟半夜盯盤說再見,https://youtu.be/f8ODPZiEp3c,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+7,ch-07-us-sector-rotator,板塊輪動儀,sector-rotator-2026-08-19,2026-08-19,千億美元背書+鐵電NAND革命！英偉達的「算力軍火商」神話還能講多久？,https://youtu.be/w1WEDA96OTc,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PROFILE_SAMPLE_MISMATCH
+7,ch-07-us-sector-rotator,板塊輪動儀,sector-rotator-2026-08-21,2026-08-21,Apple死守300關！熊旗壓頂還是黃金坑？高盛與中金對轟，AI下半場劇本已定！,https://youtu.be/Mvt8c38o5IY,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PROFILE_SAMPLE_MISMATCH
+8,ch-08-us-dark-pool-radar,暗池雷達,dark-pool-radar-2026-08-18,2026-08-18,227.50美元的死神頂？NVDA期權暗流湧動，多空決戰8.26,https://youtu.be/u6dP9mGjBbU,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+8,ch-08-us-dark-pool-radar,暗池雷達,dark-pool-radar-2026-08-20,2026-08-20,特斯拉期權驚現「千萬美元對賭」！暗池大單洩密：主力在押注崩盤還是暴力拉升？,https://youtu.be/YNnMPlgnbSI,FULL_TIMESTAMPED_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PARTIAL_MATCH
+9,ch-09-us-options-gatekeeper,期權守門人,options-gatekeeper-2026-08-18,2026-08-18,每隔四年就準時上演：中期選舉年，美股為何在8到10月先跌後漲？,https://youtu.be/QjB-x4qjYWU,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PROFILE_SAMPLE_PARTIAL_MATCH
+9,ch-09-us-options-gatekeeper,期權守門人,options-gatekeeper-2026-08-20,2026-08-20,散戶追趨勢慘被套，大師買賣權鎖風險：1987崩盤單月狂賺62%的期權密碼,https://youtu.be/QtBcBeQvNIQ,FULL_NOISY_ASR_SUPPLIED_BY_USER,IDENTITY_ANCHOR,PROFILE_SAMPLE_PARTIAL_MATCH
+10,ch-10-us-earnings-hunter,財報獵人,NO_SAMPLE,,,NO_TRANSCRIPT,PROFILE_ONLY,UNKNOWN_NO_SAMPLE

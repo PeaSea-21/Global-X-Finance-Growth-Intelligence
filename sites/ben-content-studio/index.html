@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>BEN 已有樣本頻道｜每頻道5題完整文稿</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="查看已有樣本頻道">
+      <img src="favicon.svg" alt="">
+        <span><strong>BEN 內容審稿</strong><small>GLOBAL X FINANCE INTELLIGENCE</small></span>
+    </a>
+    <div class="topbar-meta">
+      <span id="session-date">讀取今日資料</span>
+      <span class="status-dot"><i></i>人工審稿版</span>
+      <button class="refresh-button" id="refresh-button" type="button" title="重新讀取伺服器上的最新日報" aria-label="刷新今日資料">
+        <span aria-hidden="true">↻</span><b>刷新今日資料</b>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="workspace-head">
+      <div>
+        <p class="eyebrow">TRANSCRIPT-BACKED CHANNEL EDITORIAL DESK</p>
+        <h1 id="page-title">已有樣本頻道：每頻道5題完整文稿</h1>
+        <p id="page-summary">同一熱點可以跨頻道覆蓋，但標題、切入角度與完整正文均依頻道定位生成；無文稿樣本的頻道不在本頁顯示。</p>
+      </div>
+      <div class="run-facts" aria-label="本次資料狀態">
+        <div><span>資料快照</span><strong id="generated-time">--</strong></div>
+        <div><span>頻道覆蓋</span><strong id="ranking-method">--</strong></div>
+        <div><span>完整文稿</span><strong id="x-count">--</strong></div>
+      </div>
+    </section>
+
+    <div class="refresh-state" id="refresh-state" role="status" aria-live="polite">正在讀取最新日報</div>
+
+    <section class="source-strip" aria-label="本次來源">
+      <span class="source-label">本次來源</span>
+      <a href="https://www.twse.com.tw/" target="_blank" rel="noreferrer">TWSE <b id="source-twse">讀取中</b></a>
+      <a href="https://www.tpex.org.tw/" target="_blank" rel="noreferrer">TPEx <b id="source-tpex">讀取中</b></a>
+      <a href="https://mops.twse.com.tw/" target="_blank" rel="noreferrer">MOPS <b id="source-mops">讀取中</b></a>
+      <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noreferrer">新聞 <b id="source-news">讀取中</b></a>
+      <span>X <b id="source-x">讀取中</b></span>
+      <span>YouTube <b id="source-youtube">19篇口吻樣本</b></span>
+    </section>
+
+    <section id="channel-overview" class="channel-overview" aria-live="polite"></section>
+
+    <section id="channel-detail" class="channel-detail" hidden>
+      <button class="back-button" id="back-button" type="button">← 返回頻道列表</button>
+      <div class="detail-head">
+        <div>
+          <p class="eyebrow" id="detail-kicker"></p>
+          <h2 id="detail-title"></h2>
+          <p id="detail-summary"></p>
+        </div>
+        <div class="detail-status" id="detail-status"></div>
+      </div>
+      <div class="detail-tabs" role="tablist" aria-label="頻道內容檢視">
+        <button id="today-tab" class="detail-tab is-active" type="button" role="tab" aria-selected="true">今日文稿</button>
+        <button id="history-tab" class="detail-tab" type="button" role="tab" aria-selected="false">歷史回顧 <span id="history-count">0</span></button>
+      </div>
+      <div id="topic-list" class="topic-list"></div>
+      <div id="history-list" class="history-list" hidden></div>
+    </section>
+  </main>
+
+  <dialog id="topic-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="關閉">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <template id="channel-template">
+    <button class="channel-card" type="button">
+      <span class="channel-number"></span>
+      <span class="channel-name"></span>
+      <span class="channel-description"></span>
+      <span class="channel-state"></span>
+      <span class="channel-foot"><b></b><i>查看標題與文稿 →</i></span>
+    </button>
+  </template>
+
+  <template id="topic-template">
+    <article class="topic-row">
+      <span class="topic-rank"></span>
+      <div class="topic-main">
+        <div class="topic-meta"></div>
+        <h3></h3>
+        <p></p>
+      </div>
+      <button class="topic-open" type="button">看完整文稿</button>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Channel verification",
+  "type": "object",
+  "required": ["channel_id", "channel_url", "channel_title", "category_role", "identity_verified", "endpoint_verified", "extraction_method_verified", "terms_status", "commercial_use_status", "backend_status", "actual_run_status", "identity_evidence_urls", "selection_logic", "limitations"],
+  "properties": {
+    "channel_id": {"type": "string", "minLength": 1},
+    "channel_url": {"type": "string", "minLength": 1},
+    "channel_title": {"type": "string", "minLength": 1},
+    "category_role": {"enum": ["TW_STOCK", "SEMICONDUCTOR_TECH", "GLOBAL_MACRO", "UNKNOWN"]},
+    "identity_verified": {"enum": ["VERIFIED", "NEEDS_VERIFICATION", "BLOCKED"]},
+    "endpoint_verified": {"enum": ["VERIFIED", "UNVERIFIED", "UNAVAILABLE", "NOT_RUN"]},
+    "extraction_method_verified": {"enum": ["VERIFIED", "UNVERIFIED", "DISABLED", "NOT_RUN"]},
+    "terms_status": {"enum": ["APPROVED", "UNKNOWN", "BLOCKED"]},
+    "commercial_use_status": {"enum": ["APPROVED", "UNKNOWN", "BLOCKED"]},
+    "backend_status": {"enum": ["AVAILABLE", "DEGRADED", "DISABLED", "UNAVAILABLE"]},
+    "actual_run_status": {"enum": ["SUCCESS", "PARTIAL", "FAILED", "NOT_RUN"]},
+    "identity_evidence_urls": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "selection_logic": {"type": "string", "minLength": 1},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

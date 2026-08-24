@@ -1,0 +1,15 @@
+run_id: P03-MVP-YYYYMMDD
+market: TW
+language: zh-Hant-TW
+audience: "關注台股、半導體與全球市場連動的一般投資研究讀者"
+topic_scope:
+  - 台股盤面與個股
+  - 半導體與科技供應鏈
+  - 全球宏觀與美股台股連動
+max_channels: 3
+max_videos_per_channel: 3
+max_transcript_requests_per_video: 1
+paid_api_allowed: false
+publishing_allowed: false
+factpack_path: UNKNOWN
+as_of: UNKNOWN

@@ -1,0 +1,14 @@
+{
+  "required_checks": [
+    "skill_structure",
+    "schema_validation",
+    "unit_tests",
+    "real_sample_validation",
+    "credential_scan",
+    "path_check",
+    "originality_check"
+  ],
+  "browser_check_required": false,
+  "ready_token": "P03 BENCHMARK MVP READY",
+  "blocked_token": "P03 BENCHMARK MVP BLOCKED"
+}

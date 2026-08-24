@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video sample",
+  "type": "object",
+  "required": ["video_id", "channel_id", "video_url", "title", "published_at", "captured_at", "selection_role", "selection_method", "view_count", "baseline_status", "transcript_status", "transcript_request_count"],
+  "properties": {
+    "video_id": {"type": "string", "minLength": 1},
+    "channel_id": {"type": "string", "minLength": 1},
+    "video_url": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "published_at": {"type": "string", "minLength": 1},
+    "captured_at": {"type": "string", "minLength": 1},
+    "selection_role": {"enum": ["RECENT", "HIGH_PERFORMANCE_CANDIDATE", "TYPICAL"]},
+    "selection_method": {"enum": ["PUBLIC_METADATA", "MANUAL_REVIEW", "PROVIDER_LABEL"]},
+    "view_count": {"type": ["integer", "string"]},
+    "baseline_status": {"enum": ["VERIFIED", "PROVISIONAL", "UNAVAILABLE"]},
+    "transcript_status": {"enum": ["AVAILABLE", "PARTIAL", "UNAVAILABLE", "NOT_RUN"]},
+    "transcript_request_count": {"type": "integer", "minimum": 0, "maximum": 1},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

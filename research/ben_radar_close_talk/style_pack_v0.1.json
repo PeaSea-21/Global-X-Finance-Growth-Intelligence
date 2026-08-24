@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "style_pack_id": "ben-tw-close-talk-v0.1",
+  "channel_id": "ch-02-tw-close-night-talk",
+  "channel_name": "收盤夜話",
+  "channel_url": "https://www.youtube.com/@LemosDuvernois",
+  "created_at": "2026-08-21",
+  "status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+  "intended_use": "Create original Taiwan post-close topic options and cited draft scripts for human review.",
+  "not_for": [
+    "Finance fact sourcing",
+    "Named-persona impersonation",
+    "Verbatim creator imitation",
+    "Investment advice",
+    "Automatic publishing"
+  ],
+  "channel_promise": {
+    "audience": "白天無法盯盤、收盤後想快速掌握台股的投資人，尤其是海外台人",
+    "job_to_be_done": "用輕鬆口吻講清楚今天盤面發生了什麼、誰在買誰在賣，以及明天要核對什麼",
+    "nominal_duration_minutes": 15,
+    "language": "zh-Hant",
+    "required_coverage": [
+      "加權指數與成交值",
+      "市場廣度與類股強弱",
+      "外資、投信、自營商現貨買賣超",
+      "融資融券與借券的情緒線索",
+      "台指期、基差、未平倉與選擇權風險線索",
+      "一至兩個能代表當日矛盾的事件或股票",
+      "下一交易日可量測的觀察點"
+    ]
+  },
+  "sample_evidence": [
+    {
+      "sample_id": "close-talk-2026-08-18-memory-reversal",
+      "sample_role": "NEW_CHANNEL_IDENTITY_ANCHOR",
+      "title": "【🔥記憶體雙雄瘋了！】南亞科天價553後翻黑、華邦電盤中噴4%被關緊閉！台股46K警報響起？",
+      "published_date_supplied": "2026-08-18",
+      "url": "https://youtu.be/q-y0WjfdrV0?si=0ESuULeYkPmlBzK0",
+      "text_status": "FULL_NOISY_ASR_SUPPLIED_IN_CHAT",
+      "finance_fact_status": "NOT_A_CURRENT_FACT_SOURCE",
+      "confidence_use": "HIGH_FOR_SINGLE_VIDEO_STRUCTURE_LOW_FOR_STABLE_CHANNEL_VOICE"
+    },
+    {
+      "sample_id": "close-talk-2026-08-20-memory-strength",
+      "sample_role": "NEW_CHANNEL_IDENTITY_ANCHOR",
+      "title": "【記憶體雙雄暴沖！】南亞科飆破5字頭、華邦電狠起來連自己都怕？臺股散戶必看！",
+      "published_date_supplied": "2026-08-20",
+      "url": "https://youtu.be/aa05t82Zu7c?si=bMzuCTgsnugjclVo",
+      "text_status": "FULL_NOISY_ASR_SUPPLIED_IN_CHAT",
+      "finance_fact_status": "NOT_A_CURRENT_FACT_SOURCE",
+      "confidence_use": "HIGH_FOR_REPEATED_STRUCTURE_MEDIUM_FOR_RECURRENT_VOICE"
+    }
+  ],
+  "old_corpus_references": [
+    {
+      "source_group": "OLD_ACCOUNT_LIBRARY",
+      "attachment_sha256": "367E72E8018718B10A725BBE160B190ED7CFFEA99AD1C24AF6CF71CD34D8514D",
+      "observed_role": "比較題、技術面證據排序、盤後多種敘事變體",
+      "allowed_use": "creator-neutral comparison and evidence-order patterns only"
+    },
+    {
+      "source_group": "OLD_ACCOUNT_LIBRARY",
+      "attachment_sha256": "4B717FFF0E6E0C76535F8EF7A93EC785A79849BEC2BE61E7F04EBECBFB29E217",
+      "observed_role": "由大盤到產業主線，再用多個標的解釋同一條邏輯",
+      "allowed_use": "creator-neutral market-to-theme narrative pattern only"
+    },
+    {
+      "source_group": "OLD_ACCOUNT_LIBRARY",
+      "attachment_sha256": "370F31EE2B09C949918910C7DA91825EAEEF0299C71D22F2B1F895B899A38595",
+      "observed_role": "事件衝擊、機制拆解、舊數據糾錯、限制條件與個人反思",
+      "allowed_use": "creator-neutral fact-check and limitation pattern only"
+    }
+  ],
+  "observed_identity": {
+    "confidence": "PROVISIONAL",
+    "topic_preference": "用一個盤面矛盾串起兩個主角股票，再回到大盤與次日問題",
+    "tone": [
+      "像朋友聊盤",
+      "節奏明快",
+      "先情緒後拆解",
+      "可用比喻但不能蓋過事實",
+      "結論保留多空條件"
+    ],
+    "title_pattern": "情緒或衝突 + 兩個主角/一個族群 + 盤中轉折或關鍵數字 + 大盤懸念",
+    "hook_pattern": "先用一句話說今天最反常或最刺激的地方，再提出這是主線、洗盤還是出貨的核心問題",
+    "narrative_order": [
+      "一句盤面情緒與核心矛盾",
+      "加權指數、成交值與市場廣度",
+      "強弱類股與資金去向",
+      "主角一的盤中路徑和可核驗事件",
+      "主角二的盤中路徑和差異",
+      "三大法人、融資券、期貨選擇權交叉驗證",
+      "利多與限制條件對照",
+      "下一交易日三個可量測檢查點",
+      "開放式問題與一般訂閱提醒"
+    ],
+    "pacing": "短句開場，中段用數據和反問交替，結尾降速給條件式判斷",
+    "ending_pattern": "不猜單一方向；以如果/否則列出明天驗證點，再問觀眾如何理解今天的盤"
+  },
+  "repeated_mechanisms": [
+    "用一句情緒化但可回到數據核驗的盤面感受開場",
+    "先交代加權指數，再指出真正主角不是權值股而是一組同題材股票",
+    "用兩個主角股票的盤中價格、漲跌與成交金額重建當日戲劇性",
+    "用一個共同催化解釋族群同步，再補基本面、券商觀點或籌碼線索",
+    "同時保留追高、過熱、法人反向操作或催化延續性的風險",
+    "以觀眾持股或次日方向問題收尾"
+  ],
+  "observed_gaps": [
+    "兩篇完整樣本都主要講兩檔記憶體股票，仍沒有充分展示頻道簡介承諾的大盤廣度",
+    "兩篇样本都没有完整呈现三大法人、融資券、借券、期貨與選擇權",
+    "兩篇都集中在記憶體題材，不能證明其他盤型也使用相同結構或語氣",
+    "兩篇樣本含大量 Line、老師與飆股名單導流，這些只能列入排除規則，不能成為生成風格",
+    "尚無 Ben 對生成標題或文稿的保留/淘汰理由"
+  ],
+  "daily_output_contract": {
+    "ranked_episode_angles": 5,
+    "title_options_per_angle": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "full_drafts_for_top_ranked": 5,
+    "target_script_characters": {
+      "minimum": 3000,
+      "maximum": 4200
+    },
+    "required_angle_fields": [
+      "rank",
+      "episode_question",
+      "title_options",
+      "why_today",
+      "why_this_channel",
+      "confirmed_facts",
+      "interpretation",
+      "unknowns",
+      "anchor_securities",
+      "tomorrow_checkpoints",
+      "source_cards",
+      "ranking_reasons"
+    ],
+    "required_script_sections": [
+      "cold_open",
+      "market_snapshot",
+      "breadth_and_sectors",
+      "anchor_story_one",
+      "anchor_story_two_or_counterforce",
+      "cash_and_derivatives_flow",
+      "bull_bear_tension",
+      "tomorrow_checkpoints",
+      "audience_question",
+      "risk_boundary"
+    ]
+  },
+  "topic_eligibility": {
+    "hard_gates": [
+      "All market facts belong to the same completed Taiwan session or carry an explicit earlier timestamp.",
+      "The episode has one clear market-level question, not only a stock gainer list.",
+      "At least two source classes support the angle, with at least one official or primary source.",
+      "At least one market-structure signal and one event, attention, or flow signal are present.",
+      "Every security uses a market-qualified ID and has clickable source evidence.",
+      "Missing data remains UNKNOWN and does not become zero."
+    ],
+    "editorial_states": [
+      "CONFIRMED_HOT",
+      "EARLY_BREAKING",
+      "MARKET_LEAD_NEEDS_CATALYST",
+      "BACKUP",
+      "REJECT_NOISE"
+    ],
+    "ranking_order": [
+      "event_materiality",
+      "market_breadth",
+      "independent_attention_and_acceleration",
+      "novelty",
+      "evidence_strength",
+      "channel_fit",
+      "tomorrow_checkpoint_clarity"
+    ],
+    "composite_score_status": "NOT_ADOPTED_UNTIL_BEN_FEEDBACK_EXISTS"
+  },
+  "source_requirements": {
+    "market_core": [
+      "TWSE weighted-index close/change and total turnover",
+      "TWSE/TPEx advancing, declining and unchanged counts",
+      "TWSE/TPEx security EOD OHLCV"
+    ],
+    "sector_rotation": [
+      "Official industry-index or reviewed industry-group performance",
+      "Top and bottom sectors with breadth, not one representative stock only"
+    ],
+    "cash_flow": [
+      "Foreign investor, investment trust and dealer net buys/sells",
+      "Per-security institutional flow for anchor securities when available"
+    ],
+    "leverage_and_positioning": [
+      "Margin financing and short selling change",
+      "Securities lending/borrow context when available",
+      "TAIFEX futures close, basis, open interest and institutional positions",
+      "Put/Call Ratio and clearly defined options context"
+    ],
+    "events_and_attention": [
+      "MOPS and issuer IR",
+      "Original linked financial news",
+      "X and YouTube as OPINION/attention evidence only"
+    ]
+  },
+  "language_controls": {
+    "must_do": [
+      "Separate confirmed fact, market interpretation and unknown.",
+      "Name the publisher, title and time on every readable source card.",
+      "Attribute broker target prices and creator views to their source.",
+      "Use conditional tomorrow scenarios with measurable thresholds sourced from the FactPack."
+    ],
+    "must_not_do": [
+      "Claim that price/volume alone proves institutional accumulation.",
+      "Claim that two stocks share an order or catalyst without evidence.",
+      "Turn an X or YouTube opinion into a finance fact.",
+      "Invent index contribution, flow, options positions, prices or causal explanations.",
+      "Use named creator catchphrases or line-by-line imitation.",
+      "Promote Line groups, teachers, free stock lists, exact entries/exits or guaranteed returns."
+    ]
+  },
+  "upgrade_requirements": {
+    "minimum_new_channel_full_transcripts": 5,
+    "preferred_new_channel_full_transcripts": 10,
+    "required_market_variety": [
+      "broad rally",
+      "broad selloff",
+      "index flat but sector rotation",
+      "large-cap divergence",
+      "event-driven reversal"
+    ],
+    "feedback_needed": [
+      "Ben keep/reject decision for each daily angle",
+      "Reason for rejection",
+      "Chosen title",
+      "Material factual corrections",
+      "Whether the script was usable with light edit, heavy edit or discarded"
+    ]
+  }
+}

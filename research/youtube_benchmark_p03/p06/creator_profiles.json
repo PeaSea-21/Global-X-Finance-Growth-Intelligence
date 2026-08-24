@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "status": "PACKAGING_READY_NARRATIVE_BLOCKED",
+  "profile_count": 3,
+  "profiles": [
+    {
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "sample_size": 10,
+      "source_video_ids": [
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY",
+        "swpo5Gpi7pc",
+        "zkeWUsTC09E",
+        "k3vTcap8mIM",
+        "fcZ1mOQr6BY",
+        "i_gEGJDcWu8"
+      ],
+      "observed_packaging": {
+        "average_title_characters": 37.5,
+        "question_titles": 4,
+        "title_mechanisms": {
+          "SINGLE_QUESTION": 4,
+          "AUTHORITY_EXPLAINER": 4,
+          "EVENT_OR_RESULT_STATEMENT": 2
+        },
+        "top_topics": [
+          [
+            "GLOBAL_MACRO",
+            6
+          ],
+          [
+            "AI",
+            5
+          ],
+          [
+            "SEMICONDUCTOR",
+            3
+          ],
+          [
+            "VALUATION",
+            2
+          ],
+          [
+            "INTEREST_RATES",
+            2
+          ],
+          [
+            "EARNINGS",
+            2
+          ]
+        ],
+        "thumbnail_relations": {
+          "COMPLEMENTS": 5,
+          "RESTATES": 5
+        },
+        "performance_labels": {
+          "NOT_COMPARABLE_RECENT": 1,
+          "NORMAL": 4,
+          "BREAKOUT": 1,
+          "BELOW_BASELINE": 2,
+          "ABOVE_BASELINE": 2
+        }
+      },
+      "creator_neutral_distillation": "用宏观条件、研究角色或图表承诺解释产业与资产影响。",
+      "recommended_abstract_pattern": "宏观事件 → 数据 → 产业/资产落点 → 下一验证",
+      "narrative_text_layer": {
+        "hook": "UNAVAILABLE",
+        "copy_structure": "UNAVAILABLE",
+        "evidence_order": "UNAVAILABLE",
+        "viewpoint": "UNAVAILABLE",
+        "rhythm": "UNAVAILABLE",
+        "ending": "UNAVAILABLE",
+        "reason": "0/10 transcripts available for this channel."
+      },
+      "confidence": "HIGH_PACKAGING_LOW_NARRATIVE",
+      "do_not_clone": [
+        "频道人格",
+        "主持人身份",
+        "节目名",
+        "口头禅",
+        "固定开场",
+        "个人经历",
+        "原缩略图文案"
+      ]
+    },
+    {
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "sample_size": 10,
+      "source_video_ids": [
+        "3tAUC5Zg8rw",
+        "RolkbaZOwQg",
+        "zfxZ_CfcrNE",
+        "9Mi0xxoIUbc",
+        "_F1XFJs3t9Y",
+        "LjLONE12zFs",
+        "lcA6hGaZsOM",
+        "fT4GIObuq-s",
+        "9v1l1VS7UAw",
+        "UBqg6zio5SE"
+      ],
+      "observed_packaging": {
+        "average_title_characters": 44.4,
+        "question_titles": 4,
+        "title_mechanisms": {
+          "SINGLE_QUESTION": 4,
+          "AUTHORITY_EXPLAINER": 1,
+          "EVENT_OR_RESULT_STATEMENT": 3,
+          "EVENT_IMPACT": 2
+        },
+        "top_topics": [
+          [
+            "AI",
+            9
+          ],
+          [
+            "US_EQUITY",
+            6
+          ],
+          [
+            "SPACE",
+            2
+          ],
+          [
+            "EARNINGS",
+            1
+          ],
+          [
+            "TESLA",
+            1
+          ],
+          [
+            "CHINA_TECH",
+            1
+          ]
+        ],
+        "thumbnail_relations": {
+          "RESTATES_AND_SUMMARIZES": 10
+        },
+        "performance_labels": {
+          "ABOVE_BASELINE": 3,
+          "NORMAL": 4,
+          "BELOW_BASELINE": 3
+        }
+      },
+      "creator_neutral_distillation": "把三项科技事件组织成更新账本，分别说明影响后再收束为共同主题。",
+      "recommended_abstract_pattern": "事件与影响 × 3 → 共同主题 → 下一观察点",
+      "narrative_text_layer": {
+        "hook": "UNAVAILABLE",
+        "copy_structure": "UNAVAILABLE",
+        "evidence_order": "UNAVAILABLE",
+        "viewpoint": "UNAVAILABLE",
+        "rhythm": "UNAVAILABLE",
+        "ending": "UNAVAILABLE",
+        "reason": "0/10 transcripts available for this channel."
+      },
+      "confidence": "HIGH_PACKAGING_LOW_NARRATIVE",
+      "do_not_clone": [
+        "频道人格",
+        "主持人身份",
+        "节目名",
+        "口头禅",
+        "固定开场",
+        "个人经历",
+        "原缩略图文案"
+      ]
+    },
+    {
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "sample_size": 10,
+      "source_video_ids": [
+        "vdW1eELwnsk",
+        "sgHsCaH2umQ",
+        "fZg4vn7D4XM",
+        "8gn2VKtwHRI",
+        "17_hFgL2bJI",
+        "Iir132pvy-A",
+        "0byAdzUmaos",
+        "ErcFGjqQDfw",
+        "8GxNAzIg3CM",
+        "9Ckyf26ASg4"
+      ],
+      "observed_packaging": {
+        "average_title_characters": 29.4,
+        "question_titles": 7,
+        "title_mechanisms": {
+          "SINGLE_QUESTION": 7,
+          "AUTHORITY_EXPLAINER": 1,
+          "EVENT_OR_RESULT_STATEMENT": 1,
+          "EVENT_IMPACT": 1
+        },
+        "top_topics": [
+          [
+            "TAIWAN_EQUITY",
+            9
+          ],
+          [
+            "SEMICONDUCTOR",
+            5
+          ],
+          [
+            "ABF",
+            2
+          ],
+          [
+            "ETF",
+            1
+          ],
+          [
+            "LEVERAGE_RISK",
+            1
+          ],
+          [
+            "PASSIVE_COMPONENTS",
+            1
+          ]
+        ],
+        "thumbnail_relations": {
+          "RESTATES": 7,
+          "TOPIC_LABEL": 1,
+          "AMPLIFIES": 2
+        },
+        "performance_labels": {
+          "NOT_COMPARABLE_RECENT": 1,
+          "ABOVE_BASELINE": 3,
+          "NORMAL": 4,
+          "BELOW_BASELINE": 2
+        }
+      },
+      "creator_neutral_distillation": "把具体股票、ETF 或产业事件压成单一判断任务。",
+      "recommended_abstract_pattern": "对象 → 决策问题 → 条件与风险",
+      "narrative_text_layer": {
+        "hook": "UNAVAILABLE",
+        "copy_structure": "UNAVAILABLE",
+        "evidence_order": "UNAVAILABLE",
+        "viewpoint": "UNAVAILABLE",
+        "rhythm": "UNAVAILABLE",
+        "ending": "UNAVAILABLE",
+        "reason": "0/10 transcripts available for this channel."
+      },
+      "confidence": "HIGH_PACKAGING_LOW_NARRATIVE",
+      "do_not_clone": [
+        "频道人格",
+        "主持人身份",
+        "节目名",
+        "口头禅",
+        "固定开场",
+        "个人经历",
+        "原缩略图文案"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timedelta, timezone
 
 from global_x_finance.webapp import create_app
+from global_x_finance import x_intelligence
 from global_x_finance.x_intelligence import (
     HttpResult,
     account_counts,
@@ -11,6 +12,7 @@ from global_x_finance.x_intelligence import (
     cluster_quality_report,
     collect_x_accounts_once,
     filter_time_window,
+    fetch_x_page,
     load_x_accounts,
     publisher_group_for_handle,
 )
@@ -44,7 +46,71 @@ def _x_row(post_id: str, *, group: str, text: str, created_at: str, repost: bool
 
 def test_real_csv_has_exact_expected_account_counts(root):
     accounts = load_x_accounts(root / "config" / "x_accounts.csv")
-    assert account_counts(accounts) == {"total": 29, "core": 16, "watch": 12, "low_confidence": 1}
+    assert account_counts(accounts) == {"total": 67, "core": 19, "watch": 40, "low_confidence": 8}
+    assert {account.handle for account in accounts} >= {"nvidia", "mingchikuo", "ChatGPT"}
+    assert "ChatGPTapp" not in {account.handle for account in accounts}
+
+
+def test_x_since_checkpoint_is_sent_as_milliseconds(monkeypatch, root):
+    account = load_x_accounts(root / "config" / "x_accounts.csv")[0]
+    captured = {}
+
+    def fake_http_get(url, timeout=35):
+        captured["url"] = url
+        return HttpResult(204, b"", {}, url)
+
+    monkeypatch.setattr(x_intelligence, "_http_get", fake_http_get)
+    fetch_x_page(account, 1_700_000_000)
+    assert "since=1700000000000" in captured["url"]
+
+
+def test_x_collection_paginates_until_it_crosses_the_24h_window(database, root):
+    account = load_x_accounts(root / "config" / "x_accounts.csv")[0]
+    recent = {
+        "id": "recent-page-1",
+        "text": "SYNTHETIC_TEST_DATA recent NVIDIA AI update",
+        "created_at": (NOW - timedelta(minutes=10)).isoformat(),
+        "author": {"screen_name": account.handle, "name": account.display_name},
+    }
+    old = {
+        "id": "old-page-2",
+        "text": "SYNTHETIC_TEST_DATA old NVIDIA AI update",
+        "created_at": (NOW - timedelta(hours=25)).isoformat(),
+        "author": {"screen_name": account.handle, "name": account.display_name},
+    }
+    cursor_calls = []
+
+    def fetcher(_account, _since):
+        return HttpResult(
+            200,
+            json.dumps({"results": [recent], "cursor": {"bottom": "next"}}).encode(),
+            {},
+            "https://api.fxtwitter.com/test",
+        )
+
+    def cursor_fetcher(_account, cursor):
+        cursor_calls.append(cursor)
+        return HttpResult(
+            200,
+            json.dumps({"results": [old], "cursor": {}}).encode(),
+            {},
+            "https://api.fxtwitter.com/test?cursor=next",
+        )
+
+    results = collect_x_accounts_once(
+        database,
+        [account],
+        now=NOW,
+        force=True,
+        cursor_fetcher=cursor_fetcher,
+        fetcher=fetcher,
+        sleeper=lambda _seconds: None,
+    )
+    assert cursor_calls == ["next"]
+    assert results[0].status == "SUCCESS"
+    assert results[0].fetched_count == 2
+    assert results[0].kept_count == 1
+    assert results[0].new_count == 1
 
 
 def test_2h_and_24h_boundaries_use_original_timestamp():
@@ -88,6 +154,60 @@ def test_x_post_id_is_idempotent_and_only_updates_snapshot(database, root):
     assert second[0].duplicate_count == 1
     assert database.execute("SELECT COUNT(*) FROM ben_x_posts WHERE post_id='synthetic-post-001'").fetchone()[0] == 1
     assert database.execute("SELECT COUNT(*) FROM ben_x_engagement_snapshots WHERE post_id='synthetic-post-001'").fetchone()[0] == 2
+
+
+def test_distinct_x_posts_with_identical_text_keep_distinct_raw_evidence(database, root):
+    account = load_x_accounts(root / "config" / "x_accounts.csv")[0]
+    shared_text = "SYNTHETIC_TEST_DATA identical syndicated headline"
+
+    def item(post_id: str) -> dict:
+        return {
+            "id": post_id,
+            "text": shared_text,
+            "created_at": (NOW - timedelta(minutes=20)).isoformat(),
+            "url": f"https://x.com/synthetic/status/{post_id}",
+            "lang": "en",
+            "likes": 4,
+            "reposts": 1,
+            "quotes": 0,
+            "replies": 1,
+            "author": {
+                "screen_name": account.handle,
+                "name": account.display_name,
+                "followers": 1000,
+            },
+        }
+
+    first_item = item("same-text-post-1")
+    second_item = item("same-text-post-2")
+
+    first = collect_x_accounts_once(
+        database,
+        [account],
+        now=NOW,
+        force=True,
+        fetcher=lambda _account, _since: HttpResult(
+            200, json.dumps({"results": [first_item]}).encode(), {}, "https://api.fxtwitter.com/test"
+        ),
+        sleeper=lambda _seconds: None,
+    )
+    second = collect_x_accounts_once(
+        database,
+        [account],
+        now=NOW + timedelta(minutes=1),
+        force=True,
+        fetcher=lambda _account, _since: HttpResult(
+            200, json.dumps({"results": [second_item]}).encode(), {}, "https://api.fxtwitter.com/test"
+        ),
+        sleeper=lambda _seconds: None,
+    )
+
+    assert first[0].new_count == second[0].new_count == 1
+    rows = database.execute(
+        "SELECT post_id, raw_item_id FROM ben_x_posts WHERE post_id LIKE 'same-text-post-%'"
+    ).fetchall()
+    assert len(rows) == 2
+    assert len({row["raw_item_id"] for row in rows}) == 2
 
 
 def test_repost_does_not_add_independent_publisher():

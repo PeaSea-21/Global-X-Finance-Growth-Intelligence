@@ -1,0 +1,68 @@
+[
+  {
+    "channel_id": "UCvnLmiWt_zIVIh0zUm_j4Hw",
+    "channel_url": "https://www.youtube.com/channel/UCvnLmiWt_zIVIh0zUm_j4Hw",
+    "channel_title": "老王愛說笑",
+    "category_role": "TW_STOCK",
+    "identity_verified": "VERIFIED",
+    "endpoint_verified": "VERIFIED",
+    "extraction_method_verified": "VERIFIED",
+    "terms_status": "UNKNOWN",
+    "commercial_use_status": "UNKNOWN",
+    "backend_status": "AVAILABLE",
+    "actual_run_status": "SUCCESS",
+    "identity_evidence_urls": [
+      "https://www.youtube.com/channel/UCvnLmiWt_zIVIh0zUm_j4Hw",
+      "https://www.inclusion.com.tw/"
+    ],
+    "selection_logic": "以台股盤勢、個股與籌碼題材為主要內容；浦惠投顧官網列出王倚隆（老王）分析師，頻道公開說明亦連回該官網。入選依據是角色覆蓋與高頻台股內容，不是訂閱量。",
+    "limitations": [
+      "平台條款與商業內部研究使用狀態仍為 UNKNOWN。",
+      "本轮只验证公开频道身份和 Atom 元数据端点，不验证其观点正确性。"
+    ]
+  },
+  {
+    "channel_id": "UCT3uWFvKLVpRnEealmRwvrw",
+    "channel_url": "https://www.youtube.com/channel/UCT3uWFvKLVpRnEealmRwvrw",
+    "channel_title": "M觀點",
+    "category_role": "SEMICONDUCTOR_TECH",
+    "identity_verified": "VERIFIED",
+    "endpoint_verified": "VERIFIED",
+    "extraction_method_verified": "VERIFIED",
+    "terms_status": "UNKNOWN",
+    "commercial_use_status": "UNKNOWN",
+    "backend_status": "AVAILABLE",
+    "actual_run_status": "SUCCESS",
+    "identity_evidence_urls": [
+      "https://www.youtube.com/channel/UCT3uWFvKLVpRnEealmRwvrw",
+      "https://miula.tw/miula_perspective/"
+    ],
+    "selection_logic": "Miula 官網明确把 M觀點定义为科技、商业与投资的 YouTube/Podcast 频道；内容稳定覆盖 AI、科技公司与资本市场，适合作为科技产业叙事角色。",
+    "limitations": [
+      "平台条款与商业内部研究使用状态仍为 UNKNOWN。",
+      "频道并非只研究台湾半导体，样本角色是科技产业与全球科技资本市场。"
+    ]
+  },
+  {
+    "channel_id": "UC6LU7FUBvbFCh_cQasrHZ_Q",
+    "channel_url": "https://www.youtube.com/channel/UC6LU7FUBvbFCh_cQasrHZ_Q",
+    "channel_title": "MacroMicro財經M平方",
+    "category_role": "GLOBAL_MACRO",
+    "identity_verified": "VERIFIED",
+    "endpoint_verified": "VERIFIED",
+    "extraction_method_verified": "VERIFIED",
+    "terms_status": "UNKNOWN",
+    "commercial_use_status": "UNKNOWN",
+    "backend_status": "AVAILABLE",
+    "actual_run_status": "SUCCESS",
+    "identity_evidence_urls": [
+      "https://www.youtube.com/channel/UC6LU7FUBvbFCh_cQasrHZ_Q",
+      "https://www.macromicro.me/"
+    ],
+    "selection_logic": "频道与官方站点以宏观数据、全球资产和基本面研究为核心，并有美股、台股与半导体联动内容，覆盖全球宏观角色。",
+    "limitations": [
+      "平台条款与商业内部研究使用状态仍为 UNKNOWN。",
+      "这是机构频道，和个人博主的制作流程可能不同。"
+    ]
+  }
+]

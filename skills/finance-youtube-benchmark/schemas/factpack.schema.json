@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Finance fact pack",
+  "type": "object",
+  "required": ["factpack_id", "market", "as_of", "status", "facts"],
+  "properties": {
+    "factpack_id": {"type": "string", "minLength": 1},
+    "market": {"enum": ["TW", "US", "CROSS_MARKET"]},
+    "as_of": {"type": "string", "minLength": 1},
+    "status": {"enum": ["VERIFIED", "INCOMPLETE", "CONFLICTED", "STALE"]},
+    "facts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["fact_id", "claim", "claim_type", "source_type", "source_url", "accessed_at", "freshness_status", "conflict_status"],
+        "properties": {
+          "fact_id": {"type": "string", "minLength": 1},
+          "claim": {"type": "string", "minLength": 1},
+          "claim_type": {"enum": ["FACT", "INFERENCE", "OPINION"]},
+          "source_type": {"enum": ["OFFICIAL", "REGULATOR", "COMPANY_IR", "STATISTICS_AGENCY", "CENTRAL_BANK", "REPUTABLE_NEWS"]},
+          "source_url": {"type": "string", "minLength": 1},
+          "accessed_at": {"type": "string", "minLength": 1},
+          "freshness_status": {"enum": ["FRESH", "STALE", "UNKNOWN"]},
+          "conflict_status": {"enum": ["NONE", "SOURCE_CONFLICT"]}
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

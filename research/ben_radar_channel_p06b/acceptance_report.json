@@ -1,0 +1,737 @@
+{
+  "artifact": "BEN_CHANNEL_P06B_ACCEPTANCE",
+  "status": "PASS",
+  "checked_files": [
+    "research\\ben_radar_channel_p06b\\channel_brief_2026-08-11.json",
+    "research\\ben_radar_channel_p06b\\channel_brief_2026-08-12.json",
+    "research\\ben_radar_channel_p06b\\channel_brief_2026-08-13.json",
+    "research\\ben_radar_channel_p06b\\channel_brief_2026-08-14.json",
+    "research\\ben_radar_channel_p06b\\channel_brief_2026-08-17.json"
+  ],
+  "replay_count": 5,
+  "reports": [
+    {
+      "market_session_date": "2026-08-11",
+      "session_state": "DEGRADED",
+      "coverage_status": "OPTIONAL_SOURCE_GAPS",
+      "data_as_of": "2026-08-11T15:05:00+08:00",
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "source_readiness": [
+        {
+          "source": "TWSE_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-11",
+          "record_count": 1084,
+          "coverage_ratio": 0.9972401103955841
+        },
+        {
+          "source": "TPEX_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-11",
+          "record_count": 874,
+          "coverage_ratio": 0.983127109111361
+        },
+        {
+          "source": "MOPS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-11T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "NEWS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-11T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "X",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-11T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "INDUSTRY_MAPPING",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-11T15:05:00+08:00",
+          "record_count": 1824
+        }
+      ],
+      "channels": {
+        "SIGNAL_HEAVY": {
+          "channel_name": "資金雷達",
+          "status": "READY",
+          "qualified_count": 328,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-11:TWSE:2033",
+            "signal:2026-08-11:TPEX:8354",
+            "signal:2026-08-11:TPEX:2065",
+            "signal:2026-08-11:TPEX:4207",
+            "signal:2026-08-11:TWSE:4148"
+          ],
+          "shortage_reasons": []
+        },
+        "EVENT_HEAVY": {
+          "channel_name": "個股顯微鏡",
+          "status": "READY",
+          "qualified_count": 328,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-11:TWSE:6005",
+            "signal:2026-08-11:TPEX:6121",
+            "signal:2026-08-11:TWSE:2438",
+            "signal:2026-08-11:TPEX:5426",
+            "signal:2026-08-11:TPEX:8084"
+          ],
+          "shortage_reasons": []
+        },
+        "CROSS_ENTITY": {
+          "channel_name": "產業透視鏡",
+          "status": "READY",
+          "qualified_count": 13,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY"
+          ],
+          "top_candidate_ids": [
+            "industry:2026-08-11:TECH_HARDWARE",
+            "industry:2026-08-11:CONSUMER_DISCRETIONARY",
+            "industry:2026-08-11:MATERIALS",
+            "industry:2026-08-11:HEALTHCARE",
+            "industry:2026-08-11:INDUSTRIALS"
+          ],
+          "shortage_reasons": []
+        }
+      },
+      "signal_event_top5_overlap": 0,
+      "assignment_count": 24
+    },
+    {
+      "market_session_date": "2026-08-12",
+      "session_state": "DEGRADED",
+      "coverage_status": "OPTIONAL_SOURCE_GAPS",
+      "data_as_of": "2026-08-12T15:05:00+08:00",
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "source_readiness": [
+        {
+          "source": "TWSE_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-12",
+          "record_count": 1084,
+          "coverage_ratio": 0.9972401103955841
+        },
+        {
+          "source": "TPEX_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-12",
+          "record_count": 870,
+          "coverage_ratio": 0.9786276715410573
+        },
+        {
+          "source": "MOPS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-12T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "NEWS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-12T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "X",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-12T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "INDUSTRY_MAPPING",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-12T15:05:00+08:00",
+          "record_count": 1824
+        }
+      ],
+      "channels": {
+        "SIGNAL_HEAVY": {
+          "channel_name": "資金雷達",
+          "status": "READY",
+          "qualified_count": 347,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-12:TPEX:4735",
+            "signal:2026-08-12:TPEX:4413",
+            "signal:2026-08-12:TWSE:1906",
+            "signal:2026-08-12:TPEX:3287",
+            "signal:2026-08-12:TPEX:6028"
+          ],
+          "shortage_reasons": []
+        },
+        "EVENT_HEAVY": {
+          "channel_name": "個股顯微鏡",
+          "status": "READY",
+          "qualified_count": 347,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-12:TPEX:4413",
+            "signal:2026-08-12:TPEX:5475",
+            "signal:2026-08-12:TWSE:6770",
+            "signal:2026-08-12:TPEX:6173",
+            "signal:2026-08-12:TWSE:6442"
+          ],
+          "shortage_reasons": []
+        },
+        "CROSS_ENTITY": {
+          "channel_name": "產業透視鏡",
+          "status": "READY",
+          "qualified_count": 13,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY"
+          ],
+          "top_candidate_ids": [
+            "industry:2026-08-12:TECH_HARDWARE",
+            "industry:2026-08-12:MATERIALS",
+            "industry:2026-08-12:INDUSTRIALS",
+            "industry:2026-08-12:CONSUMER_DISCRETIONARY",
+            "industry:2026-08-12:HEALTHCARE"
+          ],
+          "shortage_reasons": []
+        }
+      },
+      "signal_event_top5_overlap": 1,
+      "assignment_count": 24
+    },
+    {
+      "market_session_date": "2026-08-13",
+      "session_state": "DEGRADED",
+      "coverage_status": "OPTIONAL_SOURCE_GAPS",
+      "data_as_of": "2026-08-13T15:05:00+08:00",
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "source_readiness": [
+        {
+          "source": "TWSE_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-13",
+          "record_count": 1086,
+          "coverage_ratio": 0.9990800367985281
+        },
+        {
+          "source": "TPEX_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-13",
+          "record_count": 877,
+          "coverage_ratio": 0.9865016872890888
+        },
+        {
+          "source": "MOPS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "NEWS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "X",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "INDUSTRY_MAPPING",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "record_count": 1824
+        }
+      ],
+      "channels": {
+        "SIGNAL_HEAVY": {
+          "channel_name": "資金雷達",
+          "status": "READY",
+          "qualified_count": 392,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-13:TPEX:6130",
+            "signal:2026-08-13:TPEX:5455",
+            "signal:2026-08-13:TPEX:6840",
+            "signal:2026-08-13:TPEX:6028",
+            "signal:2026-08-13:TWSE:4736"
+          ],
+          "shortage_reasons": []
+        },
+        "EVENT_HEAVY": {
+          "channel_name": "個股顯微鏡",
+          "status": "READY",
+          "qualified_count": 392,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-13:TPEX:7819",
+            "signal:2026-08-13:TPEX:4905",
+            "signal:2026-08-13:TPEX:3490",
+            "signal:2026-08-13:TWSE:3605",
+            "signal:2026-08-13:TPEX:8444"
+          ],
+          "shortage_reasons": []
+        },
+        "CROSS_ENTITY": {
+          "channel_name": "產業透視鏡",
+          "status": "READY",
+          "qualified_count": 14,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY"
+          ],
+          "top_candidate_ids": [
+            "industry:2026-08-13:TECH_HARDWARE",
+            "industry:2026-08-13:INDUSTRIALS",
+            "industry:2026-08-13:MATERIALS",
+            "industry:2026-08-13:SEMICONDUCTORS",
+            "industry:2026-08-13:CONSUMER_DISCRETIONARY"
+          ],
+          "shortage_reasons": []
+        }
+      },
+      "signal_event_top5_overlap": 0,
+      "assignment_count": 24
+    },
+    {
+      "market_session_date": "2026-08-14",
+      "session_state": "DEGRADED",
+      "coverage_status": "OPTIONAL_SOURCE_GAPS",
+      "data_as_of": "2026-08-14T15:05:00+08:00",
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "source_readiness": [
+        {
+          "source": "TWSE_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-14",
+          "record_count": 1087,
+          "coverage_ratio": 1.0
+        },
+        {
+          "source": "TPEX_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-14",
+          "record_count": 869,
+          "coverage_ratio": 0.9775028121484814
+        },
+        {
+          "source": "MOPS",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-14T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "NEWS",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-14T15:05:00+08:00",
+          "record_count": 1
+        },
+        {
+          "source": "X",
+          "required": false,
+          "status": "EMPTY",
+          "data_as_of": "2026-08-14T15:05:00+08:00",
+          "record_count": 0
+        },
+        {
+          "source": "INDUSTRY_MAPPING",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-14T15:05:00+08:00",
+          "record_count": 1824
+        }
+      ],
+      "channels": {
+        "SIGNAL_HEAVY": {
+          "channel_name": "資金雷達",
+          "status": "READY",
+          "qualified_count": 333,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-14:TPEX:4767",
+            "signal:2026-08-14:TWSE:2392",
+            "signal:2026-08-14:TWSE:2324",
+            "signal:2026-08-14:TWSE:2915",
+            "signal:2026-08-14:TWSE:9945"
+          ],
+          "shortage_reasons": []
+        },
+        "EVENT_HEAVY": {
+          "channel_name": "個股顯微鏡",
+          "status": "READY",
+          "qualified_count": 333,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-14:TPEX:5314",
+            "signal:2026-08-14:TPEX:4905",
+            "signal:2026-08-14:TPEX:7402",
+            "signal:2026-08-14:TWSE:2915",
+            "signal:2026-08-14:TWSE:1810"
+          ],
+          "shortage_reasons": []
+        },
+        "CROSS_ENTITY": {
+          "channel_name": "產業透視鏡",
+          "status": "READY",
+          "qualified_count": 13,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY"
+          ],
+          "top_candidate_ids": [
+            "industry:2026-08-14:TECH_HARDWARE",
+            "industry:2026-08-14:INDUSTRIALS",
+            "industry:2026-08-14:CONSUMER_DISCRETIONARY",
+            "industry:2026-08-14:MATERIALS",
+            "industry:2026-08-14:SEMICONDUCTORS"
+          ],
+          "shortage_reasons": []
+        }
+      },
+      "signal_event_top5_overlap": 1,
+      "assignment_count": 24
+    },
+    {
+      "market_session_date": "2026-08-17",
+      "session_state": "READY",
+      "coverage_status": "COMPLETE_FOR_PILOT",
+      "data_as_of": "2026-08-17T15:05:00+08:00",
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "source_readiness": [
+        {
+          "source": "TWSE_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-17",
+          "record_count": 1087,
+          "coverage_ratio": 1.0
+        },
+        {
+          "source": "TPEX_EOD",
+          "required": true,
+          "status": "READY",
+          "data_as_of": "2026-08-17",
+          "record_count": 872,
+          "coverage_ratio": 0.9808773903262092
+        },
+        {
+          "source": "MOPS",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-17T15:05:00+08:00",
+          "record_count": 11
+        },
+        {
+          "source": "NEWS",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-17T15:05:00+08:00",
+          "record_count": 79
+        },
+        {
+          "source": "X",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-17T15:05:00+08:00",
+          "record_count": 192
+        },
+        {
+          "source": "INDUSTRY_MAPPING",
+          "required": false,
+          "status": "AVAILABLE",
+          "data_as_of": "2026-08-17T15:05:00+08:00",
+          "record_count": 1824
+        }
+      ],
+      "channels": {
+        "SIGNAL_HEAVY": {
+          "channel_name": "資金雷達",
+          "status": "READY",
+          "qualified_count": 294,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL",
+            "MARKET_SIGNAL"
+          ],
+          "top_candidate_ids": [
+            "signal:2026-08-17:TWSE:2905",
+            "signal:2026-08-17:TPEX:8284",
+            "signal:2026-08-17:TWSE:2364",
+            "signal:2026-08-17:TPEX:3631",
+            "signal:2026-08-17:TPEX:4905"
+          ],
+          "shortage_reasons": []
+        },
+        "EVENT_HEAVY": {
+          "channel_name": "個股顯微鏡",
+          "status": "READY",
+          "qualified_count": 320,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "DISCLOSURE",
+            "DISCLOSURE",
+            "DISCLOSURE",
+            "DISCLOSURE",
+            "DISCLOSURE"
+          ],
+          "top_candidate_ids": [
+            "disclosure:MOPS:166ed7a427aaff25e9320fed32a0ca19:2026-08-17",
+            "disclosure:MOPS:38930eda0a3e6c43b16b6347cacaaf34:2026-08-17",
+            "disclosure:MOPS:7e6dd3157185dbded7a2851fd98052cd:2026-08-17",
+            "disclosure:MOPS:3c51d9e88af05feeaca1a2b8fe266354:2026-08-17",
+            "disclosure:MOPS:8b602f64c609bb37431a36a77d53bdde:2026-08-17"
+          ],
+          "shortage_reasons": []
+        },
+        "CROSS_ENTITY": {
+          "channel_name": "產業透視鏡",
+          "status": "READY",
+          "qualified_count": 13,
+          "top_count": 5,
+          "backup_count": 3,
+          "top_types": [
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY",
+            "CROSS_ENTITY"
+          ],
+          "top_candidate_ids": [
+            "industry:2026-08-17:TECH_HARDWARE",
+            "industry:2026-08-17:INDUSTRIALS",
+            "industry:2026-08-17:CONSUMER_DISCRETIONARY",
+            "industry:2026-08-17:MATERIALS",
+            "industry:2026-08-17:SEMICONDUCTORS"
+          ],
+          "shortage_reasons": []
+        }
+      },
+      "signal_event_top5_overlap": 0,
+      "assignment_count": 24
+    }
+  ],
+  "database": {
+    "latest_brief_versions": [
+      {
+        "channel_id": "ch-01-tw-stock-microscope",
+        "market_session_date": "2026-08-11",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-03-tw-industry-lens",
+        "market_session_date": "2026-08-11",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-05-tw-capital-radar",
+        "market_session_date": "2026-08-11",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-01-tw-stock-microscope",
+        "market_session_date": "2026-08-12",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-03-tw-industry-lens",
+        "market_session_date": "2026-08-12",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-05-tw-capital-radar",
+        "market_session_date": "2026-08-12",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-01-tw-stock-microscope",
+        "market_session_date": "2026-08-13",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-03-tw-industry-lens",
+        "market_session_date": "2026-08-13",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-05-tw-capital-radar",
+        "market_session_date": "2026-08-13",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-01-tw-stock-microscope",
+        "market_session_date": "2026-08-14",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-03-tw-industry-lens",
+        "market_session_date": "2026-08-14",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-05-tw-capital-radar",
+        "market_session_date": "2026-08-14",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-01-tw-stock-microscope",
+        "market_session_date": "2026-08-17",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-03-tw-industry-lens",
+        "market_session_date": "2026-08-17",
+        "latest_version": 2
+      },
+      {
+        "channel_id": "ch-05-tw-capital-radar",
+        "market_session_date": "2026-08-17",
+        "latest_version": 2
+      }
+    ],
+    "industry_mapping_counts": [
+      {
+        "exchange_code": "TPEX",
+        "mapping_status": "MAPPED_COMMON_STOCK",
+        "count": 810
+      },
+      {
+        "exchange_code": "TPEX",
+        "mapping_status": "UNKNOWN",
+        "count": 79
+      },
+      {
+        "exchange_code": "TWSE",
+        "mapping_status": "EXCLUDED_NON_COMMON_STOCK",
+        "count": 4
+      },
+      {
+        "exchange_code": "TWSE",
+        "mapping_status": "MAPPED_COMMON_STOCK",
+        "count": 1014
+      },
+      {
+        "exchange_code": "TWSE",
+        "mapping_status": "UNKNOWN",
+        "count": 69
+      }
+    ],
+    "industry_mapping_orphan_evidence": 0
+  },
+  "violations": []
+}

@@ -4,7 +4,9 @@ EXPECTED_TABLES = {
     "trend_snapshots", "claims", "evidence_links", "content_drafts",
     "verification_runs", "policy_snapshots", "compliance_checks", "review_decisions",
     "official_source_permissions", "official_securities", "official_market_data_daily",
-    "official_disclosures",
+    "official_disclosures", "industry_classifications", "security_industry_mappings",
+    "ben_channel_profiles", "ben_channel_brief_runs", "ben_channel_daily_briefs",
+    "ben_channel_topic_assignments",
 }
 
 

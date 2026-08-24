@@ -1,0 +1,359 @@
+{
+  "version": "2.0",
+  "profiles": [
+    {
+      "profile_id": "P04-TW-V2",
+      "channel_name": "老王愛說笑",
+      "channel_id": "UCvnLmiWt_zIVIh0zUm_j4Hw",
+      "channel_role": "台股盤面與個股分析",
+      "sample_size": 10,
+      "evidence_ids": [
+        "vdW1eELwnsk",
+        "sgHsCaH2umQ",
+        "fZg4vn7D4XM",
+        "8gn2VKtwHRI",
+        "17_hFgL2bJI",
+        "Iir132pvy-A",
+        "0byAdzUmaos",
+        "ErcFGjqQDfw",
+        "8GxNAzIg3CM",
+        "9Ckyf26ASg4"
+      ],
+      "status": "PROVISIONAL_V2",
+      "layers": {
+        "topic_strategy": {
+          "findings": [
+            "选题集中于台股个股、产业题材与交易决策问句。",
+            "同一窗口同时覆盖短时长标题信号、盘面节目与多股盘点。"
+          ],
+          "evidence_ids": [
+            "vdW1eELwnsk",
+            "sgHsCaH2umQ",
+            "fZg4vn7D4XM",
+            "8gn2VKtwHRI",
+            "17_hFgL2bJI",
+            "Iir132pvy-A",
+            "0byAdzUmaos",
+            "ErcFGjqQDfw",
+            "8GxNAzIg3CM",
+            "9Ckyf26ASg4"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging_strategy": {
+          "findings": [
+            "10/10 缩略图使用大字；8/10 有单一主持人，2/10 以盘面截图为主体。",
+            "人物手势、问号与高对比绿/红/黄强化机会或风险。"
+          ],
+          "evidence_ids": [
+            "vdW1eELwnsk",
+            "sgHsCaH2umQ",
+            "fZg4vn7D4XM",
+            "8gn2VKtwHRI",
+            "17_hFgL2bJI",
+            "Iir132pvy-A",
+            "0byAdzUmaos",
+            "ErcFGjqQDfw",
+            "8GxNAzIg3CM",
+            "9Ckyf26ASg4"
+          ],
+          "confidence": "HIGH"
+        },
+        "narrative_strategy": {
+          "findings": [
+            "标题常把复杂议题压成单一可回答问题；正文顺序与口播节奏因无字幕不可确认。"
+          ],
+          "evidence_ids": [
+            "vdW1eELwnsk",
+            "sgHsCaH2umQ",
+            "fZg4vn7D4XM",
+            "8gn2VKtwHRI",
+            "17_hFgL2bJI",
+            "Iir132pvy-A",
+            "0byAdzUmaos",
+            "ErcFGjqQDfw",
+            "8GxNAzIg3CM",
+            "9Ckyf26ASg4"
+          ],
+          "confidence": "LOW"
+        },
+        "performance_patterns": {
+          "findings": [
+            "年龄校正后高表现候选：9Ckyf26ASg4, Iir132pvy-A, sgHsCaH2umQ。",
+            "表现标签只用于同频道相对比较。"
+          ],
+          "evidence_ids": [
+            "9Ckyf26ASg4",
+            "Iir132pvy-A",
+            "sgHsCaH2umQ"
+          ],
+          "confidence": "LOW_TO_MEDIUM"
+        }
+      },
+      "reusable_high_level_parameters": [
+        "问题功能",
+        "证据出现顺序",
+        "信息密度",
+        "标题与缩略图分工",
+        "不确定性表达"
+      ],
+      "do_not_reuse": [
+        "频道名与节目名",
+        "主持人肖像或身份",
+        "独有口头禅",
+        "原缩略图文案",
+        "个人经历"
+      ],
+      "limitations": [
+        "No transcript was requested or stored.",
+        "Narrative, pacing, hook and CTA observations cannot be upgraded beyond title/thumbnail inference."
+      ]
+    },
+    {
+      "profile_id": "P04-TECH-V2",
+      "channel_name": "M觀點",
+      "channel_id": "UCT3uWFvKLVpRnEealmRwvrw",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "sample_size": 10,
+      "evidence_ids": [
+        "3tAUC5Zg8rw",
+        "RolkbaZOwQg",
+        "zfxZ_CfcrNE",
+        "9Mi0xxoIUbc",
+        "_F1XFJs3t9Y",
+        "LjLONE12zFs",
+        "lcA6hGaZsOM",
+        "fT4GIObuq-s",
+        "9v1l1VS7UAw",
+        "UBqg6zio5SE"
+      ],
+      "status": "PROVISIONAL_V2",
+      "layers": {
+        "topic_strategy": {
+          "findings": [
+            "10/10 为多议题科技更新，AI 与美股公司事件是主轴。",
+            "单集常并列三项公司、产品或政策信号。"
+          ],
+          "evidence_ids": [
+            "3tAUC5Zg8rw",
+            "RolkbaZOwQg",
+            "zfxZ_CfcrNE",
+            "9Mi0xxoIUbc",
+            "_F1XFJs3t9Y",
+            "LjLONE12zFs",
+            "lcA6hGaZsOM",
+            "fT4GIObuq-s",
+            "9v1l1VS7UAw",
+            "UBqg6zio5SE"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging_strategy": {
+          "findings": [
+            "10/10 有统一系列角标、主持人与证据截图；正文摘要固定为三行高密度大字。",
+            "稳定版式优先于单片视觉惊奇。"
+          ],
+          "evidence_ids": [
+            "3tAUC5Zg8rw",
+            "RolkbaZOwQg",
+            "zfxZ_CfcrNE",
+            "9Mi0xxoIUbc",
+            "_F1XFJs3t9Y",
+            "LjLONE12zFs",
+            "lcA6hGaZsOM",
+            "fT4GIObuq-s",
+            "9v1l1VS7UAw",
+            "UBqg6zio5SE"
+          ],
+          "confidence": "HIGH"
+        },
+        "narrative_strategy": {
+          "findings": [
+            "标题呈现清单式 agenda；实际论证顺序、转折与 CTA 因无字幕不可确认。"
+          ],
+          "evidence_ids": [
+            "3tAUC5Zg8rw",
+            "RolkbaZOwQg",
+            "zfxZ_CfcrNE",
+            "9Mi0xxoIUbc",
+            "_F1XFJs3t9Y",
+            "LjLONE12zFs",
+            "lcA6hGaZsOM",
+            "fT4GIObuq-s",
+            "9v1l1VS7UAw",
+            "UBqg6zio5SE"
+          ],
+          "confidence": "LOW"
+        },
+        "performance_patterns": {
+          "findings": [
+            "年龄校正后高表现候选：UBqg6zio5SE, lcA6hGaZsOM, 3tAUC5Zg8rw。",
+            "表现标签只用于同频道相对比较。"
+          ],
+          "evidence_ids": [
+            "UBqg6zio5SE",
+            "lcA6hGaZsOM",
+            "3tAUC5Zg8rw"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "reusable_high_level_parameters": [
+        "问题功能",
+        "证据出现顺序",
+        "信息密度",
+        "标题与缩略图分工",
+        "不确定性表达"
+      ],
+      "do_not_reuse": [
+        "频道名与节目名",
+        "主持人肖像或身份",
+        "独有口头禅",
+        "原缩略图文案",
+        "个人经历"
+      ],
+      "limitations": [
+        "No transcript was requested or stored.",
+        "Narrative, pacing, hook and CTA observations cannot be upgraded beyond title/thumbnail inference."
+      ]
+    },
+    {
+      "profile_id": "P04-MACRO-V2",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_id": "UC6LU7FUBvbFCh_cQasrHZ_Q",
+      "channel_role": "全球宏观、美股与台股联动",
+      "sample_size": 10,
+      "evidence_ids": [
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY",
+        "swpo5Gpi7pc",
+        "zkeWUsTC09E",
+        "k3vTcap8mIM",
+        "fcZ1mOQr6BY",
+        "i_gEGJDcWu8"
+      ],
+      "status": "PROVISIONAL_V2",
+      "layers": {
+        "topic_strategy": {
+          "findings": [
+            "选题跨宏观、利率、财报、AI 与台股供应链，强调因果联动。",
+            "节目型长题与直式切片并存。"
+          ],
+          "evidence_ids": [
+            "4gEpLNIRhhk",
+            "GgnjahnxBVA",
+            "I8TdwvSzzuY",
+            "rpjv4oUa9Gk",
+            "Iv66HJtx2AY",
+            "swpo5Gpi7pc",
+            "zkeWUsTC09E",
+            "k3vTcap8mIM",
+            "fcZ1mOQr6BY",
+            "i_gEGJDcWu8"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging_strategy": {
+          "findings": [
+            "播客棚景与专家人物建立权威；直式切片常叠加字幕、图表或页面截图。",
+            "绿/白/黄品牌色与问题式标题块维持解释型而非纯煽动型语气。"
+          ],
+          "evidence_ids": [
+            "4gEpLNIRhhk",
+            "GgnjahnxBVA",
+            "I8TdwvSzzuY",
+            "rpjv4oUa9Gk",
+            "Iv66HJtx2AY",
+            "swpo5Gpi7pc",
+            "zkeWUsTC09E",
+            "k3vTcap8mIM",
+            "fcZ1mOQr6BY",
+            "i_gEGJDcWu8"
+          ],
+          "confidence": "HIGH"
+        },
+        "narrative_strategy": {
+          "findings": [
+            "标题偏向从宏观条件引出产业或资产影响；实际口播因果链仍需字幕验证。"
+          ],
+          "evidence_ids": [
+            "4gEpLNIRhhk",
+            "GgnjahnxBVA",
+            "I8TdwvSzzuY",
+            "rpjv4oUa9Gk",
+            "Iv66HJtx2AY",
+            "swpo5Gpi7pc",
+            "zkeWUsTC09E",
+            "k3vTcap8mIM",
+            "fcZ1mOQr6BY",
+            "i_gEGJDcWu8"
+          ],
+          "confidence": "LOW"
+        },
+        "performance_patterns": {
+          "findings": [
+            "年龄校正后高表现候选：Iv66HJtx2AY, fcZ1mOQr6BY, zkeWUsTC09E。",
+            "表现标签只用于同频道相对比较。"
+          ],
+          "evidence_ids": [
+            "Iv66HJtx2AY",
+            "fcZ1mOQr6BY",
+            "zkeWUsTC09E"
+          ],
+          "confidence": "LOW_TO_MEDIUM"
+        }
+      },
+      "reusable_high_level_parameters": [
+        "问题功能",
+        "证据出现顺序",
+        "信息密度",
+        "标题与缩略图分工",
+        "不确定性表达"
+      ],
+      "do_not_reuse": [
+        "频道名与节目名",
+        "主持人肖像或身份",
+        "独有口头禅",
+        "原缩略图文案",
+        "个人经历"
+      ],
+      "limitations": [
+        "No transcript was requested or stored.",
+        "Narrative, pacing, hook and CTA observations cannot be upgraded beyond title/thumbnail inference."
+      ]
+    }
+  ],
+  "cross_channel_matrix": [
+    {
+      "dimension": "topic unit",
+      "TW": "单股/单题决策",
+      "TECH": "三议题科技清单",
+      "MACRO": "宏观条件到产业影响",
+      "confidence": "HIGH"
+    },
+    {
+      "dimension": "thumbnail anchor",
+      "TW": "人物问句或盘面",
+      "TECH": "主持人+证据截图+三行摘要",
+      "MACRO": "棚景专家或图表切片",
+      "confidence": "HIGH"
+    },
+    {
+      "dimension": "performance interpretation",
+      "TW": "机会/风险包装需分格式再验证",
+      "TECH": "多议题版式内比较较稳定",
+      "MACRO": "节目与切片混合，格式混杂较大",
+      "confidence": "LOW_TO_MEDIUM"
+    },
+    {
+      "dimension": "narrative confidence",
+      "TW": "LOW",
+      "TECH": "LOW",
+      "MACRO": "LOW",
+      "confidence": "HIGH_ABOUT_LIMITATION"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "status": "CREATOR_NEUTRAL_HIGH_LEVEL_ONLY",
+  "patterns": [
+    {
+      "pattern_id": "PAT-01",
+      "name": "单一决策问句",
+      "mechanism": "把宽题压成观众可立即判断的问题。",
+      "use_when": "台股个股、ETF 或风险边界需要明确决策入口。",
+      "avoid_when": "事实不足以回答或标题会暗示投资建议。",
+      "structure": [
+        "明确对象",
+        "决策问句",
+        "关键证据",
+        "条件与风险"
+      ],
+      "confidence": "HIGH",
+      "performance_observation": "台股样本 7/10 使用问句；三条 ABOVE 中两条含问句。小样本相关，不是因果。",
+      "risk_limitation": "容易滑向投资建议或过度承诺；必须以 FactPack 限定答案。",
+      "source_video_ids": [
+        "vdW1eELwnsk",
+        "sgHsCaH2umQ",
+        "fZg4vn7D4XM",
+        "8gn2VKtwHRI",
+        "17_hFgL2bJI",
+        "0byAdzUmaos",
+        "ErcFGjqQDfw",
+        "8GxNAzIg3CM",
+        "9Ckyf26ASg4"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-02",
+      "name": "三议题更新账本",
+      "mechanism": "用三项并列主题提高信息密度，并在封面重复 agenda。",
+      "use_when": "每项都有独立证据且受众需要一周科技更新。",
+      "avoid_when": "主题关联弱或一项内容不足以支撑。",
+      "structure": [
+        "三项议题 agenda",
+        "逐项证据",
+        "共同影响",
+        "观察清单"
+      ],
+      "confidence": "HIGH",
+      "performance_observation": "科技频道 10/10 使用多议题统一版式；高低表现均出现，说明版式更可能是品牌基线而非单独驱动。",
+      "risk_limitation": "议题过多会稀释主承诺；相关性弱时不要硬串。",
+      "source_video_ids": [
+        "3tAUC5Zg8rw",
+        "RolkbaZOwQg",
+        "zfxZ_CfcrNE",
+        "9Mi0xxoIUbc",
+        "_F1XFJs3t9Y",
+        "LjLONE12zFs",
+        "lcA6hGaZsOM",
+        "fT4GIObuq-s",
+        "9v1l1VS7UAw",
+        "UBqg6zio5SE"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-03",
+      "name": "宏观条件到产业落点",
+      "mechanism": "先给宏观条件，再承诺解释对 AI、半导体或资产的影响。",
+      "use_when": "FactPack 能建立清楚因果链。",
+      "avoid_when": "只能证明相关性，不能证明因果。",
+      "structure": [
+        "宏观事件",
+        "关键数据",
+        "传导机制",
+        "产业/资产落点",
+        "反证条件"
+      ],
+      "confidence": "MEDIUM",
+      "performance_observation": "宏观主题 5 条的频道内比率中位数 1.4222；样本跨格式且仅 5 条，置信度中等。",
+      "risk_limitation": "不能把相关性写成因果；传导每一段都需独立证据。",
+      "source_video_ids": [
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY",
+        "swpo5Gpi7pc",
+        "zkeWUsTC09E",
+        "k3vTcap8mIM",
+        "fcZ1mOQr6BY",
+        "i_gEGJDcWu8"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-04",
+      "name": "人物与证据画面分工",
+      "mechanism": "人物承担可信度/情绪，截图或图表承担证据感。",
+      "use_when": "需要同时传达谁在解释与解释什么。",
+      "avoid_when": "画面元素过多导致移动端不可读。",
+      "structure": [
+        "人物/专家锚点",
+        "证据截图或图表",
+        "一句影响摘要"
+      ],
+      "confidence": "HIGH",
+      "performance_observation": "科技频道 10/10 有截图、宏观频道 5/10 有截图；各表现层级均有，视觉结构本身不能解释差异。",
+      "risk_limitation": "截图不可冒充证据核验；人物身份也不是事实证明。",
+      "source_video_ids": [
+        "3tAUC5Zg8rw",
+        "RolkbaZOwQg",
+        "zfxZ_CfcrNE",
+        "9Mi0xxoIUbc",
+        "_F1XFJs3t9Y",
+        "LjLONE12zFs",
+        "lcA6hGaZsOM",
+        "fT4GIObuq-s",
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-05",
+      "name": "标题承诺、封面压缩",
+      "mechanism": "标题保留范围与条件，封面只保留一个问题或三项摘要。",
+      "use_when": "复杂财经主题需要两层信息层级。",
+      "avoid_when": "标题与封面承诺不同结论。",
+      "structure": [
+        "标题给完整范围",
+        "封面只留主问题/主数字",
+        "正文兑现两者"
+      ],
+      "confidence": "HIGH",
+      "performance_observation": "30/30 有清晰标题—封面分工记录；台股偏重复/放大，宏观偏补充，未获得曝光数据，无法归因 CTR。",
+      "risk_limitation": "标题与封面承诺若不一致会形成误导；无 impressions/CTR，不能声称提升点击率。",
+      "source_video_ids": [
+        "vdW1eELwnsk",
+        "sgHsCaH2umQ",
+        "fZg4vn7D4XM",
+        "8gn2VKtwHRI",
+        "17_hFgL2bJI",
+        "Iir132pvy-A",
+        "0byAdzUmaos",
+        "ErcFGjqQDfw",
+        "8GxNAzIg3CM",
+        "9Ckyf26ASg4",
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-06",
+      "name": "专家/研究员权威框",
+      "mechanism": "用棚景、职能标签与对谈关系建立解释权威。",
+      "use_when": "专家身份真实且观点与事实分开标示。",
+      "avoid_when": "把身份当成事实证明。",
+      "structure": [
+        "真实专家身份",
+        "可验证资料",
+        "解释",
+        "不确定性边界"
+      ],
+      "confidence": "HIGH",
+      "performance_observation": "宏观唯一 BREAKOUT 为专家特辑，但只有单一案例，不能排除来宾、分发或时点效应。",
+      "risk_limitation": "单例证据、品牌与来宾混杂；绝不能以权威身份代替一级来源。",
+      "source_video_ids": [
+        "4gEpLNIRhhk",
+        "GgnjahnxBVA",
+        "I8TdwvSzzuY",
+        "rpjv4oUa9Gk",
+        "Iv66HJtx2AY",
+        "swpo5Gpi7pc",
+        "zkeWUsTC09E",
+        "k3vTcap8mIM",
+        "fcZ1mOQr6BY",
+        "i_gEGJDcWu8"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    },
+    {
+      "pattern_id": "PAT-07",
+      "name": "风险与机会双信号",
+      "mechanism": "同题并列正面催化与负面条件，形成非单向结论。",
+      "use_when": "FactPack 同时支持增长与约束。",
+      "avoid_when": "为制造冲突而虚构风险或催化。",
+      "structure": [
+        "正面事实",
+        "相反限制",
+        "二阶影响",
+        "验证指标"
+      ],
+      "confidence": "MEDIUM",
+      "performance_observation": "机会词样本 10 条中 5 条为 ABOVE/BREAKOUT；风险词 8 条中 2 条为 ABOVE/BREAKOUT。样本小且频道混杂。",
+      "risk_limitation": "不可为了戏剧冲突制造风险或催化；必须保留反方条件。",
+      "source_video_ids": [
+        "4gEpLNIRhhk",
+        "rpjv4oUa9Gk",
+        "fcZ1mOQr6BY",
+        "vdW1eELwnsk",
+        "9Ckyf26ASg4"
+      ],
+      "text_layer_status": "UNAVAILABLE_NO_TRANSCRIPTS"
+    }
+  ],
+  "composite_rule": {
+    "minimum_source_families": 3,
+    "maximum_single_family_share": 0.4,
+    "named_persona_emulation": false
+  }
+}

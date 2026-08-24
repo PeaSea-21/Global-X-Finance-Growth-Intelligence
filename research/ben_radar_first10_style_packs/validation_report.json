@@ -1,0 +1,10 @@
+{
+  "artifact": "BEN_FIRST10_STYLE_PACK_VALIDATION",
+  "status": "PASS",
+  "channel_count": 10,
+  "channels_with_transcripts": 7,
+  "channels_without_transcripts": 3,
+  "transcript_sample_count": 12,
+  "inventory_row_count": 15,
+  "violations": []
+}

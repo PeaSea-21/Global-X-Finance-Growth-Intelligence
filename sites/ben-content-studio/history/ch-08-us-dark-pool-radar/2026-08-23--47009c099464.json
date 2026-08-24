@@ -1,0 +1,815 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-24T15:56:15+08:00",
+  "snapshot_fingerprint": "47009c0994642a1cc0102bc640e40ef5d1e66a83e49eea31fb40659e6ed53acf",
+  "channel": {
+    "channel_order": 8,
+    "channel_id": "ch-08-us-dark-pool-radar",
+    "channel_name": "暗池雷達",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+    "style_confidence": "MEDIUM_FOR_OPTIONS_ANOMALY_LOW_FOR_TRUE_DARK_POOL",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-23",
+    "profile_promise": "用暗池大宗和期權異常成交識別機構可能的防守、投機或對沖。",
+    "audience": "期權交易者、短線波段客、主力資金觀察者",
+    "language_style": "懸疑式、高張力、先現貨反常再揭示期權大單；生產稿需顯著降低把大單人格化的斷言。",
+    "opening_hook": "先說現貨看起來平靜或大漲，再揭示衍生品市場的反向異常。",
+    "narrative_logic": [
+      "現貨鉤子",
+      "合約欄位",
+      "成交/OI/IV/Delta",
+      "技術位",
+      "事件催化",
+      "多種可能意圖",
+      "驗證條件"
+    ],
+    "ending_pattern": "列突破/跌破/IV變化/OI變化四個驗證點，不宣佈機構唯一意圖。",
+    "profile_sample_alignment": "PARTIAL_MATCH_OPTIONS_HEAVY_TRUE_DARK_POOL_EVIDENCE_NOT_SHOWN",
+    "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+    "topics": [
+      {
+        "candidate_id": "dark-pool-radar:2026-08-23:no-flow-no-claim",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力",
+        "title_options": [
+          "輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力",
+          "NVIDIA財報很熱，但暗池大單在哪？缺這8個欄位不能下結論",
+          "別把期權成交叫暗池：輝達事件週的四項真實驗證表"
+        ],
+        "why_now": [
+          "輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。"
+        ],
+        "why_channel": [
+          "把頻道最容易出現的證據誤區直接拆開，並列出下一步必須補齊的欄位。"
+        ],
+        "facts": [
+          "經濟日報報導輝達將於8月26日公佈上季財報。",
+          "CNBC與科技新報報導AI伺服器調價訊息。"
+        ],
+        "unknowns": [
+          "缺少原始暗池成交列印。",
+          "缺少原始期權鏈，以及合約到期日、履約價、成交量、OI、IV、Delta與買賣方向證據。",
+          "不能把新聞熱度推論成機構單邊意圖。"
+        ],
+        "evidence": [
+          {
+            "source_id": "經濟日報",
+            "evidence_class": "REPORTED",
+            "title": "輝達將於8月26日公布上季財報",
+            "published_at": "2026-08-23T05:04:11+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Nvidia customers reportedly warned about AI-related price hikes",
+            "published_at": "2026-08-22T20:26:44+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "ETtoday財經雲",
+            "evidence_class": "REPORTED",
+            "title": "8月股市展開修復行情！ AI產業鏈從資本支出擴張、轉向獲利驗證",
+            "published_at": "2026-08-22T22:05:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://finance.ettoday.net/news/3224011",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。把頻道最容易出現的證據誤區直接拆開，並列出下一步必須補齊的欄位。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：經濟日報報導輝達將於8月26日公佈上季財報。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CNBC與科技新報報導AI伺服器調價訊息。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。事件週最容易把高成交量誤認為機構下注。沒有原始列印時，公開新聞只能告訴我們市場可能關注什麼，不能告訴我們成交由誰發起。\n\n第二個專屬檢查是：研究上更有價值的做法，是先記錄事件時間與現貨區間，等逐筆成交、期權鏈和隔日OI出現後再回放，避免事前用空白欄位製造確定感。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺少原始暗池成交列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始期權鏈，以及合約到期日、履約價、成交量、OI、IV、Delta與買賣方向證據。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：不能把新聞熱度推論成機構單邊意圖。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自經濟日報、CNBC、ETtoday財經雲。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2105,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把頻道最容易出現的證據誤區直接拆開，並列出下一步必須補齊的欄位。",
+          "editorial_tension": "「輝達8月26日財報前，暗池雷達為何先按暫停鍵？沒有OI就別亂講主力」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺少原始暗池成交列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "輝達財報與伺服器調價訊息升溫，但當前資料沒有原始期權鏈或暗池列印。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有3張可核對來源卡，來源包括經濟日報、CNBC、ETtoday財經雲。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把頻道最容易出現的證據誤區直接拆開，並列出下一步必須補齊的欄位。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺少原始暗池成交列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：經濟日報報導輝達將於8月26日公佈上季財報。",
+        "counter_thesis": "相反解釋是：缺少原始暗池成交列印。",
+        "script_claims": [
+          "經濟日報報導輝達將於8月26日公佈上季財報。",
+          "CNBC與科技新報報導AI伺服器調價訊息。"
+        ],
+        "script_evidence_ids": [
+          "經濟日報",
+          "CNBC",
+          "ETtoday財經雲"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "dark-pool-radar:2026-08-23:no-flow-no-claim:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺少原始暗池成交列印。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "dark-pool-radar:2026-08-23:no-flow-no-claim:2",
+            "claim_type": "CONDITIONAL",
+            "check": "缺少原始期權鏈，以及合約到期日、履約價、成交量、OI、IV、Delta與買賣方向證據。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "dark-pool-radar:2026-08-23:no-flow-no-claim:3",
+            "claim_type": "CONDITIONAL",
+            "check": "不能把新聞熱度推論成機構單邊意圖。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "560ba7b27726cea00e1859dbeaea828ef7943f12e8eb2f6d504b40bdccf1dfdc",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "經濟日報",
+            "CNBC",
+            "ETtoday財經雲"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:08:rates-financing",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力",
+        "title_options": [
+          "博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力",
+          "暗池雷達備選：長債與AI融資同時升溫，缺暗池資料不能寫機構押注"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把公開融資事件與暗池原始成交證據嚴格分開。"
+        ],
+        "facts": [
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+        ],
+        "unknowns": [
+          "缺暗池成交時間、價格、數量與交易場所原始列印。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+            "published_at": "2026-08-22T01:00:23+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+            "published_at": "2026-08-22T15:08:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "先把最刺激的主力結論放下，暗池雷達今天只認原始成交證據。今天完整拆解的題目是「博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。把公開融資事件與暗池原始成交證據嚴格分開。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。大型企業融資要同時看用途與資金價格。拿錢投入能產生高回報的專案，負債可能加速成長；若投資回收期拉長，利息、稀釋或信用利差會先侵蝕股東回報。\n\n第二個專屬檢查是：長債殖利率上升也不能只解讀成經濟強。供給增加、通膨風險與期限溢價都可能推高利率，必須比較實質利率、信用利差與股市盈利預期，才能知道壓力來自哪裡。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺暗池成交時間、價格、數量與交易場所原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自科技新報財經、CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2030,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "rates-financing",
+        "channel_angle": "暗池雷達",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把公開融資事件與暗池原始成交證據嚴格分開。",
+          "editorial_tension": "「博通傳大融資很熱，但暗池列印在哪？沒有成交原始碼先不猜主力」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺暗池成交時間、價格、數量與交易場所原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括科技新報財經、CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把公開融資事件與暗池原始成交證據嚴格分開。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺暗池成交時間、價格、數量與交易場所原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+        "counter_thesis": "相反解釋是：缺暗池成交時間、價格、數量與交易場所原始列印。",
+        "script_claims": [
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+        ],
+        "script_evidence_ids": [
+          "科技新報財經",
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:08:rates-financing:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺暗池成交時間、價格、數量與交易場所原始列印。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:rates-financing:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:rates-financing:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "50e378b77411af7322227e3000a5ffe6cd8529a3413dc6adee47e103f2deb152",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "科技新報財經",
+            "CNBC"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:08:china-capital",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據",
+        "title_options": [
+          "阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據",
+          "暗池雷達備選：100億美元配股話題很大，機構方向仍需原始成交驗證"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "用中概融資事件說明新聞熱度不能替代交易列印。"
+        ],
+        "facts": [
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "unknowns": [
+          "缺港美兩地暗池列印、期權鏈、OI與買賣方向。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Investing.com",
+            "evidence_class": "REPORTED",
+            "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+            "published_at": "2026-08-22T22:30:36+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。用中概融資事件說明新聞熱度不能替代交易列印。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。配股首先改變股數與每股權益，其次才看募集資金能創造多少新增回報。折價幅度、發行比例和用途若未落地，就不能只用募資總額判斷利多利空。\n\n第二個專屬檢查是：AI資本支出的問題是時間差：現金先流出，收入與獲利稍後才驗證。若市場要求更高風險溢價，回收期越長的計畫越敏感，正式檔案與管理層資本回報目標是關鍵。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺港美兩地暗池列印、期權鏈、OI與買賣方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Investing.com。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1905,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "china-capital",
+        "channel_angle": "暗池雷達",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用中概融資事件說明新聞熱度不能替代交易列印。",
+          "editorial_tension": "「阿里配股傳聞不等於期權主力看空：先找港美兩地大單證據」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺港美兩地暗池列印、期權鏈、OI與買賣方向。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Investing.com。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用中概融資事件說明新聞熱度不能替代交易列印。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺港美兩地暗池列印、期權鏈、OI與買賣方向。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。",
+        "counter_thesis": "相反解釋是：缺港美兩地暗池列印、期權鏈、OI與買賣方向。",
+        "script_claims": [
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "script_evidence_ids": [
+          "Investing.com"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:08:china-capital:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺港美兩地暗池列印、期權鏈、OI與買賣方向。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:china-capital:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:china-capital:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "7aae99eef8ec8df847d9d04a235c04f4ccea4b378ac5de5965794d2e853db315",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Investing.com"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:08:crypto-squeeze",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？",
+        "title_options": [
+          "比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？",
+          "暗池雷達備選：Crypto軋空很刺激，別把二手清算數字寫成機構押注"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "區分二手清算報導、交易所資料與機構意圖。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+        ],
+        "unknowns": [
+          "缺交易所逐筆清算、OI、資金費率與現貨流量。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+            "published_at": "2026-08-22T12:00:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+            "published_at": "2026-08-22T05:05:13+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "新聞很熱不代表暗池已經表態，這兩件事必須分開。今天完整拆解的題目是「比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。區分二手清算報導、交易所資料與機構意圖。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。軋空的自我強化鏈是價格上漲、空頭保證金不足、交易所強制回補、價格再上漲。這能解釋速度，卻不能證明新長線資金已經進場。\n\n第二個專屬檢查是：區分趨勢與擠壓，要看清算後的現貨成交、OI與資金費率。OI大降而現貨量沒有增加，較像舊部位被清掉；現貨持續買入且槓桿不過熱，才可能轉成較穩定需求。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺交易所逐筆清算、OI、資金費率與現貨流量。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2095,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "crypto-squeeze",
+        "channel_angle": "暗池雷達",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "區分二手清算報導、交易所資料與機構意圖。",
+          "editorial_tension": "「比特幣空頭被洗不等於聰明錢轉多：27億清算還缺哪些原始欄位？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺交易所逐筆清算、OI、資金費率與現貨流量。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "區分二手清算報導、交易所資料與機構意圖。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺交易所逐筆清算、OI、資金費率與現貨流量。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+        "counter_thesis": "相反解釋是：缺交易所逐筆清算、OI、資金費率與現貨流量。",
+        "script_claims": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:08:crypto-squeeze:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺交易所逐筆清算、OI、資金費率與現貨流量。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:crypto-squeeze:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:crypto-squeeze:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "bc1a8a4e743607acc6abe5df74893d4c4506875b5c5f393eed9265e491b06f99",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:08:ai-cost",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白",
+        "title_options": [
+          "NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白",
+          "暗池雷達備選：AI漲價題材能做監控表，不能冒充暗池結論"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把AI事件轉成待核對的暗池/期權觀察清單。"
+        ],
+        "facts": [
+          "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+          "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+        ],
+        "unknowns": [
+          "缺完整期權鏈、IV、OI、Delta與多腿組合識別。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+            "published_at": "2026-08-23T02:29:41+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "經濟日報",
+            "evidence_class": "REPORTED",
+            "title": "輝達將於8月26日公布上季財報",
+            "published_at": "2026-08-23T05:04:11+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。把AI事件轉成待核對的暗池/期權觀察清單。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：經濟日報刊出「輝達將於8月26日公佈上季財報」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。伺服器報價上升的核心不是漲價本身，而是誰承擔成本。若晶片、記憶體與散熱成本上升能完全轉嫁，供應商毛利可能守住；若客戶延後採購，價格提高反而會壓低出貨量。\n\n第二個專屬檢查是：同一條AI供應鏈的議價權並不平均。設計規格不可替代、產能稀缺或有長約保護的環節較有轉嫁能力，組裝與高度競爭環節則要靠效率消化，財報毛利率會比新聞中的漲幅更有判斷力。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺完整期權鏈、IV、OI、Delta與多腿組合識別。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自科技新報財經、經濟日報。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1996,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "ai-cost",
+        "channel_angle": "暗池雷達",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把AI事件轉成待核對的暗池/期權觀察清單。",
+          "editorial_tension": "「NVIDIA財報前伺服器傳漲價：新聞很熱，期權大單證據仍是空白」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺完整期權鏈、IV、OI、Delta與多腿組合識別。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括科技新報財經、經濟日報。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把AI事件轉成待核對的暗池/期權觀察清單。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺完整期權鏈、IV、OI、Delta與多腿組合識別。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+        "counter_thesis": "相反解釋是：缺完整期權鏈、IV、OI、Delta與多腿組合識別。",
+        "script_claims": [
+          "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+          "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+        ],
+        "script_evidence_ids": [
+          "科技新報財經",
+          "經濟日報"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:08:ai-cost:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺完整期權鏈、IV、OI、Delta與多腿組合識別。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:ai-cost:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:08:ai-cost:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "2b76171359ed5b5d5a794c662eacabc447f9d8fd42f78e7442f22fd6ea87d70a",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "科技新報財經",
+            "經濟日報"
+          ],
+          "status": "FAIL"
+        }
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}

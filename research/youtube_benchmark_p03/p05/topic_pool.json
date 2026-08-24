@@ -1,0 +1,5820 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-17T00:00:00+08:00",
+  "status": "CURRENT_EVENT_POOL_VERIFIED_WITH_LIMITATIONS",
+  "heuristic_notice": "BEN Topic Score V1 is an editorial decision heuristic, not a validated growth model.",
+  "counts": {
+    "total": 40,
+    "TRACK_A_TAIWAN": 15,
+    "TRACK_B_US_AI": 15,
+    "TRACK_C_MACRO": 10
+  },
+  "priority_thresholds": {
+    "PRIORITY_A": "80-100",
+    "PRIORITY_B": "65-79",
+    "PRIORITY_C": "50-64",
+    "SKIP": "below 50"
+  },
+  "topics": [
+    {
+      "topic_id": "TW001",
+      "track": "TRACK_A_TAIWAN",
+      "event": "TSMC published 2Q26 results",
+      "title_internal": "台积电营收增长之后，利润与估值要看哪一层？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-16",
+      "why_now": "财报仍是本轮台股与 AI 供应链预期的核心基准。",
+      "primary_evidence": [
+        "BE001"
+      ],
+      "supporting_evidence": [
+        "BE002"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "台积电盈利与资本开支预期会影响台股权重股及半导体供应链。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "营收创高不等于利润、订单与估值同步，需要拆分利润率、平台与指引。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE001。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "台积电盈利与资本开支预期会影响台股权重股及半导体供应链。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-16；财报仍是本轮台股与 AI 供应链预期的核心基准。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "营收创高不等于利润、订单与估值同步，需要拆分利润率、平台与指引。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "36% 年增与利润率可形成事实—限制冲突。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "财报表格、营收与利润率双图。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把单一营收新闻升级为盈利质量与验证点。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 81,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW002",
+      "track": "TRACK_A_TAIWAN",
+      "event": "TSMC advanced nodes reached 77% of wafer revenue",
+      "title_internal": "先进制程 77%：台积电增长的结构是否更集中？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-16",
+      "why_now": "2nm 已进入营收组合，先进制程结构对供应链仍有解释价值。",
+      "primary_evidence": [
+        "BE002"
+      ],
+      "supporting_evidence": [
+        "BE001"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "制程组合影响公司毛利结构、资本开支与台湾设备材料链预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "77% 需要拆成 2/3/5/7nm，且占比不能直接推导单一供应商受益。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE002。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "制程组合影响公司毛利结构、资本开支与台湾设备材料链预期。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-16；2nm 已进入营收组合，先进制程结构对供应链仍有解释价值。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "77% 需要拆成 2/3/5/7nm，且占比不能直接推导单一供应商受益。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "用 77% 主数字，标题追问集中度与外溢。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "制程占比堆叠图。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "给出制程组合与可验证供应链路径，而非泛称 AI 利多。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 13,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 78,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW003",
+      "track": "TRACK_A_TAIWAN",
+      "event": "TSMC HPC was 66% of 2Q26 revenue",
+      "title_internal": "HPC 66%：AI 需求如何改写台积电平台组合？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-16",
+      "why_now": "HPC 已成为最主要平台，适合解释 AI 与手机业务的分化。",
+      "primary_evidence": [
+        "BE002"
+      ],
+      "supporting_evidence": [
+        "BE001"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "HPC 与手机组合变化牵动台积电与相关供应链的成长叙事。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "HPC 不是纯 AI，平台占比不能等同 AI 营收，需要限制过度推断。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE002。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "HPC 与手机组合变化牵动台积电与相关供应链的成长叙事。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-07-16；HPC 已成为最主要平台，适合解释 AI 与手机业务的分化。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 12,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "HPC 不是纯 AI，平台占比不能等同 AI 营收，需要限制过度推断。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "HPC 66% 对比手机 22% 形成清楚冲突。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "平台收入占比横条图。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "主动解释 HPC 定义与不能下的结论。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 12,
+      "freshness_score": 10,
+      "evidence_strength_score": 12,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 74,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW004",
+      "track": "TRACK_A_TAIWAN",
+      "event": "North America represented 78% of TSMC revenue",
+      "title_internal": "北美客户占 78%：增长与集中风险如何同时看？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-16",
+      "why_now": "客户地区集中度是营收增长之外的风险维度。",
+      "primary_evidence": [
+        "BE002"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "地区集中度可能放大客户周期、政策与汇率风险。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "公司披露的是客户总部地区，并非终端需求地区，也没有单一客户拆分。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE002。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 12,
+          "max": 20,
+          "reason": "地区集中度可能放大客户周期、政策与汇率风险。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-07-16；客户地区集中度是营收增长之外的风险维度。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 12,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "公司披露的是客户总部地区，并非终端需求地区，也没有单一客户拆分。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 6,
+          "max": 10,
+          "reason": "78% 数字适合风险—机会双信号。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "地区占比圆环与定义脚注。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把地区口径限制放进正文，避免误称终端市场集中。",
+          "evidence": [
+            "BE002"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 12,
+      "audience_relevance_score": 11,
+      "freshness_score": 8,
+      "evidence_strength_score": 12,
+      "explanation_gap_score": 7,
+      "packaging_score": 6,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 68,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "benchmark_evidence": [
+        "BP01",
+        "BP07"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW005",
+      "track": "TRACK_A_TAIWAN",
+      "event": "TSMC issued 3Q26 guidance and margin range",
+      "title_internal": "台积电 3Q 指引：高成长能否覆盖海外厂稀释？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-16",
+      "why_now": "3Q 指引仍待实际营收和利润率验证，海外厂稀释是明确限制。",
+      "primary_evidence": [
+        "BE002"
+      ],
+      "supporting_evidence": [
+        "BE001"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "指引与利润率直接影响盈利预期，也关系台湾供应链景气判断。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "市场容易只看营收高点，忽略汇率假设、海外厂稀释与利润率区间。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE002。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 17,
+          "max": 20,
+          "reason": "指引与利润率直接影响盈利预期，也关系台湾供应链景气判断。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-16；3Q 指引仍待实际营收和利润率验证，海外厂稀释是明确限制。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "市场容易只看营收高点，忽略汇率假设、海外厂稀释与利润率区间。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "44.6–45.8 亿美元区间与海外厂限制构成明确决策题。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "指引区间、利润率与海外厂图示。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "同时给出增长、成本与下一验证点，不做目标价。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 17,
+      "audience_relevance_score": 13,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 84,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "benchmark_evidence": [
+        "BF02",
+        "BF06",
+        "BP01",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW006",
+      "track": "TRACK_A_TAIWAN",
+      "event": "TSMC June revenue rose 67.9% year over year",
+      "title_internal": "台积电六月营收大增，月营收能告诉我们多少？",
+      "entity": "TSMC",
+      "ticker": "2330.TW",
+      "event_time": "2026-07-10",
+      "why_now": "月营收是 3Q 指引兑现前可更新的高频数据。",
+      "primary_evidence": [
+        "BE003"
+      ],
+      "supporting_evidence": [
+        "BE002"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "台积电月营收影响市场对季度进度与供应链周期的判断。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "单月高增无法单独确认利润、产品组合与股价方向。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE003。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "台积电月营收影响市场对季度进度与供应链周期的判断。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 9,
+          "max": 15,
+          "reason": "事件日期为 2026-07-10；月营收是 3Q 指引兑现前可更新的高频数据。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "单月高增无法单独确认利润、产品组合与股价方向。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "67.9% 是强数字，同时可做数据边界教育。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "月营收折线与季度指引区间。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 2,
+          "max": 5,
+          "reason": "窗口偏事件型，后续需用新数据更新。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "用累计与季度指引交叉，而非把单月等同获利。",
+          "evidence": [
+            "BE003",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 13,
+      "freshness_score": 9,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 2,
+      "differentiation_score": 3,
+      "total_score": 72,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BP01",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW007",
+      "track": "TRACK_A_TAIWAN",
+      "event": "UMC reported 2Q26 results",
+      "title_internal": "联电 22/28nm 占比 37%，成熟制程复苏到哪一步？",
+      "entity": "UMC",
+      "ticker": "2303.TW",
+      "event_time": "2026-07-29",
+      "why_now": "财报提供产能利用率与制程组合，可检验成熟制程景气。",
+      "primary_evidence": [
+        "BE004"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "成熟制程景气影响联电及台湾相关设备、材料与设计服务。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "营收、利用率与制程占比之间仍需解释，不等同全面价格复苏。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE004。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 11,
+          "max": 20,
+          "reason": "成熟制程景气影响联电及台湾相关设备、材料与设计服务。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；财报提供产能利用率与制程组合，可检验成熟制程景气。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 12,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "营收、利用率与制程占比之间仍需解释，不等同全面价格复苏。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "37% 制程占比和 85% 利用率有数据入口。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "制程占比与利用率双轴图。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把成熟制程拆成组合、利用率与利润率。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 11,
+      "audience_relevance_score": 11,
+      "freshness_score": 10,
+      "evidence_strength_score": 12,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 70,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW008",
+      "track": "TRACK_A_TAIWAN",
+      "event": "UMC raised capex and expected utilization above 90%",
+      "title_internal": "联电提高资本支出，是需求确认还是周期高点信号？",
+      "entity": "UMC",
+      "ticker": "2303.TW",
+      "event_time": "2026-07-29",
+      "why_now": "资本支出上调与利用率指引形成机会—风险双信号。",
+      "primary_evidence": [
+        "BE004"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "资本开支和利用率会改变成熟制程供需与盈利预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "需求强度、价格和新增产能回报仍是未知，不能直接判定周期持续。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE004。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "资本开支和利用率会改变成熟制程供需与盈利预期。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；资本支出上调与利用率指引形成机会—风险双信号。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "需求强度、价格和新增产能回报仍是未知，不能直接判定周期持续。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "US$2bn capex 与 >90% 利用率天然形成决策问题。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "资本开支箭头与利用率表盘。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把扩产解读拆成需求确认、供给风险与验证条件。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 12,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 80,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "benchmark_evidence": [
+        "BF02",
+        "BP01",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW009",
+      "track": "TRACK_A_TAIWAN",
+      "event": "UMC shipped first 12-inch silicon-photonics production wafers",
+      "title_internal": "联电切入硅光量产，2027 平台意味着什么？",
+      "entity": "UMC",
+      "ticker": "2303.TW",
+      "event_time": "2026-07-29",
+      "why_now": "公司给出量产进展与 2027 平台时间点，适合产业链解释。",
+      "primary_evidence": [
+        "BE004"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "硅光可能连接成熟制程、先进封装与 AI 数据中心投资。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "客户、营收规模、良率与平台商业化贡献未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE004。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 10,
+          "max": 20,
+          "reason": "硅光可能连接成熟制程、先进封装与 AI 数据中心投资。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 9,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；公司给出量产进展与 2027 平台时间点，适合产业链解释。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 11,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "客户、营收规模、良率与平台商业化贡献未披露。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "首批量产与 2027 时间点可做产业链地图。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "硅光链路图和公司时间轴。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "明确哪些是已交付、哪些仍是公司计划。",
+          "evidence": [
+            "BE004"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 10,
+      "audience_relevance_score": 9,
+      "freshness_score": 10,
+      "evidence_strength_score": 11,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 66,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW010",
+      "track": "TRACK_A_TAIWAN",
+      "event": "AMD said EPYC Venice was ramping on TSMC 2nm",
+      "title_internal": "AMD Venice 上台积电 2nm，台湾供应链真正新增了什么？",
+      "entity": "AMD / TSMC",
+      "ticker": "AMD;2330.TW",
+      "event_time": "2026-05-21",
+      "why_now": "AMD 2Q 数据中心增长为此前 2nm 量产消息提供新的需求背景。",
+      "primary_evidence": [
+        "BE008"
+      ],
+      "supporting_evidence": [
+        "BE011",
+        "BE002"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "先进制程客户量产关系台积电产能、封装与台湾供应链预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "具体晶圆量、良率、订单与供应商受益幅度未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE008。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 15,
+          "max": 20,
+          "reason": "先进制程客户量产关系台积电产能、封装与台湾供应链预期。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-05-21；AMD 2Q 数据中心增长为此前 2nm 量产消息提供新的需求背景。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "具体晶圆量、良率、订单与供应商受益幅度未披露。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "2nm 量产与数据中心翻倍形成清楚因果待验证链。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 5,
+          "max": 5,
+          "reason": "AMD 服务器芯片—TSMC 2nm—供应链链路。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "只说明可验证关系，不列未经证实受惠股名单。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 15,
+      "audience_relevance_score": 13,
+      "freshness_score": 10,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 5,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 82,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW011",
+      "track": "TRACK_A_TAIWAN",
+      "event": "AMD announced more than US$10bn Taiwan ecosystem investment",
+      "title_internal": "AMD 的百亿美元台湾布局，钱会落在哪些环节？",
+      "entity": "AMD",
+      "ticker": "AMD",
+      "event_time": "2026-05-21",
+      "why_now": "后续 AMD 产品与合作公告让投资落点仍值得追踪。",
+      "primary_evidence": [
+        "BE008"
+      ],
+      "supporting_evidence": [
+        "BE011"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "投资可能影响研发、供应链与数据中心生态，但金额口径需拆解。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "投资期限、资本性/采购性构成与台湾公司收入映射未完全披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE008。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 11,
+          "max": 20,
+          "reason": "投资可能影响研发、供应链与数据中心生态，但金额口径需拆解。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-05-21；后续 AMD 产品与合作公告让投资落点仍值得追踪。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 11,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "投资期限、资本性/采购性构成与台湾公司收入映射未完全披露。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "US$10bn 是强数字，但必须追问口径与落点。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "台湾地图与投资项目分层。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "将承诺金额拆成可观测执行里程碑。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 11,
+      "audience_relevance_score": 11,
+      "freshness_score": 8,
+      "evidence_strength_score": 11,
+      "explanation_gap_score": 8,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 68,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW012",
+      "track": "TRACK_A_TAIWAN",
+      "event": "Taiwan June exports rose 40.3% year over year",
+      "title_internal": "台湾出口增 40.3%，台股景气真的全面转强吗？",
+      "entity": "Taiwan trade",
+      "ticker": "N/A",
+      "event_time": "2026-07-08",
+      "why_now": "高出口增长与更快的进口增长同时出现，需要解释结构而非只看单一增速。",
+      "primary_evidence": [
+        "BE007"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "出口与进口反映台湾外需、电子供应链和库存/设备投入。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "本证据未拆商品类别，不能直接归因 AI 或推导所有台股公司受益。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE007。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "出口与进口反映台湾外需、电子供应链和库存/设备投入。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-08；高出口增长与更快的进口增长同时出现，需要解释结构而非只看单一增速。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "本证据未拆商品类别，不能直接归因 AI 或推导所有台股公司受益。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "40.3% 出口与 51.8% 进口形成共识挑战。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "进出口双柱与贸易顺差。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "先讲总量，再标明需要商品分类才能落到行业。",
+          "evidence": [
+            "BE007"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 83,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF07",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW013",
+      "track": "TRACK_A_TAIWAN",
+      "event": "MediaTek held its 2Q26 investor conference",
+      "title_internal": "联发科财报后，边缘 AI 与手机周期要核对哪三项？",
+      "entity": "MediaTek",
+      "ticker": "2454.TW",
+      "event_time": "2026-07-31",
+      "why_now": "官方已确认财报会发生，但本工件尚未提取结果数字。",
+      "primary_evidence": [
+        "BE005"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "联发科横跨手机、边缘 AI 与连接芯片，是台股重要科技公司。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "财报数字、指引与业务拆分在本工件中为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE005。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 11,
+          "max": 20,
+          "reason": "联发科横跨手机、边缘 AI 与连接芯片，是台股重要科技公司。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-07-31；官方已确认财报会发生，但本工件尚未提取结果数字。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 6,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "财报数字、指引与业务拆分在本工件中为 UNAVAILABLE。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "财报后三指标检查清单具包装空间。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "财报表格占位，但不得填入未核数据。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "只有补齐官方结果才可升级制作。",
+          "evidence": [
+            "BE005"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 11,
+      "audience_relevance_score": 11,
+      "freshness_score": 8,
+      "evidence_strength_score": 6,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 3,
+      "total_score": 60,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW014",
+      "track": "TRACK_A_TAIWAN",
+      "event": "Hon Hai listed July revenue and 2Q26 investor events",
+      "title_internal": "鸿海财报与月营收后，AI 服务器兑现要看什么？",
+      "entity": "Hon Hai",
+      "ticker": "2317.TW",
+      "event_time": "2026-08-12",
+      "why_now": "官方日程已确认且事件很新，但本工件未提取数字。",
+      "primary_evidence": [
+        "BE006"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "鸿海是台股权重公司，AI 服务器与消费电子组合影响盈利预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "2Q 结果、AI 服务器收入、指引与月营收数字为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE006。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 12,
+          "max": 20,
+          "reason": "鸿海是台股权重公司，AI 服务器与消费电子组合影响盈利预期。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-08-12；官方日程已确认且事件很新，但本工件未提取数字。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 6,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "2Q 结果、AI 服务器收入、指引与月营收数字为 UNAVAILABLE。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "月营收、财报、AI 服务器三指标可形成检查清单。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "官方简报与业务组合图待补。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 2,
+          "max": 5,
+          "reason": "明确待核字段，避免用媒体数字替代。",
+          "evidence": [
+            "BE006"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 12,
+      "audience_relevance_score": 11,
+      "freshness_score": 10,
+      "evidence_strength_score": 6,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 2,
+      "total_score": 62,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "TW015",
+      "track": "TRACK_A_TAIWAN",
+      "event": "Delta held its 2Q26 analyst meeting",
+      "title_internal": "台达电财报后的 AI 电源需求，哪些数字才算兑现？",
+      "entity": "Delta Electronics",
+      "ticker": "2308.TW",
+      "event_time": "2026-07-30",
+      "why_now": "官方会议已确认，但结果数据尚未纳入本工件。",
+      "primary_evidence": [
+        "BE009"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "AI 数据中心电源与散热需求可能影响台达电业务预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "财报、分部营收、订单和利润率数字为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE009。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 9,
+          "max": 20,
+          "reason": "AI 数据中心电源与散热需求可能影响台达电业务预期。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 10,
+          "max": 15,
+          "reason": "直接服务 TRACK_A_TAIWAN 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-07-30；官方会议已确认，但结果数据尚未纳入本工件。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 6,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "财报、分部营收、订单和利润率数字为 UNAVAILABLE。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 6,
+          "max": 10,
+          "reason": "用兑现指标而非概念股标签。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 3,
+          "max": 5,
+          "reason": "分部数据图待官方资料。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "把 AI 叙事转成待核数字列表。",
+          "evidence": [
+            "BE009"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 9,
+      "audience_relevance_score": 10,
+      "freshness_score": 8,
+      "evidence_strength_score": 6,
+      "explanation_gap_score": 7,
+      "packaging_score": 6,
+      "visual_score": 3,
+      "shelf_life_score": 3,
+      "differentiation_score": 3,
+      "total_score": 55,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US001",
+      "track": "TRACK_B_US_AI",
+      "event": "NVIDIA scheduled FY27 Q2 results for August 26",
+      "title_internal": "NVIDIA 财报前，AI 需求要由哪三项数据验证？",
+      "entity": "NVIDIA",
+      "ticker": "NVDA",
+      "event_time": "2026-08-26",
+      "why_now": "财报日距本工件 9 天，适合做明确标注的预览与观察清单。",
+      "primary_evidence": [
+        "BE010"
+      ],
+      "supporting_evidence": [
+        "BE011",
+        "BE012"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "NVIDIA 财报可能重置 AI 资本开支、GPU 供需与科技股预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "结果尚未发生；需区分已知日程、同业信号与待公布指标。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE010。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "NVIDIA 财报可能重置 AI 资本开支、GPU 供需与科技股预期。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-26；财报日距本工件 9 天，适合做明确标注的预览与观察清单。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "结果尚未发生；需区分已知日程、同业信号与待公布指标。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "财报前的三指标决策题具高时效性。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "日历倒计时、三项待核指标。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "用同业财报建立问题，不预测 NVIDIA 结果。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 85,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "benchmark_evidence": [
+        "BF06",
+        "BP01",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US002",
+      "track": "TRACK_B_US_AI",
+      "event": "AMD reported record 2Q26 revenue",
+      "title_internal": "AMD 营收增 50%，数据中心翻倍后下一道考题是什么？",
+      "entity": "AMD",
+      "ticker": "AMD",
+      "event_time": "2026-08-04",
+      "why_now": "这是最新已披露大型 AI 芯片财报，可作为 NVIDIA 财报前的同业事实基线。",
+      "primary_evidence": [
+        "BE011"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "AMD 财报影响 GPU/CPU 竞争、AI 服务器与半导体供应链预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "增长能否延续、部署兑现和竞争份额仍未知。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE011。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 17,
+          "max": 20,
+          "reason": "AMD 财报影响 GPU/CPU 竞争、AI 服务器与半导体供应链预期。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-04；这是最新已披露大型 AI 芯片财报，可作为 NVIDIA 财报前的同业事实基线。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "增长能否延续、部署兑现和竞争份额仍未知。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "50%、107%、58% 三个数字可形成层级。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 5,
+          "max": 5,
+          "reason": "公司营收与数据中心分部图。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "同时检查增长质量、指引和执行风险。",
+          "evidence": [
+            "BE011"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 17,
+      "audience_relevance_score": 13,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 5,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 87,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US003",
+      "track": "TRACK_B_US_AI",
+      "event": "AMD disclosed an Anthropic partnership for up to 2GW",
+      "title_internal": "2GW 的 AMD–Anthropic 合作，订单、部署与收入差在哪？",
+      "entity": "AMD / Anthropic",
+      "ticker": "AMD",
+      "event_time": "2026-07-22",
+      "why_now": "2Q 财报再次披露合作，市场需要区分容量框架与已实现收入。",
+      "primary_evidence": [
+        "BE011"
+      ],
+      "supporting_evidence": [
+        "BE008"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "大规模 AI 算力部署可能影响 GPU 竞争、资本开支与供应链。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "部署节奏、价格、确认收入和最终利用率未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE011。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "大规模 AI 算力部署可能影响 GPU 竞争、资本开支与供应链。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-07-22；2Q 财报再次披露合作，市场需要区分容量框架与已实现收入。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "部署节奏、价格、确认收入和最终利用率未披露。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "2GW 是强数字，也最容易被误读成即时订单收入。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "2GW 容量条与部署阶段漏斗。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把合作公告拆成容量、设备、交付与收入四层。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 12,
+      "freshness_score": 12,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 83,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US004",
+      "track": "TRACK_B_US_AI",
+      "event": "AMD expanded Microsoft deployment collaboration",
+      "title_internal": "微软扩大部署 AMD Helios，AI GPU 竞争出现什么变化？",
+      "entity": "AMD / Microsoft",
+      "ticker": "AMD;MSFT",
+      "event_time": "2026-07-20",
+      "why_now": "AMD 2Q 财报把微软合作列为近期进展，适合检验非 NVIDIA 供应路径。",
+      "primary_evidence": [
+        "BE011"
+      ],
+      "supporting_evidence": [
+        "BE008"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "云厂商部署选择影响 AI 芯片竞争、供需和资本开支分配。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "规模、时间、定价与实际份额变化未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE011。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "云厂商部署选择影响 AI 芯片竞争、供需和资本开支分配。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-07-20；AMD 2Q 财报把微软合作列为近期进展，适合检验非 NVIDIA 供应路径。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 12,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "规模、时间、定价与实际份额变化未披露。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "云厂商—芯片—算力供给链清楚。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "Azure、Helios 与 GPU 供应图。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "用部署证据讨论竞争，不宣称格局已逆转。",
+          "evidence": [
+            "BE011",
+            "BE008"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 12,
+      "freshness_score": 12,
+      "evidence_strength_score": 12,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 78,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US005",
+      "track": "TRACK_B_US_AI",
+      "event": "AMD announced acquisition of Taalas",
+      "title_internal": "AMD 收购 Taalas，推理成本战会改变什么？",
+      "entity": "AMD / Taalas",
+      "ticker": "AMD",
+      "event_time": "2026-08-06",
+      "why_now": "并购刚公布，适合解释推理专用化与全栈竞争。",
+      "primary_evidence": [
+        "BE008"
+      ],
+      "supporting_evidence": [
+        "BE011"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "推理架构与并购可能影响 AMD 产品路线与 AI 基础设施竞争。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "交易价格、整合时间、产品商业化与收入贡献未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE008。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 12,
+          "max": 20,
+          "reason": "推理架构与并购可能影响 AMD 产品路线与 AI 基础设施竞争。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-06；并购刚公布，适合解释推理专用化与全栈竞争。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "交易价格、整合时间、产品商业化与收入贡献未披露。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "并购事件可压成“买了什么能力、何时验证”。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "并购双方与推理流程图。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "不把技术愿景写成已实现盈利。",
+          "evidence": [
+            "BE008",
+            "BE011"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 12,
+      "audience_relevance_score": 11,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 76,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US006",
+      "track": "TRACK_B_US_AI",
+      "event": "Meta revenue rose 28% while costs rose 55%",
+      "title_internal": "Meta 营收增 28%、成本增 55%，AI 投资回报怎么判断？",
+      "entity": "Meta",
+      "ticker": "META",
+      "event_time": "2026-07-29",
+      "why_now": "财报仍处当前科技财报季，收入与成本分化提供清楚实验题。",
+      "primary_evidence": [
+        "BE012"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "Meta 的资本开支和广告变现影响大型科技股盈利与 AI 投资叙事。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "无法从单季证明新增 AI 支出带来的增量收入或长期回报。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE012。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 17,
+          "max": 20,
+          "reason": "Meta 的资本开支和广告变现影响大型科技股盈利与 AI 投资叙事。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；财报仍处当前科技财报季，收入与成本分化提供清楚实验题。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "无法从单季证明新增 AI 支出带来的增量收入或长期回报。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "28% 对 55% 的冲突天然适合共识挑战。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 5,
+          "max": 5,
+          "reason": "收入、成本、利润率三柱图。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把广告经营指标与 AI 成本分开，避免伪因果。",
+          "evidence": [
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 17,
+      "audience_relevance_score": 13,
+      "freshness_score": 12,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 5,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 86,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US007",
+      "track": "TRACK_B_US_AI",
+      "event": "Meta reported US$31.08bn quarterly capex",
+      "title_internal": "Meta 单季资本支出 310.8 亿美元，谁在付 AI 的账单？",
+      "entity": "Meta",
+      "ticker": "META",
+      "event_time": "2026-07-29",
+      "why_now": "资本支出是 AI 基础设施链的重要需求证据，也带来利润与现金流问题。",
+      "primary_evidence": [
+        "BE012"
+      ],
+      "supporting_evidence": [
+        "BE011",
+        "BE017"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "大型科技资本支出影响芯片、服务器、电力与公司自由现金流。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "资本开支具体分配、折旧节奏与供应商份额未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE012。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 15,
+          "max": 20,
+          "reason": "大型科技资本支出影响芯片、服务器、电力与公司自由现金流。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；资本支出是 AI 基础设施链的重要需求证据，也带来利润与现金流问题。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "资本开支具体分配、折旧节奏与供应商份额未披露。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "310.8 亿美元主数字可连接买方与供应链。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "资本支出流向示意与现金流边界。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "从官方 capex 出发，禁止擅自分配到供应商。",
+          "evidence": [
+            "BE012",
+            "BE011",
+            "BE017"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 15,
+      "audience_relevance_score": 13,
+      "freshness_score": 12,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 82,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US008",
+      "track": "TRACK_B_US_AI",
+      "event": "Tesla delivered 480,126 vehicles and deployed 13.5 GWh",
+      "title_internal": "特斯拉交付 48 万辆，为什么还不能直接判断财报？",
+      "entity": "Tesla",
+      "ticker": "TSLA",
+      "event_time": "2026-07-02",
+      "why_now": "公司自身提示交付不能代表季度财务，适合做数据误读纠正。",
+      "primary_evidence": [
+        "BE013"
+      ],
+      "supporting_evidence": [
+        "BE014"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "交付与储能是特斯拉经营重要指标，但投资者需要连接到价格、利润与现金流。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "车型组合、平均售价、利润率与现金流不能从交付公告得出。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE013。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 15,
+          "max": 20,
+          "reason": "交付与储能是特斯拉经营重要指标，但投资者需要连接到价格、利润与现金流。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-07-02；公司自身提示交付不能代表季度财务，适合做数据误读纠正。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "车型组合、平均售价、利润率与现金流不能从交付公告得出。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "48 万辆与公司警示形成强解释缺口。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "交付、储能与财务指标三层图。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "用官方警示反驳单指标推断。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 15,
+      "audience_relevance_score": 12,
+      "freshness_score": 10,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 80,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": false,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US009",
+      "track": "TRACK_B_US_AI",
+      "event": "Tesla published 2Q26 financial results",
+      "title_internal": "特斯拉二季财报：交付之外的利润与现金流检查",
+      "entity": "Tesla",
+      "ticker": "TSLA",
+      "event_time": "2026-07-22",
+      "why_now": "结果发布已确认，但本工件没有提取财报数字。",
+      "primary_evidence": [
+        "BE014"
+      ],
+      "supporting_evidence": [
+        "BE013"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "财报能补足交付量无法回答的盈利与现金流问题。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "利润、现金流、指引数字在本工件中为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE014。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 11,
+          "max": 20,
+          "reason": "财报能补足交付量无法回答的盈利与现金流问题。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 9,
+          "max": 15,
+          "reason": "事件日期为 2026-07-22；结果发布已确认，但本工件没有提取财报数字。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 7,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "利润、现金流、指引数字在本工件中为 UNAVAILABLE。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "交付与财务的差距适合解释。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "交付—毛利—现金流漏斗待补数据。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 2,
+          "max": 5,
+          "reason": "补齐官方财报后才可制作。",
+          "evidence": [
+            "BE014",
+            "BE013"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 11,
+      "audience_relevance_score": 11,
+      "freshness_score": 9,
+      "evidence_strength_score": 7,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 2,
+      "total_score": 61,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US010",
+      "track": "TRACK_B_US_AI",
+      "event": "Amazon held its 2Q26 results call",
+      "title_internal": "Amazon 财报后，AWS 与 AI 资本支出要核对什么？",
+      "entity": "Amazon",
+      "ticker": "AMZN",
+      "event_time": "2026-07-30",
+      "why_now": "官方结果会已发生，但本工件未提取数字。",
+      "primary_evidence": [
+        "BE015"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "AWS 与资本支出影响云端 AI 需求和 Amazon 盈利。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "营收、AWS 增长、capex 和指引为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE015。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 12,
+          "max": 20,
+          "reason": "AWS 与资本支出影响云端 AI 需求和 Amazon 盈利。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-07-30；官方结果会已发生，但本工件未提取数字。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 6,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "营收、AWS 增长、capex 和指引为 UNAVAILABLE。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "云增长与资本支出是清楚双变量。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 3,
+          "max": 5,
+          "reason": "AWS 与 capex 图待官方数字。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 2,
+          "max": 5,
+          "reason": "未补证据前不得使用二级媒体数字。",
+          "evidence": [
+            "BE015"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 12,
+      "audience_relevance_score": 12,
+      "freshness_score": 8,
+      "evidence_strength_score": 6,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 3,
+      "shelf_life_score": 3,
+      "differentiation_score": 2,
+      "total_score": 60,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US011",
+      "track": "TRACK_B_US_AI",
+      "event": "Microsoft published FY26 Q4 results on July 29",
+      "title_internal": "微软财报后，AI 收入与资本支出是否同步？",
+      "entity": "Microsoft",
+      "ticker": "MSFT",
+      "event_time": "2026-07-29",
+      "why_now": "Q4 发布日已确认，Q3 官方数据可作旧基线，但 Q4 数字未提取。",
+      "primary_evidence": [
+        "BE016"
+      ],
+      "supporting_evidence": [
+        "BE017"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "Azure、AI ARR 和资本支出影响 AI 需求与大型科技估值。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "FY26 Q4 数字在本工件中为 UNAVAILABLE；Q3 数据不能冒充 Q4。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE016。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 12,
+          "max": 20,
+          "reason": "Azure、AI ARR 和资本支出影响 AI 需求与大型科技估值。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 9,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；Q4 发布日已确认，Q3 官方数据可作旧基线，但 Q4 数字未提取。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 6,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "FY26 Q4 数字在本工件中为 UNAVAILABLE；Q3 数据不能冒充 Q4。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 7,
+          "max": 10,
+          "reason": "收入与资本支出同步性有解释价值。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "AI ARR、云增长、capex 三指标待补。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "明确旧基线与新季度的时间差。",
+          "evidence": [
+            "BE016",
+            "BE017"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 12,
+      "audience_relevance_score": 12,
+      "freshness_score": 9,
+      "evidence_strength_score": 6,
+      "explanation_gap_score": 7,
+      "packaging_score": 7,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 3,
+      "total_score": 63,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US012",
+      "track": "TRACK_B_US_AI",
+      "event": "Microsoft reported AI ARR above US$37bn in FY26 Q3",
+      "title_internal": "AI ARR 超 370 亿、资本支出约 1900 亿，微软回报周期有多长？",
+      "entity": "Microsoft",
+      "ticker": "MSFT",
+      "event_time": "2026-04-29",
+      "why_now": "虽非本周事件，但仍是 2026 AI 资本开支与供给约束的重要官方基线。",
+      "primary_evidence": [
+        "BE017"
+      ],
+      "supporting_evidence": [
+        "BE011",
+        "BE012"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "AI 收入与资本开支差距影响微软盈利、供应链需求与行业估值。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "ARR 与 capex 口径不同，不能做简单回收期除法；Q4 更新数据未提取。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE017。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "AI 收入与资本开支差距影响微软盈利、供应链需求与行业估值。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 7,
+          "max": 15,
+          "reason": "事件日期为 2026-04-29；虽非本周事件，但仍是 2026 AI 资本开支与供给约束的重要官方基线。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "ARR 与 capex 口径不同，不能做简单回收期除法；Q4 更新数据未提取。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "370 亿对约 1900 亿提供强对照，但需解释口径。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "收入与 capex 双柱加口径标签。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把不可比口径当成核心教育点。",
+          "evidence": [
+            "BE017",
+            "BE011",
+            "BE012"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 7,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 78,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF04",
+        "BF06",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US013",
+      "track": "TRACK_B_US_AI",
+      "event": "Apple expanded Broadcom chip spending",
+      "title_internal": "Apple 增加 Broadcom 芯片采购，美国芯片链谁真正受益？",
+      "entity": "Apple / Broadcom",
+      "ticker": "AAPL;AVGO",
+      "event_time": "2026-07-08",
+      "why_now": "供应链公告仍在执行窗口，适合区分采购承诺与收入确认。",
+      "primary_evidence": [
+        "BE018"
+      ],
+      "supporting_evidence": [
+        "BE019"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "大客户采购安排可能影响 Broadcom 与美国半导体供应链预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "金额、产品组合、交付节奏和利润贡献未披露。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE018。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 13,
+          "max": 20,
+          "reason": "大客户采购安排可能影响 Broadcom 与美国半导体供应链预期。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 9,
+          "max": 15,
+          "reason": "事件日期为 2026-07-08；供应链公告仍在执行窗口，适合区分采购承诺与收入确认。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "金额、产品组合、交付节奏和利润贡献未披露。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "“数十亿颗”可视化强，但不能换算收入。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "Apple—Broadcom—制造链路。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "把数量承诺与财务结果严格分开。",
+          "evidence": [
+            "BE018",
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 13,
+      "audience_relevance_score": 12,
+      "freshness_score": 9,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 3,
+      "total_score": 74,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+      "benchmark_evidence": [
+        "BF06",
+        "BP03"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US014",
+      "track": "TRACK_B_US_AI",
+      "event": "Broadcom published fiscal Q2 2026 results",
+      "title_internal": "Broadcom 67% 营业利润指引，AI 芯片增长质量怎么看？",
+      "entity": "Broadcom",
+      "ticker": "AVGO",
+      "event_time": "2026-06-04",
+      "why_now": "仍可作为 AI 基础设施盈利质量的季度基准。",
+      "primary_evidence": [
+        "BE019"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "Broadcom 是 AI 网络与定制芯片链的重要公司，利润率指引影响估值。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "本工件只锁定一项非 GAAP 指引，完整财报指标未提取。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE019。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 13,
+          "max": 20,
+          "reason": "Broadcom 是 AI 网络与定制芯片链的重要公司，利润率指引影响估值。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-06-04；仍可作为 AI 基础设施盈利质量的季度基准。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "evidence_strength": {
+          "score": 11,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "本工件只锁定一项非 GAAP 指引，完整财报指标未提取。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "67% 指引是清楚数字但需标非 GAAP。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "利润率区间与口径标签。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "强调非 GAAP 与预测属性。",
+          "evidence": [
+            "BE019"
+          ],
+          "confidence": "MEDIUM"
+        }
+      },
+      "market_impact_score": 13,
+      "audience_relevance_score": 11,
+      "freshness_score": 8,
+      "evidence_strength_score": 11,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 3,
+      "total_score": 70,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "MEDIUM",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "US015",
+      "track": "TRACK_B_US_AI",
+      "event": "Intel scheduled 2Q26 results for July 23",
+      "title_internal": "Intel 二季财报后，代工与产品业务要分开看什么？",
+      "entity": "Intel",
+      "ticker": "INTC",
+      "event_time": "2026-07-23",
+      "why_now": "财报事件已确认，但本工件未提取结果。",
+      "primary_evidence": [
+        "BE020"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "Intel 同时影响 CPU 竞争、美国制造与晶圆代工叙事。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "Q2 营收、分部、毛利率与指引为 UNAVAILABLE。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE020。"
+        },
+        "decision": "NEED_EVIDENCE"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 11,
+          "max": 20,
+          "reason": "Intel 同时影响 CPU 竞争、美国制造与晶圆代工叙事。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_B_US_AI 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "freshness": {
+          "score": 8,
+          "max": 15,
+          "reason": "事件日期为 2026-07-23；财报事件已确认，但本工件未提取结果。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "evidence_strength": {
+          "score": 7,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "explanation_gap": {
+          "score": 7,
+          "max": 10,
+          "reason": "Q2 营收、分部、毛利率与指引为 UNAVAILABLE。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "packaging": {
+          "score": 6,
+          "max": 10,
+          "reason": "产品与代工拆分具解释价值。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "visual": {
+          "score": 3,
+          "max": 5,
+          "reason": "两业务分栏待官方数据。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        },
+        "differentiation": {
+          "score": 2,
+          "max": 5,
+          "reason": "补齐官方结果前保持待证据。",
+          "evidence": [
+            "BE020"
+          ],
+          "confidence": "LOW"
+        }
+      },
+      "market_impact_score": 11,
+      "audience_relevance_score": 11,
+      "freshness_score": 8,
+      "evidence_strength_score": 7,
+      "explanation_gap_score": 7,
+      "packaging_score": 6,
+      "visual_score": 3,
+      "shelf_life_score": 3,
+      "differentiation_score": 2,
+      "total_score": 58,
+      "priority": "PRIORITY_C",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF06",
+        "BP05"
+      ],
+      "confidence": "LOW",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA001",
+      "track": "TRACK_C_MACRO",
+      "event": "FOMC held rates with three dissenters favoring a hike",
+      "title_internal": "Fed 按兵不动却出现三票加息，市场该看哪条传导链？",
+      "entity": "Federal Reserve",
+      "ticker": "N/A",
+      "event_time": "2026-07-29",
+      "why_now": "政策利率未变但投票分歧显著，下一轮通胀与就业数据会检验分歧。",
+      "primary_evidence": [
+        "BE021"
+      ],
+      "supporting_evidence": [
+        "BE023",
+        "BE024"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "利率路径影响估值、美元、资金成本与全球风险偏好。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "声明不等于未来路径；市场定价、后续数据和委员观点会变化。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE021。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 18,
+          "max": 20,
+          "reason": "利率路径影响估值、美元、资金成本与全球风险偏好。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；政策利率未变但投票分歧显著，下一轮通胀与就业数据会检验分歧。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "声明不等于未来路径；市场定价、后续数据和委员观点会变化。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "“不动”与“三票加息”形成强冲突。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 5,
+          "max": 5,
+          "reason": "利率区间、9–3 投票与传导箭头。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "把投票分歧连接到可验证数据，不预测必然加息。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 18,
+      "audience_relevance_score": 13,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 5,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 88,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA002",
+      "track": "TRACK_C_MACRO",
+      "event": "US real GDP growth slowed to 1.5% annualized",
+      "title_internal": "美国 GDP 放缓到 1.5%，为何内需指标反而加速？",
+      "entity": "US economy",
+      "ticker": "N/A",
+      "event_time": "2026-07-30",
+      "why_now": "8 月 26 日将发布第二次估计，当前分项矛盾具持续解释价值。",
+      "primary_evidence": [
+        "BE022"
+      ],
+      "supporting_evidence": [
+        "BE028"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "增长与内需分化影响盈利预期、利率路径和风险偏好。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "初值会修订，库存与贸易分项可能改变解读。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE022。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "增长与内需分化影响盈利预期、利率路径和风险偏好。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-07-30；8 月 26 日将发布第二次估计，当前分项矛盾具持续解释价值。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "初值会修订，库存与贸易分项可能改变解读。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "1.5% GDP 对 3.9% 私人国内最终销售形成反差。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "GDP 与 final sales 双柱。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "用分项解释表面放缓，保留修订风险。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 12,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 84,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA003",
+      "track": "TRACK_C_MACRO",
+      "event": "US private domestic final sales grew 3.9%",
+      "title_internal": "GDP 慢、私人内需快：美股该相信哪个增长信号？",
+      "entity": "US economy",
+      "ticker": "N/A",
+      "event_time": "2026-07-30",
+      "why_now": "市场需要在 GDP headline 与内需底层指标之间做区分。",
+      "primary_evidence": [
+        "BE022"
+      ],
+      "supporting_evidence": [],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "私人国内最终销售可帮助判断企业收入环境与经济底层需求。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "单季年化波动大，不能单独确定趋势或股市方向。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE022。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 15,
+          "max": 20,
+          "reason": "私人国内最终销售可帮助判断企业收入环境与经济底层需求。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-30；市场需要在 GDP headline 与内需底层指标之间做区分。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 0 个。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "单季年化波动大，不能单独确定趋势或股市方向。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "headline 与底层指标冲突清楚。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "GDP headline 与内需分项对照。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "解释指标用途与限制，而非挑选有利数字。",
+          "evidence": [
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 15,
+      "audience_relevance_score": 12,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 80,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA004",
+      "track": "TRACK_C_MACRO",
+      "event": "2Q26 PCE prices rose 5.1% annualized",
+      "title_internal": "增长降温但 PCE 季增 5.1%，这是怎样的组合？",
+      "entity": "US economy",
+      "ticker": "N/A",
+      "event_time": "2026-07-30",
+      "why_now": "增长与季度通胀组合直接关系 Fed 分歧，也将被月度数据继续检验。",
+      "primary_evidence": [
+        "BE022"
+      ],
+      "supporting_evidence": [
+        "BE021",
+        "BE023"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "增长—通胀组合影响利率、估值与股票风格。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "季度 PCE 年化口径与 12 个月 CPI 不可直接比较；后续会修订。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE022。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 16,
+          "max": 20,
+          "reason": "增长—通胀组合影响利率、估值与股票风格。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 11,
+          "max": 15,
+          "reason": "事件日期为 2026-07-30；增长与季度通胀组合直接关系 Fed 分歧，也将被月度数据继续检验。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "季度 PCE 年化口径与 12 个月 CPI 不可直接比较；后续会修订。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "1.5% 增长对 5.1% PCE 是强双数字。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "增长/价格二维象限。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "先统一口径，再解释条件性传导。",
+          "evidence": [
+            "BE022",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 16,
+      "audience_relevance_score": 13,
+      "freshness_score": 11,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 82,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA005",
+      "track": "TRACK_C_MACRO",
+      "event": "July CPI rose 0.1% and 3.4% year over year",
+      "title_internal": "CPI 月增 0.1%、年增 3.4%，降息还是加息更有根据？",
+      "entity": "US inflation",
+      "ticker": "N/A",
+      "event_time": "2026-08-12",
+      "why_now": "这是最新消费通胀数据，恰逢 FOMC 三位委员主张加息后的验证窗口。",
+      "primary_evidence": [
+        "BE023"
+      ],
+      "supporting_evidence": [
+        "BE021",
+        "BE025"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "通胀路径影响政策利率、美元、美债和股票估值。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "单月与同比方向不同；Fed 还会看 PCE、就业与金融条件。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE023。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 18,
+          "max": 20,
+          "reason": "通胀路径影响政策利率、美元、美债和股票估值。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-12；这是最新消费通胀数据，恰逢 FOMC 三位委员主张加息后的验证窗口。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "单月与同比方向不同；Fed 还会看 PCE、就业与金融条件。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "0.1% 月增与 3.4% 年增形成口径解释题。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "headline/core、月比/年比四格。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "不把单月 CPI 写成确定政策信号。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 18,
+      "audience_relevance_score": 13,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 87,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP05",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA006",
+      "track": "TRACK_C_MACRO",
+      "event": "July payrolls declined by 23,000",
+      "title_internal": "就业减少 2.3 万、失业率 4.1%，坏消息会变成股市利多吗？",
+      "entity": "US labor market",
+      "ticker": "N/A",
+      "event_time": "2026-08-07",
+      "why_now": "最新就业数据与通胀、Fed 投票分歧共同决定政策讨论。",
+      "primary_evidence": [
+        "BE024"
+      ],
+      "supporting_evidence": [
+        "BE021",
+        "BE023"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "就业影响消费、企业盈利与 Fed 政策反应。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "数据会修订；坏消息是否利多取决于通胀、盈利与市场预期。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE024。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 17,
+          "max": 20,
+          "reason": "就业影响消费、企业盈利与 Fed 政策反应。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 13,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-07；最新就业数据与通胀、Fed 投票分歧共同决定政策讨论。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "数据会修订；坏消息是否利多取决于通胀、盈利与市场预期。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "负就业与稳定失业率形成冲突。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "就业、失业率、薪资三指标。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "反驳“坏消息必然利多”的机械叙事。",
+          "evidence": [
+            "BE024",
+            "BE021",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 17,
+      "audience_relevance_score": 13,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 4,
+      "total_score": 85,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP07"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA007",
+      "track": "TRACK_C_MACRO",
+      "event": "July PPI final demand was unchanged",
+      "title_internal": "PPI 零增长，企业成本压力真的消失了吗？",
+      "entity": "US producer prices",
+      "ticker": "N/A",
+      "event_time": "2026-08-14",
+      "why_now": "最新生产者价格可与 CPI 和企业毛利讨论交叉。",
+      "primary_evidence": [
+        "BE025"
+      ],
+      "supporting_evidence": [
+        "BE023"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "生产者价格影响通胀管线与行业利润率讨论。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "总指数持平不代表所有分项或企业成本均持平。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE025。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "生产者价格影响通胀管线与行业利润率讨论。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-14；最新生产者价格可与 CPI 和企业毛利讨论交叉。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "总指数持平不代表所有分项或企业成本均持平。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "零增长适合反问“压力是否消失”。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "总指数与分项占位图。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "强调 PPI 到 CPI/利润率不是一对一传导。",
+          "evidence": [
+            "BE025",
+            "BE023"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 11,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 3,
+      "total_score": 78,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA008",
+      "track": "TRACK_C_MACRO",
+      "event": "July retail sales fell 0.6% month over month",
+      "title_internal": "美国零售月减 0.6%、年增 5.0%，消费到底强不强？",
+      "entity": "US consumer",
+      "ticker": "N/A",
+      "event_time": "2026-08-14",
+      "why_now": "最新零售数据同时给出月降与年增，需要剥离基期和价格影响。",
+      "primary_evidence": [
+        "BE026"
+      ],
+      "supporting_evidence": [
+        "BE023",
+        "BE024"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "消费影响企业营收、经济增长与政策预期。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "名义数据含价格效应，初值会修订，行业分项未纳入本工件。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE026。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 14,
+          "max": 20,
+          "reason": "消费影响企业营收、经济增长与政策预期。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 13,
+          "max": 15,
+          "reason": "事件日期为 2026-08-14；最新零售数据同时给出月降与年增，需要剥离基期和价格影响。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 2 个。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "名义数据含价格效应，初值会修订，行业分项未纳入本工件。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 9,
+          "max": 10,
+          "reason": "-0.6% 与 +5.0% 是清楚的时间口径冲突。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "月比/年比双箭头。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 3,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "讲清名义、基期与修订。",
+          "evidence": [
+            "BE026",
+            "BE023",
+            "BE024"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 14,
+      "audience_relevance_score": 12,
+      "freshness_score": 13,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 9,
+      "visual_score": 4,
+      "shelf_life_score": 3,
+      "differentiation_score": 3,
+      "total_score": 80,
+      "priority": "PRIORITY_A",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA009",
+      "track": "TRACK_C_MACRO",
+      "event": "US June goods trade deficit narrowed to US$101.5bn",
+      "title_internal": "贸易逆差缩小，是出口变强还是进口更弱？",
+      "entity": "US trade",
+      "ticker": "N/A",
+      "event_time": "2026-07-29",
+      "why_now": "出口与进口都下降，headline 改善可能被误读。",
+      "primary_evidence": [
+        "BE027"
+      ],
+      "supporting_evidence": [
+        "BE022"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "贸易分项会影响 GDP 计算、全球需求与供应链判断。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "初值会修订，无法仅凭总额判断产品和地区变化。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE027。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 13,
+          "max": 20,
+          "reason": "贸易分项会影响 GDP 计算、全球需求与供应链判断。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 11,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 10,
+          "max": 15,
+          "reason": "事件日期为 2026-07-29；出口与进口都下降，headline 改善可能被误读。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 9,
+          "max": 10,
+          "reason": "初值会修订，无法仅凭总额判断产品和地区变化。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "逆差改善与双向萎缩形成反直觉。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 4,
+          "max": 5,
+          "reason": "出口、进口与逆差瀑布图。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 3,
+          "max": 5,
+          "reason": "区分算术改善与需求改善。",
+          "evidence": [
+            "BE027",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 13,
+      "audience_relevance_score": 11,
+      "freshness_score": 10,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 9,
+      "packaging_score": 8,
+      "visual_score": 4,
+      "shelf_life_score": 4,
+      "differentiation_score": 3,
+      "total_score": 75,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    },
+    {
+      "topic_id": "MA010",
+      "track": "TRACK_C_MACRO",
+      "event": "BEA will publish the 2Q26 GDP second estimate",
+      "title_internal": "8 月 26 日 GDP 修订，哪三个分项最可能改写判断？",
+      "entity": "US economy",
+      "ticker": "N/A",
+      "event_time": "2026-08-26",
+      "why_now": "距发布 9 天，适合建立更新清单而不是预测结果。",
+      "primary_evidence": [
+        "BE028"
+      ],
+      "supporting_evidence": [
+        "BE022"
+      ],
+      "qualification_gate": {
+        "G1_REAL_EVENT": {
+          "status": "PASS",
+          "reason": "主证据为官方已发生事件或明确官方日程。"
+        },
+        "G2_FINANCIAL_RELEVANCE": {
+          "status": "PASS",
+          "reason": "GDP 修订可能改变增长、内需与通胀组合的叙事。"
+        },
+        "G3_EXPLANATION_VALUE": {
+          "status": "PASS",
+          "reason": "修订值尚未发生，任何数值预测均为 UNKNOWN。"
+        },
+        "G4_EVIDENCE": {
+          "status": "PASS",
+          "reason": "可追溯至 BE028。"
+        },
+        "decision": "QUALIFIED"
+      },
+      "score_breakdown": {
+        "market_impact": {
+          "score": 13,
+          "max": 20,
+          "reason": "GDP 修订可能改变增长、内需与通胀组合的叙事。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "audience_relevance": {
+          "score": 12,
+          "max": 15,
+          "reason": "直接服务 TRACK_C_MACRO 受众的公司、产业或资产判断。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "freshness": {
+          "score": 12,
+          "max": 15,
+          "reason": "事件日期为 2026-08-26；距发布 9 天，适合建立更新清单而不是预测结果。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "evidence_strength": {
+          "score": 13,
+          "max": 15,
+          "reason": "已有 1 个一级/官方主证据；支持证据 1 个。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "explanation_gap": {
+          "score": 8,
+          "max": 10,
+          "reason": "修订值尚未发生，任何数值预测均为 UNKNOWN。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "packaging": {
+          "score": 8,
+          "max": 10,
+          "reason": "发布日与三个待核分项可形成预览。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "visual": {
+          "score": 5,
+          "max": 5,
+          "reason": "日历与 GDP 分项 checklist。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "shelf_life": {
+          "score": 4,
+          "max": 5,
+          "reason": "除即时结果外仍可沉淀为指标、产业链或传导机制说明。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        },
+        "differentiation": {
+          "score": 4,
+          "max": 5,
+          "reason": "先注册判断标准，发布后再更新。",
+          "evidence": [
+            "BE028",
+            "BE022"
+          ],
+          "confidence": "HIGH"
+        }
+      },
+      "market_impact_score": 13,
+      "audience_relevance_score": 12,
+      "freshness_score": 12,
+      "evidence_strength_score": 13,
+      "explanation_gap_score": 8,
+      "packaging_score": 8,
+      "visual_score": 5,
+      "shelf_life_score": 4,
+      "differentiation_score": 4,
+      "total_score": 79,
+      "priority": "PRIORITY_B",
+      "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP05"
+      ],
+      "confidence": "HIGH",
+      "human_review_required": true,
+      "score_calibration_note": "V1 editorial calibration; heuristic, not a performance prediction."
+    }
+  ]
+}

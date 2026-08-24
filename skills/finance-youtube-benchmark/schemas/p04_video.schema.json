@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P04 real-evidence video record",
+  "type": "object",
+  "required": [
+    "channel_name", "channel_id", "video_id", "canonical_url", "title", "published_at",
+    "duration", "thumbnail_url", "video_type", "topic", "views", "likes", "comments",
+    "caption_status", "evidence_source", "collected_at", "evidence_status", "title_features",
+    "thumbnail_features", "analysis_card", "performance"
+  ],
+  "properties": {
+    "channel_name": {"type": "string", "minLength": 1},
+    "channel_id": {"type": "string", "pattern": "^UC[A-Za-z0-9_-]{20,}$"},
+    "video_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{11}$"},
+    "canonical_url": {"type": "string", "pattern": "^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]{11}$"},
+    "title": {"type": "string", "minLength": 1},
+    "published_at": {"type": "string", "minLength": 1},
+    "duration": {"type": ["string", "integer"]},
+    "thumbnail_url": {"type": "string", "pattern": "^https://i[0-9]?\\.ytimg\\.com/vi/|^https://i\\.ytimg\\.com/vi/"},
+    "video_type": {"enum": ["REGULAR", "SHORT", "LIVESTREAM", "CLIP", "UNKNOWN"]},
+    "topic": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "views": {"type": ["integer", "string"]},
+    "likes": {"type": ["integer", "string"]},
+    "comments": {"type": ["integer", "string"]},
+    "caption_status": {"enum": ["AVAILABLE", "UNAVAILABLE", "UNKNOWN", "NOT_RUN"]},
+    "evidence_source": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "collected_at": {"type": "string", "minLength": 1},
+    "evidence_status": {"type": "string", "minLength": 1},
+    "title_features": {"type": "object"},
+    "thumbnail_features": {
+      "type": "object",
+      "required": ["inspection_status", "source", "people", "text_density", "hierarchy", "complexity", "title_thumbnail_relation"]
+    },
+    "analysis_card": {
+      "type": "object",
+      "required": ["title_promise", "thumbnail_expression", "first_30_seconds_hook", "core_conflict", "evidence_use", "transferable_structure", "do_not_copy"]
+    },
+    "performance": {
+      "type": "object",
+      "required": ["performance_ratio", "performance_label", "performance_evidence_status"]
+    }
+  },
+  "additionalProperties": true
+}

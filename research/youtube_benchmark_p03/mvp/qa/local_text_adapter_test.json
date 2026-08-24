@@ -1,0 +1,29 @@
+{
+  "adapter": "local_text",
+  "backend_status": "AVAILABLE",
+  "actual_run_status": "SUCCESS",
+  "endpoint_verified": "VERIFIED",
+  "extraction_method_verified": "VERIFIED",
+  "terms_status": "APPROVED",
+  "commercial_use_status": "UNKNOWN",
+  "cache_hit": false,
+  "external_calls": 0,
+  "estimated_cost_usd": 0.0,
+  "transcript": {
+    "status": "AVAILABLE",
+    "sha256": "1d575e37580ae4a6e9d759120b18cbc66d445362fe0bff5f4c73456c9d1ca6cb",
+    "body_persisted": false,
+    "character_count": 75,
+    "sentence_count": 3
+  },
+  "rhythm": {
+    "average_sentence_characters": 23.0,
+    "short_sentence_ratio": 0.3333,
+    "question_count": 0,
+    "transition_count": 0,
+    "number_mention_count": 0
+  },
+  "limitations": [
+    "Automated metrics do not replace human narrative analysis."
+  ]
+}

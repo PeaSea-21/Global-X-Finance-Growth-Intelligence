@@ -1,13 +1,11 @@
 # Handoff
 
-- 更新时间：2026-08-18 11:55:15 +08:00
-- GitHub `origin/main` contains the complete BEN Radar P02 through Stock Workbench V0.1 chain at commit `af0f478`. Runtime databases, caches, screenshots, unrelated YouTube benchmark research, local skills, and credentials remain local only.
-- BEN RADAR Step 4 Stock Workbench V0.1 is complete; V0.1 anomaly rules and thresholds were not changed.
-- Dynamic route: `http://127.0.0.1:8765/stock-radar` when the local Flask process is running.
-- Public read-only EOD snapshot: `https://ben-finance-radar.nels-sedhq.chatgpt.site` (Sites version 4).
-- Both surfaces use the 2026-08-17 Anomaly Engine Replay and show 20 clickable stocks with actual volume, prior-20 median, RVOL, liquidity, Chinese rule labels, explanations, and streak context.
-- Stock detail uses real unified EOD OHLCV; 1M/3M candles, volume bars, and prior-20/prior-40 high lines are implemented. The bounded store currently supplies about 50 sessions, so 3M shows all available history rather than inventing missing days.
-- Early momentum and persistence are display-only and do not alter ranking. Missing MOPS Evidence is shown as unconfirmed rather than inferred.
-- Desktop 1280px and mobile 390px passed with no horizontal overflow or page console errors. Full repository check passed 94 tests plus credential scan; public Sites tests passed 2/2.
-- Public snapshot refresh remains manual. Dynamic cold render recomputes six Replay dates and can take roughly 15–20 seconds before the in-process cache is warm.
-- Recommended next task only if explicitly requested: human finance/content review of the 20 stocks and chart workflow; do not change rules from page impressions alone.
+- 更新时间：2026-08-24 17:15:00 +08:00
+- 55题已升级为契约v2：标题、核心问题、五段理由、正反论点、事实主张、Evidence与三个检查点须逐项进入正文；审计 `PASS`、0 violations。
+- 11个可见频道各有不可覆盖历史版本。每日先归档再替换；同内容幂等、同日改稿另存版本。结果只凭观察日期、测量结果和可点击Evidence追加，不改旧标题/正文。
+- 页面已有 `今日文稿 / 歷史回顧`；文稿前134张信源卡显示原文标题、发布时间、真实抓取时间（若有）和核对链接。时间缺失/非法会阻断发布，两条自动化已同步。
+- 验证：19项聚焦测试、Node测试、134/134时间审计、150项完整检查、凭证扫描及1440x1000/390x844验收通过。
+- 今日阶段A未生成，14:45补强为 `SOURCE_PENDING`，故未发布；公网仍为 `f80a5fa`，尚不含本次本地UI/历史功能。
+- 数据缺口：TAIFEX、借券、暗池、完整期权链、链上地址和ETF流量仍为 `UNKNOWN`。
+- 下一任务：同日门槛通过时验证“真实fetched_at → 归档 → 新稿 → 回顾 → 发布 → 公网核验”。
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->

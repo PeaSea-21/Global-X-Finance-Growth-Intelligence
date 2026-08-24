@@ -1,0 +1,33 @@
+{
+  "candidate": "research\\youtube_benchmark_p03\\mvp\\generation\\variant_a_script.txt",
+  "comparison_type": "peer",
+  "source_count": 2,
+  "status": "PASS",
+  "comparisons": [
+    {
+      "longest_match_characters": 24,
+      "longest_match_candidate_offset": 82,
+      "longest_match_source_offset": 106,
+      "ngram_size": 8,
+      "ngram_jaccard": 0.044223,
+      "sequence_ratio": 0.447721,
+      "comparison_type": "peer",
+      "status": "PASS",
+      "source": "research\\youtube_benchmark_p03\\mvp\\generation\\variant_b_script.txt"
+    },
+    {
+      "longest_match_characters": 41,
+      "longest_match_candidate_offset": 53,
+      "longest_match_source_offset": 71,
+      "ngram_size": 8,
+      "ngram_jaccard": 0.073381,
+      "sequence_ratio": 0.415789,
+      "comparison_type": "peer",
+      "status": "PASS",
+      "source": "research\\youtube_benchmark_p03\\mvp\\generation\\variant_c_script.txt"
+    }
+  ],
+  "limitations": [
+    "Heuristic overlap thresholds are review signals, not legal safe harbors."
+  ]
+}

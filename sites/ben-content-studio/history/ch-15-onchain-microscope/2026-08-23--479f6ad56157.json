@@ -1,0 +1,779 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-24T15:56:15+08:00",
+  "snapshot_fingerprint": "479f6ad5615708a50693981b9dfd069ad52355cce5b128a3850ba58642e8afd8",
+  "channel": {
+    "channel_order": 15,
+    "channel_id": "ch-15-onchain-microscope",
+    "channel_name": "鏈上顯微鏡",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "MEDIUM_FOR_MECHANISM_LOW_FOR_TRUE_ONCHAIN_ADDRESS_ANALYSIS",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-23",
+    "profile_promise": "用鏈上、機構持倉與衍生品資料拆解巨鯨累積、獲利盤壓力與多空清算。",
+    "audience": "加密貨幣交易者、鏈上資料研究者、高階交易員",
+    "language_style": "繁體中文；先丟關鍵數字，再拆持倉或清算機制，語速快但比暗池頻道更偏資料解釋。",
+    "opening_hook": "直接報一個機構持倉變化或大額清算，再說這個訊號能證明什麼、不能證明什麼。",
+    "narrative_logic": [
+      "數字鉤子",
+      "資料口徑",
+      "持倉/清算機制",
+      "同類機構比較",
+      "價格區間",
+      "替代解釋",
+      "下一個鏈上驗證點"
+    ],
+    "ending_pattern": "以轉多、被套或槓桿推動的多解釋收尾，請觀眾用下一組資料驗證。",
+    "profile_sample_alignment": "PARTIAL_MATCH_SAMPLES_ARE_13F_AND_LIQUIDATION_NOT_TRUE_ONCHAIN_ADDRESS_MONITORING",
+    "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+    "topics": [
+      {
+        "candidate_id": "onchain-microscope-2026-08-23-btc-liquidation",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "比特幣單週漲22%、27億美元空頭被清算：鏈上轉多，還是槓桿推動？",
+        "title_options": [
+          "比特幣單週漲22%、27億美元空頭被清算：鏈上轉多，還是槓桿推動？",
+          "27億美元空軍被洗掉！BTC這波上漲有多少是真實現貨買盤？",
+          "比特幣急漲後別急喊牛市：清算、OI與鏈上地址還差哪幾塊證據？"
+        ],
+        "why_now": [
+          "24–48小時窗口出現比特幣週漲22%與單日約27億美元空頭清算的高注意度報導。"
+        ],
+        "why_channel": [
+          "清算機制可作為衍生品籌碼入口，但稿件明確區分槓桿軋空與真正地址級鏈上累積。"
+        ],
+        "facts": [
+          "ETtoday引述市場資料報導，比特幣單週上漲22%。",
+          "同一報導稱單日約27億美元加密貨幣空頭部位被清算。",
+          "Yahoo Finance刊出Mark Cuban對比特幣反彈的保留意見；該意見屬市場觀點。"
+        ],
+        "unknowns": [
+          "沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。",
+          "沒有完整OI、資金費率與現貨ETF流量，不能判定巨鯨或機構方向。",
+          "清算統計來自二手報導，仍需原始平臺口徑核對。"
+        ],
+        "evidence": [
+          {
+            "source_id": "ETtoday財經雲",
+            "evidence_class": "REPORTED",
+            "title": "比特幣本周大漲22%！ 單日空頭遭血洗27億美元",
+            "published_at": "2026-08-22T02:06:00+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.ettoday.net/news/3223700",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Yahoo Finance",
+            "evidence_class": "REPORTED",
+            "title": "Exclusive: Billionaire Mark Cuban pours cold water on Bitcoin's comeback",
+            "published_at": "2026-08-21T22:58:05+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.yahoo.com/markets/crypto/articles/exclusive-billionaire-mark-cuban-pours-225805674.html",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "鏈上世界最有價值的是可驗證，但前提是拿得到地址與交易雜湊。今天完整拆解的題目是「比特幣單週漲22%、27億美元空頭被清算：鏈上轉多，還是槓桿推動？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。24–48小時窗口出現比特幣週漲22%與單日約27億美元空頭清算的高注意度報導。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。清算機制可作為衍生品籌碼入口，但目前內容明確區分槓桿軋空與真正地址級鏈上累積。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：ETtoday引述市場資料報導，比特幣單週上漲22%。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：同一報導稱單日約27億美元加密貨幣空頭部位被清算。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第3項已確認事實是：Yahoo Finance刊出Mark Cuban對比特幣反彈的保留意見；該意見屬市場觀點。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。軋空的自我強化鏈是價格上漲、空頭保證金不足、交易所強制回補、價格再上漲。這能解釋速度，卻不能證明新長線資金已經進場。\n\n第二個專屬檢查是：區分趨勢與擠壓，要看清算後的現貨成交、OI與資金費率。OI大降而現貨量沒有增加，較像舊部位被清掉；現貨持續買入且槓桿不過熱，才可能轉成較穩定需求。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：沒有完整OI、資金費率與現貨ETF流量，不能判定巨鯨或機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：清算統計來自二手報導，仍需原始平臺口徑核對。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自ETtoday財經雲、Yahoo Finance。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2279,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「比特幣單週漲22%、27億美元空頭被清算：鏈上轉多，還是槓桿推動？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：24–48小時窗口出現比特幣週漲22%與單日約27億美元空頭清算的高注意度報導。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "24–48小時窗口出現比特幣週漲22%與單日約27億美元空頭清算的高注意度報導。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "清算機制可作為衍生品籌碼入口，但稿件明確區分槓桿軋空與真正地址級鏈上累積。",
+          "editorial_tension": "「比特幣單週漲22%、27億美元空頭被清算：鏈上轉多，還是槓桿推動？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "24–48小時窗口出現比特幣週漲22%與單日約27億美元空頭清算的高注意度報導。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括ETtoday財經雲、Yahoo Finance。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "清算機制可作為衍生品籌碼入口，但稿件明確區分槓桿軋空與真正地址級鏈上累積。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：ETtoday引述市場資料報導，比特幣單週上漲22%。",
+        "counter_thesis": "相反解釋是：沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。",
+        "script_claims": [
+          "ETtoday引述市場資料報導，比特幣單週上漲22%。",
+          "同一報導稱單日約27億美元加密貨幣空頭部位被清算。",
+          "Yahoo Finance刊出Mark Cuban對比特幣反彈的保留意見；該意見屬市場觀點。"
+        ],
+        "script_evidence_ids": [
+          "ETtoday財經雲",
+          "Yahoo Finance"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "onchain-microscope-2026-08-23-btc-liquidation:1",
+            "claim_type": "CONDITIONAL",
+            "check": "沒有鏈上地址、交易所淨流入、成本分佈與交易雜湊證據。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "onchain-microscope-2026-08-23-btc-liquidation:2",
+            "claim_type": "CONDITIONAL",
+            "check": "沒有完整OI、資金費率與現貨ETF流量，不能判定巨鯨或機構方向。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "onchain-microscope-2026-08-23-btc-liquidation:3",
+            "claim_type": "CONDITIONAL",
+            "check": "清算統計來自二手報導，仍需原始平臺口徑核對。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "1c44dfa164b967da9e475eeede1e4c092bd19cab51efab7cee6eec853f8902ef",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1,
+            2
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "ETtoday財經雲",
+            "Yahoo Finance"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:15:exchange-risk",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？",
+        "title_options": [
+          "BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？",
+          "鏈上顯微鏡備選：交易所恢復營運前，先查儲備地址、負債與提款流"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把交易所重啟新聞轉成地址、儲備與提款流的驗證清單。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown」。"
+        ],
+        "unknowns": [
+          "缺交易所公開地址、儲備證明、負債與提款佇列原始資料。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
+            "published_at": "2026-08-22T15:16:41+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。把交易所重啟新聞轉成地址、儲備與提款流的驗證清單。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。交易所重啟服務不等於資產負債缺口已解決。需要把客戶資產、平臺自有資產、負債、凍結資金與提款順序分開，並核對是否有獨立儲備證明。\n\n第二個專屬檢查是：部分債權人付款也可能只是流動性安排。若沒有完整負債表、公開地址和提款完成率，就無法估算回收比例，更不能把重啟訊息當成風險解除。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺交易所公開地址、儲備證明、負債與提款佇列原始資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1931,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "exchange-risk",
+        "channel_angle": "鏈上顯微鏡",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把交易所重啟新聞轉成地址、儲備與提款流的驗證清單。",
+          "editorial_tension": "「BitMart談重啟與債權人付款：交易所資產缺口能從鏈上驗證嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺交易所公開地址、儲備證明、負債與提款佇列原始資料。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把交易所重啟新聞轉成地址、儲備與提款流的驗證清單。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺交易所公開地址、儲備證明、負債與提款佇列原始資料。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown」。",
+        "counter_thesis": "相反解釋是：缺交易所公開地址、儲備證明、負債與提款佇列原始資料。",
+        "script_claims": [
+          "CoinDesk刊出「Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:15:exchange-risk:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺交易所公開地址、儲備證明、負債與提款佇列原始資料。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:exchange-risk:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:exchange-risk:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "ecc1d621b87c2ce6fb6b26cb3b2ca2c68582b73180770ce88a819939dab77d57",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:15:bridge-risk",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？",
+        "title_options": [
+          "Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？",
+          "鏈上顯微鏡備選：跨鏈橋出事別只看幣價，先追合約、地址與停橋範圍"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把跨鏈橋事件拆成合約、地址與資金暴露範圍。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit」。"
+        ],
+        "unknowns": [
+          "缺漏洞交易雜湊、受影響合約、地址清單與資產金額。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
+            "published_at": "2026-08-22T14:10:17+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "鏈上世界最有價值的是可驗證，但前提是拿得到地址與交易雜湊。今天完整拆解的題目是「Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。把跨鏈橋事件拆成合約、地址與資金暴露範圍。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。跨鏈橋事件要先定位受影響合約與區塊，再追蹤資產是否被鑄造、轉移、兌換或凍結。只知道暫停橋接，還不能估算實際損失。\n\n第二個專屬檢查是：橋接暫停會造成流動性分割：同一資產在不同鏈上的價格和可兌換性可能分化。使用者風險不只來自漏洞，也來自無法及時退出與對手方承諾。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺漏洞交易雜湊、受影響合約、地址清單與資產金額。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1898,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "bridge-risk",
+        "channel_angle": "鏈上顯微鏡",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把跨鏈橋事件拆成合約、地址與資金暴露範圍。",
+          "editorial_tension": "「Sandbox暫停Base與BNB跨鏈橋：資金卡在哪條鏈、風險多大？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺漏洞交易雜湊、受影響合約、地址清單與資產金額。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把跨鏈橋事件拆成合約、地址與資金暴露範圍。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺漏洞交易雜湊、受影響合約、地址清單與資產金額。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit」。",
+        "counter_thesis": "相反解釋是：缺漏洞交易雜湊、受影響合約、地址清單與資產金額。",
+        "script_claims": [
+          "CoinDesk刊出「Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:15:bridge-risk:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺漏洞交易雜湊、受影響合約、地址清單與資產金額。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:bridge-risk:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:bridge-risk:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "e849908ead979ab1c8c7f68f8c7c198945e5455b33909c80be6c4c274e5cb75e",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:15:tokenization",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？",
+        "title_options": [
+          "代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？",
+          "鏈上顯微鏡備選：Tokenized stocks不是換個代號，清算與所有權才是核心"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "從鏈上結算、持有人記錄與資產對映檢查代幣化證券。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+        ],
+        "unknowns": [
+          "缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+            "published_at": "2026-08-22T14:00:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "鏈上世界最有價值的是可驗證，但前提是拿得到地址與交易雜湊。今天完整拆解的題目是「代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。從鏈上結算、持有人記錄與資產對映檢查代幣化證券。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。代幣化股票要分清鏈上代幣、實際證券與最終受益權。投資人持有的究竟是股票、存託憑證、合約債權或平臺內部記帳，會決定投票、股息、破產隔離與追索權。\n\n第二個專屬檢查是：技術可全天轉移不等於底層資產可全天結算。託管、公司行動、贖回與監管仍可能受傳統系統限制；真正的效率要用失敗率、結算時間和資產對帳驗證。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1924,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "tokenization",
+        "channel_angle": "鏈上顯微鏡",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "從鏈上結算、持有人記錄與資產對映檢查代幣化證券。",
+          "editorial_tension": "「代幣化股票被警告可能重演紙本危機：鏈上結算準備好了嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "從鏈上結算、持有人記錄與資產對映檢查代幣化證券。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。",
+        "counter_thesis": "相反解釋是：缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。",
+        "script_claims": [
+          "CoinDesk刊出「Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:15:tokenization:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺鏈上發行量、持有人分佈、託管與贖回機制原始資料。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:tokenization:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:tokenization:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "c94252226219ff6bc0028197a4da6cd0a9337ad57a3f558f3d0ec1e439f42812",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:15:treasury-crypto",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？",
+        "title_options": [
+          "美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？",
+          "鏈上顯微鏡備選：財政流動性敘事很強，地址累積與交易所流量才是驗證"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把宏觀流動性敘事落到地址累積、交易所淨流入與ETF流量。"
+        ],
+        "facts": [
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。",
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。"
+        ],
+        "unknowns": [
+          "缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+            "published_at": "2026-08-22T05:05:13+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+            "published_at": "2026-08-22T12:00:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "幣價急動只能告訴我們市場在動，不能直接告訴我們誰在買。今天完整拆解的題目是「美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。把宏觀流動性敘事落到地址累積、交易所淨流入與ETF流量。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。美債回購是財政部的債務管理工具，和聯準會擴張資產負債表不是同一件事。它可能改善特定券種流動性，卻不能直接等同全面放水或QE。\n\n第二個專屬檢查是：若要把回購與比特幣連成流動性路徑，必須看到回購明細、長端利率、美元、穩定幣供給與現貨ETF流量在相近時點共同變化，否則只能稱為事件後的相關敘事。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2121,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "treasury-crypto",
+        "channel_angle": "鏈上顯微鏡",
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把宏觀流動性敘事落到地址累積、交易所淨流入與ETF流量。",
+          "editorial_tension": "「美債回購微調後BTC急漲：鏈上現貨買盤有沒有跟上？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把宏觀流動性敘事落到地址累積、交易所淨流入與ETF流量。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。",
+        "counter_thesis": "相反解釋是：缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。",
+        "script_claims": [
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。",
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:15:treasury-crypto:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺地址級累積、交易所淨流入、ETF流量、OI與資金費率。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:treasury-crypto:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:15:treasury-crypto:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "6fc147d2cbafab7230f85079af13f75ccf688fa43e7251dd6fd7748ac58aec43",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}

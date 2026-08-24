@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "schema": "skills\\finance-youtube-benchmark\\schemas\\factpack.schema.json",
+  "input": "research\\youtube_benchmark_p03\\mvp\\evidence\\factpack.json",
+  "errors": []
+}

@@ -63,6 +63,121 @@ NEWS_SOURCES = (
         "publisher_group": "cnbc",
         "importance": 18,
     },
+    {
+        "key": "cna_finance",
+        "name": "中央社財經",
+        "urls": ("https://feeds.feedburner.com/rsscna/finance",),
+        "market": "TW",
+        "language": "zh-Hant",
+        "source_id": "NEWS-CNA-FINANCE",
+        "publisher_group": "cna",
+        "importance": 19,
+    },
+    {
+        "key": "moneydj",
+        "name": "MoneyDJ理財網",
+        "urls": ("https://www.moneydj.com/KMDJ/RssCenter.aspx?a=MB010000",),
+        "market": "TW",
+        "language": "zh-Hant",
+        "source_id": "NEWS-MONEYDJ",
+        "publisher_group": "moneydj",
+        "importance": 17,
+    },
+    {
+        "key": "udn_money",
+        "name": "經濟日報",
+        "urls": ("https://money.udn.com/rssfeed/news/1001/5591?ch=money",),
+        "market": "TW",
+        "language": "zh-Hant",
+        "source_id": "NEWS-UDN-MONEY",
+        "publisher_group": "udn_money",
+        "importance": 17,
+    },
+    {
+        "key": "ettoday_finance",
+        "name": "ETtoday財經雲",
+        "urls": ("https://feeds.feedburner.com/ettoday/finance",),
+        "market": "TW",
+        "language": "zh-Hant",
+        "source_id": "NEWS-ETTODAY-FINANCE",
+        "publisher_group": "ettoday",
+        "importance": 15,
+    },
+    {
+        "key": "technews_finance",
+        "name": "科技新報財經",
+        "urls": ("https://technews.tw/feed/",),
+        "market": "TW",
+        "language": "zh-Hant",
+        "source_id": "NEWS-TECHNEWS-FINANCE",
+        "publisher_group": "technews",
+        "importance": 16,
+    },
+    {
+        "key": "federal_reserve",
+        "name": "Federal Reserve",
+        "urls": ("https://www.federalreserve.gov/feeds/press_all.xml",),
+        "market": "US",
+        "language": "en",
+        "source_id": "OFFICIAL-FEDERAL-RESERVE-PRESS",
+        "publisher_group": "federal_reserve",
+        "importance": 20,
+        "required": False,
+        "source_class": "OFFICIAL_PRIMARY",
+        "coverage_tags": ("MACRO", "CENTRAL_BANK", "RATES"),
+    },
+    {
+        "key": "sec_press",
+        "name": "U.S. SEC",
+        "urls": ("https://www.sec.gov/news/pressreleases.rss",),
+        "market": "US",
+        "language": "en",
+        "source_id": "OFFICIAL-SEC-PRESS",
+        "publisher_group": "sec",
+        "importance": 20,
+        "required": False,
+        "source_class": "OFFICIAL_PRIMARY",
+        "coverage_tags": ("REGULATION", "COMPANY_RISK", "ENFORCEMENT"),
+    },
+    {
+        "key": "eia_energy",
+        "name": "U.S. EIA",
+        "urls": ("https://www.eia.gov/rss/todayinenergy.xml",),
+        "market": "INTL",
+        "language": "en",
+        "source_id": "OFFICIAL-EIA-TODAY-IN-ENERGY",
+        "publisher_group": "eia",
+        "importance": 20,
+        "required": False,
+        "source_class": "OFFICIAL_PRIMARY",
+        "coverage_tags": ("ENERGY", "COMMODITIES", "SUPPLY_DEMAND"),
+    },
+    {
+        "key": "ecb_press",
+        "name": "European Central Bank",
+        "urls": ("https://www.ecb.europa.eu/rss/press.html",),
+        "market": "INTL",
+        "language": "en",
+        "source_id": "OFFICIAL-ECB-PRESS",
+        "publisher_group": "ecb",
+        "importance": 20,
+        "required": False,
+        "source_class": "OFFICIAL_PRIMARY",
+        "coverage_tags": ("MACRO", "CENTRAL_BANK", "EUROPE"),
+    },
+    {
+        "key": "coindesk",
+        "name": "CoinDesk",
+        "urls": ("https://www.coindesk.com/arc/outboundfeeds/rss/",),
+        "market": "INTL",
+        "language": "en",
+        "source_id": "NEWS-COINDESK",
+        "publisher_group": "coindesk",
+        "importance": 17,
+        "required": False,
+        "source_class": "REPORTED_SPECIALIST",
+        "coverage_tags": ("CRYPTO", "DIGITAL_ASSETS", "DERIVATIVES_NEWS"),
+    },
 )
 
 MAJOR_STOCKS = ("2330", "2317", "2454", "2303", "2382", "2308", "3231", "2412", "2881", "2882")
@@ -181,23 +296,46 @@ def _ensure_source(connection: sqlite3.Connection, source: dict, endpoint_url: s
     market_code = "TW" if source["market"] == "TW" else "US"
     market = connection.execute("SELECT id FROM markets WHERE country_code = ?", (market_code,)).fetchone()
     source_pk = str(uuid.uuid4())
+    source_class = source.get("source_class", "REPORTED_MEDIA")
+    source_type = "OFFICIAL_NEWS_FEED" if source_class == "OFFICIAL_PRIMARY" else "FINANCIAL_NEWS_FEED"
+    reliability = "A" if source_class == "OFFICIAL_PRIMARY" else "B"
     connection.execute(
         """
         INSERT INTO sources (
             id, source_id, source_url, publisher, publisher_group, market_id,
             source_type, signal_role, reliability_level, verified_at, evidence_url,
             registry_status, collection_status, metadata_json
-        ) VALUES (?, ?, ?, ?, ?, ?, 'FINANCIAL_NEWS_FEED', 'DISCOVERY', 'B', ?, ?,
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, 'DISCOVERY', ?, ?, ?,
                   'ACTIVE', 'PUBLIC_FEED_VERIFIED_ONCE', ?)
         """,
-        (source_pk, source["source_id"], endpoint_url, source["name"], source["publisher_group"], market["id"], verified_at, endpoint_url, json.dumps({"verification_scope": "P03B one-time public feed"})),
+        (
+            source_pk,
+            source["source_id"],
+            endpoint_url,
+            source["name"],
+            source["publisher_group"],
+            market["id"],
+            source_type,
+            reliability,
+            verified_at,
+            endpoint_url,
+            json.dumps(
+                {
+                    "verification_scope": "bounded public feed",
+                    "source_class": source_class,
+                    "coverage_tags": list(source.get("coverage_tags", ("GENERAL_FINANCE",))),
+                    "required_for_base_crawl": bool(source.get("required", True)),
+                }
+            ),
+        ),
     )
     return source_pk
 
 
 def collect_news_once(connection: sqlite3.Connection, fetcher: Callable[[str, int], tuple[bytes, str]] = _fetch) -> tuple[dict, ...]:
     results: list[dict] = []
-    for source in NEWS_SOURCES:
+
+    def fetch_source(source: dict) -> dict:
         started = _now()
         payload = None
         content_type = "application/rss+xml"
@@ -220,6 +358,46 @@ def collect_news_once(connection: sqlite3.Connection, fetcher: Callable[[str, in
         finished = _now()
         status = "SUCCESS" if valid_items else "FAILED"
         reason = None if status == "SUCCESS" else "; ".join(errors) or "NO_VALID_TITLE_TIME_LINK"
+        return {
+            "source": source,
+            "started": started,
+            "finished": finished,
+            "used_url": used_url,
+            "content_type": content_type,
+            "valid_items": valid_items,
+            "status": status,
+            "reason": reason,
+        }
+
+    fetched: dict[str, dict] = {}
+    with ThreadPoolExecutor(max_workers=min(8, len(NEWS_SOURCES))) as executor:
+        futures = {executor.submit(fetch_source, source): source for source in NEWS_SOURCES}
+        for future in as_completed(futures):
+            source = futures[future]
+            try:
+                fetched[source["key"]] = future.result()
+            except Exception as error:
+                now = _now()
+                fetched[source["key"]] = {
+                    "source": source,
+                    "started": now,
+                    "finished": now,
+                    "used_url": source["urls"][0],
+                    "content_type": "application/rss+xml",
+                    "valid_items": [],
+                    "status": "FAILED",
+                    "reason": f"UNEXPECTED_{type(error).__name__}",
+                }
+
+    for source in NEWS_SOURCES:
+        fetched_source = fetched[source["key"]]
+        started = fetched_source["started"]
+        finished = fetched_source["finished"]
+        used_url = fetched_source["used_url"]
+        content_type = fetched_source["content_type"]
+        valid_items = fetched_source["valid_items"]
+        status = fetched_source["status"]
+        reason = fetched_source["reason"]
         run_id = str(uuid.uuid4())
         connection.execute(
             """INSERT INTO ben_news_runs
@@ -261,7 +439,20 @@ def collect_news_once(connection: sqlite3.Connection, fetcher: Callable[[str, in
                     (str(uuid.uuid4()), raw_id, source["key"], item["title"], source["name"], item["published_at"], finished, item["url"], item["summary"] or None, source["market"], source["language"], digest),
                 )
         connection.commit()
-        results.append({"source_key": source["key"], "source_name": source["name"], "status": status, "valid_item_count": len(valid_items), "error_reason": reason, "endpoint_url": used_url})
+        results.append(
+            {
+                "source_key": source["key"],
+                "source_name": source["name"],
+                "status": status,
+                "valid_item_count": len(valid_items),
+                "error_reason": reason,
+                "endpoint_url": used_url,
+                "required": bool(source.get("required", True)),
+                "source_class": source.get("source_class", "REPORTED_MEDIA"),
+                "coverage_tags": list(source.get("coverage_tags", ("GENERAL_FINANCE",))),
+                "publisher_group": source["publisher_group"],
+            }
+        )
     return tuple(results)
 
 

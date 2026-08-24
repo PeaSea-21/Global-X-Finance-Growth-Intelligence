@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "channel_count": 10,
+  "channels_with_transcripts": 4,
+  "channels_without_transcripts": 6,
+  "transcript_sample_count": 7,
+  "violation_count": 0,
+  "violations": []
+}

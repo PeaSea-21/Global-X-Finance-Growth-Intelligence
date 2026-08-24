@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P04 channel profile V2",
+  "type": "object",
+  "required": ["profile_id", "channel_name", "channel_id", "sample_size", "evidence_ids", "status", "layers", "do_not_reuse", "limitations"],
+  "properties": {
+    "profile_id": {"type": "string", "minLength": 1},
+    "channel_name": {"type": "string", "minLength": 1},
+    "channel_id": {"type": "string", "pattern": "^UC[A-Za-z0-9_-]{20,}$"},
+    "sample_size": {"type": "integer", "minimum": 10},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^[A-Za-z0-9_-]{11}$"}, "minItems": 10},
+    "status": {"enum": ["PROVISIONAL_V2", "EVIDENCE_SUFFICIENT_V2"]},
+    "layers": {
+      "type": "object",
+      "required": ["topic_strategy", "packaging_strategy", "narrative_strategy", "performance_patterns"]
+    },
+    "do_not_reuse": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

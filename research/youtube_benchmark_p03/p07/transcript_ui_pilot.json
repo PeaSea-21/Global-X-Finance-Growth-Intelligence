@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "run_date": "2026-08-19",
+  "status": "AUTOMATION_PATH_VERIFIED_TRANSCRIPTS_UNAVAILABLE",
+  "method": "YOUTUBE_VISIBLE_WATCH_PAGE_UI_IN_EXISTING_CHROME_SESSION",
+  "browser_session": {
+    "existing_signed_in_session_observed": true,
+    "login_action_performed": false,
+    "cookies_or_credentials_inspected": false,
+    "hidden_or_undocumented_endpoint_used": false
+  },
+  "totals": {
+    "videos_checked": 4,
+    "channels_checked": 3,
+    "transcripts_obtained": 0,
+    "transcript_bodies_persisted": 0,
+    "ui_present_but_unavailable": 1,
+    "no_transcript_control": 3,
+    "chapter_structures_observed": 1
+  },
+  "checks": [
+    {
+      "video_id": "3tAUC5Zg8rw",
+      "channel_name": "M觀點",
+      "channel_role": "TECH_UPDATE",
+      "url": "https://www.youtube.com/watch?v=3tAUC5Zg8rw",
+      "status": "UI_PRESENT_BUT_UNAVAILABLE",
+      "caption_control": "UNABLE_TO_DISPLAY_CAPTIONS",
+      "transcript_control": "PRESENT",
+      "transcript_panel": "OPENED_BUT_PERSISTENT_LOADING",
+      "transcript_obtained": false,
+      "transcript_body_persisted": false,
+      "observed_chapters": [
+        {"start": "00:00", "function": "PREVIEW"},
+        {"start": "02:01", "function": "SPONSOR_SEGMENT"},
+        {"start": "09:48", "function": "TOPIC_1"},
+        {"start": "43:26", "function": "TOPIC_2"},
+        {"start": "56:07", "function": "TOPIC_3"}
+      ],
+      "profile_correction": "TECH_UPDATE_LEDGER_CONFIRMED_AT_CHAPTER_LEVEL",
+      "terms_status": "UNKNOWN",
+      "commercial_use_status": "UNKNOWN"
+    },
+    {
+      "video_id": "Iv66HJtx2AY",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "MACRO_EXPLAINER",
+      "url": "https://www.youtube.com/watch?v=Iv66HJtx2AY",
+      "status": "NO_TRANSCRIPT_CONTROL",
+      "caption_control": "UNABLE_TO_DISPLAY_CAPTIONS",
+      "transcript_control": "ABSENT",
+      "transcript_obtained": false,
+      "transcript_body_persisted": false,
+      "terms_status": "UNKNOWN",
+      "commercial_use_status": "UNKNOWN"
+    },
+    {
+      "video_id": "4gEpLNIRhhk",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "MACRO_EXPLAINER",
+      "url": "https://www.youtube.com/watch?v=4gEpLNIRhhk",
+      "status": "NO_TRANSCRIPT_CONTROL",
+      "caption_control": "UNABLE_TO_DISPLAY_CAPTIONS",
+      "transcript_control": "ABSENT",
+      "transcript_obtained": false,
+      "transcript_body_persisted": false,
+      "terms_status": "UNKNOWN",
+      "commercial_use_status": "UNKNOWN"
+    },
+    {
+      "video_id": "8GxNAzIg3CM",
+      "channel_name": "老王愛說笑",
+      "channel_role": "TAIWAN_DECISION",
+      "url": "https://www.youtube.com/watch?v=8GxNAzIg3CM",
+      "status": "NO_TRANSCRIPT_CONTROL",
+      "caption_control": "UNABLE_TO_DISPLAY_CAPTIONS",
+      "transcript_control": "ABSENT",
+      "transcript_obtained": false,
+      "transcript_body_persisted": false,
+      "terms_status": "UNKNOWN",
+      "commercial_use_status": "UNKNOWN"
+    }
+  ],
+  "decision": "Do not expand transcript acquisition on these channels through unsupported methods. Use visible chapter metadata where available, and obtain lawful user-provided or channel-exported text for narrative-layer analysis."
+}

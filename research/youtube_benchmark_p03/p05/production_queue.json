@@ -1,0 +1,2962 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-17T00:00:00+08:00",
+  "queue_name": "NEXT 12 VIDEOS",
+  "selection_rule": "5 Taiwan + 4 US/AI + 3 Macro; selected for experiment coverage, not score alone.",
+  "counts": {
+    "total": 12,
+    "TRACK_A_TAIWAN": 5,
+    "TRACK_B_US_AI": 4,
+    "TRACK_C_MACRO": 3,
+    "READY": 12
+  },
+  "one_variable_rule": "Change title OR thumbnail OR hook OR format when practical. Otherwise mark QUASI_EXPERIMENT and document confounds.",
+  "items": [
+    {
+      "queue_id": "P05-01",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_A_TAIWAN",
+      "topic_id": "TW005",
+      "topic": "台积电 3Q 指引：高成长能否覆盖海外厂稀释？",
+      "why_now": "3Q 指引仍待实际营收和利润率验证，海外厂稀释是明确限制。",
+      "topic_score": 84,
+      "format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "primary_title": "台积电 3Q 指引很强，海外厂会吃掉多少利润？",
+      "alternative_title": "营收 446–458 亿美元：台积电下一季要看哪两个利润率？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "指引能兑现？",
+        "supporting_element": "TSMC 标志与主持人",
+        "thumbnail_text": "65–67%",
+        "visual_hierarchy": "主问题最大，利润率数字第二，品牌最小",
+        "title_relationship": "标题讲海外厂；封面给利润率证据",
+        "cognitive_trigger": "决策不确定性",
+        "evidence_source": [
+          "BE002"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "台积电给出 446 到 458 亿美元的下一季营收指引，但同一份报告也提醒：海外厂会稀释利润率。",
+        "seconds_10_30": "这支影片不猜股价，只拆四件事：营收、汇率、毛利率和海外成本。最大未知是实际稀释幅度，公司没有单独量化。"
+      },
+      "evidence": [
+        "BE002",
+        "BE002",
+        "BE002"
+      ],
+      "experiment_hypothesis": "H-TITLE-01",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "覆盖台股、财报、半导体、风险/机会与单一决策题，能测试 BP01、BP07。",
+      "test_dimensions": [
+        "Earnings",
+        "Semiconductor",
+        "Risk",
+        "Opportunity",
+        "Company-specific",
+        "Data-driven"
+      ],
+      "content_brief": {
+        "core_question": "台积电 3Q 营收指引能否在海外厂稀释下继续转化为高利润率？",
+        "audience_promise": "看完能分清营收指引、汇率假设、利润率区间和海外厂成本四层，并得到下一次月营收/财报要核对的清单。",
+        "verified_facts": [
+          {
+            "fact": "TSMC guided 3Q26 revenue to US$44.6–45.8bn at NT$32/USD.",
+            "evidence_id": "BE002",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说公司给出的区间与汇率假设。",
+            "forbidden_overclaim": "不可写成已实现营收。"
+          },
+          {
+            "fact": "TSMC guided gross margin to 65–67% and operating margin to 56–58%.",
+            "evidence_id": "BE002",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说指引区间。",
+            "forbidden_overclaim": "不可承诺一定达到。"
+          },
+          {
+            "fact": "TSMC said overseas-fab dilution partly offset margin improvement.",
+            "evidence_id": "BE002",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可归因于公司管理层说明。",
+            "forbidden_overclaim": "不可自行量化海外厂稀释。"
+          }
+        ],
+        "unknowns": [
+          "3Q 实际营收、利润率与汇率尚未确认。",
+          "海外厂稀释的单独百分点未披露。",
+          "股价是否已完全反映指引为 UNKNOWN。"
+        ],
+        "interpretation": "事实支持“高营收指引与成本限制并存”；是否构成估值上修取决于实际兑现、汇率与市场预期，属于条件性判断。",
+        "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+        "narrative_outline": {
+          "Opening": "先给 44.6–45.8 亿美元指引，再抛出海外厂会稀释利润率的冲突。",
+          "Context": "说明营收高点并不自动等于利润率更高。",
+          "Evidence": "依次展示营收区间、汇率假设、毛利率/营业利益率区间与公司成本说明。",
+          "Interpretation": "拆成需求、定价/组合、利用率、海外成本四个驱动。",
+          "Counterpoint": "指引是预测，实际汇率与成本可能改变结果。",
+          "Conclusion": "结论限定为‘增长动能强，但要用利润率兑现判断质量’。",
+          "Watch Next": "后续月营收、3Q 实际毛利率、海外厂稀释说明。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "台积电 3Q 指引很强，海外厂会吃掉多少利润？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "营收 446–458 亿美元：台积电下一季要看哪两个利润率？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "台积电新指引，对台股半导体链意味着什么？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "只看营收会漏掉什么？拆解台积电的汇率与海外厂成本",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场在看成长，我更想先核对台积电的利润率边界",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "高成长还是成本压力？台积电 3Q 的机会与限制",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE002",
+            "BE001"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "指引能兑现？",
+          "supporting_element": "TSMC 标志与主持人",
+          "thumbnail_text": "65–67%",
+          "visual_hierarchy": "主问题最大，利润率数字第二，品牌最小",
+          "title_relationship": "标题讲海外厂；封面给利润率证据",
+          "cognitive_trigger": "决策不确定性",
+          "evidence_source": [
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "利润率证据",
+          "supporting_element": "毛利率区间图",
+          "thumbnail_text": "65–67%",
+          "visual_hierarchy": "数字占画面一半，区间图次之",
+          "title_relationship": "标题提营收；封面补利润率",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "海外厂稀释",
+          "supporting_element": "管理报告页与海外晶圆厂轮廓",
+          "thumbnail_text": "成长 vs 成本",
+          "visual_hierarchy": "官方文件为主体，冲突词在侧",
+          "title_relationship": "标题给问题；封面展示冲突来源",
+          "cognitive_trigger": "证据与反差",
+          "evidence_source": [
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "TSMC guided 3Q26 revenue to US$44.6–45.8bn at NT$32/USD.",
+          "evidence_id": "BE002",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说公司给出的区间与汇率假设。",
+          "forbidden_overclaim": "不可写成已实现营收。"
+        },
+        {
+          "fact": "TSMC guided gross margin to 65–67% and operating margin to 56–58%.",
+          "evidence_id": "BE002",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说指引区间。",
+          "forbidden_overclaim": "不可承诺一定达到。"
+        },
+        {
+          "fact": "TSMC said overseas-fab dilution partly offset margin improvement.",
+          "evidence_id": "BE002",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可归因于公司管理层说明。",
+          "forbidden_overclaim": "不可自行量化海外厂稀释。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-02",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_A_TAIWAN",
+      "topic_id": "TW010",
+      "topic": "AMD Venice 上台积电 2nm，台湾供应链真正新增了什么？",
+      "why_now": "AMD 2Q 数据中心增长为此前 2nm 量产消息提供新的需求背景。",
+      "topic_score": 82,
+      "format": "FORMAT_06_EVENT_EXPLAINER",
+      "primary_title": "AMD Venice 上 2nm，台湾供应链能确认哪些订单？",
+      "alternative_title": "数据中心增 107%：AMD 的 2nm 量产信号怎么读？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "供应链兑现？",
+        "supporting_element": "AMD Venice 与 TSMC 2nm 节点",
+        "thumbnail_text": "量产≠营收",
+        "visual_hierarchy": "问题主层级、芯片次层级",
+        "title_relationship": "标题问影响；封面压缩验证门槛",
+        "cognitive_trigger": "解释缺口",
+        "evidence_source": [
+          "BE008"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "AMD 已确认下一代 EPYC Venice 正在台积电 2nm 量产爬坡，同时数据中心营收年增 107%。",
+        "seconds_10_30": "这听起来像完整利多，但中间还缺晶圆量、封装份额和云端部署三段证据；我们只把已确认与未确认分开。"
+      },
+      "evidence": [
+        "BE008",
+        "BE011",
+        "BE002"
+      ],
+      "experiment_hypothesis": "H-THUMB-03",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "把 AI 与台湾供应链连接，测试事件解释器和‘证据链未闭合’的差异化。",
+      "test_dimensions": [
+        "AI",
+        "Semiconductor",
+        "Opportunity",
+        "Company-specific",
+        "Evergreen"
+      ],
+      "content_brief": {
+        "core_question": "AMD 的 EPYC Venice 在台积电 2nm 量产，能为台湾供应链确认哪些新增需求？",
+        "audience_promise": "看懂已确认的制程关系、AMD 数据中心增长背景，以及不能从公告直接推导的供应商订单。",
+        "verified_facts": [
+          {
+            "fact": "AMD said next-generation EPYC Venice was ramping on TSMC 2nm.",
+            "evidence_id": "BE008",
+            "source": "https://ir.amd.com/",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-06",
+            "confidence": "HIGH",
+            "usable_claim": "可说 AMD 官方宣布量产爬坡。",
+            "forbidden_overclaim": "不可声称具体晶圆量或良率。"
+          },
+          {
+            "fact": "AMD 2Q26 Data Center revenue was US$6.7bn, up 107% year over year.",
+            "evidence_id": "BE011",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-04",
+            "confidence": "HIGH",
+            "usable_claim": "可说数据中心分部官方结果。",
+            "forbidden_overclaim": "不可把所有增长归因 Venice。"
+          },
+          {
+            "fact": "TSMC reported 2nm contributed 3% of 2Q26 wafer revenue.",
+            "evidence_id": "BE002",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说 2nm 已进入营收组合。",
+            "forbidden_overclaim": "不可推导 AMD 占 2nm 多少。"
+          }
+        ],
+        "unknowns": [
+          "AMD 的 2nm 晶圆量、价格与台积电收入贡献未披露。",
+          "封装与材料供应商份额为 UNKNOWN。",
+          "Venice 的终端部署与竞争表现待验证。"
+        ],
+        "interpretation": "可以确认先进制程客户量产与数据中心需求背景同时存在；不能确认二者的量化因果或具体台厂受益幅度。",
+        "recommended_format": "FORMAT_06_EVENT_EXPLAINER",
+        "narrative_outline": {
+          "Opening": "先把‘Venice 正在台积电 2nm 量产爬坡’与‘AMD 数据中心营收增 107%’并列。",
+          "Context": "说明产品量产、晶圆收入和终端部署是三个不同阶段。",
+          "Evidence": "展示 AMD 量产声明、分部财报与 TSMC 2nm 占比。",
+          "Interpretation": "画出 AMD→晶圆制造→封装/系统→云端部署链。",
+          "Counterpoint": "没有晶圆量、供应商份额或 Venice 单品收入。",
+          "Conclusion": "这是需求链的早期确认，不是所有台湾供应链公司都已兑现。",
+          "Watch Next": "AMD 3Q 指引兑现、TSMC 2nm 占比、客户部署进度。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "AMD Venice 上 2nm，台湾供应链能确认哪些订单？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "数据中心增 107%：AMD 的 2nm 量产信号怎么读？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "AMD 新服务器芯片量产，对台积电与供应链影响到哪一层？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "看到 2nm 就喊受惠？这条供应链还有三段没确认",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "AMD 2nm 量产不等于全面受益：先拆交付链",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "2nm 机会已经出现，真正风险是哪些数字还没公布",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "供应链兑现？",
+          "supporting_element": "AMD Venice 与 TSMC 2nm 节点",
+          "thumbnail_text": "量产≠营收",
+          "visual_hierarchy": "问题主层级、芯片次层级",
+          "title_relationship": "标题问影响；封面压缩验证门槛",
+          "cognitive_trigger": "解释缺口",
+          "evidence_source": [
+            "BE008"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "107% 数据中心增长",
+          "supporting_element": "AMD 财报图",
+          "thumbnail_text": "+107%",
+          "visual_hierarchy": "数字最大，2nm 小标签",
+          "title_relationship": "标题讲量产；封面给需求背景",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE011"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "从芯片到云端",
+          "supporting_element": "2nm—封装—服务器链路",
+          "thumbnail_text": "还差哪一段？",
+          "visual_hierarchy": "链路图主体，问句小于节点",
+          "title_relationship": "标题给对象；封面补证据链",
+          "cognitive_trigger": "因果链缺口",
+          "evidence_source": [
+            "BE008",
+            "BE011",
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "AMD said next-generation EPYC Venice was ramping on TSMC 2nm.",
+          "evidence_id": "BE008",
+          "source": "https://ir.amd.com/",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-06",
+          "confidence": "HIGH",
+          "usable_claim": "可说 AMD 官方宣布量产爬坡。",
+          "forbidden_overclaim": "不可声称具体晶圆量或良率。"
+        },
+        {
+          "fact": "AMD 2Q26 Data Center revenue was US$6.7bn, up 107% year over year.",
+          "evidence_id": "BE011",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-04",
+          "confidence": "HIGH",
+          "usable_claim": "可说数据中心分部官方结果。",
+          "forbidden_overclaim": "不可把所有增长归因 Venice。"
+        },
+        {
+          "fact": "TSMC reported 2nm contributed 3% of 2Q26 wafer revenue.",
+          "evidence_id": "BE002",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说 2nm 已进入营收组合。",
+          "forbidden_overclaim": "不可推导 AMD 占 2nm 多少。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-03",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_A_TAIWAN",
+      "topic_id": "TW012",
+      "topic": "台湾出口增 40.3%，台股景气真的全面转强吗？",
+      "why_now": "高出口增长与更快的进口增长同时出现，需要解释结构而非只看单一增速。",
+      "topic_score": 83,
+      "format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "primary_title": "台湾出口增 40.3%，台股景气真的全面转强？",
+      "alternative_title": "出口 748 亿美元、进口增 51.8%：台湾贸易在说什么？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "全面转强？",
+        "supporting_element": "台湾地图与货柜",
+        "thumbnail_text": "出口 +40.3%",
+        "visual_hierarchy": "数字第一、问题第二",
+        "title_relationship": "标题问台股；封面给总量证据",
+        "cognitive_trigger": "机会与怀疑",
+        "evidence_source": [
+          "BE007"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "台湾六月出口年增 40.3%，但进口增得更快，达到 51.8%。这不是一句‘景气全面转强’就能解释。",
+        "seconds_10_30": "你会拿到出口、进口、顺差三层判断，以及哪些台股推论目前不能说。最大未知是商品分类，本片不会把总量硬归因给 AI。"
+      },
+      "evidence": [
+        "BE007",
+        "BE007"
+      ],
+      "experiment_hypothesis": "H-TITLE-05",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "覆盖 Breaking、Data-driven、宏观到台股传导，测试数字冲突是否优于单向利多包装。",
+      "test_dimensions": [
+        "Breaking",
+        "Macro",
+        "Data-driven",
+        "Risk"
+      ],
+      "content_brief": {
+        "core_question": "台湾六月出口年增 40.3%，是全面景气转强，还是特定需求与进口投入共同推高？",
+        "audience_promise": "看懂出口、进口、顺差三项官方总量，并知道为什么不能直接把总量等同所有台股受益。",
+        "verified_facts": [
+          {
+            "fact": "Taiwan June exports were US$74.83bn, up 40.3% year over year.",
+            "evidence_id": "BE007",
+            "source": "https://www.mof.gov.tw/Eng/singlehtml/f48d641f159a4866b1d31c0916fbcc71?cntId=fc3b187b9f744dbeb322e7760473ab01",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-07-08",
+            "confidence": "HIGH",
+            "usable_claim": "可说官方出口总额与年增率。",
+            "forbidden_overclaim": "不可直接归因 AI，除非补商品分类。"
+          },
+          {
+            "fact": "Imports were US$62.63bn, up 51.8%, and the surplus was US$12.20bn.",
+            "evidence_id": "BE007",
+            "source": "https://www.mof.gov.tw/Eng/singlehtml/f48d641f159a4866b1d31c0916fbcc71?cntId=fc3b187b9f744dbeb322e7760473ab01",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-07-08",
+            "confidence": "HIGH",
+            "usable_claim": "可说官方进口与顺差。",
+            "forbidden_overclaim": "不可把进口增长自动写成内需强劲或设备投资。"
+          }
+        ],
+        "unknowns": [
+          "本工件没有商品类别与目的地细分。",
+          "增长中价格、数量与基期贡献未拆。",
+          "无法由总量确认具体上市公司营收。"
+        ],
+        "interpretation": "出口强劲是外需信号，但进口增长更快提示库存、设备、零组件或价格因素都可能存在；需要分类数据才能落到产业。",
+        "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+        "narrative_outline": {
+          "Opening": "40.3% 的出口增长很亮眼，但进口增长是 51.8%。",
+          "Context": "解释贸易总量为何不能直接等同企业利润。",
+          "Evidence": "展示出口、进口与 122 亿美元顺差。",
+          "Interpretation": "列出外需、零组件进口、设备投入和基期四种可能机制。",
+          "Counterpoint": "没有分类数据，AI 驱动只能是待验证推断。",
+          "Conclusion": "宏观总量确认活跃度，不确认全面受益。",
+          "Watch Next": "商品别出口、电子零组件进口、主要公司月营收。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "台湾出口增 40.3%，台股景气真的全面转强？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "出口 748 亿美元、进口增 51.8%：台湾贸易在说什么？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "台湾贸易数据很强，哪些台股环节可能先受影响？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "只看出口会误判：进口为什么增长得更快？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "出口创新高式叙事少说了一半：进口与顺差的答案",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "外需机会很强，但台湾企业利润还差哪三项证据？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE007"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "全面转强？",
+          "supporting_element": "台湾地图与货柜",
+          "thumbnail_text": "出口 +40.3%",
+          "visual_hierarchy": "数字第一、问题第二",
+          "title_relationship": "标题问台股；封面给总量证据",
+          "cognitive_trigger": "机会与怀疑",
+          "evidence_source": [
+            "BE007"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "进出口反差",
+          "supporting_element": "双柱图",
+          "thumbnail_text": "+40.3% / +51.8%",
+          "visual_hierarchy": "两个数字等高，顺差小字",
+          "title_relationship": "标题讲景气；封面补进口冲突",
+          "cognitive_trigger": "数字反差",
+          "evidence_source": [
+            "BE007"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "贸易三张表",
+          "supporting_element": "官方贸易表格裁切",
+          "thumbnail_text": "强在哪里？",
+          "visual_hierarchy": "官方表格主画面、关键行高亮",
+          "title_relationship": "标题给结论问题；封面给证据主体",
+          "cognitive_trigger": "证据审阅",
+          "evidence_source": [
+            "BE007"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "Taiwan June exports were US$74.83bn, up 40.3% year over year.",
+          "evidence_id": "BE007",
+          "source": "https://www.mof.gov.tw/Eng/singlehtml/f48d641f159a4866b1d31c0916fbcc71?cntId=fc3b187b9f744dbeb322e7760473ab01",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-07-08",
+          "confidence": "HIGH",
+          "usable_claim": "可说官方出口总额与年增率。",
+          "forbidden_overclaim": "不可直接归因 AI，除非补商品分类。"
+        },
+        {
+          "fact": "Imports were US$62.63bn, up 51.8%, and the surplus was US$12.20bn.",
+          "evidence_id": "BE007",
+          "source": "https://www.mof.gov.tw/Eng/singlehtml/f48d641f159a4866b1d31c0916fbcc71?cntId=fc3b187b9f744dbeb322e7760473ab01",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-07-08",
+          "confidence": "HIGH",
+          "usable_claim": "可说官方进口与顺差。",
+          "forbidden_overclaim": "不可把进口增长自动写成内需强劲或设备投资。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-04",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_A_TAIWAN",
+      "topic_id": "TW008",
+      "topic": "联电提高资本支出，是需求确认还是周期高点信号？",
+      "why_now": "资本支出上调与利用率指引形成机会—风险双信号。",
+      "topic_score": 80,
+      "format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "primary_title": "联电扩产又看好利用率，成熟制程周期真的回来了？",
+      "alternative_title": "20 亿美元资本支出、利用率破 90%：联电在押什么？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "周期回来了？",
+        "supporting_element": "联电晶圆厂",
+        "thumbnail_text": "90%+",
+        "visual_hierarchy": "问题主层级、利用率数字第二",
+        "title_relationship": "标题讲扩产；封面给需求证据",
+        "cognitive_trigger": "周期判断",
+        "evidence_source": [
+          "BE004"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "联电把今年资本支出提高到 20 亿美元，同时预期第三季利用率超过 90%。",
+        "seconds_10_30": "这可能是需求确认，也可能埋下下一阶段供给压力。我们用四个数字判断，不把扩产自动翻译成股价利多。"
+      },
+      "evidence": [
+        "BE004",
+        "BE004",
+        "BE004"
+      ],
+      "experiment_hypothesis": "H-TITLE-06",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "公司型、财报型、风险/机会兼具，可测试单一决策问句与双信号包装。",
+      "test_dimensions": [
+        "Earnings",
+        "Semiconductor",
+        "Risk",
+        "Opportunity",
+        "Company-specific"
+      ],
+      "content_brief": {
+        "core_question": "联电把 2026 资本支出提高到 20 亿美元并预期利用率超过 90%，是在确认需求还是增加供给风险？",
+        "audience_promise": "用资本支出、利用率、制程组合与利润率四个指标判断成熟制程周期。",
+        "verified_facts": [
+          {
+            "fact": "UMC raised 2026 capital expenditure to US$2bn.",
+            "evidence_id": "BE004",
+            "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说公司上调资本支出。",
+            "forbidden_overclaim": "不可推导全部资金用于某节点。"
+          },
+          {
+            "fact": "UMC expected 3Q utilization above 90%; 2Q utilization was 85%.",
+            "evidence_id": "BE004",
+            "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说公司指引与已实现利用率。",
+            "forbidden_overclaim": "不可把指引写成已实现。"
+          },
+          {
+            "fact": "2Q gross margin was 32.5% and 22/28nm share was 37%.",
+            "evidence_id": "BE004",
+            "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说已披露利润率与制程组合。",
+            "forbidden_overclaim": "不可把组合占比等同提价。"
+          }
+        ],
+        "unknowns": [
+          "新增资本支出项目与回报率未完整拆分。",
+          "3Q 利用率、晶圆价格和产品组合尚未兑现。",
+          "行业新增供给节奏为 UNKNOWN。"
+        ],
+        "interpretation": "利用率指引支持需求改善信号，但资本支出也会增加未来供给；要用价格、组合与毛利率验证周期质量。",
+        "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+        "narrative_outline": {
+          "Opening": "联电一边把资本支出提高到 20 亿美元，一边预期利用率从 85% 升到 90% 以上。",
+          "Context": "解释利用率改善与扩产并非同方向的简单利多。",
+          "Evidence": "展示 capex、利用率、毛利率和 22/28nm 占比。",
+          "Interpretation": "拆成短期需求、供给扩张、价格与产品组合。",
+          "Counterpoint": "利用率是公司预期，新增供给回报尚未发生。",
+          "Conclusion": "需求确认在增强，但周期上行要由价格和毛利率继续确认。",
+          "Watch Next": "3Q 实际利用率、ASP/价格评论、毛利率与 capex 执行。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "联电扩产又看好利用率，成熟制程周期真的回来了？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "20 亿美元资本支出、利用率破 90%：联电在押什么？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "联电新指引，对成熟制程和台股供应链意味着什么？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "利用率上升就是利多？别漏掉扩产后的供给风险",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场看需求复苏，我先检查联电的价格与毛利率",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "成熟制程机会升温，联电扩产的风险条件是什么？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE004"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "周期回来了？",
+          "supporting_element": "联电晶圆厂",
+          "thumbnail_text": "90%+",
+          "visual_hierarchy": "问题主层级、利用率数字第二",
+          "title_relationship": "标题讲扩产；封面给需求证据",
+          "cognitive_trigger": "周期判断",
+          "evidence_source": [
+            "BE004"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "扩产力度",
+          "supporting_element": "资本支出图",
+          "thumbnail_text": "US$2B",
+          "visual_hierarchy": "数字最大、利用率小角标",
+          "title_relationship": "标题问周期；封面补投入规模",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE004"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "需求 vs 供给",
+          "supporting_element": "利用率与资本支出双箭头",
+          "thumbnail_text": "扩产会过量？",
+          "visual_hierarchy": "冲突居中，两个证据分列",
+          "title_relationship": "标题给公司；封面给机制冲突",
+          "cognitive_trigger": "双向风险",
+          "evidence_source": [
+            "BE004"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "UMC raised 2026 capital expenditure to US$2bn.",
+          "evidence_id": "BE004",
+          "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说公司上调资本支出。",
+          "forbidden_overclaim": "不可推导全部资金用于某节点。"
+        },
+        {
+          "fact": "UMC expected 3Q utilization above 90%; 2Q utilization was 85%.",
+          "evidence_id": "BE004",
+          "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说公司指引与已实现利用率。",
+          "forbidden_overclaim": "不可把指引写成已实现。"
+        },
+        {
+          "fact": "2Q gross margin was 32.5% and 22/28nm share was 37%.",
+          "evidence_id": "BE004",
+          "source": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说已披露利润率与制程组合。",
+          "forbidden_overclaim": "不可把组合占比等同提价。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-05",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_A_TAIWAN",
+      "topic_id": "TW001",
+      "topic": "台积电营收增长之后，利润与估值要看哪一层？",
+      "why_now": "财报仍是本轮台股与 AI 供应链预期的核心基准。",
+      "topic_score": 81,
+      "format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "primary_title": "台积电营收年增 36%，这份财报的增长质量够好吗？",
+      "alternative_title": "营收 1.27 兆、毛利率 67.7%：台积电强在哪里？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "增长有质量？",
+        "supporting_element": "TSMC 财报页",
+        "thumbnail_text": "67.7% 毛利率",
+        "visual_hierarchy": "问题最大、数字第二",
+        "title_relationship": "标题讲营收；封面补利润质量",
+        "cognitive_trigger": "质量验证",
+        "evidence_source": [
+          "BE001",
+          "BE002"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "台积电二季营收 1.27 兆元、年增 36%，但增长质量要看另一组数字。",
+        "seconds_10_30": "接下来三分钟拆净利、67.7% 毛利率和先进制程 77%。最大未知不是过去多强，而是这些结构能否在海外成本下延续。"
+      },
+      "evidence": [
+        "BE001",
+        "BE001",
+        "BE002"
+      ],
+      "experiment_hypothesis": "H-TITLE-02",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "财报标签在 P04 小样本中表现较高但置信低，适合用自有数据做第一轮验证。",
+      "test_dimensions": [
+        "Earnings",
+        "Semiconductor",
+        "Company-specific",
+        "Data-driven"
+      ],
+      "content_brief": {
+        "core_question": "台积电 2Q 营收年增 36% 后，增长质量由哪些利润与组合指标决定？",
+        "audience_promise": "从营收、净利、利润率和先进制程组合拆解增长质量，而不是停在‘创新高’。",
+        "verified_facts": [
+          {
+            "fact": "TSMC 2Q26 revenue was NT$1,270.38bn, up 36% year over year.",
+            "evidence_id": "BE001",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说季度营收与同比。",
+            "forbidden_overclaim": "不可据此预测股价。"
+          },
+          {
+            "fact": "Net income was NT$706.56bn and diluted EPS NT$27.25.",
+            "evidence_id": "BE001",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说公司财报结果。",
+            "forbidden_overclaim": "不可与非同口径预测直接比较。"
+          },
+          {
+            "fact": "Gross margin was 67.7%, operating margin 60.3%, and advanced nodes 77% of wafer revenue.",
+            "evidence_id": "BE002",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-16",
+            "confidence": "HIGH",
+            "usable_claim": "可说利润率和制程组合。",
+            "forbidden_overclaim": "不可称利润率完全由先进制程导致。"
+          }
+        ],
+        "unknowns": [
+          "市场一致预期与估值反映程度未纳入。",
+          "利润率驱动的精确贡献拆分有限。",
+          "下一季结果仍是公司指引而非事实。"
+        ],
+        "interpretation": "营收、净利与利润率同步强，但需要用制程组合、利用率与海外成本判断可持续性。",
+        "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+        "narrative_outline": {
+          "Opening": "营收 1.27 兆元不是这份财报唯一重要的数字。",
+          "Context": "先说明增长规模，再提出增长质量问题。",
+          "Evidence": "营收、净利、EPS、毛利率和先进制程占比依次释放。",
+          "Interpretation": "把质量拆成组合、利用率、成本与客户需求。",
+          "Counterpoint": "强单季不等于长期增速，也没有纳入估值。",
+          "Conclusion": "财报确认经营强度，但可持续性仍需下一季兑现。",
+          "Watch Next": "3Q 实际营收、利润率、2nm 占比与海外厂影响。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "台积电营收年增 36%，这份财报的增长质量够好吗？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "营收 1.27 兆、毛利率 67.7%：台积电强在哪里？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "台积电二季财报，对台湾半导体景气确认了什么？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "创新高之外：台积电最容易被忽略的是利润率结构",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场只看营收，我更在意先进制程 77% 的含义",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "台积电增长很强，下一季最大的机会与限制各是什么？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "增长有质量？",
+          "supporting_element": "TSMC 财报页",
+          "thumbnail_text": "67.7% 毛利率",
+          "visual_hierarchy": "问题最大、数字第二",
+          "title_relationship": "标题讲营收；封面补利润质量",
+          "cognitive_trigger": "质量验证",
+          "evidence_source": [
+            "BE001",
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "1.27 兆营收",
+          "supporting_element": "营收与净利双柱",
+          "thumbnail_text": "+36%",
+          "visual_hierarchy": "数字占主区、利润率小标签",
+          "title_relationship": "标题问质量；封面给规模",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE001"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "先进制程 77%",
+          "supporting_element": "制程占比图",
+          "thumbnail_text": "2/3/5nm",
+          "visual_hierarchy": "图表主体、77% 大字",
+          "title_relationship": "标题给结果；封面补结构证据",
+          "cognitive_trigger": "结构解释",
+          "evidence_source": [
+            "BE002"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "TSMC 2Q26 revenue was NT$1,270.38bn, up 36% year over year.",
+          "evidence_id": "BE001",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说季度营收与同比。",
+          "forbidden_overclaim": "不可据此预测股价。"
+        },
+        {
+          "fact": "Net income was NT$706.56bn and diluted EPS NT$27.25.",
+          "evidence_id": "BE001",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说公司财报结果。",
+          "forbidden_overclaim": "不可与非同口径预测直接比较。"
+        },
+        {
+          "fact": "Gross margin was 67.7%, operating margin 60.3%, and advanced nodes 77% of wafer revenue.",
+          "evidence_id": "BE002",
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-16",
+          "confidence": "HIGH",
+          "usable_claim": "可说利润率和制程组合。",
+          "forbidden_overclaim": "不可称利润率完全由先进制程导致。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-06",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_B_US_AI",
+      "topic_id": "US001",
+      "topic": "NVIDIA 财报前，AI 需求要由哪三项数据验证？",
+      "why_now": "财报日距本工件 9 天，适合做明确标注的预览与观察清单。",
+      "topic_score": 85,
+      "format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+      "primary_title": "NVIDIA 财报前，哪三项数据会真正改变 AI 叙事？",
+      "alternative_title": "8 月 26 日 NVIDIA 财报：先登记这 3 个判断标准",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "AI 叙事变不变？",
+        "supporting_element": "NVIDIA 标志与财报日历",
+        "thumbnail_text": "看这 3 项",
+        "visual_hierarchy": "问题主层级、日期小层级",
+        "title_relationship": "标题给财报；封面压缩判断任务",
+        "cognitive_trigger": "预注册判断",
+        "evidence_source": [
+          "BE010"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "NVIDIA 的下一份财报在 8 月 26 日，结果还没发生；现在任何‘超预期’都不是事实。",
+        "seconds_10_30": "我们只做一件有用的事：用 AMD 数据中心增长和 Meta 资本支出建立背景，再登记三项必须等 NVIDIA 官方公布的指标。"
+      },
+      "evidence": [
+        "BE010",
+        "BE011",
+        "BE012"
+      ],
+      "experiment_hypothesis": "H-TITLE-10",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "覆盖 Breaking/预览与 Time Gate，测试‘先注册判断标准’是否成为可信差异点。",
+      "test_dimensions": [
+        "Breaking",
+        "AI",
+        "Company-specific",
+        "Risk",
+        "Opportunity"
+      ],
+      "content_brief": {
+        "core_question": "NVIDIA 8 月 26 日财报前，哪些已知同业信号与待公布指标值得先登记？",
+        "audience_promise": "得到财报前观察表：结果尚未发生、同业数据只能做背景、哪些 NVIDIA 指标必须等官方发布。",
+        "verified_facts": [
+          {
+            "fact": "NVIDIA scheduled FY27 Q2 results for August 26 at 2 p.m. PT.",
+            "evidence_id": "BE010",
+            "source": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-26",
+            "confidence": "HIGH",
+            "usable_claim": "只可说官方日期与时间。",
+            "forbidden_overclaim": "不可写结果已公布。"
+          },
+          {
+            "fact": "AMD 2Q26 Data Center revenue rose 107% year over year.",
+            "evidence_id": "BE011",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-04",
+            "confidence": "HIGH",
+            "usable_claim": "可作为同业需求背景。",
+            "forbidden_overclaim": "不可代替 NVIDIA 结果。"
+          },
+          {
+            "fact": "Meta 2Q26 capex including finance-lease principal was US$31.08bn.",
+            "evidence_id": "BE012",
+            "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可作为客户资本开支背景。",
+            "forbidden_overclaim": "不可声称资金流向 NVIDIA 的金额。"
+          }
+        ],
+        "unknowns": [
+          "NVIDIA FY27 Q2 营收、利润率、指引与客户集中度均尚未公布。",
+          "市场预期分布与隐含波动未纳入。",
+          "同业与客户数据不能量化 NVIDIA 结果。"
+        ],
+        "interpretation": "当前只能建立观察清单：数据中心收入/指引、毛利率、供应约束与客户 capex；任何结果方向都是待验证。",
+        "recommended_format": "FORMAT_01_SINGLE_DECISION_QUESTION",
+        "narrative_outline": {
+          "Opening": "NVIDIA 财报在 8 月 26 日，今天最重要的事实是：结果还没发生。",
+          "Context": "说明预览片的目标是预注册判断标准。",
+          "Evidence": "给官方日程，再展示 AMD 数据中心增长与 Meta capex 作为背景。",
+          "Interpretation": "列三项必须等 NVIDIA 官方结果的指标。",
+          "Counterpoint": "同业强不保证 NVIDIA 超预期，市场预期也可能更高。",
+          "Conclusion": "不押结果，只固定发布后如何判断。",
+          "Watch Next": "官方营收/指引、毛利率、数据中心增速、供给与客户评论。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "NVIDIA 财报前，哪三项数据会真正改变 AI 叙事？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "8 月 26 日 NVIDIA 财报：先登记这 3 个判断标准",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "NVIDIA 下一份财报，会影响哪些 AI 股票与供应链？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "同业数据都很强，为什么还不能提前宣布 NVIDIA 赢了？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场在押惊喜，我们先写下 NVIDIA 财报的反证条件",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "AI 需求机会仍强，NVIDIA 财报最大的风险指标是什么？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "AI 叙事变不变？",
+          "supporting_element": "NVIDIA 标志与财报日历",
+          "thumbnail_text": "看这 3 项",
+          "visual_hierarchy": "问题主层级、日期小层级",
+          "title_relationship": "标题给财报；封面压缩判断任务",
+          "cognitive_trigger": "预注册判断",
+          "evidence_source": [
+            "BE010"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "财报倒计时",
+          "supporting_element": "8/26 日历",
+          "thumbnail_text": "3 个指标",
+          "visual_hierarchy": "日期最大、指标数第二",
+          "title_relationship": "标题讲影响；封面给执行清单",
+          "cognitive_trigger": "时效与清单",
+          "evidence_source": [
+            "BE010"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "同业证据板",
+          "supporting_element": "AMD 与 Meta 官方数字卡",
+          "thumbnail_text": "结果仍未知",
+          "visual_hierarchy": "证据卡主体、UNKNOWN 标签清楚",
+          "title_relationship": "标题提 NVIDIA；封面说明证据边界",
+          "cognitive_trigger": "信息缺口",
+          "evidence_source": [
+            "BE010",
+            "BE011",
+            "BE012"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "NVIDIA scheduled FY27 Q2 results for August 26 at 2 p.m. PT.",
+          "evidence_id": "BE010",
+          "source": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-26",
+          "confidence": "HIGH",
+          "usable_claim": "只可说官方日期与时间。",
+          "forbidden_overclaim": "不可写结果已公布。"
+        },
+        {
+          "fact": "AMD 2Q26 Data Center revenue rose 107% year over year.",
+          "evidence_id": "BE011",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-04",
+          "confidence": "HIGH",
+          "usable_claim": "可作为同业需求背景。",
+          "forbidden_overclaim": "不可代替 NVIDIA 结果。"
+        },
+        {
+          "fact": "Meta 2Q26 capex including finance-lease principal was US$31.08bn.",
+          "evidence_id": "BE012",
+          "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可作为客户资本开支背景。",
+          "forbidden_overclaim": "不可声称资金流向 NVIDIA 的金额。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-07",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_B_US_AI",
+      "topic_id": "US006",
+      "topic": "Meta 营收增 28%、成本增 55%，AI 投资回报怎么判断？",
+      "why_now": "财报仍处当前科技财报季，收入与成本分化提供清楚实验题。",
+      "topic_score": 86,
+      "format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "primary_title": "Meta 营收增 28%、成本增 55%，AI 回报看哪里？",
+      "alternative_title": "608 亿美元营收、31% 利润率：Meta 财报的两张脸",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "AI 回报在哪？",
+        "supporting_element": "Meta 标志与财报表",
+        "thumbnail_text": "28% vs 55%",
+        "visual_hierarchy": "冲突数字最大、问题第二",
+        "title_relationship": "标题讲营收成本；封面压缩回报问题",
+        "cognitive_trigger": "数字冲突",
+        "evidence_source": [
+          "BE012"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "Meta 二季营收增长 28%，但成本与费用增长 55%，营业利润率从 43% 降到 31%。",
+        "seconds_10_30": "问题不是 AI 好不好，而是回报能否从广告增长中被识别。财报没有给出单独贡献，所以我们用可验证指标，不造因果。"
+      },
+      "evidence": [
+        "BE012",
+        "BE012",
+        "BE012"
+      ],
+      "experiment_hypothesis": "H-THUMB-02",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "最强的事实冲突之一，可测试共识挑战和数字封面，同时覆盖 Financial QA。",
+      "test_dimensions": [
+        "Earnings",
+        "AI",
+        "Risk",
+        "Company-specific",
+        "Data-driven"
+      ],
+      "content_brief": {
+        "core_question": "Meta 营收年增 28%、成本增 55% 时，AI 投资回报该用哪些经营指标判断？",
+        "audience_promise": "分清广告变现、成本增长、资本支出和利润率，避免把收入增长全部归因 AI。",
+        "verified_facts": [
+          {
+            "fact": "Meta 2Q26 revenue was US$60.801bn, up 28% year over year.",
+            "evidence_id": "BE012",
+            "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说营收结果。",
+            "forbidden_overclaim": "不可把 28% 全归因 AI。"
+          },
+          {
+            "fact": "Costs and expenses rose 55%; operating margin was 31% versus 43% a year earlier.",
+            "evidence_id": "BE012",
+            "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说成本与利润率变化。",
+            "forbidden_overclaim": "不可忽略法律和裁员等披露因素。"
+          },
+          {
+            "fact": "DAP was 3.60bn; ad impressions rose 14% and price per ad 12%.",
+            "evidence_id": "BE012",
+            "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说广告经营指标。",
+            "forbidden_overclaim": "不可证明 AI 的单独贡献。"
+          }
+        ],
+        "unknowns": [
+          "AI 对广告价格、展示量与用户增长的增量贡献未单独披露。",
+          "资本支出的长期回报期未知。",
+          "未来成本和法律事项仍具不确定性。"
+        ],
+        "interpretation": "营收动能与广告指标强，但成本增速更快、利润率下降；AI 回报只能用后续收入、效率与利润率共同验证。",
+        "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+        "narrative_outline": {
+          "Opening": "Meta 营收增长 28%，成本却增长 55%；这两件事都是真的。",
+          "Context": "解释为什么 AI 投资回报不能只看营收。",
+          "Evidence": "营收、成本、利润率、DAP、广告展示与价格按层释放。",
+          "Interpretation": "区分核心广告经营、AI 资本投入与一次性/其他费用。",
+          "Counterpoint": "财报没有单独披露 AI 带来的广告收入。",
+          "Conclusion": "经营强，但 AI 回报仍是待验证机制。",
+          "Watch Next": "capex、折旧、广告价格/展示、利润率与管理层量化披露。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "Meta 营收增 28%、成本增 55%，AI 回报看哪里？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "608 亿美元营收、31% 利润率：Meta 财报的两张脸",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "Meta 这份财报，会怎样影响 AI 资本支出链？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "广告增长很强，为什么 Meta 的利润率反而下降？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场在谈 AI 回报，财报其实还缺一条因果证据",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "Meta 的 AI 机会继续扩大，成本风险也到了哪一步？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE012"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "AI 回报在哪？",
+          "supporting_element": "Meta 标志与财报表",
+          "thumbnail_text": "28% vs 55%",
+          "visual_hierarchy": "冲突数字最大、问题第二",
+          "title_relationship": "标题讲营收成本；封面压缩回报问题",
+          "cognitive_trigger": "数字冲突",
+          "evidence_source": [
+            "BE012"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "成本跑更快",
+          "supporting_element": "收入成本双柱",
+          "thumbnail_text": "+28% / +55%",
+          "visual_hierarchy": "双柱主体，利润率 31% 小标签",
+          "title_relationship": "标题问回报；封面给证据",
+          "cognitive_trigger": "反差证明",
+          "evidence_source": [
+            "BE012"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "广告引擎 vs AI 账单",
+          "supporting_element": "广告指标与 capex 卡片",
+          "thumbnail_text": "谁在赚钱？",
+          "visual_hierarchy": "两证据区分列，避免拥挤",
+          "title_relationship": "标题给结果；封面补机制",
+          "cognitive_trigger": "因果缺口",
+          "evidence_source": [
+            "BE012"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "Meta 2Q26 revenue was US$60.801bn, up 28% year over year.",
+          "evidence_id": "BE012",
+          "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说营收结果。",
+          "forbidden_overclaim": "不可把 28% 全归因 AI。"
+        },
+        {
+          "fact": "Costs and expenses rose 55%; operating margin was 31% versus 43% a year earlier.",
+          "evidence_id": "BE012",
+          "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说成本与利润率变化。",
+          "forbidden_overclaim": "不可忽略法律和裁员等披露因素。"
+        },
+        {
+          "fact": "DAP was 3.60bn; ad impressions rose 14% and price per ad 12%.",
+          "evidence_id": "BE012",
+          "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说广告经营指标。",
+          "forbidden_overclaim": "不可证明 AI 的单独贡献。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-08",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_B_US_AI",
+      "topic_id": "US002",
+      "topic": "AMD 营收增 50%，数据中心翻倍后下一道考题是什么？",
+      "why_now": "这是最新已披露大型 AI 芯片财报，可作为 NVIDIA 财报前的同业事实基线。",
+      "topic_score": 87,
+      "format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+      "primary_title": "AMD 数据中心翻倍，下一季还能继续兑现吗？",
+      "alternative_title": "营收增 50%、数据中心增 107%：AMD 强在哪？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "增长能续吗？",
+        "supporting_element": "AMD 芯片与主持人",
+        "thumbnail_text": "Data Center +107%",
+        "visual_hierarchy": "数字最大、问题第二",
+        "title_relationship": "标题问下一季；封面给本季证据",
+        "cognitive_trigger": "持续性判断",
+        "evidence_source": [
+          "BE011"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "AMD 二季数据中心营收 67 亿美元、年增 107%，占公司营收 58%。",
+        "seconds_10_30": "这已经是事实，但增长能否延续要看三件事：第三季 130 亿美元左右的指引、56% 非 GAAP 毛利率，以及部署是否兑现。"
+      },
+      "evidence": [
+        "BE011",
+        "BE011",
+        "BE011"
+      ],
+      "experiment_hypothesis": "H-TITLE-02",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "最新 AI 芯片财报、数字密度高，适合验证 Data-led Deep Dive 与数字证明封面。",
+      "test_dimensions": [
+        "Earnings",
+        "AI",
+        "Semiconductor",
+        "Opportunity",
+        "Company-specific",
+        "Data-driven"
+      ],
+      "content_brief": {
+        "core_question": "AMD 数据中心营收翻倍后，增长能否由 3Q 指引、毛利率与部署兑现继续确认？",
+        "audience_promise": "用三个已披露结果与三个下一验证点，判断 AMD AI 增长是规模扩张还是质量改善。",
+        "verified_facts": [
+          {
+            "fact": "AMD 2Q26 revenue was US$11.536bn, up 50% year over year.",
+            "evidence_id": "BE011",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-04",
+            "confidence": "HIGH",
+            "usable_claim": "可说 GAAP 营收结果。",
+            "forbidden_overclaim": "不可称所有增长来自 AI。"
+          },
+          {
+            "fact": "Data Center revenue was US$6.7bn, up 107% and 58% of company revenue.",
+            "evidence_id": "BE011",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-04",
+            "confidence": "HIGH",
+            "usable_claim": "可说分部结果与占比。",
+            "forbidden_overclaim": "不可把 Data Center 全等同 GPU。"
+          },
+          {
+            "fact": "AMD guided 3Q revenue to about US$13bn plus/minus US$300m and non-GAAP gross margin about 56%.",
+            "evidence_id": "BE011",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-08-04",
+            "confidence": "HIGH",
+            "usable_claim": "可说公司指引并标注非 GAAP。",
+            "forbidden_overclaim": "不可写成已实现。"
+          }
+        ],
+        "unknowns": [
+          "GPU 与 EPYC 对分部增长的精确贡献未在本工件量化。",
+          "伙伴部署的收入确认节奏未知。",
+          "竞争份额变化未知。"
+        ],
+        "interpretation": "财报确认规模与分部动能，下一阶段要看指引兑现、毛利率与部署；高增长本身不等于份额或回报已经稳定。",
+        "recommended_format": "FORMAT_05_DATA_LED_DEEP_DIVE",
+        "narrative_outline": {
+          "Opening": "AMD 数据中心营收 67 亿美元、年增 107%，已经超过公司营收一半。",
+          "Context": "说明‘翻倍’之后更重要的是增长质量。",
+          "Evidence": "营收、分部占比、GAAP/非 GAAP 利润率与 3Q 指引。",
+          "Interpretation": "拆成 EPYC、Instinct、部署与产品组合。",
+          "Counterpoint": "去年的出口管制相关费用影响同比比较，且指引仍是预测。",
+          "Conclusion": "增长已被财报确认，持续性要由下一季兑现。",
+          "Watch Next": "3Q 营收、非 GAAP 毛利率、数据中心分部与伙伴部署。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "AMD 数据中心翻倍，下一季还能继续兑现吗？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "营收增 50%、数据中心增 107%：AMD 强在哪？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "AMD 财报会怎样改变 AI GPU 与服务器竞争？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "数据中心占 58%，但这不等于 AMD 已经赢得 GPU 战",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场看到翻倍，我更在意 AMD 的 56% 毛利率指引",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "AMD AI 增长确认，机会与出口管制风险怎么平衡？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE011"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "增长能续吗？",
+          "supporting_element": "AMD 芯片与主持人",
+          "thumbnail_text": "Data Center +107%",
+          "visual_hierarchy": "数字最大、问题第二",
+          "title_relationship": "标题问下一季；封面给本季证据",
+          "cognitive_trigger": "持续性判断",
+          "evidence_source": [
+            "BE011"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "67 亿美元",
+          "supporting_element": "数据中心分部柱图",
+          "thumbnail_text": "58% of revenue",
+          "visual_hierarchy": "金额与占比双层",
+          "title_relationship": "标题讲增长；封面补结构",
+          "cognitive_trigger": "规模证明",
+          "evidence_source": [
+            "BE011"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "结果 vs 指引",
+          "supporting_element": "Q2 财报与 Q3 区间",
+          "thumbnail_text": "$13B ± $0.3B",
+          "visual_hierarchy": "官方表格主体，未来标签清楚",
+          "title_relationship": "标题给事实；封面补下一验证点",
+          "cognitive_trigger": "兑现缺口",
+          "evidence_source": [
+            "BE011"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "AMD 2Q26 revenue was US$11.536bn, up 50% year over year.",
+          "evidence_id": "BE011",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-04",
+          "confidence": "HIGH",
+          "usable_claim": "可说 GAAP 营收结果。",
+          "forbidden_overclaim": "不可称所有增长来自 AI。"
+        },
+        {
+          "fact": "Data Center revenue was US$6.7bn, up 107% and 58% of company revenue.",
+          "evidence_id": "BE011",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-04",
+          "confidence": "HIGH",
+          "usable_claim": "可说分部结果与占比。",
+          "forbidden_overclaim": "不可把 Data Center 全等同 GPU。"
+        },
+        {
+          "fact": "AMD guided 3Q revenue to about US$13bn plus/minus US$300m and non-GAAP gross margin about 56%.",
+          "evidence_id": "BE011",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-08-04",
+          "confidence": "HIGH",
+          "usable_claim": "可说公司指引并标注非 GAAP。",
+          "forbidden_overclaim": "不可写成已实现。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-09",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_B_US_AI",
+      "topic_id": "US008",
+      "topic": "特斯拉交付 48 万辆，为什么还不能直接判断财报？",
+      "why_now": "公司自身提示交付不能代表季度财务，适合做数据误读纠正。",
+      "topic_score": 80,
+      "format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "primary_title": "特斯拉交付 48 万辆，为什么还不能判断财报？",
+      "alternative_title": "480,126 辆与 13.5 GWh：特斯拉这组数据少了什么？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "交付≠盈利",
+        "supporting_element": "Tesla 车辆与财务漏斗",
+        "thumbnail_text": "480,126",
+        "visual_hierarchy": "等号否定最大、数字第二",
+        "title_relationship": "标题问原因；封面直接压缩误读",
+        "cognitive_trigger": "认知纠错",
+        "evidence_source": [
+          "BE013"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "特斯拉二季交付 480,126 辆、储能部署 13.5 GWh，但官方新闻稿明确说：这不能当作季度财务表现的指标。",
+        "seconds_10_30": "看完你会得到从交付到收入、毛利、现金流的四段链条，以及每一段现在缺什么数据。"
+      },
+      "evidence": [
+        "BE013",
+        "BE013",
+        "BE013"
+      ],
+      "experiment_hypothesis": "H-TITLE-04",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "公司官方提供反过度推断警示，是训练频道事实边界与共识挑战的最佳案例。",
+      "test_dimensions": [
+        "Earnings",
+        "Risk",
+        "Company-specific",
+        "Data-driven",
+        "Evergreen"
+      ],
+      "content_brief": {
+        "core_question": "Tesla 交付 480,126 辆后，为什么仍不能由交付量直接判断季度盈利？",
+        "audience_promise": "建立从交付到收入、毛利和现金流的完整判断链，并记住公司自己的数据边界。",
+        "verified_facts": [
+          {
+            "fact": "Tesla produced 451,758 and delivered 480,126 vehicles in 2Q26.",
+            "evidence_id": "BE013",
+            "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-02",
+            "confidence": "HIGH",
+            "usable_claim": "可说产量与交付量。",
+            "forbidden_overclaim": "不可直接推导营收或利润。"
+          },
+          {
+            "fact": "Tesla deployed 13.5 GWh of energy storage in 2Q26.",
+            "evidence_id": "BE013",
+            "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-02",
+            "confidence": "HIGH",
+            "usable_claim": "可说储能部署量。",
+            "forbidden_overclaim": "不可等同确认收入。"
+          },
+          {
+            "fact": "Tesla cautioned that deliveries should not be treated as an indicator of quarterly financial performance.",
+            "evidence_id": "BE013",
+            "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+            "source_type": "COMPANY_IR",
+            "timestamp": "2026-07-02",
+            "confidence": "HIGH",
+            "usable_claim": "可引用公司警示的含义。",
+            "forbidden_overclaim": "不可忽略公司明确限制。"
+          }
+        ],
+        "unknowns": [
+          "车型/地区组合与平均售价未在交付公告披露。",
+          "汽车毛利、自由现金流与库存影响需看完整财报。",
+          "交付与财务之间的当季确认差异未知。"
+        ],
+        "interpretation": "交付是经营量指标，不是盈利指标；必须通过价格、组合、成本、监管积分和现金流完成链条。",
+        "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+        "narrative_outline": {
+          "Opening": "特斯拉交付 480,126 辆，但公司自己提醒：不要把交付当成季度财务指标。",
+          "Context": "说明数量如何转化为财务结果。",
+          "Evidence": "产量、交付、储能与官方限制。",
+          "Interpretation": "画出交付→收入→毛利→现金流链。",
+          "Counterpoint": "高交付可以利好营收，但价格和组合可能抵消。",
+          "Conclusion": "交付确认规模，不能确认盈利质量。",
+          "Watch Next": "平均售价、汽车毛利、库存、储能收入与自由现金流。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "特斯拉交付 48 万辆，为什么还不能判断财报？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "480,126 辆与 13.5 GWh：特斯拉这组数据少了什么？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "特斯拉交付数据，对股价真正有用的是哪一层？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "交付创新高式解读，为什么连公司自己都提醒别这样看？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场看车辆数量，我先看价格、毛利和现金流",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "交付是机会信号，特斯拉盈利风险藏在哪？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE013",
+            "BE014"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "交付≠盈利",
+          "supporting_element": "Tesla 车辆与财务漏斗",
+          "thumbnail_text": "480,126",
+          "visual_hierarchy": "等号否定最大、数字第二",
+          "title_relationship": "标题问原因；封面直接压缩误读",
+          "cognitive_trigger": "认知纠错",
+          "evidence_source": [
+            "BE013"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "两项运营数据",
+          "supporting_element": "车辆与电池图标",
+          "thumbnail_text": "480K / 13.5GWh",
+          "visual_hierarchy": "双数字居中、财务问号小层级",
+          "title_relationship": "标题讲财报；封面给运营证据",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE013"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "公司自己提醒",
+          "supporting_element": "官方新闻稿警示段落",
+          "thumbnail_text": "不是财报答案",
+          "visual_hierarchy": "文件截图主体、警示高亮",
+          "title_relationship": "标题给数字；封面补官方边界",
+          "cognitive_trigger": "权威反证",
+          "evidence_source": [
+            "BE013"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "Tesla produced 451,758 and delivered 480,126 vehicles in 2Q26.",
+          "evidence_id": "BE013",
+          "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-02",
+          "confidence": "HIGH",
+          "usable_claim": "可说产量与交付量。",
+          "forbidden_overclaim": "不可直接推导营收或利润。"
+        },
+        {
+          "fact": "Tesla deployed 13.5 GWh of energy storage in 2Q26.",
+          "evidence_id": "BE013",
+          "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-02",
+          "confidence": "HIGH",
+          "usable_claim": "可说储能部署量。",
+          "forbidden_overclaim": "不可等同确认收入。"
+        },
+        {
+          "fact": "Tesla cautioned that deliveries should not be treated as an indicator of quarterly financial performance.",
+          "evidence_id": "BE013",
+          "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+          "source_type": "COMPANY_IR",
+          "timestamp": "2026-07-02",
+          "confidence": "HIGH",
+          "usable_claim": "可引用公司警示的含义。",
+          "forbidden_overclaim": "不可忽略公司明确限制。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-10",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_C_MACRO",
+      "topic_id": "MA001",
+      "topic": "Fed 按兵不动却出现三票加息，市场该看哪条传导链？",
+      "why_now": "政策利率未变但投票分歧显著，下一轮通胀与就业数据会检验分歧。",
+      "topic_score": 88,
+      "format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "primary_title": "Fed 不加息却有三票反对，股票投资者该看什么？",
+      "alternative_title": "利率 3.5–3.75%、投票 9 比 3：Fed 分歧有多大？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "真的没变化？",
+        "supporting_element": "Fed 大楼与投票板",
+        "thumbnail_text": "9–3",
+        "visual_hierarchy": "问题最大、票数第二",
+        "title_relationship": "标题讲三票；封面压缩政策冲突",
+        "cognitive_trigger": "表面与内部反差",
+        "evidence_source": [
+          "BE021"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "Fed 维持 3.5% 到 3.75% 不变，但这次是 9 比 3，三位委员主张加息 25 个基点。",
+        "seconds_10_30": "这不是‘下次一定加息’，而是政策分歧扩大。我们把它连到美债、美元、成长股和台股，并明确每一步的条件。"
+      },
+      "evidence": [
+        "BE021",
+        "BE021",
+        "BE023"
+      ],
+      "experiment_hypothesis": "H-TITLE-07",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "重大宏观 Breaking，传导清晰，可测试 P04 宏观到产业模式但不依赖专家人格。",
+      "test_dimensions": [
+        "Breaking",
+        "Macro",
+        "Risk",
+        "Data-driven"
+      ],
+      "content_brief": {
+        "core_question": "Fed 维持利率不变却有三位委员主张加息，这种分歧如何通过美元、债券与估值影响股票？",
+        "audience_promise": "得到政策分歧到资产价格的条件性传导链，并知道下一轮要看 CPI 与就业的哪些变化。",
+        "verified_facts": [
+          {
+            "fact": "FOMC maintained the target range at 3.5%–3.75%.",
+            "evidence_id": "BE021",
+            "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+            "source_type": "REGULATOR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说会议决定。",
+            "forbidden_overclaim": "不可称政策已经转向。"
+          },
+          {
+            "fact": "The decision was 9–3; three members preferred a 25bp hike.",
+            "evidence_id": "BE021",
+            "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+            "source_type": "REGULATOR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可说投票分歧。",
+            "forbidden_overclaim": "不可把少数票写成下次必然结果。"
+          },
+          {
+            "fact": "July CPI rose 0.1% month over month and 3.4% year over year.",
+            "evidence_id": "BE023",
+            "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-08-12",
+            "confidence": "HIGH",
+            "usable_claim": "可作后续通胀证据。",
+            "forbidden_overclaim": "不可机械推出利率决策。"
+          }
+        ],
+        "unknowns": [
+          "下一次投票与利率路径未知。",
+          "市场定价和金融条件可能在后续数据前变化。",
+          "分歧对不同股票的影响取决于估值与盈利敏感度。"
+        ],
+        "interpretation": "政策没有变化，但反对票改变了反应函数的可见度；传导应写成情景，不写成确定加息。",
+        "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+        "narrative_outline": {
+          "Opening": "Fed 没有加息，但三位委员投了加息票；这比‘按兵不动’四个字更重要。",
+          "Context": "解释政策水平与政策分歧是两种信息。",
+          "Evidence": "3.5–3.75%、9–3 投票与最新 CPI。",
+          "Interpretation": "利率预期→美债/美元→估值→成长股与台股外资。",
+          "Counterpoint": "一次投票不等于下一次行动，数据会改变反应。",
+          "Conclusion": "分歧提高政策敏感度，不提供单向交易信号。",
+          "Watch Next": "CPI/PCE、就业、工资、委员表态与市场利率。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "Fed 不加息却有三票反对，股票投资者该看什么？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "利率 3.5–3.75%、投票 9 比 3：Fed 分歧有多大？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "Fed 的三张加息票，会怎样传到美股与台股？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "只看‘按兵不动’会漏掉什么？拆解 FOMC 反对票",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场在等降息，但 Fed 内部出现另一条路径",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "利率没变、政策风险上升：成长股的机会与限制",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE021",
+            "BE023",
+            "BE024"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "真的没变化？",
+          "supporting_element": "Fed 大楼与投票板",
+          "thumbnail_text": "9–3",
+          "visual_hierarchy": "问题最大、票数第二",
+          "title_relationship": "标题讲三票；封面压缩政策冲突",
+          "cognitive_trigger": "表面与内部反差",
+          "evidence_source": [
+            "BE021"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "三票要加息",
+          "supporting_element": "利率区间图",
+          "thumbnail_text": "3.5–3.75%",
+          "visual_hierarchy": "票数主层级、区间次层级",
+          "title_relationship": "标题问影响；封面给决定数据",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE021"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "政策传导链",
+          "supporting_element": "Fed→美债→美元→股票图",
+          "thumbnail_text": "先动哪一层？",
+          "visual_hierarchy": "链路居中、官方声明小卡",
+          "title_relationship": "标题给事件；封面补影响机制",
+          "cognitive_trigger": "因果路径",
+          "evidence_source": [
+            "BE021"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "FOMC maintained the target range at 3.5%–3.75%.",
+          "evidence_id": "BE021",
+          "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "source_type": "REGULATOR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说会议决定。",
+          "forbidden_overclaim": "不可称政策已经转向。"
+        },
+        {
+          "fact": "The decision was 9–3; three members preferred a 25bp hike.",
+          "evidence_id": "BE021",
+          "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "source_type": "REGULATOR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可说投票分歧。",
+          "forbidden_overclaim": "不可把少数票写成下次必然结果。"
+        },
+        {
+          "fact": "July CPI rose 0.1% month over month and 3.4% year over year.",
+          "evidence_id": "BE023",
+          "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-08-12",
+          "confidence": "HIGH",
+          "usable_claim": "可作后续通胀证据。",
+          "forbidden_overclaim": "不可机械推出利率决策。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-11",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_C_MACRO",
+      "topic_id": "MA005",
+      "topic": "CPI 月增 0.1%、年增 3.4%，降息还是加息更有根据？",
+      "why_now": "这是最新消费通胀数据，恰逢 FOMC 三位委员主张加息后的验证窗口。",
+      "topic_score": 87,
+      "format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+      "primary_title": "CPI 月增 0.1%、年增 3.4%，Fed 应该看哪一个？",
+      "alternative_title": "0.1%、3.4%、2.5%：一张图读懂最新 CPI",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "降温了吗？",
+        "supporting_element": "CPI 四格数据",
+        "thumbnail_text": "0.1% / 3.4%",
+        "visual_hierarchy": "问题最大，两个口径第二",
+        "title_relationship": "标题问 Fed；封面压缩口径冲突",
+        "cognitive_trigger": "歧义消除",
+        "evidence_source": [
+          "BE023"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "最新 CPI 月增 0.1%，但年增仍是 3.4%；核心 CPI 月增 0.2%、年增 2.5%。",
+        "seconds_10_30": "这四个数字不能混着讲。我们先统一口径，再讨论 Fed、美债和股票；最大未知是这种月度放缓能不能持续。"
+      },
+      "evidence": [
+        "BE023",
+        "BE023",
+        "BE021"
+      ],
+      "experiment_hypothesis": "H-THUMB-05",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "最新官方数据、口径误读普遍，可测试宏观解释与证据图表封面。",
+      "test_dimensions": [
+        "Breaking",
+        "Macro",
+        "Data-driven",
+        "Evergreen"
+      ],
+      "content_brief": {
+        "core_question": "CPI 月增 0.1%、年增 3.4% 时，政策与股票估值应更重视哪个时间尺度？",
+        "audience_promise": "分清月比、年比、headline/core 四个口径，再建立不把 CPI 直接等同 Fed 决策的判断框架。",
+        "verified_facts": [
+          {
+            "fact": "July CPI rose 0.1% month over month and 3.4% year over year.",
+            "evidence_id": "BE023",
+            "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-08-12",
+            "confidence": "HIGH",
+            "usable_claim": "可说 headline CPI 两种口径。",
+            "forbidden_overclaim": "不可混写月比与年比。"
+          },
+          {
+            "fact": "Core CPI rose 0.2% month over month and 2.5% year over year.",
+            "evidence_id": "BE023",
+            "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-08-12",
+            "confidence": "HIGH",
+            "usable_claim": "可说核心 CPI 两种口径。",
+            "forbidden_overclaim": "不可写成 Fed 已达目标。"
+          },
+          {
+            "fact": "FOMC held 3.5%–3.75% with three members preferring a hike.",
+            "evidence_id": "BE021",
+            "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+            "source_type": "REGULATOR",
+            "timestamp": "2026-07-29",
+            "confidence": "HIGH",
+            "usable_claim": "可作政策背景。",
+            "forbidden_overclaim": "不可由 CPI 单独预测下次决策。"
+          }
+        ],
+        "unknowns": [
+          "后续 PCE、就业与金融条件仍会改变政策判断。",
+          "单月改善是否持续未知。",
+          "市场预期是否已反映本次数据未纳入。"
+        ],
+        "interpretation": "月度通胀放缓和同比仍高可同时成立；股票影响取决于相对预期、利率反应与盈利，而非单一方向。",
+        "recommended_format": "FORMAT_03_MACRO_TO_MICRO_CHAIN",
+        "narrative_outline": {
+          "Opening": "同一份 CPI 可以同时说月增 0.1% 和年增 3.4%，两句话都对。",
+          "Context": "解释时间尺度为什么会制造相反标题。",
+          "Evidence": "headline/core 的月比与年比四格。",
+          "Interpretation": "通胀→政策预期→实际利率/估值→股票风格。",
+          "Counterpoint": "Fed 还看 PCE、就业和金融条件，且市场交易相对预期。",
+          "Conclusion": "数据偏缓不等于政策结论已经确定。",
+          "Watch Next": "PCE、下一份就业、下次 CPI 与 Fed 表态。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "CPI 月增 0.1%、年增 3.4%，Fed 应该看哪一个？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "0.1%、3.4%、2.5%：一张图读懂最新 CPI",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "最新 CPI 会怎样传到美债、科技股与台股？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "为什么同一份 CPI 能被解读成通胀降温和仍然太高？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场想交易降息，但 CPI 还留下哪两个反证？",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "通胀降温是机会，政策分歧是风险：股票怎么拆？",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE023",
+            "BE021",
+            "BE025"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "降温了吗？",
+          "supporting_element": "CPI 四格数据",
+          "thumbnail_text": "0.1% / 3.4%",
+          "visual_hierarchy": "问题最大，两个口径第二",
+          "title_relationship": "标题问 Fed；封面压缩口径冲突",
+          "cognitive_trigger": "歧义消除",
+          "evidence_source": [
+            "BE023"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "核心 2.5%",
+          "supporting_element": "headline/core 双线",
+          "thumbnail_text": "Core YoY 2.5%",
+          "visual_hierarchy": "数字主层级、月份小层级",
+          "title_relationship": "标题给宏观；封面补核心证据",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE023"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "四个 CPI 口径",
+          "supporting_element": "BLS 数据表裁切",
+          "thumbnail_text": "别混在一起",
+          "visual_hierarchy": "官方表主体，月比/年比分色",
+          "title_relationship": "标题问结论；封面展示证据结构",
+          "cognitive_trigger": "认知整理",
+          "evidence_source": [
+            "BE023"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "July CPI rose 0.1% month over month and 3.4% year over year.",
+          "evidence_id": "BE023",
+          "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-08-12",
+          "confidence": "HIGH",
+          "usable_claim": "可说 headline CPI 两种口径。",
+          "forbidden_overclaim": "不可混写月比与年比。"
+        },
+        {
+          "fact": "Core CPI rose 0.2% month over month and 2.5% year over year.",
+          "evidence_id": "BE023",
+          "source": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-08-12",
+          "confidence": "HIGH",
+          "usable_claim": "可说核心 CPI 两种口径。",
+          "forbidden_overclaim": "不可写成 Fed 已达目标。"
+        },
+        {
+          "fact": "FOMC held 3.5%–3.75% with three members preferring a hike.",
+          "evidence_id": "BE021",
+          "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "source_type": "REGULATOR",
+          "timestamp": "2026-07-29",
+          "confidence": "HIGH",
+          "usable_claim": "可作政策背景。",
+          "forbidden_overclaim": "不可由 CPI 单独预测下次决策。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    },
+    {
+      "queue_id": "P05-12",
+      "priority": "PRIORITY_A",
+      "market": "TRACK_C_MACRO",
+      "topic_id": "MA002",
+      "topic": "美国 GDP 放缓到 1.5%，为何内需指标反而加速？",
+      "why_now": "8 月 26 日将发布第二次估计，当前分项矛盾具持续解释价值。",
+      "topic_score": 84,
+      "format": "FORMAT_04_CONSENSUS_CHALLENGE",
+      "primary_title": "美国 GDP 降到 1.5%，为什么内需却加速？",
+      "alternative_title": "1.5% 对 3.9%：美国经济到底在放缓还是变强？",
+      "thumbnail_concept": {
+        "concept_id": "TH-A_QUESTION_COMPRESSION",
+        "focal_subject": "经济在放缓？",
+        "supporting_element": "美国 GDP 与内需双柱",
+        "thumbnail_text": "1.5% vs 3.9%",
+        "visual_hierarchy": "冲突数字最大、问题第二",
+        "title_relationship": "标题问原因；封面给反差证据",
+        "cognitive_trigger": "矛盾解析",
+        "evidence_source": [
+          "BE022"
+        ],
+        "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+      },
+      "hook": {
+        "seconds_0_10": "美国二季 GDP 年化增长 1.5%，比一季的 2.1% 慢；但私人国内最终销售却从 1.7% 加速到 3.9%。",
+        "seconds_10_30": "这两个数字不是互相打脸，而是在讲不同分项。我们会拆清楚，并把 8 月 26 日修订列为必须复核的下一节点。"
+      },
+      "evidence": [
+        "BE022",
+        "BE022",
+        "BE028"
+      ],
+      "experiment_hypothesis": "H-TITLE-08",
+      "risk": "不得把公司指引、合作容量或宏观传导写成确定结果；发布前复核事件时间与数字。",
+      "status": "READY",
+      "WHY_THIS_TEST": "兼具 Evergreen 解释与近期修订事件，可测试长尾宏观解释，而非纯新闻复述。",
+      "test_dimensions": [
+        "Macro",
+        "Data-driven",
+        "Evergreen"
+      ],
+      "content_brief": {
+        "core_question": "美国 2Q GDP 增速降到 1.5%，为什么私人国内最终销售却加速到 3.9%？",
+        "audience_promise": "看懂 headline GDP 与底层内需的差异，并知道 8 月 26 日修订时要核对什么。",
+        "verified_facts": [
+          {
+            "fact": "Real GDP increased at a 1.5% annualized rate in 2Q26 versus 2.1% in 1Q26.",
+            "evidence_id": "BE022",
+            "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-07-30",
+            "confidence": "HIGH",
+            "usable_claim": "可说 advance estimate 与比较。",
+            "forbidden_overclaim": "不可当最终值。"
+          },
+          {
+            "fact": "Real private domestic final sales increased 3.9% versus 1.7% in 1Q26.",
+            "evidence_id": "BE022",
+            "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-07-30",
+            "confidence": "HIGH",
+            "usable_claim": "可说内需分项。",
+            "forbidden_overclaim": "不可等同全部消费或企业盈利。"
+          },
+          {
+            "fact": "BEA scheduled the second estimate for August 26, 2026.",
+            "evidence_id": "BE028",
+            "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+            "source_type": "GOVERNMENT",
+            "timestamp": "2026-08-26",
+            "confidence": "HIGH",
+            "usable_claim": "可说官方修订日期。",
+            "forbidden_overclaim": "不可预测修订方向。"
+          }
+        ],
+        "unknowns": [
+          "第二次估计的修订方向与幅度未知。",
+          "库存、贸易和政府支出的详细贡献未在本 brief 展开。",
+          "市场定价与行业盈利敏感度未量化。"
+        ],
+        "interpretation": "Headline 放缓与私人内需加速并不矛盾，可能来自其他 GDP 分项；因此不能只用 1.5% 宣布经济衰退或软着陆。",
+        "recommended_format": "FORMAT_04_CONSENSUS_CHALLENGE",
+        "narrative_outline": {
+          "Opening": "美国 GDP 从 2.1% 放缓到 1.5%，但私人国内最终销售从 1.7% 加速到 3.9%。",
+          "Context": "解释 GDP headline 与 final sales 的口径。",
+          "Evidence": "两组季度年化增速和 8 月 26 日修订日。",
+          "Interpretation": "拆库存、贸易与底层需求可能造成的差异。",
+          "Counterpoint": "这是 advance estimate，会修订；单季年化波动大。",
+          "Conclusion": "增长 headline 变慢，但底层需求信号没有同步转弱。",
+          "Watch Next": "8 月 26 日修订、库存、净出口与价格分项。"
+        }
+      },
+      "title_tests": [
+        {
+          "id": "T1_DECISION_QUESTION",
+          "title": "美国 GDP 降到 1.5%，为什么内需却加速？",
+          "mechanism": "决策问题",
+          "hypothesis": "测试具体对象与单一判断任务是否提高承诺清晰度。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T2_NUMBER_DATA",
+          "title": "1.5% 对 3.9%：美国经济到底在放缓还是变强？",
+          "mechanism": "数字证据",
+          "hypothesis": "测试官方主数字是否降低理解成本。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T3_MARKET_IMPACT",
+          "title": "GDP 分化会怎样影响 Fed、科技股与台股？",
+          "mechanism": "市场影响",
+          "hypothesis": "测试把新闻连接到受影响资产是否增强相关性。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T4_EXPLANATION_GAP",
+          "title": "只看 GDP 标题会误判：真正的内需指标在说什么？",
+          "mechanism": "解释缺口",
+          "hypothesis": "测试指出常见误读是否增强点击动机。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T5_CONSENSUS_CHALLENGE",
+          "title": "市场谈经济降温，但 3.9% 的数据不支持简单结论",
+          "mechanism": "共识挑战",
+          "hypothesis": "测试冲突数据是否促使观众重新检查主流叙事。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        },
+        {
+          "id": "T6_RISK_OPPORTUNITY",
+          "title": "增长放缓还是内需机会？8 月 26 日前先看这三项",
+          "mechanism": "风险/机会",
+          "hypothesis": "测试同时给催化与限制是否提升可信承诺。",
+          "evidence": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "可能过度简化；发布前逐字核对数字、时间与条件，禁止暗示确定收益。"
+        }
+      ],
+      "thumbnail_concepts": [
+        {
+          "concept_id": "TH-A_QUESTION_COMPRESSION",
+          "focal_subject": "经济在放缓？",
+          "supporting_element": "美国 GDP 与内需双柱",
+          "thumbnail_text": "1.5% vs 3.9%",
+          "visual_hierarchy": "冲突数字最大、问题第二",
+          "title_relationship": "标题问原因；封面给反差证据",
+          "cognitive_trigger": "矛盾解析",
+          "evidence_source": [
+            "BE022"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-B_NUMBER_PROOF",
+          "focal_subject": "Headline vs 内需",
+          "supporting_element": "两指标箭头",
+          "thumbnail_text": "GDP 1.5%",
+          "visual_hierarchy": "GDP 数字主层级、内需次层级",
+          "title_relationship": "标题讲分化；封面标主数据",
+          "cognitive_trigger": "数字证明",
+          "evidence_source": [
+            "BE022"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        },
+        {
+          "concept_id": "TH-C_EVIDENCE_VISUAL",
+          "focal_subject": "8/26 会修订",
+          "supporting_element": "BEA 报告与日历",
+          "thumbnail_text": "先别下结论",
+          "visual_hierarchy": "官方报告主图、日期小角标",
+          "title_relationship": "标题给当前数据；封面补修订风险",
+          "cognitive_trigger": "不确定性提醒",
+          "evidence_source": [
+            "BE022",
+            "BE028"
+          ],
+          "risk": "移动端审阅；不得修改官方数字、伪造界面或与标题完整重复。"
+        }
+      ],
+      "evidence_pack": [
+        {
+          "fact": "Real GDP increased at a 1.5% annualized rate in 2Q26 versus 2.1% in 1Q26.",
+          "evidence_id": "BE022",
+          "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-07-30",
+          "confidence": "HIGH",
+          "usable_claim": "可说 advance estimate 与比较。",
+          "forbidden_overclaim": "不可当最终值。"
+        },
+        {
+          "fact": "Real private domestic final sales increased 3.9% versus 1.7% in 1Q26.",
+          "evidence_id": "BE022",
+          "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-07-30",
+          "confidence": "HIGH",
+          "usable_claim": "可说内需分项。",
+          "forbidden_overclaim": "不可等同全部消费或企业盈利。"
+        },
+        {
+          "fact": "BEA scheduled the second estimate for August 26, 2026.",
+          "evidence_id": "BE028",
+          "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+          "source_type": "GOVERNMENT",
+          "timestamp": "2026-08-26",
+          "confidence": "HIGH",
+          "usable_claim": "可说官方修订日期。",
+          "forbidden_overclaim": "不可预测修订方向。"
+        }
+      ],
+      "finance_qa": {
+        "fact_gate": "PASS",
+        "attribution_gate": "PASS",
+        "time_gate": "PASS",
+        "prediction_gate": "PASS",
+        "investment_advice_gate": "PASS",
+        "content_finance_qa": "PASS",
+        "notes": "事实、公司陈述和解释已分层；预测只允许条件情景。发布时如事实更新，必须重跑 Time Gate。"
+      }
+    }
+  ]
+}

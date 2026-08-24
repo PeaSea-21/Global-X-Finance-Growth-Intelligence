@@ -1,0 +1,4177 @@
+{
+  "schema_version": "1.0",
+  "status": "PARTIAL_METADATA_AND_VISUAL_ONLY",
+  "card_count": 30,
+  "cards": [
+    {
+      "video_id": "vdW1eELwnsk",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=vdW1eELwnsk",
+      "title": "現在可以全壓0050正2嗎？【王老先聲】#0050 #0050正2 #兩倍跌幅",
+      "published_at": "2026-08-16T11:00:44+00:00",
+      "selection_role": "RECENT",
+      "performance_label": "NOT_COMPARABLE_RECENT",
+      "performance_ratio": "UNAVAILABLE",
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "UNAVAILABLE",
+        "transcript_reason": "FAILED_NO_PUBLIC_CAPTION_TRACKS",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / ETF / LEVERAGE_RISK；样本角色为 RECENT。",
+          "evidence_pointer": "p04/video_dataset.json#vdW1eELwnsk.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TAIWAN_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#vdW1eELwnsk.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#vdW1eELwnsk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#vdW1eELwnsk",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#vdW1eELwnsk.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#vdW1eELwnsk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#vdW1eELwnsk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#vdW1eELwnsk",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_MARKET_BACKGROUND",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "sgHsCaH2umQ",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=sgHsCaH2umQ",
+      "title": "被動元件哪些漲？哪些不漲？【王老先聲】#被動元件 #信昌電 #國巨",
+      "published_at": "2026-08-15T11:00:36+00:00",
+      "selection_role": "HIGH_PERFORMANCE_CANDIDATE",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.442,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / PASSIVE_COMPONENTS；样本角色为 HIGH_PERFORMANCE_CANDIDATE。",
+          "evidence_pointer": "p04/video_dataset.json#sgHsCaH2umQ.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TAIWAN_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#sgHsCaH2umQ.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#sgHsCaH2umQ",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#sgHsCaH2umQ",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#sgHsCaH2umQ.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#sgHsCaH2umQ",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#sgHsCaH2umQ",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#sgHsCaH2umQ",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_MARKET_BACKGROUND",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "fZg4vn7D4XM",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=fZg4vn7D4XM",
+      "title": "ABF營收大爆發【一分鐘短影片】#abf載板 #南電 #外資高盛",
+      "published_at": "2026-08-14T06:00:15+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.6722,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 SEMICONDUCTOR / ABF / TAIWAN_EQUITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#fZg4vn7D4XM.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 承诺快速解释 SEMICONDUCTOR 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#fZg4vn7D4XM.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#fZg4vn7D4XM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#fZg4vn7D4XM",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#fZg4vn7D4XM.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#fZg4vn7D4XM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#fZg4vn7D4XM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#fZg4vn7D4XM",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "VERTICAL_SUBJECT_IN_4_3_FRAME",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "8gn2VKtwHRI",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=8gn2VKtwHRI",
+      "title": "ABF｜【浦男搜股】EP.360",
+      "published_at": "2026-08-13T06:29:59+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.9407,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 SEMICONDUCTOR / ABF / TAIWAN_EQUITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#8gn2VKtwHRI.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 承诺快速解释 SEMICONDUCTOR 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#8gn2VKtwHRI.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#8gn2VKtwHRI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#8gn2VKtwHRI",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 11 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#8gn2VKtwHRI.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#8gn2VKtwHRI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#8gn2VKtwHRI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#8gn2VKtwHRI",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "MARKET_SCREEN",
+        "title_thumbnail_relation": "TOPIC_LABEL",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "17_hFgL2bJI",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=17_hFgL2bJI",
+      "title": "挪威主權基金，買什麼？【一分鐘短影片】#台股 #台積電 #聯發科",
+      "published_at": "2026-08-13T06:00:38+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.9458,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / INSTITUTIONAL_HOLDINGS；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#17_hFgL2bJI.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TAIWAN_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#17_hFgL2bJI.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#17_hFgL2bJI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#17_hFgL2bJI",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#17_hFgL2bJI.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#17_hFgL2bJI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#17_hFgL2bJI",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#17_hFgL2bJI",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "VERTICAL_SUBJECT_IN_4_3_FRAME",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "Iir132pvy-A",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=Iir132pvy-A",
+      "title": "財神爺來了！【王老先聲】第236封快遞",
+      "published_at": "2026-08-12T08:38:29+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.4946,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / MARKET_OPPORTUNITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#Iir132pvy-A.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_IMPACT；OBSERVED: 承诺快速解释 TAIWAN_EQUITY 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#Iir132pvy-A.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#Iir132pvy-A",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#Iir132pvy-A",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 6 个 URL、1 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#Iir132pvy-A.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#Iir132pvy-A",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#Iir132pvy-A",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#Iir132pvy-A",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_IMPACT",
+        "thumbnail_layout": "HOST_PLUS_MARKET_BACKGROUND",
+        "title_thumbnail_relation": "AMPLIFIES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "0byAdzUmaos",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=0byAdzUmaos",
+      "title": "跟著外資能賺錢?｜【浦男搜股】EP.359",
+      "published_at": "2026-08-12T06:25:17+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.6164,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / FOREIGN_FLOW；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#0byAdzUmaos.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TAIWAN_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#0byAdzUmaos.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#0byAdzUmaos",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#0byAdzUmaos",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 11 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#0byAdzUmaos.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#0byAdzUmaos",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#0byAdzUmaos",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#0byAdzUmaos",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "MARKET_SCREEN",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "ErcFGjqQDfw",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=ErcFGjqQDfw",
+      "title": "這二檔重返千元？【一分鐘短影片】#金像電 #欣興 #目標價",
+      "published_at": "2026-08-12T06:00:06+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.6357,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 SEMICONDUCTOR / PCB / TAIWAN_EQUITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#ErcFGjqQDfw.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 SEMICONDUCTOR 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#ErcFGjqQDfw.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#ErcFGjqQDfw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#ErcFGjqQDfw",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#ErcFGjqQDfw.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#ErcFGjqQDfw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#ErcFGjqQDfw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#ErcFGjqQDfw",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "VERTICAL_SUBJECT_IN_4_3_FRAME",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "8GxNAzIg3CM",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=8GxNAzIg3CM",
+      "title": "台積電再漲一倍？【一分鐘短影片】#台積電 #ai #魏哲家",
+      "published_at": "2026-08-11T06:00:07+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 1.014,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TSMC / AI / SEMICONDUCTOR；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#8GxNAzIg3CM.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TSMC 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#8GxNAzIg3CM.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#8GxNAzIg3CM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#8GxNAzIg3CM",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#8GxNAzIg3CM.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#8GxNAzIg3CM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#8GxNAzIg3CM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#8GxNAzIg3CM",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "VERTICAL_SUBJECT_IN_4_3_FRAME",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "9Ckyf26ASg4",
+      "channel_name": "老王愛說笑",
+      "channel_role": "台股盤面與個股分析",
+      "canonical_url": "https://www.youtube.com/watch?v=9Ckyf26ASg4",
+      "title": "國巨要漲了？南亞科創高？聯電還有救？群創重回半百！2026/08/10【老王不只三分鐘】",
+      "published_at": "2026-08-10T11:00:13+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.9523,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 TAIWAN_EQUITY / MULTI_STOCK / SEMICONDUCTOR；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#9Ckyf26ASg4.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 TAIWAN_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#9Ckyf26ASg4.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#9Ckyf26ASg4",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#9Ckyf26ASg4",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 2 个 URL、7 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#9Ckyf26ASg4.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#9Ckyf26ASg4",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#9Ckyf26ASg4",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#9Ckyf26ASg4",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_MARKET_BACKGROUND",
+        "title_thumbnail_relation": "AMPLIFIES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "3tAUC5Zg8rw",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=3tAUC5Zg8rw",
+      "title": "EP327. 谷歌會放棄模型嗎、我低估了 SPCX、美股來到歷史新高 | M觀點",
+      "published_at": "2026-08-10T05:28:09+00:00",
+      "selection_role": "RECENT",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.1414,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "UNAVAILABLE",
+        "transcript_reason": "BLOCKED_LOGIN_REQUIRED",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 US_EQUITY / AI / SPACE；样本角色为 RECENT。",
+          "evidence_pointer": "p04/video_dataset.json#3tAUC5Zg8rw.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#3tAUC5Zg8rw.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#3tAUC5Zg8rw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#3tAUC5Zg8rw",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 11 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#3tAUC5Zg8rw.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#3tAUC5Zg8rw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#3tAUC5Zg8rw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#3tAUC5Zg8rw",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "RolkbaZOwQg",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=RolkbaZOwQg",
+      "title": "EP326. PLTR 怪物級財報、SPCX 的未來大餅、谷歌 AI 組織調整 | M觀點",
+      "published_at": "2026-08-06T16:10:36+00:00",
+      "selection_role": "HIGH_PERFORMANCE_CANDIDATE",
+      "performance_label": "NORMAL",
+      "performance_ratio": 1.0428,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 US_EQUITY / AI / EARNINGS；样本角色为 HIGH_PERFORMANCE_CANDIDATE。",
+          "evidence_pointer": "p04/video_dataset.json#RolkbaZOwQg.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#RolkbaZOwQg.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#RolkbaZOwQg",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#RolkbaZOwQg",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 10 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#RolkbaZOwQg.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#RolkbaZOwQg",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#RolkbaZOwQg",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#RolkbaZOwQg",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "zfxZ_CfcrNE",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=zfxZ_CfcrNE",
+      "title": "EP325. GPT Luna 大降價、特斯拉中國會賣嗎、梁文鋒的流出談話 | M觀點",
+      "published_at": "2026-08-03T05:56:44+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.9936,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / TESLA / CHINA_TECH；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#zfxZ_CfcrNE.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#zfxZ_CfcrNE.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#zfxZ_CfcrNE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#zfxZ_CfcrNE",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#zfxZ_CfcrNE.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#zfxZ_CfcrNE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#zfxZ_CfcrNE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#zfxZ_CfcrNE",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "9Mi0xxoIUbc",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=9Mi0xxoIUbc",
+      "title": "EP324. AI 基建股大跌中、調控 AI 公開信、美國禁中國機器人 | M觀點",
+      "published_at": "2026-07-30T16:09:17+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.8198,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 US_EQUITY / AI / GEOPOLITICS；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#9Mi0xxoIUbc.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#9Mi0xxoIUbc.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#9Mi0xxoIUbc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#9Mi0xxoIUbc",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#9Mi0xxoIUbc.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#9Mi0xxoIUbc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#9Mi0xxoIUbc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#9Mi0xxoIUbc",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "_F1XFJs3t9Y",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=_F1XFJs3t9Y",
+      "title": "EP323. Opus 5 正式發表、星艦第十三飛達標、開放模型的公開信 | M觀點",
+      "published_at": "2026-07-27T05:34:44+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.7496,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / SPACE / OPEN_SOURCE；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#_F1XFJs3t9Y.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_IMPACT；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#_F1XFJs3t9Y.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#_F1XFJs3t9Y",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#_F1XFJs3t9Y",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#_F1XFJs3t9Y.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#_F1XFJs3t9Y",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#_F1XFJs3t9Y",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#_F1XFJs3t9Y",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_IMPACT",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "LjLONE12zFs",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=LjLONE12zFs",
+      "title": "EP322. 谷歌新模型不夠力、川普要查中國 AI、OpenAI 模型越獄 | M觀點",
+      "published_at": "2026-07-23T15:39:28+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 1.0264,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / US_POLICY / CYBERSECURITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#LjLONE12zFs.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#LjLONE12zFs.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#LjLONE12zFs",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#LjLONE12zFs",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 11 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#LjLONE12zFs.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#LjLONE12zFs",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#LjLONE12zFs",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#LjLONE12zFs",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "lcA6hGaZsOM",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=lcA6hGaZsOM",
+      "title": "EP321. Kimi K3 最強開源、Meta 認真要賣算力、台股要大崩盤了嗎 | M觀點",
+      "published_at": "2026-07-20T07:23:30+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.278,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / TAIWAN_EQUITY / CLOUD_COMPUTE；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#lcA6hGaZsOM.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#lcA6hGaZsOM.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#lcA6hGaZsOM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#lcA6hGaZsOM",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#lcA6hGaZsOM.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#lcA6hGaZsOM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#lcA6hGaZsOM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#lcA6hGaZsOM",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "fT4GIObuq-s",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=fT4GIObuq-s",
+      "title": "EP320. SPCX 跌破發行價、近期 AI 熱門話題、Intel 18A 進步了 | M觀點",
+      "published_at": "2026-07-16T15:13:41+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.8769,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / SEMICONDUCTOR / US_EQUITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#fT4GIObuq-s.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#fT4GIObuq-s.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#fT4GIObuq-s",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#fT4GIObuq-s",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#fT4GIObuq-s.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#fT4GIObuq-s",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#fT4GIObuq-s",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#fT4GIObuq-s",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "HOST_PLUS_EVIDENCE_SCREEN_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "9v1l1VS7UAw",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=9v1l1VS7UAw",
+      "title": "EP319. xAI & Meta 重回賽道、蘋果要告 OpenAI、微軟 Xbox 大重整 | M觀點",
+      "published_at": "2026-07-13T07:17:20+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.887,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / US_EQUITY / BIG_TECH；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#9v1l1VS7UAw.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_IMPACT；OBSERVED: 用多议题清单承诺一次更新数个科技或市场事件。",
+          "evidence_pointer": "p04/video_dataset.json#9v1l1VS7UAw.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#9v1l1VS7UAw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#9v1l1VS7UAw",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 8 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#9v1l1VS7UAw.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#9v1l1VS7UAw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#9v1l1VS7UAw",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#9v1l1VS7UAw",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_IMPACT",
+        "thumbnail_layout": "HOST_OR_GUEST_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "UBqg6zio5SE",
+      "channel_name": "M觀點",
+      "channel_role": "半導體、AI 与美股科技产业链",
+      "canonical_url": "https://www.youtube.com/watch?v=UBqg6zio5SE",
+      "title": "EP318. 科技股能持續打敗大盤嗎？Feat. 曼報Pro Vincent | M觀點",
+      "published_at": "2026-07-09T14:00:06+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.3486,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 US_EQUITY / TECH_EQUITY / VALUATION；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#UBqg6zio5SE.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 US_EQUITY 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#UBqg6zio5SE.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#UBqg6zio5SE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#UBqg6zio5SE",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 9 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#UBqg6zio5SE.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#UBqg6zio5SE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#UBqg6zio5SE",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#UBqg6zio5SE",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "HOST_OR_GUEST_PLUS_THREE_LINE_LEDGER",
+        "title_thumbnail_relation": "RESTATES_AND_SUMMARIZES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "4gEpLNIRhhk",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=4gEpLNIRhhk",
+      "title": "非農爆冷、通膨降溫，AI 半導體報復性反彈能走多遠？｜After Meeting EP. 210",
+      "published_at": "2026-08-16T01:00:08+00:00",
+      "selection_role": "RECENT",
+      "performance_label": "NOT_COMPARABLE_RECENT",
+      "performance_ratio": "UNAVAILABLE",
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "UNAVAILABLE",
+        "transcript_reason": "BLOCKED_LOGIN_REQUIRED",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 GLOBAL_MACRO / AI / SEMICONDUCTOR；样本角色为 RECENT。",
+          "evidence_pointer": "p04/video_dataset.json#4gEpLNIRhhk.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 GLOBAL_MACRO 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#4gEpLNIRhhk.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#4gEpLNIRhhk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#4gEpLNIRhhk",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 4 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#4gEpLNIRhhk.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#4gEpLNIRhhk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#4gEpLNIRhhk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#4gEpLNIRhhk",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "PODCAST_STUDIO_WITH_TOPIC_BLOCKS",
+        "title_thumbnail_relation": "COMPLEMENTS",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "GgnjahnxBVA",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=GgnjahnxBVA",
+      "title": "PCB 女王不藏私！「這技術」將是下半年最值得關注的趨勢",
+      "published_at": "2026-08-12T10:00:01+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 1.03,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 PCB / SEMICONDUCTOR / TAIWAN_EQUITY；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#GgnjahnxBVA.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 承诺快速解释 PCB 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#GgnjahnxBVA.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#GgnjahnxBVA",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#GgnjahnxBVA",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 2 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#GgnjahnxBVA.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#GgnjahnxBVA",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#GgnjahnxBVA",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#GgnjahnxBVA",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "VERTICAL_EXCERPT_WITH_CAPTION_OR_CHART",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "I8TdwvSzzuY",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=I8TdwvSzzuY",
+      "title": "終極挑戰！ 3 分鐘帶你看懂最完整「 AI 供應鏈」的壓力落點解析",
+      "published_at": "2026-08-11T23:30:01+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.3713,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / SUPPLY_CHAIN / SEMICONDUCTOR；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#I8TdwvSzzuY.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 承诺快速解释 AI 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#I8TdwvSzzuY.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#I8TdwvSzzuY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#I8TdwvSzzuY",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 2 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#I8TdwvSzzuY.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#I8TdwvSzzuY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#I8TdwvSzzuY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#I8TdwvSzzuY",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "VERTICAL_EXCERPT_WITH_CAPTION_OR_CHART",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "rpjv4oUa9Gk",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=rpjv4oUa9Gk",
+      "title": "AI 有沒有泡沫？Rachel 與 PCB 女王告訴你這三大關鍵",
+      "published_at": "2026-08-11T10:00:25+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 0.6799,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / VALUATION / MARKET_RISK；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#rpjv4oUa9Gk.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 AI 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#rpjv4oUa9Gk.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#rpjv4oUa9Gk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#rpjv4oUa9Gk",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 2 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#rpjv4oUa9Gk.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#rpjv4oUa9Gk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#rpjv4oUa9Gk",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#rpjv4oUa9Gk",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "VERTICAL_EXCERPT_WITH_CAPTION_OR_CHART",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "Iv66HJtx2AY",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=Iv66HJtx2AY",
+      "title": "從金融海嘯到 AI 浪潮，資深研究員帶你看市場｜財經好朋友特輯",
+      "published_at": "2026-08-09T01:00:13+00:00",
+      "selection_role": "HIGH_PERFORMANCE_CANDIDATE",
+      "performance_label": "BREAKOUT",
+      "performance_ratio": 15.2243,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 GLOBAL_MACRO / AI / MARKET_HISTORY；样本角色为 HIGH_PERFORMANCE_CANDIDATE。",
+          "evidence_pointer": "p04/video_dataset.json#Iv66HJtx2AY.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 承诺快速解释 GLOBAL_MACRO 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#Iv66HJtx2AY.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#Iv66HJtx2AY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#Iv66HJtx2AY",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 3 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#Iv66HJtx2AY.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#Iv66HJtx2AY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#Iv66HJtx2AY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#Iv66HJtx2AY",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "PODCAST_STUDIO_WITH_TOPIC_BLOCKS",
+        "title_thumbnail_relation": "COMPLEMENTS",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "swpo5Gpi7pc",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=swpo5Gpi7pc",
+      "title": "升息危機只是「暫時」過關？研究員持續關注的關鍵指標與時點！",
+      "published_at": "2026-08-03T04:00:37+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.2132,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 GLOBAL_MACRO / INTEREST_RATES；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#swpo5Gpi7pc.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 GLOBAL_MACRO 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#swpo5Gpi7pc.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#swpo5Gpi7pc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#swpo5Gpi7pc",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 1 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#swpo5Gpi7pc.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#swpo5Gpi7pc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#swpo5Gpi7pc",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#swpo5Gpi7pc",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "VERTICAL_EXCERPT_WITH_CAPTION_OR_CHART",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "zkeWUsTC09E",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=zkeWUsTC09E",
+      "title": "財報表現看 Cash、聯準會表現看 Warsh｜After Meeting EP.209",
+      "published_at": "2026-08-02T01:00:02+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 1.866,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 GLOBAL_MACRO / EARNINGS / FED；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#zkeWUsTC09E.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 承诺快速解释 GLOBAL_MACRO 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#zkeWUsTC09E.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#zkeWUsTC09E",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#zkeWUsTC09E",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 4 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#zkeWUsTC09E.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#zkeWUsTC09E",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#zkeWUsTC09E",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#zkeWUsTC09E",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "PODCAST_STUDIO_WITH_TOPIC_BLOCKS",
+        "title_thumbnail_relation": "COMPLEMENTS",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "k3vTcap8mIM",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=k3vTcap8mIM",
+      "title": "槓上加槓再加槓的三倍壓力，此時再遇上鐵血家長升息",
+      "published_at": "2026-07-28T04:00:12+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "BELOW_BASELINE",
+      "performance_ratio": 0.2116,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 GLOBAL_MACRO / INTEREST_RATES / LEVERAGE_RISK；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#k3vTcap8mIM.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=EVENT_OR_RESULT_STATEMENT；OBSERVED: 承诺快速解释 GLOBAL_MACRO 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#k3vTcap8mIM.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#k3vTcap8mIM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#k3vTcap8mIM",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 1 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#k3vTcap8mIM.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#k3vTcap8mIM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#k3vTcap8mIM",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#k3vTcap8mIM",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "EVENT_OR_RESULT_STATEMENT",
+        "thumbnail_layout": "VERTICAL_EXCERPT_WITH_CAPTION_OR_CHART",
+        "title_thumbnail_relation": "RESTATES",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "fcZ1mOQr6BY",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=fcZ1mOQr6BY",
+      "title": "【MM Podcast】After Meeting EP. 208｜修估值後財報季登場，AI 的市場考驗開始",
+      "published_at": "2026-07-26T01:00:19+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "ABOVE_BASELINE",
+      "performance_ratio": 2.1102,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 AI / EARNINGS / VALUATION；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#fcZ1mOQr6BY.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=AUTHORITY_EXPLAINER；OBSERVED: 承诺快速解释 AI 的新事件或关键机制。",
+          "evidence_pointer": "p04/video_dataset.json#fcZ1mOQr6BY.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#fcZ1mOQr6BY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#fcZ1mOQr6BY",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#fcZ1mOQr6BY.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#fcZ1mOQr6BY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#fcZ1mOQr6BY",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#fcZ1mOQr6BY",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "AUTHORITY_EXPLAINER",
+        "thumbnail_layout": "PODCAST_STUDIO_WITH_TOPIC_BLOCKS",
+        "title_thumbnail_relation": "COMPLEMENTS",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    },
+    {
+      "video_id": "i_gEGJDcWu8",
+      "channel_name": "MacroMicro財經M平方",
+      "channel_role": "全球宏观、美股与台股联动",
+      "canonical_url": "https://www.youtube.com/watch?v=i_gEGJDcWu8",
+      "title": "【MM Podcast】After Meeting EP. 206｜ETF 狂潮，你是跟風還是聰明選股？",
+      "published_at": "2026-07-12T01:00:23+00:00",
+      "selection_role": "TYPICAL",
+      "performance_label": "NORMAL",
+      "performance_ratio": 1.4222,
+      "input_status": {
+        "metadata": "VERIFIED",
+        "thumbnail": "VERIFIED_MANUAL_VISUAL_REVIEW",
+        "transcript": "NOT_RUN_GOVERNANCE_STOP",
+        "transcript_reason": "Channel-level probes showed no approved transcript path; login, cookies, InnerTube, yt-dlp and browser scraping were not used.",
+        "transcript_body_persisted": false,
+        "terms_status": "UNKNOWN",
+        "commercial_use_status": "UNKNOWN"
+      },
+      "analysis": {
+        "topic": {
+          "status": "OBSERVED",
+          "finding": "标签为 ETF / ASSET_ALLOCATION / GLOBAL_MACRO；样本角色为 TYPICAL。",
+          "evidence_pointer": "p04/video_dataset.json#i_gEGJDcWu8.topic",
+          "confidence": "HIGH",
+          "transferable_mechanism": "把事件压成明确对象、市场与受众任务。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "title": {
+          "status": "OBSERVED",
+          "finding": "机制=SINGLE_QUESTION；OBSERVED: 用问句承诺回答与 ETF 相关的判断或取舍。",
+          "evidence_pointer": "p04/video_dataset.json#i_gEGJDcWu8.title_features",
+          "confidence": "HIGH",
+          "transferable_mechanism": "复用标题功能，不复用原句：决策问题、更新账本、事件影响或权威解释。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原视频标题"
+          ]
+        },
+        "hook": {
+          "status": "UNAVAILABLE",
+          "finding": "未取得文字稿或直接播放证据，不能判断前 30 秒。",
+          "evidence_pointer": "transcript_access_report.json#i_gEGJDcWu8",
+          "confidence": "LOW",
+          "transferable_mechanism": "待合法文字输入后分析事件、冲突、回报与最大未知的进入顺序。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "固定开场"
+          ]
+        },
+        "copy_structure": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能把标题—封面结构冒充正文结构。",
+          "evidence_pointer": "transcript_access_report.json#i_gEGJDcWu8",
+          "confidence": "LOW",
+          "transferable_mechanism": "主题信号 → 单一问题或多项清单 → 封面用人物/证据画面强化 → 正文必须以独立 FactPack 重建。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历"
+          ]
+        },
+        "evidence": {
+          "status": "OBSERVED",
+          "finding": "OBSERVED_METADATA_ONLY: 公开视频说明含 5 个 URL、0 个章节标记；未审阅说明正文来源质量，且创作者视频不作为财经事实依据。",
+          "evidence_pointer": "p04/video_dataset.json#i_gEGJDcWu8.analysis_card.evidence_use",
+          "confidence": "MEDIUM",
+          "transferable_mechanism": "画面证据感与财经事实证据分开；原创内容另建官方 FactPack。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原截图构图"
+          ]
+        },
+        "viewpoint": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断观点提出顺序、强度与不确定性语言。",
+          "evidence_pointer": "transcript_access_report.json#i_gEGJDcWu8",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后标记 FACT / INFERENCE / OPINION。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "个人立场与个人经历"
+          ]
+        },
+        "rhythm": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断句长、口语程度、转折密度或情绪曲线。",
+          "evidence_pointer": "transcript_access_report.json#i_gEGJDcWu8",
+          "confidence": "LOW",
+          "transferable_mechanism": "待文字稿后用非重建式统计与人工语义检查结合。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "独有口头禅"
+          ]
+        },
+        "ending": {
+          "status": "UNAVAILABLE",
+          "finding": "没有文字稿，不能判断结论、风险提示、下一观察点或 CTA。",
+          "evidence_pointer": "transcript_access_report.json#i_gEGJDcWu8",
+          "confidence": "LOW",
+          "transferable_mechanism": "原创结尾优先使用条件性结论 + 下一官方数据点。",
+          "do_not_copy": [
+            "频道或节目名称",
+            "主持人肖像与身份",
+            "原缩略图文案",
+            "独有口头禅、固定开场或个人经历",
+            "原 CTA"
+          ]
+        }
+      },
+      "packaging_observation": {
+        "title_mechanism": "SINGLE_QUESTION",
+        "thumbnail_layout": "PODCAST_STUDIO_WITH_TOPIC_BLOCKS",
+        "title_thumbnail_relation": "COMPLEMENTS",
+        "visual_hierarchy": "HIGH"
+      },
+      "card_status": "PARTIAL_METADATA_AND_VISUAL_ONLY"
+    }
+  ]
+}

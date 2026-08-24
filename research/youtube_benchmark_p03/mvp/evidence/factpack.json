@@ -1,0 +1,100 @@
+{
+  "factpack_id": "TSMC-2Q26-OFFICIAL-v1",
+  "market": "CROSS_MARKET",
+  "as_of": "2026-08-16T20:30:00+08:00",
+  "status": "VERIFIED",
+  "facts": [
+    {
+      "fact_id": "F001",
+      "claim": "台积电2026年第二季合并营收为新台币1兆2703.8亿元，年增36.0%、季增12.0%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "TWD billion",
+      "currency": "TWD",
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    },
+    {
+      "fact_id": "F002",
+      "claim": "2026年第二季归属母公司净利为新台币7065.6亿元，稀释每股盈余为新台币27.25元；毛利率67.7%、营业利益率60.3%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "TWD billion, TWD/share, percent",
+      "currency": "TWD",
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    },
+    {
+      "fact_id": "F003",
+      "claim": "2026年第二季晶圆营收中，2奈米占3%、3奈米占30%、5奈米占33%、7奈米占11%；7奈米及更先进制程合计77%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "percent of wafer revenue",
+      "currency": null,
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    },
+    {
+      "fact_id": "F004",
+      "claim": "2026年第二季HPC占净营收66%、智慧手机占22%；HPC营收季增20%，智慧手机季减4%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "percent",
+      "currency": null,
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    },
+    {
+      "fact_id": "F005",
+      "claim": "2026年第二季来自北美客户的营收占台积电净营收78%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "percent of net revenue",
+      "currency": null,
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    },
+    {
+      "fact_id": "F006",
+      "claim": "台积电对2026年第三季的公司指引为营收446亿至458亿美元，假设美元兑新台币32元，毛利率65%至67%、营业利益率56%至58%。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": "USD billion and percent",
+      "currency": "USD",
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE",
+      "forward_looking": true
+    },
+    {
+      "fact_id": "F007",
+      "claim": "公司说明第二季毛利率改善主要来自成本改善与产能利用率提高，但部分被海外厂毛利稀释抵销。",
+      "claim_type": "FACT",
+      "source_type": "COMPANY_IR",
+      "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+      "published_at": "2026-07-16",
+      "accessed_at": "2026-08-16",
+      "unit": null,
+      "currency": null,
+      "freshness_status": "FRESH",
+      "conflict_status": "NONE"
+    }
+  ]
+}

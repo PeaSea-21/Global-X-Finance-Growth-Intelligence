@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Original content package",
+  "type": "object",
+  "required": ["package_id", "style_variant", "named_creator_emulation", "factpack_id", "youtube_outline", "x_posts", "fact_ids", "originality_declaration"],
+  "properties": {
+    "package_id": {"type": "string", "minLength": 1},
+    "style_variant": {"type": "string", "minLength": 1},
+    "named_creator_emulation": {"enum": [false]},
+    "factpack_id": {"type": "string", "minLength": 1},
+    "youtube_outline": {"type": "array", "items": {"type": "object"}, "minItems": 3},
+    "x_posts": {"type": "array", "items": {"type": "object"}, "minItems": 1},
+    "fact_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "originality_declaration": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": true
+}

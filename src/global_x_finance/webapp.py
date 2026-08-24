@@ -30,6 +30,7 @@ from .x_intelligence import (
 from .translation_summary import TranslationSummaryAdapter
 from .radar_analytics import select_snapshot_events, source_concentration
 from .stock_workbench import build_stock_workbench
+from .channel_briefs import channel_brief_payload_for_date, latest_channel_brief_payload
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -234,6 +235,38 @@ def create_app(
     @app.get("/health")
     def health():
         return {"status": "ok", "market": "TW"}
+
+    @app.get("/channel-radar")
+    def channel_radar():
+        selected_date = request.args.get("date", "").strip()
+        if selected_date and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", selected_date):
+            abort(400)
+        connection = _connection(app.config["DATABASE_PATH"])
+        try:
+            payload = (
+                channel_brief_payload_for_date(connection, selected_date)
+                if selected_date else latest_channel_brief_payload(connection)
+            )
+            dates = [
+                row["market_session_date"]
+                for row in connection.execute(
+                    """SELECT DISTINCT market_session_date
+                       FROM ben_channel_brief_runs
+                       WHERE session_state IN ('READY','DEGRADED')
+                       ORDER BY market_session_date DESC"""
+                )
+            ] if connection.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='ben_channel_brief_runs'"
+            ).fetchone() else []
+        finally:
+            connection.close()
+        return render_template(
+            "channel_radar.html",
+            payload=payload,
+            dates=dates,
+            selected_date=selected_date or (payload or {}).get("market_session_date", ""),
+            language="zh-tw",
+        )
 
     @app.get("/")
     def dashboard():

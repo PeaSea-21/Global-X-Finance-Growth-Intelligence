@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-17T00:00:00+08:00",
+  "record_template": {
+    "video_id": null,
+    "published_at": null,
+    "track": null,
+    "topic_id": null,
+    "topic_score": null,
+    "format": null,
+    "title_pattern": null,
+    "thumbnail_pattern": null,
+    "hypothesis_id": null,
+    "experiment_type": null,
+    "confounds": [],
+    "impressions": null,
+    "views": null,
+    "CTR": null,
+    "first_30s_retention": null,
+    "avg_view_duration": null,
+    "avg_percentage_viewed": null,
+    "likes": null,
+    "comments": null,
+    "shares": null,
+    "subscribers_gained": null,
+    "views_24h": null,
+    "views_72h": null,
+    "views_7d": null,
+    "performance_ratio_24h": null,
+    "performance_ratio_72h": null,
+    "performance_ratio_7d": null,
+    "baseline_definition": null,
+    "result": "INCONCLUSIVE",
+    "review_notes": null
+  },
+  "snapshot_rules": {
+    "BEFORE_PUBLISH": [
+      "Freeze hypothesis, topic score, format, title/thumbnail pattern, expected result and known confounds."
+    ],
+    "24H": [
+      "Capture reach, CTR and first available retention; diagnose but do not declare a pattern winner."
+    ],
+    "72H": [
+      "Update reach, packaging, retention and engagement; compare with channel/track/age-adjusted baseline."
+    ],
+    "7D": [
+      "Record final test judgment as SUPPORTED, REJECTED or INCONCLUSIVE; do not promote one video to HIGH confidence."
+    ]
+  },
+  "diagnosis_tree": [
+    {
+      "condition": "Low impressions",
+      "check": [
+        "channel distribution",
+        "topic demand",
+        "channel history"
+      ],
+      "do_not_conclude": "Do not first blame title or thumbnail without enough impressions."
+    },
+    {
+      "condition": "High impressions + low CTR",
+      "check": [
+        "title",
+        "thumbnail",
+        "promise clarity"
+      ],
+      "do_not_conclude": "Do not rewrite body before checking packaging."
+    },
+    {
+      "condition": "Good CTR + poor first 30s retention",
+      "check": [
+        "hook mismatch",
+        "slow opening",
+        "title/content mismatch"
+      ],
+      "do_not_conclude": "Click success does not validate content delivery."
+    },
+    {
+      "condition": "Good first 30s + poor average view duration",
+      "check": [
+        "narrative pacing",
+        "information density",
+        "structure",
+        "repetition"
+      ],
+      "do_not_conclude": "Do not blame the opening alone."
+    },
+    {
+      "condition": "Good watch metrics + low engagement",
+      "check": [
+        "content utility",
+        "emotional relevance",
+        "CTA",
+        "audience fit"
+      ],
+      "do_not_conclude": "Low comments alone do not prove poor information value."
+    },
+    {
+      "condition": "Good metrics + low absolute views",
+      "check": [
+        "distribution limitation",
+        "small channel baseline",
+        "topic ceiling"
+      ],
+      "do_not_conclude": "Do not immediately reject the pattern."
+    }
+  ],
+  "result_rules": {
+    "SUPPORTED": "Pre-registered primary metric moves in expected direction with no critical Finance QA issue; still limited by sample/confounds.",
+    "REJECTED": "Primary metric moves against expectation in repeated comparable tests or the treatment creates clear harm.",
+    "INCONCLUSIVE": "Insufficient impressions, missing metrics, confounds, mixed signals, or only one observation."
+  }
+}

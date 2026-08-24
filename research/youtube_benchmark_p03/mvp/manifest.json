@@ -1,0 +1,41 @@
+{
+  "run_id": "P03-BENCHMARK-MVP-20260816",
+  "created_at": "2026-08-16T21:00:00+08:00",
+  "skill_version": "0.1.0-mvp",
+  "status": "BLOCKED",
+  "channel_count": 3,
+  "video_count": 9,
+  "transcript_request_count": 0,
+  "network_calls": 9,
+  "estimated_cost_usd": 0.0,
+  "cache": {
+    "youtube_feed_http_calls": 3,
+    "youtube_feed_cache_hits": 6,
+    "youtube_feed_cache_misses": 3,
+    "web_research_batches": 6,
+    "web_search_queries": 16,
+    "web_page_opens": 3,
+    "unmetered_platform_cost_status": "UNKNOWN"
+  },
+  "checks": {
+    "skill_structure": "PASS",
+    "schema_validation": "PASS",
+    "unit_tests": "PASS_9",
+    "real_sample_validation": "PASS_STRUCTURAL",
+    "credential_scan": "PASS",
+    "path_check": "PASS",
+    "peer_originality_check": "PASS",
+    "creator_source_originality_check": "NOT_RUN_SOURCE_TEXT_UNAVAILABLE",
+    "browser_acceptance": "NOT_REQUIRED_NO_PAGE",
+    "human_content_approval": "NOT_RUN",
+    "human_finance_approval": "NOT_RUN"
+  },
+  "limitations": [
+    "All nine real videos lack an approved transcript extraction result; first-30-second hooks, spoken rhythm, and full emotional curves remain UNAVAILABLE.",
+    "High-performance labels are provisional because public Atom metadata has views and dates but no duration or verified format.",
+    "YouTube terms and commercial-use status remain UNKNOWN for automated production use.",
+    "Creator-source similarity checks are NOT_RUN because source transcripts were not obtained.",
+    "Profiles use three samples per channel and are PROVISIONAL.",
+    "No human content or finance approval was performed."
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "method": {
+    "status": "PROVISIONAL",
+    "metric": "actual_views / age_expected_views_from_within_channel_log_log_regression",
+    "minimum_age_hours": 24,
+    "thresholds": "Q25/Q75 of within-channel performance ratios; BREAKOUT above Q75 + 1.5*IQR",
+    "controls": [
+      "publication age"
+    ],
+    "uncontrolled": [
+      "duration",
+      "confirmed Shorts/long-form type",
+      "impressions",
+      "subscriber exposure",
+      "topic timing"
+    ],
+    "interpretation": "Relative packaging/reach signal only; not content quality or factual accuracy."
+  },
+  "channels": [
+    {
+      "channel_name": "老王愛說笑",
+      "channel_id": "UCvnLmiWt_zIVIh0zUm_j4Hw",
+      "sample_count": 10,
+      "comparable_count": 9,
+      "excluded_recent_count": 1,
+      "median_views": 37790,
+      "median_age_days": 4.146,
+      "log_age_slope": 0.3403,
+      "ratio_q25": 0.6722,
+      "ratio_q75": 1.442,
+      "breakout_fence": 2.5967,
+      "label_counts": {
+        "ABOVE_BASELINE": 3,
+        "BELOW_BASELINE": 2,
+        "NORMAL": 4,
+        "NOT_COMPARABLE_RECENT": 1
+      },
+      "top_video_ids": [
+        "9Ckyf26ASg4",
+        "Iir132pvy-A",
+        "sgHsCaH2umQ"
+      ],
+      "bottom_video_ids": [
+        "fZg4vn7D4XM",
+        "ErcFGjqQDfw",
+        "0byAdzUmaos"
+      ],
+      "confidence": "LOW_TO_MEDIUM"
+    },
+    {
+      "channel_name": "M觀點",
+      "channel_id": "UCT3uWFvKLVpRnEealmRwvrw",
+      "sample_count": 10,
+      "comparable_count": 10,
+      "excluded_recent_count": 0,
+      "median_views": 5739,
+      "median_age_days": 22.063,
+      "log_age_slope": 0.0117,
+      "ratio_q25": 0.8795,
+      "ratio_q75": 1.1168,
+      "breakout_fence": 1.4727,
+      "label_counts": {
+        "ABOVE_BASELINE": 3,
+        "BELOW_BASELINE": 3,
+        "NORMAL": 4
+      },
+      "top_video_ids": [
+        "UBqg6zio5SE",
+        "lcA6hGaZsOM",
+        "3tAUC5Zg8rw"
+      ],
+      "bottom_video_ids": [
+        "fT4GIObuq-s",
+        "9Mi0xxoIUbc",
+        "_F1XFJs3t9Y"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "channel_name": "MacroMicro財經M平方",
+      "channel_id": "UC6LU7FUBvbFCh_cQasrHZ_Q",
+      "sample_count": 10,
+      "comparable_count": 9,
+      "excluded_recent_count": 1,
+      "median_views": 5067,
+      "median_age_days": 13.338,
+      "log_age_slope": 0.0408,
+      "ratio_q25": 0.3713,
+      "ratio_q75": 1.866,
+      "breakout_fence": 4.1081,
+      "label_counts": {
+        "ABOVE_BASELINE": 2,
+        "BELOW_BASELINE": 2,
+        "BREAKOUT": 1,
+        "NORMAL": 4,
+        "NOT_COMPARABLE_RECENT": 1
+      },
+      "top_video_ids": [
+        "Iv66HJtx2AY",
+        "fcZ1mOQr6BY",
+        "zkeWUsTC09E"
+      ],
+      "bottom_video_ids": [
+        "I8TdwvSzzuY",
+        "swpo5Gpi7pc",
+        "k3vTcap8mIM"
+      ],
+      "confidence": "LOW_TO_MEDIUM"
+    }
+  ],
+  "topic_summary": [
+    {
+      "topic": "ABF",
+      "video_count": 2,
+      "median_within_channel_performance_ratio": 0.8065,
+      "confidence": "LOW"
+    },
+    {
+      "topic": "AI",
+      "video_count": 14,
+      "median_within_channel_performance_ratio": 1.0038,
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "EARNINGS",
+      "video_count": 3,
+      "median_within_channel_performance_ratio": 1.866,
+      "confidence": "LOW"
+    },
+    {
+      "topic": "GLOBAL_MACRO",
+      "video_count": 5,
+      "median_within_channel_performance_ratio": 1.4222,
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "INTEREST_RATES",
+      "video_count": 2,
+      "median_within_channel_performance_ratio": 0.2124,
+      "confidence": "LOW"
+    },
+    {
+      "topic": "PCB",
+      "video_count": 2,
+      "median_within_channel_performance_ratio": 0.8329,
+      "confidence": "LOW"
+    },
+    {
+      "topic": "SEMICONDUCTOR",
+      "video_count": 8,
+      "median_within_channel_performance_ratio": 0.9088,
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "SPACE",
+      "video_count": 2,
+      "median_within_channel_performance_ratio": 0.9455,
+      "confidence": "LOW"
+    },
+    {
+      "topic": "TAIWAN_EQUITY",
+      "video_count": 10,
+      "median_within_channel_performance_ratio": 0.9879,
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "US_EQUITY",
+      "video_count": 6,
+      "median_within_channel_performance_ratio": 0.9649,
+      "confidence": "MEDIUM"
+    },
+    {
+      "topic": "VALUATION",
+      "video_count": 3,
+      "median_within_channel_performance_ratio": 1.3486,
+      "confidence": "LOW"
+    }
+  ]
+}

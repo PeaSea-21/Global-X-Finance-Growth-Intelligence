@@ -8,6 +8,7 @@ import math
 import random
 import re
 import sqlite3
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -30,6 +31,10 @@ from .translation_summary import TranslationSummaryAdapter
 
 
 X_USER_AGENT = "GlobalXFinanceRadar/0.7 (read-only research demo)"
+X_REQUESTS_PER_SECOND = 4.0
+X_MAX_PAGES_PER_ACCOUNT = 10
+_X_RATE_LOCK = threading.Lock()
+_X_LAST_REQUEST_AT = 0.0
 PRIORITY_MAP = {"核心关注": "CORE", "观察名单": "WATCH", "低置信观察": "LOW_CONFIDENCE"}
 PRIORITY_INTERVAL = {"CORE": 10, "WATCH": 30, "LOW_CONFIDENCE": 60}
 PRIORITY_LABEL = {value: key for key, value in PRIORITY_MAP.items()}
@@ -146,7 +151,7 @@ def publisher_group_for_handle(handle: str) -> str:
     return PUBLISHER_GROUPS.get(normalized, f"x:{normalized}")
 
 
-def load_x_accounts(path: str | Path, *, expected_count: int | None = 29) -> list[XAccount]:
+def load_x_accounts(path: str | Path, *, expected_count: int | None = None) -> list[XAccount]:
     csv_path = Path(path)
     if not csv_path.exists():
         raise ValidationError(f"X account CSV not found: {csv_path}")
@@ -205,10 +210,27 @@ def account_counts(accounts: Iterable[XAccount]) -> dict[str, int]:
     }
 
 
-def import_x_accounts(connection: sqlite3.Connection, accounts: Iterable[XAccount]) -> int:
+def import_x_accounts(
+    connection: sqlite3.Connection,
+    accounts: Iterable[XAccount],
+    *,
+    include_low_confidence: bool = False,
+    disable_missing: bool = False,
+) -> int:
+    account_rows = list(accounts)
     count = 0
     with connection:
-        for account in accounts:
+        if disable_missing:
+            handles = [account.handle.lower() for account in account_rows]
+            if handles:
+                placeholders = ",".join("?" for _ in handles)
+                connection.execute(
+                    f"""UPDATE ben_x_accounts SET enabled=0, monitoring_status='DISABLED',
+                               updated_at=CURRENT_TIMESTAMP
+                           WHERE lower(handle) NOT IN ({placeholders})""",
+                    handles,
+                )
+        for account in account_rows:
             existing = connection.execute(
                 "SELECT id FROM ben_x_accounts WHERE handle = ? COLLATE NOCASE", (account.handle,)
             ).fetchone()
@@ -233,18 +255,30 @@ def import_x_accounts(connection: sqlite3.Connection, accounts: Iterable[XAccoun
                     account.follower_snapshot, account.region, account.profile_url,
                     account.account_role, account.market_scope, account.impact_path,
                     account.priority, account.usage_note, account.publisher_group,
-                    account.expected_interval_minutes, 0 if account.priority == "LOW_CONFIDENCE" else 1,
+                    account.expected_interval_minutes,
+                    1 if include_low_confidence or account.priority != "LOW_CONFIDENCE" else 0,
                 ),
             )
             count += 1
     return count
 
 
-def _http_get(url: str, timeout: int = 25) -> HttpResult:
+def _wait_for_x_rate_slot() -> None:
+    global _X_LAST_REQUEST_AT
+    minimum_interval = 0.0 if X_REQUESTS_PER_SECOND <= 0 else 1.0 / X_REQUESTS_PER_SECOND
+    with _X_RATE_LOCK:
+        delay = minimum_interval - (time.monotonic() - _X_LAST_REQUEST_AT)
+        if delay > 0:
+            time.sleep(delay)
+        _X_LAST_REQUEST_AT = time.monotonic()
+
+
+def _http_get(url: str, timeout: int = 35) -> HttpResult:
     request = urllib.request.Request(url, headers={
         "User-Agent": X_USER_AGENT,
         "Accept": "application/json,text/plain,*/*",
     })
+    _wait_for_x_rate_slot()
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             return HttpResult(int(response.status), response.read(), dict(response.headers.items()), url)
@@ -252,15 +286,28 @@ def _http_get(url: str, timeout: int = 25) -> HttpResult:
         return HttpResult(int(error.code), error.read(), dict(error.headers.items()) if error.headers else {}, url)
 
 
-def fetch_x_page(account: XAccount, since: int | None) -> HttpResult:
-    params: dict[str, Any] = {"count": 20}
-    if since is not None:
-        params["since"] = since
+def fetch_x_page(
+    account: XAccount,
+    since: int | None,
+    *,
+    cursor: str | None = None,
+) -> HttpResult:
+    params: dict[str, Any] = {"count": 100}
+    if cursor:
+        params["cursor"] = cursor
+    elif since is not None:
+        # FxTwitter follows X's millisecond timestamp convention. The database
+        # checkpoint remains Unix seconds so it stays compatible with datetime.
+        params["since"] = since * 1000
     url = (
         f"https://api.fxtwitter.com/2/profile/{urllib.parse.quote(account.handle)}/statuses?"
         + urllib.parse.urlencode(params)
     )
     return _http_get(url)
+
+
+def fetch_x_cursor_page(account: XAccount, cursor: str) -> HttpResult:
+    return fetch_x_page(account, None, cursor=cursor)
 
 
 def _response_status(page: HttpResult) -> tuple[str, str | None]:
@@ -287,31 +334,41 @@ def _fetch_account(
     page: HttpResult | None = None
     error_reason: str | None = None
     attempts = 0
-    for attempt in range(1, 3):
+    for attempt in range(1, 4):
         attempts = attempt
         sleeper(random.uniform(0.05, 0.20))
         try:
             page = fetcher(account, since)
         except (OSError, TimeoutError, urllib.error.URLError) as error:
             error_reason = f"{type(error).__name__}: {error}"
-            if attempt == 1:
+            if attempt < 3:
+                sleeper(random.uniform(0.2, float(2 ** (attempt - 1))))
                 continue
             return None, "FAILED", attempts, error_reason
         status, error_reason = _response_status(page)
-        if status in {"RATE_LIMITED", "FAILED"} and page.status_code >= 500 and attempt == 1:
-            sleeper(random.uniform(0.2, 0.6))
+        if status in {"RATE_LIMITED", "FAILED"} and page.status_code >= 500 and attempt < 3:
+            sleeper(random.uniform(0.2, float(2 ** (attempt - 1))))
             continue
-        if status == "RATE_LIMITED" and attempt == 1:
+        if status == "RATE_LIMITED" and attempt < 3:
             retry_after = page.headers.get("Retry-After") or page.headers.get("retry-after")
             try:
                 wait_seconds = float(retry_after) if retry_after else 0
             except ValueError:
                 wait_seconds = 0
-            if 0 < wait_seconds <= 30:
-                sleeper(wait_seconds)
-                continue
+            sleeper(wait_seconds if 0 < wait_seconds <= 30 else random.uniform(0.5, float(2 ** attempt)))
+            continue
         return page, status, attempts, error_reason
     return page, "FAILED", attempts, error_reason or "retry exhausted"
+
+
+def _decode_x_page(page: HttpResult) -> tuple[list[dict[str, Any]], str | None]:
+    payload = json.loads(page.body.decode("utf-8"))
+    raw_results = payload.get("results") if isinstance(payload, dict) else None
+    if not isinstance(raw_results, list) or not all(isinstance(item, dict) for item in raw_results):
+        raise ValueError("FxTwitter response lacks results array")
+    cursor = payload.get("cursor") if isinstance(payload.get("cursor"), dict) else {}
+    bottom = cursor.get("bottom") if isinstance(cursor.get("bottom"), str) else None
+    return raw_results, bottom
 
 
 def _json_list(value: Any) -> list[str]:
@@ -455,10 +512,22 @@ def _persist_posts(
                 ),
             )
         else:
+            # Raw Evidence is globally content-hash unique. Include platform identity so
+            # two distinct X posts with identical text are not collapsed into one row.
+            raw_evidence_content = json.dumps(
+                {
+                    "platform": "X",
+                    "post_id": post["post_id"],
+                    "text": post["original_text"],
+                },
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
+            )
             evidence = store.save_raw_item(
                 source_id=source_id,
                 original_url=post["original_url"],
-                original_content=post["original_text"],
+                original_content=raw_evidence_content,
                 published_at=post["created_at"],
                 fetched_at=fetched_at,
                 mime_type="application/json",
@@ -512,12 +581,19 @@ def collect_x_accounts_once(
     now: datetime | None = None,
     force: bool = False,
     include_low_confidence: bool = False,
+    reconcile_accounts: bool = True,
     fetcher: Callable[[XAccount, int | None], HttpResult] = fetch_x_page,
+    cursor_fetcher: Callable[[XAccount, str], HttpResult] = fetch_x_cursor_page,
     sleeper: Callable[[float], None] = time.sleep,
 ) -> list[XCollectionResult]:
     current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     account_rows = list(accounts)
-    import_x_accounts(connection, account_rows)
+    import_x_accounts(
+        connection,
+        account_rows,
+        include_low_confidence=include_low_confidence,
+        disable_missing=reconcile_accounts,
+    )
     due: list[tuple[XAccount, sqlite3.Row, int | None]] = []
     results: list[XCollectionResult] = []
     for account in account_rows:
@@ -560,22 +636,64 @@ def collect_x_accounts_once(
             retry_after = page.headers.get("Retry-After") or page.headers.get("retry-after")
         if status == "SUCCESS" and page:
             try:
-                payload = json.loads(page.body.decode("utf-8"))
-                raw_results = payload.get("results") if isinstance(payload, dict) else None
-                if not isinstance(raw_results, list):
-                    raise ValueError("FxTwitter response lacks results array")
-                fetched_count = len(raw_results)
+                raw_results, cursor = _decode_x_page(page)
+                all_results = list(raw_results)
+                seen_cursors: set[str] = set()
+                page_count = 1
+                while cursor:
+                    parsed_times = [
+                        parse_datetime(item.get("created_at"))
+                        for item in raw_results
+                    ]
+                    parsed_times = [value for value in parsed_times if value is not None]
+                    if parsed_times and min(parsed_times) < cutoff:
+                        break
+                    if cursor in seen_cursors:
+                        status = "FAILED"
+                        error = "FxTwitter pagination cursor loop"
+                        break
+                    if page_count >= X_MAX_PAGES_PER_ACCOUNT:
+                        status = "FAILED"
+                        error = f"FxTwitter pagination exceeded {X_MAX_PAGES_PER_ACCOUNT} pages"
+                        break
+                    seen_cursors.add(cursor)
+                    cursor_page, cursor_status, cursor_attempts, cursor_error = _fetch_account(
+                        account,
+                        None,
+                        lambda target, _since, value=cursor: cursor_fetcher(target, value),
+                        sleeper,
+                    )
+                    attempt_count += cursor_attempts
+                    if cursor_status == "NO_NEW":
+                        break
+                    if cursor_status != "SUCCESS" or cursor_page is None:
+                        status = "FAILED"
+                        error = f"FxTwitter pagination {cursor_status}: {cursor_error or 'no response'}"
+                        break
+                    raw_results, cursor = _decode_x_page(cursor_page)
+                    all_results.extend(raw_results)
+                    page_count += 1
+                    if not raw_results:
+                        break
+
+                fetched_count = len(all_results)
                 fetched_at = utc_iso(current)
-                for item in raw_results:
+                seen_post_ids: set[str] = set()
+                for item in all_results:
                     if not isinstance(item, dict):
                         continue
+                    post_id = str(item.get("id") or "").strip()
+                    if post_id and post_id in seen_post_ids:
+                        continue
+                    if post_id:
+                        seen_post_ids.add(post_id)
                     normalized = _normalize_post(account, item, fetched_at)
                     if normalized and parse_datetime(normalized["created_at"]) >= cutoff:
                         items.append(normalized)
                 kept_count = len(items)
-                if not items:
+                if status == "SUCCESS" and not items:
                     status = "NO_NEW"
-                else:
+                if items:
                     with connection:
                         _ensure_x_source(connection, account, fetched_at)
                         new_count, duplicate_count, repost_count = _persist_posts(

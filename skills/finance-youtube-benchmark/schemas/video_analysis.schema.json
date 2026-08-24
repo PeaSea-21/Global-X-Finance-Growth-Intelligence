@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video analysis card",
+  "type": "object",
+  "required": ["video_id", "channel_id", "selection_role", "transcript_status", "title_promise", "thumbnail_expression", "first_30s_hook", "central_conflict", "information_release_order", "claim_method", "evidence_method", "emotion_curve", "sentence_and_orality", "turns_and_suspense", "risk_disclosure", "cta", "transferable_structures", "do_not_copy", "confidence", "limitations"],
+  "properties": {
+    "video_id": {"type": "string", "minLength": 1},
+    "channel_id": {"type": "string", "minLength": 1},
+    "selection_role": {"enum": ["RECENT", "HIGH_PERFORMANCE_CANDIDATE", "TYPICAL"]},
+    "transcript_status": {"enum": ["AVAILABLE", "PARTIAL", "UNAVAILABLE", "NOT_RUN"]},
+    "title_promise": {"$ref": "#/$defs/observedField"},
+    "thumbnail_expression": {"$ref": "#/$defs/observedField"},
+    "first_30s_hook": {"$ref": "#/$defs/observedField"},
+    "central_conflict": {"$ref": "#/$defs/observedField"},
+    "information_release_order": {"type": "array", "items": {"type": "string"}},
+    "claim_method": {"$ref": "#/$defs/observedField"},
+    "evidence_method": {"$ref": "#/$defs/observedField"},
+    "emotion_curve": {"$ref": "#/$defs/observedField"},
+    "sentence_and_orality": {"$ref": "#/$defs/observedField"},
+    "turns_and_suspense": {"$ref": "#/$defs/observedField"},
+    "risk_disclosure": {"$ref": "#/$defs/observedField"},
+    "cta": {"$ref": "#/$defs/observedField"},
+    "transferable_structures": {"type": "array", "items": {"type": "string"}},
+    "do_not_copy": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"enum": ["HIGH", "MEDIUM", "LOW"]},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "observedField": {
+      "type": "object",
+      "required": ["value", "evidence"],
+      "properties": {
+        "value": {"type": "string"},
+        "evidence": {"enum": ["OBSERVED", "INFERRED", "UNAVAILABLE"]}
+      }
+    }
+  },
+  "additionalProperties": true
+}

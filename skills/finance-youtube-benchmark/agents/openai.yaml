@@ -1,0 +1,4 @@
+interface:
+  display_name: "Finance YouTube Benchmark"
+  short_description: "Evidence-safe Taiwan finance YouTube benchmarking"
+  default_prompt: "Use $finance-youtube-benchmark to compare approved Taiwan finance channels and create original evidence-linked content without copying creator wording."

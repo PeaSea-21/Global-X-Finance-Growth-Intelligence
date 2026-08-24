@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block title %}BEN Radar 頻道收盤選題{% endblock %}
+{% block body_class %}channel-radar-body{% endblock %}
+{% block content %}
+<div class="channel-radar-page" data-artifact-version="p06b-v0.1">
+  {% if payload %}
+  <header class="channel-radar-head">
+    <div>
+      <p class="channel-kicker">TAIWAN POST-CLOSE EDITORIAL DESK</p>
+      <h2>今日頻道選題</h2>
+      <p>{{ payload.market_session_date }} 收盤版 · 資料截至 {{ payload.data_as_of|taipei_time }}</p>
+    </div>
+    <form method="get" class="channel-date-picker">
+      <label for="brief-date">交易日</label>
+      <select id="brief-date" name="date" onchange="this.form.submit()">
+        {% for value in dates %}<option value="{{ value }}" {% if value == selected_date %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </form>
+  </header>
+
+  <section class="channel-run-strip" aria-label="簡報狀態">
+    <div><span>收盤就緒</span><strong class="run-state run-{{ payload.session_state|lower }}">{{ payload.session_state }}</strong></div>
+    <div><span>主構建時間</span><strong>{{ payload.scheduled_for|taipei_time }}</strong></div>
+    <div><span>排序方式</span><strong>{{ payload.ranking_method }}</strong></div>
+    <div><span>資料覆蓋</span><strong>{{ payload.coverage_status }}</strong></div>
+  </section>
+
+  {% if payload.ranking_method == 'RULE_BASED_FALLBACK' %}
+  <p class="channel-system-note">目前未配置生產模型，使用可重現規則排序；頁面不宣稱 AI 已排序。</p>
+  {% endif %}
+
+  <nav class="channel-tabs" role="tablist" aria-label="試點頻道">
+    {% for brief in payload.briefs %}
+    <button type="button" role="tab" id="tab-{{ brief.channel_id }}" aria-controls="panel-{{ brief.channel_id }}" aria-selected="{{ 'true' if loop.first else 'false' }}" data-channel-tab="{{ brief.channel_id }}">
+      <span>{{ brief.channel_name }}</span>
+      <strong>{{ [brief.displayed_count, brief.target_count]|min }}/{{ brief.target_count }}</strong>
+      <em>{{ brief.status }}</em>
+    </button>
+    {% endfor %}
+  </nav>
+
+  {% for brief in payload.briefs %}
+  <section class="channel-panel" id="panel-{{ brief.channel_id }}" role="tabpanel" aria-labelledby="tab-{{ brief.channel_id }}" {% if not loop.first %}hidden{% endif %}>
+    <header class="channel-panel-head">
+      <div><p>{{ brief.channel_type }}</p><h3>{{ brief.channel_name }}</h3><span>{{ brief.summary|zh(language) }}</span></div>
+      <strong>{{ brief.status }}</strong>
+    </header>
+    <p class="channel-boundary">{{ brief.fixed_boundary|zh(language) }}</p>
+    {% if brief.shortage_reasons %}<p class="channel-shortage">本日合格候選 {{ brief.qualified_count }} 條：{{ brief.shortage_reasons|join(' / ') }}</p>{% endif %}
+
+    <div class="channel-topic-list">
+      {% for item in brief.assignments[:brief.target_count] %}
+      <article class="channel-topic">
+        <header class="channel-topic-head">
+          <span class="channel-rank">{{ item.candidate_rank }}</span>
+          <div>
+            <p><b>{{ item.candidate_type }}</b><em>{{ item.editorial_status }} · {{ item.freshness_state }}</em></p>
+            <h4>{{ item.title|zh(language) }}</h4>
+          </div>
+        </header>
+        <div class="channel-why-grid">
+          <div><span>WHY NOW</span>{% for value in item.why_now %}<p>{{ value|zh(language) }}</p>{% endfor %}</div>
+          <div><span>WHY THIS CHANNEL</span>{% for value in item.why_channel %}<p>{{ value|zh(language) }}</p>{% endfor %}</div>
+          <div><span>RANKING</span>{% for value in item.ranking_reasons %}<p>{{ value|zh(language) }}</p>{% endfor %}</div>
+        </div>
+
+        {% if item.stock_details %}
+        <div class="channel-stock-grid">
+          {% for stock in item.stock_details %}
+          <div class="channel-stock-row">
+            <div><strong>{{ stock.name|zh(language) }}</strong><span>{{ stock.security_id }}</span></div>
+            <dl>
+              <div><dt>收盤</dt><dd>{{ stock.close if stock.close is not none else 'UNKNOWN' }}</dd></div>
+              <div><dt>漲跌</dt><dd>{{ '%+.2f'|format(stock.change_pct) if stock.change_pct is not none else 'UNKNOWN' }}{% if stock.change_pct is not none %}%{% endif %}</dd></div>
+              <div><dt>成交量</dt><dd>{{ '{:,}'.format(stock.current_volume) if stock.current_volume is not none else 'UNKNOWN' }}</dd></div>
+              <div><dt>20日中位</dt><dd>{{ '{:,}'.format(stock.median_volume_20d) if stock.median_volume_20d is not none else 'UNKNOWN' }}</dd></div>
+              <div><dt>RVOL</dt><dd>{{ '%.2f'|format(stock.volume_ratio) if stock.volume_ratio is not none else 'UNKNOWN' }}</dd></div>
+            </dl>
+            <p>{{ stock.matched_rules|join(' · ') }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="channel-fact-row">
+          <div><span>已核驗欄位</span><ul>{% for fact in item.facts %}<li>{{ fact|zh(language) }}</li>{% endfor %}</ul></div>
+          <div><span>仍需確認</span><ul>{% for value in item.unknowns %}<li>{{ value|zh(language) }}</li>{% else %}<li>無</li>{% endfor %}</ul></div>
+        </div>
+
+        <details class="channel-evidence">
+          <summary>Evidence {{ item.evidence|length }} · Opinion {{ item.opinion_evidence|length }}</summary>
+          <div>
+            {% for evidence in item.evidence %}
+            <a href="{{ evidence.url }}" target="_blank" rel="noopener noreferrer"><b>{{ evidence.evidence_class }}</b><span>{{ evidence.source_id }} · {{ evidence.published_at or evidence.announced_at or evidence.trade_date or evidence.observed_at }}</span></a>
+            {% endfor %}
+            {% for evidence in item.opinion_evidence %}
+            <a href="{{ evidence.url }}" target="_blank" rel="noopener noreferrer"><b>{{ evidence.evidence_class }}</b><span>{{ evidence.source_id }} · {{ evidence.published_at or evidence.observed_at }}</span></a>
+            {% endfor %}
+          </div>
+        </details>
+        <p class="channel-risks">{% for flag in item.risk_flags %}<span>{{ flag }}</span>{% endfor %}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if brief.assignments|length > brief.target_count %}
+    <details class="channel-backups">
+      <summary>備選 {{ brief.assignments|length - brief.target_count }} 條</summary>
+      <ol>{% for item in brief.assignments[brief.target_count:] %}<li><b>{{ item.title|zh(language) }}</b><span>{{ item.candidate_type }} · {{ item.editorial_status }}</span></li>{% endfor %}</ol>
+    </details>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <section class="channel-source-readiness" aria-label="來源就緒狀態">
+    {% for source in payload.source_readiness %}<span><b>{{ source.source }}</b>{{ source.status }}</span>{% endfor %}
+  </section>
+  {% else %}
+  <section class="channel-empty"><p class="channel-kicker">TAIWAN POST-CLOSE EDITORIAL DESK</p><h2>尚無可用的頻道收盤簡報</h2><p>頁面不會用舊簡報冒充今日結果。</p></section>
+  {% endif %}
+</div>
+
+<script>
+(() => {
+  const tabs = [...document.querySelectorAll('[data-channel-tab]')];
+  tabs.forEach((tab) => tab.addEventListener('click', () => {
+    tabs.forEach((item) => {
+      const active = item === tab;
+      item.setAttribute('aria-selected', active ? 'true' : 'false');
+      document.getElementById('panel-' + item.dataset.channelTab).hidden = !active;
+    });
+  }));
+})();
+</script>
+{% endblock %}

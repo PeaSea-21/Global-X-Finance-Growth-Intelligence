@@ -39,6 +39,7 @@ deliverables/*.png
 
 # Local generated dependency and scratch work
 work/
+/outputs/
 
 # Local site build output (source remains tracked)
 sites/**/node_modules/

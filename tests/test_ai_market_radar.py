@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
 from global_x_finance.ben_radar import (
+    NEWS_SOURCES,
     cluster_news,
     format_trade_value,
     format_volume_lots,
@@ -29,6 +30,17 @@ def test_rss_requires_real_title_time_and_link():
     assert len(items) == 1
     assert items[0]["url"] == "https://example.test/news/1"
     assert items[0]["published_at"].startswith("2026-08-16T06:00:00")
+
+
+def test_news_pool_has_multiple_independent_taiwan_publishers():
+    taiwan_publishers = {
+        row["publisher_group"] for row in NEWS_SOURCES if row["market"] == "TW"
+    }
+
+    assert {
+        "yahoo", "cna", "moneydj", "udn_money", "ettoday", "technews"
+    }.issubset(taiwan_publishers)
+    assert len({row["source_id"] for row in NEWS_SOURCES}) == len(NEWS_SOURCES)
 
 
 def test_similar_reprints_cluster_once():

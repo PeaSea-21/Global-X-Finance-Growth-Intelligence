@@ -1,0 +1,41 @@
+[
+  {
+    "package_id":"TSMC-2Q26-A","style_variant":"single_decision_question","named_creator_emulation":false,"factpack_id":"TSMC-2Q26-OFFICIAL-v1",
+    "youtube_outline":[
+      {"section":"hook","text":"台积电第二季营收年增36%，真正需要回答的不是追不追，而是成长来自哪里、哪些条件会让它减速。","labels":["FACT:F001","OPINION"]},
+      {"section":"result","text":"先核对营收、获利与毛利率，再把一次性成绩和可延续动能分开。","fact_ids":["F001","F002"]},
+      {"section":"engine","text":"用先进制程占比与HPC、手机平台变化确认AI相关需求的结构。","fact_ids":["F003","F004"]},
+      {"section":"constraint","text":"检查北美客户集中、海外厂毛利稀释及第三季指引。","fact_ids":["F005","F006","F007"]},
+      {"section":"close","text":"结论是建立观察清单而非买卖指令；下一季核对营收区间、毛利率和平台组合。","labels":["INFERENCE","RISK"]}
+    ],
+    "x_posts":[{"sequence":1,"text":"台积电2Q26营收年增36%，但判断下一阶段不能只看一个增长数字：先进制程占晶圆营收77%，HPC占净营收66%；同时还要跟踪北美客户占比、海外厂毛利稀释与3Q指引。以上是公司披露，不构成投资建议。","fact_ids":["F001","F003","F004","F005","F006","F007"],"source_urls":["https://investor.tsmc.com/english/quarterly-results/2026/q2"]}],
+    "fact_ids":["F001","F002","F003","F004","F005","F006","F007"],
+    "originality_declaration":"Uses a generic decision-question structure and entirely new wording; no creator identity, phrase, story, or recommendation is reused."
+  },
+  {
+    "package_id":"TSMC-2Q26-B","style_variant":"three_question_deep_dive","named_creator_emulation":false,"factpack_id":"TSMC-2Q26-OFFICIAL-v1",
+    "youtube_outline":[
+      {"section":"preview","text":"同一份财报回答三题：利润为什么跳升、AI需求如何落到制程、下一季最容易忽略的约束是什么。","labels":["OPINION"]},
+      {"section":"question_1","text":"以营收、净利、EPS和利润率建立结果层。","fact_ids":["F001","F002"]},
+      {"section":"question_2","text":"以2/3/5/7奈米组合与HPC、手机变化建立产品层。","fact_ids":["F003","F004"]},
+      {"section":"question_3","text":"以客户区域、海外厂影响及第三季公司指引建立风险层。","fact_ids":["F005","F006","F007"]},
+      {"section":"payoff","text":"三个问题共同指向同一验证原则：分清历史成绩、管理层前瞻和分析者推论。","labels":["INFERENCE","RISK"]}
+    ],
+    "x_posts":[{"sequence":1,"text":"看台积电2Q26，我会拆三层：①结果：营收1.27038兆元、毛利率67.7%；②结构：7奈米及以下占晶圆营收77%，HPC占净营收66%；③条件：3Q营收指引446–458亿美元，海外厂仍稀释部分毛利。事实来自公司IR，推论需下一季验证。","fact_ids":["F001","F002","F003","F004","F006","F007"],"source_urls":["https://investor.tsmc.com/english/quarterly-results/2026/q2"]}],
+    "fact_ids":["F001","F002","F003","F004","F005","F006","F007"],
+    "originality_declaration":"Uses a generic three-question chapter mechanic with new language and no source-specific persona or signature expression."
+  },
+  {
+    "package_id":"TSMC-2Q26-C","style_variant":"macro_to_industry_transmission","named_creator_emulation":false,"factpack_id":"TSMC-2Q26-OFFICIAL-v1",
+    "youtube_outline":[
+      {"section":"hook","text":"北美客户78%、HPC 66%、先进制程77%：这三组比例说明台积电的增长与全球AI资本支出高度相连，但不是无条件直线。","fact_ids":["F003","F004","F005"],"labels":["FACT","INFERENCE"]},
+      {"section":"company_result","text":"先放入第二季营收与获利结果，确认增长幅度。","fact_ids":["F001","F002"]},
+      {"section":"transmission","text":"从客户地区传导到HPC平台，再落到先进制程组合。","fact_ids":["F003","F004","F005"]},
+      {"section":"counterforce","text":"海外厂毛利稀释与公司第三季区间构成约束，不把指引当保证。","fact_ids":["F006","F007"]},
+      {"section":"watchlist","text":"后续观察平台组合、先进制程占比与实际毛利率是否同时兑现。","labels":["INFERENCE","RISK"]}
+    ],
+    "x_posts":[{"sequence":1,"text":"台积电2Q26的重点不只在营收年增36%。北美客户占净营收78%，HPC占66%，7奈米及以下占晶圆营收77%，显示需求、平台与制程三层集中。公司3Q给出446–458亿美元营收区间，但指引仍有风险，不能当成保证。","fact_ids":["F001","F003","F004","F005","F006"],"source_urls":["https://investor.tsmc.com/english/quarterly-results/2026/q2"]}],
+    "fact_ids":["F001","F002","F003","F004","F005","F006","F007"],
+    "originality_declaration":"Uses a general macro-to-industry transmission structure, fully new wording, and no named-creator emulation."
+  }
+]

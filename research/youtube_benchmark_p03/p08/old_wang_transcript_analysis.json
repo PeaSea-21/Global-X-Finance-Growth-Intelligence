@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-08-19",
+  "status": "THREE_USER_PROVIDED_TRANSCRIPTS_REPEATED_PATTERN",
+  "channel_name": "老王愛說笑",
+  "program_name_observed": "老王不只三分鐘",
+  "analysis_scope": "creator-neutral narrative research only",
+  "transcript_body_persisted": false,
+  "finance_fact_status": "NOT_A_FACT_SOURCE",
+  "videos": [
+    {
+      "source_id": "old_wang_2024-07-11_august_crash",
+      "title": "八月崩盤！2024/07/11【老王不只三分鐘】",
+      "published_date_supplied": "2024-07-11",
+      "video_url": "UNKNOWN",
+      "video_id": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "MIXED_ZH_HANT_EN",
+        "sha256": "66ac800ed6dd417cba83ba83eed638e81fe485c3c5fd25f0f08a2ce5fe02c6e0",
+        "character_count": 15754,
+        "normalized_character_count": 12300,
+        "sentence_count": 56,
+        "question_count": 54,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Use July strength and historical evidence to assess whether August carries a pullback risk.",
+        "hook_function": "Recall an earlier successful market-timing call, attach it to a named market strategist, and immediately ask whether the next phase changes.",
+        "central_question": "After a strong first half of July, what evidence would support or invalidate an August pullback scenario?",
+        "structure": [
+          "Prior-call callback and audience payoff",
+          "Strategy-versus-tactics framing",
+          "Historical seasonality and fund-flow evidence",
+          "Election-year comparison",
+          "Earnings expectations and market concentration",
+          "Conditional beat-meet-miss scenario tree",
+          "Taiwan-market implication",
+          "Conditional conclusion",
+          "Separate anti-fraud public-service segment"
+        ],
+        "evidence_order": [
+          "Historical seasonal pattern",
+          "Fund-flow observation",
+          "Election-cycle comparison",
+          "Forward earnings expectations",
+          "Index concentration",
+          "Upcoming earnings as the next falsification point"
+        ],
+        "viewpoint": "High-energy and confident framing, but the final market view is made conditional on earnings outcomes.",
+        "rhythm": "Host-assistant dialogue, frequent rhetorical questions, analogies and jokes, then a dense evidence section and a short conditional payoff.",
+        "ending": "States the August risk case, names unusually strong earnings as the condition that could defeat it, then switches to a standalone anti-fraud message.",
+        "cta": "Subscription request appears near the opening; the public-service segment is not treated as the editorial conclusion."
+      },
+      "limitations": [
+        "No timestamps or paragraph boundaries were supplied.",
+        "Automatic recognition alternates between Traditional Chinese and English and contains repeated fragments.",
+        "The direct YouTube URL and video ID are unavailable."
+      ]
+    },
+    {
+      "source_id": "old_wang_2021-02-26_foreign_selloff",
+      "title": "是在倒垃圾嗎？外資狂倒944億！台股守得住街亭？美國十年期公債殖利率飆升，真恐慌還是假利空？必學高檔爆大量應對，面板、航空就靠這一招！2021/02/26【老王不只三分鐘】",
+      "published_date_supplied": "2021-02-26",
+      "video_url": "UNKNOWN",
+      "video_id": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "MIXED_ZH_HANT_EN",
+        "sha256": "7a6bf380c363f4f653b849a0958754fb34562a9c9aa4eabe21d768d1a6892a54",
+        "character_count": 91141,
+        "normalized_character_count": 69325,
+        "sentence_count": 496,
+        "question_count": 486,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Turn a sharp Taiwan-market selloff into a sequence of testable index, rate, flow, volume and sector decisions.",
+        "hook_function": "Amplify the emotional impact of an almost 500-point decline and open a playful prediction loop that is closed at the end.",
+        "central_question": "Is the selloff a systemic warning or a condition that can be managed through specific support, flow and volume tests?",
+        "structure": [
+          "Market-shock opening and prediction loop",
+          "Index support and gap diagnosis",
+          "US 10-year yield fear",
+          "10-year minus 2-year spread and historical comparison",
+          "Broader technical-condition review",
+          "Foreign-flow and financing diagnosis",
+          "Large-cap and sector modules",
+          "High-volume response rules for aviation, panels and shipping",
+          "Next-session checkpoints and closing joke"
+        ],
+        "evidence_order": [
+          "Current index move and chart structure",
+          "Yield level and curve comparison",
+          "Historical episodes",
+          "Foreign and financing flows",
+          "Price-volume and moving-average conditions",
+          "Sector-by-sector application"
+        ],
+        "viewpoint": "Reframes broad panic as a set of conditional technical and flow tests, then applies the same decision logic to multiple sectors.",
+        "rhythm": "Long-form live-show cadence with rapid call-and-response questions, repeated comprehension checks, humor, and frequent topic resets.",
+        "ending": "Restates follow-up responsibility, asks viewers to make their own judgment, gives the regular live schedule, and closes the opening prediction loop with a market-holiday joke.",
+        "cta": "Membership and recurring-live-show reminders are embedded within the analysis and ending."
+      },
+      "limitations": [
+        "No timestamps or paragraph boundaries were supplied.",
+        "Automatic recognition alternates between Traditional Chinese and English and contains mistranscribed market terms.",
+        "The direct YouTube URL and video ID are unavailable."
+      ]
+    },
+    {
+      "source_id": "old_wang_2026-08-11_yageo_innolux_nanya",
+      "title": "國巨重返1000？買群創就重創？南亞有機會嗎？2026/08/11【老王不只三分鐘】",
+      "published_date_supplied": "2026-08-11",
+      "video_url": "https://www.youtube.com/watch?v=j-zGkkZdcOs",
+      "video_id": "j-zGkkZdcOs",
+      "view_count_at_2026-08-13": 88963,
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "duplicate_input_count": 2,
+      "transcript": {
+        "status": "AVAILABLE_NOISY_AUTOMATIC_TEXT",
+        "language": "ZH_HANT_ASR",
+        "sha256": "366693ff5f38f1ad9b18f5a7a63be32028e6334fe1fe868836a8d968e7c0a1a8",
+        "character_count": 13116,
+        "normalized_character_count": 10680,
+        "sentence_count": 1158,
+        "question_count": 0,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Recheck a prior Yageo reversal call, then apply moving-average, volume and foreign-flow rules to passive components, Nanya and Innolux.",
+        "hook_function": "Cross-promote the previous long episode and immediately use prior-video evidence to prove that a turning-point call preceded the price move.",
+        "central_question": "Which rebounds are technically confirmed, which need more volume, and which still depend on foreign investors returning?",
+        "structure": [
+          "Subscription and previous-episode bridge",
+          "Prior-call replay and Yageo validation",
+          "Support and stop conditions",
+          "Membership proof and promotion",
+          "Passive-component sector breadth",
+          "Rule reuse across related stocks",
+          "Nanya short-term and long-term conditions",
+          "Innolux foreign-flow warning",
+          "Next-session verification",
+          "Separate anti-fraud and risk disclosure"
+        ],
+        "evidence_order": [
+          "Prior recorded call",
+          "Moving-average recovery",
+          "High-volume low and stop level",
+          "Sector breadth",
+          "Volume confirmation",
+          "Foreign buy-sell direction"
+        ],
+        "viewpoint": "Presents one technical rule as reusable across several stocks while repeatedly using prior calls as authority evidence and membership proof.",
+        "rhythm": "Short ASR lines, rapid host-assistant exchanges, repeated chart checks, frequent proof callbacks and a strong mid-program promotional block.",
+        "ending": "Leaves Innolux conditional on foreign investors returning, then switches to a separate anti-fraud and investment-risk message.",
+        "cta": "Subscription, prior-episode viewing and paid-membership prompts appear before and during the analysis."
+      },
+      "limitations": [
+        "Two supplied files were exact duplicates and count as one sample.",
+        "Automatic recognition contains many company-name and technical-term errors.",
+        "The metadata view count is a 2026-08-13 captured value, not a current live count."
+      ]
+    }
+  ],
+  "cross_sample_preliminary_pattern": {
+    "confidence": "MEDIUM_THREE_SAMPLES",
+    "repeatable_mechanisms": [
+      "Open with an emotionally legible market conflict and a prior-call or prediction loop.",
+      "Compress the episode into one dominant audience decision question.",
+      "Move from broad evidence to conditional scenarios rather than ending with one unconditional forecast.",
+      "Use repeated questions and host-assistant exchanges as pacing resets.",
+      "Translate abstract market evidence into concrete index, sector or stock checkpoints.",
+      "End with the next verification point, a responsibility boundary, and humor or a recurring-show CTA."
+    ],
+    "do_not_reuse": [
+      "Creator name or persona",
+      "Program name",
+      "Signature jokes or catchphrases",
+      "Named personal predictions",
+      "Membership promotion language",
+      "Verbatim analogies or long excerpts"
+    ],
+    "upgrade_requirement": "Satisfied for a preliminary repeated channel mechanism across 2021, 2024 and 2026. Performance-causal claims and high-confidence channel generalization still require balanced winner, typical and underperforming samples."
+  }
+}

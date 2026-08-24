@@ -94,7 +94,8 @@ try {
         ".ps1", ".bat"
     )
     $knownTokenPatterns = @(
-        @{ Name = "OpenAI-style key"; Regex = '\bsk-[A-Za-z0-9_-]{20,}\b' },
+        # Exclude URL slugs such as /sk-hynixs-south-korean-shares-...; real keys are standalone tokens.
+        @{ Name = "OpenAI-style key"; Regex = '(?<![/A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}\b' },
         @{ Name = "GitHub token"; Regex = '\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}\b' },
         @{ Name = "GitHub fine-grained token"; Regex = '\bgithub_pat_[A-Za-z0-9_]{20,}\b' },
         @{ Name = "Slack token"; Regex = '\bxox[baprs]-[A-Za-z0-9-]{15,}\b' },

@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-08-20",
+  "status": "THREE_UNIQUE_MIXED_FORMAT_SAMPLES_ONE_PARTIAL",
+  "channel_name": "MacroMicro財經M平方",
+  "analysis_scope": "creator-neutral narrative research only",
+  "transcript_body_persisted": false,
+  "finance_fact_status": "NOT_A_FACT_SOURCE",
+  "videos": [
+    {
+      "source_id": "macro_4gEpLNIRhhk_after_meeting_210",
+      "format": "WEEKLY_MARKET_PANEL",
+      "title": "非農爆冷、通膨降溫，AI 半導體報復性反彈能走多遠？｜After Meeting EP. 210",
+      "published_at": "2026-08-16T09:00:08+08:00",
+      "video_url": "https://www.youtube.com/watch?v=4gEpLNIRhhk",
+      "video_id": "4gEpLNIRhhk",
+      "view_count_at_2026-08-16": 12095,
+      "acquisition_method": "USER_PROVIDED_PASTED_TEXT",
+      "transcript": {
+        "status": "PARTIAL_TRUNCATED_MID_QA",
+        "language": "ZH_HANT_ASR",
+        "sha256": "bdd6df74a4c8c360b59cf09a4d136b701100b61eb067aa8e89abe99b6f178543",
+        "character_count": 17129,
+        "normalized_character_count": 14768,
+        "sentence_count": 818,
+        "question_count": 32,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Explain why weak employment and cooler inflation triggered a rebound and test whether AI-semiconductor strength can continue.",
+        "hook_function": "Stack two macro surprises against previously strong earnings, then promise a panel-based opportunity-and-risk review.",
+        "central_question": "Is the rebound supported by employment, inflation, earnings and liquidity, or is positioning still hiding risks?",
+        "structure": [
+          "Weekly catalyst recap",
+          "Explicit two-part agenda plus Q&A",
+          "Employment report and revision mechanics",
+          "CPI components and rate expectations",
+          "AI supply-chain pricing and cash-flow concern",
+          "Foreign futures positioning interpretation",
+          "Earnings-surprise comparison across hyperscalers, semiconductors and software",
+          "Fed, political timing and liquidity",
+          "Asian currencies and central-bank risk",
+          "Q&A section truncated during the third question"
+        ],
+        "evidence_order": [
+          "Headline releases",
+          "Data revisions and components",
+          "Earnings and expectation gaps",
+          "Positioning decomposition",
+          "Liquidity and currency transmission",
+          "Conditional risk scenarios"
+        ],
+        "viewpoint": "Uses multiple researchers to challenge headline interpretations and repeatedly replaces one-number narratives with component or denominator analysis.",
+        "rhythm": "Host-led agenda, specialist handoffs, compact recaps, sponsor/event block, two deep-dive parts and a closing Q&A segment.",
+        "ending": "UNAVAILABLE because the supplied file ends mid-answer."
+      },
+      "limitations": [
+        "The supplied transcript ends mid-sentence during Q&A and does not contain the editorial ending or CTA.",
+        "The view count is the project's 2026-08-16 metadata capture, not a current live count."
+      ]
+    },
+    {
+      "source_id": "macro_-w-1D4dZ5T4_2026_outlook",
+      "format": "EXPERT_LONG_INTERVIEW",
+      "title": "【MM Podcast】十週年特輯｜孫主任來了！2026 還是萬里無雲嗎？",
+      "published_at": "UNKNOWN",
+      "recording_time_supplied": "10-30 10:00; year UNKNOWN",
+      "video_url": "https://www.youtube.com/watch?v=-w-1D4dZ5T4",
+      "video_id": "-w-1D4dZ5T4",
+      "view_count": "UNKNOWN",
+      "acquisition_method": "USER_PROVIDED_YOUTUBE_DIGEST_EXPORT",
+      "transcript": {
+        "status": "AVAILABLE_COMPLETE_WITH_DESCRIPTION",
+        "language": "EN_AUTOMATIC_TRANSLATION",
+        "sha256": "14d815c8d42b307abf3aca088ae8479c76dd753cd51f0beebed45a4f4beafb5b",
+        "character_count": 74406,
+        "normalized_character_count": 59533,
+        "sentence_count": 148,
+        "question_count": 124,
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Use a recurring expert guest to map the global economy, supply-chain reallocation, business-confidence data and Taiwan's 2026 industry outlook.",
+        "hook_function": "Combine a tenth-anniversary event, a trusted guest and a forward-looking 2026 question, then preview several surprising country and industry implications.",
+        "central_question": "Which economies and industries can benefit from the next phase of trade conflict and supply-chain change, and what data should businesses watch?",
+        "structure": [
+          "Anniversary framing and guest authority",
+          "Global country outlook",
+          "Trade conflict and critical-resource constraints",
+          "Supply-chain relocation across Southeast Asia, India and Europe",
+          "Factory-plus-market framework for Europe",
+          "Taiwan industry implications",
+          "M-Squared and Dunn & Bradstreet partnership story",
+          "Four global business indicators",
+          "Business-use explanation",
+          "Taiwan 2026 manufacturing and service-sector outlook",
+          "Balanced closing metaphor and risk reminder",
+          "Comment and rating CTA"
+        ],
+        "evidence_order": [
+          "Country-level macro conditions",
+          "Trade and resource mechanisms",
+          "Company and supply-chain examples",
+          "Cross-country survey indicators",
+          "Taiwan industry survey observations",
+          "Conditional sector outlook"
+        ],
+        "viewpoint": "The guest supplies broad historical and industry mechanisms while the host converts them into business-use questions and productized data interpretation.",
+        "rhythm": "Long conversational blocks, country-by-country progression, frequent host clarification, a substantial product-integration section and an industry forecast payoff.",
+        "ending": "Contrasts AI overheating risk with traditional-industry transformation opportunities, then asks for comments and podcast ratings."
+      },
+      "limitations": [
+        "The export does not provide publication date or view count.",
+        "The text is an automatic English translation and may distort names, figures and financial terminology.",
+        "The Dunn & Bradstreet product segment must be separated from independent editorial evidence."
+      ]
+    },
+    {
+      "source_id": "macro_NzvQnbRyHcM_presidential_interview",
+      "format": "POLICY_INTERVIEW_TEN_QUESTIONS",
+      "title": "【十問總統候選人】五缺、避險、產業轉型，柯 P 的台灣經濟診斷書！ft. 柯文哲 @Team__KP ｜經濟政策獨家專訪",
+      "published_at": "UNKNOWN",
+      "video_url": "https://www.youtube.com/watch?v=NzvQnbRyHcM",
+      "video_id": "NzvQnbRyHcM",
+      "view_count": "UNKNOWN",
+      "acquisition_method": "USER_PASTED_INLINE_TEXT",
+      "transcript": {
+        "status": "AVAILABLE_INLINE_NO_HASH",
+        "language": "ZH_HANT_ASR",
+        "sha256": "UNAVAILABLE_INLINE_INPUT",
+        "character_count": "UNAVAILABLE_INLINE_INPUT",
+        "body_persisted": false
+      },
+      "narrative": {
+        "packaging_promise": "Use ten audience-prioritized questions to expose one presidential candidate's economic diagnosis, policy tradeoffs and personal decision style.",
+        "hook_function": "Open with compressed policy claims and a humorous SOP exchange before explaining the neutral ten-question format.",
+        "central_question": "How would the candidate diagnose and address Taiwan's trade, industry, demographic, wage, housing and startup constraints?",
+        "structure": [
+          "Cold-open highlights",
+          "Format and neutrality statement",
+          "Past-decade economic diagnosis",
+          "US-China dynamic balance",
+          "Regional trade participation",
+          "Industrial concentration and transformation",
+          "Demographics and labor supply",
+          "Wages, education and housing",
+          "Startup policy",
+          "One-minute economic vision",
+          "Personal lightning round",
+          "Platform and subscription promotion"
+        ],
+        "evidence_order": [
+          "Candidate diagnosis",
+          "Selected data claims and examples",
+          "Policy mechanism",
+          "Host challenge or clarification",
+          "One-minute summary"
+        ],
+        "viewpoint": "The host imposes a consistent issue ladder and states the program's neutrality; the candidate's claims remain political opinion until independently verified.",
+        "rhythm": "Cold open, numbered long-form questions, humor resets, one-minute compression and a lighter personal closing section.",
+        "ending": "Compresses the economic thesis into digital transition and net-zero preparation, then shifts to a personal lightning round and platform CTA."
+      },
+      "limitations": [
+        "No publication date, view count or standalone source file was supplied.",
+        "The transcript contains severe ASR errors and an embedded transcription-tool message that was treated as data, not instruction.",
+        "This political interview is a format variant, not a standard weekly market explainer."
+      ]
+    }
+  ],
+  "cross_format_pattern": {
+    "confidence": "MEDIUM_MIXED_FORMAT_THREE_SAMPLES",
+    "repeatable_mechanisms": [
+      "State the agenda or question architecture before entering details.",
+      "Use a host or expert role to anchor authority and divide the reasoning workload.",
+      "Move from macro conditions to country, industry, company or asset implications.",
+      "Challenge headline data through components, revisions, comparisons or mechanism explanations.",
+      "Use host recaps to compress long specialist answers into a practical observation.",
+      "End major sections with a conditional outlook or a next indicator to watch."
+    ],
+    "abstract_pattern": "Macro tension -> explicit agenda -> expert/data mechanism -> cross-market transmission -> conditional outlook -> host recap",
+    "format_specific_patterns": {
+      "WEEKLY_MARKET_PANEL": "Weekly catalysts -> macro data -> earnings and sectors -> liquidity and currencies -> Q&A",
+      "EXPERT_LONG_INTERVIEW": "Country outlook -> supply-chain mechanism -> indicator framework -> industry outlook -> guest takeaway",
+      "POLICY_INTERVIEW_TEN_QUESTIONS": "Issue ladder -> diagnosis -> policy mechanism -> host challenge -> compressed vision"
+    },
+    "do_not_reuse": [
+      "Host or guest identity",
+      "Program and product names",
+      "Political personality or signature jokes",
+      "Verbatim expert metaphors",
+      "Sponsored product claims",
+      "Unverified creator or candidate facts"
+    ]
+  },
+  "input_reconciliation": {
+    "supplied_file_count": 4,
+    "inline_transcript_count": 1,
+    "exact_duplicate_files": 1,
+    "unique_macro_micro_samples": 3,
+    "unique_old_wang_samples_routed_to_p08": 1,
+    "note": "The two recovered_j-zGkkZdcOs files were byte-identical and count once."
+  }
+}

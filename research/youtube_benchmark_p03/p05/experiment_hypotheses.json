@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-17T00:00:00+08:00",
+  "confidence_policy": {
+    "LOW": "Benchmark observation only",
+    "MEDIUM": "Multiple independent benchmark samples or 2–3 own-channel observations in the same direction",
+    "HIGH": "Requires repeated own-channel experiments; one benchmark breakout cannot qualify"
+  },
+  "experiment_rule": "Prefer one-variable tests; real operations with uncontrolled factors must be QUASI_EXPERIMENT.",
+  "title_hypotheses": [
+    {
+      "hypothesis_id": "H-TITLE-01",
+      "variable": "title",
+      "treatment_a": "具体对象 + 单一投资者决策问题",
+      "treatment_b": "纯事件陈述",
+      "expected_effect": "提高承诺清晰度与受众任务匹配；不预设提高 CTR。",
+      "benchmark_evidence": [
+        "BF01",
+        "BF02",
+        "BP01"
+      ],
+      "applicable_track": [
+        "TRACK_A_TAIWAN"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "在至少 3 次相近主题/同封面准实验中，A 的 CTR 与 30 秒留存未持续优于 B。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-02",
+      "variable": "title",
+      "treatment_a": "一个官方主数字 + 一个质量问题",
+      "treatment_b": "泛称财报强劲/疲弱",
+      "expected_effect": "提高证据可见度并减少模糊承诺。",
+      "benchmark_evidence": [
+        "BF06",
+        "BF09",
+        "BP05"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "数字版提高 CTR 但造成 30 秒留存下降，或数字不能代表核心内容。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-03",
+      "variable": "title",
+      "treatment_a": "三项同主题更新 + 共同问题",
+      "treatment_b": "三个无共同主线的新闻并列",
+      "expected_effect": "维持信息密度同时减少承诺稀释。",
+      "benchmark_evidence": [
+        "BF01",
+        "BF03",
+        "BP02"
+      ],
+      "applicable_track": [
+        "TRACK_B_US_AI"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "共同主题仍无法改善首 30 秒留存或平均观看时长。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-04",
+      "variable": "title",
+      "treatment_a": "指出官方数据本身的限制",
+      "treatment_b": "直接把运营数字等同财务结论",
+      "expected_effect": "提高可信度与解释价值。",
+      "benchmark_evidence": [
+        "BF10",
+        "BP05",
+        "BP07"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "观众无法从标题理解限制为何重要，导致低 CTR 且评论未体现理解提升。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-05",
+      "variable": "title",
+      "treatment_a": "两个方向相反的官方数字",
+      "treatment_b": "只呈现单向利多数字",
+      "expected_effect": "形成真实而非人为的解释冲突。",
+      "benchmark_evidence": [
+        "BF07",
+        "BP07"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "反差并非同口径或导致误导；Finance QA 失败即终止。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-06",
+      "variable": "title",
+      "treatment_a": "机会 + 一项明确限制",
+      "treatment_b": "纯机会承诺",
+      "expected_effect": "在不牺牲财经可信度下测试点击与观看质量。",
+      "benchmark_evidence": [
+        "BF07",
+        "BP07"
+      ],
+      "applicable_track": [
+        "TRACK_A_TAIWAN",
+        "TRACK_B_US_AI"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "限制词造成承诺模糊，或 A 在多次准实验中 CTR/留存均不优。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-07",
+      "variable": "title",
+      "treatment_a": "宏观事件 + 明确股票传导问题",
+      "treatment_b": "只复述政策结果",
+      "expected_effect": "提高宏观内容对股票受众的直接相关性。",
+      "benchmark_evidence": [
+        "BF01",
+        "BF04",
+        "BP03"
+      ],
+      "applicable_track": [
+        "TRACK_C_MACRO"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "传导链无法由证据支持，或观众在 30 秒前大量离开。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-08",
+      "variable": "title",
+      "treatment_a": "历史/数据矛盾 + 下一验证点",
+      "treatment_b": "纯突发新闻描述",
+      "expected_effect": "增加解释型内容的 shelf life。",
+      "benchmark_evidence": [
+        "BF04",
+        "BP03",
+        "BP06"
+      ],
+      "applicable_track": [
+        "TRACK_C_MACRO"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "7 日相对表现与观看质量未优于同题新闻版，或单例不能复现。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-09",
+      "variable": "title",
+      "treatment_a": "先写受影响行业/资产",
+      "treatment_b": "只写公司公告",
+      "expected_effect": "提高非持股观众的受众相关性。",
+      "benchmark_evidence": [
+        "BF01",
+        "BP03"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "影响关系过弱需大量限定，或吸引错误受众导致留存下降。"
+    },
+    {
+      "hypothesis_id": "H-TITLE-10",
+      "variable": "title",
+      "treatment_a": "财报前预注册三项判断标准",
+      "treatment_b": "预测超预期/不及预期",
+      "expected_effect": "建立可复核的预览内容并降低预测风险。",
+      "benchmark_evidence": [
+        "BF06",
+        "BP01",
+        "BP05"
+      ],
+      "applicable_track": [
+        "TRACK_B_US_AI"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "发布后判断标准无法执行，或观众只感知为无结论预览。"
+    }
+  ],
+  "thumbnail_hypotheses": [
+    {
+      "hypothesis_id": "H-THUMB-01",
+      "variable": "thumbnail",
+      "treatment_a": "封面补充标题未说的主数字/证据",
+      "treatment_b": "封面完整重复标题",
+      "expected_effect": "提高两个信息面的互补效率。",
+      "benchmark_evidence": [
+        "BF10",
+        "BP05"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "补充信息造成认知负担，移动端不可读或 CTR/留存不改善。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-02",
+      "variable": "thumbnail",
+      "treatment_a": "一个真实数字冲突",
+      "treatment_b": "三项同权数字",
+      "expected_effect": "建立单一主层级。",
+      "benchmark_evidence": [
+        "BF09",
+        "BP05"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "单数字无法代表正文承诺或误导方向。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-03",
+      "variable": "thumbnail",
+      "treatment_a": "证据链图 + 明确未确认段",
+      "treatment_b": "罗列受惠公司 Logo",
+      "expected_effect": "提高解释差异化并降低无证据受惠暗示。",
+      "benchmark_evidence": [
+        "BF09",
+        "BP03",
+        "BP04"
+      ],
+      "applicable_track": [
+        "TRACK_A_TAIWAN",
+        "TRACK_B_US_AI"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "链图在手机尺寸不可读，或观众无法理解未确认标记。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-04",
+      "variable": "thumbnail",
+      "treatment_a": "主问题一层 + 次证据一层",
+      "treatment_b": "三项等权大字",
+      "expected_effect": "提升移动端视觉层级。",
+      "benchmark_evidence": [
+        "BF03",
+        "BF09",
+        "BP05"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "层级版没有改善 CTR，或牺牲系列辨识。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-05",
+      "variable": "thumbnail",
+      "treatment_a": "官方图表/表格裁切 + 单一高亮",
+      "treatment_b": "抽象箭头或情绪图",
+      "expected_effect": "强化数据题的证据主体。",
+      "benchmark_evidence": [
+        "BF09",
+        "BP04",
+        "BP05"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "截图在手机上不可读，或证据感未转化为理解与留存。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-06",
+      "variable": "thumbnail",
+      "treatment_a": "人物/主持人作次级锚点、证据作主体",
+      "treatment_b": "人物占主画面、证据很小",
+      "expected_effect": "测试财经证据优先是否适合自有账号。",
+      "benchmark_evidence": [
+        "BF09",
+        "BP04"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "缺少人物主锚导致系列辨识或 CTR 明显下降。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-07",
+      "variable": "thumbnail",
+      "treatment_a": "已发生数据与未来情景分色",
+      "treatment_b": "同色呈现事实与预测",
+      "expected_effect": "降低时间与预测混淆。",
+      "benchmark_evidence": [
+        "BF10",
+        "BP05",
+        "BP07"
+      ],
+      "applicable_track": [
+        "ALL"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "用户仍误认预测为事实，或视觉复杂度过高。"
+    },
+    {
+      "hypothesis_id": "H-THUMB-08",
+      "variable": "thumbnail",
+      "treatment_a": "专家身份 + 官方证据 + 单一问题",
+      "treatment_b": "仅专家头像与强结论",
+      "expected_effect": "测试权威与证据分工，而非人格替代事实。",
+      "benchmark_evidence": [
+        "BF04",
+        "BP04",
+        "BP06"
+      ],
+      "applicable_track": [
+        "TRACK_C_MACRO"
+      ],
+      "confidence": "LOW",
+      "failure_condition": "无真实适格专家，或证据层未增加观看质量；单条 breakout 不得升级信心。"
+    }
+  ]
+}

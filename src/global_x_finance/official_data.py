@@ -313,6 +313,31 @@ class OfficialDataService:
             )
         return self._summary(tuple(results))
 
+    def sync_disclosures(self) -> OfficialSyncResult:
+        db_sources = self._validate_sources()
+        self._save_permissions(db_sources)
+        results: list[EndpointResult] = []
+        mops = self.sources["MOPS"]
+        for disclosure in mops["disclosure_endpoints"]:
+            exchange = disclosure["exchange_code"]
+            endpoint = disclosure["endpoint"]
+            results.append(
+                self._collect_list_endpoint(
+                    db_sources["MOPS"],
+                    "MOPS",
+                    f"mops_daily_material_information_{exchange.lower()}",
+                    endpoint,
+                    lambda record, raw_id, fetched, exchange=exchange, endpoint=endpoint: self._store_disclosure(
+                        db_sources["MOPS"], exchange, record, raw_id, fetched, endpoint
+                    ),
+                    lambda record: record,
+                    published_at_resolver=lambda record: _announcement_at(
+                        record.get("發言日期"), record.get("發言時間")
+                    ),
+                )
+            )
+        return self._summary(tuple(results))
+
     def _validate_sources(self) -> dict[str, sqlite3.Row]:
         resolved = {}
         for key, config_source in self.sources.items():

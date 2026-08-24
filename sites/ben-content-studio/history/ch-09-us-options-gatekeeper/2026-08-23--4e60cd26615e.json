@@ -1,0 +1,816 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-24T15:56:15+08:00",
+  "snapshot_fingerprint": "4e60cd26615ef0d918c2871b75b6f6bfd41cb6e465cff44f8de6d51844489d66",
+  "channel": {
+    "channel_order": 9,
+    "channel_id": "ch-09-us-options-gatekeeper",
+    "channel_name": "期權守門人",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "MEDIUM_FOR_RISK_EDUCATION_LOW_FOR_DAILY_OPTIONS_SURFACE",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-23",
+    "profile_promise": "風險優先地講期權對沖、波動率和賣方策略，而不是單邊賭博。",
+    "audience": "持有美股現貨、希望降低迴撤或獲得額外現金流的理性交易者",
+    "language_style": "教學型、機制先行、語氣剋制；用歷史規律或大師案例引出風險不對稱。",
+    "opening_hook": "先挑戰普通人把期權當賭具或機械套規律的誤區。",
+    "narrative_logic": [
+      "歷史/案例",
+      "核心機制",
+      "三層推理",
+      "風險不對稱",
+      "普通人分層行動",
+      "限制條件"
+    ],
+    "ending_pattern": "用風險清單和適用條件收尾，互動問題圍繞防守與紀律。",
+    "profile_sample_alignment": "PROFILE_SAMPLE_PARTIAL_MATCH_RISK_EDUCATION_STRONG_DAILY_SELLING_OPTIONS_WEAK",
+    "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+    "topics": [
+      {
+        "candidate_id": "options-gatekeeper:2026-08-23:event-risk-framework",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？",
+        "title_options": [
+          "輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？",
+          "買Call賭財報、買Put防崩盤？先過最大虧損與IV兩道門",
+          "美股延長交易不等於更安全：財報週期權的三層風控"
+        ],
+        "why_now": [
+          "輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。"
+        ],
+        "why_channel": [
+          "以最大損失、波動率結構與執行流動性三層拆解，而非預測單邊行情。"
+        ],
+        "facts": [
+          "經濟日報報導輝達將於8月26日公佈上季財報。",
+          "中央社報導臺灣券商將自行評估是否跟進美股延長交易。",
+          "CNBC報導長天期殖利率上升使市場波動。"
+        ],
+        "unknowns": [
+          "未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。",
+          "因此不提供特定履約價或賣方策略。"
+        ],
+        "evidence": [
+          {
+            "source_id": "經濟日報",
+            "evidence_class": "REPORTED",
+            "title": "輝達將於8月26日公布上季財報",
+            "published_at": "2026-08-23T05:04:11+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "中央社財經",
+            "evidence_class": "REPORTED",
+            "title": "美股延長交易台灣複委託跟進？金管會：券商自行評估",
+            "published_at": "2026-08-23T01:53:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cna.com.tw/news/afe/202608230027.aspx",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+            "published_at": "2026-08-22T15:08:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "今天先不猜方向，期權守門人先算最壞情境。今天完整拆解的題目是「輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。以最大損失、波動率結構與執行流動性三層拆解，而非預測單邊行情。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：經濟日報報導輝達將於8月26日公佈上季財報。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：中央社報導臺灣券商將自行評估是否跟進美股延長交易。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第3項已確認事實是：CNBC報導長天期殖利率上升使市場波動。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。財報期權的核心是市場已經定價多少波動。應比較損益兩平點與自己預估的合理區間，而不是只判斷公司會不會交出好財報。\n\n第二個專屬檢查是：交易時段延長也不代表流動性平均增加。盤前盤後價差可能更寬，期權本身的退出條件尤其重要，否則帳面有限損失仍可能因成交困難而放大。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：因此不提供特定履約價或賣方策略。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自經濟日報、中央社財經、CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2047,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "以最大損失、波動率結構與執行流動性三層拆解，而非預測單邊行情。",
+          "editorial_tension": "「輝達財報週別把期權當彩票：方向看對，為什麼還可能虧錢？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "輝達財報與延長交易議題讓事件風險、波動率定價和流動性同時成為重點。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有3張可核對來源卡，來源包括經濟日報、中央社財經、CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "以最大損失、波動率結構與執行流動性三層拆解，而非預測單邊行情。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：經濟日報報導輝達將於8月26日公佈上季財報。",
+        "counter_thesis": "相反解釋是：未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。",
+        "script_claims": [
+          "經濟日報報導輝達將於8月26日公佈上季財報。",
+          "中央社報導臺灣券商將自行評估是否跟進美股延長交易。",
+          "CNBC報導長天期殖利率上升使市場波動。"
+        ],
+        "script_evidence_ids": [
+          "經濟日報",
+          "中央社財經",
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "options-gatekeeper:2026-08-23:event-risk-framework:1",
+            "claim_type": "CONDITIONAL",
+            "check": "未取得即時IV、IV Rank、OI、波動率曲面與完整交易成本。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "options-gatekeeper:2026-08-23:event-risk-framework:2",
+            "claim_type": "CONDITIONAL",
+            "check": "因此不提供特定履約價或賣方策略。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "options-gatekeeper:2026-08-23:event-risk-framework:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "d2f1008a330f69eae8a0c1d6fe8a2a6ebc56ab9cc7afbc3e2418567a2bda5aaa",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1,
+            2
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "經濟日報",
+            "中央社財經",
+            "CNBC"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:09:crypto-squeeze",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "比特幣軋空後追Call？先算IV、時間價值與再次清算風險",
+        "title_options": [
+          "比特幣軋空後追Call？先算IV、時間價值與再次清算風險",
+          "期權守門人備選：Crypto暴漲不等於買方穩賺，三道風控先過門"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把加密軋空事件轉成有限損失、波動率與流動性框架。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+        ],
+        "unknowns": [
+          "缺即時IV、OI、資金費率與合約成交成本。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+            "published_at": "2026-08-22T12:00:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+            "published_at": "2026-08-22T05:05:13+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "事件行情最危險的地方，是方向看對仍可能輸給波動率與時間。今天完整拆解的題目是「比特幣軋空後追Call？先算IV、時間價值與再次清算風險」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。把加密軋空事件轉成有限損失、波動率與流動性框架。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。軋空的自我強化鏈是價格上漲、空頭保證金不足、交易所強制回補、價格再上漲。這能解釋速度，卻不能證明新長線資金已經進場。\n\n第二個專屬檢查是：區分趨勢與擠壓，要看清算後的現貨成交、OI與資金費率。OI大降而現貨量沒有增加，較像舊部位被清掉；現貨持續買入且槓桿不過熱，才可能轉成較穩定需求。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺即時IV、OI、資金費率與合約成交成本。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2056,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "crypto-squeeze",
+        "channel_angle": "期權守門人",
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「比特幣軋空後追Call？先算IV、時間價值與再次清算風險」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把加密軋空事件轉成有限損失、波動率與流動性框架。",
+          "editorial_tension": "「比特幣軋空後追Call？先算IV、時間價值與再次清算風險」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺即時IV、OI、資金費率與合約成交成本。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括CoinDesk。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把加密軋空事件轉成有限損失、波動率與流動性框架。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺即時IV、OI、資金費率與合約成交成本。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+        "counter_thesis": "相反解釋是：缺即時IV、OI、資金費率與合約成交成本。",
+        "script_claims": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CoinDesk刊出「How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:09:crypto-squeeze:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺即時IV、OI、資金費率與合約成交成本。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:crypto-squeeze:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:crypto-squeeze:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "96d5d38069854ef82851a9d039475d60aef78b7415cd5bfc4b604a82c5178a11",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:09:rates-financing",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "殖利率升、企業又融資：指數Put是保險還是買貴了？",
+        "title_options": [
+          "殖利率升、企業又融資：指數Put是保險還是買貴了？",
+          "期權守門人備選：長債擾動市場時，先辨認波動率定價再談避險"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "從宏觀事件風險說明期權保險成本與時點。"
+        ],
+        "facts": [
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+        ],
+        "unknowns": [
+          "缺VIX期限結構、Put/Call、IV Rank與完整損益圖。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+            "published_at": "2026-08-22T15:08:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+            "published_at": "2026-08-22T01:00:23+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "買方虧損有限，不代表任何一張Call或Put都值得買。今天完整拆解的題目是「殖利率升、企業又融資：指數Put是保險還是買貴了？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。從宏觀事件風險說明期權保險成本與時點。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。大型企業融資要同時看用途與資金價格。拿錢投入能產生高回報的專案，負債可能加速成長；若投資回收期拉長，利息、稀釋或信用利差會先侵蝕股東回報。\n\n第二個專屬檢查是：長債殖利率上升也不能只解讀成經濟強。供給增加、通膨風險與期限溢價都可能推高利率，必須比較實質利率、信用利差與股市盈利預期，才能知道壓力來自哪裡。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺VIX期限結構、Put/Call、IV Rank與完整損益圖。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC、科技新報財經。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1986,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "rates-financing",
+        "channel_angle": "期權守門人",
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「殖利率升、企業又融資：指數Put是保險還是買貴了？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "從宏觀事件風險說明期權保險成本與時點。",
+          "editorial_tension": "「殖利率升、企業又融資：指數Put是保險還是買貴了？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺VIX期限結構、Put/Call、IV Rank與完整損益圖。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括CNBC、科技新報財經。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "從宏觀事件風險說明期權保險成本與時點。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺VIX期限結構、Put/Call、IV Rank與完整損益圖。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+        "counter_thesis": "相反解釋是：缺VIX期限結構、Put/Call、IV Rank與完整損益圖。",
+        "script_claims": [
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+        ],
+        "script_evidence_ids": [
+          "CNBC",
+          "科技新報財經"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:09:rates-financing:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺VIX期限結構、Put/Call、IV Rank與完整損益圖。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:rates-financing:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:rates-financing:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "020499df99f322430e6107f23f6723ab45e39ecfcedf431d8448e2b5f671df0f",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC",
+            "科技新報財經"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:09:china-capital",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價",
+        "title_options": [
+          "阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價",
+          "期權守門人備選：中概融資週的風控，不是隨便買Put"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把中概融資事件轉成最大損失與流動性檢查。"
+        ],
+        "facts": [
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "unknowns": [
+          "缺BABA港美期權鏈、價差、OI與正式配股條款。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Investing.com",
+            "evidence_class": "REPORTED",
+            "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+            "published_at": "2026-08-22T22:30:36+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "今天先不猜方向，期權守門人先算最壞情境。今天完整拆解的題目是「阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。把中概融資事件轉成最大損失與流動性檢查。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。配股首先改變股數與每股權益，其次才看募集資金能創造多少新增回報。折價幅度、發行比例和用途若未落地，就不能只用募資總額判斷利多利空。\n\n第二個專屬檢查是：AI資本支出的問題是時間差：現金先流出，收入與獲利稍後才驗證。若市場要求更高風險溢價，回收期越長的計畫越敏感，正式檔案與管理層資本回報目標是關鍵。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺BABA港美期權鏈、價差、OI與正式配股條款。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Investing.com。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1852,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "china-capital",
+        "channel_angle": "期權守門人",
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把中概融資事件轉成最大損失與流動性檢查。",
+          "editorial_tension": "「阿里配股事件能用期權防嗎？沒有港美流動性資料先別挑履約價」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺BABA港美期權鏈、價差、OI與正式配股條款。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有1個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Investing.com。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把中概融資事件轉成最大損失與流動性檢查。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺BABA港美期權鏈、價差、OI與正式配股條款。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。",
+        "counter_thesis": "相反解釋是：缺BABA港美期權鏈、價差、OI與正式配股條款。",
+        "script_claims": [
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "script_evidence_ids": [
+          "Investing.com"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:09:china-capital:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺BABA港美期權鏈、價差、OI與正式配股條款。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:china-capital:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:china-capital:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "e3b2ba3ce899c47e577619a08735e0308fbbbe6d72866ea8ffd829a58e5093cf",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Investing.com"
+          ],
+          "status": "FAIL"
+        }
+      },
+      {
+        "candidate_id": "channel-outline:09:ai-cost",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush",
+        "title_options": [
+          "NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush",
+          "期權守門人備選：AI財報週最難的不是猜漲跌，是猜幅度與時間"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "用AI事件說明財報前後隱含波動率收縮風險。"
+        ],
+        "facts": [
+          "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+          "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+        ],
+        "unknowns": [
+          "缺事件前後IV曲面、到期結構與真實交易成本。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+            "published_at": "2026-08-23T02:29:41+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "經濟日報",
+            "evidence_class": "REPORTED",
+            "title": "輝達將於8月26日公布上季財報",
+            "published_at": "2026-08-23T05:04:11+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://money.udn.com/money/story/5612/9708851",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "今天先不猜方向，期權守門人先算最壞情境。今天完整拆解的題目是「NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。用AI事件說明財報前後隱含波動率收縮風險。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：經濟日報刊出「輝達將於8月26日公佈上季財報」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。伺服器報價上升的核心不是漲價本身，而是誰承擔成本。若晶片、記憶體與散熱成本上升能完全轉嫁，供應商毛利可能守住；若客戶延後採購，價格提高反而會壓低出貨量。\n\n第二個專屬檢查是：同一條AI供應鏈的議價權並不平均。設計規格不可替代、產能稀缺或有長約保護的環節較有轉嫁能力，組裝與高度競爭環節則要靠效率消化，財報毛利率會比新聞中的漲幅更有判斷力。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺事件前後IV曲面、到期結構與真實交易成本。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自科技新報財經、經濟日報。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 1938,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "ai-cost",
+        "channel_angle": "期權守門人",
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V2",
+        "core_question": "「NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "現在發生的具體變化是：這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用AI事件說明財報前後隱含波動率收縮風險。",
+          "editorial_tension": "「NVIDIA財報前傳伺服器漲價：方向看對也可能輸給IV Crush」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺事件前後IV曲面、到期結構與真實交易成本。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括科技新報財經、經濟日報。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用AI事件說明財報前後隱含波動率收縮風險。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺事件前後IV曲面、到期結構與真實交易成本。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+        "counter_thesis": "相反解釋是：缺事件前後IV曲面、到期結構與真實交易成本。",
+        "script_claims": [
+          "科技新報財經刊出「記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%」。",
+          "經濟日報刊出「輝達將於8月26日公佈上季財報」。"
+        ],
+        "script_evidence_ids": [
+          "科技新報財經",
+          "經濟日報"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:09:ai-cost:1",
+            "claim_type": "CONDITIONAL",
+            "check": "缺事件前後IV曲面、到期結構與真實交易成本。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:ai-cost:2",
+            "claim_type": "CONDITIONAL",
+            "check": "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:09:ai-cost:3",
+            "claim_type": "CONDITIONAL",
+            "check": "原先敘事的失效條件是否已經出現",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得满足核验点的后续数据；不得标记为说中或看错。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "9f4ce02a99fe8b6df5a13afe66fe61a167878468c04b49017f1259d92a26ff75",
+          "title_present": true,
+          "selection_reason_present": false,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "科技新報財經",
+            "經濟日報"
+          ],
+          "status": "FAIL"
+        }
+      }
+    ],
+    "target_duration": "約3分鐘",
+    "minimum_script_character_count": 1200
+  }
+}

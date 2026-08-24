@@ -1,14 +1,51 @@
-# Global X Finance — Taiwan Realtime Source Radar MVP
+# Global X Finance Growth Intelligence
 
-这是“一个核心引擎 + 多个 Market Pack”的第一阶段基础工程。台湾与美国使用完全相同的代码路径，市场差异只存在于 YAML 配置中。
+这是一个证据优先的财经热点、台股异动与 YouTube 频道内容研究系统。核心原则是保留原始来源、明确市场与证券身份、区分事实和观点，并在资料不足时显示 `UNKNOWN`、`SOURCE_PENDING` 或短缺状态，而不是用旧数据或推测补齐。
 
-当前工程在既有 TWSE Evidence、规则卡和冻结的合规模块之上，新增台湾实时来源治理、xHotTopic 只读发现适配器、YouTube Atom 监控、Windows 计划任务、来源健康页和最近两小时内容流。它仍然**不包含**财经观点生成、投资建议、全网覆盖声明、广告生成或提交、自动发帖、账号池、代理或限制规避功能。
+当前仓库包含三条已实现产品线：
+
+- 台湾实时来源雷达：TWSE 官方数据、受治理的新闻/X/YouTube 来源、来源健康与最近两小时发现流。
+- BEN Radar 台股工作台：市场历史、异动规则、Top 20、个股 K 线、量价基线、事件与 Evidence 回链。
+- BEN 频道内容工作台：20 个频道画像、频道专属 Style Pack、频道 × 日期选题、完整文稿、选题理由、来源发布时间/抓取时间与历史回顾。没有足够真实样稿的频道保持隐藏，不伪造文稿。
+
+仓库不包含自动发帖、自动广告提交、账号池、代理或限制规避功能。任何公开发布都必须通过独立的人工授权步骤；提交 `main` 不等于部署 `gh-pages`。
 
 ## 非技术人员最快用法
 
 在 Windows 中直接双击项目根目录的 `启动台湾Demo.bat`。脚本会自动创建或复用 `.venv`、安装依赖、幂等初始化数据库、校验并导入来源注册表，然后打开 `http://127.0.0.1:8765/`。
 
-进入首页后点击「来源健康」查看实时来源状态，再到「最近两小时」查看发现流。计划任务只需安装一次，详见 `deliverables/实时监控使用说明.md`；演示话术见 `deliverables/老板Demo讲解稿.md`。
+进入首页后可查看来源健康、最近两小时、台股工作台和频道雷达。计划任务只需安装一次，详见 `deliverables/实时监控使用说明.md`；演示话术见 `deliverables/老板Demo讲解稿.md`。
+
+## BEN 频道内容工作台
+
+静态审稿页源码位于 `sites/ben-content-studio/`。它只展示已有真实样稿并通过 Style Pack 校验的频道；20 个频道画像仍完整保存在研究配置中，等待样稿的频道不会出现在审稿页里。
+
+主要数据链路：
+
+```text
+原始来源 / 官方数据 / 频道样稿
+  -> Evidence 与抓取时间
+  -> ChannelProfile + Style Pack
+  -> 频道专属 Topic Card（Why Now / Why Channel / Evidence）
+  -> 完整文稿（标题、论点、数字与来源逐项对应）
+  -> 历史快照与后续回顾
+```
+
+常用命令：
+
+```powershell
+# 生成每日频道简报；资料门禁不通过时会明确停止
+python scripts/run_daily_channel_brief.py
+
+# 周末/周日来源补充采集
+python scripts/run_ben_weekend_crawl.py
+
+# 重建并审计内容工作台
+python scripts/build_all20_content_studio.py
+python scripts/audit_all20_content_studio.py
+```
+
+`sites/ben-content-studio/history/` 保存跨日回顾所需的频道快照。页面刷新只读取已经生成并发布的数据，不会自行启动抓取。发布脚本是独立操作，不能把构建成功解释成已公开上线。
 
 ## 目录
 
@@ -22,12 +59,17 @@ migrations/004_x_ads_policy_precheck.sql  追加式政策快照、规则和检�
 migrations/005_realtime_radar.sql  实时来源、周期、统一内容流和调度状态
 migrations/006_radar_runtime_lock.sql  防止跨进程重复运行
 migrations/007_radar_backfill_marker.sql  区分初始回填与持续监控新增
+migrations/015_industry_mapping.sql  市场限定的产业映射
+migrations/016_channel_daily_briefs.sql  频道每日简报与审计状态
 config/twse_openapi.datasets.json  从 TWSE Swagger 实际发现的可审计配置
 config/taiwan_realtime_sources.csv  台湾实时来源治理注册表
+config/channel_pilots.v0.1.json  频道试点与生成门禁配置
 config/x_ads_policy.pages.json     六个 X 官方政策页面注册表
 config/x_ads_policy.rules.json     可回查快照的结构化规则
 schemas/market-pack.schema.json
 src/global_x_finance/          统一核心引擎
+research/ben_radar_*/          频道画像、Style Pack、来源与验收材料
+sites/ben-content-studio/      BEN 频道内容工作台静态源码与历史快照
 tests/                         全部使用 SYNTHETIC_TEST_DATA 的测试
 scripts/check.ps1              一键测试与凭证扫描
 scripts/start_demo.ps1         幂等的一键启动逻辑
@@ -169,6 +211,6 @@ python -m global_x_finance.cli normalize twse --db data/taiwan-demo.db --dataset
 
 ## 范围边界
 
-`content_drafts` 仅为未来阶段保留数据表；当前没有生成入口。政策快照必须通过显式命令核验和追加，不会自动申请认证、生成广告或提交广告。当前四类模板中的实际广告主体、产品、牌照、X 预授权和落地页资料均为 `UNKNOWN`，因此不能把模板状态解释为可投放结论。
+频道内容稿是研究与人工审稿产物，不构成投资建议，也不会自动发帖。政策快照必须通过显式命令核验和追加，不会自动申请认证、生成广告或提交广告。当前四类模板中的实际广告主体、产品、牌照、X 预授权和落地页资料均为 `UNKNOWN`，因此不能把模板状态解释为可投放结论。
 
 详见 [输入审计](docs/INPUT_AUDIT.md)、[产品定义](codex_mvp_inputs/product_definition.md) 与 [数据库契约](codex_mvp_inputs/database_schema.md)。

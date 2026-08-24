@@ -1,0 +1,22 @@
+{
+  "video_id": "UNKNOWN",
+  "channel_id": "UNKNOWN",
+  "selection_role": "TYPICAL",
+  "transcript_status": "UNAVAILABLE",
+  "title_promise": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "thumbnail_expression": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "first_30s_hook": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "central_conflict": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "information_release_order": [],
+  "claim_method": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "evidence_method": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "emotion_curve": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "sentence_and_orality": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "turns_and_suspense": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "risk_disclosure": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "cta": {"value": "UNKNOWN", "evidence": "UNAVAILABLE"},
+  "transferable_structures": [],
+  "do_not_copy": [],
+  "confidence": "LOW",
+  "limitations": []
+}

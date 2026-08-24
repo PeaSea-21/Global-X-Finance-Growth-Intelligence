@@ -1,0 +1,522 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-17T00:00:00+08:00",
+  "usage_rule": "Creator content is benchmark evidence only and never auto-promoted to finance fact. Official/company claims remain attributed; forward-looking items remain conditional.",
+  "benchmark_evidence": [
+    {
+      "benchmark_evidence_id": "BF01",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#1-三个频道不是同一种点击模型",
+      "finding": "P04 observed three distinct click tasks: Taiwan decision question, technology update ledger and macro explanation authority.",
+      "confidence": "HIGH packaging / LOW spoken narrative",
+      "limitation": "No transcript evidence."
+    },
+    {
+      "benchmark_evidence_id": "BF02",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#2-问句是台股频道的品牌基线不是已证实的增长按钮",
+      "finding": "Questions were common in Taiwan packaging but were not proven to cause higher performance.",
+      "confidence": "MEDIUM frequency / LOW effect",
+      "limitation": "Small observational sample."
+    },
+    {
+      "benchmark_evidence_id": "BF03",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#3-科技频道的统一三行封面更像品牌系统而非单片爆款因子",
+      "finding": "The three-line technology layout appeared in both high- and low-performing videos.",
+      "confidence": "HIGH descriptive",
+      "limitation": "Cannot isolate layout effect."
+    },
+    {
+      "benchmark_evidence_id": "BF04",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#4-宏观频道唯一-breakout-是专家--长周期叙事但仍是单例",
+      "finding": "The sole breakout paired expert authority with a long-cycle bridge.",
+      "confidence": "MEDIUM anomaly / LOW mechanism",
+      "limitation": "Single case with guest, timing and distribution confounds."
+    },
+    {
+      "benchmark_evidence_id": "BF05",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#5-30-条中建立了可用但仍属-provisional-的频道内基线",
+      "finding": "P04 created a provisional age-adjusted, within-channel performance baseline.",
+      "confidence": "MEDIUM",
+      "limitation": "Small sample; duration, type and exposure unavailable."
+    },
+    {
+      "benchmark_evidence_id": "BF06",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#6-ai-最常见但最常见不等于最容易跑赢",
+      "finding": "AI was most frequent and near baseline; macro and earnings medians were higher in smaller samples.",
+      "confidence": "MEDIUM to LOW by tag",
+      "limitation": "Multi-label topics and small groups."
+    },
+    {
+      "benchmark_evidence_id": "BF07",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#7-机会词与高表现共同出现得比纯风险词多但频道与题材严重混杂",
+      "finding": "Opportunity language co-occurred with high performance more often than risk language.",
+      "confidence": "LOW",
+      "limitation": "Channel and topic confounding; no causal claim."
+    },
+    {
+      "benchmark_evidence_id": "BF08",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#8-标题长度反映节目任务不宜用统一字数规则",
+      "finding": "Title length varied with program task, not a universal optimum.",
+      "confidence": "HIGH descriptive / LOW causal",
+      "limitation": "No controlled test."
+    },
+    {
+      "benchmark_evidence_id": "BF09",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#9-高表现封面没有单一共同公式最稳定的是清楚层级",
+      "finding": "No single visual formula emerged; one clear primary hierarchy was the most stable shared feature.",
+      "confidence": "MEDIUM",
+      "limitation": "No impressions or CTR."
+    },
+    {
+      "benchmark_evidence_id": "BF10",
+      "source": "../p04/P04_BENCHMARK_REPORT.md#10-标题与封面应分工简单重复只适合极短决策题",
+      "finding": "Title and thumbnail commonly split or compress information; complex topics benefit from complementary roles.",
+      "confidence": "HIGH descriptive",
+      "limitation": "Efficiency hypothesis is unvalidated without CTR."
+    },
+    {
+      "benchmark_evidence_id": "BP01",
+      "source": "../p04/pattern_library.json#PAT-01",
+      "finding": "Single decision question.",
+      "confidence": "HIGH frequency / LOW performance effect",
+      "limitation": "May drift into advice or overpromise."
+    },
+    {
+      "benchmark_evidence_id": "BP02",
+      "source": "../p04/pattern_library.json#PAT-02",
+      "finding": "Three-item update ledger.",
+      "confidence": "HIGH packaging / LOW performance effect",
+      "limitation": "Can dilute the main promise."
+    },
+    {
+      "benchmark_evidence_id": "BP03",
+      "source": "../p04/pattern_library.json#PAT-03",
+      "finding": "Macro condition to industry/asset endpoint.",
+      "confidence": "MEDIUM",
+      "limitation": "Every transmission link needs evidence."
+    },
+    {
+      "benchmark_evidence_id": "BP04",
+      "source": "../p04/pattern_library.json#PAT-04",
+      "finding": "Person and evidence visual division of labor.",
+      "confidence": "HIGH frequency / LOW performance effect",
+      "limitation": "Authority and screenshots do not prove facts."
+    },
+    {
+      "benchmark_evidence_id": "BP05",
+      "source": "../p04/pattern_library.json#PAT-05",
+      "finding": "Title promise with thumbnail compression/completion.",
+      "confidence": "HIGH descriptive",
+      "limitation": "No CTR evidence."
+    },
+    {
+      "benchmark_evidence_id": "BP06",
+      "source": "../p04/pattern_library.json#PAT-06",
+      "finding": "Expert or researcher authority frame.",
+      "confidence": "HIGH frequency / LOW causal",
+      "limitation": "One breakout and identity confounds."
+    },
+    {
+      "benchmark_evidence_id": "BP07",
+      "source": "../p04/pattern_library.json#PAT-07",
+      "finding": "Opportunity paired with an explicit risk condition.",
+      "confidence": "LOW",
+      "limitation": "Must not manufacture conflict or imply returns."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "BE001",
+      "title": "TSMC 2Q26 Earnings Release",
+      "publisher": "TSMC",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-16",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "verified_claims": [
+        "2Q26 revenue NT$1,270.38 billion, net income NT$706.56 billion, diluted EPS NT$27.25.",
+        "Revenue increased 36.0% year over year and 12.0% quarter over quarter."
+      ],
+      "limitations": "Company-reported quarterly release; outlook is forward-looking."
+    },
+    {
+      "evidence_id": "BE002",
+      "title": "TSMC 2Q26 Management Report",
+      "publisher": "TSMC",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-16",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf",
+      "verified_claims": [
+        "Gross margin was 67.7% and operating margin was 60.3%.",
+        "2nm/3nm/5nm/7nm contributed 3%/30%/33%/11% of wafer revenue; advanced nodes were 77%.",
+        "HPC was 66% and smartphone 22% of net revenue by platform; HPC rose 20% sequentially while smartphone declined 4%.",
+        "North America represented 78% of revenue by customer headquarters.",
+        "3Q26 revenue guidance was US$44.6–45.8 billion at NT$32 per US dollar; gross margin 65–67% and operating margin 56–58%.",
+        "Margin improvement reflected cost improvement and utilization, partly offset by overseas-fab dilution."
+      ],
+      "limitations": "Company management report; guidance and management explanations are not guaranteed outcomes."
+    },
+    {
+      "evidence_id": "BE003",
+      "title": "TSMC Monthly Revenue 2026",
+      "publisher": "TSMC",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-10",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+      "verified_claims": [
+        "June 2026 revenue was NT$442,680 million, up 67.9% year over year.",
+        "January–June 2026 revenue was NT$2,404,484 million, up 35.6% year over year."
+      ],
+      "limitations": "Monthly revenue is unaudited and does not establish profit or stock-price direction."
+    },
+    {
+      "evidence_id": "BE004",
+      "title": "UMC Announces Second Quarter 2026 Results",
+      "publisher": "UMC",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729",
+      "verified_claims": [
+        "2Q26 revenue was NT$68.73 billion, gross margin 32.5%, operating margin 21.8% and utilization 85%.",
+        "22/28nm represented 37% of wafer revenue.",
+        "UMC raised 2026 capital expenditure to US$2 billion and expected 3Q utilization above 90%.",
+        "UMC said it shipped its first 12-inch silicon-photonics mass-production wafers and plans a platform in 2027."
+      ],
+      "limitations": "Company release; outlook and platform timing are forward-looking."
+    },
+    {
+      "evidence_id": "BE005",
+      "title": "MediaTek Investor Relations event listing",
+      "publisher": "MediaTek",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-31",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.mediatek.com/investor-relations",
+      "verified_claims": [
+        "MediaTek listed its 2Q26 investor conference for July 31, 2026."
+      ],
+      "limitations": "Only the event occurrence was verified here; result figures were not extracted."
+    },
+    {
+      "evidence_id": "BE006",
+      "title": "Hon Hai investor event calendar",
+      "publisher": "Hon Hai",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-08-12",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.honhai.com/en-us/investor-relations/investor-relations-activities/event-calendar",
+      "verified_claims": [
+        "Hon Hai listed its 2Q26 investor conference for August 12, 2026 and a July unaudited revenue event for August 5, 2026."
+      ],
+      "limitations": "Event occurrence only; no financial figures were extracted for this artifact."
+    },
+    {
+      "evidence_id": "BE007",
+      "title": "Exports and Imports in June 2026",
+      "publisher": "Taiwan Ministry of Finance",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-07-08",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.mof.gov.tw/Eng/singlehtml/f48d641f159a4866b1d31c0916fbcc71?cntId=fc3b187b9f744dbeb322e7760473ab01",
+      "verified_claims": [
+        "June 2026 exports were US$74.83 billion, up 40.3% year over year.",
+        "Imports were US$62.63 billion, up 51.8%, leaving a US$12.20 billion trade surplus."
+      ],
+      "limitations": "Aggregate trade data do not by themselves identify company earnings or stock returns."
+    },
+    {
+      "evidence_id": "BE008",
+      "title": "AMD Investor Relations current announcements",
+      "publisher": "AMD",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-08-06",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://ir.amd.com/",
+      "verified_claims": [
+        "AMD announced on May 21 that next-generation EPYC Venice was ramping on TSMC 2nm.",
+        "AMD announced more than US$10 billion of Taiwan ecosystem investment on May 21.",
+        "AMD listed an acquisition of Taalas on August 6 and AI partnerships with Anthropic and Microsoft in July."
+      ],
+      "limitations": "Announcement summaries; partnership deployment, acquisition benefits and investment impact remain subject to execution."
+    },
+    {
+      "evidence_id": "BE009",
+      "title": "Delta Investor Relations",
+      "publisher": "Delta Electronics",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-30",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.deltaww.com/en-US/investors",
+      "verified_claims": [
+        "Delta listed a 2Q26 analyst meeting for July 30, 2026."
+      ],
+      "limitations": "Event occurrence only; result figures were not extracted."
+    },
+    {
+      "evidence_id": "BE010",
+      "title": "NVIDIA 2nd Quarter FY27 Financial Results event",
+      "publisher": "NVIDIA",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-08-26",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+      "verified_claims": [
+        "NVIDIA scheduled its second-quarter FY27 results event for August 26, 2026 at 2:00 p.m. Pacific Time."
+      ],
+      "limitations": "The event had not occurred as of this artifact date; no FY27 Q2 result may be stated."
+    },
+    {
+      "evidence_id": "BE011",
+      "title": "AMD Reports Second Quarter 2026 Financial Results",
+      "publisher": "AMD",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-08-04",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+      "verified_claims": [
+        "2Q26 revenue was US$11.536 billion, up 50% year over year; GAAP gross margin was 54%.",
+        "Data Center revenue was US$6.7 billion, up 107% year over year and 58% of company revenue.",
+        "3Q26 revenue outlook was about US$13 billion plus or minus US$300 million, with non-GAAP gross margin about 56%.",
+        "AMD disclosed an Anthropic partnership for up to 2GW of MI450 deployments and expanded Microsoft collaboration."
+      ],
+      "limitations": "Company release; non-GAAP measures require reconciliation and outlook/partnership quantities are forward-looking."
+    },
+    {
+      "evidence_id": "BE012",
+      "title": "Meta Reports Second Quarter 2026 Results",
+      "publisher": "Meta",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "verified_claims": [
+        "2Q26 revenue was US$60.801 billion, up 28% year over year.",
+        "Costs and expenses were US$42.026 billion, up 55%; operating margin was 31% versus 43% a year earlier.",
+        "Capital expenditures including principal payments on finance leases were US$31.08 billion.",
+        "Daily active people were 3.60 billion, ad impressions rose 14% and average price per ad rose 12%."
+      ],
+      "limitations": "Company release; management outlook and AI returns are uncertain."
+    },
+    {
+      "evidence_id": "BE013",
+      "title": "Tesla Second Quarter 2026 Production, Deliveries & Deployments",
+      "publisher": "Tesla",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-02",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+      "verified_claims": [
+        "2Q26 production was 451,758 vehicles, deliveries were 480,126, and energy-storage deployments were 13.5 GWh.",
+        "Tesla cautioned that deliveries are only two measures and should not be treated as an indicator of quarterly financial performance."
+      ],
+      "limitations": "Operational release, not a complete income statement or cash-flow assessment."
+    },
+    {
+      "evidence_id": "BE014",
+      "title": "Tesla Releases Second Quarter 2026 Financial Results",
+      "publisher": "Tesla",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-22",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
+      "verified_claims": [
+        "Tesla published its second-quarter 2026 financial-results release on July 22, 2026."
+      ],
+      "limitations": "Result figures were not extracted for this artifact."
+    },
+    {
+      "evidence_id": "BE015",
+      "title": "Amazon Q2 2026 results webcast announcement",
+      "publisher": "Amazon",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-30",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-to-Webcast-Second-Quarter-2026-Financial-Results-Conference-Call/default.aspx",
+      "verified_claims": [
+        "Amazon scheduled its second-quarter 2026 results conference call for July 30, 2026."
+      ],
+      "limitations": "Event occurrence only; result figures were not extracted."
+    },
+    {
+      "evidence_id": "BE016",
+      "title": "Microsoft FY26 Q4 earnings-release date announcement",
+      "publisher": "Microsoft",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/",
+      "verified_claims": [
+        "Microsoft announced that FY26 Q4 results would be published July 29, 2026."
+      ],
+      "limitations": "Event occurrence only; Q4 result figures were not extracted."
+    },
+    {
+      "evidence_id": "BE017",
+      "title": "Microsoft FY26 Q3 Earnings",
+      "publisher": "Microsoft",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-04-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+      "verified_claims": [
+        "FY26 Q3 revenue was US$82.9 billion, up 18% year over year.",
+        "Microsoft reported AI annual recurring revenue above US$37 billion, up 123%.",
+        "Management discussed roughly US$190 billion of 2026 capital expenditure including higher component pricing and said cloud capacity could remain constrained through 2026."
+      ],
+      "limitations": "Older-quarter baseline; management commentary and capital expenditure expectations are forward-looking."
+    },
+    {
+      "evidence_id": "BE018",
+      "title": "Apple Newsroom July 2026 Broadcom supply-chain announcement",
+      "publisher": "Apple",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-08",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.apple.com/newsroom/",
+      "verified_claims": [
+        "Apple announced it would increase spending with Broadcom to produce billions more chips in the United States."
+      ],
+      "limitations": "The newsroom announcement does not establish supplier revenue timing or stock-price impact."
+    },
+    {
+      "evidence_id": "BE019",
+      "title": "Broadcom Second Quarter Fiscal Year 2026 Results",
+      "publisher": "Broadcom",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-06-04",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://investors.broadcom.com/node/64371/pdf",
+      "verified_claims": [
+        "Broadcom published fiscal second-quarter 2026 results and guided third-quarter non-GAAP operating income to about 67% of projected revenue."
+      ],
+      "limitations": "Non-GAAP outlook is company guidance and not a guaranteed result."
+    },
+    {
+      "evidence_id": "BE020",
+      "title": "Intel to report second-quarter 2026 results",
+      "publisher": "Intel",
+      "source_type": "COMPANY_IR",
+      "event_date": "2026-07-23",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1774/intel-to-report-second-quarter-2026-financial-results",
+      "verified_claims": [
+        "Intel scheduled its second-quarter 2026 financial-results release for July 23, 2026."
+      ],
+      "limitations": "Event occurrence only; Q2 result figures were not extracted."
+    },
+    {
+      "evidence_id": "BE021",
+      "title": "Federal Reserve FOMC statement",
+      "publisher": "Federal Reserve",
+      "source_type": "REGULATOR",
+      "event_date": "2026-07-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "verified_claims": [
+        "The FOMC maintained the federal-funds target range at 3.5%–3.75%.",
+        "The decision passed 9–3; three members preferred a 25-basis-point increase."
+      ],
+      "limitations": "The statement does not predict market returns; transmission depends on expectations and subsequent data."
+    },
+    {
+      "evidence_id": "BE022",
+      "title": "US GDP Advance Estimate, Second Quarter 2026",
+      "publisher": "Bureau of Economic Analysis",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-07-30",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+      "verified_claims": [
+        "Real GDP increased at a 1.5% annualized rate in 2Q26 versus 2.1% in 1Q26.",
+        "Real private domestic final sales increased 3.9% versus 1.7% in 1Q26.",
+        "PCE prices rose 5.1% and core PCE prices 3.4% in the quarter.",
+        "The second estimate is scheduled for August 26, 2026."
+      ],
+      "limitations": "Advance estimates are revised and quarter-to-quarter annualized rates can be volatile."
+    },
+    {
+      "evidence_id": "BE023",
+      "title": "US CPI Summary, July 2026",
+      "publisher": "Bureau of Labor Statistics",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-08-12",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "verified_claims": [
+        "CPI rose 0.1% in July and 3.4% over 12 months.",
+        "Core CPI rose 0.2% in July and 2.5% over 12 months."
+      ],
+      "limitations": "CPI is one inflation measure and does not mechanically determine Fed policy or equity returns."
+    },
+    {
+      "evidence_id": "BE024",
+      "title": "US Employment Situation, July 2026",
+      "publisher": "Bureau of Labor Statistics",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-08-07",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "verified_claims": [
+        "July payroll employment declined by 23,000 and unemployment was 4.1%.",
+        "Average hourly earnings increased by US$0.02."
+      ],
+      "limitations": "Payroll data are revised and one month does not establish a trend."
+    },
+    {
+      "evidence_id": "BE025",
+      "title": "US Producer Price Index, July 2026",
+      "publisher": "Bureau of Labor Statistics",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-08-13",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+      "verified_claims": [
+        "The Producer Price Index for final demand was unchanged in July 2026."
+      ],
+      "limitations": "Aggregate PPI does not map one-to-one to consumer inflation or company margins."
+    },
+    {
+      "evidence_id": "BE026",
+      "title": "US Advance Monthly Retail Trade, July 2026",
+      "publisher": "US Census Bureau",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-08-14",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.census.gov/retail/sales.html",
+      "verified_claims": [
+        "July retail and food-service sales were US$763.6 billion, down 0.6% month over month and up 5.0% year over year.",
+        "May–July sales were 6.3% above the same period a year earlier."
+      ],
+      "limitations": "Advance estimates are revised and nominal sales include price effects."
+    },
+    {
+      "evidence_id": "BE027",
+      "title": "US Advance Economic Indicators, June 2026",
+      "publisher": "US Census Bureau",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-07-29",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.census.gov/econ/indicators/current/index.html",
+      "verified_claims": [
+        "June goods trade deficit was US$101.5 billion, down from US$105.9 billion in May.",
+        "Goods exports were US$204.7 billion and imports US$306.2 billion; both declined from May."
+      ],
+      "limitations": "Advance estimates are revised and do not alone establish equity-market direction."
+    },
+    {
+      "evidence_id": "BE028",
+      "title": "US GDP second-estimate release schedule",
+      "publisher": "Bureau of Economic Analysis",
+      "source_type": "GOVERNMENT",
+      "event_date": "2026-08-26",
+      "accessed_at": "2026-08-17T00:00:00+08:00",
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+      "verified_claims": [
+        "BEA scheduled the second estimate of 2Q26 GDP for August 26, 2026."
+      ],
+      "limitations": "Future release; revised figures were unavailable as of the artifact date."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Finance YouTube Inspiration"
+  short_description: "从真实文字稿提炼财经YouTube结构、标题、Hook与原创灵感"
+  default_prompt: "Use $finance-youtube-inspiration to turn verified finance facts and transcript-derived patterns into an original YouTube brief."

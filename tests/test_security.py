@@ -20,3 +20,10 @@ def test_placeholder_is_not_reported(tmp_path):
     )
     assert scan_credentials(tmp_path) == []
 
+
+def test_url_slug_is_not_reported_as_openai_key(tmp_path):
+    (tmp_path / "source.json").write_text(
+        "https://www.cnbc.com/2026/08/20/sk-hynixs-south-korean-shares-surge-stock-buyback-.html",
+        encoding="utf-8",
+    )
+    assert scan_credentials(tmp_path) == []

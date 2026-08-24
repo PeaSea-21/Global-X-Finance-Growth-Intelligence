@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "schema": "skills\\finance-youtube-benchmark\\schemas\\channel_profile.schema.json",
+  "input": "research\\youtube_benchmark_p03\\mvp\\analysis\\channel_profiles.json",
+  "item_count": 3,
+  "errors": []
+}

@@ -15,6 +15,7 @@
     <span class="market-chip">{{ '目前市場：台灣 TW'|zh(language if language is defined else 'zh-tw') }}</span>
   </header>
   <nav class="nav">
+    <a href="{{ url_for('channel_radar') }}">頻道選題</a>
     <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}">{{ '機會雷達'|zh(language if language is defined else 'zh-tw') }}</a>
     <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}#evidence-feed">{{ '聚合快訊'|zh(language if language is defined else 'zh-tw') }}</a>
     <a href="{{ url_for('ai_market_radar', lang=language if language is defined else 'zh-tw') }}#anomalies">{{ '價量異動'|zh(language if language is defined else 'zh-tw') }}</a>

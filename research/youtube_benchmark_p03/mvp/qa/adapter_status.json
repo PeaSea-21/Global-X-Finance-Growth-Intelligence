@@ -1,0 +1,27 @@
+{
+  "local_text": {
+    "backend_status": "AVAILABLE",
+    "actual_run_status": "NOT_RUN",
+    "endpoint_verified": "VERIFIED",
+    "extraction_method_verified": "VERIFIED",
+    "terms_status": "APPROVED",
+    "commercial_use_status": "UNKNOWN"
+  },
+  "public_youtube_feed": {
+    "backend_status": "AVAILABLE",
+    "actual_run_status": "NOT_RUN",
+    "endpoint_verified": "UNVERIFIED",
+    "extraction_method_verified": "UNVERIFIED",
+    "terms_status": "UNKNOWN",
+    "commercial_use_status": "UNKNOWN"
+  },
+  "transcriptapi": {
+    "backend_status": "DISABLED",
+    "actual_run_status": "NOT_RUN",
+    "endpoint_verified": "NOT_RUN",
+    "extraction_method_verified": "DISABLED",
+    "terms_status": "UNKNOWN",
+    "commercial_use_status": "UNKNOWN",
+    "reason": "No key is configured or requested in this MVP."
+  }
+}

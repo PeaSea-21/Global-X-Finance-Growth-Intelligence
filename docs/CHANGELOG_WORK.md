@@ -1,386 +1,10 @@
 # Work Changelog
 
-## 2026-08-17 — BEN RADAR P05-SOURCE-AUDIT
-
-- Audited exactly TWSE, TPEx, MOPS, CNA, Yahoo奇摩股市, 经济日报, MoneyDJ, and DIGITIMES; no other source was added and no Radar UI, score, K-line, AI, content-generation, source configuration, database, or collector was changed.
-- Verified current implementation truth: TWSE OpenAPI has 3 configured datasets and 3,362 stored raw rows; Yahoo Taiwan has 40 stored BEN news rows; the other six audited sources have no current collector or stored source rows.
-- Performed one bounded live collection test per source. TWSE returned 1,378 JSON rows, TPEx 10,489 JSON rows, MOPS daily disclosures 6 JSON rows, CNA 20 RSS items, Yahoo 50 RSS items, UDN Money 30 unique HTML article links, MoneyDJ 20 unique HTML article links, and the DIGITIMES XML feed returned HTTP 404 with zero items.
-- Recorded the rights boundary: only the three official OpenAPI routes are `P0_CONNECT`; CNA and Yahoo are `DISCOVERY_ONLY` because their public RSS grants are noncommercial; UDN Money and MoneyDJ explicitly reject unlicensed commercial automation/data mining; DIGITIMES remains `DO_NOT_AUTOMATE` because the advertised feed failed and full content is licensed/member content.
-- Wrote and CSV-validated `research/ben_radar_source_audit/source_audit.csv` with 8 rows and 19 audit fields.
-
-## 2026-08-17 — Production source-acquisition feasibility review
-
-- Inspected the implemented RSS, FxTwitter, YouTube Atom, TWSE OpenAPI, scheduler, source-governance, raw Evidence, and failure-state paths; no collector, schema, database, credential, scheduled task, or public site was changed.
-- Verified from current official documentation that TWSE exposes machine-readable OpenAPI endpoints, SEC EDGAR public data APIs require no API key but require identified and fair-access automation capped at 10 requests/second, and X offers the user-post timeline through a pay-per-use official API.
-- Verified that Yahoo奇摩股市 and 中央社 publish RSS feeds but describe free usage as personal/nonprofit noncommercial; these feeds therefore remain unsuitable as an assumed commercial/public-product entitlement without permission. Bloomberg Data License and Reuters Connect/API are the production routes for licensed Bloomberg/Reuters content.
-- Defined the recommended implementation order: official SEC/TWSE data; official X API; contract-verified Twelve Data market data; licensed Bloomberg/Reuters; then individually authorized Taiwan-media adapters. HTML parsing is a last-resort authorized adapter and must not bypass robots, login, paywall, anti-bot, or access controls.
-
-## 2026-08-17 — Current source inventory audit
-
-- Performed a read-only audit of the BEN news/X tables, unified raw Evidence, configured source registries, and `sites/ben-radar-public/app/radar-data.json`; no collector, database, source configuration, or public site content was changed.
-- Confirmed that the published 16-card snapshot contains 18 Evidence items from 3 publishers: Bloomberg `@business` (15), Reuters Business `@ReutersBiz` (2), and TestingCatalog (1). This is the actual public-page source mix, not the 29-account monitoring list.
-- Confirmed successful BEN news storage from Yahoo奇摩股市 (40), CNBC (30), and Investing.com (10). Yahoo Finance has 0 valid rows and remains a visible HTTP 429 failure.
-- Confirmed 15 of 29 configured BEN X accounts have stored posts. The separate P02 realtime pipeline has collected five X accounts plus the TWSE official YouTube Atom channel, and TWSE OpenAPI has three configured official datasets. SEC EDGAR and Twelve Data remain deferred and inactive.
-
-## 2026-08-17 — Stable HTTPS public BEN Radar snapshot
-
-- Reproduced the screenshot's `503 Tunnel Unavailable` and confirmed both the local 8766 Flask process and LocalTunnel process had been reclaimed after the prior task ended. The failure was infrastructure lifecycle, not page rendering.
-- Stopped treating random local tunnels as a deliverable and created `sites/ben-radar-public/`, a separately deployable read-only Sites surface.
-- Added `scripts/export_ben_public_site.py` to render the current local `/stock-radar` context without mutation and export a bounded JSON snapshot. The published snapshot contains 16 ranked event cards and original Evidence links from the current database.
-- Implemented the Chinese-first radar layout, category/source/sort controls, transparent score dimensions, Evidence expansion, verification checklist, browser-local queue/ignore/notes, JSON/CSV export, mobile layout, and explicit snapshot/non-investment-advice boundaries.
-- Generated and validated a site-specific 1200x630 social card, removed the starter skeleton, and added dynamic absolute Open Graph/X metadata.
-- Created a public Sites project, pushed the exact committed source, saved version 1, set unauthenticated public access under the user's prior authorization, and published `https://ben-finance-radar.nels-sedhq.chatgpt.site`.
-
-### Verification
-
-- Production build passed. Site tests passed 2/2: server-rendered product content, at least 16 cards, required Evidence/queue/disclaimer text, snapshot data integrity, metadata, and social asset.
-- Sites deployment status reached `succeeded`; the deployment URL is HTTPS and no longer depends on local Flask, LocalTunnel, cloudflared, the user's computer, or the current Codex task.
-- The hosted surface is a dated snapshot. Local dynamic collection, health, and cluster diagnostics were not exposed as server routes and must not be described as realtime public service.
-
-## 2026-08-17 — Public-link outage diagnosis and LocalTunnel recovery
-
-- Reproduced the user's `ERR_CONNECTION_CLOSED` on the old `fastest-sheets-people-nasa.trycloudflare.com` hostname and confirmed both the previous local Flask process and its foreground tunnel had ended.
-- Started the current P04 Flask application on `127.0.0.1:8766` as a hidden background process and verified the local origin continued to serve `/stock-radar` and `/static/demo.css`.
-- Tested fresh Cloudflare Quick Tunnels over QUIC and HTTP/2. The tunnel registered, but current network diagnostics showed Cloudflare public TCP 443 and the tunnel transport path were blocked or unreliable, so the generated Cloudflare hostnames were not delivered as working links.
-- Installed the bounded LocalTunnel 2.0.2 client after approval and started a hidden background tunnel to the same 8766 origin. The active review URL is `http://ben-finance-radar-0817.loca.lt/stock-radar`.
-- Preserved the user's no-authentication approval and did not add a server write API, credential, Cloudflare account, DNS record, or database change. The fallback is explicitly HTTP-only and temporary.
-
-### Verification
-
-- Anonymous HTTP checks returned 200 for `/stock-radar` (71,827 bytes), `/stock-radar/cluster-diagnostics` (369,541 bytes), `/health`, and `/static/demo.css`.
-- Parsed public HTML contained the expected `BEN 財經熱點雷達` heading, 16 opportunity cards, 16 collapsed Evidence controls, the selection-queue UI, and the linked radar stylesheet.
-- HTTPS remained unavailable from the current machine because its Schannel credential path failed and Cloudflare public 443 was blocked; production sharing therefore remains a separate HTTPS-hosting task.
-
-## 2026-08-16 — Stale local demo diagnosis and launcher recovery
-
-- Reproduced the reported 404: port 8765 returned HTTP 200 for `/health`, `/ai-radar`, and `/radar`, but HTTP 404 for `/stock-radar`.
-- Confirmed 8765 belonged to a Python process created at 16:54, before P04, and the existing Cloudflare Quick Tunnel also targeted that stale process.
-- Started the current P04 build on isolated port 8766 and verified HTTP 200 for `/`, `/health`, `/ai-radar`, `/stock-radar`, `/radar`, and `/stock-radar/cluster-diagnostics`.
-- Updated `scripts/start_demo.ps1` to validate the current radar marker, reuse only a matching build, and choose the first free port among 8765/8766/8767. Updated the app's automatic browser target to `/stock-radar`.
-- After the user explicitly approved public exposure of current BEN Radar/Evidence data, created a new unauthenticated Cloudflare Quick Tunnel to 8766 at `https://fastest-sheets-people-nasa.trycloudflare.com/stock-radar`.
-
-### Verification
-
-- Targeted launcher and radar tests: 7 passed.
-- Browser verification on 8766: correct BEN title, 16 event cards, local queue marker present, no horizontal overflow, and zero console errors.
-- Anonymous public verification: `/stock-radar`, `/health`, `/static/demo.css`, and `/stock-radar/cluster-diagnostics` all returned HTTP 200. The public browser page rendered 16 cards with no horizontal overflow or console errors.
-
-
-## 2026-08-16 — BEN Radar P04 core validation and boss test instrumentation
-
-- Froze the pre-P04 rolling snapshot and documented the previous 92 raw / 60 eligible / 56-event behavior before changing clustering.
-- Built `research/ben_radar_p04/event_cluster_gold.jsonl` from 45 real local Evidence pairs: 6 `SAME_EVENT`, 19 `RELATED_BUT_DISTINCT`, and 20 `DIFFERENT_EVENT`. Added candidate generation, Gold construction, and repeatable benchmark commands.
-- Added structured event fingerprints for entity, ticker/company, actor, action, stage, target/object, normalized numbers, geography, theme, time, and source type. Added explainable two-stage candidate and strict recheck decisions with merge/reject diagnostics.
-- Added migration `012_ben_translation_summary_cache.sql` and a cache-first translation/summary adapter. Original Chinese is preserved; an optional configured model can retry; current no-model operation uses honest `TRANSLATION_UNAVAILABLE / RULE_FALLBACK` output without fabricating translation claims.
-- Reworked event output to expose separate heat and Evidence-quality scores, explicit fact versus market interpretation, DIRECT/SUPPLY_CHAIN/SECTOR/POSSIBLE stock relationships, content angles, verification tasks, translation metadata, stable IDs, and complete Evidence links.
-- Added `/stock-radar/cluster-diagnostics`, browser-local `ben-stock-radar.ben-test.v1` timing events, selection-queue persistence, and mobile containment for the `/radar` metrics grid.
-- Delivered `deliverables/BEN_RADAR_P04_事件聚类Benchmark.md`, `deliverables/BEN_RADAR_P04_产品验证报告.md`, and the five research/validation artifacts under `research/ben_radar_p04/`.
-
-### Verification
-
-- Final Gold benchmark: 45 pairs, 5 TP, 0 FP, 39 TN, 1 FN; Precision 100%, Recall 83.33%, F1 90.91%. Initial real-error review contained 15 cases; the final benchmark retains 5 three-class errors for further review.
-- Rolling validation moved from 93 raw / 61 eligible / 59 events at 20:39:41 +08:00 to 93 raw / 60 eligible / 58 events at 21:03:08 as the strict 24-hour window advanced. Both snapshots retained 1 multi-item, 1 multi-publisher, and 1 news+X event; Top-20 Chinese title and summary coverage stayed 20/20.
-- Targeted P04 suite: 18 tests passed. Full suite: 75 tests passed in 81.39 seconds. The first combined check then correctly found its own synthetic-token fixture because Windows flattened the requested absolute Pytest temp path into the repository; after deleting that exact generated directory, the standalone credential scan passed.
-- `scripts/project-memory-check.ps1`, credential scan, and `git diff --check` passed; the latter reported only existing LF-to-CRLF warnings.
-- Browser acceptance covered `/stock-radar`, all/news filters and sorting, local queue persistence, cluster diagnostics, `/radar`, and a 6-hour AI view at desktop and 390px mobile widths. No final horizontal overflow or console error remained; Evidence stayed collapsed by default.
-- Human Ben 10/30/60-second tests were not simulated and remain `尚未执行`.
-
-## 2026-08-16 — BEN Stock Content Radar
-
-- Rebuilt the primary radar as a Chinese-first editorial opportunity page inspired by xgrowth.tools' lifecycle and topic organization without copying its brand or code. Added `/stock-radar` as a compatible read-only route while preserving `/ai-radar`.
-- Replaced 2H/24H and the old three-column analysis card with 24H/12H/6H, all/TW/US/AI/macro/other categories, news/X filters, and heat/growth/discussion/latest/market-impact sorts. Added concise summary cards, compact single-column events, stock tags, bounded market response, content opportunity formats/angles, and default-collapsed Evidence.
-- Made homepage titles Chinese-first. Original Chinese is shown when valid; English receives a deterministic rule title when supported or `中文摘要生成中` when not. Original English and full URLs remain unchanged inside Evidence and are not presented as AI translations.
-- Expanded entity aliases and boundary matching, event actions, and finance topics. Added tiered link/entity/action/topic/time/text clustering, stable event IDs, engagement-snapshot velocity/acceleration, trend states, score dimensions, and cluster-quality diagnostics. Rejected a temporary 0.08 entity+action threshold after it merged unrelated NVIDIA investment stories; the accepted threshold is 0.16.
-- Audited rolling real data twice. The starting snapshot had 92 raw items, 84 eligible events, no multi-item clusters, and no cross-platform event. A later snapshot had 94 raw items, 63 eligible finance items, 59 events, 2 multi-item clusters, 0 multi-publisher confirmations, and 0 news+X events. No synthetic confirmation was created.
-- Added versioned local topic-queue state (`ben-stock-radar.topic-queue.v1`) with queue, ignore, notes, restore, and JSON/CSV export. CSV export guards formula-leading values. No database or unauthenticated server write path was added.
-- Moved Yahoo Finance endpoint diagnostics and current Ben news-source run state from the editor homepage to `/radar`.
-- Delivered `deliverables/xgrowth.tools_股票方向横纵分析报告.md` and a rendered/visually inspected nine-page `output/pdf/xgrowth.tools_股票方向横纵分析报告.pdf`.
-
-### Verification
-
-- Targeted clustering/page suite: 13 tests passed.
-- Full `scripts/check.ps1`: 70 tests passed in 66.25 seconds; credential scan passed. One pre-existing credential-scan test fixture was relabeled `synthetic_` so the repository scanner recognizes it as test data while the unit still verifies detection.
-- `scripts/project-memory-check.ps1` and `git diff --check` passed; Git reported only existing LF-to-CRLF warnings.
-- Browser acceptance at 1280px and 390px: no page-level horizontal overflow, Evidence collapsed by default and safe when expanded, local queue state and note reveal worked, and console errors/warnings were empty.
-- PDF rendered through Poppler to nine PNG pages; all pages were visually inspected with no clipping, overlap, or unreadable text.
-
-## 2026-08-16 — CODEX TASK P03C-LEAN
-
-- Validated `config/x_accounts.csv` as exactly 29 accounts: 16 core, 12 watch, and 1 low-confidence account. Added migration `011_ben_x_intelligence.sql` for account state, per-run results, immutable X post links, engagement snapshots, localization cache, and endpoint diagnostics.
-- Added one bounded FxTwitter v2 timeline collector with four-request maximum concurrency, jitter, identifiable User-Agent, priority-aware 10/30/60-minute due state, 120-second incremental overlap, one-retry ceiling, HTTP 204/no-new handling, 429/Retry-After/5xx handling, and `platform + post_id` idempotence. Reused the existing P02 scheduler and did not add another Windows task.
-- Preserved original X text, authorship, timestamps, URLs, engagement, account role/priority, entities, quote/repost relationships, raw payload, and Raw Evidence. Pure reposts remain stored but do not increase independent-source counts; required same-owner handle groups map to `nvidia`, `openai`, and `anthropic`.
-- Replaced the page's separate news-only cards with deterministic unified events using normalized links, entity-plus-action evidence, time proximity, and publisher-group deduplication. Added normalized engagement-velocity X scoring, early-signal treatment, financially relevant filtering, strict original-time 2H/24H views, and all/news/X filters.
-- Added a default Traditional-Chinese and optional Simplified-Chinese UI using OpenCC. Original news titles and original X posts are not converted or overwritten; unavailable English translations remain explicitly unavailable.
-- Performed one controlled GET for each required Yahoo Finance URL with exact HTTP metadata. Both returned HTTP 429, no Retry-After, `Server: ATS`, `text/html`, one attempt, and final status `DEGRADED_RATE_LIMITED`. Yahoo奇摩股市 remains a separate successful source while both share publisher group `yahoo`.
-- Generated `deliverables/Ben_radar_x_intelligence_full_page.png` from the final Traditional-Chinese page after removing horizontal overflow.
-
-### Verification
-
-- Real 29-account run: 11 `SUCCESS`, 18 `NO_NEW` (HTTP 204), 0 failed; 42 X posts saved, 2 reposts retained but excluded from independent-source counts. At 2026-08-16 17:00 +08, strict windows contained 4/41 X posts and 0/52 news rows for 2H/24H respectively; the 24H unified view contained 85 events, 33 with X, and 0 cross-platform confirmations.
-- Real `cmd.exe` execution of `启动台湾Demo.bat` exited 0 and reused the running local Demo.
-- Browser acceptance: Traditional/Simplified switching and all/news/X filters worked; original content remained unchanged; both news and X cards rendered; horizontal overflow was removed; console errors were empty.
-- Targeted suite: 25 tests passed (`test_x_intelligence`, `test_ai_market_radar`, launcher, and P02 scheduler regressions). Credential scan and `git diff --check` passed.
-
-## 2026-08-16 — CODEX TASK P03B-LEAN
-
-- Replaced the first Ben page with a lean evidence-first V2: six top metrics, 2H/24H real-news views, top-20 deduplicated event candidates, short Chinese summaries, original links, transparent ranking reasons, and deterministic rule analysis.
-- Ran one real bounded collection across exactly four configured candidates. Yahoo奇摩股市 returned 40 valid items, Investing.com 10, CNBC 30, and Yahoo Finance failed both attempted feeds with HTTP 429. Only successful rows were saved; no fallback or synthetic news was generated.
-- Added append/cache tables for news runs, immutable news rows, and TWSE daily stock history. Built a 30-stock demo pool and obtained at least 21 official sessions for all 30 stocks.
-- Added explainable 20-day anomaly rules. The accepted snapshot produces 7 displayed anomalies: 5 relative-volume cases, 4 breakout/breakdown cases, and 4 price/volume resonance cases. Volume is shown in lots/萬張; transaction value is secondary and formatted in TWD hundred-millions.
-- Reduced the primary navigation to AI市場雷達, 2H/24H熱點, 個股異動, and 智能分析. Removed the first-version feedback controls and raw long integers from the page while preserving all old routes and P02 monitoring data.
-- Deferred K-line rendering because the requested core priorities were complete and the task explicitly placed it behind source, history, anomaly, and analysis quality.
-- Generated `deliverables/Ben_market_radar_v2_full_page.png` from the final rendered page.
-
-### Verification
-
-- Current windows: 2 real articles in 2 hours, 53 real articles in 24 hours, and 20 displayed deduplicated/ranked event candidates.
-- Browser: 24-hour and 2-hour views returned meaningful content; 20 event cards and 7 anomaly cards rendered; no feedback controls, long raw number `54418832121`, framework error, or console error was present.
-- Final targeted P03B/P02 regression suite: 16 tests passed. Credential scan, Project Memory check, and `git diff --check` passed.
-
-## 2026-08-16 — Temporary Cloudflare Quick Tunnel
-
-- Verified the existing local Demo health and `/ai-radar` routes returned HTTP 200 before exposing them.
-- Retrieved current Cloudflare official Quick Tunnel guidance and downloaded official `cloudflared` 2026.8.2 to the Windows temporary directory only.
-- Started an account-less Quick Tunnel from a random `trycloudflare.com` hostname to `http://127.0.0.1:8765`; no Cloudflare token, account login, DNS record, custom domain, application code, database, or repository runtime configuration was added.
-- The public radar URL is `https://without-champion-louisville-touch.trycloudflare.com/ai-radar`; access is unauthenticated and therefore intentionally available to anyone who receives it while both local processes remain running.
-- Cloudflare connectivity pre-checks passed DNS, QUIC, HTTP/2, and API reachability. Anonymous public checks returned HTTP 200 for the radar page, health endpoint, and radar CSS; expected page title/TWSE content and theme CSS were present, and no Access login page was returned.
-- This is a temporary demo endpoint with a random hostname and no uptime guarantee. Stopping the local Demo, stopping `cloudflared`, closing the host machine, or losing connectivity will make it unavailable.
-- Revalidated the same unauthenticated URL at 19:46 +08 after P03C: `/ai-radar`, `/health`, and `/static/demo.css` all returned HTTP 200; the radar title was `AI市場雷達｜Ben Radar X Intelligence` and health reported `status=ok`, `market=TW`.
-
-### Verification
-
-- Public `/ai-radar`: HTTP 200, expected AI市場雷達 and TWSE content present.
-- Public `/health`: HTTP 200 with `{"market":"TW","status":"ok"}`.
-- Public `/static/demo.css`: HTTP 200 with the AI radar theme present.
-
-## 2026-08-16 — CODEX TASK P03-QUICK
-
-- Added `AI市場雷達` to the existing local Demo navigation and implemented `/ai-radar` in Traditional Chinese with a scoped dark finance-terminal presentation.
-- Built a 50-security rectangular treemap from the latest real `LISTED_SECURITY_DAILY_TRADING` rows; rectangle area follows official trade value and color follows a calculated daily change percentage. Every tile opens its immutable Raw Evidence.
-- Reused current official signal cards to display 16 short move cards across trade value, trade volume, daily change, and official industry-level foreign-holding data. Missing foreign-holding dates remain `UNKNOWN`.
-- Reused the non-backfill P02 two-hour feed, preserved `OPINION`, source account, published time, and original link, and applied only conservative rule-based categories and excerpts.
-- Kept tail risk empty because current Evidence did not support a major alert; no synthetic event was created.
-- Generated 10 evidence-linked research candidates from transparent official rules and labeled the reasoning `FACT`, `AI_INFERENCE`, and `RULE_BASED`; no model API or investment recommendation was used.
-- Added browser-local Ben feedback toggles and JSON/CSV export without changing the database.
-- Added a truthful United States empty state (`美國資料源待接入`) with zero heatmap rows.
-- Added regression tests for trade-value area sizing, previous-close percentage calculation, navigation, Taiwan empty handling, and US no-fake-data handling.
-- Generated `deliverables/Ben_AI_market_radar_full_page.png` from the locally rendered page.
-
-### Verification
-
-- Real Demo snapshot: 50 heatmap securities, 16 move cards, 1 recent two-hour item, 0 supported tail-risk alerts, and 10 research candidates; latest official trading date 2026-08-14.
-- Browser acceptance: Taiwan and US switches rendered correctly, feedback toggled locally, US contained zero heat tiles, and console errors were zero.
-- Real `启动台湾Demo.bat` execution returned exit code 0, reused 3,362 normalized rows and 132 signal cards without duplication, detected the running current Demo, and opened the browser.
-- Final repository check: 60 tests passed in 82.82 seconds; credential scan passed. Project Memory integrity check passed.
-
-## 2026-08-16 — CODEX TASK P02 supplemental governance acceptance
-
-- Separated `identity_verified`, `endpoint_verified`, `monitoring_method_verified`, `terms_status`, `commercial_use_status`, `monitoring_status`, and runtime outcome in the registry, database, collector, CLI, and source-health page.
-- Restricted `monitoring_status` to `ACTIVE`, `MANUAL_ONLY`, `NEEDS_VERIFICATION`, or `BLOCKED`; public reachability no longer substitutes for terms or commercial-use authorization, and unresolved rights remain visibly `UNKNOWN`.
-- Added migrations `008_source_governance_separation.sql` and `009_realtime_active_rights_guard.sql`, including guards that prevent ACTIVE when identity/endpoint/method are not verified or rights are explicitly manual-only/blocked.
-- Labeled the single TWSE YouTube channel as “初始验证覆盖” and explicitly rejected “台湾 YouTube 覆盖完成”.
-- Real scheduled operation exposed a sequential-source minute split. Fixed due-time advancement to use one cycle-level minute anchor and added a regression test.
-- New final Windows cycles at 12:38/12:48/12:58 +08:00 returned task result 0 with 6/6, 5/5, and 5/5 due-source success. The last cycle created one new immutable X Evidence row and 89 exact duplicates.
-- The one post-baseline item was published at 04:51:47 UTC and discovered at 04:58:34 UTC, producing a real 6.785-minute sample and current 6.79-minute average. It is one sample, not a sustained SLA.
-- Refreshed the verified X/YouTube CSVs, three-cycle evidence CSV, coverage report, nontechnical guide, boss script, README, and browser screenshot.
-
-### Verification
-
-- Full repository check: 57 tests passed in 55.97 seconds; credential scan passed.
-- Browser acceptance: `/radar` and `/radar/feed` rendered the six separated states, the YouTube initial-coverage boundary, the new OPINION row, Raw/original links, and 6.8-minute latency with no console warnings or errors.
-- Project Memory integrity check passed after the final task, decision, changelog, and handoff refresh.
-
-## 2026-08-16 — CODEX TASK P02 final scheduled acceptance
-
-- Completed three clean scheduled cycles after fixing issues exposed by real Windows operation: completion-time drift, runner exit ordering, and the default battery-power skip policy.
-- Cycle 1 at 10:23 +08:00: Windows result 0, 6/6 due sources succeeded, 0 new Raw Evidence, 105 exact duplicates.
-- Cycle 2 at 10:33 +08:00: Windows result 0, 5/5 due X sources succeeded, 0 new Raw Evidence, 90 exact duplicates; YouTube correctly remained not due.
-- Cycle 3 at 10:43 +08:00: Windows result 0, 5/5 due X sources succeeded, 0 new Raw Evidence, 90 exact duplicates; YouTube correctly remained not due.
-- Preserved all diagnostic history. No active source has a failure state; 105 radar items map one-to-one to 105 Raw Evidence rows and all remain `OPINION`.
-- Added final verified-source CSVs and `deliverables/三周期实测_P02.csv`. The supplied 43-channel document audit remains entirely candidate-only and did not create false ACTIVE channels.
-
-### Verification
-
-- Full repository check: 53 tests passed in 70.31 seconds; credential scan passed.
-- Live UI acceptance: `/radar` and `/radar/feed` returned HTTP 200 with meaningful content and no error overlay.
-- Current task state: last run 2026-08-16 10:43:39 +08:00, result 0, next run 10:53:38 +08:00.
-
-## 2026-08-16 — Git repository initialization and GitHub publication
-
-- Created the first Git history baseline from the current reviewed repository contents.
-- Standardized the local default branch as `main` and connected `origin` to `PeaSea-21/Global-X-Finance-Growth-Intelligence`.
-- Preserved `.gitignore` exclusions for runtime databases, logs, local environments, credentials, caches, and generated ZIP archives.
-- Published the repository to the empty public GitHub destination requested by the user.
-
-### Verification
-
-- Full project check passed before publication: 53 tests passed in 95.39 seconds and the credential scan passed.
-- Project Memory integrity check passed after the Git metadata update.
-- Local `main` and `origin/main` were verified at the same commit after push.
-
-## 2026-08-16 — Standalone project logic and source-cost brief
-
-- Created `deliverables/项目整体逻辑与数据源成本说明.md` as a self-contained Chinese Markdown brief.
-- Documented the implemented source-governance, TWSE, X, YouTube, Evidence, normalization, scheduler, health, and local UI flow.
-- Separated current zero-direct-fee operation from permanent availability, platform-policy, copyright, reuse-right, and commercial-authorization claims.
-- Included the audited runtime snapshot, explicit missing capabilities, production risks, and prioritized next steps.
-- Did not modify application code, schemas, source configuration, databases, scheduled tasks, credentials, or integrations.
-
-### Verification
-
-- Markdown file verified at 13,575 bytes / 298 lines; title, Mermaid diagram, source links, risk section, and referenced repository paths were present.
-- Project Memory integrity check passed. Application tests were not rerun because this task changed documentation only.
-
-## 2026-08-16 — Data-source, runtime, and cost audit
-
-- Traced the implemented flow from the Windows launcher and scheduler through source governance, TWSE collection, realtime X/YouTube collection, immutable Evidence storage, normalization, rule cards, health state, and the local Flask UI.
-- Confirmed the automatic upstreams are three TWSE OpenAPI datasets, five X account timelines through xHotTopic's third-party FxTwitter adapter, one public YouTube Atom feed, and six manually refreshed X policy pages; the remaining registered news/regulatory sources are manual, blocked, or awaiting terms/technical review.
-- Confirmed there is no AI model call, model provider, relay, automatic content generation, or publishing integration in the runtime.
-- Verified the Windows task `Global X Finance - Taiwan Realtime Radar` is installed and returned exit code 0 on its latest observed run. The demo database contained 1,786 raw items, 1,681 normalized official items, 66 official rule cards, 105 radar items, and 24 radar runs at audit time.
-- Verified TWSE Swagger exposes the configured public endpoints without an API security scheme, FxTwitter is called without a credential, and the YouTube Atom feed is called without a Data API key. These currently create no upstream API bill, but do not establish permanent availability or commercial-use rights.
-- Verified current official X API pricing is pay-per-use and current X developer guidance requires the official API. The third-party FxTwitter path is therefore a prototype continuity/policy risk, not a production-grade free entitlement.
-- Did not modify application code, schemas, source configuration, databases, scheduled tasks, credentials, or network integrations.
-
-### Verification
-
-- Read-only source/configuration/code inspection completed.
-- Live scheduled-task and read-only SQLite status queries completed.
-- Source registries validated: 17 foundation rows with 1 `API_VERIFIED`; 23 radar rows with 6 `VERIFIED_ACTIVE`.
-- Project Memory integrity check passed. Targeted collector/radar tests passed: 13 tests in 15.07 seconds using the system Python; the runtime-only `.venv` does not currently include the optional `pytest` development dependency.
-
-## 2026-08-14 — GitHub X-growth and interaction workflow scan
-
-- Reviewed current public GitHub projects covering the X recommendation algorithm, algorithm-derived growth playbooks, X-specific growth/writing/reply Skills, watchlist-driven reply drafting, human-in-the-loop social-media agents, scheduling, collaboration, and analytics.
-- Identified the most reusable pattern for this project as `official/TWSE signal + X watchlist -> early-mover topic score -> EvidenceBundle -> original/reply/quote/thread drafts -> human approval -> manual publish record -> 1H/6H/24H feedback`.
-- Determined that the existing YouTube workflow and a new X-native workflow should share one research/Evidence layer but use separate packaging and timing: X for immediate conversation and topic discovery; YouTube for later explanatory depth and authority.
-- Verified X's April 2026 automation rules prohibit non-API website scripting and automated likes, restrict unsolicited automated replies, and require prior written approval for AI-powered automated reply bots.
-- Did not install third-party Skills, configure X credentials/OAuth, change collection configuration, enable posting/interaction, or modify core code, schema, or databases.
-
-### Verification
-
-- GitHub repository pages, licenses, README workflows, and current X official automation/authenticity policies were checked from public primary sources.
-- Project Memory integrity check run after the documentation update.
-
-## 2026-08-14 — Taiwan-stock X account landscape scan
-
-- Researched publicly discoverable X profiles and recent public engagement snapshots for Taiwan-stock, semiconductor, AI supply-chain, market/quant, and adjacent sentiment accounts.
-- Separated recently rising/new-generation accounts from long-running popular accounts and mapped the shortlist to the Taiwan Market Pack's existing topic hypotheses.
-- Treated follower counts, views, biographies, and third-party public mirrors as time-sensitive discovery evidence, not as verified collection authorization or investment evidence.
-- Confirmed `x_sources` and `local_kols` remain empty; did not add accounts to configuration, automate collection, publish content, or modify core code, schema, or databases.
-
-### Verification
-
-- Repository search confirmed there was no pre-existing Taiwan-stock X blogger pool to preserve or extend.
-- Project Memory integrity check run after the documentation update.
-
-## 2026-08-14 — CODEX TASK P01 product pivot audit
-
-- Changed the documented primary direction to a human-operated finance content supply workbench; preserved advertising compliance as a non-priority existing capability.
-- Audited actual Global X Finance code, configuration, databases, source registry, tests, and runtime output without changing core code or schemas.
-- Audited both local xHotTopic copies and the live `PeaSea-21/xHotTopic` remote. Verified the functional source trees match locally, while the two Git histories/remotes differ.
-- Inspected xHotTopic timeline collection, raw snapshot/manifest behavior, topic linking, heat scoring, evidence screening, cache, usage accounting, dashboard, scheduler code, tests, and the last real output.
-- Confirmed no xHotTopic Windows scheduled task or live snapshot currently exists; the latest complete output is 2026-08-03 and has `partial` coverage.
-- Ran a bounded five-account FxTwitter adapter test: 5/5 requests succeeded with 1.150–1.888 second request latency. Recorded the third-party and small-sample limitations; did not claim end-to-end real-time monitoring.
-- Produced `deliverables/产品方向切换与现有能力审计_P01.md`, `deliverables/台湾信息源覆盖矩阵_P01.csv`, and `deliverables/X监控实测_P01.csv`.
-- Designed five original Style Pack v0.1 positions, a unified content-draft contract, 1H/6H/24H feedback contract, a 10–15-person workflow, and a 10-workday integration plan.
-- Marked the missing human+AI workflow, copy workflow, and five-account screenshots/history/views as `NOT_PROVIDED`; did not invent them.
-
-### Verification
-
-- xHotTopic validation succeeded; 72 unit tests passed and `compileall` passed.
-- Global X Finance full check passed: 45 tests passed in 67.03 seconds; credential scan passed.
-- Project Memory integrity check passed.
-- P01 changed documentation/deliverables and Project Memory only; no core application code or database was modified.
-
-## 2026-08-14 — Provider and relay audit
-
-- Searched the repository for relay, proxy, model-provider, API-base, and model-call configuration without exposing credentials.
-- Confirmed the project contains no AI model integration or third-party relay; its configured upstreams are TWSE official OpenAPI endpoints and X official policy pages.
-- Confirmed the local Codex configuration selects OpenAI `gpt-5.6-sol` and does not define a custom `model_provider`, `base_url`, or `api_base`.
-- No business code, schema, endpoint, credential, or model configuration was changed.
-
-### Verification
-
-- Repository-wide configuration/source search completed.
-- Project Memory integrity check run after the documentation update.
-
-## 2026-08-14 — CODEX TASK C01
-
-- Added migration `004_x_ads_policy_precheck.sql` for append-only policy version metadata, snapshot-linked structured rules, and versioned Taiwan/United States checklist templates.
-- Registered and fetched exactly six X official policy pages from `business.x.com`; stored raw HTML, exact SHA-256, fetched time, summary, verification state, and supersession links without overwriting history.
-- Added 26 traceable policy rules covering global prohibitions, finance/crypto restrictions, Taiwan/United States requirements, X pre-authorization, account eligibility, verification, Bio URL, landing pages, disclosures, deceptive claims, review evasion, and sensitive events.
-- Added separate Taiwan/United States financial and crypto checklist templates with all unknown facts preserved as `UNKNOWN`.
-- Added fail-closed precheck logic with only four results: `PASS_PRECHECK`, `REVIEW_REQUIRED`, `BLOCKED`, and `UNKNOWN`. Internal pass wording explicitly disclaims guaranteed X approval and formal legal advice.
-- Added `/compliance`, policy/rule/checklist history views, official Evidence links, Markdown/CSV deliverables, and `deliverables/x-ads-policy-compliance-demo-v0.1.png`.
-- No ad content was generated, no X certification was requested, and no campaign was submitted.
-
-### Verification
-
-- `data/mvp.db`: 6 official snapshots, 26 structured rules, 4 active checklists.
-- `data/taiwan-demo.db`: 12 append-only snapshots from two verified six-page fetches, 52 historical rule rows, 4 active checklists; latest six-page view contains 26 rules.
-- Browser acceptance: meaningful content, four checklist cards, 12 snapshot-version rows, 38 official X links, no error overlay, no console warnings/errors, and working home navigation.
-- Targeted policy/compliance suite: 17 tests passed.
-- Final repository check: `45 passed in 69.83s`; credential scan passed. Project Memory integrity check also passed.
-
-## 2026-08-14 — X promoted-policy status audit
-
-- Verified that the repository retains official URLs for X Financial Services and Deceptive and Fraudulent Content policies, but does not contain policy text, a rule-by-rule review, or a policy-fetch implementation.
-- Confirmed read-only that both `data/mvp.db` and `data/taiwan-demo.db` contain zero rows in `policy_snapshots`.
-- Confirmed the existing implementation is only a fail-closed safeguard: a promoted draft cannot receive `PASS_PRECHECK` while product or advertiser-license facts are missing.
-- No finance business logic, schema, collector, content-generation, or publishing behavior was changed.
-
-### Verification
-
-- Repository-wide text and filename search completed for promoted/advertising/compliance terms and X policy domains.
-- Project Memory integrity check run after the documentation update.
-
-## 2026-08-14 — CODEX TASK 00.5
-
-- Audited the referenced `liewcf/project-memory` repository without executing its scripts: reviewed the MIT license, skill instructions, install guidance, all shipped Python scripts, and test coverage including symlink/out-of-root protections.
-- Confirmed the upstream scripts contain no network upload, secret harvesting, credential reads, or subprocess behavior; noted that upstream installation targets a user skill directory and that its setup can create/update or migrate files inside the target project.
-- Created the repo-local `.agents/skills/project-memory/` skill using the official skill initializer; did not install it globally.
-- Added `AGENTS.md` with mandatory task-start and task-end memory protocols.
-- Added `docs/PROJECT_CONTEXT.md`, `docs/DECISIONS.md`, `docs/TASKS.md`, `docs/CHANGELOG_WORK.md`, and `docs/HANDOFF.md` from current repository evidence.
-- Added `scripts/project-memory-check.ps1` to check required files, handoff timestamp, protocol markers, size limits, and obvious credential patterns.
-- Did not modify migrations, database Schema, collector behavior, content generation, publishing, or other finance business logic.
-
-### Verification
-
-- Pre-change full repository baseline on 2026-08-14: `26 passed in 21.33s`; credential scan passed.
-- Existing delivery drift found: `deliverables/汇报摘要.md` reports 17 tests, while the current test suite actually runs 26. The delivery file was preserved and the mismatch was recorded for a later explicitly scoped task.
-- Final Project Memory check passed: 7 required files found; protocol, timestamp, size, and obvious credential checks passed.
-- Final full repository check passed: `26 passed in 13.70s`; credential scan passed.
-
-## 2026-08-14 — CODEX TASK 03
-
-- Added migration `003_normalized_signals.sql` for explicit normalized TWSE fields, entity keys, and auditable official signal cards.
-- Added an idempotent TWSE normalization service for listed-security daily data, market-index close data, and foreign-holding data. Missing fields remain `UNKNOWN`; raw official strings and Raw Evidence are preserved.
-- Added entity mappings and four transparent daily card types: top-10 trade volume, top-10 trade value, top-10 absolute daily change rate, and official foreign-holding ratio rows.
-- Added `/signals` with date filtering, security-code search, 24-card pagination, freshness status, formula version, calculation basis, risk notice, Raw Evidence link, and official URL.
-- Updated the dashboard, Windows launcher, README, nontechnical guide, boss demo script, report summary, and v0.3 screenshot.
-- Removed the one-click launcher's dependency on optional Windows IANA `tzdata` by calculating Taiwan freshness with its year-round UTC+08:00 offset; added a regression test.
-
-### Verification
-
-- Real database: 1,681 normalized records, 1,681 entities/item links, and 66 cards (10 + 10 + 10 + 36).
-- Exact-field audit: 1,378 listed-security records compared with official Raw JSON; 0 mismatches across code, name, OHLC, volume, value, and change.
-- Idempotence: second normalization created 0 normalized rows and 0 cards.
-- Browser acceptance: home freshness, 66-card listing, 24-card first page, 3 pages, 30 dated cards, 36 `UNKNOWN`-date cards, code search for 2330, and Evidence JSON back-link verified.
-- Automated suite: 30 tests passed; credential scan passed.
-- Windows one-click launcher completed successfully after the timezone compatibility fix and reused all 1,681 normalized rows and 66 cards without duplication.
-
-## 2026-08-14 — Windows double-click launcher repair
-
-- Reproduced the user-reported failure through the real Windows `cmd.exe` path. The UTF-8 Chinese batch body was misparsed and truncated the repository path at its space.
-- Replaced the outer `.bat` body with ASCII-only commands, quoted `%~dp0` paths, explicit working-directory setup, PowerShell availability checking, and a paused failure state.
-- Removed remaining optional IANA `tzdata` dependencies from the dashboard and ROC-date collector by using Taiwan's year-round UTC+08:00 offset.
-- Strengthened the launcher test so the outer batch must be ASCII-decodable and retain quoted paths and failure pause behavior.
-
-### Verification
-
-- Real hidden `cmd.exe` launch succeeded and `/health` returned `status=ok`, `market=TW`.
-- Homepage returned HTTP 200 and rendered meaningful content, 1,681 raw/normalized records, 66 signal cards, and no framework error overlay.
-- Full repository check passed: `30 passed in 44.81s`; credential scan passed.
+## 2026-08-14 to 2026-08-16 — Foundation and discovery history (compressed)
+
+- Completed the shared Taiwan/US Market Pack, SQLite migrations, immutable Evidence/source governance, TWSE official data path, compliance precheck, realtime source registry, X/YouTube bounded collectors, P03/P04 event clustering, and the initial BEN Radar UI.
+- Completed the P01 business/source audit, X account discovery, cost/rights review, and local/public review-surface groundwork. Detailed evidence remains in PROJECT_CONTEXT.md and the earlier repository history.
+- This older history is intentionally condensed to keep the append-only work log below the 64 KiB project-memory limit.
 
 ## 2026-08-17 — BEN Radar P05-A data-pipeline and stock-signal correction
 
@@ -468,3 +92,329 @@
 - Committed the complete runnable BEN Radar dependency chain from P02 through Stock Workbench V0.1 as `af0f478` (`feat: deliver BEN Radar stock workbench v0.1`) and pushed it to GitHub `origin/main`.
 - Included code, migrations, governed configuration, tests, BEN Radar acceptance artifacts, reports, and the public-site source. Excluded runtime databases, caches, screenshots, credentials, unrelated YouTube benchmark research, and repository-local experimental skills.
 - Pre-push verification passed: 94 Python tests, 2 public-site tests, credential scan, and Project Memory check. The first push encountered a transient TLS handshake failure; the immediate retry succeeded and advanced remote `main` from `e77e65c` to `af0f478`.
+
+- Verification: Windows PowerShell parser passed; static inspection found no secret-persistence calls. No authenticated request was run because the user correctly retained the key locally, so real provider compatibility remains `NEEDS_CONFIRMATION`.
+
+## 2026-08-18 — Ben 20-channel daily-hotspot business analysis
+
+- Converted Ben's supplied recording transcript into a standalone business-requirement draft at `deliverables/BEN_20频道每日热点业务需求分析_2026-08-18.md` without copying the full transcript into Project Memory.
+- Defined the product unit as `channel × business date`, with 5–8 explainable candidates, honest shortages, market-session timing, Evidence gates, channel-match reasons, and a 10/30/60-second human workflow.
+- Separated 100 daily placements from unique events and documented multi-channel routing. Repository search found no authoritative 20-output-channel profile set; existing stocks, X accounts, realtime sources, and Style Packs were not relabeled.
+
+## 2026-08-18 — GPT proposal review and Channel-driven plan v2
+
+- Read the complete user-supplied GPT proposal and assessed it against Ben's recording, the prior 20-channel business analysis, current code/configuration, source governance, and the dirty-worktree industry-mapping state.
+- Produced `deliverables/BEN_Radar_Channel_Driven_最优业务方案_v2_2026-08-18.md`. Retained the proposal's useful product definition, Signal/Topic distinction, EOD-first boundary, deterministic/LLM split, transparent ranking direction, lean technical stack, and human KPI focus.
+- Corrected the pipeline to `Evidence -> Signal -> Event -> Topic -> Channel Assignment -> Channel Daily Brief`; changed 3–5 to a 5–8 target with honest shortages; separated source class from epistemic state; bounded LLM authority; and preserved Stock Workbench as a signal/evidence inspector rather than the primary product.
+- Replaced the one-channel MVP with a 20-channel audit followed by three contrasting channel archetypes over five historical Replay dates and five live business days. Added explicit gates for 20-channel expansion, source acquisition, United States onboarding, content workflow, and any future realtime-data spend.
+- Verified that the proposed Industry Mapping worktree remains uncommitted and outside the Topic path (`NEEDS_CONFIRMATION`); no runtime behavior was changed.
+
+## 2026-08-18 — Codex P06A channel-intake task prompt
+
+- Created `deliverables/CODEX_TASK_P06A_20频道画像审计与三频道试点选择_提示词.md` as the exact task prompt to pair with the user's forthcoming channel attachments in a new Codex task.
+- Scoped the task to complete channel inventory, field-level provenance, versioned draft profiles, overlap and data-coverage matrices, three contrasting pilot recommendations, structured Topic Card acceptance examples, business report, and Project Memory verification.
+- Added safeguards against invented channels, filled `UNKNOWN`, hard-coded examples, unsupported capabilities, and premature code/Schema/database/source/ranking changes.
+
+## 2026-08-18 — BEN Radar P06A channel-profile audit and pilot recommendation
+
+- Read the user's only supplied channel attachment and reconciled 20 unique channel names with zero duplicates, unidentified rows, or missing names. Preserved the 18-count directory inconsistency, the conflicting category placement of `半導體駭客` and `華爾街溫度計`, and the unresolved 24/7 cutoff for `鏈上顯微鏡` instead of silently correcting them.
+- Generated 20 versioned `ChannelProfile v0.1 DRAFT` records. Each retains its complete source block, summary, content forms, audience, update frequency, tags, SEO, cross-category matrix row, brand-family fields, and global risk template, plus field-level `SUPPLIED / DERIVED_FROM_SUPPLIED / PROPOSED / UNKNOWN / CONFLICT` provenance.
+- Added one-row-per-channel overlap and current-data coverage matrices. Verified current read-only capability facts: 97,603 TWSE/TPEx EOD rows through 2026-08-17, 11 mapped MOPS disclosures, no ChannelProfile/Assignment/Brief tables, and no applied Industry Mapping tables. Uncommitted Industry Mapping remains `PARTIAL`; US EOD, calendars, adoption history, and feedback remain `NOT_IMPLEMENTED`; news rights and X production status were not upgraded.
+- Recommended `資金雷達 / SIGNAL_HEAVY`, `個股顯微鏡 / EVENT_HEAVY`, and `產業透視鏡 / CROSS_ENTITY`, all `RECOMMENDED_PENDING_APPROVAL`, with objections, prerequisites, and alternatives. Generated five Topic Card acceptance examples for each; all 15 are labeled `SCHEMA_EXAMPLE_NOT_REAL_TOPIC`.
+- Produced the nine required research artifacts plus `deliverables/BEN_RADAR_20频道画像与三频道试点建议_P06A.md`. Added reproducible generator and validator scripts inside the research directory only.
+
+### Verification
+
+- Dedicated P06A validator passed: 20 profiles and unique IDs, 20 overlap rows, 20 coverage rows, three pilot types, 15 labeled schema examples, and seven material questions.
+- Current capability suite passed 19 tests covering official data, Anomaly Engine, the uncommitted Industry Mapping worktree, and Schema. This confirms the files/tests run, not production integration of Industry Mapping.
+- Full application tests were intentionally skipped because P06A changed only research, deliverable, and Project Memory files and explicitly prohibited application implementation.
+
+## 2026-08-18 — X reply task workbook through 2026-09-01
+
+- Created `outputs/01a014e6-3700-7b82-8981-9c9d12259957/X回复任务排期_2026-08-18至2026-09-01.xlsx`: 16 accounts, 15 dates, 240 account-day groups, 6,000 task slots, a selected-date dashboard, status controls, and manual-only execution.
+- Artifact-tool re-import and four-sheet visual QA passed: every group has 25 rows, the first two days reserve 800 slots, formulas have no matched errors, and the then-unprovided links/replies remained empty.
+
+## 2026-08-19 — Completed 800-row X reply assignment CSV
+
+- Parsed the user's pasted source into exactly 800 ordered X URL/reply pairs, preserving every URL and reply string without generation or rewriting.
+- Assigned source rows 1–400 to 2026-08-18 and 401–800 to 2026-08-19. Within each date, the 16 supplied accounts receive 25 consecutive rows each in the supplied account order.
+- Created the UTF-8 BOM CSV at `outputs/01a014e6-3700-7b82-8981-9c9d12259957/X回复任务_800条_2026-08-18至2026-08-19_Notion飞书.csv` with auditable task, assignment, status, link, reply, and completion fields.
+- Set all rows to `待回复`. No X login, posting, reply automation, or account interaction was performed.
+
+### Verification
+
+- Source validation passed: 800 continuous items, zero duplicate URLs, and zero blank replies.
+- Artifact-tool CSV import and saved-file re-import passed. Independent PowerShell `Import-Csv` confirmed 800 rows, two dates, 16 accounts, 32 date-account groups, exactly 25 rows in every group, 800 unique URLs, zero blank replies, correct first/last assignments, and a valid UTF-8 BOM.
+- Rendered and visually checked the CSV header plus representative rows; dates, accounts, status, URLs, and reply text were present and legible.
+
+- YouTube: UI 0/4; user text 5 files; no bodies stored.
+
+## 2026-08-19 — Corrected BEN Radar to a post-close channel Top 5
+
+- Corrected the earlier 12:05 assumption: wait for Taiwan close and per-source EOD readiness, then target the same-session brief for 15:00–15:15 Asia/Taipei.
+- Defined five ranked, evidence-qualified news/event/topic/stock assignments per channel and market cutoff. Taiwan timing does not govern US, global-macro, or 24/7 crypto channels.
+- Each item requires Why Now, Why Channel, Evidence, session/as-of labels, and stock detail. AI may order `1–5`; evidence gates remain authoritative. Late sources retry, and shortages cannot be padded.
+- No application, Schema, database, source, scheduler, market-data, ranking, or UI implementation changed. P06B still starts with the three approved pilots.
+
+## 2026-08-19 — Post-close daily run
+
+- 15:10 PASS: 5/5/5; audit 0; public 0e607b8.
+
+- Hotspot review: no runtime change.
+
+## 2026-08-19 — Extracted finance-relevant X following candidates
+
+- Parsed the user-supplied `twitter-正在关注-1784448167852.csv` with 2,150 account rows and preserved the source account fields without rewriting profile text or metadata.
+- Selected 67 candidates spanning the existing project account pool, listed-company/product/newsroom accounts, financial media, macro/market research, AI infrastructure, semiconductor, Taiwan supply-chain, and US-stock research. Pure crypto marketing/referral and unrelated generic-AI accounts were excluded.
+- Created `outputs/01a019cd-4657-7a90-b9ce-b66b01926538/X关注列表_股票财经AI相关候选账号.csv` with the 23 source columns plus six audit columns: category, suggested use, market scope, confidence, rationale, and matched dimension.
+- Added reproducible extractor `scripts/extract_finance_x_following.mjs`; the output remains a candidate list and does not change collection configuration or rights states.
+
+### Verification
+
+- Artifact runtime re-import and preview render completed successfully.
+- Independent CSV checks passed: 67 rows, 67 unique handles, zero duplicates, clean UTF-8 BOM headers, all 23 source columns present, all 67 metadata fields nonblank, and zero mismatches against the selected source rows.
+- `scripts/project-memory-check.ps1` passed. `git diff --check` passed with only existing LF-to-CRLF warnings.
+
+## 2026-08-20 — Daily 67-account X collection
+
+- Reconciled the supplied 67-account finance/stock/AI candidate file into `config/x_accounts.csv`: 19 core, 40 watch, 8 low-confidence, and 67 unique handles. Controlled endpoint checks showed stale `@ChatGPTapp` returned 404 while `@ChatGPT` returned 200, so the configuration uses the live handle.
+- Inspected `trickter/X-HotTopic` commit `6594894` without executing its third-party scripts. Ported the relevant reliability behavior into the existing collector: 4-request/second start limiting, 35-second timeout, three-attempt retry, millisecond `since`, bottom-cursor pagination, ten-page safety limit, and explicit incomplete-run state without advancing the checkpoint.
+- Added `scripts/run_daily_x_collection.py` plus PowerShell runner/installer. Each run records per-account results, retries only failed accounts, preserves dated run files and `latest.json`, enables all configured confidence tiers, and reconciles removed accounts without deleting history.
+- Removed the 67-account BEN sync from the ten-minute realtime dispatcher and installed `Global X Finance - Daily X Collection` for 14:35 +08 daily. The separate realtime-registry cycle remains unchanged. Updated weekday 15:05 Codex automation `ben-radar` to report and read the 14:35 X batch; enabled optional X input in the three-channel config.
+- Preserved all X rows as `OPINION`, original timestamps and URLs, publisher-group/repost semantics, immutable Raw Evidence, and `platform + post_id` deduplication. FxTwitter terms, commercial use, continuity, and SLA remain `UNKNOWN`.
+
+### Verification
+
+- Probe: 66 direct 200 responses plus one stale-handle 404; the corrected handle returned 200. Average response 8.724s, maximum 32.641s.
+- First collection: 67/67 complete, 771 fetched, 345 eligible prior-24-hour rows, 344 new posts; immediate rerun had zero duplicates. Task Scheduler returned 0.
+- 2026-08-19 X-enabled replay passed with TWSE 1083/1087, TPEx 862/889, 407 X rows, 23 media/X candidates, 5/5/5 output, and zero violations; official Evidence ranked ahead of X opinions.
+- Targeted X/channel suites passed 19 tests; full check passed 114 tests plus credential scan, Project Memory, and `git diff --check`.
+
+## 2026-08-20 — BEN Radar daily rule update
+
+- Moved active weekday `ben-radar` from 15:05 to 15:20 Asia/Taipei. The brief reports the 67-account X batch and X-backed/non-backed topics; one bounded supplemental run is allowed, with unresolved same-day X marked `X_DEGRADED` and no stale substitution. No business code, database, public page, Git commit, or publication changed.
+
+## 2026-08-20 — Post-close daily run
+
+- The single required process exited 0 with current-session `PASS`, 1083/1087 TWSE and 867/889 TPEx rows, both MOPS endpoints successful, 5/5/5 channel output, `RULE_BASED_FALLBACK`, and zero violations. All RSS sources ultimately succeeded; Investing.com recovered from one first-attempt `URLError`. The dated payload and local review JSON matched by SHA-256. No X collection, posting, commit, push, or public deployment occurred.
+
+## 2026-08-20 — YouTube transcript batch reconciliation
+
+- Deduplicated `j-zGkkZdcOs`, upgraded P08 to three `老王愛說笑` samples, and added three MacroMicro formats to P10. The repository records nine unique samples (eight complete, one partial); parsing, benchmark, credential, and metadata checks passed.
+
+## 2026-08-20 — Local five-channel preview
+
+- Added the five-channel page, daily EOD build, refresh button, guarded `gh-pages` publisher, and 15:20 automation update. Public commit `8ccf53a` passed external checks; no social posting or model claim.
+
+## 2026-08-20 — Ben YouTube narrative and hook handbook
+
+- Delivered verified Markdown/Word handbooks from nine text and 30 title/thumbnail observations: three structures, eight hooks, five scripts, review guidance, and originality limits. All 23 Word pages passed structure/accessibility/visual checks.
+
+## 2026-08-21 — `收盤夜話` writing-pilot intake
+
+- Replaced the proposed `產業透視鏡` writing pilot with `收盤夜話`; created a provenance-bounded `PROVISIONAL` Style Pack, five-angle/top-three-script contract, source requirements, human-readable implementation plan, and three targeted tests. Existing runtime, public page, and schedule were not changed.
+
+## 2026-08-21 — `收盤夜話` FactPack and editorial pilot
+
+- Added `_market_activity_leaders` to `src/global_x_finance/close_talk_fact_pack.py`. Each daily FactPack now carries up to 40 same-session official EOD leaders with market-qualified IDs, close, price change, change percentage, volume, trade value, transaction count, source ID, and clickable TWSE/TPEx URL. The audit allowlist includes these item-level evidence IDs.
+- Rebuilt the 2026-08-20 cash source pack and FactPack (`READY`, `COMPLETE_FOR_CASH_MARKET_BASE`): 40 activity leaders, 50 news leads/5 publishers, 30 X attention leads/16 accounts, and 30 MOPS disclosures. TAIFEX futures/options and securities lending remain unconnected.
+- Generated `outputs/ben_channel_daily/2026-08-20/close_talk_editorial.json`: five angles, 15 titles, three Traditional-Chinese drafts (1,636/1,620/1,616 chars), fact/interpretation/unknown separation, checkpoints, and 28 clickable source cards; no promotion or advice.
+- Added `scripts/render_close_talk_editorial.py` and generated `outputs/ben_channel_daily/2026-08-20/close_talk_editorial.md` for human reading. `scripts/audit_close_talk_editorial.py` returned `PASS`, `angle_count=5`, and `violation_count=0`.
+- Updated the active Codex `ben-radar` automation to 13:35 Asia/Taipei: same-process gate, FactPack, editorial generation/audit/render, then success report. No public editorial publication, social posting, commit, or push.
+
+### Verification
+
+- Targeted close-talk tests: 9 passed; full `scripts/check.ps1`: 128 passed plus credential scan passed.
+- Real 2026-08-20 source pack: `READY`, seven cash datasets; editorial audit `PASS`, 5 angles, 0 violations, Markdown render with 28 links.
+- Hardened secret scanning so URL slugs are not treated as API keys; added a regression test.
+
+## 2026-08-21 — BEN Radar conversation rule sync
+
+- Synced the existing Codex conversation `BEN Radar 台股每日收盤選題` to the active `收盤夜話` single-channel editorial contract. The thread now records the 13:05 X input / 13:35 main-run timing, 48-hour event window, five ranked angles with 2–3 titles each, top-three full-draft requirement, item-level FactPack source citations, explicit `UNKNOWN`/`SOURCE_PENDING`/`X_DEGRADED` states, and no automatic posting or GitHub Pages publication.
+- The sync turn did not execute the daily pipeline; no collection, output, code, database, publication, commit, or push occurred.
+
+## 2026-08-21 — 收盤夜話 daily run stopped at source gate
+
+- X batch passed 67/67 with 355 new posts; the required main command ran once and exited naturally with current-session `PASS`, TWSE 1079/1088, TPEx 878/889, and all nine news sources successful.
+- The seven-item cash pack remained `SOURCE_PENDING/INCOMPLETE_REQUIRED`: breadth/turnover was ready, TWSE/TPEx index and flow data were stale or unavailable, and margin endpoints were incomplete. No FactPack, five titles, full drafts, or editorial audit were generated.
+- A bounded source-only retry still returned prior-date index/flow data and incomplete margin responses; no stale facts were substituted.
+
+## 2026-08-21 — Same-day BEN content preview publication
+
+- Rebuilt `sites/ben-content-studio/data.json` from the 2026-08-21 brief; publisher validation passed (0 violations, 5 weight topics, 3 pilots).
+- Published the labelled preview to `gh-pages` commit `647bde0`; remote verification returned HTTP 200 and date `2026-08-21`. Full `收盤夜話` remains gated.
+
+## 2026-08-21 — Single-channel manuscript surface
+
+- Updated `sites/ben-content-studio/app.js` and its HTML template so the public workbench is explicitly manuscript-first: only `收盤夜話` is rendered, the page title names the manuscript, and each topic action says `看完整文稿`.
+- Recorded DEC-034 and refreshed the task/context handoff. The current public JSON still truthfully reports `close_talk_editorial.status=UNAVAILABLE` for 2026-08-21; no other channel or stale manuscript is substituted.
+- Targeted page tests and the Project Memory check are required before publication; no public push was performed in this turn.
+
+## 2026-08-21 — Clarified 收盤夜話 source timing and gate
+
+- Verified the live source configuration: X discovery starts at 13:05, Taiwan regular close is 13:30, source polling starts at 13:35, and the configured primary build is 13:50 with a normal 13:50–14:10 delivery target.
+- Documented the six official post-close endpoints: TWSE/TPEx index, TWSE/TPEx institutional flow, and TWSE/TPEx margin/short. Current hard gates are same-day EOD coverage plus both index rows; flow and margin remain optional enhancements with explicit `UNKNOWN` on delay/failure.
+- Confirmed 2026-08-21: EOD breadth was ready, both index endpoints returned 2026-08-20, institutional data was stale/unknown, and both margin requests failed; therefore no full manuscript was generated.
+
+## 2026-08-21 — Same-day source recheck
+
+- At 15:20 +08, ran one bounded source-only recheck after the scheduled process had exited. TWSE institutional flow had become current, but both index endpoints still returned 2026-08-20; TPEx flow and both margin/short endpoints remained pending. No editorial generation was started and no stale data was substituted.
+
+## 2026-08-21 — Staged 收盤夜話 delivery and late-source fallback
+
+- Changed the close-talk source contract so same-session TWSE/TPEx EOD plus derived breadth are the base gate; index, institutional flow, margin/short are optional enhancement rows with explicit per-endpoint status, date, attempts, and `UNKNOWN` boundaries.
+- Added the official dated TWSE `afterTrading/MI_INDEX` fallback when the TWSE OpenAPI is stale, and added `scripts/run_close_talk_enrichment.py` for the 14:45 second search/retry pass. FactPack now accepts a base-ready pack and labels `BASE_DRAFT` versus `ENRICHED_DRAFT`.
+- Updated `config/channel_pilots.v0.1.json` to target 13:45 primary build and a 14:45 enhancement poll. Updated Codex automations: `ben-radar` at 13:35 and `ben-radar-14-45` for enrichment/versioned replacement.
+
+### Verification
+
+- Live 2026-08-21 source pack: `base_status=READY`, `enhancement_status=SOURCE_PENDING`; TWSE dated fallback and TWSE institutional flow were current, while margin rows remained pending. No prior-session values were substituted.
+- The updated daily command completed with `status=PASS`, same-day non-replay EOD coverage, zero channel violations; FactPack build returned `READY` from the base pack. The enrichment script completed with `ENHANCEMENT_PENDING` and preserved the base path.
+- Targeted close-talk/source/style/content tests: 14 passed. Official automation guidance was checked at [developers.openai.com/codex/automations](https://developers.openai.com/codex/automations).
+
+## 2026-08-21 — Published the first same-day `收盤夜話` manuscript
+
+- Built `outputs/ben_channel_daily/2026-08-21/close_talk_editorial.json` from the real `BASE_DRAFT` FactPack and rendered `close_talk_editorial.md` for human reading. The artifact has five ranked angles, three title options per angle, three complete Traditional-Chinese scripts (1,372–1,654 characters), explicit confirmed/interpretation/unknown fields, next-session checkpoints, and 27 clickable source cards in total.
+- Added the reproducible generator `scripts/generate_close_talk_editorial_2026_08_21.py`; it reads only the dated FactPack and preserves official/news Evidence IDs. The editorial audit returned `PASS`, `angle_count=5`, and `violation_count=0`.
+- Rebuilt `sites/ben-content-studio/data.json` so the existing manuscript-first page contains the same-day editorial. Publisher validation passed, then `scripts/publish_ben_content_studio.ps1 -TradeDate 2026-08-21` published `gh-pages` commit `d416696681af6bf8859634e299d6438bf7231da9`.
+- Anonymous remote verification returned HTTP 200 for both the page and `data.json`; remote date is `2026-08-21`, editorial status is `DRAFT_FOR_HUMAN_REVIEW`, and the page title is `BEN 收盤夜話｜每日盤後文稿`. No social post or main-branch push was made.
+
+## 2026-08-21 — Clarified Ben's channel and source requirements
+
+- Ben reviewed the first public `收盤夜話` manuscript and confirmed the general direction is usable. The remaining business requirement is channel differentiation: each channel needs its own language, opening, narrative logic, copy structure, evidence/opinion ratio, title pattern, and ending style rather than a shared generic finance template.
+- Confirmed a source UX gap: API/JSON links are technically traceable but are not good Ben-facing verification targets. The next UI/source task must provide direct human-readable article, official announcement, dated dataset/row, X post, or video/transcript links, while retaining raw API URLs as secondary evidence.
+- Confirmed the daily topic window: use the newest 24 hours for fresh events and up to 48 hours for context; combine official EOD, announcements/financial reports, news, market reaction, and attention signals; rank hotness separately from ordinary price/volume anomalies; show the draft body character count at the top.
+- No source adapter, ranking rule, or UI code was changed in this clarification turn. The next input needed is at least five recent complete scripts for the next channel, with titles/dates and any Ben keep/reject examples.
+
+## 2026-08-23 — Daily run stopped at the build-time gate
+
+- Started the required repository-virtual-environment command exactly once at 12:03 +08 and waited for that process to exit naturally.
+- The script returned `WAITING_FOR_BUILD_TIME` for `market_session_date=2026-08-23`; its configured build time was 13:45 +08. The date was also a Sunday, so no trading-session success was inferred.
+- No current-day `run_summary.json`, `audit.json`, or `channel_brief.json` was written. The local review JSON remained dated 2026-08-21, so market coverage, MOPS/news endpoint status, channel counts, and ranking were `UNAVAILABLE / NOT_ATTEMPTED` for this run.
+- No X collection or retry, posting, Git commit, push, or public publication occurred.
+
+## 2026-08-23 — First-ten channel Style Packs and Sunday collection
+
+- Added `research/ben_radar_first10_style_packs/` with a 15-row inventory (12 transcript samples plus three explicit no-sample rows), 10 channel Style Packs, a Ben-readable review, and a reproducible validator. Seven channels are provisional; `個股顯微鏡`, `產業透視鏡`, and `財報獵人` remain `NO_TRANSCRIPT_NEEDS_SAMPLES`. `資金雷達` and `板塊輪動儀` explicitly retain profile/sample mismatch flags.
+- Added `src/global_x_finance/weekend_crawl.py` and `scripts/run_ben_weekend_crawl.py`. Sunday primary/enrichment runs collect human-verifiable 24-hour fresh and 24–48-hour context news, report source concentration and same-day X state, and never claim a Taiwan post-close manuscript.
+- Updated `ben-radar` to 13:35 and `ben-radar-14-45` to 14:45 on Sunday through Friday; Saturday is excluded. Weekdays keep the same-session EOD manuscript gates, while Sunday uses the source-only branch. Updated `Global X Finance - Daily X Collection` to the same six-day schedule.
+- Diagnosed the 2026-08-23 X task failure as `UNIQUE constraint failed: ben_x_posts.raw_item_id` for distinct posts sharing identical text. Raw Evidence identity now includes `platform + post_id + text`, preserving two distinct posts without weakening immutable evidence or altering historical rows.
+- Added actual body character counts to generated scripts and the Ben-facing manuscript header. Source cards now prioritize `human_verification_url` and retain `raw_api_url` as secondary evidence; the editorial audit rejects raw API-only primary links and incorrect character counts.
+- Rebuilt the 2026-08-21 local FactPack/editorial/Markdown/site payload from the preserved passing base FactPack. The editorial audit returned `PASS`, five angles, and zero violations. No GitHub Pages publication, social post, commit, or push occurred.
+
+### Verification
+
+- First-ten validator: `PASS`, 10 channels, 7 with transcripts, 3 without, 12 transcript samples, zero violations.
+- Targeted tests: 21 X/weekend/style tests passed; weekend primary and enrichment each returned `NEWS_CRAWL_PASS`, 9/9 sources, 126 fresh rows and 74 context rows.
+- Real X acceptance after the fix: `PASS`, 67/67 complete, completion ratio 1.0, 76 new/kept posts.
+- Full `scripts/check.ps1`: 136 tests passed and the credential scan passed. Editorial evidence verification found 27 human-readable primary links, 18 secondary raw API links, zero raw API primary links, and exact character-count matches for all three full scripts.
+
+## 2026-08-23 — Requested three-channel daily run failed on the Sunday source gate
+
+- Started the exact repository-virtual-environment command once at 15:10 +08, after the configured 13:45 build time, and waited for the same process to exit naturally at 15:25 with code 1.
+- The dated `run_summary.json` reports `SOURCE_PENDING_OR_NO_SESSION` for 2026-08-23. All four attempts had TWSE 0/1,088 coverage with `NO_TRADING_DATA` and TPEx 0/889 coverage with `HTTP_403`.
+- The TWSE MOPS endpoint succeeded twice with seven rows (seven new on the first call, seven duplicates on the retry). The TPEx MOPS endpoint failed twice with `HTTP_403 Forbidden`.
+- The market gate stopped this command before Yahoo Taiwan, Yahoo Finance, Investing.com, or CNBC RSS collection, channel generation, ranking, and audit. Today's `audit.json` and `channel_brief.json` are absent; the local review JSON remains dated 2026-08-21.
+- This failed legacy command is separate from the new Sunday source-only crawl, which had already passed. No X collection or retry, automatic posting, Git commit, push, GitHub Pages publication, or stale-data substitution occurred in this run.
+
+### Verification
+
+- Re-read the dated `run_summary.json`, queried this run's MOPS `collection_runs`, confirmed the review JSON date and hash, and confirmed no daily process remained running.
+
+## 2026-08-23 — Republished the Ben-facing `收盤夜話` manuscript
+
+- Published the already-audited 2026-08-21 manuscript surface with body character counts, human-readable verification links, and secondary raw API links to the isolated `gh-pages` branch at commit `ce15058ef17a83c8b84f20e46796cead172c61f2`.
+- Anonymous no-cache checks returned HTTP 200 for the page, `data.json`, and `app.js`; the remote payload reports `market_session_date=2026-08-21` and `DRAFT_FOR_HUMAN_REVIEW`, and the new source-link and character-count fields are present.
+- No social post, `main` commit, or `main` push was made. The Sunday 2026-08-23 source-only snapshot was not represented as a same-day post-close manuscript.
+
+## 2026-08-23 — Published the first-ten-channel manuscript workbench
+
+- Added `scripts/build_first10_content_studio.py` and `scripts/audit_first10_content_studio.py`. The builder combines the seven transcript-backed Style Packs with the passing 2026-08-23 24/48-hour source snapshot and the audited 2026-08-21 close-talk/EOD artifacts; generated channel prose is normalized to Traditional Chinese while source titles remain unchanged.
+- Rebuilt `/ben-content-studio/` as a ten-channel overview. Seven channels expose reviewable content, while `個股顯微鏡`, `產業透視鏡`, and `財報獵人` show honest waiting-sample states. The current artifact has 11 topics, nine full scripts, 51 source cards, exact body character counts, and zero audit violations.
+- `暗池雷達` and `期權守門人` explicitly disclose missing original dark-pool prints, options-chain, IV, and OI data; neither claims a directional institutional bet. Daily content-studio writes now preserve the separately dated first-ten workbench until a newer audited snapshot replaces it.
+- Updated the publisher gate to require all ten channels, seven ready states, three waiting states, and a passing first-ten audit. Published the isolated `gh-pages` commit `6ec08774114ccb7fb8f444dece25e6a2d80b27ed`.
+
+### Verification
+
+- First-ten audit: `PASS`, 10 channels, 11 topics, nine full scripts, 51 sources, zero violations. Node page test passed; targeted Python tests passed 4/4; publisher `-ValidateOnly` passed.
+- Full `scripts/check.ps1`: 137 tests passed and the credential scan passed.
+- Browser acceptance passed at 1440x900 and 390x844: ten cards, three waiting states, no card overlap/overflow, responsive one-column mobile layout, exact expanded character count, human-readable sources, and zero console errors.
+- Anonymous no-cache checks returned HTTP 200 for the page, `app.js`, and `data.json`; the remote payload reports source snapshot `2026-08-23`, last market session `2026-08-21`, ten channels, seven draft-ready, three waiting, and nine full scripts.
+
+## 2026-08-23 — Published the complete 20-channel manuscript workbench
+
+- Added `research/ben_radar_second10_style_packs/` with a seven-row transcript inventory, ten channel Style Packs, a Ben-readable review, and a reproducible validator. Four channels are transcript-backed and provisional; six profile-only channels remain `NO_TRANSCRIPT_NEEDS_SAMPLES`. Profile/sample drift stays explicit.
+- Added `scripts/build_all20_content_studio.py` and `scripts/audit_all20_content_studio.py`, updated the page/publisher/tests, and generated an all-20 `channel_workbench`. The dated snapshot has 20 channels, 11 draft-ready states, nine waiting states, 15 topics, 13 full manuscripts, 19 transcript samples, 62 source cards, and zero violations.
+- Fixed mobile horizontal overflow caused by the long Style Pack status in the channel detail header, and added safe wrapping for source links. Browser acceptance passed at 1440x900 and 390x844 with 20 cards, nine waiting states, no overlap or horizontal overflow, a responsive one-column mobile layout, three clickable `全球資金地圖` sources, and an exact 689-character expanded manuscript count.
+- Published the isolated `gh-pages` commit `f57968bcf87e62cc61a850735588cb03253fa0e8`. Anonymous no-cache checks returned HTTP 200 for the page, `data.json`, `app.js`, and `styles.css`; the remote payload reports 20 channels, 11 draft-ready, nine waiting, 15 topics, 13 full manuscripts, source snapshot `2026-08-23`, and market session `2026-08-21`.
+
+### Verification
+
+- Second-ten Style Pack validator and all-20 audit: `PASS`, zero violations. Publisher `-ValidateOnly`: `PASS`. Targeted Python tests: 4 passed. Node page test: 1 passed.
+- Full `scripts/check.ps1`: 137 tests passed; credential scan passed. `git diff --check` reported no whitespace errors.
+
+## 2026-08-23 — Expanded sources and made every visible channel a five-topic desk
+
+- Added Federal Reserve, SEC, EIA, ECB, and CoinDesk to the weekend discovery layer as optional enhancements while preserving the original nine required sources. Added source classes, coverage tags, structured-data gap reporting, and raised the 48-hour snapshot cap from 200 to 400.
+- The live Sunday crawl passed all 14 sources with 139 fresh items, 148 context items, and same-day X `PASS`. Four official enhancement feeds had no items inside the current 48-hour window; no stale row was promoted into a topic.
+- Reworked the first-ten/all-20 builders so the 11 manuscript-backed channels each receive exactly five topics. Shared hotspot IDs support legitimate cross-channel coverage, while the audit enforces global uniqueness across every public title option.
+- Kept all 20 channel records in the backend artifact but changed the public page to omit `WAITING_FOR_TRANSCRIPT_SAMPLES`. The local payload contains 55 topics, 13 full manuscripts, 40 labelled topic outlines, and 134 source cards; nine sample-free channels remain unrendered.
+
+### Verification
+
+- All-20 audit: `PASS`, 55 topics, 13 manuscripts, 134 sources, zero violations. Targeted Python tests: 8 passed. Node page test and publisher `-ValidateOnly`: `PASS` with 11 public channels and 55 topics.
+- Browser acceptance passed at 1440x1000 and 390x844: 11 cards, five topics on every card, nine hidden channels absent, full-manuscript and outline details readable, and no horizontal overflow.
+- Full `scripts/check.ps1`: 138 tests passed; credential scan passed. `git diff --check` reported no whitespace errors.
+- Published isolated `gh-pages` commit `afbf0cac696172f0b7edb13225fa722e7d1c2d55`. Anonymous no-cache requests returned HTTP 200 for the page, `data.json`, `app.js`, and `styles.css`; final remote browser inspection confirmed the new title, 11 visible channels, five topics on every card, nine hidden channels absent, the `14/14 · 官方4` source summary, and no horizontal overflow.
+
+## 2026-08-23 — Completed all 55 visible manuscripts
+
+- Added channel-specific complete-manuscript blueprints for all 11 transcript-backed channels and filled the 42 previously empty topic bodies from their current facts, explicit unknowns, evidence sources, channel angle, and Style Pack. The 13 existing bodies retained their facts and structure; seven internal production phrases received narrow spoken-language cleanup.
+- Tightened the all-20 audit and publication gate to require 55 topics, 55 full manuscripts, at least 600 non-whitespace characters per body, and zero `CHANNEL_TOPIC_OUTLINE` placeholders. Final output has 55 unique bodies, 55 unique primary titles, 134 source cards, a 613-character minimum, a 1,633-character maximum, and a 920.5-character average.
+- Updated the page to present every visible channel as `5個選題 · 5篇全文`, fail closed on a missing manuscript, and remove stale outline wording. Added a self-contained favicon so local and public builds no longer depend on a sibling site path.
+- Published isolated `gh-pages` commit `cd05592cf7bf1de01e2282d26e23ec963fa5d320`; no `main` commit/push or social publication was performed.
+
+### Verification
+
+- All-20 audit and publisher `-ValidateOnly`: `PASS`, 20 backend channels, 11 public channels, 55 topics, 55 full manuscripts, 134 sources, zero violations. Relevant Python tests passed 21/21; Node page test passed 1/1.
+- Full `scripts/check.ps1`: 138 tests passed; credential scan passed. Desktop 1440x1000 and mobile 390x844 browser acceptance passed with 11 cards, no broken images, no horizontal overflow, working channel/detail/dialog interactions, complete text expansion, and hidden sample-free channels absent. Anonymous remote checks returned HTTP 200 for the page, data, script, stylesheet, and favicon; remote browser verification confirmed 55 full scripts and working manuscript/source expansion.
+
+## 2026-08-23 — Rebuilt all 55 manuscripts to duration-based program length
+
+- Replaced the rejected 600-character floor with channel-duration requirements: `收盤夜話` 3,000+, 5–8 minute channels 2,000+, 3–5 minute channels 1,500+, and 3-minute channels 1,200 non-whitespace characters. Existing bodies no longer bypass regeneration.
+- Added 11 channel program specifications plus topic-specific transmission analysis for market breadth, memory, shipping, substrates, AI pricing, financing, Taiwan rotation, crypto liquidation, tokenization, exchange/bridge risk, China ADR financing, insurance, retirement ETFs, and related event classes. Every script now includes competing interpretations, explicit missing-data boundaries, scenario tests, and next verification points without inventing absent data.
+- Added per-topic duration/minimum/pass metadata, Ben-facing target labels, unique-body and internal-wording audits, per-channel length statistics, and fail-closed publisher checks. The final 55 manuscripts are unique and retain 134 human-verifiable source cards; nine sample-free channels remain hidden.
+- Verification: all-20 audit `PASS` with zero violations; targeted tests passed; full `scripts/check.ps1` passed 138 tests and credential scan; publisher validation and `git diff --check` passed; desktop 1440x1000 and mobile 390x844 browser QA found no horizontal overflow or console errors.
+- Published only the isolated `gh-pages` branch at `f80a5fa6454a426504e27bb17e1899ee9dc01c35`. Anonymous checks returned HTTP 200 for page, JSON, JavaScript, CSS, and favicon; remote browser confirmed 11 visible channels, 55 manuscripts, and the 3,479-character/15-minute first script. No `main` commit/push or social publication occurred.
+
+## 2026-08-24 — Enabled gated weekday publication for the BEN content studio
+
+- Updated `ben-radar` and `ben-radar-14-45` so a passing weekday base or enriched draft may publish only to isolated `gh-pages`. Both require same-day, non-replay, zero-violation inputs and a no-cache remote date check; social posting and `main` pushes remain forbidden.
+- Raised the daily `收盤夜話` contract from three shorter scripts to five complete 3,000–4,200-character manuscripts. The editorial audit now checks every rank.
+- Added `scripts/prepare_ben_content_studio_publish.py` and daily workbench synchronization so the dated scripts replace the channel actually rendered by the public page. Tightened the publisher to require the current close-talk date, five duration-passing scripts, a 55-script audit, and an audit fingerprint.
+- Verification: targeted tests passed 13/13; full `scripts/check.ps1` passed 140 tests and the credential scan. Python compilation passed. Validation against the legacy three-script artifact failed closed at the new 3,000-character gate, as intended. The 13:05 X task then returned `PASS`, 67/67 complete, 223 new posts, and Windows result 0. No new public commit was made; the latest public version remains `f80a5fa` until a scheduled manuscript run passes.
+
+## 2026-08-24 — 14:45 close-talk enrichment remained pending
+
+- Confirmed Taipei Monday and started the exact repository-virtual-environment enrichment command once at 14:52 +08, without starting phase A or X. Waited for the same process to exit naturally with a nonzero result.
+- The dated `enrichment_summary.json` reports `ENHANCEMENT_PENDING` for 2026-08-24. All 14 configured news sources succeeded on the first attempt, but the source pack remained `enhancement_status=SOURCE_PENDING` and `coverage_status=BASE_READY_OPTIONAL_PENDING`.
+- Missing or failed current-session datasets were market breadth/turnover, TPEx index, TWSE/TPEx institutional flow, and TWSE/TPEx margin/short. TPEx endpoints returned HTTP 403; unresolved dates remained `UNKNOWN` and no prior-session value was substituted.
+- The phase-A `run_summary.json`, `audit.json`, `channel_brief.json`, FactPack, editorial, editorial audit, and render are absent for 2026-08-24. The enhancement gate therefore stopped before editorial regeneration, prepare, publication, or remote-date advancement.
+- Anonymous no-cache verification returned HTTP 200 for the public `data.json`, still dated 2026-08-21 at the market, workbench, and `收盤夜話` levels. It retains 20 backend channels, 11 visible channels, 55 topics, and 55 duration-passing manuscripts. Remote `gh-pages` remains `f80a5fa6454a426504e27bb17e1899ee9dc01c35`.
+- No social post, `main` commit/push, X rerun, stale-data substitution, or `gh-pages` update occurred.
+
+## 2026-08-24 — Added topic-manuscript contracts and append-only channel reviews
+
+- Added topic-contract v2 to all 55 visible topics: displayed title, core question, five-part channel-specific selection reason, thesis/counter-thesis, script claims, Evidence IDs, and three measurable review checkpoints. The manuscript builder repairs missing coverage and the audit independently recomputes title, reason, claim, and Evidence alignment.
+- Added immutable per-channel history snapshots, idempotent fingerprinting, same-date versioning, and append-only outcome updates. Resolved reviews require an observation date and clickable human-verification Evidence; historical titles and manuscripts are never rewritten.
+- Added `今日文稿 / 歷史回顧` UI with lazy history loading, original thesis, counter-thesis, checkpoints, review status, measured outcome, and Evidence. Fixed current-topic visibility when switching to history and verified responsive desktop/mobile behavior.
+- Updated both BEN weekday automations to archive the current 11-channel workbench before replacement, apply only Evidence-backed review outcomes, and require the 55-topic alignment/history audit before isolated `gh-pages` publication.
+- Verification: all-20 audit `PASS` with 55 aligned manuscripts, 11 history entries, and zero violations; 13 focused tests passed; full `scripts/check.ps1` passed 149 tests plus credential scan; Node page test, `git diff --check`, and 1440x1000/390x844 browser acceptance passed. Publisher validation failed closed on the legacy 2026-08-21 editorial's pre-existing sub-3,000-character bodies. No new public commit was made.
+
+## 2026-08-24 — Added visible publication and fetch times to source cards
+
+- Replaced compact Evidence links with source cards placed before the manuscript. Cards show the original title, original publication time, actual fetch time when present, and human-verification/raw links; timestamped values use Taipei time and date-only official rows are labelled as source-data dates.
+- Propagated `fetched_at` through weekend news, close-talk news/X/disclosure FactPacks, editorial generation, first-ten builders, and content-studio synchronization. Legacy databases without the news `fetched_at` column remain readable and return an honest null.
+- The all-20 audit now requires every public source to have a real publication/fetch/observation date and valid ISO `published_at`/`fetched_at`; it reports `source_time_count`. Added a missing-time regression test and updated both active BEN automations with the same fail-closed gate.
+- Verification: 19 focused Python tests, Node page test, and all-20 audit passed with 134/134 timed source cards and zero violations. The full project check passed 150 tests plus the credential scan. Browser checks at 1440x1000 and 390x844 confirmed source cards precede manuscripts, no horizontal overflow, and no console errors. The same-day source gate stayed pending, so no public deployment occurred.
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->

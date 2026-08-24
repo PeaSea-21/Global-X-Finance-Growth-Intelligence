@@ -1,0 +1,3529 @@
+{
+  "artifact": "BEN_CHANNEL_DAILY_BRIEF",
+  "artifact_version": "p06b-v0.1",
+  "config_version": "p06b-channel-pilots-v0.1",
+  "market": "TW",
+  "timezone": "Asia/Taipei",
+  "market_session_date": "2026-08-13",
+  "session_state": "DEGRADED",
+  "scheduled_for": "2026-08-13T15:05:00+08:00",
+  "generated_at": "2026-08-13T15:05:00+08:00",
+  "data_as_of": "2026-08-13T15:05:00+08:00",
+  "replay_mode": true,
+  "source_readiness": [
+    {
+      "source": "TWSE_EOD",
+      "required": true,
+      "status": "READY",
+      "data_as_of": "2026-08-13",
+      "record_count": 1086,
+      "coverage_ratio": 0.9990800367985281
+    },
+    {
+      "source": "TPEX_EOD",
+      "required": true,
+      "status": "READY",
+      "data_as_of": "2026-08-13",
+      "record_count": 877,
+      "coverage_ratio": 0.9865016872890888
+    },
+    {
+      "source": "MOPS",
+      "required": false,
+      "status": "EMPTY",
+      "data_as_of": "2026-08-13T15:05:00+08:00",
+      "record_count": 0
+    },
+    {
+      "source": "NEWS",
+      "required": false,
+      "status": "EMPTY",
+      "data_as_of": "2026-08-13T15:05:00+08:00",
+      "record_count": 0
+    },
+    {
+      "source": "X",
+      "required": false,
+      "status": "EMPTY",
+      "data_as_of": "2026-08-13T15:05:00+08:00",
+      "record_count": 0
+    },
+    {
+      "source": "INDUSTRY_MAPPING",
+      "required": false,
+      "status": "AVAILABLE",
+      "data_as_of": "2026-08-13T15:05:00+08:00",
+      "record_count": 1824
+    }
+  ],
+  "coverage_status": "OPTIONAL_SOURCE_GAPS",
+  "ranking_method": "RULE_BASED_FALLBACK",
+  "ranking_detail": {
+    "ch-05-tw-capital-radar": {
+      "reason": "NO_PRODUCTION_MODEL_PROVIDER",
+      "version": "channel-rule-rank-v0.1"
+    },
+    "ch-01-tw-stock-microscope": {
+      "reason": "NO_PRODUCTION_MODEL_PROVIDER",
+      "version": "channel-rule-rank-v0.1"
+    },
+    "ch-03-tw-industry-lens": {
+      "reason": "NO_PRODUCTION_MODEL_PROVIDER",
+      "version": "channel-rule-rank-v0.1"
+    }
+  },
+  "rule_version": "ANOMALY_RULES_V0.1",
+  "candidate_pool_counts": {
+    "market_signals": 392,
+    "disclosures": 0,
+    "media_events": 0,
+    "cross_entity": 14
+  },
+  "briefs": [
+    {
+      "channel_id": "ch-05-tw-capital-radar",
+      "channel_name": "資金雷達",
+      "channel_type": "SIGNAL_HEAVY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "summary": "用台股收盘后的价量与成交异常，快速找出最值得内容团队进一步核验的市场信号。",
+      "fixed_boundary": "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。",
+      "target_count": 5,
+      "qualified_count": 392,
+      "qualification_drops": {},
+      "displayed_count": 8,
+      "status": "READY",
+      "shortage_reasons": [],
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "assignments": [
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:6130",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "上亞科技收盘+10.00%，RVOL 7.19倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6130"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "收盘价 29.70",
+            "涨跌幅 +10.00%",
+            "成交量 1,295,000 股，20日中位数 180,000 股",
+            "RVOL 7.19倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6130",
+              "name": "上亞科技",
+              "ticker": "6130",
+              "market": "TPEX",
+              "close": 29.7,
+              "change_pct": 9.999999999999986,
+              "current_volume": 1295000,
+              "median_volume_20d": 180000.0,
+              "volume_ratio": 7.194444444444445,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量12.82倍；收盘确认突破此前20日及40日区间高点4.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.65个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量12.82倍；收盘确认突破此前20日及40日区间高点4.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.65个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 6,
+            "price_volume": 1,
+            "volume_ratio": 7.194444444444445,
+            "abs_price_zscore": 2.651121713119843,
+            "abs_change_pct": 9.999999999999986,
+            "base_rank": 1
+          },
+          "candidate_rank": 1,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中6项可解释价量规则",
+            "RVOL 7.19倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:5455",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "昇益收盘+1.23%，RVOL 24.60倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:5455"
+          ],
+          "industry_keys": [
+            "REAL_ESTATE"
+          ],
+          "facts": [
+            "收盘价 28.85",
+            "涨跌幅 +1.23%",
+            "成交量 123,000 股，20日中位数 5,000 股",
+            "RVOL 24.60倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:5455",
+              "name": "昇益",
+              "ticker": "5455",
+              "market": "TPEX",
+              "close": 28.85,
+              "change_pct": 1.2280701754386003,
+              "current_volume": 123000,
+              "median_volume_20d": 5000.0,
+              "volume_ratio": 24.6,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.20倍，今日放大至近期5日中位量123.00倍；收盘确认突破此前20日及40日区间高点0.17%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "此前5日中位量仅为20日中位量0.20倍，今日放大至近期5日中位量123.00倍；收盘确认突破此前20日及40日区间高点0.17%，形成量价共振。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 24.6,
+            "abs_price_zscore": 0.8247529071285873,
+            "abs_change_pct": 1.2280701754386003,
+            "base_rank": 2
+          },
+          "candidate_rank": 2,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 24.60倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:6840",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "東研信超收盘+9.88%，RVOL 18.09倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6840"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "收盘价 75.60",
+            "涨跌幅 +9.88%",
+            "成交量 1,176,000 股，20日中位数 65,000 股",
+            "RVOL 18.09倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6840",
+              "name": "東研信超",
+              "ticker": "6840",
+              "market": "TPEX",
+              "close": 75.6,
+              "change_pct": 9.883720930232553,
+              "current_volume": 1176000,
+              "median_volume_20d": 65000.0,
+              "volume_ratio": 18.092307692307692,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数18.09倍；收盘确认突破此前20日及40日区间高点6.78%，形成量价共振；当日涨跌+9.88%，偏离自身近期正常波动3.03个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "其他電子業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数18.09倍；收盘确认突破此前20日及40日区间高点6.78%，形成量价共振；当日涨跌+9.88%，偏离自身近期正常波动3.03个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 18.092307692307692,
+            "abs_price_zscore": 3.034711759163807,
+            "abs_change_pct": 9.883720930232553,
+            "base_rank": 3
+          },
+          "candidate_rank": 3,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 18.09倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:6028",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "公勝保經收盘+6.08%，RVOL 12.24倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6028"
+          ],
+          "industry_keys": [
+            "FINANCIALS"
+          ],
+          "facts": [
+            "收盘价 95.90",
+            "涨跌幅 +6.08%",
+            "成交量 202,000 股，20日中位数 16,500 股",
+            "RVOL 12.24倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6028",
+              "name": "公勝保經",
+              "ticker": "6028",
+              "market": "TPEX",
+              "close": 95.9,
+              "change_pct": 6.084070796460184,
+              "current_volume": 202000,
+              "median_volume_20d": 16500.0,
+              "volume_ratio": 12.242424242424242,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数12.24倍；收盘确认突破此前20日及40日区间高点2.79%，形成量价共振；当日涨跌+6.08%，偏离自身近期正常波动4.34个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "金融保險",
+              "normalized_sector": "FINANCIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数12.24倍；收盘确认突破此前20日及40日区间高点2.79%，形成量价共振；当日涨跌+6.08%，偏离自身近期正常波动4.34个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 12.242424242424242,
+            "abs_price_zscore": 4.337259101797832,
+            "abs_change_pct": 6.084070796460184,
+            "base_rank": 4
+          },
+          "candidate_rank": 4,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 12.24倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TWSE:4736",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "泰博收盘+5.22%，RVOL 8.26倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:4736"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "收盘价 141.00",
+            "涨跌幅 +5.22%",
+            "成交量 1,362,061 股，20日中位数 164,960 股",
+            "RVOL 8.26倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:4736",
+              "name": "泰博",
+              "ticker": "4736",
+              "market": "TWSE",
+              "close": 141.0,
+              "change_pct": 5.223880597014929,
+              "current_volume": 1362061,
+              "median_volume_20d": 164960.0,
+              "volume_ratio": 8.256916828322018,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数8.26倍；收盘确认突破此前20日及40日区间高点5.22%，形成量价共振；当日涨跌+5.22%，偏离自身近期正常波动4.81个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数8.26倍；收盘确认突破此前20日及40日区间高点5.22%，形成量价共振；当日涨跌+5.22%，偏离自身近期正常波动4.81个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 8.256916828322018,
+            "abs_price_zscore": 4.812727558088715,
+            "abs_change_pct": 5.223880597014929,
+            "base_rank": 5
+          },
+          "candidate_rank": 5,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 8.26倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:4413",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "飛寶企業收盘+9.97%，RVOL 7.56倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:4413"
+          ],
+          "industry_keys": [
+            "CONSUMER_DISCRETIONARY"
+          ],
+          "facts": [
+            "收盘价 18.75",
+            "涨跌幅 +9.97%",
+            "成交量 68,000 股，20日中位数 9,000 股",
+            "RVOL 7.56倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:4413",
+              "name": "飛寶企業",
+              "ticker": "4413",
+              "market": "TPEX",
+              "close": 18.75,
+              "change_pct": 9.97067448680351,
+              "current_volume": 68000,
+              "median_volume_20d": 9000.0,
+              "volume_ratio": 7.555555555555555,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.56倍；收盘确认突破此前20日及40日区间高点9.97%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动3.57个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "紡織纖維",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数7.56倍；收盘确认突破此前20日及40日区间高点9.97%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动3.57个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 7.555555555555555,
+            "abs_price_zscore": 3.5650403367558083,
+            "abs_change_pct": 9.97067448680351,
+            "base_rank": 6
+          },
+          "candidate_rank": 6,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 7.56倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TWSE:6931",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "青松健康收盘+9.97%，RVOL 7.14倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:6931"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "收盘价 43.55",
+            "涨跌幅 +9.97%",
+            "成交量 394,789 股，20日中位数 55,300 股",
+            "RVOL 7.14倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:6931",
+              "name": "青松健康",
+              "ticker": "6931",
+              "market": "TWSE",
+              "close": 43.55,
+              "change_pct": 9.97474747474747,
+              "current_volume": 394789,
+              "median_volume_20d": 55300.0,
+              "volume_ratio": 7.139041591320073,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.14倍；收盘确认突破此前20日及40日区间高点7.00%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动5.80个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数7.14倍；收盘确认突破此前20日及40日区间高点7.00%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动5.80个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 7.139041591320073,
+            "abs_price_zscore": 5.79547729562467,
+            "abs_change_pct": 9.97474747474747,
+            "base_rank": 7
+          },
+          "candidate_rank": 7,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 7.14倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TWSE:3052",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "夆典收盘+3.69%，RVOL 6.72倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:3052"
+          ],
+          "industry_keys": [
+            "REAL_ESTATE"
+          ],
+          "facts": [
+            "收盘价 11.25",
+            "涨跌幅 +3.69%",
+            "成交量 1,617,199 股，20日中位数 240,521 股",
+            "RVOL 6.72倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:3052",
+              "name": "夆典",
+              "ticker": "3052",
+              "market": "TWSE",
+              "close": 11.25,
+              "change_pct": 3.686635944700467,
+              "current_volume": 1617199,
+              "median_volume_20d": 240521.0,
+              "volume_ratio": 6.723733062809484,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数6.72倍；收盘确认突破此前20日及40日区间高点2.27%，形成量价共振；当日涨跌+3.69%，偏离自身近期正常波动4.86个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "READY_TO_PITCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数6.72倍；收盘确认突破此前20日及40日区间高点2.27%，形成量价共振；当日涨跌+3.69%，偏离自身近期正常波动4.86个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 6.723733062809484,
+            "abs_price_zscore": 4.855726178104196,
+            "abs_change_pct": 3.686635944700467,
+            "base_rank": 8
+          },
+          "candidate_rank": 8,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "候选来自完整收盘后的价量异常",
+            "本频道展示的是价量与成交异动，不是机构、法人或 ETF 净流入。"
+          ],
+          "ranking_reasons": [
+            "命中5项可解释价量规则",
+            "RVOL 6.72倍",
+            "排序只使用当日EOD与此前历史基线"
+          ]
+        }
+      ],
+      "brief_version": 2,
+      "brief_id": "brief:ch-05-tw-capital-radar:2026-08-13:v2"
+    },
+    {
+      "channel_id": "ch-01-tw-stock-microscope",
+      "channel_name": "個股顯微鏡",
+      "channel_type": "EVENT_HEAVY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "summary": "把公司公告或可信事件与个股收盘表现放在一起，区分已确认催化剂与待研究异动。",
+      "fixed_boundary": "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。",
+      "target_count": 5,
+      "qualified_count": 392,
+      "qualification_drops": {},
+      "displayed_count": 8,
+      "status": "READY",
+      "shortage_reasons": [],
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "assignments": [
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:7819",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "精誠金融收盘+10.00%，RVOL 2.06倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:7819"
+          ],
+          "industry_keys": [
+            "SOFTWARE_SERVICES"
+          ],
+          "facts": [
+            "收盘价 37.95",
+            "涨跌幅 +10.00%",
+            "成交量 68,000 股，20日中位数 33,000 股",
+            "RVOL 2.06倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:7819",
+              "name": "精誠金融",
+              "ticker": "7819",
+              "market": "TPEX",
+              "close": 37.95,
+              "change_pct": 10.000000000000009,
+              "current_volume": 68000,
+              "median_volume_20d": 33000.0,
+              "volume_ratio": 2.0606060606060606,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.45倍，今日放大至近期5日中位量4.53倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌+10.00%，偏离自身近期正常波动5.72个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "資訊服務業",
+              "normalized_sector": "SOFTWARE_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "此前5日中位量仅为20日中位量0.45倍，今日放大至近期5日中位量4.53倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌+10.00%，偏离自身近期正常波动5.72个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 3,
+            "price_volume": 0,
+            "volume_ratio": 2.0606060606060606,
+            "abs_price_zscore": 5.71725724201294,
+            "abs_change_pct": 10.000000000000009,
+            "base_rank": 67
+          },
+          "candidate_rank": 1,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:4905",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "台聯電收盘+10.00%，RVOL 4.80倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:4905"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "收盘价 77.00",
+            "涨跌幅 +10.00%",
+            "成交量 48,000 股，20日中位数 10,000 股",
+            "RVOL 4.80倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:4905",
+              "name": "台聯電",
+              "ticker": "4905",
+              "market": "TPEX",
+              "close": 77.0,
+              "change_pct": 10.000000000000009,
+              "current_volume": 48000,
+              "median_volume_20d": 10000.0,
+              "volume_ratio": 4.8,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数4.80倍；收盘确认突破此前20日及40日区间高点7.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动5.27个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数4.80倍；收盘确认突破此前20日及40日区间高点7.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动5.27个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 4.8,
+            "abs_price_zscore": 5.270088928946563,
+            "abs_change_pct": 10.000000000000009,
+            "base_rank": 11
+          },
+          "candidate_rank": 2,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:3490",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "單井收盘+10.00%，RVOL 3.67倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:3490"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "收盘价 36.85",
+            "涨跌幅 +10.00%",
+            "成交量 3,112,000 股，20日中位数 849,000 股",
+            "RVOL 3.67倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:3490",
+              "name": "單井",
+              "ticker": "3490",
+              "market": "TPEX",
+              "close": 36.85,
+              "change_pct": 10.000000000000009,
+              "current_volume": 3112000,
+              "median_volume_20d": 849000.0,
+              "volume_ratio": 3.6654888103651353,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.67倍；收盘确认突破此前20日及40日区间高点8.54%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.80个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "光電業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数3.67倍；收盘确认突破此前20日及40日区间高点8.54%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.80个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 5,
+            "price_volume": 1,
+            "volume_ratio": 3.6654888103651353,
+            "abs_price_zscore": 2.803955206360701,
+            "abs_change_pct": 10.000000000000009,
+            "base_rank": 13
+          },
+          "candidate_rank": 3,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TWSE:3605",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "宏致收盘+10.00%，RVOL 1.69倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:3605"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "收盘价 132.00",
+            "涨跌幅 +10.00%",
+            "成交量 13,830,861 股，20日中位数 8,199,004 股",
+            "RVOL 1.69倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:3605",
+              "name": "宏致",
+              "ticker": "3605",
+              "market": "TWSE",
+              "close": 132.0,
+              "change_pct": 10.000000000000009,
+              "current_volume": 13830861,
+              "median_volume_20d": 8199004.0,
+              "volume_ratio": 1.6868952619123005,
+              "matched_rules": [
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D"
+              ],
+              "why_selected": "收盘确认区间突破10.00%，但成交量未达到2倍门槛。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電子零組件業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "收盘确认区间突破10.00%，但成交量未达到2倍门槛。"
+          ],
+          "sort_metrics": {
+            "rule_count": 2,
+            "price_volume": 0,
+            "volume_ratio": 1.6868952619123005,
+            "abs_price_zscore": 1.4178583323546572,
+            "abs_change_pct": 10.000000000000009,
+            "base_rank": 107
+          },
+          "candidate_rank": 4,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:8444",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "綠河-KY收盘-10.00%，RVOL 7.56倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:8444"
+          ],
+          "industry_keys": [
+            "OTHER"
+          ],
+          "facts": [
+            "收盘价 4.86",
+            "涨跌幅 -10.00%",
+            "成交量 34,000 股，20日中位数 4,500 股",
+            "RVOL 7.56倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:8444",
+              "name": "綠河-KY",
+              "ticker": "8444",
+              "market": "TPEX",
+              "close": 4.86,
+              "change_pct": -9.999999999999998,
+              "current_volume": 34000,
+              "median_volume_20d": 4500.0,
+              "volume_ratio": 7.555555555555555,
+              "matched_rules": [
+                "VOLUME_SPIKE"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.56倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "其他",
+              "normalized_sector": "OTHER",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数7.56倍；收盘未确认突破历史区间，因此属于放量而非量价突破。"
+          ],
+          "sort_metrics": {
+            "rule_count": 1,
+            "price_volume": 0,
+            "volume_ratio": 7.555555555555555,
+            "abs_price_zscore": 1.8446575923057844,
+            "abs_change_pct": 9.999999999999998,
+            "base_rank": 126
+          },
+          "candidate_rank": 5,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:4556",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "旭然收盘-10.00%，RVOL 7.19倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:4556"
+          ],
+          "industry_keys": [
+            "OTHER"
+          ],
+          "facts": [
+            "收盘价 90.90",
+            "涨跌幅 -10.00%",
+            "成交量 1,222,000 股，20日中位数 170,000 股",
+            "RVOL 7.19倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:4556",
+              "name": "旭然",
+              "ticker": "4556",
+              "market": "TPEX",
+              "close": 90.9,
+              "change_pct": -9.999999999999998,
+              "current_volume": 1222000,
+              "median_volume_20d": 170000.0,
+              "volume_ratio": 7.188235294117647,
+              "matched_rules": [
+                "VOLUME_SPIKE"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.19倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "其他",
+              "normalized_sector": "OTHER",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "今日成交量达到此前20日中位数7.19倍；收盘未确认突破历史区间，因此属于放量而非量价突破。"
+          ],
+          "sort_metrics": {
+            "rule_count": 1,
+            "price_volume": 0,
+            "volume_ratio": 7.188235294117647,
+            "abs_price_zscore": 1.2902825420591404,
+            "abs_change_pct": 9.999999999999998,
+            "base_rank": 128
+          },
+          "candidate_rank": 6,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:6130",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "上亞科技收盘+10.00%，RVOL 7.19倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6130"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "收盘价 29.70",
+            "涨跌幅 +10.00%",
+            "成交量 1,295,000 股，20日中位数 180,000 股",
+            "RVOL 7.19倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6130",
+              "name": "上亞科技",
+              "ticker": "6130",
+              "market": "TPEX",
+              "close": 29.7,
+              "change_pct": 9.999999999999986,
+              "current_volume": 1295000,
+              "median_volume_20d": 180000.0,
+              "volume_ratio": 7.194444444444445,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量12.82倍；收盘确认突破此前20日及40日区间高点4.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.65个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量12.82倍；收盘确认突破此前20日及40日区间高点4.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.65个标准差。"
+          ],
+          "sort_metrics": {
+            "rule_count": 6,
+            "price_volume": 1,
+            "volume_ratio": 7.194444444444445,
+            "abs_price_zscore": 2.651121713119843,
+            "abs_change_pct": 9.999999999999986,
+            "base_rank": 1
+          },
+          "candidate_rank": 7,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        },
+        {
+          "candidate_id": "signal:2026-08-13:TPEX:3357",
+          "candidate_type": "MARKET_SIGNAL",
+          "title": "臺慶科收盘+9.98%，RVOL 1.90倍",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:3357"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "收盘价 253.50",
+            "涨跌幅 +9.98%",
+            "成交量 3,798,000 股，20日中位数 1,999,000 股",
+            "RVOL 1.90倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "价格与成交异常的具体催化剂尚未确认"
+          ],
+          "risk_flags": [
+            "NOT_FUND_FLOW",
+            "NOT_INVESTMENT_ADVICE"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:3357",
+              "name": "臺慶科",
+              "ticker": "3357",
+              "market": "TPEX",
+              "close": 253.5,
+              "change_pct": 9.97830802603037,
+              "current_volume": 3798000,
+              "median_volume_20d": 1999000.0,
+              "volume_ratio": 1.8999499749874937,
+              "matched_rules": [
+                "RANGE_BREAKOUT_20D"
+              ],
+              "why_selected": "收盘确认区间突破2.01%，但成交量未达到2倍门槛。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電子零組件業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "收盘确认区间突破2.01%，但成交量未达到2倍门槛。"
+          ],
+          "sort_metrics": {
+            "rule_count": 1,
+            "price_volume": 0,
+            "volume_ratio": 1.8999499749874937,
+            "abs_price_zscore": 2.0626399331173357,
+            "abs_change_pct": 9.97830802603037,
+            "base_rank": 371
+          },
+          "candidate_rank": 8,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "个股收盘异常值得寻找公司层催化剂",
+            "月营收、完整财报、法说与 Guidance 尚未完整接入；没有官方事件时必须标示催化剂未确认。"
+          ],
+          "ranking_reasons": [
+            "候选类型为MARKET_SIGNAL",
+            "可回链Evidence 1项",
+            "公司事件优先于催化剂未确认的纯行情异常"
+          ]
+        }
+      ],
+      "brief_version": 2,
+      "brief_id": "brief:ch-01-tw-stock-microscope:2026-08-13:v2"
+    },
+    {
+      "channel_id": "ch-03-tw-industry-lens",
+      "channel_name": "產業透視鏡",
+      "channel_type": "CROSS_ENTITY",
+      "profile_version": "0.1-p06b-approved",
+      "profile_status": "APPROVED_PILOT",
+      "summary": "从官方产业分类中寻找同产业多家公司同时出现的收盘异常，形成跨公司比较题。",
+      "fixed_boundary": "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。",
+      "target_count": 5,
+      "qualified_count": 14,
+      "qualification_drops": {},
+      "displayed_count": 8,
+      "status": "READY",
+      "shortage_reasons": [],
+      "ranking_method": "RULE_BASED_FALLBACK",
+      "assignments": [
+        {
+          "candidate_id": "industry:2026-08-13:TECH_HARDWARE",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "其他電子業出现111家公司收盘异常：東研信超、競國、單井",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6840",
+            "TWSE:6108",
+            "TPEX:3490",
+            "TWSE:7631",
+            "TPEX:3287",
+            "TWSE:7711"
+          ],
+          "industry_keys": [
+            "TECH_HARDWARE"
+          ],
+          "facts": [
+            "官方产业分类：其他電子業",
+            "同产业共有111家公司命中异常规则",
+            "组内平均RVOL 4.14倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6840",
+              "name": "東研信超",
+              "ticker": "6840",
+              "market": "TPEX",
+              "close": 75.6,
+              "change_pct": 9.883720930232553,
+              "current_volume": 1176000,
+              "median_volume_20d": 65000.0,
+              "volume_ratio": 18.092307692307692,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数18.09倍；收盘确认突破此前20日及40日区间高点6.78%，形成量价共振；当日涨跌+9.88%，偏离自身近期正常波动3.03个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "其他電子業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:6108",
+              "name": "競國",
+              "ticker": "6108",
+              "market": "TWSE",
+              "close": 21.7,
+              "change_pct": 8.771929824561408,
+              "current_volume": 4151310,
+              "median_volume_20d": 774529.0,
+              "volume_ratio": 5.359786399218105,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.36倍；收盘确认突破此前20日及40日区间高点6.90%，形成量价共振；当日涨跌+8.77%，偏离自身近期正常波动3.27个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電子零組件業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:3490",
+              "name": "單井",
+              "ticker": "3490",
+              "market": "TPEX",
+              "close": 36.85,
+              "change_pct": 10.000000000000009,
+              "current_volume": 3112000,
+              "median_volume_20d": 849000.0,
+              "volume_ratio": 3.6654888103651353,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.67倍；收盘确认突破此前20日及40日区间高点8.54%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.80个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "光電業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:7631",
+              "name": "聚賢研發-創",
+              "ticker": "7631",
+              "market": "TWSE",
+              "close": 148.0,
+              "change_pct": 6.093189964157708,
+              "current_volume": 768078,
+              "median_volume_20d": 39797.0,
+              "volume_ratio": 19.299896977159083,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数19.30倍；收盘确认突破此前20日区间高点0.34%，形成量价共振；当日涨跌+6.09%，偏离自身近期正常波动2.79个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "其他電子業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:3287",
+              "name": "廣寰科",
+              "ticker": "3287",
+              "market": "TPEX",
+              "close": 35.7,
+              "change_pct": 0.7052186177715081,
+              "current_volume": 1409000,
+              "median_volume_20d": 86000.0,
+              "volume_ratio": 16.38372093023256,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数16.38倍；收盘确认突破此前20日及40日区间高点0.71%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電腦及週邊設備業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:7711",
+              "name": "永擎",
+              "ticker": "7711",
+              "market": "TWSE",
+              "close": 491.5,
+              "change_pct": 9.832402234636861,
+              "current_volume": 2042027,
+              "median_volume_20d": 187500.0,
+              "volume_ratio": 10.890810666666667,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数10.89倍；收盘确认突破此前20日及40日区间高点9.83%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電腦及週邊設備業",
+              "normalized_sector": "TECH_HARDWARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "111家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 111,
+            "total_rule_count": 183,
+            "average_volume_ratio": 4.136542093834917
+          },
+          "candidate_rank": 1,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有111家公司出现异常",
+            "合计命中183项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:INDUSTRIALS",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "電器電纜出现41家公司收盘异常：禾聯碩、志信、高鋒",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:5283",
+            "TWSE:2611",
+            "TPEX:4510",
+            "TWSE:1513",
+            "TWSE:4555",
+            "TWSE:5607"
+          ],
+          "industry_keys": [
+            "INDUSTRIALS"
+          ],
+          "facts": [
+            "官方产业分类：電器電纜",
+            "同产业共有41家公司命中异常规则",
+            "组内平均RVOL 3.54倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:5283",
+              "name": "禾聯碩",
+              "ticker": "5283",
+              "market": "TWSE",
+              "close": 56.6,
+              "change_pct": 4.621072088724576,
+              "current_volume": 300440,
+              "median_volume_20d": 58629.5,
+              "volume_ratio": 5.124382776588577,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.12倍；收盘确认突破此前20日区间高点2.72%，形成量价共振；当日涨跌+4.62%，偏离自身近期正常波动4.14个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電器電纜",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2611",
+              "name": "志信",
+              "ticker": "2611",
+              "market": "TWSE",
+              "close": 14.6,
+              "change_pct": 5.035971223021574,
+              "current_volume": 669853,
+              "median_volume_20d": 226359.5,
+              "volume_ratio": 2.9592440343789415,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.96倍；收盘确认突破此前20日区间高点0.34%，形成量价共振；当日涨跌+5.04%，偏离自身近期正常波动3.09个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "航運業",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4510",
+              "name": "高鋒",
+              "ticker": "4510",
+              "market": "TPEX",
+              "close": 45.7,
+              "change_pct": 2.5813692480359363,
+              "current_volume": 5122000,
+              "median_volume_20d": 521500.0,
+              "volume_ratio": 9.821668264621286,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数9.82倍；收盘确认突破此前20日区间高点2.58%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電機機械",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:1513",
+              "name": "中興電",
+              "ticker": "1513",
+              "market": "TWSE",
+              "close": 171.0,
+              "change_pct": 3.3232628398791597,
+              "current_volume": 15449705,
+              "median_volume_20d": 2783020.5,
+              "volume_ratio": 5.551416168152552,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.55倍；收盘确认突破此前20日区间高点0.29%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電機機械",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:4555",
+              "name": "氣立",
+              "ticker": "4555",
+              "market": "TWSE",
+              "close": 51.0,
+              "change_pct": 1.7964071856287456,
+              "current_volume": 685865,
+              "median_volume_20d": 203897.5,
+              "volume_ratio": 3.363773464608443,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.36倍；收盘确认突破此前20日区间高点0.39%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "電機機械",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:5607",
+              "name": "遠雄港",
+              "ticker": "5607",
+              "market": "TWSE",
+              "close": 52.2,
+              "change_pct": 1.1627906976744207,
+              "current_volume": 1190216,
+              "median_volume_20d": 424757.0,
+              "volume_ratio": 2.802110383113168,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.80倍；收盘确认突破此前20日区间高点0.97%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "航運業",
+              "normalized_sector": "INDUSTRIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "41家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 41,
+            "total_rule_count": 58,
+            "average_volume_ratio": 3.5413911547056873
+          },
+          "candidate_rank": 2,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有41家公司出现异常",
+            "合计命中58项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:MATERIALS",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "鋼鐵工業出现38家公司收盘异常：大成鋼、國碳科、和益",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TWSE:2027",
+            "TPEX:4754",
+            "TWSE:1709",
+            "TWSE:2105",
+            "TWSE:1906",
+            "TPEX:2035"
+          ],
+          "industry_keys": [
+            "MATERIALS"
+          ],
+          "facts": [
+            "官方产业分类：鋼鐵工業",
+            "同产业共有38家公司命中异常规则",
+            "组内平均RVOL 3.11倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TWSE:2027",
+              "name": "大成鋼",
+              "ticker": "2027",
+              "market": "TWSE",
+              "close": 50.4,
+              "change_pct": 7.577374599786557,
+              "current_volume": 58730639,
+              "median_volume_20d": 17718846.5,
+              "volume_ratio": 3.314585912801942,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.31倍；收盘确认突破此前20日及40日区间高点5.44%，形成量价共振；当日涨跌+7.58%，偏离自身近期正常波动2.81个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "鋼鐵工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4754",
+              "name": "國碳科",
+              "ticker": "4754",
+              "market": "TPEX",
+              "close": 38.55,
+              "change_pct": 2.2546419098143033,
+              "current_volume": 142000,
+              "median_volume_20d": 19000.0,
+              "volume_ratio": 7.473684210526316,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.47倍；收盘确认突破此前20日区间高点0.52%，形成量价共振；当日涨跌+2.25%，偏离自身近期正常波动2.84个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "化學工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:1709",
+              "name": "和益",
+              "ticker": "1709",
+              "market": "TWSE",
+              "close": 30.65,
+              "change_pct": 9.464285714285703,
+              "current_volume": 24724371,
+              "median_volume_20d": 4777476.0,
+              "volume_ratio": 5.175195228610254,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.18倍；收盘确认突破此前20日及40日区间高点7.17%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "化學工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2105",
+              "name": "正新",
+              "ticker": "2105",
+              "market": "TWSE",
+              "close": 30.7,
+              "change_pct": -4.3613707165109155,
+              "current_volume": 18491836,
+              "median_volume_20d": 8622325.0,
+              "volume_ratio": 2.1446461366278817,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.59倍，今日放大至近期5日中位量3.65倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-4.36%，偏离自身近期正常波动3.19个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "橡膠工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:1906",
+              "name": "寶隆",
+              "ticker": "1906",
+              "market": "TWSE",
+              "close": 11.45,
+              "change_pct": -5.371900826446286,
+              "current_volume": 328601,
+              "median_volume_20d": 62285.5,
+              "volume_ratio": 5.275722278861051,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.28倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-5.37%，偏离自身近期正常波动2.56个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "造紙工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:2035",
+              "name": "唐榮",
+              "ticker": "2035",
+              "market": "TPEX",
+              "close": 27.1,
+              "change_pct": 1.1194029850746245,
+              "current_volume": 17000,
+              "median_volume_20d": 7000.0,
+              "volume_ratio": 2.4285714285714284,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "QUIET_TO_VOLUME_SPIKE"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.29倍，今日放大至近期5日中位量8.50倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "data_quality": "PARTIAL_40D_RANGE",
+              "official_industry_name": "鋼鐵工業",
+              "normalized_sector": "MATERIALS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "38家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 38,
+            "total_rule_count": 53,
+            "average_volume_ratio": 3.109393479778843
+          },
+          "candidate_rank": 3,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有38家公司出现异常",
+            "合计命中53项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:SEMICONDUCTORS",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "半導體業出现32家公司收盘异常：應廣、台星科、偉詮電",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6716",
+            "TPEX:3265",
+            "TWSE:2436",
+            "TPEX:6651",
+            "TPEX:6187",
+            "TWSE:2408"
+          ],
+          "industry_keys": [
+            "SEMICONDUCTORS"
+          ],
+          "facts": [
+            "官方产业分类：半導體業",
+            "同产业共有32家公司命中异常规则",
+            "组内平均RVOL 2.47倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6716",
+              "name": "應廣",
+              "ticker": "6716",
+              "market": "TPEX",
+              "close": 117.5,
+              "change_pct": 7.798165137614688,
+              "current_volume": 1671000,
+              "median_volume_20d": 218000.0,
+              "volume_ratio": 7.665137614678899,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.67倍；收盘确认突破此前20日及40日区间高点5.86%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:3265",
+              "name": "台星科",
+              "ticker": "3265",
+              "market": "TPEX",
+              "close": 181.0,
+              "change_pct": 3.4285714285714253,
+              "current_volume": 3486000,
+              "median_volume_20d": 825500.0,
+              "volume_ratio": 4.222895215021199,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数4.22倍；收盘确认突破此前20日区间高点3.43%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2436",
+              "name": "偉詮電",
+              "ticker": "2436",
+              "market": "TWSE",
+              "close": 71.2,
+              "change_pct": 5.3254437869822535,
+              "current_volume": 7917049,
+              "median_volume_20d": 2487714.0,
+              "volume_ratio": 3.182459478862924,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.18倍；收盘确认突破此前20日区间高点3.34%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:6651",
+              "name": "全宇昕",
+              "ticker": "6651",
+              "market": "TPEX",
+              "close": 142.0,
+              "change_pct": 2.898550724637672,
+              "current_volume": 450000,
+              "median_volume_20d": 172000.0,
+              "volume_ratio": 2.616279069767442,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.62倍；收盘确认突破此前20日区间高点1.43%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:6187",
+              "name": "萬潤",
+              "ticker": "6187",
+              "market": "TPEX",
+              "close": 1270.0,
+              "change_pct": 9.956709956709965,
+              "current_volume": 5819000,
+              "median_volume_20d": 2849500.0,
+              "volume_ratio": 2.042112651342341,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.04倍；收盘确认突破此前20日区间高点4.10%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2408",
+              "name": "南亞科",
+              "ticker": "2408",
+              "market": "TWSE",
+              "close": 514.0,
+              "change_pct": 6.528497409326417,
+              "current_volume": 128574672,
+              "median_volume_20d": 81908562.5,
+              "volume_ratio": 1.5697342020866256,
+              "matched_rules": [
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D"
+              ],
+              "why_selected": "收盘确认区间突破0.59%，但成交量未达到2倍门槛。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "半導體業",
+              "normalized_sector": "SEMICONDUCTORS",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "32家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 32,
+            "total_rule_count": 46,
+            "average_volume_ratio": 2.471450282474555
+          },
+          "candidate_rank": 4,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有32家公司出现异常",
+            "合计命中46项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:CONSUMER_DISCRETIONARY",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "紡織纖維出现26家公司收盘异常：飛寶企業、寒舍、大統新創",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:4413",
+            "TWSE:2739",
+            "TWSE:1470",
+            "TPEX:2752",
+            "TPEX:2754",
+            "TPEX:7757"
+          ],
+          "industry_keys": [
+            "CONSUMER_DISCRETIONARY"
+          ],
+          "facts": [
+            "官方产业分类：紡織纖維",
+            "同产业共有26家公司命中异常规则",
+            "组内平均RVOL 3.65倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:4413",
+              "name": "飛寶企業",
+              "ticker": "4413",
+              "market": "TPEX",
+              "close": 18.75,
+              "change_pct": 9.97067448680351,
+              "current_volume": 68000,
+              "median_volume_20d": 9000.0,
+              "volume_ratio": 7.555555555555555,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.56倍；收盘确认突破此前20日及40日区间高点9.97%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动3.57个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "紡織纖維",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2739",
+              "name": "寒舍",
+              "ticker": "2739",
+              "market": "TWSE",
+              "close": 35.8,
+              "change_pct": 3.768115942028971,
+              "current_volume": 354592,
+              "median_volume_20d": 83313.0,
+              "volume_ratio": 4.2561424987697,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.44倍，今日放大至近期5日中位量9.75倍；收盘确认突破此前20日区间高点0.28%，形成量价共振；当日涨跌+3.77%，偏离自身近期正常波动2.74个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "觀光事業",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:1470",
+              "name": "大統新創",
+              "ticker": "1470",
+              "market": "TWSE",
+              "close": 24.0,
+              "change_pct": 2.3454157782516027,
+              "current_volume": 39004,
+              "median_volume_20d": 6000.5,
+              "volume_ratio": 6.500124989584202,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数6.50倍；收盘确认突破此前20日及40日区间高点0.21%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "紡織纖維",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:2752",
+              "name": "豆府",
+              "ticker": "2752",
+              "market": "TPEX",
+              "close": 180.0,
+              "change_pct": 0.8403361344537785,
+              "current_volume": 26000,
+              "median_volume_20d": 4000.0,
+              "volume_ratio": 6.5,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数6.50倍；收盘确认突破此前20日区间高点0.56%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "觀光事業",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:2754",
+              "name": "亞洲藏壽司",
+              "ticker": "2754",
+              "market": "TPEX",
+              "close": 69.0,
+              "change_pct": -4.958677685950407,
+              "current_volume": 158000,
+              "median_volume_20d": 33000.0,
+              "volume_ratio": 4.787878787878788,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数4.79倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-4.96%，偏离自身近期正常波动3.95个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "觀光事業",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:7757",
+              "name": "金色三麥",
+              "ticker": "7757",
+              "market": "TPEX",
+              "close": 91.0,
+              "change_pct": -0.3285870755750264,
+              "current_volume": 38000,
+              "median_volume_20d": 9000.0,
+              "volume_ratio": 4.222222222222222,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "QUIET_TO_VOLUME_SPIKE"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量7.60倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "觀光事業",
+              "normalized_sector": "CONSUMER_DISCRETIONARY",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "26家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 26,
+            "total_rule_count": 45,
+            "average_volume_ratio": 3.651671097083667
+          },
+          "candidate_rank": 5,
+          "candidate_tier": "PRIMARY",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有26家公司出现异常",
+            "合计命中45项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:HEALTHCARE",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "生技醫療業出现25家公司收盘异常：上亞科技、泰博、青松健康",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6130",
+            "TWSE:4736",
+            "TWSE:6931",
+            "TPEX:4905",
+            "TWSE:6794",
+            "TPEX:4744"
+          ],
+          "industry_keys": [
+            "HEALTHCARE"
+          ],
+          "facts": [
+            "官方产业分类：生技醫療業",
+            "同产业共有25家公司命中异常规则",
+            "组内平均RVOL 4.46倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6130",
+              "name": "上亞科技",
+              "ticker": "6130",
+              "market": "TPEX",
+              "close": 29.7,
+              "change_pct": 9.999999999999986,
+              "current_volume": 1295000,
+              "median_volume_20d": 180000.0,
+              "volume_ratio": 7.194444444444445,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.56倍，今日放大至近期5日中位量12.82倍；收盘确认突破此前20日及40日区间高点4.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动2.65个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:4736",
+              "name": "泰博",
+              "ticker": "4736",
+              "market": "TWSE",
+              "close": 141.0,
+              "change_pct": 5.223880597014929,
+              "current_volume": 1362061,
+              "median_volume_20d": 164960.0,
+              "volume_ratio": 8.256916828322018,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数8.26倍；收盘确认突破此前20日及40日区间高点5.22%，形成量价共振；当日涨跌+5.22%，偏离自身近期正常波动4.81个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:6931",
+              "name": "青松健康",
+              "ticker": "6931",
+              "market": "TWSE",
+              "close": 43.55,
+              "change_pct": 9.97474747474747,
+              "current_volume": 394789,
+              "median_volume_20d": 55300.0,
+              "volume_ratio": 7.139041591320073,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.14倍；收盘确认突破此前20日及40日区间高点7.00%，形成量价共振；当日涨跌+9.97%，偏离自身近期正常波动5.80个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4905",
+              "name": "台聯電",
+              "ticker": "4905",
+              "market": "TPEX",
+              "close": 77.0,
+              "change_pct": 10.000000000000009,
+              "current_volume": 48000,
+              "median_volume_20d": 10000.0,
+              "volume_ratio": 4.8,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数4.80倍；收盘确认突破此前20日及40日区间高点7.39%，形成量价共振；当日涨跌+10.00%，偏离自身近期正常波动5.27个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:6794",
+              "name": "向榮生技",
+              "ticker": "6794",
+              "market": "TWSE",
+              "close": 71.0,
+              "change_pct": -5.333333333333334,
+              "current_volume": 116220,
+              "median_volume_20d": 33016.0,
+              "volume_ratio": 3.520111461109765,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.52倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-5.33%，偏离自身近期正常波动5.10个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4744",
+              "name": "皇將",
+              "ticker": "4744",
+              "market": "TPEX",
+              "close": 29.35,
+              "change_pct": 4.262877442273538,
+              "current_volume": 107000,
+              "median_volume_20d": 48500.0,
+              "volume_ratio": 2.2061855670103094,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "QUIET_TO_VOLUME_SPIKE"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.45倍，今日放大至近期5日中位量4.86倍；收盘未确认突破历史区间，因此属于放量而非量价突破。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "生技醫療業",
+              "normalized_sector": "HEALTHCARE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "25家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 25,
+            "total_rule_count": 44,
+            "average_volume_ratio": 4.461795770997497
+          },
+          "candidate_rank": 6,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有25家公司出现异常",
+            "合计命中44项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:REAL_ESTATE",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "建材營造出现22家公司收盘异常：昇益、夆典、建國",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:5455",
+            "TWSE:3052",
+            "TWSE:5515",
+            "TPEX:2718",
+            "TWSE:2542",
+            "TWSE:5521"
+          ],
+          "industry_keys": [
+            "REAL_ESTATE"
+          ],
+          "facts": [
+            "官方产业分类：建材營造",
+            "同产业共有22家公司命中异常规则",
+            "组内平均RVOL 5.40倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "c992d73b-2a8e-4609-879b-6f99d9e51f1a",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A02",
+              "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260813&type=ALLBUT0999&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:16.454274+00:00",
+              "observed_at": "2026-08-17T09:16:16.454274+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:5455",
+              "name": "昇益",
+              "ticker": "5455",
+              "market": "TPEX",
+              "close": 28.85,
+              "change_pct": 1.2280701754386003,
+              "current_volume": 123000,
+              "median_volume_20d": 5000.0,
+              "volume_ratio": 24.6,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "QUIET_TO_VOLUME_SPIKE"
+              ],
+              "why_selected": "此前5日中位量仅为20日中位量0.20倍，今日放大至近期5日中位量123.00倍；收盘确认突破此前20日及40日区间高点0.17%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:3052",
+              "name": "夆典",
+              "ticker": "3052",
+              "market": "TWSE",
+              "close": 11.25,
+              "change_pct": 3.686635944700467,
+              "current_volume": 1617199,
+              "median_volume_20d": 240521.0,
+              "volume_ratio": 6.723733062809484,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数6.72倍；收盘确认突破此前20日及40日区间高点2.27%，形成量价共振；当日涨跌+3.69%，偏离自身近期正常波动4.86个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:5515",
+              "name": "建國",
+              "ticker": "5515",
+              "market": "TWSE",
+              "close": 50.4,
+              "change_pct": 9.80392156862746,
+              "current_volume": 2750494,
+              "median_volume_20d": 489808.5,
+              "volume_ratio": 5.615447669854647,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "RANGE_BREAKOUT_40D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.62倍；收盘确认突破此前20日及40日区间高点9.57%，形成量价共振；当日涨跌+9.80%，偏离自身近期正常波动3.93个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:2718",
+              "name": "全心投控",
+              "ticker": "2718",
+              "market": "TPEX",
+              "close": 48.6,
+              "change_pct": 6.695938529088918,
+              "current_volume": 181000,
+              "median_volume_20d": 30500.0,
+              "volume_ratio": 5.934426229508197,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.93倍；收盘确认突破此前20日区间高点0.93%，形成量价共振；当日涨跌+6.70%，偏离自身近期正常波动3.81个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:2542",
+              "name": "興富發",
+              "ticker": "2542",
+              "market": "TWSE",
+              "close": 46.4,
+              "change_pct": 3.571428571428581,
+              "current_volume": 16897697,
+              "median_volume_20d": 6899071.5,
+              "volume_ratio": 2.449271180911808,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.45倍；收盘确认突破此前20日区间高点3.23%，形成量价共振；当日涨跌+3.57%，偏离自身近期正常波动3.21个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TWSE:5521",
+              "name": "工信",
+              "ticker": "5521",
+              "market": "TWSE",
+              "close": 10.75,
+              "change_pct": 4.3689320388349495,
+              "current_volume": 5352664,
+              "median_volume_20d": 2138360.5,
+              "volume_ratio": 2.5031625864768827,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数2.50倍；收盘确认突破此前20日区间高点3.37%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "建材營造",
+              "normalized_sector": "REAL_ESTATE",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "22家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 22,
+            "total_rule_count": 46,
+            "average_volume_ratio": 5.397161236926106
+          },
+          "candidate_rank": 7,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有22家公司出现异常",
+            "合计命中46项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        },
+        {
+          "candidate_id": "industry:2026-08-13:COMMUNICATION_SERVICES",
+          "candidate_type": "CROSS_ENTITY",
+          "title": "文化創意業出现18家公司收盘异常：智基、光環、華星光",
+          "market_session_date": "2026-08-13",
+          "data_as_of": "2026-08-13T15:05:00+08:00",
+          "freshness_state": "CURRENT_SESSION_EOD",
+          "security_ids": [
+            "TPEX:6294",
+            "TPEX:3234",
+            "TPEX:4979",
+            "TPEX:3684",
+            "TPEX:4806",
+            "TPEX:6144"
+          ],
+          "industry_keys": [
+            "COMMUNICATION_SERVICES"
+          ],
+          "facts": [
+            "官方产业分类：文化創意業",
+            "同产业共有18家公司命中异常规则",
+            "组内平均RVOL 6.54倍"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            },
+            {
+              "evidence_id": "698accba-c992-4c00-8a74-2a38f54284e3",
+              "evidence_class": "OFFICIAL_EOD",
+              "source_id": "TW-A04",
+              "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date=2026/08/13&type=EW&response=json",
+              "trade_date": "2026-08-13",
+              "collected_at": "2026-08-17T09:16:17.135628+00:00",
+              "observed_at": "2026-08-17T09:16:17.135628+00:00",
+              "epistemic_status": "FACT"
+            }
+          ],
+          "opinion_evidence": [],
+          "unknowns": [
+            "共同催化剂、订单关系与供应链传导均未确认"
+          ],
+          "risk_flags": [
+            "CO_OCCURRENCE_NOT_CAUSATION",
+            "OFFICIAL_INDUSTRY_RECALL_ONLY"
+          ],
+          "stock_details": [
+            {
+              "security_id": "TPEX:6294",
+              "name": "智基",
+              "ticker": "6294",
+              "market": "TPEX",
+              "close": 29.0,
+              "change_pct": 5.839416058394176,
+              "current_volume": 137000,
+              "median_volume_20d": 19000.0,
+              "volume_ratio": 7.2105263157894735,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数7.21倍；收盘确认突破此前20日区间高点3.94%，形成量价共振；当日涨跌+5.84%，偏离自身近期正常波动3.98个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "文化創意業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:3234",
+              "name": "光環",
+              "ticker": "3234",
+              "market": "TPEX",
+              "close": 141.0,
+              "change_pct": 6.015037593984962,
+              "current_volume": 7968000,
+              "median_volume_20d": 1406500.0,
+              "volume_ratio": 5.665126199786704,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数5.67倍；收盘确认突破此前20日区间高点5.62%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "通信網路業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4979",
+              "name": "華星光",
+              "ticker": "4979",
+              "market": "TPEX",
+              "close": 564.0,
+              "change_pct": 0.5347593582887722,
+              "current_volume": 25909000,
+              "median_volume_20d": 6603500.0,
+              "volume_ratio": 3.923525403195275,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.92倍；收盘确认突破此前20日区间高点0.53%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "通信網路業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:3684",
+              "name": "榮昌",
+              "ticker": "3684",
+              "market": "TPEX",
+              "close": 54.0,
+              "change_pct": 0.9345794392523255,
+              "current_volume": 57000,
+              "median_volume_20d": 15000.0,
+              "volume_ratio": 3.8,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "RANGE_BREAKOUT_20D",
+                "PRICE_VOLUME_BREAKOUT"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数3.80倍；收盘确认突破此前20日区间高点0.19%，形成量价共振。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "通信網路業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:4806",
+              "name": "桂田文創",
+              "ticker": "4806",
+              "market": "TPEX",
+              "close": 9.53,
+              "change_pct": -6.568627450980391,
+              "current_volume": 225000,
+              "median_volume_20d": 6000.0,
+              "volume_ratio": 37.5,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数37.50倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-6.57%，偏离自身近期正常波动6.28个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "文化創意業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            },
+            {
+              "security_id": "TPEX:6144",
+              "name": "得利影",
+              "ticker": "6144",
+              "market": "TPEX",
+              "close": 13.6,
+              "change_pct": -8.108108108108114,
+              "current_volume": 136000,
+              "median_volume_20d": 7000.0,
+              "volume_ratio": 19.428571428571427,
+              "matched_rules": [
+                "VOLUME_SPIKE",
+                "PRICE_ANOMALY"
+              ],
+              "why_selected": "今日成交量达到此前20日中位数19.43倍；收盘未确认突破历史区间，因此属于放量而非量价突破；当日涨跌-8.11%，偏离自身近期正常波动2.98个标准差。",
+              "data_quality": "COMPLETE",
+              "official_industry_name": "文化創意業",
+              "normalized_sector": "COMMUNICATION_SERVICES",
+              "industry_mapping_status": "MAPPED_COMMON_STOCK"
+            }
+          ],
+          "editorial_status": "NEEDS_RESEARCH",
+          "catalyst_status": "UNCONFIRMED",
+          "why_now": [
+            "18家同产业公司在同一完整交易日出现可解释价量异常"
+          ],
+          "sort_metrics": {
+            "security_count": 18,
+            "total_rule_count": 30,
+            "average_volume_ratio": 6.540566207025639
+          },
+          "candidate_rank": 8,
+          "candidate_tier": "BACKUP",
+          "why_channel": [
+            "同一官方产业内出现多个异常证券，适合跨公司比较",
+            "官方产业共现只用于候选召回，不证明供应链传导、共同订单或共同催化剂。"
+          ],
+          "ranking_reasons": [
+            "同一官方产业内有18家公司出现异常",
+            "合计命中30项价量规则",
+            "产业共现仅用于选题召回，不作为因果证明"
+          ]
+        }
+      ],
+      "brief_version": 2,
+      "brief_id": "brief:ch-03-tw-industry-lens:2026-08-13:v2"
+    }
+  ],
+  "input_fingerprint": "b3bef5691300cc6798b18164f28d435d4f3c72773f28154888b5f82c3f31c055",
+  "run_id": "channel-run:b3bef5691300cc6798b18164"
+}

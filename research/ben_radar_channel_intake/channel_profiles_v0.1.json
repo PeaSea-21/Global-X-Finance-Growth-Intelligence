@@ -1,0 +1,3297 @@
+{
+  "artifact": "BEN Radar ChannelProfile v0.1 DRAFT",
+  "artifact_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+  "generated_from_sha256": "E5BB9A17F5CAC49DDF8469CD8A56A2E85CE27B94DD19CAC27CA64C429732A182",
+  "actual_channel_count": 20,
+  "profiles": [
+    {
+      "channel_id": "ch-01-tw-stock-microscope",
+      "channel_name": "個股顯微鏡",
+      "source_index": 1,
+      "source_fields_raw": {
+        "source_index": 1,
+        "raw_channel_block": "個股顯微鏡\n把一家台股公司放大 100 倍，用白話講清楚它在賺什麼錢。從護國神山到中小型隱形冠軍，本頻道專注於台股上市櫃公司的營運追蹤，每週鎖定 1-2 家具備產業地位的個股，從月營收數字、法說會釋出的訊息、毛利率變化到訂單能見度，幫你拆解一家公司的真實體質。不追逐盤面雜訊，只聚焦「這家公司值不值得長期關注」。\n無論你是存股族、波段操作者，還是想理解台股產業生態的投資人，這裡提供的是看得懂、用得上的公司營運分析。語言風格貼近台灣本地觀眾，使用加權指數、外資、投信、自營商、存股、法說會、月營收等台灣財經慣用語，但不帶任何政黨色彩。\n每集內容形式：\n個股營收週報（當月營收數字解讀＋去年同期對比）\n法說會重點整理（關鍵問答、財測方向）\n深度個股體質分析（毛利率、存貨週轉、現金流）\n適合對象： 台股中長期投資人、存股族、基本面研究者\n更新頻率： 每週 1-2 集（每集 5-8 分鐘）\n關鍵標籤： #台股 #個股分析 #月營收 #法說會 #存股 #基本面\nSEO 關鍵詞：\n主要：台股個股分析、台股月營收、法說會重點、台股存股標的、上市櫃公司營運\n長尾：台積電法說會重點、聯發科月營收解讀、台股營收成長股、台股毛利率分析",
+        "channel_summary_raw": "把一家台股公司放大 100 倍，用白話講清楚它在賺什麼錢。從護國神山到中小型隱形冠軍，本頻道專注於台股上市櫃公司的營運追蹤，每週鎖定 1-2 家具備產業地位的個股，從月營收數字、法說會釋出的訊息、毛利率變化到訂單能見度，幫你拆解一家公司的真實體質。不追逐盤面雜訊，只聚焦「這家公司值不值得長期關注」。\n無論你是存股族、波段操作者，還是想理解台股產業生態的投資人，這裡提供的是看得懂、用得上的公司營運分析。語言風格貼近台灣本地觀眾，使用加權指數、外資、投信、自營商、存股、法說會、月營收等台灣財經慣用語，但不帶任何政黨色彩。",
+        "content_blocks_raw": "個股營收週報（當月營收數字解讀＋去年同期對比）\n法說會重點整理（關鍵問答、財測方向）\n深度個股體質分析（毛利率、存貨週轉、現金流）",
+        "preferred_formats_raw": [
+          "個股營收週報",
+          "法說會重點整理",
+          "深度個股體質分析"
+        ],
+        "target_audience_raw": "台股中長期投資人、存股族、基本面研究者",
+        "update_frequency_raw": "每週 1-2 集（每集 5-8 分鐘）",
+        "tags_raw": "#台股 #個股分析 #月營收 #法說會 #存股 #基本面",
+        "seo_keywords_raw": "主要：台股個股分析、台股月營收、法說會重點、台股存股標的、上市櫃公司營運\n長尾：台積電法說會重點、聯發科月營收解讀、台股營收成長股、台股毛利率分析",
+        "directory_category_raw": "台股市場 / 基本面產業分析",
+        "matrix_category_raw": "台股基本面",
+        "matrix_market_raw": "台股",
+        "matrix_theme_raw": "基本面/白話分析",
+        "matrix_update_frequency_raw": "每週 1-2 集",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "台股基本面 | 個股顯微鏡 | 台股 | 基本面/白話分析 | 每週 1-2 集 | 5-8 分鐘",
+        "brand_family_raw": "顯微鏡系列",
+        "brand_meaning_raw": "台股單一公司的財務體質",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "台股市場 / 基本面產業分析",
+      "source_category_matrix": "台股基本面",
+      "channel_summary": "把一家台股公司放大 100 倍，用白話講清楚它在賺什麼錢。從護國神山到中小型隱形冠軍，本頻道專注於台股上市櫃公司的營運追蹤，每週鎖定 1-2 家具備產業地位的個股，從月營收數字、法說會釋出的訊息、毛利率變化到訂單能見度，幫你拆解一家公司的真實體質。不追逐盤面雜訊，只聚焦「這家公司值不值得長期關注」。\n無論你是存股族、波段操作者，還是想理解台股產業生態的投資人，這裡提供的是看得懂、用得上的公司營運分析。語言風格貼近台灣本地觀眾，使用加權指數、外資、投信、自營商、存股、法說會、月營收等台灣財經慣用語，但不帶任何政黨色彩。",
+      "target_audience": "台股中長期投資人、存股族、基本面研究者",
+      "primary_market": "TW",
+      "secondary_markets": [],
+      "security_scope": [
+        "TWSE_COMMON_STOCK",
+        "TPEX_COMMON_STOCK"
+      ],
+      "preferred_sectors": [],
+      "preferred_entities": [
+        "台股上市櫃公司"
+      ],
+      "preferred_topic_types": [
+        "月營收",
+        "法說會",
+        "財報體質",
+        "公司營運變化"
+      ],
+      "excluded_topics": [
+        "盤面雜訊",
+        "無公司營運證據的短線題材"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET",
+        "OFFICIAL_DISCLOSURE",
+        "COMPANY_IR"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "UNTIL_NEXT_MATERIAL_UPDATE",
+      "market_session_preferences": [
+        "WEEKLY",
+        "POST_DISCLOSURE"
+      ],
+      "preferred_formats": [
+        "個股營收週報",
+        "法說會重點整理",
+        "深度個股體質分析"
+      ],
+      "content_depth": "DEEP_COMPANY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-02-tw-close-night-talk",
+      "channel_name": "收盤夜話",
+      "source_index": 2,
+      "source_fields_raw": {
+        "source_index": 2,
+        "raw_channel_block": "收盤夜話\n下班後 15 分鐘，海外台人也能輕鬆跟上台股盤勢。加權指數漲跌背後，外資在買什麼？三大法人與融資券透露了什麼情緒？這是為海外台人準備的一則下班後能輕鬆消化的盤後摘要。每天台股收盤後，用 15 分鐘帶你快速掃過大盤漲跌結構、成交量變化、類股強弱排名，以及外資、投信、自營商的最新買賣超動向。\n不講複雜的總經理論，只講今天盤面上發生了什麼、誰在買誰在賣、明天可能要注意什麼。節奏放鬆，像朋友跟你聊盤一樣自然。適合白天沒空盯盤、晚上想快速掌握台股狀況的投資人。\n每集內容形式：\n加權指數漲跌結構\n三大法人買賣超排行榜\n融資券變化與當沖比率\n明日觀察重點提醒\n適合對象： 海外台人、白天無法盯盤的上班族、短線交易者\n更新頻率： 每交易日（每集 15 分鐘）\n關鍵標籤： #台股收盤 #三大法人 #外資買賣超 #加權指數 #盤後分析\nSEO 關鍵詞：\n主要：台股收盤分析、三大法人買賣超、外資動向、加權指數解讀、台股盤後\n长尾：今日台股盤勢、外資買超排行、投信作帳行情、融資券變化",
+        "channel_summary_raw": "下班後 15 分鐘，海外台人也能輕鬆跟上台股盤勢。加權指數漲跌背後，外資在買什麼？三大法人與融資券透露了什麼情緒？這是為海外台人準備的一則下班後能輕鬆消化的盤後摘要。每天台股收盤後，用 15 分鐘帶你快速掃過大盤漲跌結構、成交量變化、類股強弱排名，以及外資、投信、自營商的最新買賣超動向。\n不講複雜的總經理論，只講今天盤面上發生了什麼、誰在買誰在賣、明天可能要注意什麼。節奏放鬆，像朋友跟你聊盤一樣自然。適合白天沒空盯盤、晚上想快速掌握台股狀況的投資人。",
+        "content_blocks_raw": "加權指數漲跌結構\n三大法人買賣超排行榜\n融資券變化與當沖比率\n明日觀察重點提醒",
+        "preferred_formats_raw": [
+          "加權指數漲跌結構",
+          "三大法人買賣超排行榜",
+          "融資券變化與當沖比率",
+          "明日觀察重點提醒"
+        ],
+        "target_audience_raw": "海外台人、白天無法盯盤的上班族、短線交易者",
+        "update_frequency_raw": "每交易日（每集 15 分鐘）",
+        "tags_raw": "#台股收盤 #三大法人 #外資買賣超 #加權指數 #盤後分析",
+        "seo_keywords_raw": "主要：台股收盤分析、三大法人買賣超、外資動向、加權指數解讀、台股盤後\n长尾：今日台股盤勢、外資買超排行、投信作帳行情、融資券變化",
+        "directory_category_raw": "台股市場 / 基本面產業分析",
+        "matrix_category_raw": "台股盤勢",
+        "matrix_market_raw": "台股",
+        "matrix_theme_raw": "盤後聊天/輕鬆",
+        "matrix_update_frequency_raw": "每交易日",
+        "matrix_duration_raw": "15 分鐘",
+        "matrix_row_raw": "台股盤勢 | 收盤夜話 | 台股 | 盤後聊天/輕鬆 | 每交易日 | 15 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "下班後朋友聊盤的輕鬆氛圍",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "台股市場 / 基本面產業分析",
+      "source_category_matrix": "台股盤勢",
+      "channel_summary": "下班後 15 分鐘，海外台人也能輕鬆跟上台股盤勢。加權指數漲跌背後，外資在買什麼？三大法人與融資券透露了什麼情緒？這是為海外台人準備的一則下班後能輕鬆消化的盤後摘要。每天台股收盤後，用 15 分鐘帶你快速掃過大盤漲跌結構、成交量變化、類股強弱排名，以及外資、投信、自營商的最新買賣超動向。\n不講複雜的總經理論，只講今天盤面上發生了什麼、誰在買誰在賣、明天可能要注意什麼。節奏放鬆，像朋友跟你聊盤一樣自然。適合白天沒空盯盤、晚上想快速掌握台股狀況的投資人。",
+      "target_audience": "海外台人、白天無法盯盤的上班族、短線交易者",
+      "primary_market": "TW",
+      "secondary_markets": [],
+      "security_scope": [
+        "TAIEX",
+        "TWSE_COMMON_STOCK",
+        "TPEX_COMMON_STOCK"
+      ],
+      "preferred_sectors": [
+        "大盤",
+        "類股"
+      ],
+      "preferred_entities": [
+        "加權指數",
+        "三大法人"
+      ],
+      "preferred_topic_types": [
+        "盤後結構",
+        "法人買賣超",
+        "融資券",
+        "明日觀察"
+      ],
+      "excluded_topics": [
+        "複雜總經理論"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "SAME_TRADING_DAY",
+      "market_session_preferences": [
+        "TW_CLOSE"
+      ],
+      "preferred_formats": [
+        "加權指數漲跌結構",
+        "三大法人買賣超排行榜",
+        "融資券變化與當沖比率",
+        "明日觀察重點提醒"
+      ],
+      "content_depth": "DAILY_SUMMARY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-03-tw-industry-lens",
+      "channel_name": "產業透視鏡",
+      "source_index": 3,
+      "source_fields_raw": {
+        "source_index": 3,
+        "raw_channel_block": "產業透視鏡\n不只看台積電，帶你看懂台股整條產業鏈的底層邏輯。從半導體到 AI 伺服器，從面板到航運——台股不只台積電。每週精選一個台股關鍵產業，拆解上下游供應鏈、訂單能見度、毛利率變化與法人評價。用製造業的語言，看懂台灣股市的底層邏輯。\n本頻道不只告訴你「哪個產業在漲」，更要告訴你「為什麼漲、還能漲多久」。涵蓋半導體、電子零組件、AI 硬體、PCB、散熱、被動元件等台股核心產業，搭配產業月度營收趨勢、法人預期對比，以及關鍵供應鏈指標（BB 值、庫存天數、產能利用率）的判讀。\n每集內容形式：\n產業深度報告（單一產業供應鏈拆解）\n產業月度營收趨勢與法人預期對比\n關鍵供應鏈指標判讀（BB 值、庫存天數、產能利用率）\n適合對象： 產業研究者、中階以上台股投資人、法人跟單者\n更新頻率： 每週 1 集（每集 5-10 分鐘）\n關鍵標籤： #台股產業 #半導體 #AI伺服器 #供應鏈 #產能利用率\nSEO 關鍵詞：\n主要：台股產業分析、半導體供應鏈、AI 伺服器概念股、PCB 產業、散熱族群\n長尾：晶圓代工產能利用率、IC 設計庫存天數、台股產業輪動、電子零組件訂單",
+        "channel_summary_raw": "不只看台積電，帶你看懂台股整條產業鏈的底層邏輯。從半導體到 AI 伺服器，從面板到航運——台股不只台積電。每週精選一個台股關鍵產業，拆解上下游供應鏈、訂單能見度、毛利率變化與法人評價。用製造業的語言，看懂台灣股市的底層邏輯。\n本頻道不只告訴你「哪個產業在漲」，更要告訴你「為什麼漲、還能漲多久」。涵蓋半導體、電子零組件、AI 硬體、PCB、散熱、被動元件等台股核心產業，搭配產業月度營收趨勢、法人預期對比，以及關鍵供應鏈指標（BB 值、庫存天數、產能利用率）的判讀。",
+        "content_blocks_raw": "產業深度報告（單一產業供應鏈拆解）\n產業月度營收趨勢與法人預期對比\n關鍵供應鏈指標判讀（BB 值、庫存天數、產能利用率）",
+        "preferred_formats_raw": [
+          "產業深度報告",
+          "產業月度營收趨勢與法人預期對比",
+          "關鍵供應鏈指標判讀"
+        ],
+        "target_audience_raw": "產業研究者、中階以上台股投資人、法人跟單者",
+        "update_frequency_raw": "每週 1 集（每集 5-10 分鐘）",
+        "tags_raw": "#台股產業 #半導體 #AI伺服器 #供應鏈 #產能利用率",
+        "seo_keywords_raw": "主要：台股產業分析、半導體供應鏈、AI 伺服器概念股、PCB 產業、散熱族群\n長尾：晶圓代工產能利用率、IC 設計庫存天數、台股產業輪動、電子零組件訂單",
+        "directory_category_raw": "台股市場 / 基本面產業分析",
+        "matrix_category_raw": "台股產業",
+        "matrix_market_raw": "台股",
+        "matrix_theme_raw": "產業深度/供應鏈",
+        "matrix_update_frequency_raw": "每週 1 集",
+        "matrix_duration_raw": "5-10 分鐘",
+        "matrix_row_raw": "台股產業 | 產業透視鏡 | 台股 | 產業深度/供應鏈 | 每週 1 集 | 5-10 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "穿透產業表面看底層邏輯",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "台股市場 / 基本面產業分析",
+      "source_category_matrix": "台股產業",
+      "channel_summary": "不只看台積電，帶你看懂台股整條產業鏈的底層邏輯。從半導體到 AI 伺服器，從面板到航運——台股不只台積電。每週精選一個台股關鍵產業，拆解上下游供應鏈、訂單能見度、毛利率變化與法人評價。用製造業的語言，看懂台灣股市的底層邏輯。\n本頻道不只告訴你「哪個產業在漲」，更要告訴你「為什麼漲、還能漲多久」。涵蓋半導體、電子零組件、AI 硬體、PCB、散熱、被動元件等台股核心產業，搭配產業月度營收趨勢、法人預期對比，以及關鍵供應鏈指標（BB 值、庫存天數、產能利用率）的判讀。",
+      "target_audience": "產業研究者、中階以上台股投資人、法人跟單者",
+      "primary_market": "TW",
+      "secondary_markets": [],
+      "security_scope": [
+        "TWSE_COMMON_STOCK",
+        "TPEX_COMMON_STOCK"
+      ],
+      "preferred_sectors": [
+        "半導體",
+        "AI伺服器",
+        "PCB",
+        "散熱",
+        "電子零組件"
+      ],
+      "preferred_entities": [
+        "台股產業鏈上下游"
+      ],
+      "preferred_topic_types": [
+        "供應鏈",
+        "產業月營收",
+        "庫存週期",
+        "產能利用率",
+        "法人預期差"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_WEEK_OR_NEXT_MATERIAL_UPDATE",
+      "market_session_preferences": [
+        "WEEKLY",
+        "POST_INDUSTRY_EVENT"
+      ],
+      "preferred_formats": [
+        "產業深度報告",
+        "產業月度營收趨勢與法人預期對比",
+        "關鍵供應鏈指標判讀"
+      ],
+      "content_depth": "DEEP_CROSS_ENTITY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-04-tw-weighted-flagship",
+      "channel_name": "權值旗艦",
+      "source_index": 4,
+      "source_fields_raw": {
+        "source_index": 4,
+        "raw_channel_block": "權值旗艦\n以台積電為旗艦，用權值股判斷大盤真正方向。聚焦台灣加權指數與台股核心艦隊——台積電、聯發科、鴻海等權值股動態，搭配半導體產業鏈、電子零組件、金融保險等主要板塊解析。從台北看世界，從權值股看方向。\n本頻道以台股大盤為核心骨架，權值股為關鍵節點，每天拆解加權指數的技術面結構、權值股的領跌領漲效應，以及外資在期現貨市場的布局意圖。也涵蓋台股除權息行情、電子類股指數與金融類股指數的強弱比較。\n每集內容形式：\n加權指數技術面＋權值股動態\n當週法人籌碼總整理與下週觀察\n適合對象： 台指期交易者、權值股投資人、指數型 ETF 持有者\n更新頻率： 每週 2-3 集（每集 5-8 分鐘）\n關鍵標籤： #台股大盤 #加權指數 #台積電 #權值股 #法人籌碼\nSEO 關鍵詞：\n主要：台股大盤分析、加權指數走勢、台積電股價、權值股動態、外資期貨\n長尾：台指期貨外資未平倉、台積電 ADR 溢價、除權息行情、電子金融類股",
+        "channel_summary_raw": "以台積電為旗艦，用權值股判斷大盤真正方向。聚焦台灣加權指數與台股核心艦隊——台積電、聯發科、鴻海等權值股動態，搭配半導體產業鏈、電子零組件、金融保險等主要板塊解析。從台北看世界，從權值股看方向。\n本頻道以台股大盤為核心骨架，權值股為關鍵節點，每天拆解加權指數的技術面結構、權值股的領跌領漲效應，以及外資在期現貨市場的布局意圖。也涵蓋台股除權息行情、電子類股指數與金融類股指數的強弱比較。",
+        "content_blocks_raw": "加權指數技術面＋權值股動態\n當週法人籌碼總整理與下週觀察",
+        "preferred_formats_raw": [
+          "加權指數技術面＋權值股動態",
+          "當週法人籌碼總整理與下週觀察"
+        ],
+        "target_audience_raw": "台指期交易者、權值股投資人、指數型 ETF 持有者",
+        "update_frequency_raw": "每週 2-3 集（每集 5-8 分鐘）",
+        "tags_raw": "#台股大盤 #加權指數 #台積電 #權值股 #法人籌碼",
+        "seo_keywords_raw": "主要：台股大盤分析、加權指數走勢、台積電股價、權值股動態、外資期貨\n長尾：台指期貨外資未平倉、台積電 ADR 溢價、除權息行情、電子金融類股",
+        "directory_category_raw": "台股市場 / 基本面產業分析",
+        "matrix_category_raw": "台股大盤",
+        "matrix_market_raw": "台股",
+        "matrix_theme_raw": "權值股/技術面",
+        "matrix_update_frequency_raw": "每週 2-3 集",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "台股大盤 | 權值旗艦 | 台股 | 權值股/技術面 | 每週 2-3 集 | 5-8 分鐘",
+        "brand_family_raw": "權衡系列",
+        "brand_meaning_raw": "權值股對大盤的領跌領漲效應",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "台股市場 / 基本面產業分析",
+      "source_category_matrix": "台股大盤",
+      "channel_summary": "以台積電為旗艦，用權值股判斷大盤真正方向。聚焦台灣加權指數與台股核心艦隊——台積電、聯發科、鴻海等權值股動態，搭配半導體產業鏈、電子零組件、金融保險等主要板塊解析。從台北看世界，從權值股看方向。\n本頻道以台股大盤為核心骨架，權值股為關鍵節點，每天拆解加權指數的技術面結構、權值股的領跌領漲效應，以及外資在期現貨市場的布局意圖。也涵蓋台股除權息行情、電子類股指數與金融類股指數的強弱比較。",
+      "target_audience": "台指期交易者、權值股投資人、指數型 ETF 持有者",
+      "primary_market": "TW",
+      "secondary_markets": [
+        "US"
+      ],
+      "security_scope": [
+        "TAIEX",
+        "INDEX_FUTURES",
+        "WEIGHTED_STOCKS",
+        "ADR"
+      ],
+      "preferred_sectors": [
+        "權值股",
+        "半導體",
+        "金融"
+      ],
+      "preferred_entities": [
+        "台積電",
+        "聯發科",
+        "鴻海"
+      ],
+      "preferred_topic_types": [
+        "大盤技術結構",
+        "權值領漲領跌",
+        "期現貨",
+        "除權息"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "SAME_TRADING_WEEK",
+      "market_session_preferences": [
+        "WEEKLY_2_3",
+        "POST_CLOSE"
+      ],
+      "preferred_formats": [
+        "加權指數技術面＋權值股動態",
+        "當週法人籌碼總整理與下週觀察"
+      ],
+      "content_depth": "MARKET_STRUCTURE",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-05-tw-capital-radar",
+      "channel_name": "資金雷達",
+      "source_index": 5,
+      "source_fields_raw": {
+        "source_index": 5,
+        "raw_channel_block": "資金雷達\n資金往哪搬，行情就在哪，領先市場半步抓主流。聚焦台灣電子、金融、傳產等 22 大產業分類指數的輪動節奏，特別鎖定半導體、AI 伺服器、散熱、PCB、生技醫療等主流族群。看懂資金在產業間搬家的方向，你就能領先市場半步。\n本頻道每天追蹤台股各產業指數的漲跌幅排行、成交量變化與法人買賣超分布，幫你判斷當前市場的「主場」在哪個產業，以及資金是否正在撤出某個過熱的板塊。也會針對特定事件（生技展、軍工題材、AI 新產品發表）進行產業驅動力的即時觀察。\n每集內容形式：\n產業漲跌排行＋資金流向速報\n特定產業事件驅動深度觀察\n適合對象： 短中期交易者、產業 ETF 投資人、板塊輪動策略使用者\n更新頻率： 每交易日（每集 3-5 分鐘）\n關鍵標籤： #台股產業輪動 #資金流向 #半導體 #AI伺服器 #PCB\nSEO 關鍵詞：\n主要：台股產業輪動、資金流向分析、強勢族群、弱勢族群、類股表現\n長尾：AI 伺服器概念股籌碼、散熱族群法人動向、生技醫療事件驅動\n\n二、美股市場 / 科技板塊期權\n命名邏輯：火箭、雷達、守門人——強調「動能、偵測、防禦」的對比張力。 觀眾畫像：美股散戶、期權交易者、科技股信仰者、中高階投資者。",
+        "channel_summary_raw": "資金往哪搬，行情就在哪，領先市場半步抓主流。聚焦台灣電子、金融、傳產等 22 大產業分類指數的輪動節奏，特別鎖定半導體、AI 伺服器、散熱、PCB、生技醫療等主流族群。看懂資金在產業間搬家的方向，你就能領先市場半步。\n本頻道每天追蹤台股各產業指數的漲跌幅排行、成交量變化與法人買賣超分布，幫你判斷當前市場的「主場」在哪個產業，以及資金是否正在撤出某個過熱的板塊。也會針對特定事件（生技展、軍工題材、AI 新產品發表）進行產業驅動力的即時觀察。",
+        "content_blocks_raw": "產業漲跌排行＋資金流向速報\n特定產業事件驅動深度觀察",
+        "preferred_formats_raw": [
+          "產業漲跌排行＋資金流向速報",
+          "特定產業事件驅動深度觀察"
+        ],
+        "target_audience_raw": "短中期交易者、產業 ETF 投資人、板塊輪動策略使用者",
+        "update_frequency_raw": "每交易日（每集 3-5 分鐘）",
+        "tags_raw": "#台股產業輪動 #資金流向 #半導體 #AI伺服器 #PCB",
+        "seo_keywords_raw": "主要：台股產業輪動、資金流向分析、強勢族群、弱勢族群、類股表現\n長尾：AI 伺服器概念股籌碼、散熱族群法人動向、生技醫療事件驅動\n\n二、美股市場 / 科技板塊期權\n命名邏輯：火箭、雷達、守門人——強調「動能、偵測、防禦」的對比張力。 觀眾畫像：美股散戶、期權交易者、科技股信仰者、中高階投資者。",
+        "directory_category_raw": "台股市場 / 基本面產業分析",
+        "matrix_category_raw": "台股輪動",
+        "matrix_market_raw": "台股",
+        "matrix_theme_raw": "資金流向/短線",
+        "matrix_update_frequency_raw": "每交易日",
+        "matrix_duration_raw": "3-5 分鐘",
+        "matrix_row_raw": "台股輪動 | 資金雷達 | 台股 | 資金流向/短線 | 每交易日 | 3-5 分鐘",
+        "brand_family_raw": "雷達系列",
+        "brand_meaning_raw": "台股產業間的資金搬家方向",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "台股市場 / 基本面產業分析",
+      "source_category_matrix": "台股輪動",
+      "channel_summary": "資金往哪搬，行情就在哪，領先市場半步抓主流。聚焦台灣電子、金融、傳產等 22 大產業分類指數的輪動節奏，特別鎖定半導體、AI 伺服器、散熱、PCB、生技醫療等主流族群。看懂資金在產業間搬家的方向，你就能領先市場半步。\n本頻道每天追蹤台股各產業指數的漲跌幅排行、成交量變化與法人買賣超分布，幫你判斷當前市場的「主場」在哪個產業，以及資金是否正在撤出某個過熱的板塊。也會針對特定事件（生技展、軍工題材、AI 新產品發表）進行產業驅動力的即時觀察。",
+      "target_audience": "短中期交易者、產業 ETF 投資人、板塊輪動策略使用者",
+      "primary_market": "TW",
+      "secondary_markets": [],
+      "security_scope": [
+        "TWSE_COMMON_STOCK",
+        "TPEX_COMMON_STOCK",
+        "INDUSTRY_INDEX"
+      ],
+      "preferred_sectors": [
+        "22大產業",
+        "半導體",
+        "AI伺服器",
+        "散熱",
+        "PCB",
+        "生技"
+      ],
+      "preferred_entities": [
+        "台股產業群組"
+      ],
+      "preferred_topic_types": [
+        "成交量異動",
+        "產業輪動",
+        "強弱切換",
+        "事件驅動族群"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "SAME_TRADING_DAY",
+      "market_session_preferences": [
+        "TW_EOD_EACH_TRADING_DAY"
+      ],
+      "preferred_formats": [
+        "產業漲跌排行＋資金流向速報",
+        "特定產業事件驅動深度觀察"
+      ],
+      "content_depth": "FAST_SIGNAL",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-06-us-nasdaq-rocket",
+      "channel_name": "那指火箭",
+      "source_index": 6,
+      "source_fields_raw": {
+        "source_index": 6,
+        "raw_channel_block": "那指火箭\n科技股是美股心臟，那指火箭帶你衝上雲端。科技股是美股的心臟，納斯達克是科技股的晴雨表。本頻道聚焦 NASDAQ 100 成分股，追蹤 FAANG（Meta、Apple、Amazon、Netflix、Google）、AI 晶片（NVIDIA、AMD、博通）、雲端運算（微軟、亞馬遜 AWS、Google Cloud）等科技賽道，在波動中尋找趨勢方向。看懂納斯達克，領先市場一步。\n每週解析 NASDAQ 100 指數的結構變化、科技巨頭財報與產品週期、AI 與半導體等細分賽道的動能，以及 IPO 與次新股的追蹤。語言風格使用華爾街常見的繁體財經術語（如「那指」、「輝達」、「超微」），適合美股科技股投資人、成長股策略使用者。\n每集內容形式：\nNASDAQ 100 指數週展望（技術面＋事件預覽）\n科技巨頭動態／AI 賽道追蹤\nNASDAQ 100 週回顧與成份股表現排行\n適合對象： 美股科技股投資人、成長股策略使用者、NASDAQ ETF 持有者\n更新頻率： 每週 2-3 集（每集 5-8 分鐘）\n關鍵標籤： #納斯達克 #NASDAQ100 #科技股 #AI晶片 #FAANG #輝達\nSEO 關鍵詞：\n主要：納斯達克分析、NASDAQ100 走勢、科技股財報、AI 晶片、輝達股價\n長尾：FAANG 動態、微軟 Azure 成長、亞馬遜 AWS、超微半導體",
+        "channel_summary_raw": "科技股是美股心臟，那指火箭帶你衝上雲端。科技股是美股的心臟，納斯達克是科技股的晴雨表。本頻道聚焦 NASDAQ 100 成分股，追蹤 FAANG（Meta、Apple、Amazon、Netflix、Google）、AI 晶片（NVIDIA、AMD、博通）、雲端運算（微軟、亞馬遜 AWS、Google Cloud）等科技賽道，在波動中尋找趨勢方向。看懂納斯達克，領先市場一步。\n每週解析 NASDAQ 100 指數的結構變化、科技巨頭財報與產品週期、AI 與半導體等細分賽道的動能，以及 IPO 與次新股的追蹤。語言風格使用華爾街常見的繁體財經術語（如「那指」、「輝達」、「超微」），適合美股科技股投資人、成長股策略使用者。",
+        "content_blocks_raw": "NASDAQ 100 指數週展望（技術面＋事件預覽）\n科技巨頭動態／AI 賽道追蹤\nNASDAQ 100 週回顧與成份股表現排行",
+        "preferred_formats_raw": [
+          "NASDAQ 100 指數週展望",
+          "科技巨頭動態／AI 賽道追蹤",
+          "NASDAQ 100 週回顧與成份股表現排行"
+        ],
+        "target_audience_raw": "美股科技股投資人、成長股策略使用者、NASDAQ ETF 持有者",
+        "update_frequency_raw": "每週 2-3 集（每集 5-8 分鐘）",
+        "tags_raw": "#納斯達克 #NASDAQ100 #科技股 #AI晶片 #FAANG #輝達",
+        "seo_keywords_raw": "主要：納斯達克分析、NASDAQ100 走勢、科技股財報、AI 晶片、輝達股價\n長尾：FAANG 動態、微軟 Azure 成長、亞馬遜 AWS、超微半導體",
+        "directory_category_raw": "美股市場 / 科技板塊期權",
+        "matrix_category_raw": "美股科技",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "科技股/成長",
+        "matrix_update_frequency_raw": "每週 2-3 集",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "美股科技 | 那指火箭 | 美股 | 科技股/成長 | 每週 2-3 集 | 5-8 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "科技股衝上雲端的動能感",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "美股市場 / 科技板塊期權",
+      "source_category_matrix": "美股科技",
+      "channel_summary": "科技股是美股心臟，那指火箭帶你衝上雲端。科技股是美股的心臟，納斯達克是科技股的晴雨表。本頻道聚焦 NASDAQ 100 成分股，追蹤 FAANG（Meta、Apple、Amazon、Netflix、Google）、AI 晶片（NVIDIA、AMD、博通）、雲端運算（微軟、亞馬遜 AWS、Google Cloud）等科技賽道，在波動中尋找趨勢方向。看懂納斯達克，領先市場一步。\n每週解析 NASDAQ 100 指數的結構變化、科技巨頭財報與產品週期、AI 與半導體等細分賽道的動能，以及 IPO 與次新股的追蹤。語言風格使用華爾街常見的繁體財經術語（如「那指」、「輝達」、「超微」），適合美股科技股投資人、成長股策略使用者。",
+      "target_audience": "美股科技股投資人、成長股策略使用者、NASDAQ ETF 持有者",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "NASDAQ_100",
+        "US_TECH_STOCKS",
+        "NASDAQ_ETF"
+      ],
+      "preferred_sectors": [
+        "科技",
+        "AI晶片",
+        "雲端"
+      ],
+      "preferred_entities": [
+        "Meta",
+        "Apple",
+        "Amazon",
+        "Netflix",
+        "Google",
+        "NVIDIA",
+        "AMD",
+        "Broadcom",
+        "Microsoft"
+      ],
+      "preferred_topic_types": [
+        "指數展望",
+        "科技財報",
+        "產品週期",
+        "成分股排行"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_US_TRADING_WEEK",
+      "market_session_preferences": [
+        "US_WEEKLY_2_3",
+        "ASIA_AFTER_US_CLOSE"
+      ],
+      "preferred_formats": [
+        "NASDAQ 100 指數週展望",
+        "科技巨頭動態／AI 賽道追蹤",
+        "NASDAQ 100 週回顧與成份股表現排行"
+      ],
+      "content_depth": "GROWTH_TECH",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-07-us-sector-rotator",
+      "channel_name": "板塊輪動儀",
+      "source_index": 7,
+      "source_fields_raw": {
+        "source_index": 7,
+        "raw_channel_block": "板塊輪動儀\n用輪動邏輯看懂美股結構性機會，不被單日雜訊帶著走。AI、半導體、能源、金融、生技——哪個板塊正在吸金？本頻道追蹤標普 500 十一大產業板塊的相對強弱，搭配對應 ETF（如 XLK、XLF、XLE、XLV）的資金流向，幫你判斷市場資金正在往哪個產業板塊集中。\n每週解析板塊輪動的驅動力——是財報季的產業差異？是聯準會政策的產業敏感度不同？還是地緣事件對特定板塊的衝擊？語言風格採產業中性用語，必要時中英夾雜（如「科技板塊 XLK」、「能源 XLE」），適合美股被動式投資人與板塊輪動策略使用者。\n每集內容形式：\n上週板塊表現總回顧與本週焦點板塊\n單一板塊深度解析（附 ETF 對應策略）\n板塊輪動雷達圖與下週配置方向\n適合對象： 美股 ETF 投資人、板塊輪動策略使用者、中長期資產配置者\n更新頻率： 每週 1 集（每集 5-8 分鐘）\n關鍵標籤： #美股板塊 #板塊輪動 #標普500 #科技股 #能源股 #ETF\nSEO 關鍵詞：\n主要：美股板塊分析、板塊輪動、標普 500 產業表現、XLK、XLE、XLF\n長尾：美股資金流向、科技板塊 vs 能源板塊、美股產業 ETF 比較",
+        "channel_summary_raw": "用輪動邏輯看懂美股結構性機會，不被單日雜訊帶著走。AI、半導體、能源、金融、生技——哪個板塊正在吸金？本頻道追蹤標普 500 十一大產業板塊的相對強弱，搭配對應 ETF（如 XLK、XLF、XLE、XLV）的資金流向，幫你判斷市場資金正在往哪個產業板塊集中。\n每週解析板塊輪動的驅動力——是財報季的產業差異？是聯準會政策的產業敏感度不同？還是地緣事件對特定板塊的衝擊？語言風格採產業中性用語，必要時中英夾雜（如「科技板塊 XLK」、「能源 XLE」），適合美股被動式投資人與板塊輪動策略使用者。",
+        "content_blocks_raw": "上週板塊表現總回顧與本週焦點板塊\n單一板塊深度解析（附 ETF 對應策略）\n板塊輪動雷達圖與下週配置方向",
+        "preferred_formats_raw": [
+          "上週板塊表現總回顧與本週焦點板塊",
+          "單一板塊深度解析",
+          "板塊輪動雷達圖與下週配置方向"
+        ],
+        "target_audience_raw": "美股 ETF 投資人、板塊輪動策略使用者、中長期資產配置者",
+        "update_frequency_raw": "每週 1 集（每集 5-8 分鐘）",
+        "tags_raw": "#美股板塊 #板塊輪動 #標普500 #科技股 #能源股 #ETF",
+        "seo_keywords_raw": "主要：美股板塊分析、板塊輪動、標普 500 產業表現、XLK、XLE、XLF\n長尾：美股資金流向、科技板塊 vs 能源板塊、美股產業 ETF 比較",
+        "directory_category_raw": "美股市場 / 科技板塊期權",
+        "matrix_category_raw": "美股板塊",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "ETF/資產配置",
+        "matrix_update_frequency_raw": "每週 1 集",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "美股板塊 | 板塊輪動儀 | 美股 | ETF/資產配置 | 每週 1 集 | 5-8 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "美股產業板塊的結構性輪動",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "美股市場 / 科技板塊期權",
+      "source_category_matrix": "美股板塊",
+      "channel_summary": "用輪動邏輯看懂美股結構性機會，不被單日雜訊帶著走。AI、半導體、能源、金融、生技——哪個板塊正在吸金？本頻道追蹤標普 500 十一大產業板塊的相對強弱，搭配對應 ETF（如 XLK、XLF、XLE、XLV）的資金流向，幫你判斷市場資金正在往哪個產業板塊集中。\n每週解析板塊輪動的驅動力——是財報季的產業差異？是聯準會政策的產業敏感度不同？還是地緣事件對特定板塊的衝擊？語言風格採產業中性用語，必要時中英夾雜（如「科技板塊 XLK」、「能源 XLE」），適合美股被動式投資人與板塊輪動策略使用者。",
+      "target_audience": "美股 ETF 投資人、板塊輪動策略使用者、中長期資產配置者",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "S&P_500_SECTORS",
+        "SECTOR_ETF"
+      ],
+      "preferred_sectors": [
+        "科技",
+        "能源",
+        "金融",
+        "生技",
+        "醫療"
+      ],
+      "preferred_entities": [
+        "XLK",
+        "XLF",
+        "XLE",
+        "XLV"
+      ],
+      "preferred_topic_types": [
+        "板塊相對強弱",
+        "ETF資金",
+        "財報季差異",
+        "政策敏感度"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_US_TRADING_WEEK",
+      "market_session_preferences": [
+        "US_WEEKLY",
+        "ASIA_AFTER_US_CLOSE"
+      ],
+      "preferred_formats": [
+        "上週板塊表現總回顧與本週焦點板塊",
+        "單一板塊深度解析",
+        "板塊輪動雷達圖與下週配置方向"
+      ],
+      "content_depth": "ASSET_ALLOCATION",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-08-us-dark-pool-radar",
+      "channel_name": "暗池雷達",
+      "source_index": 8,
+      "source_fields_raw": {
+        "source_index": 8,
+        "raw_channel_block": "暗池雷達\n穿透 40% 不公開交易，看見聰明錢真正在買什麼。市場中超過 40% 的交易發生在不公開的暗池（Dark Pools）中。本頻道專注於揭示美股與期權市場中的大單掃貨（Option Sweeps）與場外大宗交易，帶你穿透虛假掛單，看見聰明錢（Smart Money）的真正選擇。\n拒絕盤後念新聞，不玩模棱兩可的猜測。我們用最嚴謹的數據分析，標記偏離正常成交量的隱藏大宗買賣，捕捉末日期權與深度虛值期權的異常建倉，幫你定位機構的防守陣地與 Gamma 擠壓（Gamma Squeeze）位。\n每集內容形式：\n暗池大單追蹤（偏離正常成交量的隱藏大宗買賣）\n期權異動掃描（末日期權與深度虛值期權異常建倉）\n多空博弈地圖（機構防守陣地與 Gamma Squeeze 位）\n適合對象： 期權交易者、短線波段客、希望追蹤主力資金走向的實戰派\n更新頻率： 每交易日開盤前（每集 3-5 分鐘）\n關鍵標籤： #暗池交易 #期權異動 #主力資金 #華爾街 #聰明錢 #美股實戰\nSEO 關鍵詞：\n主要：暗池交易、期權異動、主力資金、聰明錢、美股實戰\n長尾：Option Sweeps 掃描、Gamma Squeeze 擠壓、暗池大宗交易、機構籌碼追蹤",
+        "channel_summary_raw": "穿透 40% 不公開交易，看見聰明錢真正在買什麼。市場中超過 40% 的交易發生在不公開的暗池（Dark Pools）中。本頻道專注於揭示美股與期權市場中的大單掃貨（Option Sweeps）與場外大宗交易，帶你穿透虛假掛單，看見聰明錢（Smart Money）的真正選擇。\n拒絕盤後念新聞，不玩模棱兩可的猜測。我們用最嚴謹的數據分析，標記偏離正常成交量的隱藏大宗買賣，捕捉末日期權與深度虛值期權的異常建倉，幫你定位機構的防守陣地與 Gamma 擠壓（Gamma Squeeze）位。",
+        "content_blocks_raw": "暗池大單追蹤（偏離正常成交量的隱藏大宗買賣）\n期權異動掃描（末日期權與深度虛值期權異常建倉）\n多空博弈地圖（機構防守陣地與 Gamma Squeeze 位）",
+        "preferred_formats_raw": [
+          "暗池大單追蹤",
+          "期權異動掃描",
+          "多空博弈地圖"
+        ],
+        "target_audience_raw": "期權交易者、短線波段客、希望追蹤主力資金走向的實戰派",
+        "update_frequency_raw": "每交易日開盤前（每集 3-5 分鐘）",
+        "tags_raw": "#暗池交易 #期權異動 #主力資金 #華爾街 #聰明錢 #美股實戰",
+        "seo_keywords_raw": "主要：暗池交易、期權異動、主力資金、聰明錢、美股實戰\n長尾：Option Sweeps 掃描、Gamma Squeeze 擠壓、暗池大宗交易、機構籌碼追蹤",
+        "directory_category_raw": "美股市場 / 科技板塊期權",
+        "matrix_category_raw": "美股暗池",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "籌碼/期權",
+        "matrix_update_frequency_raw": "每交易日開盤前",
+        "matrix_duration_raw": "3-5 分鐘",
+        "matrix_row_raw": "美股暗池 | 暗池雷達 | 美股 | 籌碼/期權 | 每交易日開盤前 | 3-5 分鐘",
+        "brand_family_raw": "雷達系列",
+        "brand_meaning_raw": "美股暗池與期權的聰明錢動向",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "美股市場 / 科技板塊期權",
+      "source_category_matrix": "美股暗池",
+      "channel_summary": "穿透 40% 不公開交易，看見聰明錢真正在買什麼。市場中超過 40% 的交易發生在不公開的暗池（Dark Pools）中。本頻道專注於揭示美股與期權市場中的大單掃貨（Option Sweeps）與場外大宗交易，帶你穿透虛假掛單，看見聰明錢（Smart Money）的真正選擇。\n拒絕盤後念新聞，不玩模棱兩可的猜測。我們用最嚴謹的數據分析，標記偏離正常成交量的隱藏大宗買賣，捕捉末日期權與深度虛值期權的異常建倉，幫你定位機構的防守陣地與 Gamma 擠壓（Gamma Squeeze）位。",
+      "target_audience": "期權交易者、短線波段客、希望追蹤主力資金走向的實戰派",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "US_EQUITIES",
+        "US_OPTIONS",
+        "DARK_POOL"
+      ],
+      "preferred_sectors": [],
+      "preferred_entities": [
+        "美股機構交易"
+      ],
+      "preferred_topic_types": [
+        "暗池大單",
+        "Option Sweeps",
+        "Gamma",
+        "異常建倉"
+      ],
+      "excluded_topics": [
+        "盤後念新聞",
+        "無數據的方向猜測"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "PREVIOUS_US_SESSION",
+      "market_session_preferences": [
+        "US_PREMARKET_EACH_TRADING_DAY"
+      ],
+      "preferred_formats": [
+        "暗池大單追蹤",
+        "期權異動掃描",
+        "多空博弈地圖"
+      ],
+      "content_depth": "TACTICAL_DERIVATIVES",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-09-us-options-gatekeeper",
+      "channel_name": "期權守門人",
+      "source_index": 9,
+      "source_fields_raw": {
+        "source_index": 9,
+        "raw_channel_block": "期權守門人\n先守住本金，再贏取時間價值，做期權市場裡最冷靜的守門人。期權不是暴富的賭博工具，而是精確控制風險與提升收益率的金融武器。本頻道拒絕單邊方向狂熱賭博，專注於 Selling Options（賣方策略）、波動率套利與 Hedging（對沖）架構，教你如何用正期望值的系統穩健獲利。\n風險優先，收益隨之。我們尋找 IV Rank 高企時的波動率均值回歸機會，用極低成本構建黑天鵝防線保護現貨持倉，並詳解 Covered Call 與 Cash-Secured Put 的長期實戰現金流策略。\n每集內容形式：\n波動率曲面分析（IV Rank 高企時的均值回歸機會）\n非對稱對沖策略（極低成本黑天鵝防線）\n現金流提取教學（Covered Call 與 Cash-Secured Put 實戰）\n適合對象： 擁有美股現貨持倉、希望降低回撤或獲取額外現金流的理性交易者\n更新頻率： 每交易日開盤前（每集約 3 分鐘）\n關鍵標籤： #美股期權 #期權策略 #波動率 #對沖風險 #現金流 #風險管理\nSEO 關鍵詞：\n主要：美股期權、期權策略、波動率交易、對沖策略、賣方期權\n長尾：Covered Call 教學、Cash-Secured Put 策略、IV Rank 波動率、Theta 時間價值",
+        "channel_summary_raw": "先守住本金，再贏取時間價值，做期權市場裡最冷靜的守門人。期權不是暴富的賭博工具，而是精確控制風險與提升收益率的金融武器。本頻道拒絕單邊方向狂熱賭博，專注於 Selling Options（賣方策略）、波動率套利與 Hedging（對沖）架構，教你如何用正期望值的系統穩健獲利。\n風險優先，收益隨之。我們尋找 IV Rank 高企時的波動率均值回歸機會，用極低成本構建黑天鵝防線保護現貨持倉，並詳解 Covered Call 與 Cash-Secured Put 的長期實戰現金流策略。",
+        "content_blocks_raw": "波動率曲面分析（IV Rank 高企時的均值回歸機會）\n非對稱對沖策略（極低成本黑天鵝防線）\n現金流提取教學（Covered Call 與 Cash-Secured Put 實戰）",
+        "preferred_formats_raw": [
+          "波動率曲面分析",
+          "非對稱對沖策略",
+          "現金流提取教學"
+        ],
+        "target_audience_raw": "擁有美股現貨持倉、希望降低回撤或獲取額外現金流的理性交易者",
+        "update_frequency_raw": "每交易日開盤前（每集約 3 分鐘）",
+        "tags_raw": "#美股期權 #期權策略 #波動率 #對沖風險 #現金流 #風險管理",
+        "seo_keywords_raw": "主要：美股期權、期權策略、波動率交易、對沖策略、賣方期權\n長尾：Covered Call 教學、Cash-Secured Put 策略、IV Rank 波動率、Theta 時間價值",
+        "directory_category_raw": "美股市場 / 科技板塊期權",
+        "matrix_category_raw": "美股期權",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "風險管理/賣方",
+        "matrix_update_frequency_raw": "每交易日開盤前",
+        "matrix_duration_raw": "3 分鐘",
+        "matrix_row_raw": "美股期權 | 期權守門人 | 美股 | 風險管理/賣方 | 每交易日開盤前 | 3 分鐘",
+        "brand_family_raw": "守護系列",
+        "brand_meaning_raw": "現貨持倉的下行風險與現金流",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "美股市場 / 科技板塊期權",
+      "source_category_matrix": "美股期權",
+      "channel_summary": "先守住本金，再贏取時間價值，做期權市場裡最冷靜的守門人。期權不是暴富的賭博工具，而是精確控制風險與提升收益率的金融武器。本頻道拒絕單邊方向狂熱賭博，專注於 Selling Options（賣方策略）、波動率套利與 Hedging（對沖）架構，教你如何用正期望值的系統穩健獲利。\n風險優先，收益隨之。我們尋找 IV Rank 高企時的波動率均值回歸機會，用極低成本構建黑天鵝防線保護現貨持倉，並詳解 Covered Call 與 Cash-Secured Put 的長期實戰現金流策略。",
+      "target_audience": "擁有美股現貨持倉、希望降低回撤或獲取額外現金流的理性交易者",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "US_OPTIONS",
+        "US_EQUITY_HOLDINGS"
+      ],
+      "preferred_sectors": [],
+      "preferred_entities": [
+        "US options chains"
+      ],
+      "preferred_topic_types": [
+        "波動率曲面",
+        "賣方策略",
+        "對沖",
+        "Covered Call",
+        "Cash-Secured Put"
+      ],
+      "excluded_topics": [
+        "單邊方向狂熱賭博"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "PREVIOUS_US_SESSION",
+      "market_session_preferences": [
+        "US_PREMARKET_EACH_TRADING_DAY"
+      ],
+      "preferred_formats": [
+        "波動率曲面分析",
+        "非對稱對沖策略",
+        "現金流提取教學"
+      ],
+      "content_depth": "RISK_EDUCATION",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-10-us-earnings-hunter",
+      "channel_name": "財報獵人",
+      "source_index": 10,
+      "source_fields_raw": {
+        "source_index": 10,
+        "raw_channel_block": "財報獵人\n直擊 SEC 原檔，剝離會計魔術，捕獲企業真價值。拒絕故事陷阱，用獵人的敏銳拆解財報裡的數字遊戲。美股科技與消費巨頭財報季來襲，你還在看經過一手二手轉譯的新聞稿嗎？我們帶你直擊 SEC 原版檔（10-K/10-Q），剝離非經常性損益，透視現金流真相與管理層指導預期。\n從營收含金量（GAAP vs Non-GAAP 差異）到自由現金流（企業真正造血能力），再到護城河校驗（從毛利率變化看產業鏈議價權），獵人的準星始終鎖定企業最核心的財務真相。\n每集內容形式：\n營收含金量拆解（GAAP 與 Non-GAAP 差異，警惕會計魔術）\n自由現金流評估（企業真正造血能力與 CapEx 效率）\n護城河校驗（從毛利率變化看企業在產業鏈中的議價權）\n適合對象： 美股基本面派投資者、喜歡深挖企業核心財務數據的研究型股民\n更新頻率： 財報季每日／非財報季每週 2 集（每集約 3 分鐘）\n關鍵標籤： #美股財報 #基本面分析 #10K拆解 #自由現金流 #科技巨頭 #財務分析\nSEO 關鍵詞：\n主要：美股財報分析、10-K 拆解、自由現金流分析、基本面選股、財報季解讀\n長尾：GAAP vs Non-GAAP 差異、SEC 原版財報、企業造血能力、毛利率護城河\n\n三、全球宏觀 / 資金流向大宗商品\n命名邏輯：天秤、地圖、炸藥庫、航海家——從「平衡、路徑、風險、航行」四個維度覆蓋宏觀主題。 觀眾畫像：宏觀交易者、大宗商品玩家、全球資產配置型投資人。",
+        "channel_summary_raw": "直擊 SEC 原檔，剝離會計魔術，捕獲企業真價值。拒絕故事陷阱，用獵人的敏銳拆解財報裡的數字遊戲。美股科技與消費巨頭財報季來襲，你還在看經過一手二手轉譯的新聞稿嗎？我們帶你直擊 SEC 原版檔（10-K/10-Q），剝離非經常性損益，透視現金流真相與管理層指導預期。\n從營收含金量（GAAP vs Non-GAAP 差異）到自由現金流（企業真正造血能力），再到護城河校驗（從毛利率變化看產業鏈議價權），獵人的準星始終鎖定企業最核心的財務真相。",
+        "content_blocks_raw": "營收含金量拆解（GAAP 與 Non-GAAP 差異，警惕會計魔術）\n自由現金流評估（企業真正造血能力與 CapEx 效率）\n護城河校驗（從毛利率變化看企業在產業鏈中的議價權）",
+        "preferred_formats_raw": [
+          "營收含金量拆解",
+          "自由現金流評估",
+          "護城河校驗"
+        ],
+        "target_audience_raw": "美股基本面派投資者、喜歡深挖企業核心財務數據的研究型股民",
+        "update_frequency_raw": "財報季每日／非財報季每週 2 集（每集約 3 分鐘）",
+        "tags_raw": "#美股財報 #基本面分析 #10K拆解 #自由現金流 #科技巨頭 #財務分析",
+        "seo_keywords_raw": "主要：美股財報分析、10-K 拆解、自由現金流分析、基本面選股、財報季解讀\n長尾：GAAP vs Non-GAAP 差異、SEC 原版財報、企業造血能力、毛利率護城河\n\n三、全球宏觀 / 資金流向大宗商品\n命名邏輯：天秤、地圖、炸藥庫、航海家——從「平衡、路徑、風險、航行」四個維度覆蓋宏觀主題。 觀眾畫像：宏觀交易者、大宗商品玩家、全球資產配置型投資人。",
+        "directory_category_raw": "美股市場 / 科技板塊期權",
+        "matrix_category_raw": "美股財報",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "基本面/SEC 原檔",
+        "matrix_update_frequency_raw": "財報季每日/非財報季每週 2 集",
+        "matrix_duration_raw": "3 分鐘",
+        "matrix_row_raw": "美股財報 | 財報獵人 | 美股 | 基本面/SEC 原檔 | 財報季每日/非財報季每週 2 集 | 3 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "獵人般精準捕獲財報真相",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "美股市場 / 科技板塊期權",
+      "source_category_matrix": "美股財報",
+      "channel_summary": "直擊 SEC 原檔，剝離會計魔術，捕獲企業真價值。拒絕故事陷阱，用獵人的敏銳拆解財報裡的數字遊戲。美股科技與消費巨頭財報季來襲，你還在看經過一手二手轉譯的新聞稿嗎？我們帶你直擊 SEC 原版檔（10-K/10-Q），剝離非經常性損益，透視現金流真相與管理層指導預期。\n從營收含金量（GAAP vs Non-GAAP 差異）到自由現金流（企業真正造血能力），再到護城河校驗（從毛利率變化看產業鏈議價權），獵人的準星始終鎖定企業最核心的財務真相。",
+      "target_audience": "美股基本面派投資者、喜歡深挖企業核心財務數據的研究型股民",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "US_LISTED_COMPANIES",
+        "SEC_FILINGS"
+      ],
+      "preferred_sectors": [
+        "科技",
+        "消費"
+      ],
+      "preferred_entities": [
+        "美股科技與消費巨頭"
+      ],
+      "preferred_topic_types": [
+        "10-K",
+        "10-Q",
+        "GAAP與Non-GAAP",
+        "自由現金流",
+        "Guidance"
+      ],
+      "excluded_topics": [
+        "只看二手新聞稿",
+        "無原檔的會計結論"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "UNTIL_NEXT_FILING",
+      "market_session_preferences": [
+        "EARNINGS_SEASON_DAILY",
+        "OFF_SEASON_TWICE_WEEKLY"
+      ],
+      "preferred_formats": [
+        "營收含金量拆解",
+        "自由現金流評估",
+        "護城河校驗"
+      ],
+      "content_depth": "DEEP_FINANCIAL",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-11-global-macro-balance",
+      "channel_name": "宏觀天秤",
+      "source_index": 11,
+      "source_fields_raw": {
+        "source_index": 11,
+        "raw_channel_block": "宏觀天秤\n用天秤稱量全球資產價值，不預測市場，只做應對方案。摒除微觀雜訊，用宏觀天秤稱量全球資產價值。本頻道專注於跨市場宏觀週期研究，從利率路徑、匯率波動到大類資產輪動，為你構建穿越週期的投資底倉。數據說話，邏輯導航，不預測市場，只做應對方案。\n每週日晚間為你呈現一張完整的宏觀資產全景圖，深入剖析全球三大央行資產負債表與利率決議，追蹤美債、黃金、美股與新興市場的資金蹺蹺板，並結合經濟數據（CPI/PMI/NFP）判斷當前所處的宏觀週期位置。\n核心拆解板塊：\n央行天秤 - 深入剖析全球三大央行資產負債表與利率決議\n資產輪動 - 追蹤美債、黃金、美股與新興市場的資金蹺蹺板\n週期定位 - 結合經濟數據（CPI/PMI/NFP）判斷當前宏觀位置\n適合對象： 追求中長期穩健增值、希望建立全局宏觀視角的高階投資者\n更新頻率： 每週日晚間發佈（約 5 分鐘）\n關鍵標籤： #宏觀經濟 #資產配置 #美債 #全球市場 #利率決議 #大類資產 #投資週期\nSEO 關鍵詞：\n主要：宏觀經濟分析、全球資產配置、央行利率決議、美債殖利率、大類資產輪動\n長尾：CPI PMI NFP 數據解讀、聯準會利率路徑、美債黃金蹺蹺板、宏觀週期定位",
+        "channel_summary_raw": "用天秤稱量全球資產價值，不預測市場，只做應對方案。摒除微觀雜訊，用宏觀天秤稱量全球資產價值。本頻道專注於跨市場宏觀週期研究，從利率路徑、匯率波動到大類資產輪動，為你構建穿越週期的投資底倉。數據說話，邏輯導航，不預測市場，只做應對方案。\n每週日晚間為你呈現一張完整的宏觀資產全景圖，深入剖析全球三大央行資產負債表與利率決議，追蹤美債、黃金、美股與新興市場的資金蹺蹺板，並結合經濟數據（CPI/PMI/NFP）判斷當前所處的宏觀週期位置。",
+        "content_blocks_raw": "央行天秤 - 深入剖析全球三大央行資產負債表與利率決議\n資產輪動 - 追蹤美債、黃金、美股與新興市場的資金蹺蹺板\n週期定位 - 結合經濟數據（CPI/PMI/NFP）判斷當前宏觀位置",
+        "preferred_formats_raw": [
+          "央行天秤",
+          "資產輪動",
+          "週期定位"
+        ],
+        "target_audience_raw": "追求中長期穩健增值、希望建立全局宏觀視角的高階投資者",
+        "update_frequency_raw": "每週日晚間發佈（約 5 分鐘）",
+        "tags_raw": "#宏觀經濟 #資產配置 #美債 #全球市場 #利率決議 #大類資產 #投資週期",
+        "seo_keywords_raw": "主要：宏觀經濟分析、全球資產配置、央行利率決議、美債殖利率、大類資產輪動\n長尾：CPI PMI NFP 數據解讀、聯準會利率路徑、美債黃金蹺蹺板、宏觀週期定位",
+        "directory_category_raw": "全球宏觀 / 資金流向大宗商品",
+        "matrix_category_raw": "全球宏觀",
+        "matrix_market_raw": "全球",
+        "matrix_theme_raw": "宏觀/央行/利率",
+        "matrix_update_frequency_raw": "每週日晚間",
+        "matrix_duration_raw": "5 分鐘",
+        "matrix_row_raw": "全球宏觀 | 宏觀天秤 | 全球 | 宏觀/央行/利率 | 每週日晚間 | 5 分鐘",
+        "brand_family_raw": "權衡系列",
+        "brand_meaning_raw": "全球資產的相對價值與週期位置",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "全球宏觀 / 資金流向大宗商品",
+      "source_category_matrix": "全球宏觀",
+      "channel_summary": "用天秤稱量全球資產價值，不預測市場，只做應對方案。摒除微觀雜訊，用宏觀天秤稱量全球資產價值。本頻道專注於跨市場宏觀週期研究，從利率路徑、匯率波動到大類資產輪動，為你構建穿越週期的投資底倉。數據說話，邏輯導航，不預測市場，只做應對方案。\n每週日晚間為你呈現一張完整的宏觀資產全景圖，深入剖析全球三大央行資產負債表與利率決議，追蹤美債、黃金、美股與新興市場的資金蹺蹺板，並結合經濟數據（CPI/PMI/NFP）判斷當前所處的宏觀週期位置。",
+      "target_audience": "追求中長期穩健增值、希望建立全局宏觀視角的高階投資者",
+      "primary_market": "GLOBAL",
+      "secondary_markets": [],
+      "security_scope": [
+        "RATES",
+        "FX",
+        "BONDS",
+        "EQUITIES",
+        "GOLD",
+        "EM"
+      ],
+      "preferred_sectors": [
+        "大類資產"
+      ],
+      "preferred_entities": [
+        "Fed",
+        "ECB",
+        "BOJ"
+      ],
+      "preferred_topic_types": [
+        "央行決議",
+        "利率路徑",
+        "CPI",
+        "PMI",
+        "NFP",
+        "週期定位"
+      ],
+      "excluded_topics": [
+        "單一市場微觀雜訊",
+        "無情境的市場預測"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_WEEK_OR_NEXT_RELEASE",
+      "market_session_preferences": [
+        "WEEKLY_SUNDAY"
+      ],
+      "preferred_formats": [
+        "央行天秤",
+        "資產輪動",
+        "週期定位"
+      ],
+      "content_depth": "MACRO_STRATEGY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-12-global-capital-map",
+      "channel_name": "全球資金地圖",
+      "source_index": 12,
+      "source_fields_raw": {
+        "source_index": 12,
+        "raw_channel_block": "全球資金地圖\n錢從哪來、往哪去，一張地圖看懂全球風險情緒。跳脫單一市場視角，站在全球投資人的高度，追蹤跨市場的資金移動軌跡。涵蓋美股 ETF 的淨申購贖回數據、外資對新興市場（含台股）的買賣超趨勢、美債殖利率曲線變化對資金配置的影響，以及日圓、黃金等避險資產的資金面訊號。\n當市場出現風險事件時，你會在這裡第一時間看到資金往哪裡避難、往哪裡追逐收益。語言風格採宏觀國際視角，用全球投資人共通語言，避免單一市場方言。\n每集內容形式：\n上週全球 ETF 資金流量總覽\n單一資產類別資金面深度觀察（美債／黃金／日圓輪替）\n全球風險情緒綜合評分與下週配置提醒\n適合對象： 全球資產配置者、宏觀對沖策略使用者、避險需求投資人\n更新頻率： 每週 1-2 集（每集 5-8 分鐘）\n關鍵標籤： #全球資金流向 #ETF流量 #避險資產 #美債 #黃金 #日圓\nSEO 關鍵詞：\n主要：全球資金流向、ETF 淨流入、避險資產、美債殖利率、日圓走勢\n長尾：新興市場外資動向、黃金 ETF 資金流、風險情緒指標、資產輪動",
+        "channel_summary_raw": "錢從哪來、往哪去，一張地圖看懂全球風險情緒。跳脫單一市場視角，站在全球投資人的高度，追蹤跨市場的資金移動軌跡。涵蓋美股 ETF 的淨申購贖回數據、外資對新興市場（含台股）的買賣超趨勢、美債殖利率曲線變化對資金配置的影響，以及日圓、黃金等避險資產的資金面訊號。\n當市場出現風險事件時，你會在這裡第一時間看到資金往哪裡避難、往哪裡追逐收益。語言風格採宏觀國際視角，用全球投資人共通語言，避免單一市場方言。",
+        "content_blocks_raw": "上週全球 ETF 資金流量總覽\n單一資產類別資金面深度觀察（美債／黃金／日圓輪替）\n全球風險情緒綜合評分與下週配置提醒",
+        "preferred_formats_raw": [
+          "上週全球 ETF 資金流量總覽",
+          "單一資產類別資金面深度觀察",
+          "全球風險情緒綜合評分與下週配置提醒"
+        ],
+        "target_audience_raw": "全球資產配置者、宏觀對沖策略使用者、避險需求投資人",
+        "update_frequency_raw": "每週 1-2 集（每集 5-8 分鐘）",
+        "tags_raw": "#全球資金流向 #ETF流量 #避險資產 #美債 #黃金 #日圓",
+        "seo_keywords_raw": "主要：全球資金流向、ETF 淨流入、避險資產、美債殖利率、日圓走勢\n長尾：新興市場外資動向、黃金 ETF 資金流、風險情緒指標、資產輪動",
+        "directory_category_raw": "全球宏觀 / 資金流向大宗商品",
+        "matrix_category_raw": "全球資金",
+        "matrix_market_raw": "全球",
+        "matrix_theme_raw": "資金流向/跨市場",
+        "matrix_update_frequency_raw": "每週 1-2 集",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "全球資金 | 全球資金地圖 | 全球 | 資金流向/跨市場 | 每週 1-2 集 | 5-8 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "跨市場資金移動的全景地圖",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "全球宏觀 / 資金流向大宗商品",
+      "source_category_matrix": "全球資金",
+      "channel_summary": "錢從哪來、往哪去，一張地圖看懂全球風險情緒。跳脫單一市場視角，站在全球投資人的高度，追蹤跨市場的資金移動軌跡。涵蓋美股 ETF 的淨申購贖回數據、外資對新興市場（含台股）的買賣超趨勢、美債殖利率曲線變化對資金配置的影響，以及日圓、黃金等避險資產的資金面訊號。\n當市場出現風險事件時，你會在這裡第一時間看到資金往哪裡避難、往哪裡追逐收益。語言風格採宏觀國際視角，用全球投資人共通語言，避免單一市場方言。",
+      "target_audience": "全球資產配置者、宏觀對沖策略使用者、避險需求投資人",
+      "primary_market": "GLOBAL",
+      "secondary_markets": [
+        "TW",
+        "US"
+      ],
+      "security_scope": [
+        "GLOBAL_ETF",
+        "BONDS",
+        "FX",
+        "GOLD",
+        "EM_EQUITIES"
+      ],
+      "preferred_sectors": [
+        "跨資產"
+      ],
+      "preferred_entities": [
+        "美股ETF",
+        "美債",
+        "日圓",
+        "黃金",
+        "新興市場"
+      ],
+      "preferred_topic_types": [
+        "ETF申贖",
+        "殖利率曲線",
+        "避險流向",
+        "風險情緒"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_WEEK",
+      "market_session_preferences": [
+        "WEEKLY_1_2"
+      ],
+      "preferred_formats": [
+        "上週全球 ETF 資金流量總覽",
+        "單一資產類別資金面深度觀察",
+        "全球風險情緒綜合評分與下週配置提醒"
+      ],
+      "content_depth": "CROSS_ASSET_FLOW",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-13-geopolitical-powder-keg",
+      "channel_name": "地緣炸藥庫",
+      "source_index": 13,
+      "source_fields_raw": {
+        "source_index": 13,
+        "raw_channel_block": "地緣炸藥庫\n地緣事件一點就爆，第一時間拆解對油金銅糧的衝擊路徑。當戰火、制裁、供應鏈中斷撞上油價、金價、銅價、天然氣與糧價——本頻道是事件驅動型頻道，只在關鍵地緣政治事件或大宗商品出現重大異動時發佈內容，平時不進行常態個股分析。\n聚焦中東局勢（伊朗、以色列、荷姆茲海峽）、俄烏戰爭、台海緊張等熱點事件，從「避險情緒」、「能源供給」、「供應鏈斷鏈」三個維度切入，分析對原油、黃金、銅、天然氣、農產品（小麥、玉米、黃豆）的即時與遞延影響。語言風格採國際新聞敘事，事件導向，術語中立。\n每集內容形式：\n地緣事件即時解析＋大宗商品傳導路徑\n週日發佈「一週大宗商品市場回顧與潛在地緣風險掃描」\n適合對象： 大宗商品交易者、避險需求投資人、地緣政治敏感型資產持有者\n更新頻率： 事件觸發即發佈＋週日回顧（每集 3-8 分鐘）\n關鍵標籤： #地緣政治 #原油 #黃金 #大宗商品 #避險 #供應鏈\nSEO 關鍵詞：\n主要：地緣政治影響、原油價格、黃金避險、大宗商品分析、供應鏈中斷\n長尾：中東衝突油價影響、荷姆茲海峽封鎖風險、銅價供給短缺、糧價地緣溢價",
+        "channel_summary_raw": "地緣事件一點就爆，第一時間拆解對油金銅糧的衝擊路徑。當戰火、制裁、供應鏈中斷撞上油價、金價、銅價、天然氣與糧價——本頻道是事件驅動型頻道，只在關鍵地緣政治事件或大宗商品出現重大異動時發佈內容，平時不進行常態個股分析。\n聚焦中東局勢（伊朗、以色列、荷姆茲海峽）、俄烏戰爭、台海緊張等熱點事件，從「避險情緒」、「能源供給」、「供應鏈斷鏈」三個維度切入，分析對原油、黃金、銅、天然氣、農產品（小麥、玉米、黃豆）的即時與遞延影響。語言風格採國際新聞敘事，事件導向，術語中立。",
+        "content_blocks_raw": "地緣事件即時解析＋大宗商品傳導路徑\n週日發佈「一週大宗商品市場回顧與潛在地緣風險掃描」",
+        "preferred_formats_raw": [
+          "地緣事件即時解析＋大宗商品傳導路徑",
+          "週日發佈「一週大宗商品市場回顧與潛在地緣風險掃描」"
+        ],
+        "target_audience_raw": "大宗商品交易者、避險需求投資人、地緣政治敏感型資產持有者",
+        "update_frequency_raw": "事件觸發即發佈＋週日回顧（每集 3-8 分鐘）",
+        "tags_raw": "#地緣政治 #原油 #黃金 #大宗商品 #避險 #供應鏈",
+        "seo_keywords_raw": "主要：地緣政治影響、原油價格、黃金避險、大宗商品分析、供應鏈中斷\n長尾：中東衝突油價影響、荷姆茲海峽封鎖風險、銅價供給短缺、糧價地緣溢價",
+        "directory_category_raw": "全球宏觀 / 資金流向大宗商品",
+        "matrix_category_raw": "地緣大宗",
+        "matrix_market_raw": "全球",
+        "matrix_theme_raw": "事件驅動/避險",
+        "matrix_update_frequency_raw": "事件觸發＋週日回顧",
+        "matrix_duration_raw": "3-8 分鐘",
+        "matrix_row_raw": "地緣大宗 | 地緣炸藥庫 | 全球 | 事件驅動/避險 | 事件觸發＋週日回顧 | 3-8 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "地緣事件一觸即發的緊張感",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "全球宏觀 / 資金流向大宗商品",
+      "source_category_matrix": "地緣大宗",
+      "channel_summary": "地緣事件一點就爆，第一時間拆解對油金銅糧的衝擊路徑。當戰火、制裁、供應鏈中斷撞上油價、金價、銅價、天然氣與糧價——本頻道是事件驅動型頻道，只在關鍵地緣政治事件或大宗商品出現重大異動時發佈內容，平時不進行常態個股分析。\n聚焦中東局勢（伊朗、以色列、荷姆茲海峽）、俄烏戰爭、台海緊張等熱點事件，從「避險情緒」、「能源供給」、「供應鏈斷鏈」三個維度切入，分析對原油、黃金、銅、天然氣、農產品（小麥、玉米、黃豆）的即時與遞延影響。語言風格採國際新聞敘事，事件導向，術語中立。",
+      "target_audience": "大宗商品交易者、避險需求投資人、地緣政治敏感型資產持有者",
+      "primary_market": "GLOBAL",
+      "secondary_markets": [],
+      "security_scope": [
+        "OIL",
+        "GOLD",
+        "COPPER",
+        "NATURAL_GAS",
+        "GRAINS"
+      ],
+      "preferred_sectors": [
+        "能源",
+        "金屬",
+        "農產品"
+      ],
+      "preferred_entities": [
+        "中東",
+        "俄烏",
+        "台海",
+        "荷姆茲海峽"
+      ],
+      "preferred_topic_types": [
+        "地緣事件",
+        "制裁",
+        "供應鏈中斷",
+        "商品傳導"
+      ],
+      "excluded_topics": [
+        "平時常態個股分析"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA",
+        "LICENSED_MEDIA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "EVENT_DEPENDENT",
+      "market_session_preferences": [
+        "EVENT_TRIGGER",
+        "WEEKLY_SUNDAY_REVIEW"
+      ],
+      "preferred_formats": [
+        "地緣事件即時解析＋大宗商品傳導路徑",
+        "週日發佈「一週大宗商品市場回顧與潛在地緣風險掃描」"
+      ],
+      "content_depth": "EVENT_DRIVEN",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-14-commodity-cycle-navigator",
+      "channel_name": "週期航海家",
+      "source_index": 14,
+      "source_fields_raw": {
+        "source_index": 14,
+        "raw_channel_block": "週期航海家\n駕馭大宗商品風浪，在通脹與衰退中尋找硬資產錨點。黃金、原油、銅、鐵礦石……大宗商品是全球經濟最真實的晴雨表。本頻道立足於供給端受限與需求端脈動，結合地緣政治與庫存週期，帶你構建能夠穿越通脹與衰退週期的硬資產防線。\n如同航海家手握羅盤，我們監控全球交易所（LME/SHFE）庫存變化與運費指數（BDI），從礦業巨頭財報追溯到大宗商品價格的資產映射關係，並拆解金銀比、油金比與宏觀避險資金的流動方向。\n航海圖譜包含：\n供需與庫存 - 監控全球交易所（LME/SHFE）庫存變化與運費指數（BDI）\n資源股映射 - 從礦業巨頭財報到大宗商品價格的資產映射關係\n避險與通脹 - 拆解金銀比、油金比與宏觀避險資金的流動方向\n適合對象： 關注抗通脹資產、大宗商品期貨與資源類股票的週期投資者\n更新頻率： 每週二、週五更新（每集 2-5 分鐘）\n關鍵標籤： #大宗商品 #黃金 #原油 #銅價 #週期投資 #通脹對沖 #資源股\nSEO 關鍵詞：\n主要：大宗商品分析、黃金價格走勢、原油供需、銅價預測、通脹對沖\n長尾：LME SHFE 庫存變化、BDI 運費指數、金銀比分析、資源股映射\n\n四、鏈上數據 / 籌碼分析\n命名邏輯：與「個股顯微鏡」形成跨市場呼應，強化「放大檢視」品牌感。 觀眾畫像：加密貨幣交易者、鏈上數據研究者、高階交易員。",
+        "channel_summary_raw": "駕馭大宗商品風浪，在通脹與衰退中尋找硬資產錨點。黃金、原油、銅、鐵礦石……大宗商品是全球經濟最真實的晴雨表。本頻道立足於供給端受限與需求端脈動，結合地緣政治與庫存週期，帶你構建能夠穿越通脹與衰退週期的硬資產防線。\n如同航海家手握羅盤，我們監控全球交易所（LME/SHFE）庫存變化與運費指數（BDI），從礦業巨頭財報追溯到大宗商品價格的資產映射關係，並拆解金銀比、油金比與宏觀避險資金的流動方向。",
+        "content_blocks_raw": "供需與庫存 - 監控全球交易所（LME/SHFE）庫存變化與運費指數（BDI）\n資源股映射 - 從礦業巨頭財報到大宗商品價格的資產映射關係\n避險與通脹 - 拆解金銀比、油金比與宏觀避險資金的流動方向",
+        "preferred_formats_raw": [
+          "供需與庫存",
+          "資源股映射",
+          "避險與通脹"
+        ],
+        "target_audience_raw": "關注抗通脹資產、大宗商品期貨與資源類股票的週期投資者",
+        "update_frequency_raw": "每週二、週五更新（每集 2-5 分鐘）",
+        "tags_raw": "#大宗商品 #黃金 #原油 #銅價 #週期投資 #通脹對沖 #資源股",
+        "seo_keywords_raw": "主要：大宗商品分析、黃金價格走勢、原油供需、銅價預測、通脹對沖\n長尾：LME SHFE 庫存變化、BDI 運費指數、金銀比分析、資源股映射\n\n四、鏈上數據 / 籌碼分析\n命名邏輯：與「個股顯微鏡」形成跨市場呼應，強化「放大檢視」品牌感。 觀眾畫像：加密貨幣交易者、鏈上數據研究者、高階交易員。",
+        "directory_category_raw": "全球宏觀 / 資金流向大宗商品",
+        "matrix_category_raw": "週期商品",
+        "matrix_market_raw": "全球",
+        "matrix_theme_raw": "大宗商品/週期",
+        "matrix_update_frequency_raw": "每週二、週五",
+        "matrix_duration_raw": "2-5 分鐘",
+        "matrix_row_raw": "週期商品 | 週期航海家 | 全球 | 大宗商品/週期 | 每週二、週五 | 2-5 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "大宗商品週期的風浪航行",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "全球宏觀 / 資金流向大宗商品",
+      "source_category_matrix": "週期商品",
+      "channel_summary": "駕馭大宗商品風浪，在通脹與衰退中尋找硬資產錨點。黃金、原油、銅、鐵礦石……大宗商品是全球經濟最真實的晴雨表。本頻道立足於供給端受限與需求端脈動，結合地緣政治與庫存週期，帶你構建能夠穿越通脹與衰退週期的硬資產防線。\n如同航海家手握羅盤，我們監控全球交易所（LME/SHFE）庫存變化與運費指數（BDI），從礦業巨頭財報追溯到大宗商品價格的資產映射關係，並拆解金銀比、油金比與宏觀避險資金的流動方向。",
+      "target_audience": "關注抗通脹資產、大宗商品期貨與資源類股票的週期投資者",
+      "primary_market": "GLOBAL",
+      "secondary_markets": [],
+      "security_scope": [
+        "COMMODITY_FUTURES",
+        "RESOURCE_STOCKS",
+        "FREIGHT"
+      ],
+      "preferred_sectors": [
+        "黃金",
+        "原油",
+        "銅",
+        "鐵礦石"
+      ],
+      "preferred_entities": [
+        "LME",
+        "SHFE",
+        "BDI",
+        "礦業公司"
+      ],
+      "preferred_topic_types": [
+        "供需庫存",
+        "資源股映射",
+        "金銀比",
+        "油金比",
+        "通脹對沖"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "HALF_WEEK",
+      "market_session_preferences": [
+        "WEEKLY_TUE_FRI"
+      ],
+      "preferred_formats": [
+        "供需與庫存",
+        "資源股映射",
+        "避險與通脹"
+      ],
+      "content_depth": "COMMODITY_CYCLE",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-15-onchain-microscope",
+      "channel_name": "鏈上顯微鏡",
+      "source_index": 15,
+      "source_fields_raw": {
+        "source_index": 15,
+        "raw_channel_block": "鏈上顯微鏡\n穿透 K 線迷霧，用顯微鏡級數據還原資金真實動向。拒絕盤後念新聞，不玩模棱兩可的猜測。本頻道專注於鏈上數據與暗池籌碼流向拆解，帶你看清機構大戶的籌碼積攢與高位出貨痕跡，追溯市場最真實的供需關係。\n即時監控主力資金的轉賬、質押與囤積動態，拆解不同成本區間的持倉結構與獲利盤壓力，並評估多空清算圖與合約持倉量（OI）異動。數據驅動，不靠感覺，讓每一筆交易都有鏈上證據支撐。\n每日深度觀察：\n巨鯨地址 - 即時監控主力資金的轉賬、質押與囤積動態\n籌碼分佈 - 拆解不同成本區間的持倉結構與獲利盤壓力\n衍生品清算 - 評估多空清算圖與合約持倉量（OI）異動\n適合對象： 注重數據佐證、喜歡研究籌碼分佈與資金博弈的深度交易者\n更新頻率： 每交易日收盤後（每集 3-5 分鐘）\n關鍵標籤： #籌碼分析 #鏈上數據 #資金流向 #主力動向 #衍生品 #交易系統 #數據驅動\nSEO 關鍵詞：\n主要：鏈上數據分析、巨鯨地址監控、籌碼分佈、衍生品清算、合約持倉量\n長尾：比特幣鏈上轉賬、以太坊質押數據、OI 持倉量異動、多空清算圖\n\n五、中概股 / 地緣政治\n命名邏輯：風向球比風向標更輕盈、更直覺，強調「即時變化」。 觀眾畫像：中概股交易者、美股／港股雙棲投資人、地緣敏感型資金。",
+        "channel_summary_raw": "穿透 K 線迷霧，用顯微鏡級數據還原資金真實動向。拒絕盤後念新聞，不玩模棱兩可的猜測。本頻道專注於鏈上數據與暗池籌碼流向拆解，帶你看清機構大戶的籌碼積攢與高位出貨痕跡，追溯市場最真實的供需關係。\n即時監控主力資金的轉賬、質押與囤積動態，拆解不同成本區間的持倉結構與獲利盤壓力，並評估多空清算圖與合約持倉量（OI）異動。數據驅動，不靠感覺，讓每一筆交易都有鏈上證據支撐。",
+        "content_blocks_raw": "巨鯨地址 - 即時監控主力資金的轉賬、質押與囤積動態\n籌碼分佈 - 拆解不同成本區間的持倉結構與獲利盤壓力\n衍生品清算 - 評估多空清算圖與合約持倉量（OI）異動",
+        "preferred_formats_raw": [
+          "巨鯨地址",
+          "籌碼分佈",
+          "衍生品清算"
+        ],
+        "target_audience_raw": "注重數據佐證、喜歡研究籌碼分佈與資金博弈的深度交易者",
+        "update_frequency_raw": "每交易日收盤後（每集 3-5 分鐘）",
+        "tags_raw": "#籌碼分析 #鏈上數據 #資金流向 #主力動向 #衍生品 #交易系統 #數據驅動",
+        "seo_keywords_raw": "主要：鏈上數據分析、巨鯨地址監控、籌碼分佈、衍生品清算、合約持倉量\n長尾：比特幣鏈上轉賬、以太坊質押數據、OI 持倉量異動、多空清算圖\n\n五、中概股 / 地緣政治\n命名邏輯：風向球比風向標更輕盈、更直覺，強調「即時變化」。 觀眾畫像：中概股交易者、美股／港股雙棲投資人、地緣敏感型資金。",
+        "directory_category_raw": "鏈上數據 / 籌碼分析",
+        "matrix_category_raw": "鏈上數據",
+        "matrix_market_raw": "加密貨幣",
+        "matrix_theme_raw": "鏈上/籌碼",
+        "matrix_update_frequency_raw": "每交易日",
+        "matrix_duration_raw": "3-5 分鐘",
+        "matrix_row_raw": "鏈上數據 | 鏈上顯微鏡 | 加密貨幣 | 鏈上/籌碼 | 每交易日 | 3-5 分鐘",
+        "brand_family_raw": "顯微鏡系列",
+        "brand_meaning_raw": "加密貨幣的鏈上籌碼流向",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_WITH_CONFLICT",
+      "source_category_directory": "鏈上數據 / 籌碼分析",
+      "source_category_matrix": "鏈上數據",
+      "channel_summary": "穿透 K 線迷霧，用顯微鏡級數據還原資金真實動向。拒絕盤後念新聞，不玩模棱兩可的猜測。本頻道專注於鏈上數據與暗池籌碼流向拆解，帶你看清機構大戶的籌碼積攢與高位出貨痕跡，追溯市場最真實的供需關係。\n即時監控主力資金的轉賬、質押與囤積動態，拆解不同成本區間的持倉結構與獲利盤壓力，並評估多空清算圖與合約持倉量（OI）異動。數據驅動，不靠感覺，讓每一筆交易都有鏈上證據支撐。",
+      "target_audience": "注重數據佐證、喜歡研究籌碼分佈與資金博弈的深度交易者",
+      "primary_market": "CRYPTO",
+      "secondary_markets": [],
+      "security_scope": [
+        "CRYPTO_ASSETS",
+        "DERIVATIVES"
+      ],
+      "preferred_sectors": [
+        "加密貨幣"
+      ],
+      "preferred_entities": [
+        "巨鯨地址",
+        "交易所",
+        "質押合約"
+      ],
+      "preferred_topic_types": [
+        "鏈上轉帳",
+        "籌碼成本",
+        "清算",
+        "OI",
+        "質押"
+      ],
+      "excluded_topics": [
+        "無鏈上證據的主力意圖推測"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_CRYPTO_BUSINESS_CUTOFF",
+      "market_session_preferences": [
+        "DAILY_AFTER_DEFINED_CUTOFF"
+      ],
+      "preferred_formats": [
+        "巨鯨地址",
+        "籌碼分佈",
+        "衍生品清算"
+      ],
+      "content_depth": "ONCHAIN_TACTICAL",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [
+        "加密市场为24/7，但资料使用‘每交易日收盘后’，业务截止时点不明确。"
+      ],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "CONFLICT",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-16-china-adr-weather-vane",
+      "channel_name": "中概風向球",
+      "source_index": 16,
+      "source_fields_raw": {
+        "source_index": 16,
+        "raw_channel_block": "中概風向球\n站在東西方資本交匯處，精準捕捉中概股與美元流動性風向。美股市場中的中國資產（中概股）兼具新興產業成長性與全球美元流動性定價權，受地緣政治博弈與國際機構情緒影響顯著。本頻道聚焦中概股（中國 ADRs）、美股半導體／硬科技及中美估值比價，帶你穿透華爾街情緒喧囂，在全球化配置中找准拐點。\n追蹤聯儲局政策路徑與美元指數（DXY）及離岸人民幣（CNH）匯率異動，監測全球資本回流美國的壓力閾值；深度對比華爾街 13F 機構持倉與美股中概股交易量異動，捕捉國際熱錢的配置節奏；挖掘經歷深度回調的中概藍籌與美股 AI／半導體龍頭的風險收益比。\n風向球核心觀測：\n美元流動性 - 聯儲局政策路徑＋DXY／CNH 匯率異動監測\n外資機構動向 - 13F 機構持倉增減＋中概股交易量異動\n估值與業績 - 中美核心資產估值折溢價對比\n適合對象： 關注美股、中概股及跨國資本流動的配置型投資者\n更新頻率： 每交易日收盤後（每集 3-4 分鐘）\n關鍵標籤： #美股 #中概股 #美元指數 #離岸人民幣 #地緣政治 #半導體 #機構持倉\nSEO 關鍵詞：\n主要：中概股分析、美元指數走勢、離岸人民幣 CNH、13F 機構持倉、美股中概股\n長尾：中概 ADR 估值折價、DXY 美元指數分析、中美科技股估值對比\n\n六、理財教育 / 定投策略\n命名邏輯：拆彈組、實驗室——強調「排雷、科學驗證」的安全感與可信度。 觀眾畫像：理財新手、年輕上班族、長期穩健增值型投資人。",
+        "channel_summary_raw": "站在東西方資本交匯處，精準捕捉中概股與美元流動性風向。美股市場中的中國資產（中概股）兼具新興產業成長性與全球美元流動性定價權，受地緣政治博弈與國際機構情緒影響顯著。本頻道聚焦中概股（中國 ADRs）、美股半導體／硬科技及中美估值比價，帶你穿透華爾街情緒喧囂，在全球化配置中找准拐點。\n追蹤聯儲局政策路徑與美元指數（DXY）及離岸人民幣（CNH）匯率異動，監測全球資本回流美國的壓力閾值；深度對比華爾街 13F 機構持倉與美股中概股交易量異動，捕捉國際熱錢的配置節奏；挖掘經歷深度回調的中概藍籌與美股 AI／半導體龍頭的風險收益比。",
+        "content_blocks_raw": "美元流動性 - 聯儲局政策路徑＋DXY／CNH 匯率異動監測\n外資機構動向 - 13F 機構持倉增減＋中概股交易量異動\n估值與業績 - 中美核心資產估值折溢價對比",
+        "preferred_formats_raw": [
+          "美元流動性",
+          "外資機構動向",
+          "估值與業績"
+        ],
+        "target_audience_raw": "關注美股、中概股及跨國資本流動的配置型投資者",
+        "update_frequency_raw": "每交易日收盤後（每集 3-4 分鐘）",
+        "tags_raw": "#美股 #中概股 #美元指數 #離岸人民幣 #地緣政治 #半導體 #機構持倉",
+        "seo_keywords_raw": "主要：中概股分析、美元指數走勢、離岸人民幣 CNH、13F 機構持倉、美股中概股\n長尾：中概 ADR 估值折價、DXY 美元指數分析、中美科技股估值對比\n\n六、理財教育 / 定投策略\n命名邏輯：拆彈組、實驗室——強調「排雷、科學驗證」的安全感與可信度。 觀眾畫像：理財新手、年輕上班族、長期穩健增值型投資人。",
+        "directory_category_raw": "中概股 / 地緣政治",
+        "matrix_category_raw": "中概股",
+        "matrix_market_raw": "美股中概",
+        "matrix_theme_raw": "地緣/流動性",
+        "matrix_update_frequency_raw": "每交易日",
+        "matrix_duration_raw": "3-4 分鐘",
+        "matrix_row_raw": "中概股 | 中概風向球 | 美股中概 | 地緣/流動性 | 每交易日 | 3-4 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "中概股與美元流動性的即時變化",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "中概股 / 地緣政治",
+      "source_category_matrix": "中概股",
+      "channel_summary": "站在東西方資本交匯處，精準捕捉中概股與美元流動性風向。美股市場中的中國資產（中概股）兼具新興產業成長性與全球美元流動性定價權，受地緣政治博弈與國際機構情緒影響顯著。本頻道聚焦中概股（中國 ADRs）、美股半導體／硬科技及中美估值比價，帶你穿透華爾街情緒喧囂，在全球化配置中找准拐點。\n追蹤聯儲局政策路徑與美元指數（DXY）及離岸人民幣（CNH）匯率異動，監測全球資本回流美國的壓力閾值；深度對比華爾街 13F 機構持倉與美股中概股交易量異動，捕捉國際熱錢的配置節奏；挖掘經歷深度回調的中概藍籌與美股 AI／半導體龍頭的風險收益比。",
+      "target_audience": "關注美股、中概股及跨國資本流動的配置型投資者",
+      "primary_market": "US_CHINA_ADR",
+      "secondary_markets": [
+        "US",
+        "CN",
+        "HK"
+      ],
+      "security_scope": [
+        "CHINA_ADR",
+        "US_TECH",
+        "FX",
+        "13F"
+      ],
+      "preferred_sectors": [
+        "中概股",
+        "半導體",
+        "硬科技"
+      ],
+      "preferred_entities": [
+        "中國ADR",
+        "DXY",
+        "CNH",
+        "13F機構"
+      ],
+      "preferred_topic_types": [
+        "美元流動性",
+        "機構持倉",
+        "估值折溢價",
+        "地緣政治"
+      ],
+      "excluded_topics": [],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA",
+        "LICENSED_MEDIA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "PREVIOUS_US_SESSION",
+      "market_session_preferences": [
+        "EACH_US_TRADING_DAY_AFTER_CLOSE"
+      ],
+      "preferred_formats": [
+        "美元流動性",
+        "外資機構動向",
+        "估值與業績"
+      ],
+      "content_depth": "CROSS_BORDER_EQUITY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance",
+        "excluded_topics"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "UNKNOWN",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-17-financial-literacy-bomb-squad",
+      "channel_name": "財商拆彈組",
+      "source_index": 17,
+      "source_fields_raw": {
+        "source_index": 17,
+        "raw_channel_block": "財商拆彈組\n每天 3 分鐘，拆除理財話術與高風險陷阱，保護你的血汗錢。理財經理推薦的產品到底賺誰的錢？高收益承諾背後隱藏著什麼槓桿？本頻道專為拒絕被割韭菜的現代人打造。不用晦澀辭彙，不講虛浮理論，三分鐘白話帶你拆解金融陷阱，建立硬核防割牆。\n拆彈小分隊每日出勤：拆解各類高息理財、定投陷阱與隱藏手續費；三分鐘搞懂債券、ETF、貨幣基金的真實底層標的；面對市場大跌，教你如何避開情緒化跟風割肉。每天三分鐘，財富不踩雷！\n拆彈小分隊每日拆解：\n話術套路 - 拆解各類高息理財、定投陷阱與隱藏手續費\n基礎認知 - 三分鐘搞懂債券、ETF、貨幣基金的真實底層標的\n避坑指南 - 面對市場大跌，普通人該如何避開情緒化跟風割肉\n適合對象： 理財新手、職場小白、希望保護血汗錢並建立健康理財觀念的所有人\n更新頻率： 每日 18:00 準時拆彈（每集 3 分鐘）\n關鍵標籤： #財商思維 #理財避坑 #理財入門 #小白理財 #防割韭菜 #金融科普 #財富增值\nSEO 關鍵詞：\n主要：理財入門教學、金融陷阱拆解、ETF 是什麼、債券基金科普、防詐騙理財\n長尾：高息理財陷阱、隱藏手續費揭秘、大跌不要割肉、理財話術拆解",
+        "channel_summary_raw": "每天 3 分鐘，拆除理財話術與高風險陷阱，保護你的血汗錢。理財經理推薦的產品到底賺誰的錢？高收益承諾背後隱藏著什麼槓桿？本頻道專為拒絕被割韭菜的現代人打造。不用晦澀辭彙，不講虛浮理論，三分鐘白話帶你拆解金融陷阱，建立硬核防割牆。\n拆彈小分隊每日出勤：拆解各類高息理財、定投陷阱與隱藏手續費；三分鐘搞懂債券、ETF、貨幣基金的真實底層標的；面對市場大跌，教你如何避開情緒化跟風割肉。每天三分鐘，財富不踩雷！",
+        "content_blocks_raw": "話術套路 - 拆解各類高息理財、定投陷阱與隱藏手續費\n基礎認知 - 三分鐘搞懂債券、ETF、貨幣基金的真實底層標的\n避坑指南 - 面對市場大跌，普通人該如何避開情緒化跟風割肉",
+        "preferred_formats_raw": [
+          "話術套路",
+          "基礎認知",
+          "避坑指南"
+        ],
+        "target_audience_raw": "理財新手、職場小白、希望保護血汗錢並建立健康理財觀念的所有人",
+        "update_frequency_raw": "每日 18:00 準時拆彈（每集 3 分鐘）",
+        "tags_raw": "#財商思維 #理財避坑 #理財入門 #小白理財 #防割韭菜 #金融科普 #財富增值",
+        "seo_keywords_raw": "主要：理財入門教學、金融陷阱拆解、ETF 是什麼、債券基金科普、防詐騙理財\n長尾：高息理財陷阱、隱藏手續費揭秘、大跌不要割肉、理財話術拆解",
+        "directory_category_raw": "理財教育 / 定投策略",
+        "matrix_category_raw": "理財教育",
+        "matrix_market_raw": "通用",
+        "matrix_theme_raw": "小白科普/避坑",
+        "matrix_update_frequency_raw": "每日 18:00",
+        "matrix_duration_raw": "3 分鐘",
+        "matrix_row_raw": "理財教育 | 財商拆彈組 | 通用 | 小白科普/避坑 | 每日 18:00 | 3 分鐘",
+        "brand_family_raw": "守護系列",
+        "brand_meaning_raw": "小白投資人的血汗錢不被割韭菜",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "理財教育 / 定投策略",
+      "source_category_matrix": "理財教育",
+      "channel_summary": "每天 3 分鐘，拆除理財話術與高風險陷阱，保護你的血汗錢。理財經理推薦的產品到底賺誰的錢？高收益承諾背後隱藏著什麼槓桿？本頻道專為拒絕被割韭菜的現代人打造。不用晦澀辭彙，不講虛浮理論，三分鐘白話帶你拆解金融陷阱，建立硬核防割牆。\n拆彈小分隊每日出勤：拆解各類高息理財、定投陷阱與隱藏手續費；三分鐘搞懂債券、ETF、貨幣基金的真實底層標的；面對市場大跌，教你如何避開情緒化跟風割肉。每天三分鐘，財富不踩雷！",
+      "target_audience": "理財新手、職場小白、希望保護血汗錢並建立健康理財觀念的所有人",
+      "primary_market": "GENERAL",
+      "secondary_markets": [],
+      "security_scope": [
+        "ETF",
+        "BONDS",
+        "FUNDS",
+        "RETAIL_PRODUCTS"
+      ],
+      "preferred_sectors": [
+        "理財教育"
+      ],
+      "preferred_entities": [
+        "理財新手"
+      ],
+      "preferred_topic_types": [
+        "金融陷阱",
+        "費用",
+        "基礎科普",
+        "防詐",
+        "情緒風險"
+      ],
+      "excluded_topics": [
+        "具體買賣建議",
+        "高收益承諾"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_REGULATOR"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "CURRENT_POLICY_OR_PRODUCT_TERMS",
+      "market_session_preferences": [
+        "DAILY_1800"
+      ],
+      "preferred_formats": [
+        "話術套路",
+        "基礎認知",
+        "避坑指南"
+      ],
+      "content_depth": "BEGINNER_EDUCATION",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-18-semiconductor-hacker",
+      "channel_name": "半導體駭客",
+      "source_index": 18,
+      "source_fields_raw": {
+        "source_index": 18,
+        "raw_channel_block": "半導體駭客\n用工程師的硬核視角，透視半導體產業鏈的商業與技術壁壘。從 EDA 軟體、光刻機到先進封裝（CoWoS），從 Silicon 到 AI 算力晶片。我們不談虛無縹緲的概念，只用最嚴謹的技術演進邏輯與供應鏈訂單調查，帶你讀懂硬科技背後的財富密碼。\n追蹤台積電、三星、英特爾的節點突破與良率，剖析 ASML、應用材料等上游巨頭的壟斷護城河，拆解 GPU、NPU 及 HBM 存儲晶片的迭代路線圖。本頻道橫跨台股與美股半導體供應鏈，是科技投資者必備的硬核情報站。\n產業拆解維度：\n晶圓代工 & 封裝 - 追蹤台積電、三星、英特爾的節點突破與良率\n設備與材料 - 剖析 ASML、應用材料等上游巨頭的壟斷護城河\n算力與晶片 - 拆解 GPU、NPU 及 HBM 存儲晶片的迭代路線圖\n適合對象： 科技股投資者、半導體從業者、關注 AI 硬體底座的理智研究者\n更新頻率： 每週三、週五（每集 3-5 分鐘）\n關鍵標籤： #半導體 #台積電 #AI晶片 #先進封裝 #光刻機 #科技股 #供應鏈 #硬體架構\nSEO 關鍵詞：\n主要：半導體產業分析、台積電先進封裝、AI 晶片供應鏈、CoWoS 產能、HBM 存儲\n長尾：ASML 光刻機壟斷、GPU NPU 迭代路線、晶圓代工良率、半導體設備股",
+        "channel_summary_raw": "用工程師的硬核視角，透視半導體產業鏈的商業與技術壁壘。從 EDA 軟體、光刻機到先進封裝（CoWoS），從 Silicon 到 AI 算力晶片。我們不談虛無縹緲的概念，只用最嚴謹的技術演進邏輯與供應鏈訂單調查，帶你讀懂硬科技背後的財富密碼。\n追蹤台積電、三星、英特爾的節點突破與良率，剖析 ASML、應用材料等上游巨頭的壟斷護城河，拆解 GPU、NPU 及 HBM 存儲晶片的迭代路線圖。本頻道橫跨台股與美股半導體供應鏈，是科技投資者必備的硬核情報站。",
+        "content_blocks_raw": "晶圓代工 & 封裝 - 追蹤台積電、三星、英特爾的節點突破與良率\n設備與材料 - 剖析 ASML、應用材料等上游巨頭的壟斷護城河\n算力與晶片 - 拆解 GPU、NPU 及 HBM 存儲晶片的迭代路線圖",
+        "preferred_formats_raw": [
+          "晶圓代工 & 封裝",
+          "設備與材料",
+          "算力與晶片"
+        ],
+        "target_audience_raw": "科技股投資者、半導體從業者、關注 AI 硬體底座的理智研究者",
+        "update_frequency_raw": "每週三、週五（每集 3-5 分鐘）",
+        "tags_raw": "#半導體 #台積電 #AI晶片 #先進封裝 #光刻機 #科技股 #供應鏈 #硬體架構",
+        "seo_keywords_raw": "主要：半導體產業分析、台積電先進封裝、AI 晶片供應鏈、CoWoS 產能、HBM 存儲\n長尾：ASML 光刻機壟斷、GPU NPU 迭代路線、晶圓代工良率、半導體設備股",
+        "directory_category_raw": "理財教育 / 定投策略",
+        "matrix_category_raw": "半導體",
+        "matrix_market_raw": "台股＋美股",
+        "matrix_theme_raw": "硬核產業/技術",
+        "matrix_update_frequency_raw": "每週三、週五",
+        "matrix_duration_raw": "3-5 分鐘",
+        "matrix_row_raw": "半導體 | 半導體駭客 | 台股＋美股 | 硬核產業/技術 | 每週三、週五 | 3-5 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "硬核技術視角透視半導體供應鏈",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_WITH_CONFLICT",
+      "source_category_directory": "理財教育 / 定投策略",
+      "source_category_matrix": "半導體",
+      "channel_summary": "用工程師的硬核視角，透視半導體產業鏈的商業與技術壁壘。從 EDA 軟體、光刻機到先進封裝（CoWoS），從 Silicon 到 AI 算力晶片。我們不談虛無縹緲的概念，只用最嚴謹的技術演進邏輯與供應鏈訂單調查，帶你讀懂硬科技背後的財富密碼。\n追蹤台積電、三星、英特爾的節點突破與良率，剖析 ASML、應用材料等上游巨頭的壟斷護城河，拆解 GPU、NPU 及 HBM 存儲晶片的迭代路線圖。本頻道橫跨台股與美股半導體供應鏈，是科技投資者必備的硬核情報站。",
+      "target_audience": "科技股投資者、半導體從業者、關注 AI 硬體底座的理智研究者",
+      "primary_market": "TW_US",
+      "secondary_markets": [
+        "TW",
+        "US",
+        "KR",
+        "EU"
+      ],
+      "security_scope": [
+        "SEMICONDUCTOR_STOCKS",
+        "SUPPLY_CHAIN"
+      ],
+      "preferred_sectors": [
+        "晶圓代工",
+        "先進封裝",
+        "設備材料",
+        "AI晶片",
+        "HBM"
+      ],
+      "preferred_entities": [
+        "台積電",
+        "三星",
+        "英特爾",
+        "ASML",
+        "應用材料"
+      ],
+      "preferred_topic_types": [
+        "技術路線",
+        "良率",
+        "產能",
+        "設備材料",
+        "供應鏈訂單"
+      ],
+      "excluded_topics": [
+        "無證據的概念炒作"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "OFFICIAL_MARKET",
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "HALF_WEEK_OR_NEXT_TECH_EVENT",
+      "market_session_preferences": [
+        "WEEKLY_WED_FRI"
+      ],
+      "preferred_formats": [
+        "晶圓代工 & 封裝",
+        "設備與材料",
+        "算力與晶片"
+      ],
+      "content_depth": "TECHNICAL_CROSS_ENTITY",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [
+        "目录/正文归类为‘理財教育 / 定投策略’，跨分类矩阵归类为‘半導體’。"
+      ],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "CONFLICT",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "CONFLICT",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-19-wall-street-thermometer",
+      "channel_name": "華爾街溫度計",
+      "source_index": 19,
+      "source_fields_raw": {
+        "source_index": 19,
+        "raw_channel_block": "華爾街溫度計\n資金往哪流，行情就在哪，用溫度計讀懂市場的真實情緒。資金往哪流，行情就在哪。追蹤美股市場的大戶動向、ETF 淨流入流出、恐慌貪婪指數、Put/Call 比率與融資餘額變化。不猜漲跌，只看數據——用資金流告訴你市場的真實溫度。\n涵蓋 SPY、QQQ、IWM 等核心 ETF 的資金流向、機構多空持倉變化（含 13F 季度申報解讀）、VIX 恐慌指數的結構分析、以及整體市場的融資餘額與保證金債務趨勢。也會追蹤產業板塊間的資金輪動，幫你判讀市場是「貪婪過熱」還是「恐慌見底」。\n每集內容形式：\nETF 資金流向＋Put/Call 比率速報\nVIX 與避險情緒深度解讀\n一週資金面總回顧＋下週關鍵水位提醒\n適合對象： 美股短中期交易者、風險管理型投資人、ETF 操作者\n更新頻率： 每週 2-3 集（每集 3-5 分鐘）\n關鍵標籤： #美股資金流向 #VIX #PutCall比率 #ETF流量 #機構持倉 #市場溫度\nSEO 關鍵詞：\n主要：美股資金流向、VIX 恐慌指數、Put/Call 比率、ETF 淨流入、機構持倉\n長尾：SPY 資金流、QQQ 申購贖回、融資餘額變化、美股風險指標",
+        "channel_summary_raw": "資金往哪流，行情就在哪，用溫度計讀懂市場的真實情緒。資金往哪流，行情就在哪。追蹤美股市場的大戶動向、ETF 淨流入流出、恐慌貪婪指數、Put/Call 比率與融資餘額變化。不猜漲跌，只看數據——用資金流告訴你市場的真實溫度。\n涵蓋 SPY、QQQ、IWM 等核心 ETF 的資金流向、機構多空持倉變化（含 13F 季度申報解讀）、VIX 恐慌指數的結構分析、以及整體市場的融資餘額與保證金債務趨勢。也會追蹤產業板塊間的資金輪動，幫你判讀市場是「貪婪過熱」還是「恐慌見底」。",
+        "content_blocks_raw": "ETF 資金流向＋Put/Call 比率速報\nVIX 與避險情緒深度解讀\n一週資金面總回顧＋下週關鍵水位提醒",
+        "preferred_formats_raw": [
+          "ETF 資金流向＋Put/Call 比率速報",
+          "VIX 與避險情緒深度解讀",
+          "一週資金面總回顧＋下週關鍵水位提醒"
+        ],
+        "target_audience_raw": "美股短中期交易者、風險管理型投資人、ETF 操作者",
+        "update_frequency_raw": "每週 2-3 集（每集 3-5 分鐘）",
+        "tags_raw": "#美股資金流向 #VIX #PutCall比率 #ETF流量 #機構持倉 #市場溫度",
+        "seo_keywords_raw": "主要：美股資金流向、VIX 恐慌指數、Put/Call 比率、ETF 淨流入、機構持倉\n長尾：SPY 資金流、QQQ 申購贖回、融資餘額變化、美股風險指標",
+        "directory_category_raw": "理財教育 / 定投策略",
+        "matrix_category_raw": "美股資金",
+        "matrix_market_raw": "美股",
+        "matrix_theme_raw": "資金面/情緒指標",
+        "matrix_update_frequency_raw": "每週 2-3 集",
+        "matrix_duration_raw": "3-5 分鐘",
+        "matrix_row_raw": "美股資金 | 華爾街溫度計 | 美股 | 資金面/情緒指標 | 每週 2-3 集 | 3-5 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "市場貪婪與恐慌的真實溫度",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_WITH_CONFLICT",
+      "source_category_directory": "理財教育 / 定投策略",
+      "source_category_matrix": "美股資金",
+      "channel_summary": "資金往哪流，行情就在哪，用溫度計讀懂市場的真實情緒。資金往哪流，行情就在哪。追蹤美股市場的大戶動向、ETF 淨流入流出、恐慌貪婪指數、Put/Call 比率與融資餘額變化。不猜漲跌，只看數據——用資金流告訴你市場的真實溫度。\n涵蓋 SPY、QQQ、IWM 等核心 ETF 的資金流向、機構多空持倉變化（含 13F 季度申報解讀）、VIX 恐慌指數的結構分析、以及整體市場的融資餘額與保證金債務趨勢。也會追蹤產業板塊間的資金輪動，幫你判讀市場是「貪婪過熱」還是「恐慌見底」。",
+      "target_audience": "美股短中期交易者、風險管理型投資人、ETF 操作者",
+      "primary_market": "US",
+      "secondary_markets": [],
+      "security_scope": [
+        "US_ETF",
+        "US_OPTIONS",
+        "US_MARGIN"
+      ],
+      "preferred_sectors": [
+        "美股資金面"
+      ],
+      "preferred_entities": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "VIX"
+      ],
+      "preferred_topic_types": [
+        "ETF流向",
+        "Put/Call",
+        "VIX",
+        "13F",
+        "融資餘額"
+      ],
+      "excluded_topics": [
+        "無數據的漲跌猜測"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "LICENSED_OR_AUTHORIZED_DATA"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "ONE_US_TRADING_WEEK",
+      "market_session_preferences": [
+        "US_WEEKLY_2_3",
+        "ASIA_AFTER_US_CLOSE"
+      ],
+      "preferred_formats": [
+        "ETF 資金流向＋Put/Call 比率速報",
+        "VIX 與避險情緒深度解讀",
+        "一週資金面總回顧＋下週關鍵水位提醒"
+      ],
+      "content_depth": "MARKET_SENTIMENT",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [
+        "目录/正文归类为‘理財教育 / 定投策略’，跨分类矩阵归类为‘美股資金’。"
+      ],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "CONFLICT",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "CONFLICT",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    },
+    {
+      "channel_id": "ch-20-dca-lab",
+      "channel_name": "定投實驗室",
+      "source_index": 20,
+      "source_fields_raw": {
+        "source_index": 20,
+        "raw_channel_block": "定投實驗室\n用 30 年歷史數據做實驗，打磨普通人也能用的 ETF 自動駕駛方案。拒絕擇時焦慮，相信複利奇蹟。本頻道專注於寬基指數（S&P 500、納斯達克 100、台股 50 等）與行業 ETF 的量化回測。我們用 10-30 年的歷史數據驗證各種定投策略（網格交易、均線偏離法、金字塔建倉），為你打磨最省心的財富增長引擎。\n普通定投 vs 價值平均法，哪種策略年化收益率（CAGR）更高？ETF 費率、跟蹤誤差、流動性與分紅率全方位橫評。更重要的是——如何在漫長熊市中堅持執行紀律，避免半途而廢。讓時間成為你的朋友。\n實驗室數據報告：\n策略回測 - 普通定投 vs 價值平均法，哪種 CAGR 更高？\nETF 深度評測 - 費率、跟蹤誤差、流動性與分紅率全方位橫評\n心理防線構建 - 如何在漫長熊市中堅持執行紀律，避免半途而廢\n適合對象： 上班族、定期定額投資者、希望通過 ETF 實現無腦穩健增值的長線派\n更新頻率： 每週日上午（每集 5-8 分鐘）\n關鍵標籤： #指數基金 #ETF定投 #標普500 #納斯達克 #複利效應 #資產積累 #量化回測 #長期投資\nSEO 關鍵詞：\n主要：ETF 定投教學、標普 500 定投、納斯達克定投、複利計算、指數基金推薦\n長尾：價值平均法定投、網格交易回測、ETF 費率比較、熊市定投心理學",
+        "channel_summary_raw": "用 30 年歷史數據做實驗，打磨普通人也能用的 ETF 自動駕駛方案。拒絕擇時焦慮，相信複利奇蹟。本頻道專注於寬基指數（S&P 500、納斯達克 100、台股 50 等）與行業 ETF 的量化回測。我們用 10-30 年的歷史數據驗證各種定投策略（網格交易、均線偏離法、金字塔建倉），為你打磨最省心的財富增長引擎。\n普通定投 vs 價值平均法，哪種策略年化收益率（CAGR）更高？ETF 費率、跟蹤誤差、流動性與分紅率全方位橫評。更重要的是——如何在漫長熊市中堅持執行紀律，避免半途而廢。讓時間成為你的朋友。",
+        "content_blocks_raw": "策略回測 - 普通定投 vs 價值平均法，哪種 CAGR 更高？\nETF 深度評測 - 費率、跟蹤誤差、流動性與分紅率全方位橫評\n心理防線構建 - 如何在漫長熊市中堅持執行紀律，避免半途而廢",
+        "preferred_formats_raw": [
+          "策略回測",
+          "ETF 深度評測",
+          "心理防線構建"
+        ],
+        "target_audience_raw": "上班族、定期定額投資者、希望通過 ETF 實現無腦穩健增值的長線派",
+        "update_frequency_raw": "每週日上午（每集 5-8 分鐘）",
+        "tags_raw": "#指數基金 #ETF定投 #標普500 #納斯達克 #複利效應 #資產積累 #量化回測 #長期投資",
+        "seo_keywords_raw": "主要：ETF 定投教學、標普 500 定投、納斯達克定投、複利計算、指數基金推薦\n長尾：價值平均法定投、網格交易回測、ETF 費率比較、熊市定投心理學",
+        "directory_category_raw": "理財教育 / 定投策略",
+        "matrix_category_raw": "定投策略",
+        "matrix_market_raw": "通用",
+        "matrix_theme_raw": "量化回測/長期",
+        "matrix_update_frequency_raw": "每週日上午",
+        "matrix_duration_raw": "5-8 分鐘",
+        "matrix_row_raw": "定投策略 | 定投實驗室 | 通用 | 量化回測/長期 | 每週日上午 | 5-8 分鐘",
+        "brand_family_raw": "獨立品牌",
+        "brand_meaning_raw": "科學實驗精神驗證定投策略",
+        "global_risk_template_raw": "本頻道所有內容僅為資訊分享與學術研討，不構成任何具體買賣建議。市場有風險，投資需謹慎。請根據自身財務狀況與風險承受能力，獨立評估並做出投資決策。"
+      },
+      "profile_version": "0.1-draft",
+      "profile_status": "DRAFT_NEEDS_HUMAN_CONFIRMATION",
+      "source_category_directory": "理財教育 / 定投策略",
+      "source_category_matrix": "定投策略",
+      "channel_summary": "用 30 年歷史數據做實驗，打磨普通人也能用的 ETF 自動駕駛方案。拒絕擇時焦慮，相信複利奇蹟。本頻道專注於寬基指數（S&P 500、納斯達克 100、台股 50 等）與行業 ETF 的量化回測。我們用 10-30 年的歷史數據驗證各種定投策略（網格交易、均線偏離法、金字塔建倉），為你打磨最省心的財富增長引擎。\n普通定投 vs 價值平均法，哪種策略年化收益率（CAGR）更高？ETF 費率、跟蹤誤差、流動性與分紅率全方位橫評。更重要的是——如何在漫長熊市中堅持執行紀律，避免半途而廢。讓時間成為你的朋友。",
+      "target_audience": "上班族、定期定額投資者、希望通過 ETF 實現無腦穩健增值的長線派",
+      "primary_market": "GENERAL",
+      "secondary_markets": [
+        "TW",
+        "US"
+      ],
+      "security_scope": [
+        "BROAD_INDEX_ETF",
+        "SECTOR_ETF"
+      ],
+      "preferred_sectors": [
+        "寬基指數",
+        "行業ETF"
+      ],
+      "preferred_entities": [
+        "S&P 500",
+        "NASDAQ 100",
+        "台灣50"
+      ],
+      "preferred_topic_types": [
+        "長期回測",
+        "價值平均",
+        "網格",
+        "費率",
+        "跟蹤誤差",
+        "心理紀律"
+      ],
+      "excluded_topics": [
+        "收益保證",
+        "短期择时承诺"
+      ],
+      "prohibited_claims": [
+        "具体买卖建议",
+        "收益保证",
+        "将 UNKNOWN 或 OPINION 写成 FACT"
+      ],
+      "allowed_source_classes": [
+        "NEEDS_CONFIRMATION"
+      ],
+      "minimum_evidence_policy": "FACTS_TRACEABLE; CAUSAL_CLAIMS_REQUIRE_QUALIFIED_EVIDENCE",
+      "opinion_usage_policy": "OPINION_AS_LEAD_ONLY; NEVER_UPGRADE_TO_FACT",
+      "maximum_data_age": "UNTIL_MODEL_OR_DATA_VERSION_CHANGES",
+      "market_session_preferences": [
+        "WEEKLY_SUNDAY"
+      ],
+      "preferred_formats": [
+        "策略回測",
+        "ETF 深度評測",
+        "心理防線構建"
+      ],
+      "content_depth": "LONG_HORIZON_QUANT_EDU",
+      "title_intensity": "MODERATE; NO_CERTAINTY_OR_BUY_SELL_LANGUAGE",
+      "risk_tolerance": "NEEDS_CONFIRMATION",
+      "required_disclosures": [
+        "统一风险提示模板",
+        "数据时点/市场时段",
+        "UNKNOWN/OPINION/SOURCE_CONFLICT"
+      ],
+      "daily_primary_target": 5,
+      "daily_backup_target_range": [
+        0,
+        3
+      ],
+      "shortage_policy": "HONEST_SHORTAGE",
+      "recent_duplicate_window_days": 30,
+      "positive_examples": [],
+      "negative_examples": [],
+      "missing_fields": [
+        "channel_owner",
+        "channel_priority",
+        "positive_examples",
+        "negative_examples",
+        "recent_30d_adopted_topics",
+        "do_not_repeat_patterns",
+        "approved_excluded_topics",
+        "approved_evidence_policy",
+        "approved_risk_tolerance"
+      ],
+      "conflicts": [],
+      "proposed_fields": [
+        "channel_id",
+        "allowed_source_classes",
+        "minimum_evidence_policy",
+        "opinion_usage_policy",
+        "maximum_data_age",
+        "title_intensity",
+        "risk_tolerance",
+        "daily_primary_target",
+        "daily_backup_target_range",
+        "shortage_policy",
+        "recent_duplicate_window_days"
+      ],
+      "field_provenance": {
+        "channel_id": "PROPOSED",
+        "channel_name": "SUPPLIED",
+        "source_index": "DERIVED_FROM_SUPPLIED",
+        "source_fields_raw": "SUPPLIED",
+        "profile_version": "PROPOSED",
+        "profile_status": "DERIVED_FROM_SUPPLIED",
+        "source_category_directory": "SUPPLIED",
+        "source_category_matrix": "SUPPLIED",
+        "channel_summary": "SUPPLIED",
+        "target_audience": "SUPPLIED",
+        "primary_market": "SUPPLIED",
+        "secondary_markets": "DERIVED_FROM_SUPPLIED",
+        "security_scope": "DERIVED_FROM_SUPPLIED",
+        "preferred_sectors": "DERIVED_FROM_SUPPLIED",
+        "preferred_entities": "DERIVED_FROM_SUPPLIED",
+        "preferred_topic_types": "DERIVED_FROM_SUPPLIED",
+        "excluded_topics": "DERIVED_FROM_SUPPLIED",
+        "prohibited_claims": "DERIVED_FROM_SUPPLIED",
+        "allowed_source_classes": "PROPOSED",
+        "minimum_evidence_policy": "PROPOSED",
+        "opinion_usage_policy": "PROPOSED",
+        "maximum_data_age": "PROPOSED",
+        "market_session_preferences": "DERIVED_FROM_SUPPLIED",
+        "preferred_formats": "SUPPLIED",
+        "content_depth": "DERIVED_FROM_SUPPLIED",
+        "title_intensity": "PROPOSED",
+        "risk_tolerance": "UNKNOWN",
+        "required_disclosures": "DERIVED_FROM_SUPPLIED",
+        "daily_primary_target": "PROPOSED",
+        "daily_backup_target_range": "PROPOSED",
+        "shortage_policy": "PROPOSED",
+        "recent_duplicate_window_days": "PROPOSED",
+        "positive_examples": "UNKNOWN",
+        "negative_examples": "UNKNOWN",
+        "missing_fields": "DERIVED_FROM_SUPPLIED",
+        "conflicts": "DERIVED_FROM_SUPPLIED",
+        "proposed_fields": "PROPOSED",
+        "field_provenance": "PROPOSED"
+      }
+    }
+  ]
+}
