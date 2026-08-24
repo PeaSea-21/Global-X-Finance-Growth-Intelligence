@@ -1,5 +1,12 @@
 # Work Changelog
 
+## 2026-08-24 — main repository consolidation
+
+- Consolidated the BEN channel workflow, research, Style Packs, manuscripts, source timestamps, history review, code, tests, site source, and durable assets in `d2bb199`.
+- Added `/outputs/` to `.gitignore`; local probes, credentials, private config, runtime outputs, and dependencies stayed outside Git.
+- Pushed only `origin/main`, advancing it from `0f61e3c` to `d2bb199`. Remote `gh-pages` stayed at `f80a5fa` before and after the push; no publish script or `gh-pages` push ran.
+- Verification passed: `git diff --cached --check`, 150 Python tests, repository credential scan, Project Memory check, and three Node review-page tests.
+
 ## 2026-08-14 to 2026-08-16 — Foundation and discovery history (compressed)
 
 - Completed the shared Taiwan/US Market Pack, SQLite migrations, immutable Evidence/source governance, TWSE official data path, compliance precheck, realtime source registry, X/YouTube bounded collectors, P03/P04 event clustering, and the initial BEN Radar UI.
@@ -417,4 +424,4 @@
 - Propagated `fetched_at` through weekend news, close-talk news/X/disclosure FactPacks, editorial generation, first-ten builders, and content-studio synchronization. Legacy databases without the news `fetched_at` column remain readable and return an honest null.
 - The all-20 audit now requires every public source to have a real publication/fetch/observation date and valid ISO `published_at`/`fetched_at`; it reports `source_time_count`. Added a missing-time regression test and updated both active BEN automations with the same fail-closed gate.
 - Verification: 19 focused Python tests, Node page test, and all-20 audit passed with 134/134 timed source cards and zero violations. The full project check passed 150 tests plus the credential scan. Browser checks at 1440x1000 and 390x844 confirmed source cards precede manuscripts, no horizontal overflow, and no console errors. The same-day source gate stayed pending, so no public deployment occurred.
-<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
