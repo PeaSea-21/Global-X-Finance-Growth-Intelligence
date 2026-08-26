@@ -61,7 +61,12 @@
         </div>
         <div class="detail-status" id="detail-status"></div>
       </div>
+      <div class="detail-tabs" role="tablist" aria-label="頻道內容檢視">
+        <button id="today-tab" class="detail-tab is-active" type="button" role="tab" aria-selected="true">今日文稿</button>
+        <button id="history-tab" class="detail-tab" type="button" role="tab" aria-selected="false">歷史回顧 <span id="history-count">0</span></button>
+      </div>
       <div id="topic-list" class="topic-list"></div>
+      <div id="history-list" class="history-list" hidden></div>
     </section>
   </main>
 

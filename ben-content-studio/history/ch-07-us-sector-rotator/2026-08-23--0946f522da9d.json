@@ -1,0 +1,904 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-26T15:24:49+08:00",
+  "snapshot_fingerprint": "0946f522da9d5be21e45deba1af91e65022302d9be3ed9917209003a17cc9312",
+  "channel": {
+    "channel_order": 7,
+    "channel_id": "ch-07-us-sector-rotator",
+    "channel_name": "板塊輪動儀",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PROFILE_MISMATCH",
+    "style_confidence": "MEDIUM_FOR_SINGLE_STOCK_DEEP_DIVE_LOW_FOR_SECTOR_ROTATION",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-23",
+    "profile_promise": "比較標普11大板塊和ETF相對強弱，解釋資金為何輪動。",
+    "audience": "美股ETF投資人、板塊輪動策略使用者、中長期資產配置者",
+    "language_style": "樣本是長篇單股深拆：矛盾鉤子、技術位、財報、產業邏輯和機構分歧；不等於已觀察到板塊輪動語言。",
+    "opening_hook": "點出股價與基本面/財報之間的矛盾。",
+    "narrative_logic": [
+      "單股矛盾",
+      "技術結構",
+      "財報",
+      "產業階段",
+      "華爾街分歧",
+      "估值/資金",
+      "短期情境"
+    ],
+    "ending_pattern": "樣本以單股關鍵位收尾；生產稿應回到板塊領先/落後和輪動失效條件。",
+    "profile_sample_alignment": "PROFILE_SAMPLE_MISMATCH_BOTH_SAMPLES_ARE_SINGLE_STOCK",
+    "reason": "依現有稀疏樣本與24/48小時來源生成，等待Ben校準頻道口吻。",
+    "topics": [
+      {
+        "candidate_id": "sector-rotator:2026-08-23:ai-profit-test",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？",
+        "title_options": [
+          "【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？",
+          "AI牛市進入獲利驗證：記憶體、伺服器、先進封裝誰先交成績？",
+          "從資本支出到現金流，AI硬體三板塊正在重新排隊"
+        ],
+        "why_now": [
+          "最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。"
+        ],
+        "why_channel": [
+          "用三個以上AI子板塊比較成本、毛利與資本支出，而不是隻拆一檔股票。"
+        ],
+        "facts": [
+          "媒體報導記憶體成本可能推升AI伺服器價格。",
+          "最新報導比較鴻海、廣達與緯穎財報三率。",
+          "經濟日報報導封測五雄合計投入逾4,600億元擴產。",
+          "Yahoo奇摩報導臺股企業第二季合計獲利約1.8兆元。"
+        ],
+        "unknowns": [
+          "未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。",
+          "擴產金額不等於未來利用率或獲利。"
+        ],
+        "evidence": [
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+            "published_at": "2026-08-23T02:29:41+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_class": "REPORTED",
+            "title": "分析｜從三大伺服器代工廠財報3率 看懂鴻海、廣達及緯穎不同策略布局",
+            "published_at": "2026-08-23T05:57:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://tw.news.yahoo.com/%E5%88%86%E6%9E%90-%E5%BE%9E%E4%B8%89%E5%A4%A7%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%BB%A3%E5%B7%A5%E5%BB%A0%E8%B2%A1%E5%A0%B13%E7%8E%87-%E7%9C%8B%E6%87%82%E9%B4%BB%E6%B5%B7-%E5%BB%A3%E9%81%94%E5%8F%8A%E7%B7%AF%E7%A9%8E%E4%B8%8D%E5%90%8C%E7%AD%96%E7%95%A5%E5%B8%83%E5%B1%80-011000792.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "經濟日報",
+            "evidence_class": "REPORTED",
+            "title": "封測五雄砸逾4,600億擴產 應對 AI 熱潮引爆產能需求",
+            "published_at": "2026-08-22T17:36:23+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://money.udn.com/money/story/5612/9708191",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_class": "REPORTED",
+            "title": "台股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」",
+            "published_at": "2026-08-23T06:52:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%BC%81%E6%A5%ADq2%E7%8B%82%E8%B3%BA1-8%E5%85%86%E5%89%B5%E6%96%B0%E9%AB%98-ai%E6%95%88%E6%87%89%E5%B7%B2%E6%93%B4%E6%95%A3-%E6%B3%95%E4%BA%BA%E9%BB%9E%E5%90%8D-8%E5%A4%A7%E9%87%91%E7%A4%A6-065200994.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "ETtoday財經雲",
+            "evidence_class": "REPORTED",
+            "title": "8月股市展開修復行情！ AI產業鏈從資本支出擴張、轉向獲利驗證",
+            "published_at": "2026-08-22T22:05:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://finance.ettoday.net/news/3224011",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "指數不動不代表資金不動，很多輪動就藏在板塊相對強弱裡。今天完整拆解的題目是「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」現在發生的具體變化是：最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：媒體報導記憶體成本可能推升AI伺服器價格。 同時保留相反解釋：相反解釋是：未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。\n\n先把時點放正。最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在板塊輪動儀，不是換一個頻道名稱重講同一篇新聞。用三個以上AI子板塊比較成本、毛利與資本支出，而不是只拆一檔股票。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：媒體報導記憶體成本可能推升AI伺服器價格。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：最新報導比較鴻海、廣達與緯穎財報三率。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第3項已確認事實是：經濟日報報導封測五雄合計投入逾4,600億元擴產。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第4項已確認事實是：Yahoo奇摩報導臺股企業第二季合計獲利約1.8兆元。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。AI子產業處在不同資本週期：記憶體看報價與庫存，代工看訂單和毛利，封測擴產要等待利用率。把三者放在一起比較，重點正是獲利兌現速度不同。\n\n第二個專屬檢查是：資本支出從宣佈到貢獻獲利，中間還有建置、認證、量產與折舊。市場若只獎勵擴產金額，沒有追蹤回報率，板塊輪動可能很快反轉。\n\n機制第1層：輪動不是一個板塊漲、另一個板塊跌這麼簡單。至少要比較相對報酬、成交佔比與盈利預期，並觀察領先關係是否延續。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：同一產業內也可能上下游分化。原料漲價對供應商是收入機會，對採購方卻是成本壓力；擴產對裝置商可能先有訂單，對擴產公司則要等待利用率與折舊消化。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：利率和景氣位置會改變市場偏好。長端利率上升時，高估值長久期板塊較敏感；若經濟仍有韌性，金融、能源或價值板塊可能相對佔優，但仍需流量確認。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。健康輪動是獲利資金離開過熱板塊，轉向基本面改善的落後板塊，指數內部接棒而非全面撤退。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。風險撤退則是多數板塊一起失去成交，只剩防禦股相對抗跌。兩者表面都可能出現科技轉弱，資金總量與廣度才是分界。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：擴產金額不等於未來利用率或獲利。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察領先板塊是否有成交與盈利支援，而且板塊ETF相對強弱同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但落後板塊是否出現相對轉強仍未形成連續確認，代表市場還在消化資訊。否定情景：如果輪動能否延續兩個以上交易時段明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，板塊ETF相對強弱；第二，ETF淨申贖與成交佔比；第三，產業盈利修正；第四，至少兩個交易時段的延續。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自科技新報財經、Yahoo奇摩股市、經濟日報、ETtoday財經雲。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。先確認資金真的換位，再決定這是新主線、短暫補漲，還是整體降風險。\n\n再往深一層看時間尺度。短線交易的是預期差與部位，中期交易的是獲利修正，長期則回到現金流與資本回報。「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」如果只改變一兩天的情緒，卻沒有改變公司指引、產業供需或資金成本，就不應被放大成長期轉折。反過來，若正式資料連續更新，即使價格第一天反應不大，也值得持續追蹤。\n\n還要做一次反事實檢查：假設今天沒有這則新聞，市場原本的利率、估值、成交與產業趨勢是否已足以解釋價格？如果答案是肯定的，新聞可能只是放大器；如果原有資料解釋不了，而新事件又補上關鍵環節，它才可能成為主要催化。這一步能避免事後把所有波動都歸因給最醒目的標題。\n\n最後是執行節奏。第一筆資料只建立觀察，不追著標題下結論；第二筆獨立資料確認機制；第三個交易時點再看價格與成交是否延續。這三步不保證看對市場，但能讓每次升級或降級都有依據，也能在資料反轉時快速修正。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。真正的輪動不是把熱門名字換一遍，而是相對強弱、資金與基本面一起換位。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2975,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "alignment_claims": [
+          "媒體報導記憶體成本可能推升AI伺服器價格。",
+          "最新報導比較鴻海、廣達與緯穎財報三率。",
+          "經濟日報報導封測五雄合計投入逾4,600億元擴產。",
+          "Yahoo奇摩報導臺股企業第二季合計獲利約1.8兆元。"
+        ],
+        "core_question": "「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」現在發生的具體變化是：最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用三個以上AI子板塊比較成本、毛利與資本支出，而不是隻拆一檔股票。",
+          "editorial_tension": "「【AI不再齊漲】記憶體漲價、代工比毛利、封測砸4600億：資金選誰？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "最近24小時的訊息同時指向記憶體成本、伺服器代工獲利與封裝擴產。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有5張可核對來源卡，來源包括科技新報財經、Yahoo奇摩股市、經濟日報、ETtoday財經雲。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用三個以上AI子板塊比較成本、毛利與資本支出，而不是隻拆一檔股票。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：媒體報導記憶體成本可能推升AI伺服器價格。",
+        "counter_thesis": "相反解釋是：未接入標普11大板塊ETF同時點資金流，這篇只能定位為AI子產業輪動研究稿。",
+        "script_claims": [
+          "媒體報導記憶體成本可能推升AI伺服器價格。",
+          "最新報導比較鴻海、廣達與緯穎財報三率。",
+          "經濟日報報導封測五雄合計投入逾4,600億元擴產。",
+          "Yahoo奇摩報導臺股企業第二季合計獲利約1.8兆元。"
+        ],
+        "script_evidence_ids": [
+          "科技新報財經",
+          "Yahoo奇摩股市",
+          "經濟日報",
+          "ETtoday財經雲"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "sector-rotator:2026-08-23:ai-profit-test:1",
+            "claim_type": "CONDITIONAL",
+            "check": "領先板塊是否有成交與盈利支持",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "sector-rotator:2026-08-23:ai-profit-test:2",
+            "claim_type": "CONDITIONAL",
+            "check": "落後板塊是否出現相對轉強",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "sector-rotator:2026-08-23:ai-profit-test:3",
+            "claim_type": "CONDITIONAL",
+            "check": "輪動能否延續兩個以上交易時段",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "4f53d2198bf7964d96879f79d98f8008a4be7214b562ddb242b8a29d2dda7dc5",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "科技新報財經",
+            "Yahoo奇摩股市",
+            "經濟日報",
+            "ETtoday財經雲"
+          ],
+          "status": "PASS"
+        },
+        "script_target_duration": "約5至8分鐘",
+        "script_minimum_character_count": 2000,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "channel-outline:07:rates-financing",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？",
+        "title_options": [
+          "殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？",
+          "板塊輪動儀備選：長債重新定價後，成長股與價值股的蹺蹺板怎麼走？"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有3個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "用長端利率與融資需求比較科技、金融與防禦板塊。"
+        ],
+        "facts": [
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "unknowns": [
+          "缺標普11大板塊ETF同時點流量與相對強弱。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+            "published_at": "2026-08-22T15:08:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "博通將融資超過 700 億美元，強化布局非輝達 AI 晶片市場布局",
+            "published_at": "2026-08-22T01:00:23+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.technews.tw/2026/08/22/broadcom-to-raise-over-70-billion/",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Investing.com",
+            "evidence_class": "REPORTED",
+            "title": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending",
+            "published_at": "2026-08-22T22:30:36+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "市場進入分化期後，最重要的問題不是誰漲，而是誰接過下一棒。今天完整拆解的題目是「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」現在發生的具體變化是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。；同一時窗另有科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 同時保留相反解釋：相反解釋是：缺標普11大板塊ETF同時點流量與相對強弱。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有3個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在板塊輪動儀，不是換一個頻道名稱重講同一篇新聞。用長端利率與融資需求比較科技、金融與防禦板塊。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第3項已確認事實是：Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。大型企業融資要同時看用途與資金價格。拿錢投入能產生高回報的專案，負債可能加速成長；若投資回收期拉長，利息、稀釋或信用利差會先侵蝕股東回報。\n\n第二個專屬檢查是：長債殖利率上升也不能只解讀成經濟強。供給增加、通膨風險與期限溢價都可能推高利率，必須比較實質利率、信用利差與股市盈利預期，才能知道壓力來自哪裡。\n\n機制第1層：輪動不是一個板塊漲、另一個板塊跌這麼簡單。至少要比較相對報酬、成交佔比與盈利預期，並觀察領先關係是否延續。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：同一產業內也可能上下游分化。原料漲價對供應商是收入機會，對採購方卻是成本壓力；擴產對裝置商可能先有訂單，對擴產公司則要等待利用率與折舊消化。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：利率和景氣位置會改變市場偏好。長端利率上升時，高估值長久期板塊較敏感；若經濟仍有韌性，金融、能源或價值板塊可能相對佔優，但仍需流量確認。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。健康輪動是獲利資金離開過熱板塊，轉向基本面改善的落後板塊，指數內部接棒而非全面撤退。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。風險撤退則是多數板塊一起失去成交，只剩防禦股相對抗跌。兩者表面都可能出現科技轉弱，資金總量與廣度才是分界。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺標普11大板塊ETF同時點流量與相對強弱。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察領先板塊是否有成交與盈利支援，而且板塊ETF相對強弱同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但落後板塊是否出現相對轉強仍未形成連續確認，代表市場還在消化資訊。否定情景：如果輪動能否延續兩個以上交易時段明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，板塊ETF相對強弱；第二，ETF淨申贖與成交佔比；第三，產業盈利修正；第四，至少兩個交易時段的延續。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC、科技新報財經、Investing.com。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。先確認資金真的換位，再決定這是新主線、短暫補漲，還是整體降風險。\n\n再往深一層看時間尺度。短線交易的是預期差與部位，中期交易的是獲利修正，長期則回到現金流與資本回報。「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」如果只改變一兩天的情緒，卻沒有改變公司指引、產業供需或資金成本，就不應被放大成長期轉折。反過來，若正式資料連續更新，即使價格第一天反應不大，也值得持續追蹤。\n\n還要做一次反事實檢查：假設今天沒有這則新聞，市場原本的利率、估值、成交與產業趨勢是否已足以解釋價格？如果答案是肯定的，新聞可能只是放大器；如果原有資料解釋不了，而新事件又補上關鍵環節，它才可能成為主要催化。這一步能避免事後把所有波動都歸因給最醒目的標題。\n\n最後是執行節奏。第一筆資料只建立觀察，不追著標題下結論；第二筆獨立資料確認機制；第三個交易時點再看價格與成交是否延續。這三步不保證看對市場，但能讓每次升級或降級都有依據，也能在資料反轉時快速修正。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。真正的輪動不是把熱門名字換一遍，而是相對強弱、資金與基本面一起換位。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3066,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "rates-financing",
+        "channel_angle": "板塊輪動儀",
+        "alignment_claims": [
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "core_question": "「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」現在發生的具體變化是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。；同一時窗另有科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。；同一時窗另有科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用長端利率與融資需求比較科技、金融與防禦板塊。",
+          "editorial_tension": "「殖利率上升、AI企業搶錢：科技、金融與防禦板塊誰先換位？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺標普11大板塊ETF同時點流量與相對強弱。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。；同一時窗另有科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有3張可核對來源卡，來源包括CNBC、科技新報財經、Investing.com。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用長端利率與融資需求比較科技、金融與防禦板塊。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺標普11大板塊ETF同時點流量與相對強弱。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+        "counter_thesis": "相反解釋是：缺標普11大板塊ETF同時點流量與相對強弱。",
+        "script_claims": [
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "科技新報財經刊出「博通將融資超過 700 億美元，強化佈局非輝達 AI 晶片市場佈局」。",
+          "Investing.com刊出「Alibaba plans $10 billion Hong Kong share placement to fund AI spending」。"
+        ],
+        "script_evidence_ids": [
+          "CNBC",
+          "科技新報財經",
+          "Investing.com"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:07:rates-financing:1",
+            "claim_type": "CONDITIONAL",
+            "check": "領先板塊是否有成交與盈利支持",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:rates-financing:2",
+            "claim_type": "CONDITIONAL",
+            "check": "落後板塊是否出現相對轉強",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:rates-financing:3",
+            "claim_type": "CONDITIONAL",
+            "check": "輪動能否延續兩個以上交易時段",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "fabddb660f742061541045586a7507d0c174cd6f6f6ba90ece967343bfa240cc",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0,
+            1,
+            2
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC",
+            "科技新報財經",
+            "Investing.com"
+          ],
+          "status": "PASS"
+        },
+        "script_target_duration": "約5至8分鐘",
+        "script_minimum_character_count": 2000,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "channel-outline:07:crypto-squeeze",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？",
+        "title_options": [
+          "Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？",
+          "板塊輪動儀備選：比特幣急漲能不能帶動風險資產，先看廣度不是價格"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "比較加密高Beta與科技板塊的風險偏好是否同步。"
+        ],
+        "facts": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+        ],
+        "unknowns": [
+          "缺同步ETF流量與跨資產成交廣度。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CoinDesk",
+            "evidence_class": "REPORTED",
+            "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
+            "published_at": "2026-08-22T12:00:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "CNBC",
+            "evidence_class": "REPORTED",
+            "title": "Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks",
+            "published_at": "2026-08-22T15:08:54+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://www.cnbc.com/2026/08/22/rising-yields-rattled-the-market-but-were-sticking-with-our-favorite-ai-and-retail-stocks.html",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "今天不選一檔明星股，先看幾個板塊的位置正在怎麼交換。今天完整拆解的題目是「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」現在發生的具體變化是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。；同一時窗另有CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。 同時保留相反解釋：相反解釋是：缺同步ETF流量與跨資產成交廣度。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在板塊輪動儀，不是換一個頻道名稱重講同一篇新聞。比較加密高Beta與科技板塊的風險偏好是否同步。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。軋空的自我強化鏈是價格上漲、空頭保證金不足、交易所強制回補、價格再上漲。這能解釋速度，卻不能證明新長線資金已經進場。\n\n第二個專屬檢查是：區分趨勢與擠壓，要看清算後的現貨成交、OI與資金費率。OI大降而現貨量沒有增加，較像舊部位被清掉；現貨持續買入且槓桿不過熱，才可能轉成較穩定需求。\n\n機制第1層：輪動不是一個板塊漲、另一個板塊跌這麼簡單。至少要比較相對報酬、成交佔比與盈利預期，並觀察領先關係是否延續。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：同一產業內也可能上下游分化。原料漲價對供應商是收入機會，對採購方卻是成本壓力；擴產對裝置商可能先有訂單，對擴產公司則要等待利用率與折舊消化。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：利率和景氣位置會改變市場偏好。長端利率上升時，高估值長久期板塊較敏感；若經濟仍有韌性，金融、能源或價值板塊可能相對佔優，但仍需流量確認。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。健康輪動是獲利資金離開過熱板塊，轉向基本面改善的落後板塊，指數內部接棒而非全面撤退。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。風險撤退則是多數板塊一起失去成交，只剩防禦股相對抗跌。兩者表面都可能出現科技轉弱，資金總量與廣度才是分界。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺同步ETF流量與跨資產成交廣度。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察領先板塊是否有成交與盈利支援，而且板塊ETF相對強弱同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但落後板塊是否出現相對轉強仍未形成連續確認，代表市場還在消化資訊。否定情景：如果輪動能否延續兩個以上交易時段明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，板塊ETF相對強弱；第二，ETF淨申贖與成交佔比；第三，產業盈利修正；第四，至少兩個交易時段的延續。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CoinDesk、CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。先確認資金真的換位，再決定這是新主線、短暫補漲，還是整體降風險。\n\n再往深一層看時間尺度。短線交易的是預期差與部位，中期交易的是獲利修正，長期則回到現金流與資本回報。「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」如果只改變一兩天的情緒，卻沒有改變公司指引、產業供需或資金成本，就不應被放大成長期轉折。反過來，若正式資料連續更新，即使價格第一天反應不大，也值得持續追蹤。\n\n還要做一次反事實檢查：假設今天沒有這則新聞，市場原本的利率、估值、成交與產業趨勢是否已足以解釋價格？如果答案是肯定的，新聞可能只是放大器；如果原有資料解釋不了，而新事件又補上關鍵環節，它才可能成為主要催化。這一步能避免事後把所有波動都歸因給最醒目的標題。\n\n最後是執行節奏。第一筆資料只建立觀察，不追著標題下結論；第二筆獨立資料確認機制；第三個交易時點再看價格與成交是否延續。這三步不保證看對市場，但能讓每次升級或降級都有依據，也能在資料反轉時快速修正。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。真正的輪動不是把熱門名字換一遍，而是相對強弱、資金與基本面一起換位。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3122,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "crypto-squeeze",
+        "channel_angle": "板塊輪動儀",
+        "alignment_claims": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+        ],
+        "core_question": "「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」現在發生的具體變化是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。；同一時窗另有CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。；同一時窗另有CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "比較加密高Beta與科技板塊的風險偏好是否同步。",
+          "editorial_tension": "「Crypto軋空、科技股震盪：高Beta板塊回暖還是短線去槓桿？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺同步ETF流量與跨資產成交廣度。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。；同一時窗另有CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括CoinDesk、CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "比較加密高Beta與科技板塊的風險偏好是否同步。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺同步ETF流量與跨資產成交廣度。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+        "counter_thesis": "相反解釋是：缺同步ETF流量與跨資產成交廣度。",
+        "script_claims": [
+          "CoinDesk刊出「Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories」。",
+          "CNBC刊出「Rising yields rattled the market, but we’re sticking with our favorite AI and retail stocks」。"
+        ],
+        "script_evidence_ids": [
+          "CoinDesk",
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:07:crypto-squeeze:1",
+            "claim_type": "CONDITIONAL",
+            "check": "領先板塊是否有成交與盈利支持",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:crypto-squeeze:2",
+            "claim_type": "CONDITIONAL",
+            "check": "落後板塊是否出現相對轉強",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:crypto-squeeze:3",
+            "claim_type": "CONDITIONAL",
+            "check": "輪動能否延續兩個以上交易時段",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "ee090bbfeebe591fb4d4e8c37541841c3e62ed4a5ecd1e4ff0902aadc4e0145e",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CoinDesk",
+            "CNBC"
+          ],
+          "status": "PASS"
+        },
+        "script_target_duration": "約5至8分鐘",
+        "script_minimum_character_count": 2000,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "channel-outline:07:china-supply",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？",
+        "title_options": [
+          "稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？",
+          "板塊輪動儀備選：中國供應鏈訊號升溫，晶片與原材料會分化嗎？"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "比較半導體與原材料板塊對中國供應鏈訊號的敏感度。"
+        ],
+        "facts": [
+          "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+          "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+        ],
+        "unknowns": [
+          "缺原材料與半導體ETF同時點資料，不能確認輪動已發生。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "中央社財經",
+            "evidence_class": "REPORTED",
+            "title": "中國7月稀土磁體對日出口111噸 年減5成",
+            "published_at": "2026-08-22T08:27:15+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://www.cna.com.tw/news/acn/202608220140.aspx",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "科技新報財經",
+            "evidence_class": "REPORTED",
+            "title": "輝達即將公布財報，中國市場動態受市場關注",
+            "published_at": "2026-08-22T02:00:30+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "今天不選一檔明星股，先看幾個板塊的位置正在怎麼交換。今天完整拆解的題目是「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」現在發生的具體變化是：中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。；同一時窗另有科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。 同時保留相反解釋：相反解釋是：缺原材料與半導體ETF同時點資料，不能確認輪動已發生。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有2個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在板塊輪動儀，不是換一個頻道名稱重講同一篇新聞。比較半導體與原材料板塊對中國供應鏈訊號的敏感度。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。稀土出口數量變化可能來自需求、許可、價格或出貨時點，單月年減不能直接等同供應中斷。還要看出口單價、其他目的地、庫存與下游替代來源。\n\n第二個專屬檢查是：把稀土與半導體或大型科技股連在一起時，要畫出實際零元件路徑。若沒有公司採購來源與庫存天數，這則資料只能作為供應環境警報，不能直接計算個股損益。\n\n機制第1層：輪動不是一個板塊漲、另一個板塊跌這麼簡單。至少要比較相對報酬、成交佔比與盈利預期，並觀察領先關係是否延續。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：同一產業內也可能上下游分化。原料漲價對供應商是收入機會，對採購方卻是成本壓力；擴產對裝置商可能先有訂單，對擴產公司則要等待利用率與折舊消化。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：利率和景氣位置會改變市場偏好。長端利率上升時，高估值長久期板塊較敏感；若經濟仍有韌性，金融、能源或價值板塊可能相對佔優，但仍需流量確認。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。健康輪動是獲利資金離開過熱板塊，轉向基本面改善的落後板塊，指數內部接棒而非全面撤退。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。風險撤退則是多數板塊一起失去成交，只剩防禦股相對抗跌。兩者表面都可能出現科技轉弱，資金總量與廣度才是分界。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺原材料與半導體ETF同時點資料，不能確認輪動已發生。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察領先板塊是否有成交與盈利支援，而且板塊ETF相對強弱同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但落後板塊是否出現相對轉強仍未形成連續確認，代表市場還在消化資訊。否定情景：如果輪動能否延續兩個以上交易時段明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，板塊ETF相對強弱；第二，ETF淨申贖與成交佔比；第三，產業盈利修正；第四，至少兩個交易時段的延續。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自中央社財經、科技新報財經。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。先確認資金真的換位，再決定這是新主線、短暫補漲，還是整體降風險。\n\n再往深一層看時間尺度。短線交易的是預期差與部位，中期交易的是獲利修正，長期則回到現金流與資本回報。「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」如果只改變一兩天的情緒，卻沒有改變公司指引、產業供需或資金成本，就不應被放大成長期轉折。反過來，若正式資料連續更新，即使價格第一天反應不大，也值得持續追蹤。\n\n還要做一次反事實檢查：假設今天沒有這則新聞，市場原本的利率、估值、成交與產業趨勢是否已足以解釋價格？如果答案是肯定的，新聞可能只是放大器；如果原有資料解釋不了，而新事件又補上關鍵環節，它才可能成為主要催化。這一步能避免事後把所有波動都歸因給最醒目的標題。\n\n最後是執行節奏。第一筆資料只建立觀察，不追著標題下結論；第二筆獨立資料確認機制；第三個交易時點再看價格與成交是否延續。這三步不保證看對市場，但能讓每次升級或降級都有依據，也能在資料反轉時快速修正。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。真正的輪動不是把熱門名字換一遍，而是相對強弱、資金與基本面一起換位。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2717,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "china-supply",
+        "channel_angle": "板塊輪動儀",
+        "alignment_claims": [
+          "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+          "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+        ],
+        "core_question": "「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」現在發生的具體變化是：中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。；同一時窗另有科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。；同一時窗另有科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "比較半導體與原材料板塊對中國供應鏈訊號的敏感度。",
+          "editorial_tension": "「稀土出口下降、輝達中國受關注：半導體與材料板塊誰更敏感？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺原材料與半導體ETF同時點資料，不能確認輪動已發生。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。；同一時窗另有科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有2張可核對來源卡，來源包括中央社財經、科技新報財經。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "比較半導體與原材料板塊對中國供應鏈訊號的敏感度。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺原材料與半導體ETF同時點資料，不能確認輪動已發生。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+        "counter_thesis": "相反解釋是：缺原材料與半導體ETF同時點資料，不能確認輪動已發生。",
+        "script_claims": [
+          "中央社財經刊出「中國7月稀土磁體對日出口111噸 年減5成」。",
+          "科技新報財經刊出「輝達即將公佈財報，中國市場動態受市場關注」。"
+        ],
+        "script_evidence_ids": [
+          "中央社財經",
+          "科技新報財經"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:07:china-supply:1",
+            "claim_type": "CONDITIONAL",
+            "check": "領先板塊是否有成交與盈利支持",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:china-supply:2",
+            "claim_type": "CONDITIONAL",
+            "check": "落後板塊是否出現相對轉強",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:china-supply:3",
+            "claim_type": "CONDITIONAL",
+            "check": "輪動能否延續兩個以上交易時段",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "7c3f04cc6dad2dffc9832092faba98f3f7161e5cc5853c022c1541b9b187212b",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0,
+            1
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "中央社財經",
+            "科技新報財經"
+          ],
+          "status": "PASS"
+        },
+        "script_target_duration": "約5至8分鐘",
+        "script_minimum_character_count": 2000,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "channel-outline:07:tw-rotation",
+        "candidate_type": "CHANNEL_EDITORIAL_DRAFT",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "title": "臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？",
+        "title_options": [
+          "臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？",
+          "板塊輪動儀備選：獲利創高不等於齊漲，臺股板塊下一棒看誰"
+        ],
+        "why_now": [
+          "這組事件出現在2026-08-23的24/48小時視窗內，已有3個可核對來源，時效與材料完整度符合本輪選題條件。"
+        ],
+        "why_channel": [
+          "把獲利總量與資金輪動分開，觀察板塊相對強弱。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。",
+          "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+          "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+        ],
+        "unknowns": [
+          "缺完整產業獲利分解與連續多日成交佔比。",
+          "同一熱點被多頻道採用不代表同一因果成立；錄製前仍需逐一核對原文、數字與時點。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_class": "REPORTED",
+            "title": "台股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」",
+            "published_at": "2026-08-23T06:52:00+00:00",
+            "freshness_bucket": "FRESH_24H",
+            "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%BC%81%E6%A5%ADq2%E7%8B%82%E8%B3%BA1-8%E5%85%86%E5%89%B5%E6%96%B0%E9%AB%98-ai%E6%95%88%E6%87%89%E5%B7%B2%E6%93%B4%E6%95%A3-%E6%B3%95%E4%BA%BA%E9%BB%9E%E5%90%8D-8%E5%A4%A7%E9%87%91%E7%A4%A6-065200994.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_class": "REPORTED",
+            "title": "投信由買轉賣台股資金風向變了！砍電子、抱金融 誰成了避風港？",
+            "published_at": "2026-08-22T07:42:26+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://tw.news.yahoo.com/%E6%8A%95%E4%BF%A1%E7%94%B1%E8%B2%B7%E8%BD%89%E8%B3%A3%E5%8F%B0%E8%82%A1%E8%B3%87%E9%87%91%E9%A2%A8%E5%90%91%E8%AE%8A%E4%BA%86-%E7%A0%8D%E9%9B%BB%E5%AD%90-%E6%8A%B1%E9%87%91%E8%9E%8D-%E8%AA%B0%E6%88%90%E4%BA%86%E9%81%BF%E9%A2%A8%E6%B8%AF-074226282.html",
+            "raw_api_url": null
+          },
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_class": "REPORTED",
+            "title": "台股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%",
+            "published_at": "2026-08-22T06:38:00+00:00",
+            "freshness_bucket": "CONTEXT_48H",
+            "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1-%E9%80%B1%E8%B7%8C586%E9%BB%9E%E5%B8%82%E5%80%BC%E8%92%B8%E7%99%BC%E8%BF%911-9%E5%85%86-%E8%88%AA%E9%81%8B%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B213-063800845.html",
+            "raw_api_url": null
+          }
+        ],
+        "opinion_evidence": [],
+        "script_text": "市場進入分化期後，最重要的問題不是誰漲，而是誰接過下一棒。今天完整拆解的題目是「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」現在發生的具體變化是：Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。；同一時窗另有Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。 同時保留相反解釋：相反解釋是：缺完整產業獲利分解與連續多日成交佔比。\n\n先把時點放正。這組事件出現在2026-08-23的24/48小時視窗內，已有3個可核對來源，時效與材料完整度符合本輪選題條件。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在板塊輪動儀，不是換一個頻道名稱重講同一篇新聞。把獲利總量與資金輪動分開，觀察板塊相對強弱。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第2項已確認事實是：Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n第3項已確認事實是：Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。判斷電子轉向金融或航運，不能只列漲跌幅。要比較板塊成交佔比、法人連續買賣、領漲家數與相對大盤強弱，並確認資金是否從原主線流出而非市場新增資金同時進場。\n\n第二個專屬檢查是：週線下跌與單日反彈可以同時成立。短線修復若沒有扭轉週期結構，就只能說跌深後換手；若接棒板塊連續放量且原弱勢止穩，才較接近健康輪動。\n\n機制第1層：輪動不是一個板塊漲、另一個板塊跌這麼簡單。至少要比較相對報酬、成交佔比與盈利預期，並觀察領先關係是否延續。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：同一產業內也可能上下游分化。原料漲價對供應商是收入機會，對採購方卻是成本壓力；擴產對裝置商可能先有訂單，對擴產公司則要等待利用率與折舊消化。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：利率和景氣位置會改變市場偏好。長端利率上升時，高估值長久期板塊較敏感；若經濟仍有韌性，金融、能源或價值板塊可能相對佔優，但仍需流量確認。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。健康輪動是獲利資金離開過熱板塊，轉向基本面改善的落後板塊，指數內部接棒而非全面撤退。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。風險撤退則是多數板塊一起失去成交，只剩防禦股相對抗跌。兩者表面都可能出現科技轉弱，資金總量與廣度才是分界。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：缺完整產業獲利分解與連續多日成交佔比。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察領先板塊是否有成交與盈利支援，而且板塊ETF相對強弱同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但落後板塊是否出現相對轉強仍未形成連續確認，代表市場還在消化資訊。否定情景：如果輪動能否延續兩個以上交易時段明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，板塊ETF相對強弱；第二，ETF淨申贖與成交佔比；第三，產業盈利修正；第四，至少兩個交易時段的延續。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。先確認資金真的換位，再決定這是新主線、短暫補漲，還是整體降風險。\n\n再往深一層看時間尺度。短線交易的是預期差與部位，中期交易的是獲利修正，長期則回到現金流與資本回報。「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」如果只改變一兩天的情緒，卻沒有改變公司指引、產業供需或資金成本，就不應被放大成長期轉折。反過來，若正式資料連續更新，即使價格第一天反應不大，也值得持續追蹤。\n\n還要做一次反事實檢查：假設今天沒有這則新聞，市場原本的利率、估值、成交與產業趨勢是否已足以解釋價格？如果答案是肯定的，新聞可能只是放大器；如果原有資料解釋不了，而新事件又補上關鍵環節，它才可能成為主要催化。這一步能避免事後把所有波動都歸因給最醒目的標題。\n\n最後是執行節奏。第一筆資料只建立觀察，不追著標題下結論；第二筆獨立資料確認機制；第三個交易時點再看價格與成交是否延續。這三步不保證看對市場，但能讓每次升級或降級都有依據，也能在資料反轉時快速修正。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。真正的輪動不是把熱門名字換一遍，而是相對強弱、資金與基本面一起換位。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2894,
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE"
+        ],
+        "shared_hotspot_id": "tw-rotation",
+        "channel_angle": "板塊輪動儀",
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。",
+          "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+          "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+        ],
+        "core_question": "「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」現在發生的具體變化是：Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。；同一時窗另有Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由板塊輪動儀切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。；同一時窗另有Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "把獲利總量與資金輪動分開，觀察板塊相對強弱。",
+          "editorial_tension": "「臺股Q2獲利創高卻週線收黑：電子、金融、航運正在重排嗎？」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "缺完整產業獲利分解與連續多日成交佔比。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。；同一時窗另有Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有3張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "把獲利總量與資金輪動分開，觀察板塊相對強弱。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "缺完整產業獲利分解與連續多日成交佔比。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為板塊輪動儀的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。",
+        "counter_thesis": "相反解釋是：缺完整產業獲利分解與連續多日成交佔比。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出「臺股企業Q2狂賺1.8兆創新高！AI效應已擴散 法人點名「8大金礦」」。",
+          "Yahoo奇摩股市刊出「投信由買轉賣臺股資金風向變了！砍電子、抱金融 誰成了避風港？」。",
+          "Yahoo奇摩股市刊出「臺股一週跌586點市值蒸發近1.9兆 航運逆勢大漲13%」。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "channel-outline:07:tw-rotation:1",
+            "claim_type": "CONDITIONAL",
+            "check": "領先板塊是否有成交與盈利支持",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:tw-rotation:2",
+            "claim_type": "CONDITIONAL",
+            "check": "落後板塊是否出現相對轉強",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "channel-outline:07:tw-rotation:3",
+            "claim_type": "CONDITIONAL",
+            "check": "輪動能否延續兩個以上交易時段",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "ff92084dea8474eb28fa3506bf5c79160fc409a0100398cddc6c5394ffa00383",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0,
+            1,
+            2
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_target_duration": "約5至8分鐘",
+        "script_minimum_character_count": 2000,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約5至8分鐘",
+    "minimum_script_character_count": 2000
+  }
+}
