@@ -26,6 +26,7 @@ const CHANNEL_META = {
 let channels = [];
 let historyIndex = [];
 let reviewPolicy = {};
+let marketDataStatus = "";
 let activeChannel = null;
 let activeTopic = null;
 
@@ -107,6 +108,7 @@ function applyPayload(payload) {
   }
   historyIndex = list(workbench.channel_history_index);
   reviewPolicy = workbench.review_policy || {};
+  marketDataStatus = workbench.market_data_status || "";
   channels = normalizeChannels(payload);
   if (channels.length !== 11 || channels.some((channel) => channel.topics.length !== 5)) {
     throw new Error("已有樣本頻道尚未形成五題審稿面");
@@ -126,11 +128,11 @@ function applyPayload(payload) {
   $("#generated-time").textContent = snapshotDate;
   $("#ranking-method").textContent = `${channels.length} 個已有樣本`;
   $("#x-count").textContent = `${fullScriptCount} 篇`;
-  $("#source-twse").textContent = sourceLabel(payload, "TWSE_EOD");
-  $("#source-tpex").textContent = sourceLabel(payload, "TPEX_EOD");
-  $("#source-mops").textContent = sourceLabel(payload, "MOPS");
+  $("#source-twse").textContent = marketDataStatus === "SOURCE_PENDING" ? "SOURCE_PENDING" : sourceLabel(payload, "TWSE_EOD");
+  $("#source-tpex").textContent = marketDataStatus === "SOURCE_PENDING" ? "SOURCE_PENDING" : sourceLabel(payload, "TPEX_EOD");
+  $("#source-mops").textContent = marketDataStatus === "SOURCE_PENDING" ? "未用於本版收盤事實" : sourceLabel(payload, "MOPS");
   $("#source-news").textContent = `${workbench.news_source_success_count || 9}/${workbench.news_source_count || 9} · 官方${workbench.official_source_count || 0}`;
-  $("#source-x").textContent = sourceLabel(payload, "X");
+  $("#source-x").textContent = marketDataStatus === "SOURCE_PENDING" ? "OPINION · 可選輸入" : sourceLabel(payload, "X");
   $("#source-youtube").textContent = `${workbench.transcript_sample_count || 19}篇口吻樣本`;
   const refreshState = $("#refresh-state");
   refreshState.className = "refresh-state";
@@ -157,7 +159,7 @@ function renderOverview() {
     fragment.querySelector(".channel-state").textContent = waiting
       ? "等待文稿樣本"
       : channel.name === "收盤夜話"
-        ? "最近交易日稿"
+        ? (marketDataStatus === "SOURCE_PENDING" ? "同日來源稿" : "最近交易日稿")
         : "暫定風格稿";
     fragment.querySelector(".channel-foot b").textContent = waiting
       ? "0 篇 · 不虛構"
