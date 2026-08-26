@@ -204,7 +204,11 @@ function renderTopics(channel, topics, root, options = {}) {
     fragment.querySelector("h3").textContent = topic.title;
     fragment.querySelector("p").textContent = whyText(topic);
     fragment.querySelector(".topic-open").textContent = historical ? "看原稿與結果" : "看完整文稿";
-    fragment.querySelector(".topic-open").addEventListener("click", () => openTopic(channel, topic, { historical, contentDate: date }));
+    fragment.querySelector(".topic-open").addEventListener("click", () => openTopic(channel, topic, {
+      historical,
+      contentDate: date,
+      reviewProgress: options.reviewProgress,
+    }));
     root.appendChild(fragment);
   });
 }
