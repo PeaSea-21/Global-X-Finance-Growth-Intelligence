@@ -1,0 +1,835 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-28T14:52:17+08:00",
+  "snapshot_fingerprint": "77af551fe2357352f4a7f1f24bcd9b3e0f18c6f7ea279d5998894155d487427e",
+  "channel": {
+    "channel_order": 14,
+    "channel_id": "ch-14-cycle-navigator",
+    "channel_name": "週期航海家",
+    "style_status": "PROVISIONAL_SINGLE_SAMPLE_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "LOW_SINGLE_SAMPLE_MACRO_NARRATIVE_HEAVY",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-27",
+    "profile_promise": "從供需、庫存、運費與資源股財報定位大宗商品週期，尋找硬資產錨點。",
+    "audience": "關注抗通脹資產、大宗商品期貨與資源股的週期投資者",
+    "language_style": "繁體中文；反直覺開場、歷史長軸與三層矛盾推理，最後按長線、波段、短線分層；生產稿需把敘事、情境與可核驗商品資料分開。",
+    "opening_hook": "先挑戰科技進步會削弱硬資產的直覺，再用長期貨幣購買力問題建立週期視角。",
+    "narrative_logic": [
+      "反共識鉤子",
+      "貨幣與商品歷史",
+      "央行與供給需求",
+      "多情境推演",
+      "長中短分層觀察",
+      "失效條件"
+    ],
+    "ending_pattern": "按長線、波段、短線列觀察指標，提醒配置比例與回撤風險，再用可驗證問題收尾。",
+    "profile_sample_alignment": "PARTIAL_MATCH_GOLD_CYCLE_TOPIC_BUT_LACKS_INVENTORY_FREIGHT_AND_REPRODUCIBLE_SCENARIO_MODEL",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-08-27:週期航海家:1:NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1",
+        "title_options": [
+          "Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1",
+          "週期航海家今日第1題｜Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran"
+        ],
+        "why_now": [
+          "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：oil"
+        ],
+        "why_channel": [
+          "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+        ],
+        "facts": [
+          "CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_id": "NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran",
+            "published_at": "2026-08-26T06:53:17+00:00",
+            "fetched_at": "2026-08-26T07:11:22.942175+00:00",
+            "human_verification_url": "https://www.cnbc.com/2026/08/26/oil-falls-as-the-us-pivots-to-economic-pressure-on-iran-.html",
+            "market": "US"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c",
+        "channel_angle": "週期航海家",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。",
+          "editorial_tension": "「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:1:NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c:1",
+            "claim_type": "CONDITIONAL",
+            "check": "官方庫存與供給資料是否連續同向變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:1:NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c:2",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨期貨與運費是否互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:1:NEWS:ce681ece-c6de-4db6-9ae9-54624ebc664c:3",
+            "claim_type": "CONDITIONAL",
+            "check": "資源公司產量與資本支出是否支持週期判斷",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "32bbc542e83e507718806d8335cd3384ce0c29d7a0591d0239d1fc86b1d9f6ef",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "週期航海家今天先把價格噪音放一邊，回到供給、需求與庫存。今天完整拆解的題目是「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran：週期航海家今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T06:53:17+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在週期航海家，不是換一個頻道名稱重講同一篇新聞。用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出或發布了「Oil prices fall on Hormuz deal hopes, U.S. pivots to economic pressure on Iran」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：商品週期要同時看現貨需求、可用庫存與新增供給。價格上漲可能是需求改善，也可能只是供給中斷；沒有庫存與產量資料，不能把兩者混成同一故事。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期貨曲線提供時間結構。近月高於遠月常反映當下偏緊，但還要搭配庫存、運費與交割條件；單一價差不能直接外推成十年趨勢。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：資源公司的資本支出會反過來改變未來供給。現價越高，擴產誘因越強，但從投資到投產有時間差，週期判斷必須標明所處期限。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。偏緊情境需要庫存下降、現貨溢價或運費上升，並由產量或供應事件持續確認。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。回落情境可能來自需求降溫、替代供給增加或投機部位退潮；若庫存轉升，價格創高也可能只是尾段波動。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察官方庫存與供給資料是否連續同向變化，而且官方或交易所庫存同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但現貨期貨與運費是否互相確認仍未形成連續確認，代表市場還在消化資訊。否定情景：如果資源公司產量與資本支出是否支援週期判斷明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，官方或交易所庫存；第二，現貨與期貨曲線；第三，BDI或相關運費；第四，礦商產量與資本支出。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。沒有供需與庫存，就只有價格故事；資料補齊前保留多情境。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。週期不是一句多空口號；把庫存、曲線與產能三張圖對齊後，再決定哪個情境正在發生。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2812,
+        "script_target_duration": "約2至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:週期航海家:2:NEWS:acf90bec-15a6-4edd-b88d-2317cc521294",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2",
+        "title_options": [
+          "通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2",
+          "週期航海家今日第2題｜通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲"
+        ],
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：通膨"
+        ],
+        "why_channel": [
+          "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:acf90bec-15a6-4edd-b88d-2317cc521294",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲",
+            "published_at": "2026-08-27T04:00:00+00:00",
+            "fetched_at": "2026-08-27T05:20:01.863095+00:00",
+            "human_verification_url": "https://tw.news.yahoo.com/%E9%80%9A%E8%86%A8%E9%87%8D%E6%93%8A%E7%BE%8E%E8%82%A13%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E4%BD%8E-%E8%B2%BB%E5%8D%8A%E7%8D%A8%E7%B4%85-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E9%80%86%E5%8B%A2%E5%B0%8F%E6%BC%B2-040000670.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:acf90bec-15a6-4edd-b88d-2317cc521294",
+        "channel_angle": "週期航海家",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。",
+          "editorial_tension": "「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:2:NEWS:acf90bec-15a6-4edd-b88d-2317cc521294:1",
+            "claim_type": "CONDITIONAL",
+            "check": "官方庫存與供給資料是否連續同向變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:2:NEWS:acf90bec-15a6-4edd-b88d-2317cc521294:2",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨期貨與運費是否互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:2:NEWS:acf90bec-15a6-4edd-b88d-2317cc521294:3",
+            "claim_type": "CONDITIONAL",
+            "check": "資源公司產量與資本支出是否支持週期判斷",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "21b6ceda2675feeed58130f3f6261609e8a7c2dc79576392a34160745db33255",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "商品創高或急跌只是一個結果，真正要找的是週期哪一段正在改變。今天完整拆解的題目是「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲：週期航海家今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T04:00:00+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在週期航海家，不是換一個頻道名稱重講同一篇新聞。用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「通膨重擊美股3大指數收低！費半獨紅 台積電ADR逆勢小漲」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：商品週期要同時看現貨需求、可用庫存與新增供給。價格上漲可能是需求改善，也可能只是供給中斷；沒有庫存與產量資料，不能把兩者混成同一故事。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期貨曲線提供時間結構。近月高於遠月常反映當下偏緊，但還要搭配庫存、運費與交割條件；單一價差不能直接外推成十年趨勢。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：資源公司的資本支出會反過來改變未來供給。現價越高，擴產誘因越強，但從投資到投產有時間差，週期判斷必須標明所處期限。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。偏緊情境需要庫存下降、現貨溢價或運費上升，並由產量或供應事件持續確認。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。回落情境可能來自需求降溫、替代供給增加或投機部位退潮；若庫存轉升，價格創高也可能只是尾段波動。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察官方庫存與供給資料是否連續同向變化，而且官方或交易所庫存同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但現貨期貨與運費是否互相確認仍未形成連續確認，代表市場還在消化資訊。否定情景：如果資源公司產量與資本支出是否支援週期判斷明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，官方或交易所庫存；第二，現貨與期貨曲線；第三，BDI或相關運費；第四，礦商產量與資本支出。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。沒有供需與庫存，就只有價格故事；資料補齊前保留多情境。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。週期不是一句多空口號；把庫存、曲線與產能三張圖對齊後，再決定哪個情境正在發生。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2649,
+        "script_target_duration": "約2至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:週期航海家:3:X:2092783789328208164",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3",
+        "title_options": [
+          "Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3",
+          "週期航海家今日第3題｜Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that..."
+        ],
+        "why_now": [
+          "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：gold"
+        ],
+        "why_channel": [
+          "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+        ],
+        "facts": [
+          "@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092783789328208164",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that 1-kilogram of South Korea DRAM now costs as much as 620 grams of gold – up from 120 grams at the 2023 cyclical trough, according to South Korea",
+            "published_at": "2026-08-27T01:18:32+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092783789328208164",
+            "market": "台湾／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092783789328208164",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that 1-kilogram of South Korea DRAM now costs as much as 620 grams of gold – up from 120 grams at the 2023 cyclical trough, according to South Korea",
+            "published_at": "2026-08-27T01:18:32+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092783789328208164",
+            "market": "台湾／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2092783789328208164",
+        "channel_angle": "週期航海家",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。",
+          "editorial_tension": "「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@dnystedt。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@dnystedt"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:3:X:2092783789328208164:1",
+            "claim_type": "CONDITIONAL",
+            "check": "官方庫存與供給資料是否連續同向變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:3:X:2092783789328208164:2",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨期貨與運費是否互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:3:X:2092783789328208164:3",
+            "claim_type": "CONDITIONAL",
+            "check": "資源公司產量與資本支出是否支持週期判斷",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "e8531dfd55ab3a68a5fb33e0da8ce241ec3262ca54e7deaa07e9b49d8db476a8",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@dnystedt"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "週期航海家今天先把價格噪音放一邊，回到供給、需求與庫存。今天完整拆解的題目是「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...：週期航海家今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:18:32+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在週期航海家，不是換一個頻道名稱重講同一篇新聞。用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@dnystedt刊出或發布了「Is DRAM worth its weight in Gold? Strong AI demand has driven memory chip prices up so fast that...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：商品週期要同時看現貨需求、可用庫存與新增供給。價格上漲可能是需求改善，也可能只是供給中斷；沒有庫存與產量資料，不能把兩者混成同一故事。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期貨曲線提供時間結構。近月高於遠月常反映當下偏緊，但還要搭配庫存、運費與交割條件；單一價差不能直接外推成十年趨勢。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：資源公司的資本支出會反過來改變未來供給。現價越高，擴產誘因越強，但從投資到投產有時間差，週期判斷必須標明所處期限。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。偏緊情境需要庫存下降、現貨溢價或運費上升，並由產量或供應事件持續確認。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。回落情境可能來自需求降溫、替代供給增加或投機部位退潮；若庫存轉升，價格創高也可能只是尾段波動。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察官方庫存與供給資料是否連續同向變化，而且官方或交易所庫存同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但現貨期貨與運費是否互相確認仍未形成連續確認，代表市場還在消化資訊。否定情景：如果資源公司產量與資本支出是否支援週期判斷明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，官方或交易所庫存；第二，現貨與期貨曲線；第三，BDI或相關運費；第四，礦商產量與資本支出。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@dnystedt。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。沒有供需與庫存，就只有價格故事；資料補齊前保留多情境。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。週期不是一句多空口號；把庫存、曲線與產能三張圖對齊後，再決定哪個情境正在發生。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2917,
+        "script_target_duration": "約2至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:週期航海家:4:X:2092726420946448756",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4",
+        "title_options": [
+          "コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4",
+          "週期航海家今日第4題｜コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid..."
+        ],
+        "why_now": [
+          "@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：銅"
+        ],
+        "why_channel": [
+          "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+        ],
+        "facts": [
+          "@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@nikkei",
+            "evidence_id": "X:2092726420946448756",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "コマツ、鉱山機械の米国保守拠点を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid=SNSTW005&n_tw=1787747666 AIデータセンター建設ラッシュにより、米国では電力インフラに不可欠な銅の生産を増やそうとする動きがあります。アリゾナ州などにある有力な銅鉱山の開発に備えて部品修理の人材を増やし、交換部品も迅速に供給できるようにします。",
+            "published_at": "2026-08-26T21:30:34+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/nikkei/status/2092726420946448756",
+            "market": "日本／全球市场"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@nikkei",
+            "evidence_id": "X:2092726420946448756",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "コマツ、鉱山機械の米国保守拠点を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid=SNSTW005&n_tw=1787747666 AIデータセンター建設ラッシュにより、米国では電力インフラに不可欠な銅の生産を増やそうとする動きがあります。アリゾナ州などにある有力な銅鉱山の開発に備えて部品修理の人材を増やし、交換部品も迅速に供給できるようにします。",
+            "published_at": "2026-08-26T21:30:34+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/nikkei/status/2092726420946448756",
+            "market": "日本／全球市场"
+          }
+        ],
+        "shared_hotspot_id": "X:2092726420946448756",
+        "channel_angle": "週期航海家",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」現在發生的具體變化是：@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。",
+          "editorial_tension": "「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@nikkei。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@nikkei"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:4:X:2092726420946448756:1",
+            "claim_type": "CONDITIONAL",
+            "check": "官方庫存與供給資料是否連續同向變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:4:X:2092726420946448756:2",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨期貨與運費是否互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:4:X:2092726420946448756:3",
+            "claim_type": "CONDITIONAL",
+            "check": "資源公司產量與資本支出是否支持週期判斷",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "2a582b23030dcbf4121e43a6e02a9aa67fdfdf4bd77a76c67d1375b5c6004aa5",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@nikkei"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "硬資產故事很容易講得很長，但每一段都要能落回可核對的供需資料。今天完整拆解的題目是「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」現在發生的具體變化是：@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...：週期航海家今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@nikkei在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T21:30:34+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在週期航海家，不是換一個頻道名稱重講同一篇新聞。用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@nikkei刊出或發布了「コマツ、鉱山機械の米國保守拠點を3倍に 銅増産の特需に照準 https://www.nikkei.com/article/DGXZQOUC017HQ0R00C26A6000000/?n_cid...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：商品週期要同時看現貨需求、可用庫存與新增供給。價格上漲可能是需求改善，也可能只是供給中斷；沒有庫存與產量資料，不能把兩者混成同一故事。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期貨曲線提供時間結構。近月高於遠月常反映當下偏緊，但還要搭配庫存、運費與交割條件；單一價差不能直接外推成十年趨勢。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：資源公司的資本支出會反過來改變未來供給。現價越高，擴產誘因越強，但從投資到投產有時間差，週期判斷必須標明所處期限。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。偏緊情境需要庫存下降、現貨溢價或運費上升，並由產量或供應事件持續確認。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。回落情境可能來自需求降溫、替代供給增加或投機部位退潮；若庫存轉升，價格創高也可能只是尾段波動。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察官方庫存與供給資料是否連續同向變化，而且官方或交易所庫存同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但現貨期貨與運費是否互相確認仍未形成連續確認，代表市場還在消化資訊。否定情景：如果資源公司產量與資本支出是否支援週期判斷明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，官方或交易所庫存；第二，現貨與期貨曲線；第三，BDI或相關運費；第四，礦商產量與資本支出。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@nikkei。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。沒有供需與庫存，就只有價格故事；資料補齊前保留多情境。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。週期不是一句多空口號；把庫存、曲線與產能三張圖對齊後，再決定哪個情境正在發生。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2990,
+        "script_target_duration": "約2至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:週期航海家:5:X:2092596200113377639",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5",
+        "title_options": [
+          "BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5",
+          "週期航海家今日第5題｜BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August..."
+        ],
+        "why_now": [
+          "@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：oil"
+        ],
+        "why_channel": [
+          "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+        ],
+        "facts": [
+          "@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@KobeissiLetter",
+            "evidence_id": "X:2092596200113377639",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August 10th.",
+            "published_at": "2026-08-26T12:53:07+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/KobeissiLetter/status/2092596200113377639",
+            "market": "全球市场"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@KobeissiLetter",
+            "evidence_id": "X:2092596200113377639",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August 10th.",
+            "published_at": "2026-08-26T12:53:07+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/KobeissiLetter/status/2092596200113377639",
+            "market": "全球市场"
+          }
+        ],
+        "shared_hotspot_id": "X:2092596200113377639",
+        "channel_angle": "週期航海家",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」現在發生的具體變化是：@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。",
+          "editorial_tension": "「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@KobeissiLetter。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@KobeissiLetter"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:5:X:2092596200113377639:1",
+            "claim_type": "CONDITIONAL",
+            "check": "官方庫存與供給資料是否連續同向變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:5:X:2092596200113377639:2",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨期貨與運費是否互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:週期航海家:5:X:2092596200113377639:3",
+            "claim_type": "CONDITIONAL",
+            "check": "資源公司產量與資本支出是否支持週期判斷",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "9e0a5ee4fc1238d918e076a942d03c14621b100d312d4bc8ba2808147e48d882",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@KobeissiLetter"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "週期航海家今天先把價格噪音放一邊，回到供給、需求與庫存。今天完整拆解的題目是「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」現在發生的具體變化是：@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由週期航海家切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...：週期航海家今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為週期航海家的優先追蹤題。已確認的第一個錨點是：@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@KobeissiLetter在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T12:53:07+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在週期航海家，不是換一個頻道名稱重講同一篇新聞。用商品供需、庫存、期貨曲線、運費與資源公司檔案定位週期；缺原始資料時只列情境，不給精確長期目標。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@KobeissiLetter刊出或發布了「BREAKING: US oil prices extend losses and drop below $80/barrel for the first time since August...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：商品週期要同時看現貨需求、可用庫存與新增供給。價格上漲可能是需求改善，也可能只是供給中斷；沒有庫存與產量資料，不能把兩者混成同一故事。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期貨曲線提供時間結構。近月高於遠月常反映當下偏緊，但還要搭配庫存、運費與交割條件；單一價差不能直接外推成十年趨勢。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：資源公司的資本支出會反過來改變未來供給。現價越高，擴產誘因越強，但從投資到投產有時間差，週期判斷必須標明所處期限。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。偏緊情境需要庫存下降、現貨溢價或運費上升，並由產量或供應事件持續確認。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。回落情境可能來自需求降溫、替代供給增加或投機部位退潮；若庫存轉升，價格創高也可能只是尾段波動。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得本題對應商品的完整庫存、期貨曲線、運費與資源公司資料，不能提供精確週期目標。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察官方庫存與供給資料是否連續同向變化，而且官方或交易所庫存同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但現貨期貨與運費是否互相確認仍未形成連續確認，代表市場還在消化資訊。否定情景：如果資源公司產量與資本支出是否支援週期判斷明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，官方或交易所庫存；第二，現貨與期貨曲線；第三，BDI或相關運費；第四，礦商產量與資本支出。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@KobeissiLetter。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。沒有供需與庫存，就只有價格故事；資料補齊前保留多情境。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。週期不是一句多空口號；把庫存、曲線與產能三張圖對齊後，再決定哪個情境正在發生。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2957,
+        "script_target_duration": "約2至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約2至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}

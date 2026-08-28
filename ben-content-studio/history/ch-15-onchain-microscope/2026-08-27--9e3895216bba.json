@@ -1,0 +1,849 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-28T14:52:17+08:00",
+  "snapshot_fingerprint": "9e3895216bba6fc9e144f1bd40fe107f30b3a4778dc6a057d0325587edb217c2",
+  "channel": {
+    "channel_order": 15,
+    "channel_id": "ch-15-onchain-microscope",
+    "channel_name": "鏈上顯微鏡",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "MEDIUM_FOR_MECHANISM_LOW_FOR_TRUE_ONCHAIN_ADDRESS_ANALYSIS",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-27",
+    "profile_promise": "用鏈上、機構持倉與衍生品資料拆解巨鯨累積、獲利盤壓力與多空清算。",
+    "audience": "加密貨幣交易者、鏈上資料研究者、高階交易員",
+    "language_style": "繁體中文；先丟關鍵數字，再拆持倉或清算機制，語速快但比暗池頻道更偏資料解釋。",
+    "opening_hook": "直接報一個機構持倉變化或大額清算，再說這個訊號能證明什麼、不能證明什麼。",
+    "narrative_logic": [
+      "數字鉤子",
+      "資料口徑",
+      "持倉/清算機制",
+      "同類機構比較",
+      "價格區間",
+      "替代解釋",
+      "下一個鏈上驗證點"
+    ],
+    "ending_pattern": "以轉多、被套或槓桿推動的多解釋收尾，請觀眾用下一組資料驗證。",
+    "profile_sample_alignment": "PARTIAL_MATCH_SAMPLES_ARE_13F_AND_LIQUIDATION_NOT_TRUE_ONCHAIN_ADDRESS_MONITORING",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-08-27:鏈上顯微鏡:1:X:2092674723016556785",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1",
+        "title_options": [
+          "Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1",
+          "鏈上顯微鏡今日第1題｜Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?..."
+        ],
+        "why_now": [
+          "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：ethereum、stablecoin"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092674723016556785",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern? @ethereuminsti",
+            "published_at": "2026-08-26T18:05:08+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092674723016556785",
+            "market": "美股／宏观"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092674723016556785",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern? @ethereuminsti",
+            "published_at": "2026-08-26T18:05:08+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092674723016556785",
+            "market": "美股／宏观"
+          }
+        ],
+        "shared_hotspot_id": "X:2092674723016556785",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@fundstrat。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@fundstrat"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:1:X:2092674723016556785:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:1:X:2092674723016556785:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:1:X:2092674723016556785:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "0a764e025fa04302f7da650c0c80f5a8d30197c1e105e90c230b83208e0cb6a1",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@fundstrat"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T18:05:08+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@fundstrat刊出或發布了「Yup Another major financial institution building a stablecoin rail on @ethereum See the pattern?...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@fundstrat。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2961,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:鏈上顯微鏡:2:X:2092629248775532947",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2",
+        "title_options": [
+          "BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2",
+          "鏈上顯微鏡今日第2題｜BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its..."
+        ],
+        "why_now": [
+          "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：stablecoin"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2092629248775532947",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its own stablecoin, though no active product is underway, per WSJ. $CRCL Separately, a group of 12+ financial institutions including Bank of Americ",
+            "published_at": "2026-08-26T15:04:26+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2092629248775532947",
+            "market": "美股"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2092629248775532947",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its own stablecoin, though no active product is underway, per WSJ. $CRCL Separately, a group of 12+ financial institutions including Bank of Americ",
+            "published_at": "2026-08-26T15:04:26+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2092629248775532947",
+            "market": "美股"
+          }
+        ],
+        "shared_hotspot_id": "X:2092629248775532947",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@wallstengine。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@wallstengine"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:2:X:2092629248775532947:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:2:X:2092629248775532947:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:2:X:2092629248775532947:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "40f26065a4bca048f2fd04935075c9fdb446a747e6841c12fb521f918ae4e9c8",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@wallstengine"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T15:04:26+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@wallstengine刊出或發布了「BANKS MOVING FORWARD WITH GLOBAL STABLECOIN CONSORTIUM JPMorgan recently evaluated launching its...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@wallstengine。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2986,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:鏈上顯微鏡:3:X:2092616204787626030",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3",
+        "title_options": [
+          "Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3",
+          "鏈上顯微鏡今日第3題｜Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim..."
+        ],
+        "why_now": [
+          "@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：token"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@Zai_org",
+            "evidence_id": "X:2092616204787626030",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multimodal with a 1M-token context window - A 320B-A18B model released under the MIT License - Previously previewed as Ox Alpha, running entirely on C",
+            "published_at": "2026-08-26T14:12:36+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/Zai_org/status/2092616204787626030",
+            "market": "中国AI"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@Zai_org",
+            "evidence_id": "X:2092616204787626030",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multimodal with a 1M-token context window - A 320B-A18B model released under the MIT License - Previously previewed as Ox Alpha, running entirely on C",
+            "published_at": "2026-08-26T14:12:36+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/Zai_org/status/2092616204787626030",
+            "market": "中国AI"
+          }
+        ],
+        "shared_hotspot_id": "X:2092616204787626030",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」現在發生的具體變化是：@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@Zai_org。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@Zai_org"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:3:X:2092616204787626030:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:3:X:2092616204787626030:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:3:X:2092616204787626030:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "2c6358f2cd315c1808304c18152e840ab56123ad5a6b9186ea3920f174cd111a",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@Zai_org"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」現在發生的具體變化是：@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@Zai_org在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T14:12:36+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@Zai_org刊出或發布了「Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multim...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@Zai_org。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2956,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:鏈上顯微鏡:4:X:2092576399119040937",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4",
+        "title_options": [
+          "長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4",
+          "鏈上顯微鏡今日第4題｜長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。..."
+        ],
+        "why_now": [
+          "@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：token"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@cnfinancewatch",
+            "evidence_id": "X:2092576399119040937",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "长期看美元AI定锚如果成功，就是我去年预言的美国AI革命带动生产率出现工业革命以来最大的生产率提升。 世界美元权威定价定锚于AI出口（硬件和TOKEN），整体看，黄金是没有超级上涨的理由的 。 不过美元加息反而介入黄金的机会。",
+            "published_at": "2026-08-26T11:34:26+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/cnfinancewatch/status/2092576399119040937",
+            "market": "A股／美股"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@cnfinancewatch",
+            "evidence_id": "X:2092576399119040937",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "长期看美元AI定锚如果成功，就是我去年预言的美国AI革命带动生产率出现工业革命以来最大的生产率提升。 世界美元权威定价定锚于AI出口（硬件和TOKEN），整体看，黄金是没有超级上涨的理由的 。 不过美元加息反而介入黄金的机会。",
+            "published_at": "2026-08-26T11:34:26+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/cnfinancewatch/status/2092576399119040937",
+            "market": "A股／美股"
+          }
+        ],
+        "shared_hotspot_id": "X:2092576399119040937",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」現在發生的具體變化是：@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@cnfinancewatch。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@cnfinancewatch"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:4:X:2092576399119040937:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:4:X:2092576399119040937:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:4:X:2092576399119040937:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "0a8f1017cdbadf34f36e694ae612835baabc4c83af97e500a735e9dc78dafc81",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@cnfinancewatch"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "幣價急動只能告訴我們市場在動，不能直接告訴我們誰在買。今天完整拆解的題目是「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」現在發生的具體變化是：@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@cnfinancewatch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T11:34:26+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@cnfinancewatch刊出或發布了「長期看美元AI定錨如果成功，就是我去年預言的美國AI革命帶動生產率出現工業革命以來最大的生產率提升。 世界美元權威定價定錨於AI出口（硬體和TOKEN），整體看，黃金是沒有超級上漲的理由的 。...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@cnfinancewatch。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3040,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:鏈上顯微鏡:5:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5",
+        "title_options": [
+          "焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5",
+          "鏈上顯微鏡今日第5題｜焦點股》鴻海：輝達財報激勵 帶量衝鋒"
+        ],
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：鴻海、財報"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用鏈上顯微鏡的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "焦點股》鴻海：輝達財報激勵 帶量衝鋒",
+            "published_at": "2026-08-27T02:24:28+00:00",
+            "fetched_at": "2026-08-27T05:20:01.863095+00:00",
+            "human_verification_url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E9%B4%BB%E6%B5%B7-%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B1%E6%BF%80%E5%8B%B5-%E5%B8%B6%E9%87%8F%E8%A1%9D%E9%8B%92-022428170.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:5:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:5:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:鏈上顯微鏡:5:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "a2a1ff6f7aabd0db7a4bfcd84806a71727c7107e423d3f38764fd575058e3f47",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "幣價急動只能告訴我們市場在動，不能直接告訴我們誰在買。今天完整拆解的題目是「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「焦點股》鴻海：輝達財報激勵 帶量衝鋒：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。財報期權的核心是市場已經定價多少波動。應比較損益兩平點與自己預估的合理區間，而不是只判斷公司會不會交出好財報。\n\n第二個專屬檢查是：交易時段延長也不代表流動性平均增加。盤前盤後價差可能更寬，期權本身的退出條件尤其重要，否則帳面有限損失仍可能因成交困難而放大。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用鏈上顯微鏡的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2724,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}

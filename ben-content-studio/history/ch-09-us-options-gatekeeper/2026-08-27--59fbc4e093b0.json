@@ -1,0 +1,840 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-28T14:52:17+08:00",
+  "snapshot_fingerprint": "59fbc4e093b0dd8009cea419458fea7db25ce98b1f768f6fb1c06b40320d0ea9",
+  "channel": {
+    "channel_order": 9,
+    "channel_id": "ch-09-us-options-gatekeeper",
+    "channel_name": "期權守門人",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "MEDIUM_FOR_RISK_EDUCATION_LOW_FOR_DAILY_OPTIONS_SURFACE",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-27",
+    "profile_promise": "風險優先地講期權對沖、波動率和賣方策略，而不是單邊賭博。",
+    "audience": "持有美股現貨、希望降低迴撤或獲得額外現金流的理性交易者",
+    "language_style": "教學型、機制先行、語氣剋制；用歷史規律或大師案例引出風險不對稱。",
+    "opening_hook": "先挑戰普通人把期權當賭具或機械套規律的誤區。",
+    "narrative_logic": [
+      "歷史/案例",
+      "核心機制",
+      "三層推理",
+      "風險不對稱",
+      "普通人分層行動",
+      "限制條件"
+    ],
+    "ending_pattern": "用風險清單和適用條件收尾，互動問題圍繞防守與紀律。",
+    "profile_sample_alignment": "PROFILE_SAMPLE_PARTIAL_MATCH_RISK_EDUCATION_STRONG_DAILY_SELLING_OPTIONS_WEAK",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-08-27:期權守門人:1:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1",
+        "title_options": [
+          "焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1",
+          "期權守門人今日第1題｜焦點股》鴻海：輝達財報激勵 帶量衝鋒"
+        ],
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：鴻海、財報"
+        ],
+        "why_channel": [
+          "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "焦點股》鴻海：輝達財報激勵 帶量衝鋒",
+            "published_at": "2026-08-27T02:24:28+00:00",
+            "fetched_at": "2026-08-27T05:20:01.863095+00:00",
+            "human_verification_url": "https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E9%B4%BB%E6%B5%B7-%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B1%E6%BF%80%E5%8B%B5-%E5%B8%B6%E9%87%8F%E8%A1%9D%E9%8B%92-022428170.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:8c59cdac-7903-4414-a3a0-144e013a5161",
+        "channel_angle": "期權守門人",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。",
+          "editorial_tension": "「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:1:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:1",
+            "claim_type": "CONDITIONAL",
+            "check": "事件是否已被隱含波動率提前定價",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:1:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI與成交是否支持而非誤導方向",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:1:NEWS:8c59cdac-7903-4414-a3a0-144e013a5161:3",
+            "claim_type": "CONDITIONAL",
+            "check": "買賣價差和退出方案是否可承受",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "55302000cf3c2897af6daa2a586a5a2e8dbf6a51d8fe0d90eb1d619d9dd91a0c",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "買方虧損有限，不代表任何一張Call或Put都值得買。今天完整拆解的題目是「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「焦點股》鴻海：輝達財報激勵 帶量衝鋒：期權守門人今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T02:24:28+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「焦點股》鴻海：輝達財報激勵 帶量衝鋒」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。財報期權的核心是市場已經定價多少波動。應比較損益兩平點與自己預估的合理區間，而不是只判斷公司會不會交出好財報。\n\n第二個專屬檢查是：交易時段延長也不代表流動性平均增加。盤前盤後價差可能更寬，期權本身的退出條件尤其重要，否則帳面有限損失仍可能因成交困難而放大。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2672,
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:期權守門人:2:NEWS:697dc008-be4d-4843-b969-9a9754e9ea66",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2",
+        "title_options": [
+          "聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2",
+          "期權守門人今日第2題｜聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機"
+        ],
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：台積電、聯發科"
+        ],
+        "why_channel": [
+          "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:697dc008-be4d-4843-b969-9a9754e9ea66",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機",
+            "published_at": "2026-08-27T01:32:30+00:00",
+            "fetched_at": "2026-08-27T05:20:01.863095+00:00",
+            "human_verification_url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91mt8875%E6%8E%A1%E5%8F%B0%E7%A9%8D%E9%9B%BB4%E5%A5%88%E7%B1%B3%E6%89%93%E9%80%A0-%E6%90%B6%E4%BC%81%E6%A5%AD%E5%B7%A5%E6%A5%AD%E7%89%A9%E8%81%AF%E7%B6%B2%E5%95%86%E6%A9%9F-013230398.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:697dc008-be4d-4843-b969-9a9754e9ea66",
+        "channel_angle": "期權守門人",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。",
+          "editorial_tension": "「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:2:NEWS:697dc008-be4d-4843-b969-9a9754e9ea66:1",
+            "claim_type": "CONDITIONAL",
+            "check": "事件是否已被隱含波動率提前定價",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:2:NEWS:697dc008-be4d-4843-b969-9a9754e9ea66:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI與成交是否支持而非誤導方向",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:2:NEWS:697dc008-be4d-4843-b969-9a9754e9ea66:3",
+            "claim_type": "CONDITIONAL",
+            "check": "買賣價差和退出方案是否可承受",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "accc8ce49e3838bdfd2fcce90e99d8d3496dc7135af8fe0ad6f34882f1b6e556",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "買方虧損有限，不代表任何一張Call或Put都值得買。今天完整拆解的題目是「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機：期權守門人今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:32:30+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「聯發科MT8875採台積電4奈米打造 搶企業工業物聯網商機」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2730,
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:期權守門人:3:X:2092786880920297611",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3",
+        "title_options": [
+          "DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3",
+          "期權守門人今日第3題｜DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield..."
+        ],
+        "why_now": [
+          "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：tsmc、mediatek"
+        ],
+        "why_channel": [
+          "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+        ],
+        "facts": [
+          "@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@jukan05",
+            "evidence_id": "X:2092786880920297611",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield, cost, and production capacity. DigiTimes: While MediaTek still considers TSMC its primary foundry partner and tries to minimize discussion of ",
+            "published_at": "2026-08-27T01:30:49+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/jukan05/status/2092786880920297611",
+            "market": "全球市场"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@jukan05",
+            "evidence_id": "X:2092786880920297611",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield, cost, and production capacity. DigiTimes: While MediaTek still considers TSMC its primary foundry partner and tries to minimize discussion of ",
+            "published_at": "2026-08-27T01:30:49+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/jukan05/status/2092786880920297611",
+            "market": "全球市场"
+          }
+        ],
+        "shared_hotspot_id": "X:2092786880920297611",
+        "channel_angle": "期權守門人",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」現在發生的具體變化是：@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。",
+          "editorial_tension": "「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@jukan05。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@jukan05"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:3:X:2092786880920297611:1",
+            "claim_type": "CONDITIONAL",
+            "check": "事件是否已被隱含波動率提前定價",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:3:X:2092786880920297611:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI與成交是否支持而非誤導方向",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:3:X:2092786880920297611:3",
+            "claim_type": "CONDITIONAL",
+            "check": "買賣價差和退出方案是否可承受",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "4e27778a41b130e6e8f56a1e0a0c5e60284bf5b426593a56b2808dfcaf365168",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@jukan05"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "事件行情最危險的地方，是方向看對仍可能輸給波動率與時間。今天完整拆解的題目是「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」現在發生的具體變化是：@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...：期權守門人今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:30:49+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@jukan05刊出或發布了「DigiTimes: MediaTek’s EMIB solution has met Google’s original requirements for technology, yield...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@jukan05。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3022,
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:期權守門人:4:X:2092783136027627695",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4",
+        "title_options": [
+          "Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4",
+          "期權守門人今日第4題｜Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf..."
+        ],
+        "why_now": [
+          "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：tsmc、mediatek"
+        ],
+        "why_channel": [
+          "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+        ],
+        "facts": [
+          "@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092783136027627695",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisfied customers, media report, citing unnamed supply chain sources, who say Intel’s work with clients Google and MediaTek has been so smooth it in",
+            "published_at": "2026-08-27T01:15:56+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092783136027627695",
+            "market": "台湾／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092783136027627695",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisfied customers, media report, citing unnamed supply chain sources, who say Intel’s work with clients Google and MediaTek has been so smooth it in",
+            "published_at": "2026-08-27T01:15:56+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092783136027627695",
+            "market": "台湾／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2092783136027627695",
+        "channel_angle": "期權守門人",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。",
+          "editorial_tension": "「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@dnystedt。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@dnystedt"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:4:X:2092783136027627695:1",
+            "claim_type": "CONDITIONAL",
+            "check": "事件是否已被隱含波動率提前定價",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:4:X:2092783136027627695:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI與成交是否支持而非誤導方向",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:4:X:2092783136027627695:3",
+            "claim_type": "CONDITIONAL",
+            "check": "買賣價差和退出方案是否可承受",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "1fe1539fb29c32490588aa2f7f26a97d7b61ecfd70408b54aa97eeaf8755a312",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@dnystedt"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "買方虧損有限，不代表任何一張Call或Put都值得買。今天完整拆解的題目是「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...：期權守門人今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:15:56+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@dnystedt刊出或發布了「Intel EMIB advanced packaging has become a confirmed rival to TSMC with strong yields and satisf...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@dnystedt。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3006,
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-27:期權守門人:5:X:2092780615678538168",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-27",
+        "title": "晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5",
+        "title_options": [
+          "晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5",
+          "期權守門人今日第5題｜晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實..."
+        ],
+        "why_now": [
+          "@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：公司"
+        ],
+        "why_channel": [
+          "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+        ],
+        "facts": [
+          "@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@TJ_Research",
+            "evidence_id": "X:2092780615678538168",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "晚上视频我会详细地讲一下，但我讲再多都没法影响明天的股价走势，就像最近英特尔的股价一样，对于估值低，基本面好的公司，应该开心而不是沮丧，最近软件的强势，比特币黄金的强势已经好几个例子了，但其实也就低迷了半年的时间，守住自己看好的好标的，剩下的交给时间。",
+            "published_at": "2026-08-27T01:05:55+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/TJ_Research/status/2092780615678538168",
+            "market": "美股／宏观／AI"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@TJ_Research",
+            "evidence_id": "X:2092780615678538168",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "晚上视频我会详细地讲一下，但我讲再多都没法影响明天的股价走势，就像最近英特尔的股价一样，对于估值低，基本面好的公司，应该开心而不是沮丧，最近软件的强势，比特币黄金的强势已经好几个例子了，但其实也就低迷了半年的时间，守住自己看好的好标的，剩下的交给时间。",
+            "published_at": "2026-08-27T01:05:55+00:00",
+            "fetched_at": "2026-08-27T05:05:01.566306+00:00",
+            "human_verification_url": "https://x.com/TJ_Research/status/2092780615678538168",
+            "market": "美股／宏观／AI"
+          }
+        ],
+        "shared_hotspot_id": "X:2092780615678538168",
+        "channel_angle": "期權守門人",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」現在發生的具體變化是：@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。",
+          "editorial_tension": "「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@TJ_Research。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@TJ_Research"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:5:X:2092780615678538168:1",
+            "claim_type": "CONDITIONAL",
+            "check": "事件是否已被隱含波動率提前定價",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:5:X:2092780615678538168:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI與成交是否支持而非誤導方向",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-27:期權守門人:5:X:2092780615678538168:3",
+            "claim_type": "CONDITIONAL",
+            "check": "買賣價差和退出方案是否可承受",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "d57371f73f1dd1da7bf719042bc8aade707b8aeb74c63e6b2ce279290f8dd864",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@TJ_Research"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "今天先不猜方向，期權守門人先算最壞情境。今天完整拆解的題目是「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」現在發生的具體變化是：@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由期權守門人切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...：期權守門人今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為期權守門人的優先追蹤題。已確認的第一個錨點是：@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@TJ_Research在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-27T01:05:55+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在期權守門人，不是換一個頻道名稱重講同一篇新聞。先看最大損失、IV與期限結構，再看OI、價差和退出流動性；沒有完整期權鏈時不提供特定履約價或勝率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@TJ_Research刊出或發布了「晚上影片我會詳細地講一下，但我講再多都沒法影響明天的股價走勢，就像最近英特爾的股價一樣，對於估值低，基本面好的公司，應該開心而不是沮喪，最近軟體的強勢，比特幣黃金的強勢已經好幾個例子了，但其實...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。軋空的自我強化鏈是價格上漲、空頭保證金不足、交易所強制回補、價格再上漲。這能解釋速度，卻不能證明新長線資金已經進場。\n\n第二個專屬檢查是：區分趨勢與擠壓，要看清算後的現貨成交、OI與資金費率。OI大降而現貨量沒有增加，較像舊部位被清掉；現貨持續買入且槓桿不過熱，才可能轉成較穩定需求。\n\n機制第1層：期權損益不只受方向影響，還受隱含波動率、剩餘時間與買賣價差影響。事件前IV抬高時，方向看對也可能輸給事件後的波動率收縮。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：先定最大損失，再談報酬。買方最大損失通常是權利金，但頻繁買進會被時間價值侵蝕；賣方收入有限，尾部風險與保證金壓力卻可能很大。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：沒有完整期權鏈、OI和流動性時，不應推薦特定履約價。可以做的是列出風險預算、到期時間、退出條件與不交易條件。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若事件可能波動高於市場定價，且最大損失可承受，有限風險結構才有研究價值。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若IV已極高、價差很寬或事件結果難以定義，不交易往往比用昂貴期權猜方向更完整。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用期權守門人的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得完整期權鏈的IV與OI，不能提供特定履約價或方向勝率。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察事件是否已被隱含波動率提前定價，而且IV與期限結構同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI與成交是否支援而非誤導方向仍未形成連續確認，代表市場還在消化資訊。否定情景：如果買賣價差和退出方案是否可承受明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，IV與期限結構；第二，OI和成交量；第三，買賣價差；第四，最大損失與退出條件。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@TJ_Research。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。守門人的答案先是能不能承受，再是值不值得交易，最後才是方向。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。守門順序永遠是先活下來，再談方向；資料不齊時，空手也是完整策略。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3103,
+        "script_target_duration": "約3分鐘",
+        "script_minimum_character_count": 1200,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約3分鐘",
+    "minimum_script_character_count": 1200
+  }
+}

@@ -78,7 +78,10 @@ function normalizeChannels(payload) {
       description: channel.profile_promise,
     },
     topics: list(channel.topics),
-    historyEntries: historyIndex.filter((entry) => entry.channel_id === channel.channel_id),
+    historyEntries: historyIndex.filter((entry) => (
+      entry.channel_id === channel.channel_id
+      && String(entry.content_date || "") < String(channel.content_date || "")
+    )),
   }));
 }
 
@@ -110,7 +113,8 @@ function applyPayload(payload) {
   reviewPolicy = workbench.review_policy || {};
   marketDataStatus = workbench.market_data_status || "";
   channels = normalizeChannels(payload);
-  if (channels.length !== 11 || channels.some((channel) => channel.topics.length !== 5)) {
+  const expectedVisibleChannels = Number(workbench.public_visible_channel_count);
+  if (!Number.isInteger(expectedVisibleChannels) || channels.length !== expectedVisibleChannels || channels.some((channel) => channel.topics.length !== 5)) {
     throw new Error("已有樣本頻道尚未形成五題審稿面");
   }
   if (channels.some((channel) => channel.topics.some((topic) => !topic.script_text))) {
@@ -118,9 +122,6 @@ function applyPayload(payload) {
   }
   if (channels.some((channel) => channel.topics.some((topic) => topic.script_meets_target !== true))) {
     throw new Error("已有樣本頻道仍有未達時長門檻的文稿");
-  }
-  if (channels.some((channel) => !channel.historyEntries.length)) {
-    throw new Error("已有樣本頻道尚未建立可追溯的歷史回顧");
   }
   const snapshotDate = workbench.source_snapshot_date;
   const fullScriptCount = channels.reduce((total, channel) => total + channel.topics.filter((topic) => topic.script_text).length, 0);
@@ -133,7 +134,7 @@ function applyPayload(payload) {
   $("#source-mops").textContent = marketDataStatus === "SOURCE_PENDING" ? "未用於本版收盤事實" : sourceLabel(payload, "MOPS");
   $("#source-news").textContent = `${workbench.news_source_success_count || 9}/${workbench.news_source_count || 9} · 官方${workbench.official_source_count || 0}`;
   $("#source-x").textContent = marketDataStatus === "SOURCE_PENDING" ? "OPINION · 可選輸入" : sourceLabel(payload, "X");
-  $("#source-youtube").textContent = `${workbench.transcript_sample_count || 19}篇口吻樣本`;
+  $("#source-youtube").textContent = `${workbench.transcript_sample_count || 22}篇口吻樣本`;
   const refreshState = $("#refresh-state");
   refreshState.className = "refresh-state";
   refreshState.textContent = workbench.market_data_status === "SOURCE_PENDING"

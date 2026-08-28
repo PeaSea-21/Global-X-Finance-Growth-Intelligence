@@ -1,0 +1,836 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-08-26T18:16:14+08:00",
+  "snapshot_fingerprint": "926721bc64782d02dd849905f36c844eb531bea96f8674d410c3b75412803df8",
+  "channel": {
+    "channel_order": 15,
+    "channel_id": "ch-15-onchain-microscope",
+    "channel_name": "鏈上顯微鏡",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS_PARTIAL_PROFILE_MATCH",
+    "style_confidence": "MEDIUM_FOR_MECHANISM_LOW_FOR_TRUE_ONCHAIN_ADDRESS_ANALYSIS",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-08-26",
+    "profile_promise": "用鏈上、機構持倉與衍生品資料拆解巨鯨累積、獲利盤壓力與多空清算。",
+    "audience": "加密貨幣交易者、鏈上資料研究者、高階交易員",
+    "language_style": "繁體中文；先丟關鍵數字，再拆持倉或清算機制，語速快但比暗池頻道更偏資料解釋。",
+    "opening_hook": "直接報一個機構持倉變化或大額清算，再說這個訊號能證明什麼、不能證明什麼。",
+    "narrative_logic": [
+      "數字鉤子",
+      "資料口徑",
+      "持倉/清算機制",
+      "同類機構比較",
+      "價格區間",
+      "替代解釋",
+      "下一個鏈上驗證點"
+    ],
+    "ending_pattern": "以轉多、被套或槓桿推動的多解釋收尾，請觀眾用下一組資料驗證。",
+    "profile_sample_alignment": "PARTIAL_MATCH_SAMPLES_ARE_13F_AND_LIQUIDATION_NOT_TRUE_ONCHAIN_ADDRESS_MONITORING",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-08-26:鏈上顯微鏡:1:X:2092290030521798960",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-26",
+        "title": "Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1",
+        "title_options": [
+          "Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1",
+          "鏈上顯微鏡今日第1題｜Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @..."
+        ],
+        "why_now": [
+          "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：ethereum、crypto"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092290030521798960",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @ethereum $ETH $BMNR $BMNP",
+            "published_at": "2026-08-25T16:36:30+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092290030521798960",
+            "market": "美股／宏观"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092290030521798960",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @ethereum $ETH $BMNR $BMNP",
+            "published_at": "2026-08-25T16:36:30+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092290030521798960",
+            "market": "美股／宏观"
+          }
+        ],
+        "shared_hotspot_id": "X:2092290030521798960",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@fundstrat。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@fundstrat"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:1:X:2092290030521798960:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:1:X:2092290030521798960:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:1:X:2092290030521798960:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "351c270820ea4b4da901ad82971939c870fde8df3c050f2fd1dd02d2d79cbc9f",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@fundstrat"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...：鏈上顯微鏡今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T16:36:30+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@fundstrat刊出或發布了「Great speaking with @TrustlessState on @Bankless - the future looks very strong for crypto and @...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@fundstrat。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2951,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-26:鏈上顯微鏡:2:NEWS:3a9702b0-83bc-406f-803b-171784d35c01",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-26",
+        "title": "Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2",
+        "title_options": [
+          "Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2",
+          "鏈上顯微鏡今日第2題｜Kalshi traders see low likelihood of major crypto bill becoming law this year"
+        ],
+        "why_now": [
+          "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：crypto"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_id": "NEWS:3a9702b0-83bc-406f-803b-171784d35c01",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "Kalshi traders see low likelihood of major crypto bill becoming law this year",
+            "published_at": "2026-08-25T19:52:43+00:00",
+            "fetched_at": "2026-08-26T05:20:01.926859+00:00",
+            "human_verification_url": "https://www.cnbc.com/2026/08/25/kalshi-traders-see-low-likelihood-of-major-crypto-bill-becoming-law-this-year.html",
+            "market": "US"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:3a9702b0-83bc-406f-803b-171784d35c01",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:2:NEWS:3a9702b0-83bc-406f-803b-171784d35c01:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:2:NEWS:3a9702b0-83bc-406f-803b-171784d35c01:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:2:NEWS:3a9702b0-83bc-406f-803b-171784d35c01:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "8251ca214bb4cb51554476bdfac8307ccd9b60acd71c6ad049aa4d0e5129f75a",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "鏈上世界最有價值的是可驗證，但前提是拿得到地址與交易雜湊。今天完整拆解的題目是「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Kalshi traders see low likelihood of major crypto bill becoming law this year：鏈上顯微鏡今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T19:52:43+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出或發布了「Kalshi traders see low likelihood of major crypto bill becoming law this year」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2827,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-26:鏈上顯微鏡:3:NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-26",
+        "title": "The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3",
+        "title_options": [
+          "The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3",
+          "鏈上顯微鏡今日第3題｜The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style"
+        ],
+        "why_now": [
+          "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：crypto"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_id": "NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style",
+            "published_at": "2026-08-25T11:24:50+00:00",
+            "fetched_at": "2026-08-25T12:23:11.216226+00:00",
+            "human_verification_url": "https://www.cnbc.com/2026/08/25/debasement-trade-debt-gold-bitcoin-dollar.html",
+            "market": "US"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:3:NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:3:NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:3:NEWS:0250d77f-5265-471b-abab-5bc1c65aa6e3:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "0ba945534acd05340215c42d75940e42663ab10ed833ebe540fcfb0f95647fa3",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "K線先放旁邊，鏈上顯微鏡今天從地址、合約與資金流開始查。今天完整拆解的題目是「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style：鏈上顯微鏡今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-25T11:24:50+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出或發布了「The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2896,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-26:鏈上顯微鏡:4:X:2092449156077854899",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-26",
+        "title": "Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4",
+        "title_options": [
+          "Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4",
+          "鏈上顯微鏡今日第4題｜Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026"
+        ],
+        "why_now": [
+          "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：crypto"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092449156077854899",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026",
+            "published_at": "2026-08-26T03:08:49+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092449156077854899",
+            "market": "美股／宏观"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@fundstrat",
+            "evidence_id": "X:2092449156077854899",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026",
+            "published_at": "2026-08-26T03:08:49+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/fundstrat/status/2092449156077854899",
+            "market": "美股／宏观"
+          }
+        ],
+        "shared_hotspot_id": "X:2092449156077854899",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@fundstrat。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@fundstrat"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:4:X:2092449156077854899:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:4:X:2092449156077854899:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:4:X:2092449156077854899:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "791948c9ba5dac936c7dd654e4825a21d8787761933518c3443bcd41b3d92ca0",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@fundstrat"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "幣價急動只能告訴我們市場在動，不能直接告訴我們誰在買。今天完整拆解的題目是「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」現在發生的具體變化是：@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026：鏈上顯微鏡今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@fundstrat在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T03:08:49+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@fundstrat刊出或發布了「Crypto is an ‘AI downstream’ story This is why we see crypto strengthening in 2026」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@fundstrat。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2870,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-08-26:鏈上顯微鏡:5:X:2092431540559188216",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-08-26",
+        "title": "Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5",
+        "title_options": [
+          "Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5",
+          "鏈上顯微鏡今日第5題｜Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL..."
+        ],
+        "why_now": [
+          "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：token"
+        ],
+        "why_channel": [
+          "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+        ],
+        "facts": [
+          "@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092431540559188216",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL 72, with cost-per-token dramatically lowered, giving Taiwan AI server manufacturers visibility to 2028, media report, citing unnamed industry s",
+            "published_at": "2026-08-26T01:58:49+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092431540559188216",
+            "market": "台湾／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2092431540559188216",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL 72, with cost-per-token dramatically lowered, giving Taiwan AI server manufacturers visibility to 2028, media report, citing unnamed industry s",
+            "published_at": "2026-08-26T01:58:49+00:00",
+            "fetched_at": "2026-08-26T05:05:00.963953+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2092431540559188216",
+            "market": "台湾／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2092431540559188216",
+        "channel_angle": "鏈上顯微鏡",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。"
+        ],
+        "core_question": "「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。",
+          "editorial_tension": "「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@dnystedt。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@dnystedt"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:5:X:2092431540559188216:1",
+            "claim_type": "CONDITIONAL",
+            "check": "地址與交易哈希能否重建資金路徑",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:5:X:2092431540559188216:2",
+            "claim_type": "CONDITIONAL",
+            "check": "交易所流入流出是否支持價格變化",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-08-26:鏈上顯微鏡:5:X:2092431540559188216:3",
+            "claim_type": "CONDITIONAL",
+            "check": "OI、資金費率與現貨買盤是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "57d06a0baf5d49e5d8b198ba82d8159e2abafe831cf7ec510e0e0d88ab9ec85d",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@dnystedt"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "鏈上世界最有價值的是可驗證，但前提是拿得到地址與交易雜湊。今天完整拆解的題目是「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由鏈上顯微鏡切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...：鏈上顯微鏡今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為鏈上顯微鏡的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-26T01:58:49+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在鏈上顯微鏡，不是換一個頻道名稱重講同一篇新聞。要把新聞、清算與真正鏈上證據分層，重點核對地址累積、交易所淨流入、合約暴露、OI與資金費率。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@dnystedt刊出或發布了「Nvidia Vera Rubin server rack data throughput is 30-times better than prior generation GB300 NVL...」，原文連結與時間均保留供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：清算造成的買盤和現貨長期買盤不是同一件事。空頭被強平時，交易所被迫回補會推高價格，但若OI下降、現貨流入沒有跟上，動能可能在清算結束後消退。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：地址變動也要辨識實體。交易所內部歸集、跨鏈橋、做市商與託管地址都可能形成巨額轉帳，沒有地址標籤和交易雜湊，不能把每筆大額移動都叫做巨鯨囤幣。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：協議或交易所事件要從合約地址、受影響區塊、資產流向與提款狀態重建。媒體報導能指出事件存在，但不能替代鏈上取證。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。轉強證據會是交易所淨流出、長期持有者累積、現貨成交增加，且OI與資金費率沒有再次過熱。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。槓桿反彈則可能看到價格急升、清算放大、資金費率快速轉高，但地址累積與ETF流量不足。兩種路徑需要不同資料驗證。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得鏈上地址、交易雜湊與OI，不能把價格波動寫成巨鯨行動。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察地址與交易雜湊能否重建資金路徑，而且地址標籤與交易雜湊同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但交易所流入流出是否支援價格變化仍未形成連續確認，代表市場還在消化資訊。否定情景：如果OI、資金費率與現貨買盤是否同步明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，地址標籤與交易雜湊；第二，交易所淨流入流出；第三，OI及資金費率；第四，現貨ETF或現貨成交。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@dnystedt。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。鏈上顯微鏡只把可重建的資金路徑稱為證據，其餘保留為假設。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。沒有地址級證據就不把價格故事寫成巨鯨行動；等鏈上足跡出現，再更新判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2952,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}
