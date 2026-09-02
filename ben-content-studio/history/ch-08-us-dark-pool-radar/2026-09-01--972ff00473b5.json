@@ -1,0 +1,886 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-09-02T13:35:02+08:00",
+  "snapshot_fingerprint": "972ff00473b5f3f0ac8bcde4b29e0b9b975395d8fe9a327a2da325e83b58c509",
+  "channel": {
+    "channel_order": 8,
+    "channel_id": "ch-08-us-dark-pool-radar",
+    "channel_name": "暗池雷達",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+    "style_confidence": "MEDIUM_FOR_OPTIONS_ANOMALY_LOW_FOR_TRUE_DARK_POOL",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-09-01",
+    "profile_promise": "用暗池大宗和期權異常成交識別機構可能的防守、投機或對沖。",
+    "audience": "期權交易者、短線波段客、主力資金觀察者",
+    "language_style": "懸疑式、高張力、先現貨反常再揭示期權大單；生產稿需顯著降低把大單人格化的斷言。",
+    "opening_hook": "先說現貨看起來平靜或大漲，再揭示衍生品市場的反向異常。",
+    "narrative_logic": [
+      "現貨鉤子",
+      "合約欄位",
+      "成交/OI/IV/Delta",
+      "技術位",
+      "事件催化",
+      "多種可能意圖",
+      "驗證條件"
+    ],
+    "ending_pattern": "列突破/跌破/IV變化/OI變化四個驗證點，不宣佈機構唯一意圖。",
+    "profile_sample_alignment": "PARTIAL_MATCH_OPTIONS_HEAVY_TRUE_DARK_POOL_EVIDENCE_NOT_SHOWN",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-09-01:暗池雷達:1:NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0",
+        "candidate_type": "HONEST_SHORTAGE_MONITOR",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1",
+        "title_options": [
+          "臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1",
+          "暗池雷達今日第1題｜臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停"
+        ],
+        "title_localization": {
+          "status": "ORIGINAL_CHINESE",
+          "method": "ORIGINAL_CHINESE",
+          "cache_key": "b6ad8f72a1fbc6c2053cb654993f6318d69e57c331f1cfb564edb6be8b6bf75b",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：台積電、聯發科"
+        ],
+        "why_channel": [
+          "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。",
+          "本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "台股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停",
+            "published_at": "2026-09-01T01:47:30+00:00",
+            "fetched_at": "2026-09-01T05:20:01.927416+00:00",
+            "human_verification_url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A19%E6%9C%88%E9%96%8B%E9%96%80%E7%B4%85-%E9%A3%86%E8%BF%91700%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%BC%B225%E5%85%83-%E8%81%AF%E7%99%BC%E7%A7%91%E8%B7%B3%E7%A9%BA%E6%BC%B2%E5%81%9C-013145025.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0",
+        "channel_angle": "暗池雷達",
+        "risk_flags": [
+          "HONEST_SHORTAGE",
+          "NO_DARK_POOL_PRINTS",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。",
+          "editorial_tension": "「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:1:NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0:1",
+            "claim_type": "CONDITIONAL",
+            "check": "原始打印能否核對時間價格與數量",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:1:NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI變化能否排除平倉和多腿組合",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:1:NEWS:c1e45cdd-416c-4bb8-a4d1-88813b3228d0:3",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨與衍生品是否在同一時點互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "dacc7be96ff809ac5a294e37410d20d092c4eca34af4384068c91f8d57347cf1",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "新聞很熱不代表暗池已經表態，這兩件事必須分開。今天完整拆解的題目是「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停：暗池雷達今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T01:47:30+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「臺股9月開門紅「飆近700點」！台積電漲25元、聯發科跳空漲停」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2801,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:暗池雷達:2:X:2094590406495506753",
+        "candidate_type": "HONEST_SHORTAGE_MONITOR",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2",
+        "title_options": [
+          "聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2",
+          "暗池雷達今日第2題｜聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…"
+        ],
+        "title_localization": {
+          "status": "ORIGINAL_CHINESE",
+          "method": "ORIGINAL_CHINESE",
+          "cache_key": "aa2b719089305e236dccfba9a682995188b8eef6b8d453988cfd9b29e1e934a3",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：聯發科、mediatek"
+        ],
+        "why_channel": [
+          "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+        ],
+        "facts": [
+          "@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。",
+          "本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@mingchikuo",
+            "evidence_id": "X:2094590406495506753",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "聯發科最新公告宣布深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究的核心判斷： 聯發科內部已將 AI 事業的策略定位，從「IC / ASIC 設計」提升至「系統級別設計」。 公告網址： https://www.mediatek.com/press-room/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to",
+            "published_at": "2026-09-01T00:57:23+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/mingchikuo/status/2094590406495506753",
+            "market": "台湾＋美股科技"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@mingchikuo",
+            "evidence_id": "X:2094590406495506753",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "聯發科最新公告宣布深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究的核心判斷： 聯發科內部已將 AI 事業的策略定位，從「IC / ASIC 設計」提升至「系統級別設計」。 公告網址： https://www.mediatek.com/press-room/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to",
+            "published_at": "2026-09-01T00:57:23+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/mingchikuo/status/2094590406495506753",
+            "market": "台湾＋美股科技"
+          }
+        ],
+        "shared_hotspot_id": "X:2094590406495506753",
+        "channel_angle": "暗池雷達",
+        "risk_flags": [
+          "HONEST_SHORTAGE",
+          "NO_DARK_POOL_PRINTS",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」現在發生的具體變化是：@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。",
+          "editorial_tension": "「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@mingchikuo。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+        "script_claims": [
+          "@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@mingchikuo"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:2:X:2094590406495506753:1",
+            "claim_type": "CONDITIONAL",
+            "check": "原始打印能否核對時間價格與數量",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:2:X:2094590406495506753:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI變化能否排除平倉和多腿組合",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:2:X:2094590406495506753:3",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨與衍生品是否在同一時點互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "18fd24ea9ab41a27b7e9b6e8ba137a87965ebf286bc921e0336c364c4722bdaa",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@mingchikuo"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」現在發生的具體變化是：@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…：暗池雷達今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。\n\n先把時點放正。@mingchikuo在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T00:57:23+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@mingchikuo刊出或發布了「聯發科最新公告宣佈深化與 Nvidia 的長期合作，其中反覆出現的「rack-scale」，正是理解這份公告的關鍵，也直接驗證了我兩個多月前研究…」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@mingchikuo。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 3018,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:暗池雷達:3:X:2094567984425820502",
+        "candidate_type": "HONEST_SHORTAGE_MONITOR",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3",
+        "title_options": [
+          "台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3",
+          "暗池雷達今日第3題｜台積電、聯發科：投資與資本動作出現新進展"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "1128c13bb3c5838ccfd352114c73a3d41ecbec77d8e9d831d01b91f068172562",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：tsmc、mediatek"
+        ],
+        "why_channel": [
+          "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+        ],
+        "facts": [
+          "@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。",
+          "本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@jukan05",
+            "evidence_id": "X:2094567984425820502",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "My guess is that MediaTek may be raising this kind of funding to make upfront payments for the substrates used in EMIB. Remember, TSMC said substrates are currently the biggest bottleneck after memory. And compared with memory, substrate ca",
+            "published_at": "2026-08-31T23:28:17+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/jukan05/status/2094567984425820502",
+            "market": "全球市场"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@jukan05",
+            "evidence_id": "X:2094567984425820502",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "My guess is that MediaTek may be raising this kind of funding to make upfront payments for the substrates used in EMIB. Remember, TSMC said substrates are currently the biggest bottleneck after memory. And compared with memory, substrate ca",
+            "published_at": "2026-08-31T23:28:17+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/jukan05/status/2094567984425820502",
+            "market": "全球市场"
+          }
+        ],
+        "shared_hotspot_id": "X:2094567984425820502",
+        "channel_angle": "暗池雷達",
+        "risk_flags": [
+          "HONEST_SHORTAGE",
+          "NO_DARK_POOL_PRINTS",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」現在發生的具體變化是：@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。",
+          "editorial_tension": "「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@jukan05。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+        "script_claims": [
+          "@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@jukan05"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:3:X:2094567984425820502:1",
+            "claim_type": "CONDITIONAL",
+            "check": "原始打印能否核對時間價格與數量",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:3:X:2094567984425820502:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI變化能否排除平倉和多腿組合",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:3:X:2094567984425820502:3",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨與衍生品是否在同一時點互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "42a8f7bb83de9f0a4157b7124ad81f0700ced7cc63d23d71c11ee30e1341da2c",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@jukan05"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」現在發生的具體變化是：@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「台積電、聯發科：投資與資本動作出現新進展：暗池雷達今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。\n\n先把時點放正。@jukan05在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:28:17+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@jukan05刊出或發布了「台積電、聯發科：投資與資本動作出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@jukan05。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2748,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:暗池雷達:4:X:2094505504919683473",
+        "candidate_type": "HONEST_SHORTAGE_MONITOR",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4",
+        "title_options": [
+          "台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4",
+          "暗池雷達今日第4題｜台積電、聯發科：財報與營運資料更新出現新進展"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "f22ddc6cb54c25ae83c6c5b9411be685eece02ca64e9eeb998140a08c972aa54",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：tsmc、mediatek"
+        ],
+        "why_channel": [
+          "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+        ],
+        "facts": [
+          "@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。",
+          "本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@pequityresearch",
+            "evidence_id": "X:2094505504919683473",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "J.P. Morgan: MediaTek > Production and 2026 Revenue: Mediatek's TPUv8t Zebrafish chip production ramp is smooth, currently in production at TSMC, and tracking toward over $2 billion in revenue for 2026. > 2027 Shipment Upside: Zebrafish uni",
+            "published_at": "2026-08-31T19:20:01+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/pequityresearch/status/2094505504919683473",
+            "market": "美股／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@pequityresearch",
+            "evidence_id": "X:2094505504919683473",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "J.P. Morgan: MediaTek > Production and 2026 Revenue: Mediatek's TPUv8t Zebrafish chip production ramp is smooth, currently in production at TSMC, and tracking toward over $2 billion in revenue for 2026. > 2027 Shipment Upside: Zebrafish uni",
+            "published_at": "2026-08-31T19:20:01+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/pequityresearch/status/2094505504919683473",
+            "market": "美股／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2094505504919683473",
+        "channel_angle": "暗池雷達",
+        "risk_flags": [
+          "HONEST_SHORTAGE",
+          "NO_DARK_POOL_PRINTS",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」現在發生的具體變化是：@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。",
+          "editorial_tension": "「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@pequityresearch。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+        "script_claims": [
+          "@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@pequityresearch"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:4:X:2094505504919683473:1",
+            "claim_type": "CONDITIONAL",
+            "check": "原始打印能否核對時間價格與數量",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:4:X:2094505504919683473:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI變化能否排除平倉和多腿組合",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:4:X:2094505504919683473:3",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨與衍生品是否在同一時點互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "740e2ecbc08b72c370d1419821c79cd4189bd2a4e479578672fdc4e86e211a4e",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@pequityresearch"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "市場最容易犯的錯，是先寫機構方向，再回頭找一筆大單替它背書。今天完整拆解的題目是「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」現在發生的具體變化是：@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「台積電、聯發科：財報與營運資料更新出現新進展：暗池雷達今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。\n\n先把時點放正。@pequityresearch在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T19:20:01+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@pequityresearch刊出或發布了「台積電、聯發科：財報與營運資料更新出現新進展」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@pequityresearch。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2798,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:暗池雷達:5:NEWS:45abcc05-49bd-437e-bdbc-93db852914bb",
+        "candidate_type": "HONEST_SHORTAGE_MONITOR",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5",
+        "title_options": [
+          "主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5",
+          "暗池雷達今日第5題｜主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到"
+        ],
+        "title_localization": {
+          "status": "ORIGINAL_CHINESE",
+          "method": "ORIGINAL_CHINESE",
+          "cache_key": "b1e37f9e94269c7042c40a0d09985526e066a85c5b6f34a3e571b944e1e0985e",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：聯發科"
+        ],
+        "why_channel": [
+          "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+        ],
+        "facts": [
+          "Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。",
+          "本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。"
+        ],
+        "evidence": [
+          {
+            "source_id": "Yahoo奇摩股市",
+            "evidence_id": "NEWS:45abcc05-49bd-437e-bdbc-93db852914bb",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到",
+            "published_at": "2026-09-01T04:51:48+00:00",
+            "fetched_at": "2026-09-01T05:20:01.927416+00:00",
+            "human_verification_url": "https://tw.news.yahoo.com/%E4%B8%BB%E5%8B%95%E5%BC%8Fetf%E6%89%8D%E5%89%9B%E6%B8%9B%E7%A2%BC-%E8%81%AF%E7%99%BC%E7%A7%91%E7%8D%B2%E8%BC%9D%E9%81%94%E5%8A%A0%E6%8C%81-%E4%BB%8A%E8%B7%B3%E7%A9%BA%E6%BC%B2%E5%81%9C-2-5%E8%90%AC%E5%BC%B5%E8%B2%B7%E5%96%AE%E6%90%B6%E4%B8%8D%E5%88%B0-045148741.html",
+            "market": "TW"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:45abcc05-49bd-437e-bdbc-93db852914bb",
+        "channel_angle": "暗池雷達",
+        "risk_flags": [
+          "HONEST_SHORTAGE",
+          "NO_DARK_POOL_PRINTS",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。",
+          "editorial_tension": "「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括Yahoo奇摩股市。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。",
+        "script_claims": [
+          "Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "Yahoo奇摩股市"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:5:NEWS:45abcc05-49bd-437e-bdbc-93db852914bb:1",
+            "claim_type": "CONDITIONAL",
+            "check": "原始打印能否核對時間價格與數量",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:5:NEWS:45abcc05-49bd-437e-bdbc-93db852914bb:2",
+            "claim_type": "CONDITIONAL",
+            "check": "OI變化能否排除平倉和多腿組合",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:暗池雷達:5:NEWS:45abcc05-49bd-437e-bdbc-93db852914bb:3",
+            "claim_type": "CONDITIONAL",
+            "check": "現貨與衍生品是否在同一時點互相確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "3b5360985e22f84b4c231b1d639fc8170f099a5b4b6e2a9223195a10ce6c55fa",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "Yahoo奇摩股市"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "新聞很熱不代表暗池已經表態，這兩件事必須分開。今天完整拆解的題目是「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」現在發生的具體變化是：Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由暗池雷達切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到：暗池雷達今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為暗池雷達的優先追蹤題。已確認的第一個錨點是：Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。\n\n先把時點放正。Yahoo奇摩股市在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-09-01T04:51:48+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在暗池雷達，不是換一個頻道名稱重講同一篇新聞。本題只以今日真實公開事件建立暗池監控清單；目前沒有逐筆暗池原始成交，因此不判斷機構買賣方向。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：Yahoo奇摩股市刊出或發布了「主動式ETF才剛減碼! 聯發科獲輝達加持 今跳空漲停、2.5萬張買單搶不到」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。供應商搶單傳言要拆成資格認證、設計匯入、量產時點與營收認列四步。任何一步沒有正式資料，市場估算都可能把遠期機會提前算成當期獲利。\n\n第二個專屬檢查是：止跌不能由一天上漲定義。至少要看賣方是否停止、成交是否由承接而非拉抬構成，以及股價能否在新訊息出現後守住關鍵區間。\n\n機制第1層：一筆大額成交要能研究，至少需要時間、價格、數量、交易場所與相對市場價格。缺少其中幾項，就無法判斷是主動買、主動賣、交叉盤或例行調倉。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：期權大單更容易誤讀。同一筆成交可能是多腿價差、平倉、造市避險或現貨對沖，單看Call或Put成交量不能直接翻譯成看多看空。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：事件新聞只能決定監控物件，不能替代暗池原始列印。正確順序是先有事件，再核對逐筆成交與OI變化，最後才談機構行為假設。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。若原始列印顯示多筆大額成交集中在同一價格區，後續現貨守住該區，期權OI又同向增加，才可能形成累積證據。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。若成交只是單筆、出現在收盤撮合附近，或OI隔日沒有增加，更合理的解釋可能是被動調倉、平倉或對沖。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：尚未取得含成交時間、價格、數量、場所與買賣方向的暗池原始列印。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：缺少原始成交證據時，不能把新聞熱度、價格上漲或大額成交推論為機構買入。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：本題由今日跨頻道 Evidence 補位；必須使用暗池雷達的驗證框架，不能冒充該頻道專屬結構化資料。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第5個資料邊界是：尚未取得暗池原始列印與完整期權鏈，不能判斷機構方向。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察原始列印能否核對時間價格與數量，而且暗池逐筆時間價格數量同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但OI變化能否排除平倉和多腿組合仍未形成連續確認，代表市場還在消化資訊。否定情景：如果現貨與衍生品是否在同一時點互相確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，暗池逐筆時間價格數量；第二，交易場所與方向判定；第三，完整期權鏈與OI日變化；第四，多腿及現貨對沖識別。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自Yahoo奇摩股市。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。今天能得出的結論若只是資料不足，就清楚說不足，不替主力寫劇本。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。資料不足時不猜主力，本身就是這個頻道最重要的判斷。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2821,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}

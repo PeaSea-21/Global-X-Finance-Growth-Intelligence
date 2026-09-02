@@ -1,0 +1,888 @@
+{
+  "artifact": "BEN_CHANNEL_HISTORY_SNAPSHOT",
+  "schema_version": "1.0",
+  "archived_at": "2026-09-02T13:35:02+08:00",
+  "snapshot_fingerprint": "ee3168fbc3802e6b0884496c14b3cd55a18610d5a8b229ccfdf1a4f007a121e3",
+  "channel": {
+    "channel_order": 16,
+    "channel_id": "ch-16-china-adr-wind-vane",
+    "channel_name": "中概風向球",
+    "style_status": "PROVISIONAL_TWO_FULL_TRANSCRIPTS",
+    "style_confidence": "MEDIUM_FOR_REPEATED_STRUCTURE",
+    "content_status": "PROVISIONAL_DRAFT_READY",
+    "content_date": "2026-09-01",
+    "profile_promise": "站在美元流動性與中美資本交匯處，追蹤中概股、匯率、政策與機構配置的風向。",
+    "audience": "中概股交易者、美股與港股雙棲投資人、地緣敏感型資金",
+    "language_style": "繁體中文夾美股代號；高密度短句，以指數平靜和板塊異動的反差開場，常用三層推理與分層觀察。",
+    "opening_hook": "先把美股大盤、半導體與中概股放在同一夜比較，指出資金正在換座位。",
+    "narrative_logic": [
+      "跨板塊反差",
+      "宏觀/地緣推力",
+      "政策與財報博弈",
+      "中概代表股廣度",
+      "美元/CNH與估值",
+      "長中短分層",
+      "反證"
+    ],
+    "ending_pattern": "用長線、波段、短線三層觀察收尾，互動問題圍繞反彈延續或空單回補。",
+    "profile_sample_alignment": "PARTIAL_MATCH_SECOND_SAMPLE_STRONG_FIRST_SAMPLE_DRIFTS_TO_US_MEMORY_SECTOR",
+    "reason": "依同日24小時來源窗口生成；頻道專屬結構化資料缺失時保留UNKNOWN或HONEST_SHORTAGE。",
+    "topics": [
+      {
+        "candidate_id": "daily:2026-09-01:中概風向球:1:NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1",
+        "title_options": [
+          "海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1",
+          "中概風向球今日第1題｜海外財經內容出現新動態，等待人工核對主題"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "890a84f14cbb635be12552a4e3ad7ba1c854dd02a78d1fde92570002c7a1a0f9",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：china"
+        ],
+        "why_channel": [
+          "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+        ],
+        "facts": [
+          "CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。"
+        ],
+        "evidence": [
+          {
+            "source_id": "CNBC",
+            "evidence_id": "NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa",
+            "evidence_class": "MEDIA_REPORT",
+            "epistemic_status": "REPORTED",
+            "title": "CNBC's The China Connection newsletter: McKinsey's contrarian economic view",
+            "published_at": "2026-08-31T23:00:01+00:00",
+            "fetched_at": "2026-09-01T05:20:02.680338+00:00",
+            "human_verification_url": "https://www.cnbc.com/2026/08/31/cnbc-china-connection-newsletter-mckinseys-contrarian-view-economy.html",
+            "market": "US"
+          }
+        ],
+        "opinion_evidence": [],
+        "shared_hotspot_id": "NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa",
+        "channel_angle": "中概風向球",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。",
+          "editorial_tension": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括CNBC。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "CNBC"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:1:NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa:1",
+            "claim_type": "CONDITIONAL",
+            "check": "公司或交易所正式文件是否落地",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:1:NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa:2",
+            "claim_type": "CONDITIONAL",
+            "check": "港美兩地成交與ETF流量是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:1:NEWS:27bd99dd-8f9d-44bb-a40f-3f9135a639fa:3",
+            "claim_type": "CONDITIONAL",
+            "check": "DXY、CNH與同業是否形成廣度確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "ef13fd3c7616734bdd8485312f65d2e09df81b9d9b4e1e1b14e8b0b220ed1be9",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "CNBC"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "站在港股、美股與人民幣交會處，同一家公司往往同時受三套定價影響。今天完整拆解的題目是「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」現在發生的具體變化是：CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #1」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。CNBC在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T23:00:01+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在中概風向球，不是換一個頻道名稱重講同一篇新聞。需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：CNBC刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：中概股同時受公司基本面、美元流動性與政策折價影響。營收改善可能被高利率壓住，政策緩和也可能只帶來估值修復，三條線必須分開。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：港美兩地上市公司還要比較成交時段、折溢價與匯率。ADR上漲若港股沒有確認，可能只是美股時段回補；兩地放量同向，訊號才較完整。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：融資支援AI支出既可能創造成長，也可能帶來稀釋與回報壓力。必須看到正式檔案、價格、股數、資金用途和資本回報，才能判斷哪一面占上風。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。正向路徑是正式檔案落地、融資條件可控、AI業務形成收入，同時CNH與中概ETF流量改善。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。壓力路徑是折價融資、回報期拉長，美元與利率又偏緊；即使單日反彈，也可能只是空單回補。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察公司或交易所正式檔案是否落地，而且公司及交易所正式檔案同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但港美兩地成交與ETF流量是否同步仍未形成連續確認，代表市場還在消化資訊。否定情景：如果DXY、CNH與同業是否形成廣度確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，公司及交易所正式檔案；第二，港美兩地成交與折溢價；第三，DXY與CNH；第四，中概ETF流量和同業廣度。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自CNBC。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。公司、匯率、政策與同業至少兩到三條風同向，才稱得上風向改變。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。風向真正改變時，公司、匯率與同業會留下共同訊號；只有單一新聞時先保持懷疑。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2636,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:中概風向球:2:X:2094551868219498586",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2",
+        "title_options": [
+          "海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2",
+          "中概風向球今日第2題｜海外財經內容出現新動態，等待人工核對主題"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "42293391e176221113fef84eb4500c3d29ae7115021f60d5e773161383518d7a",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：china"
+        ],
+        "why_channel": [
+          "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+        ],
+        "facts": [
+          "@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2094551868219498586",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Unimicron shares fell by the Taiwan market limit 10% on Monday after news Taiwan prosecutors raided a plant and arrested several executives over allegations they imported printed circuit boards (PCBs) from a China plant and changed paperwor",
+            "published_at": "2026-08-31T22:24:14+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2094551868219498586",
+            "market": "台湾／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2094551868219498586",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Unimicron shares fell by the Taiwan market limit 10% on Monday after news Taiwan prosecutors raided a plant and arrested several executives over allegations they imported printed circuit boards (PCBs) from a China plant and changed paperwor",
+            "published_at": "2026-08-31T22:24:14+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2094551868219498586",
+            "market": "台湾／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2094551868219498586",
+        "channel_angle": "中概風向球",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。",
+          "editorial_tension": "「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@dnystedt。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@dnystedt"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:2:X:2094551868219498586:1",
+            "claim_type": "CONDITIONAL",
+            "check": "公司或交易所正式文件是否落地",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:2:X:2094551868219498586:2",
+            "claim_type": "CONDITIONAL",
+            "check": "港美兩地成交與ETF流量是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:2:X:2094551868219498586:3",
+            "claim_type": "CONDITIONAL",
+            "check": "DXY、CNH與同業是否形成廣度確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "5d5daa867d5f9c4688e7a5d370ac2fc10521cd8db1be49dc9af2bd9b3f4acc83",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@dnystedt"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "中概風向球今天先看三股風：公司事件、美元流動性與政策環境。今天完整拆解的題目是「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「海外財經內容出現新動態，等待人工核對主題：中概風向球今日驗證 #2」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:24:14+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在中概風向球，不是換一個頻道名稱重講同一篇新聞。需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@dnystedt刊出或發布了「海外財經內容出現新動態，等待人工核對主題」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：中概股同時受公司基本面、美元流動性與政策折價影響。營收改善可能被高利率壓住，政策緩和也可能只帶來估值修復，三條線必須分開。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：港美兩地上市公司還要比較成交時段、折溢價與匯率。ADR上漲若港股沒有確認，可能只是美股時段回補；兩地放量同向，訊號才較完整。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：融資支援AI支出既可能創造成長，也可能帶來稀釋與回報壓力。必須看到正式檔案、價格、股數、資金用途和資本回報，才能判斷哪一面占上風。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。正向路徑是正式檔案落地、融資條件可控、AI業務形成收入，同時CNH與中概ETF流量改善。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。壓力路徑是折價融資、回報期拉長，美元與利率又偏緊；即使單日反彈，也可能只是空單回補。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察公司或交易所正式檔案是否落地，而且公司及交易所正式檔案同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但港美兩地成交與ETF流量是否同步仍未形成連續確認，代表市場還在消化資訊。否定情景：如果DXY、CNH與同業是否形成廣度確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，公司及交易所正式檔案；第二，港美兩地成交與折溢價；第三，DXY與CNH；第四，中概ETF流量和同業廣度。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@dnystedt。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。公司、匯率、政策與同業至少兩到三條風同向，才稱得上風向改變。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。風向真正改變時，公司、匯率與同業會留下共同訊號；只有單一新聞時先保持懷疑。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2658,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:中概風向球:3:X:2094551299828387960",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3",
+        "title_options": [
+          "AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3",
+          "中概風向球今日第3題｜AI 與半導體：產品或技術發布正在發酵"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "0d0c8e84c7b31f6749f902df733c6404e033b8db4b4a1524353409cd209614ed",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：china"
+        ],
+        "why_channel": [
+          "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+        ],
+        "facts": [
+          "@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2094551299828387960",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "The US will unveil Section 301 semiconductor tariffs around the time China Chairman Xi visits the US for a summit with President Trump, media report, adding Taiwan’s tariff rate will likely be close to the 15% already negotiated with the US",
+            "published_at": "2026-08-31T22:21:59+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2094551299828387960",
+            "market": "台湾／半导体"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@dnystedt",
+            "evidence_id": "X:2094551299828387960",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "The US will unveil Section 301 semiconductor tariffs around the time China Chairman Xi visits the US for a summit with President Trump, media report, adding Taiwan’s tariff rate will likely be close to the 15% already negotiated with the US",
+            "published_at": "2026-08-31T22:21:59+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/dnystedt/status/2094551299828387960",
+            "market": "台湾／半导体"
+          }
+        ],
+        "shared_hotspot_id": "X:2094551299828387960",
+        "channel_angle": "中概風向球",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。",
+          "editorial_tension": "「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@dnystedt。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@dnystedt"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:3:X:2094551299828387960:1",
+            "claim_type": "CONDITIONAL",
+            "check": "公司或交易所正式文件是否落地",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:3:X:2094551299828387960:2",
+            "claim_type": "CONDITIONAL",
+            "check": "港美兩地成交與ETF流量是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:3:X:2094551299828387960:3",
+            "claim_type": "CONDITIONAL",
+            "check": "DXY、CNH與同業是否形成廣度確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "bd8a3007aebac310c861dda621e4ded4319a049cad20f10dcddaefe9369ac905",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@dnystedt"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "中概股一根紅K可能來自基本面，也可能只是估值、匯率或空單回補。今天完整拆解的題目是「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」現在發生的具體變化是：@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「AI 與半導體：產品或技術發布正在發酵：中概風向球今日驗證 #3」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@dnystedt在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T22:21:59+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在中概風向球，不是換一個頻道名稱重講同一篇新聞。需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@dnystedt刊出或發布了「AI 與半導體：產品或技術發布正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：中概股同時受公司基本面、美元流動性與政策折價影響。營收改善可能被高利率壓住，政策緩和也可能只帶來估值修復，三條線必須分開。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：港美兩地上市公司還要比較成交時段、折溢價與匯率。ADR上漲若港股沒有確認，可能只是美股時段回補；兩地放量同向，訊號才較完整。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：融資支援AI支出既可能創造成長，也可能帶來稀釋與回報壓力。必須看到正式檔案、價格、股數、資金用途和資本回報，才能判斷哪一面占上風。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。正向路徑是正式檔案落地、融資條件可控、AI業務形成收入，同時CNH與中概ETF流量改善。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。壓力路徑是折價融資、回報期拉長，美元與利率又偏緊；即使單日反彈，也可能只是空單回補。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察公司或交易所正式檔案是否落地，而且公司及交易所正式檔案同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但港美兩地成交與ETF流量是否同步仍未形成連續確認，代表市場還在消化資訊。否定情景：如果DXY、CNH與同業是否形成廣度確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，公司及交易所正式檔案；第二，港美兩地成交與折溢價；第三，DXY與CNH；第四，中概ETF流量和同業廣度。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@dnystedt。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。公司、匯率、政策與同業至少兩到三條風同向，才稱得上風向改變。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。風向真正改變時，公司、匯率與同業會留下共同訊號；只有單一新聞時先保持懷疑。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2650,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:中概風向球:4:X:2094426447779975375",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4",
+        "title_options": [
+          "公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4",
+          "中概風向球今日第4題｜公司與財報：財報與營運資料更新正在發酵"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "13bd99738fcdd8a77d7a3538385dc99c1d83255725440aa0891fe425c557197e",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：china"
+        ],
+        "why_channel": [
+          "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+        ],
+        "facts": [
+          "@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2094426447779975375",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Trump says U.S. communities that oppose data centers risk losing jobs, tax revenue and investment to other regions. Anti-data-center movement could hurt U.S. competitiveness and benefit China.",
+            "published_at": "2026-08-31T14:05:52+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2094426447779975375",
+            "market": "美股"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2094426447779975375",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "Trump says U.S. communities that oppose data centers risk losing jobs, tax revenue and investment to other regions. Anti-data-center movement could hurt U.S. competitiveness and benefit China.",
+            "published_at": "2026-08-31T14:05:52+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2094426447779975375",
+            "market": "美股"
+          }
+        ],
+        "shared_hotspot_id": "X:2094426447779975375",
+        "channel_angle": "中概風向球",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。",
+          "editorial_tension": "「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@wallstengine。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@wallstengine"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:4:X:2094426447779975375:1",
+            "claim_type": "CONDITIONAL",
+            "check": "公司或交易所正式文件是否落地",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:4:X:2094426447779975375:2",
+            "claim_type": "CONDITIONAL",
+            "check": "港美兩地成交與ETF流量是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:4:X:2094426447779975375:3",
+            "claim_type": "CONDITIONAL",
+            "check": "DXY、CNH與同業是否形成廣度確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "740c1bb6f260881554db21173839877f1e16ecb727b665b00e3ff2b0301a897a",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@wallstengine"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "中概風向球今天先看三股風：公司事件、美元流動性與政策環境。今天完整拆解的題目是「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「公司與財報：財報與營運資料更新正在發酵：中概風向球今日驗證 #4」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T14:05:52+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在中概風向球，不是換一個頻道名稱重講同一篇新聞。需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@wallstengine刊出或發布了「公司與財報：財報與營運資料更新正在發酵」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。財報期權的核心是市場已經定價多少波動。應比較損益兩平點與自己預估的合理區間，而不是只判斷公司會不會交出好財報。\n\n第二個專屬檢查是：交易時段延長也不代表流動性平均增加。盤前盤後價差可能更寬，期權本身的退出條件尤其重要，否則帳面有限損失仍可能因成交困難而放大。\n\n機制第1層：中概股同時受公司基本面、美元流動性與政策折價影響。營收改善可能被高利率壓住，政策緩和也可能只帶來估值修復，三條線必須分開。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：港美兩地上市公司還要比較成交時段、折溢價與匯率。ADR上漲若港股沒有確認，可能只是美股時段回補；兩地放量同向，訊號才較完整。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：融資支援AI支出既可能創造成長，也可能帶來稀釋與回報壓力。必須看到正式檔案、價格、股數、資金用途和資本回報，才能判斷哪一面占上風。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。正向路徑是正式檔案落地、融資條件可控、AI業務形成收入，同時CNH與中概ETF流量改善。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。壓力路徑是折價融資、回報期拉長，美元與利率又偏緊；即使單日反彈，也可能只是空單回補。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察公司或交易所正式檔案是否落地，而且公司及交易所正式檔案同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但港美兩地成交與ETF流量是否同步仍未形成連續確認，代表市場還在消化資訊。否定情景：如果DXY、CNH與同業是否形成廣度確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，公司及交易所正式檔案；第二，港美兩地成交與折溢價；第三，DXY與CNH；第四，中概ETF流量和同業廣度。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@wallstengine。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。公司、匯率、政策與同業至少兩到三條風同向，才稱得上風向改變。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。風向真正改變時，公司、匯率與同業會留下共同訊號；只有單一新聞時先保持懷疑。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2674,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      },
+      {
+        "candidate_id": "daily:2026-09-01:中概風向球:5:X:2094412583604531236",
+        "candidate_type": "SAME_DAY_SOURCE_PREVIEW",
+        "editorial_status": "DRAFT_FOR_HUMAN_REVIEW",
+        "market_session_date": "2026-09-01",
+        "title": "輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5",
+        "title_options": [
+          "輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5",
+          "中概風向球今日第5題｜輝達相關AI 與半導體討論升溫"
+        ],
+        "title_localization": {
+          "status": "TRANSLATION_UNAVAILABLE",
+          "method": "RULE_FALLBACK",
+          "cache_key": "3777a264e68160273fcd718d67c297f831275c5d53b2a974357bcd3038f47f80",
+          "model_name": null,
+          "attempt_count": 0,
+          "error_reason": null
+        },
+        "why_now": [
+          "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。",
+          "午間預覽的原始入選理由是：命中頻道關鍵詞：china"
+        ],
+        "why_channel": [
+          "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+        ],
+        "facts": [
+          "@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "unknowns": [
+          "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。",
+          "同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。",
+          "尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。"
+        ],
+        "evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2094412583604531236",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "CHINA’S CXMT BEGINS PRODUCING HBM3E MEMORY China’s ChangXin Memory Technologies has started small-scale production of HBM3E, the advanced memory used in AI processors including NVIDIA’s H200 and Blackwell GPUs, according to The Information.",
+            "published_at": "2026-08-31T13:10:46+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2094412583604531236",
+            "market": "美股"
+          }
+        ],
+        "opinion_evidence": [
+          {
+            "source_id": "@wallstengine",
+            "evidence_id": "X:2094412583604531236",
+            "evidence_class": "OPINION",
+            "epistemic_status": "OPINION",
+            "title": "CHINA’S CXMT BEGINS PRODUCING HBM3E MEMORY China’s ChangXin Memory Technologies has started small-scale production of HBM3E, the advanced memory used in AI processors including NVIDIA’s H200 and Blackwell GPUs, according to The Information.",
+            "published_at": "2026-08-31T13:10:46+00:00",
+            "fetched_at": "2026-09-01T05:05:01.575655+00:00",
+            "human_verification_url": "https://x.com/wallstengine/status/2094412583604531236",
+            "market": "美股"
+          }
+        ],
+        "shared_hotspot_id": "X:2094412583604531236",
+        "channel_angle": "中概風向球",
+        "risk_flags": [
+          "DRAFT_FOR_HUMAN_REVIEW",
+          "NOT_INVESTMENT_ADVICE",
+          "SOURCE_PENDING"
+        ],
+        "alignment_claims": [
+          "@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "core_question": "「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+        "selection_reason": {
+          "summary": "「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。",
+          "what_changed": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。",
+          "audience_relevance": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。",
+          "channel_fit": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。",
+          "editorial_tension": "「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？",
+          "next_verification": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+          "dimensions": [
+            {
+              "name": "時效",
+              "result": "PASS",
+              "basis": "@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。"
+            },
+            {
+              "name": "重要性",
+              "result": "REVIEW",
+              "basis": "觀眾需要分清這項變化是短線注意度、可持續的基本面訊號，還是尚未補齊資料的市場敘事。"
+            },
+            {
+              "name": "證據強度",
+              "result": "PASS",
+              "basis": "目前有1張可核對來源卡，來源包括@wallstengine。"
+            },
+            {
+              "name": "頻道契合",
+              "result": "PASS",
+              "basis": "需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。"
+            },
+            {
+              "name": "後續價值",
+              "result": "PASS",
+              "basis": "目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。"
+            }
+          ]
+        },
+        "thesis": "目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。",
+        "counter_thesis": "相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。",
+        "script_claims": [
+          "@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。"
+        ],
+        "script_evidence_ids": [
+          "@wallstengine"
+        ],
+        "review_checkpoints": [
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:5:X:2094412583604531236:1",
+            "claim_type": "CONDITIONAL",
+            "check": "公司或交易所正式文件是否落地",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:5:X:2094412583604531236:2",
+            "claim_type": "CONDITIONAL",
+            "check": "港美兩地成交與ETF流量是否同步",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          },
+          {
+            "checkpoint_id": "daily:2026-09-01:中概風向球:5:X:2094412583604531236:3",
+            "claim_type": "CONDITIONAL",
+            "check": "DXY、CNH與同業是否形成廣度確認",
+            "horizon": "下一個可得資料日或事件更新日",
+            "status": "PENDING_DATA",
+            "observation_date": null,
+            "measured_result": null,
+            "evidence": []
+          }
+        ],
+        "outcome_review": {
+          "status": "PENDING_DATA",
+          "summary": "尚未取得滿足核驗點的後續資料；不得標記為說中或看錯。",
+          "observation_date": null,
+          "evidence": []
+        },
+        "manuscript_alignment": {
+          "contract_version": "2.0",
+          "topic_fingerprint": "ae117722b014d09fedf2dd80ed872a6f5652bf17b0d7dfe8b216f6a123a156cd",
+          "title_present": true,
+          "selection_reason_present": true,
+          "covered_claim_indexes": [
+            0
+          ],
+          "uncovered_claim_indexes": [],
+          "evidence_ids": [
+            "@wallstengine"
+          ],
+          "status": "PASS"
+        },
+        "script_text": "中概股一根紅K可能來自基本面，也可能只是估值、匯率或空單回補。今天完整拆解的題目是「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」。先說結論：現在最重要的不是立刻選多或選空，而是判斷這則新資訊已經確認了什麼、透過哪一條機制影響市場，以及下一筆資料出現時，原本的解讀需不需要改。\n\n為什麼今天選這題？「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」現在發生的具體變化是：@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。 這題值得做，不只因為新，而是因為它會影響觀眾對風險、估值或資金方向的判斷；由中概風向球切入時，核心矛盾是「訊號是否已被三層證據共同確認」。\n\n本集核心問題是：「輝達相關AI 與半導體討論升溫：中概風向球今日驗證 #5」所呈現的變化，是否已經得到事實、傳導機制與市場反應三層共同確認？ 基準判斷是：目前足以把這題列為中概風向球的優先追蹤題。已確認的第一個錨點是：@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 同時保留相反解釋：相反解釋是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。\n\n先把時點放正。@wallstengine在本輪24小時來源視窗提供了可核對的新線索；來源時間為2026-08-31T13:10:46+00:00。 這代表題目具備新鮮度，但新鮮不等於重要，更不等於價格已充分反映。今天會把公開事實、合理推論與尚未取得的資料分三層處理，避免把新聞標題直接翻譯成交易方向。\n\n這個題目放在中概風向球，不是換一個頻道名稱重講同一篇新聞。需要把公司檔案、港美兩地成交、DXY與CNH、政策與產業需求分開，環境線索不能冒充公司直接因果。 本集真正要回答的是本頻道能驗證的問題；超出資料能力的部分，會明確保留。\n\n第1項已確認事實是：@wallstengine刊出或發布了「輝達相關AI 與半導體討論升溫」所對應的事件；原文標題、連結與時間均保留在 Evidence 供人工核對。 這項資料可以證明事件或價格變化已經出現，卻不能單獨證明背後只有一個原因。接下來仍要把它和其他事實放在同一時間軸，檢查是否互相支援。\n\n這一題自己的傳導鏈先從這裡拆。這個事件需要先畫出主體、動作、時間與受影響資產，再檢查中間傳導環節。只要主體或時點沒有對齊，就不能因標題相近而合併成同一因果。\n\n第二個專屬檢查是：接下來應尋找至少一項獨立正式資料和一項市場反應資料。兩者同向時提高信心；只有轉述或只有價格時，維持研究假設。\n\n機制第1層：中概股同時受公司基本面、美元流動性與政策折價影響。營收改善可能被高利率壓住，政策緩和也可能只帶來估值修復，三條線必須分開。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第2層：港美兩地上市公司還要比較成交時段、折溢價與匯率。ADR上漲若港股沒有確認，可能只是美股時段回補；兩地放量同向，訊號才較完整。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n機制第3層：融資支援AI支出既可能創造成長，也可能帶來稀釋與回報壓力。必須看到正式檔案、價格、股數、資金用途和資本回報，才能判斷哪一面占上風。 放回今天的題目，這一層的作用是把『同時發生』和『因果成立』分開；只有中間環節也得到資料支援，敘事才能往前走。\n\n現在看第一種競爭解釋。正向路徑是正式檔案落地、融資條件可控、AI業務形成收入，同時CNH與中概ETF流量改善。 這不是樂觀口號，而是一組待驗證條件；只要條件沒有出現，就不能把它當成基準答案。\n\n再看第二種競爭解釋。壓力路徑是折價融資、回報期拉長，美元與利率又偏緊；即使單日反彈，也可能只是空單回補。 把兩種解釋並列，是因為同一組表面價格常能由不同機制產生。接下來要比的是哪一種留下更多可核對痕跡。\n\n第1個資料邊界是：目前來源只能證明報導或公開貼文已出現，尚不能單獨證明價格反應的唯一因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第2個資料邊界是：仍需用正式檔案、原始市場資料或下一個交易時段的反應補做獨立確認。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第3個資料邊界是：同日TWSE收盤資料尚未由官方來源提供；本稿只整理同日公開來源，不描述今日收盤價、成交量、資金方向或盤後勝負。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n第4個資料邊界是：尚未取得港交所正式檔案與同時點CNH資料，不能確認跨市場因果。 這不是一句例行風險提示，而是會直接限制結論強度。資料補齊前，我們不把未知值當成零，也不拿鄰近市場或舊日期代替。\n\n把情景整理成三層。確認情景：觀察公司或交易所正式檔案是否落地，而且公司及交易所正式檔案同步改善，這時才把目前假設提高一級。中性情景：價格有反應，但港美兩地成交與ETF流量是否同步仍未形成連續確認，代表市場還在消化資訊。否定情景：如果DXY、CNH與同業是否形成廣度確認明顯惡化，就要放棄原先敘事，重新檢查資料。\n\n下一輪查核依序看四項：第一，公司及交易所正式檔案；第二，港美兩地成交與折溢價；第三，DXY與CNH；第四，中概ETF流量和同業廣度。前兩項回答事件是否落地，後兩項回答價格與部位是否真正配合。任何一項缺失都應保留UNKNOWN，而不是用推測補齊。\n\n來源層級也要排清楚。目前可核對材料來自@wallstengine。正式公司或監管檔案優先於媒體轉述，原始市場資料優先於評論；如果不同來源對數字、日期或定義不一致，就暫停結論並回到原文。\n\n對觀眾而言，今天最實用的不是記住一個漲跌答案，而是帶走一張判斷表：事件是否正式落地、傳導機制是否完整、價格是否有廣度、缺口是否足以推翻結論。公司、匯率、政策與同業至少兩到三條風同向，才稱得上風向改變。\n\n總結今天的完整答案：已確認的是公開事件與現有資料，仍未確認的是資金意圖和未來價格。風向真正改變時，公司、匯率與同業會留下共同訊號；只有單一新聞時先保持懷疑。本集只提供資訊整理、情景推演與查核方法，不構成任何具體買賣建議。",
+        "script_character_count": 2650,
+        "script_target_duration": "約3至5分鐘",
+        "script_minimum_character_count": 1500,
+        "script_meets_target": true,
+        "script_generation_method": "CHANNEL_PROGRAM_EVIDENCE_V3_ALIGNED"
+      }
+    ],
+    "target_duration": "約3至5分鐘",
+    "minimum_script_character_count": 1500
+  }
+}
